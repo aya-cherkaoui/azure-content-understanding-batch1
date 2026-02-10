@@ -1,0 +1,26 @@
+[
+  {
+    "analyzer": "prebuilt-layout",
+    "success_rate": "18/18",
+    "errors": 0,
+    "avg_time_s": 6.4,
+    "avg_fields_extracted": 0,
+    "avg_tables_detected": 0,
+    "avg_words_ocr": 0,
+    "avg_markdown_chars": 13,
+    "avg_field_confidence": "N/A",
+    "avg_word_confidence": "N/A"
+  },
+  {
+    "analyzer": "prebuilt-read",
+    "success_rate": "18/18",
+    "errors": 0,
+    "avg_time_s": 6.41,
+    "avg_fields_extracted": 0,
+    "avg_tables_detected": 0,
+    "avg_words_ocr": 0,
+    "avg_markdown_chars": 13,
+    "avg_field_confidence": "N/A",
+    "avg_word_confidence": "N/A"
+  }
+]

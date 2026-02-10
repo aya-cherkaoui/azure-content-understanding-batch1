@@ -1,0 +1,25 @@
+{
+  "id": "df379b65-14ce-410a-809e-641c7b36cef6",
+  "status": "Succeeded",
+  "result": {
+    "analyzerId": "prebuilt-read",
+    "apiVersion": "2025-11-01",
+    "createdAt": "2026-02-10T09:15:56Z",
+    "stringEncoding": "utf16",
+    "warnings": [],
+    "contents": [
+      {
+        "path": "input1",
+        "markdown": "```text\n\n```\n",
+        "kind": "document",
+        "startPageNumber": 1,
+        "endPageNumber": 1,
+        "analyzerId": "prebuilt-read",
+        "mimeType": "image/jpeg"
+      }
+    ]
+  },
+  "usage": {
+    "documentPagesMinimal": 1
+  }
+}

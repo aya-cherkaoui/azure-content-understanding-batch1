@@ -1,0 +1,700 @@
+{
+  "prebuilt-invoice": [
+    {
+      "document": "batch1-0001.jpg",
+      "analyzer": "prebuilt-invoice",
+      "error": "400 Client Error: Bad Request for url: https://content-understanding--resource.cognitiveservices.azure.com/contentunderstanding/analyzers/prebuilt-invoice:analyze?api-version=2025-11-01",
+      "time_seconds": 2.55
+    },
+    {
+      "document": "batch1-0002.jpg",
+      "analyzer": "prebuilt-invoice",
+      "error": "400 Client Error: Bad Request for url: https://content-understanding--resource.cognitiveservices.azure.com/contentunderstanding/analyzers/prebuilt-invoice:analyze?api-version=2025-11-01",
+      "time_seconds": 2.12
+    },
+    {
+      "document": "batch1-0003.jpg",
+      "analyzer": "prebuilt-invoice",
+      "error": "400 Client Error: Bad Request for url: https://content-understanding--resource.cognitiveservices.azure.com/contentunderstanding/analyzers/prebuilt-invoice:analyze?api-version=2025-11-01",
+      "time_seconds": 2.13
+    },
+    {
+      "document": "batch1-0004.jpg",
+      "analyzer": "prebuilt-invoice",
+      "error": "400 Client Error: Bad Request for url: https://content-understanding--resource.cognitiveservices.azure.com/contentunderstanding/analyzers/prebuilt-invoice:analyze?api-version=2025-11-01",
+      "time_seconds": 2.24
+    },
+    {
+      "document": "batch1-0005.jpg",
+      "analyzer": "prebuilt-invoice",
+      "error": "400 Client Error: Bad Request for url: https://content-understanding--resource.cognitiveservices.azure.com/contentunderstanding/analyzers/prebuilt-invoice:analyze?api-version=2025-11-01",
+      "time_seconds": 2.22
+    },
+    {
+      "document": "batch1-0006.jpg",
+      "analyzer": "prebuilt-invoice",
+      "error": "400 Client Error: Bad Request for url: https://content-understanding--resource.cognitiveservices.azure.com/contentunderstanding/analyzers/prebuilt-invoice:analyze?api-version=2025-11-01",
+      "time_seconds": 2.06
+    },
+    {
+      "document": "batch1-0007.jpg",
+      "analyzer": "prebuilt-invoice",
+      "error": "400 Client Error: Bad Request for url: https://content-understanding--resource.cognitiveservices.azure.com/contentunderstanding/analyzers/prebuilt-invoice:analyze?api-version=2025-11-01",
+      "time_seconds": 2.23
+    },
+    {
+      "document": "batch1-0008.jpg",
+      "analyzer": "prebuilt-invoice",
+      "error": "400 Client Error: Bad Request for url: https://content-understanding--resource.cognitiveservices.azure.com/contentunderstanding/analyzers/prebuilt-invoice:analyze?api-version=2025-11-01",
+      "time_seconds": 2.24
+    },
+    {
+      "document": "batch1-0009.jpg",
+      "analyzer": "prebuilt-invoice",
+      "error": "400 Client Error: Bad Request for url: https://content-understanding--resource.cognitiveservices.azure.com/contentunderstanding/analyzers/prebuilt-invoice:analyze?api-version=2025-11-01",
+      "time_seconds": 2.08
+    },
+    {
+      "document": "batch1-0010.jpg",
+      "analyzer": "prebuilt-invoice",
+      "error": "400 Client Error: Bad Request for url: https://content-understanding--resource.cognitiveservices.azure.com/contentunderstanding/analyzers/prebuilt-invoice:analyze?api-version=2025-11-01",
+      "time_seconds": 2.27
+    },
+    {
+      "document": "batch1-0011.jpg",
+      "analyzer": "prebuilt-invoice",
+      "error": "400 Client Error: Bad Request for url: https://content-understanding--resource.cognitiveservices.azure.com/contentunderstanding/analyzers/prebuilt-invoice:analyze?api-version=2025-11-01",
+      "time_seconds": 2.13
+    },
+    {
+      "document": "batch1-0012.jpg",
+      "analyzer": "prebuilt-invoice",
+      "error": "400 Client Error: Bad Request for url: https://content-understanding--resource.cognitiveservices.azure.com/contentunderstanding/analyzers/prebuilt-invoice:analyze?api-version=2025-11-01",
+      "time_seconds": 2.41
+    },
+    {
+      "document": "batch1-0013.jpg",
+      "analyzer": "prebuilt-invoice",
+      "error": "400 Client Error: Bad Request for url: https://content-understanding--resource.cognitiveservices.azure.com/contentunderstanding/analyzers/prebuilt-invoice:analyze?api-version=2025-11-01",
+      "time_seconds": 2.02
+    },
+    {
+      "document": "batch1-0014.jpg",
+      "analyzer": "prebuilt-invoice",
+      "error": "400 Client Error: Bad Request for url: https://content-understanding--resource.cognitiveservices.azure.com/contentunderstanding/analyzers/prebuilt-invoice:analyze?api-version=2025-11-01",
+      "time_seconds": 2.43
+    },
+    {
+      "document": "batch1-0015.jpg",
+      "analyzer": "prebuilt-invoice",
+      "error": "400 Client Error: Bad Request for url: https://content-understanding--resource.cognitiveservices.azure.com/contentunderstanding/analyzers/prebuilt-invoice:analyze?api-version=2025-11-01",
+      "time_seconds": 2.11
+    },
+    {
+      "document": "batch1-0016.jpg",
+      "analyzer": "prebuilt-invoice",
+      "error": "400 Client Error: Bad Request for url: https://content-understanding--resource.cognitiveservices.azure.com/contentunderstanding/analyzers/prebuilt-invoice:analyze?api-version=2025-11-01",
+      "time_seconds": 2.09
+    },
+    {
+      "document": "batch1-0017.jpg",
+      "analyzer": "prebuilt-invoice",
+      "error": "400 Client Error: Bad Request for url: https://content-understanding--resource.cognitiveservices.azure.com/contentunderstanding/analyzers/prebuilt-invoice:analyze?api-version=2025-11-01",
+      "time_seconds": 2.16
+    },
+    {
+      "document": "batch1-0018.jpg",
+      "analyzer": "prebuilt-invoice",
+      "error": "400 Client Error: Bad Request for url: https://content-understanding--resource.cognitiveservices.azure.com/contentunderstanding/analyzers/prebuilt-invoice:analyze?api-version=2025-11-01",
+      "time_seconds": 2.34
+    },
+    {
+      "document": "batch1-0019.jpg",
+      "analyzer": "prebuilt-invoice",
+      "error": "400 Client Error: Bad Request for url: https://content-understanding--resource.cognitiveservices.azure.com/contentunderstanding/analyzers/prebuilt-invoice:analyze?api-version=2025-11-01",
+      "time_seconds": 2.16
+    }
+  ],
+  "prebuilt-receipt": [
+    {
+      "document": "batch1-0001.jpg",
+      "analyzer": "prebuilt-receipt",
+      "error": "400 Client Error: Bad Request for url: https://content-understanding--resource.cognitiveservices.azure.com/contentunderstanding/analyzers/prebuilt-receipt:analyze?api-version=2025-11-01",
+      "time_seconds": 2.42
+    },
+    {
+      "document": "batch1-0002.jpg",
+      "analyzer": "prebuilt-receipt",
+      "error": "400 Client Error: Bad Request for url: https://content-understanding--resource.cognitiveservices.azure.com/contentunderstanding/analyzers/prebuilt-receipt:analyze?api-version=2025-11-01",
+      "time_seconds": 2.16
+    },
+    {
+      "document": "batch1-0003.jpg",
+      "analyzer": "prebuilt-receipt",
+      "error": "400 Client Error: Bad Request for url: https://content-understanding--resource.cognitiveservices.azure.com/contentunderstanding/analyzers/prebuilt-receipt:analyze?api-version=2025-11-01",
+      "time_seconds": 2.08
+    },
+    {
+      "document": "batch1-0004.jpg",
+      "analyzer": "prebuilt-receipt",
+      "error": "400 Client Error: Bad Request for url: https://content-understanding--resource.cognitiveservices.azure.com/contentunderstanding/analyzers/prebuilt-receipt:analyze?api-version=2025-11-01",
+      "time_seconds": 2.22
+    },
+    {
+      "document": "batch1-0005.jpg",
+      "analyzer": "prebuilt-receipt",
+      "error": "400 Client Error: Bad Request for url: https://content-understanding--resource.cognitiveservices.azure.com/contentunderstanding/analyzers/prebuilt-receipt:analyze?api-version=2025-11-01",
+      "time_seconds": 2.13
+    },
+    {
+      "document": "batch1-0006.jpg",
+      "analyzer": "prebuilt-receipt",
+      "error": "400 Client Error: Bad Request for url: https://content-understanding--resource.cognitiveservices.azure.com/contentunderstanding/analyzers/prebuilt-receipt:analyze?api-version=2025-11-01",
+      "time_seconds": 2.14
+    },
+    {
+      "document": "batch1-0007.jpg",
+      "analyzer": "prebuilt-receipt",
+      "error": "400 Client Error: Bad Request for url: https://content-understanding--resource.cognitiveservices.azure.com/contentunderstanding/analyzers/prebuilt-receipt:analyze?api-version=2025-11-01",
+      "time_seconds": 2.35
+    },
+    {
+      "document": "batch1-0008.jpg",
+      "analyzer": "prebuilt-receipt",
+      "error": "400 Client Error: Bad Request for url: https://content-understanding--resource.cognitiveservices.azure.com/contentunderstanding/analyzers/prebuilt-receipt:analyze?api-version=2025-11-01",
+      "time_seconds": 2.22
+    },
+    {
+      "document": "batch1-0009.jpg",
+      "analyzer": "prebuilt-receipt",
+      "error": "400 Client Error: Bad Request for url: https://content-understanding--resource.cognitiveservices.azure.com/contentunderstanding/analyzers/prebuilt-receipt:analyze?api-version=2025-11-01",
+      "time_seconds": 2.14
+    },
+    {
+      "document": "batch1-0010.jpg",
+      "analyzer": "prebuilt-receipt",
+      "error": "400 Client Error: Bad Request for url: https://content-understanding--resource.cognitiveservices.azure.com/contentunderstanding/analyzers/prebuilt-receipt:analyze?api-version=2025-11-01",
+      "time_seconds": 2.22
+    },
+    {
+      "document": "batch1-0011.jpg",
+      "analyzer": "prebuilt-receipt",
+      "error": "400 Client Error: Bad Request for url: https://content-understanding--resource.cognitiveservices.azure.com/contentunderstanding/analyzers/prebuilt-receipt:analyze?api-version=2025-11-01",
+      "time_seconds": 2.22
+    },
+    {
+      "document": "batch1-0012.jpg",
+      "analyzer": "prebuilt-receipt",
+      "error": "400 Client Error: Bad Request for url: https://content-understanding--resource.cognitiveservices.azure.com/contentunderstanding/analyzers/prebuilt-receipt:analyze?api-version=2025-11-01",
+      "time_seconds": 2.27
+    },
+    {
+      "document": "batch1-0013.jpg",
+      "analyzer": "prebuilt-receipt",
+      "error": "400 Client Error: Bad Request for url: https://content-understanding--resource.cognitiveservices.azure.com/contentunderstanding/analyzers/prebuilt-receipt:analyze?api-version=2025-11-01",
+      "time_seconds": 2.26
+    },
+    {
+      "document": "batch1-0014.jpg",
+      "analyzer": "prebuilt-receipt",
+      "error": "400 Client Error: Bad Request for url: https://content-understanding--resource.cognitiveservices.azure.com/contentunderstanding/analyzers/prebuilt-receipt:analyze?api-version=2025-11-01",
+      "time_seconds": 2.1
+    },
+    {
+      "document": "batch1-0015.jpg",
+      "analyzer": "prebuilt-receipt",
+      "error": "400 Client Error: Bad Request for url: https://content-understanding--resource.cognitiveservices.azure.com/contentunderstanding/analyzers/prebuilt-receipt:analyze?api-version=2025-11-01",
+      "time_seconds": 2.15
+    },
+    {
+      "document": "batch1-0016.jpg",
+      "analyzer": "prebuilt-receipt",
+      "error": "400 Client Error: Bad Request for url: https://content-understanding--resource.cognitiveservices.azure.com/contentunderstanding/analyzers/prebuilt-receipt:analyze?api-version=2025-11-01",
+      "time_seconds": 2.09
+    },
+    {
+      "document": "batch1-0017.jpg",
+      "analyzer": "prebuilt-receipt",
+      "error": "400 Client Error: Bad Request for url: https://content-understanding--resource.cognitiveservices.azure.com/contentunderstanding/analyzers/prebuilt-receipt:analyze?api-version=2025-11-01",
+      "time_seconds": 2.12
+    },
+    {
+      "document": "batch1-0018.jpg",
+      "analyzer": "prebuilt-receipt",
+      "error": "400 Client Error: Bad Request for url: https://content-understanding--resource.cognitiveservices.azure.com/contentunderstanding/analyzers/prebuilt-receipt:analyze?api-version=2025-11-01",
+      "time_seconds": 2.43
+    }
+  ],
+  "prebuilt-layout": [
+    {
+      "document": "batch1-0001.jpg",
+      "analyzer": "prebuilt-layout",
+      "time_seconds": 6.44,
+      "markdown_length": 13,
+      "num_fields": 0,
+      "num_tables": 0,
+      "num_pages": 0,
+      "total_words": 0,
+      "avg_field_confidence": null,
+      "avg_word_confidence": null,
+      "num_confidence_scores": 0
+    },
+    {
+      "document": "batch1-0002.jpg",
+      "analyzer": "prebuilt-layout",
+      "time_seconds": 6.37,
+      "markdown_length": 13,
+      "num_fields": 0,
+      "num_tables": 0,
+      "num_pages": 0,
+      "total_words": 0,
+      "avg_field_confidence": null,
+      "avg_word_confidence": null,
+      "num_confidence_scores": 0
+    },
+    {
+      "document": "batch1-0003.jpg",
+      "analyzer": "prebuilt-layout",
+      "time_seconds": 6.41,
+      "markdown_length": 13,
+      "num_fields": 0,
+      "num_tables": 0,
+      "num_pages": 0,
+      "total_words": 0,
+      "avg_field_confidence": null,
+      "avg_word_confidence": null,
+      "num_confidence_scores": 0
+    },
+    {
+      "document": "batch1-0004.jpg",
+      "analyzer": "prebuilt-layout",
+      "time_seconds": 6.27,
+      "markdown_length": 13,
+      "num_fields": 0,
+      "num_tables": 0,
+      "num_pages": 0,
+      "total_words": 0,
+      "avg_field_confidence": null,
+      "avg_word_confidence": null,
+      "num_confidence_scores": 0
+    },
+    {
+      "document": "batch1-0005.jpg",
+      "analyzer": "prebuilt-layout",
+      "time_seconds": 6.43,
+      "markdown_length": 13,
+      "num_fields": 0,
+      "num_tables": 0,
+      "num_pages": 0,
+      "total_words": 0,
+      "avg_field_confidence": null,
+      "avg_word_confidence": null,
+      "num_confidence_scores": 0
+    },
+    {
+      "document": "batch1-0006.jpg",
+      "analyzer": "prebuilt-layout",
+      "time_seconds": 6.41,
+      "markdown_length": 13,
+      "num_fields": 0,
+      "num_tables": 0,
+      "num_pages": 0,
+      "total_words": 0,
+      "avg_field_confidence": null,
+      "avg_word_confidence": null,
+      "num_confidence_scores": 0
+    },
+    {
+      "document": "batch1-0007.jpg",
+      "analyzer": "prebuilt-layout",
+      "time_seconds": 6.45,
+      "markdown_length": 13,
+      "num_fields": 0,
+      "num_tables": 0,
+      "num_pages": 0,
+      "total_words": 0,
+      "avg_field_confidence": null,
+      "avg_word_confidence": null,
+      "num_confidence_scores": 0
+    },
+    {
+      "document": "batch1-0008.jpg",
+      "analyzer": "prebuilt-layout",
+      "time_seconds": 6.31,
+      "markdown_length": 13,
+      "num_fields": 0,
+      "num_tables": 0,
+      "num_pages": 0,
+      "total_words": 0,
+      "avg_field_confidence": null,
+      "avg_word_confidence": null,
+      "num_confidence_scores": 0
+    },
+    {
+      "document": "batch1-0009.jpg",
+      "analyzer": "prebuilt-layout",
+      "time_seconds": 6.27,
+      "markdown_length": 13,
+      "num_fields": 0,
+      "num_tables": 0,
+      "num_pages": 0,
+      "total_words": 0,
+      "avg_field_confidence": null,
+      "avg_word_confidence": null,
+      "num_confidence_scores": 0
+    },
+    {
+      "document": "batch1-0010.jpg",
+      "analyzer": "prebuilt-layout",
+      "time_seconds": 6.38,
+      "markdown_length": 13,
+      "num_fields": 0,
+      "num_tables": 0,
+      "num_pages": 0,
+      "total_words": 0,
+      "avg_field_confidence": null,
+      "avg_word_confidence": null,
+      "num_confidence_scores": 0
+    },
+    {
+      "document": "batch1-0011.jpg",
+      "analyzer": "prebuilt-layout",
+      "time_seconds": 6.27,
+      "markdown_length": 13,
+      "num_fields": 0,
+      "num_tables": 0,
+      "num_pages": 0,
+      "total_words": 0,
+      "avg_field_confidence": null,
+      "avg_word_confidence": null,
+      "num_confidence_scores": 0
+    },
+    {
+      "document": "batch1-0012.jpg",
+      "analyzer": "prebuilt-layout",
+      "time_seconds": 6.53,
+      "markdown_length": 13,
+      "num_fields": 0,
+      "num_tables": 0,
+      "num_pages": 0,
+      "total_words": 0,
+      "avg_field_confidence": null,
+      "avg_word_confidence": null,
+      "num_confidence_scores": 0
+    },
+    {
+      "document": "batch1-0013.jpg",
+      "analyzer": "prebuilt-layout",
+      "time_seconds": 6.38,
+      "markdown_length": 13,
+      "num_fields": 0,
+      "num_tables": 0,
+      "num_pages": 0,
+      "total_words": 0,
+      "avg_field_confidence": null,
+      "avg_word_confidence": null,
+      "num_confidence_scores": 0
+    },
+    {
+      "document": "batch1-0014.jpg",
+      "analyzer": "prebuilt-layout",
+      "time_seconds": 6.4,
+      "markdown_length": 13,
+      "num_fields": 0,
+      "num_tables": 0,
+      "num_pages": 0,
+      "total_words": 0,
+      "avg_field_confidence": null,
+      "avg_word_confidence": null,
+      "num_confidence_scores": 0
+    },
+    {
+      "document": "batch1-0015.jpg",
+      "analyzer": "prebuilt-layout",
+      "time_seconds": 6.42,
+      "markdown_length": 13,
+      "num_fields": 0,
+      "num_tables": 0,
+      "num_pages": 0,
+      "total_words": 0,
+      "avg_field_confidence": null,
+      "avg_word_confidence": null,
+      "num_confidence_scores": 0
+    },
+    {
+      "document": "batch1-0016.jpg",
+      "analyzer": "prebuilt-layout",
+      "time_seconds": 6.46,
+      "markdown_length": 13,
+      "num_fields": 0,
+      "num_tables": 0,
+      "num_pages": 0,
+      "total_words": 0,
+      "avg_field_confidence": null,
+      "avg_word_confidence": null,
+      "num_confidence_scores": 0
+    },
+    {
+      "document": "batch1-0017.jpg",
+      "analyzer": "prebuilt-layout",
+      "time_seconds": 6.64,
+      "markdown_length": 13,
+      "num_fields": 0,
+      "num_tables": 0,
+      "num_pages": 0,
+      "total_words": 0,
+      "avg_field_confidence": null,
+      "avg_word_confidence": null,
+      "num_confidence_scores": 0
+    },
+    {
+      "document": "batch1-0018.jpg",
+      "analyzer": "prebuilt-layout",
+      "time_seconds": 6.39,
+      "markdown_length": 13,
+      "num_fields": 0,
+      "num_tables": 0,
+      "num_pages": 0,
+      "total_words": 0,
+      "avg_field_confidence": null,
+      "avg_word_confidence": null,
+      "num_confidence_scores": 0
+    }
+  ],
+  "prebuilt-read": [
+    {
+      "document": "batch1-0001.jpg",
+      "analyzer": "prebuilt-read",
+      "time_seconds": 6.57,
+      "markdown_length": 13,
+      "num_fields": 0,
+      "num_tables": 0,
+      "num_pages": 0,
+      "total_words": 0,
+      "avg_field_confidence": null,
+      "avg_word_confidence": null,
+      "num_confidence_scores": 0
+    },
+    {
+      "document": "batch1-0002.jpg",
+      "analyzer": "prebuilt-read",
+      "time_seconds": 6.47,
+      "markdown_length": 13,
+      "num_fields": 0,
+      "num_tables": 0,
+      "num_pages": 0,
+      "total_words": 0,
+      "avg_field_confidence": null,
+      "avg_word_confidence": null,
+      "num_confidence_scores": 0
+    },
+    {
+      "document": "batch1-0003.jpg",
+      "analyzer": "prebuilt-read",
+      "time_seconds": 6.34,
+      "markdown_length": 13,
+      "num_fields": 0,
+      "num_tables": 0,
+      "num_pages": 0,
+      "total_words": 0,
+      "avg_field_confidence": null,
+      "avg_word_confidence": null,
+      "num_confidence_scores": 0
+    },
+    {
+      "document": "batch1-0004.jpg",
+      "analyzer": "prebuilt-read",
+      "time_seconds": 6.43,
+      "markdown_length": 13,
+      "num_fields": 0,
+      "num_tables": 0,
+      "num_pages": 0,
+      "total_words": 0,
+      "avg_field_confidence": null,
+      "avg_word_confidence": null,
+      "num_confidence_scores": 0
+    },
+    {
+      "document": "batch1-0005.jpg",
+      "analyzer": "prebuilt-read",
+      "time_seconds": 6.33,
+      "markdown_length": 13,
+      "num_fields": 0,
+      "num_tables": 0,
+      "num_pages": 0,
+      "total_words": 0,
+      "avg_field_confidence": null,
+      "avg_word_confidence": null,
+      "num_confidence_scores": 0
+    },
+    {
+      "document": "batch1-0006.jpg",
+      "analyzer": "prebuilt-read",
+      "time_seconds": 6.55,
+      "markdown_length": 13,
+      "num_fields": 0,
+      "num_tables": 0,
+      "num_pages": 0,
+      "total_words": 0,
+      "avg_field_confidence": null,
+      "avg_word_confidence": null,
+      "num_confidence_scores": 0
+    },
+    {
+      "document": "batch1-0007.jpg",
+      "analyzer": "prebuilt-read",
+      "time_seconds": 6.37,
+      "markdown_length": 13,
+      "num_fields": 0,
+      "num_tables": 0,
+      "num_pages": 0,
+      "total_words": 0,
+      "avg_field_confidence": null,
+      "avg_word_confidence": null,
+      "num_confidence_scores": 0
+    },
+    {
+      "document": "batch1-0008.jpg",
+      "analyzer": "prebuilt-read",
+      "time_seconds": 6.54,
+      "markdown_length": 13,
+      "num_fields": 0,
+      "num_tables": 0,
+      "num_pages": 0,
+      "total_words": 0,
+      "avg_field_confidence": null,
+      "avg_word_confidence": null,
+      "num_confidence_scores": 0
+    },
+    {
+      "document": "batch1-0009.jpg",
+      "analyzer": "prebuilt-read",
+      "time_seconds": 6.24,
+      "markdown_length": 13,
+      "num_fields": 0,
+      "num_tables": 0,
+      "num_pages": 0,
+      "total_words": 0,
+      "avg_field_confidence": null,
+      "avg_word_confidence": null,
+      "num_confidence_scores": 0
+    },
+    {
+      "document": "batch1-0010.jpg",
+      "analyzer": "prebuilt-read",
+      "time_seconds": 6.47,
+      "markdown_length": 13,
+      "num_fields": 0,
+      "num_tables": 0,
+      "num_pages": 0,
+      "total_words": 0,
+      "avg_field_confidence": null,
+      "avg_word_confidence": null,
+      "num_confidence_scores": 0
+    },
+    {
+      "document": "batch1-0011.jpg",
+      "analyzer": "prebuilt-read",
+      "time_seconds": 6.31,
+      "markdown_length": 13,
+      "num_fields": 0,
+      "num_tables": 0,
+      "num_pages": 0,
+      "total_words": 0,
+      "avg_field_confidence": null,
+      "avg_word_confidence": null,
+      "num_confidence_scores": 0
+    },
+    {
+      "document": "batch1-0012.jpg",
+      "analyzer": "prebuilt-read",
+      "time_seconds": 6.35,
+      "markdown_length": 13,
+      "num_fields": 0,
+      "num_tables": 0,
+      "num_pages": 0,
+      "total_words": 0,
+      "avg_field_confidence": null,
+      "avg_word_confidence": null,
+      "num_confidence_scores": 0
+    },
+    {
+      "document": "batch1-0013.jpg",
+      "analyzer": "prebuilt-read",
+      "time_seconds": 6.38,
+      "markdown_length": 13,
+      "num_fields": 0,
+      "num_tables": 0,
+      "num_pages": 0,
+      "total_words": 0,
+      "avg_field_confidence": null,
+      "avg_word_confidence": null,
+      "num_confidence_scores": 0
+    },
+    {
+      "document": "batch1-0014.jpg",
+      "analyzer": "prebuilt-read",
+      "time_seconds": 6.18,
+      "markdown_length": 13,
+      "num_fields": 0,
+      "num_tables": 0,
+      "num_pages": 0,
+      "total_words": 0,
+      "avg_field_confidence": null,
+      "avg_word_confidence": null,
+      "num_confidence_scores": 0
+    },
+    {
+      "document": "batch1-0015.jpg",
+      "analyzer": "prebuilt-read",
+      "time_seconds": 6.7,
+      "markdown_length": 13,
+      "num_fields": 0,
+      "num_tables": 0,
+      "num_pages": 0,
+      "total_words": 0,
+      "avg_field_confidence": null,
+      "avg_word_confidence": null,
+      "num_confidence_scores": 0
+    },
+    {
+      "document": "batch1-0016.jpg",
+      "analyzer": "prebuilt-read",
+      "time_seconds": 6.52,
+      "markdown_length": 13,
+      "num_fields": 0,
+      "num_tables": 0,
+      "num_pages": 0,
+      "total_words": 0,
+      "avg_field_confidence": null,
+      "avg_word_confidence": null,
+      "num_confidence_scores": 0
+    },
+    {
+      "document": "batch1-0017.jpg",
+      "analyzer": "prebuilt-read",
+      "time_seconds": 6.31,
+      "markdown_length": 13,
+      "num_fields": 0,
+      "num_tables": 0,
+      "num_pages": 0,
+      "total_words": 0,
+      "avg_field_confidence": null,
+      "avg_word_confidence": null,
+      "num_confidence_scores": 0
+    },
+    {
+      "document": "batch1-0018.jpg",
+      "analyzer": "prebuilt-read",
+      "time_seconds": 6.37,
+      "markdown_length": 13,
+      "num_fields": 0,
+      "num_tables": 0,
+      "num_pages": 0,
+      "total_words": 0,
+      "avg_field_confidence": null,
+      "avg_word_confidence": null,
+      "num_confidence_scores": 0
+    }
+  ]
+}

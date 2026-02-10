@@ -1,0 +1,228 @@
+{
+  "id": "ce388105-e9cc-4c19-8927-e30ba693cfa4",
+  "status": "Succeeded",
+  "result": {
+    "analyzerId": "prebuilt-invoice",
+    "apiVersion": "2025-11-01",
+    "createdAt": "2026-02-10T11:15:11Z",
+    "stringEncoding": "utf16",
+    "warnings": [],
+    "contents": [
+      {
+        "path": "input1",
+        "markdown": "```text\n\n```\n",
+        "fields": {
+          "AmountDue": {
+            "type": "object",
+            "valueObject": {
+              "Amount": {
+                "type": "number"
+              },
+              "CurrencyCode": {
+                "type": "string"
+              }
+            }
+          },
+          "BalanceForward": {
+            "type": "object",
+            "valueObject": {
+              "Amount": {
+                "type": "number"
+              },
+              "CurrencyCode": {
+                "type": "string"
+              }
+            }
+          },
+          "BillingAddress": {
+            "type": "string"
+          },
+          "BillingAddressRecipient": {
+            "type": "string"
+          },
+          "CountryRegion": {
+            "type": "string"
+          },
+          "CustomerAddress": {
+            "type": "string"
+          },
+          "CustomerAddressRecipient": {
+            "type": "string"
+          },
+          "CustomerId": {
+            "type": "string"
+          },
+          "CustomerName": {
+            "type": "string"
+          },
+          "CustomerTaxId": {
+            "type": "string"
+          },
+          "DueDate": {
+            "type": "date"
+          },
+          "InvoiceDate": {
+            "type": "date"
+          },
+          "InvoiceId": {
+            "type": "string"
+          },
+          "LineItems": {
+            "type": "array"
+          },
+          "PaymentTerm": {
+            "type": "string"
+          },
+          "PONumber": {
+            "type": "string"
+          },
+          "RemittanceAddress": {
+            "type": "string"
+          },
+          "RemittanceAddressRecipient": {
+            "type": "string"
+          },
+          "ServiceAddress": {
+            "type": "string"
+          },
+          "ServiceAddressRecipient": {
+            "type": "string"
+          },
+          "ShippingAddress": {
+            "type": "string"
+          },
+          "ShippingAddressRecipient": {
+            "type": "string"
+          },
+          "SubtotalAmount": {
+            "type": "object",
+            "valueObject": {
+              "Amount": {
+                "type": "number"
+              },
+              "CurrencyCode": {
+                "type": "string"
+              }
+            }
+          },
+          "TaxDetails": {
+            "type": "array"
+          },
+          "TotalAmount": {
+            "type": "object",
+            "valueObject": {
+              "Amount": {
+                "type": "number"
+              },
+              "CurrencyCode": {
+                "type": "string"
+              }
+            }
+          },
+          "TotalDiscountAmount": {
+            "type": "object",
+            "valueObject": {
+              "Amount": {
+                "type": "number"
+              },
+              "CurrencyCode": {
+                "type": "string"
+              }
+            }
+          },
+          "TotalTaxAmount": {
+            "type": "object",
+            "valueObject": {
+              "Amount": {
+                "type": "number"
+              },
+              "CurrencyCode": {
+                "type": "string"
+              }
+            }
+          },
+          "VendorAddress": {
+            "type": "string"
+          },
+          "VendorAddressRecipient": {
+            "type": "string"
+          },
+          "VendorName": {
+            "type": "string"
+          },
+          "VendorTaxId": {
+            "type": "string"
+          }
+        },
+        "kind": "document",
+        "startPageNumber": 1,
+        "endPageNumber": 1,
+        "analyzerId": "prebuilt-invoice",
+        "mimeType": "image/jpeg"
+      }
+    ]
+  },
+  "usage": {
+    "documentPagesMinimal": 1,
+    "contextualizationTokens": 1000,
+    "tokens": {
+      "gpt-4.1-input": 10263,
+      "gpt-4.1-output": 323,
+      "text-embedding-3-large": 4
+    }
+  },
+  "_extracted": {
+    "field_values": {
+      "AmountDue": {
+        "Amount": "{'type': 'number'}",
+        "CurrencyCode": "{'type': 'string'}"
+      },
+      "BalanceForward": {
+        "Amount": "{'type': 'number'}",
+        "CurrencyCode": "{'type': 'string'}"
+      },
+      "BillingAddress": "{'type': 'string'}",
+      "BillingAddressRecipient": "{'type': 'string'}",
+      "CountryRegion": "{'type': 'string'}",
+      "CustomerAddress": "{'type': 'string'}",
+      "CustomerAddressRecipient": "{'type': 'string'}",
+      "CustomerId": "{'type': 'string'}",
+      "CustomerName": "{'type': 'string'}",
+      "CustomerTaxId": "{'type': 'string'}",
+      "DueDate": "{'type': 'date'}",
+      "InvoiceDate": "{'type': 'date'}",
+      "InvoiceId": "{'type': 'string'}",
+      "LineItems": "{'type': 'array'}",
+      "PaymentTerm": "{'type': 'string'}",
+      "PONumber": "{'type': 'string'}",
+      "RemittanceAddress": "{'type': 'string'}",
+      "RemittanceAddressRecipient": "{'type': 'string'}",
+      "ServiceAddress": "{'type': 'string'}",
+      "ServiceAddressRecipient": "{'type': 'string'}",
+      "ShippingAddress": "{'type': 'string'}",
+      "ShippingAddressRecipient": "{'type': 'string'}",
+      "SubtotalAmount": {
+        "Amount": "{'type': 'number'}",
+        "CurrencyCode": "{'type': 'string'}"
+      },
+      "TaxDetails": "{'type': 'array'}",
+      "TotalAmount": {
+        "Amount": "{'type': 'number'}",
+        "CurrencyCode": "{'type': 'string'}"
+      },
+      "TotalDiscountAmount": {
+        "Amount": "{'type': 'number'}",
+        "CurrencyCode": "{'type': 'string'}"
+      },
+      "TotalTaxAmount": {
+        "Amount": "{'type': 'number'}",
+        "CurrencyCode": "{'type': 'string'}"
+      },
+      "VendorAddress": "{'type': 'string'}",
+      "VendorAddressRecipient": "{'type': 'string'}",
+      "VendorName": "{'type': 'string'}",
+      "VendorTaxId": "{'type': 'string'}"
+    },
+    "description": "Le contenu extrait du document \"batch1-0003.jpg\" est vide, il n'y a donc aucune information disponible permettant d'identifier le type de document, l'émetteur, le destinataire, le montant total, la date ou tout autre élément clé. Il n'est pas possible de fournir une description globale de ce document sur la base des informations fournies."
+  }
+}

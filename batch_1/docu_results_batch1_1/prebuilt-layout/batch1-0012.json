@@ -1,0 +1,25 @@
+{
+  "id": "ef459eaa-5031-4e56-9c7f-0b7d2c5574e7",
+  "status": "Succeeded",
+  "result": {
+    "analyzerId": "prebuilt-layout",
+    "apiVersion": "2025-11-01",
+    "createdAt": "2026-02-10T09:18:58Z",
+    "stringEncoding": "utf16",
+    "warnings": [],
+    "contents": [
+      {
+        "path": "input1",
+        "markdown": "```text\n\n```\n",
+        "kind": "document",
+        "startPageNumber": 1,
+        "endPageNumber": 1,
+        "analyzerId": "prebuilt-layout",
+        "mimeType": "image/jpeg"
+      }
+    ]
+  },
+  "usage": {
+    "documentPagesMinimal": 1
+  }
+}

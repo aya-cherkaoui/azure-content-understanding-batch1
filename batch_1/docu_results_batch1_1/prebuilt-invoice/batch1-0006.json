@@ -1,0 +1,174 @@
+{
+  "id": "e2e2b4f9-19d1-4ce0-b814-29ceb9f65165",
+  "status": "Succeeded",
+  "result": {
+    "analyzerId": "prebuilt-invoice",
+    "apiVersion": "2025-11-01",
+    "createdAt": "2026-02-10T10:53:34Z",
+    "stringEncoding": "utf16",
+    "warnings": [],
+    "contents": [
+      {
+        "path": "input1",
+        "markdown": "```text\n\n```\n",
+        "fields": {
+          "AmountDue": {
+            "type": "object",
+            "valueObject": {
+              "Amount": {
+                "type": "number"
+              },
+              "CurrencyCode": {
+                "type": "string"
+              }
+            }
+          },
+          "BalanceForward": {
+            "type": "object",
+            "valueObject": {
+              "Amount": {
+                "type": "number"
+              },
+              "CurrencyCode": {
+                "type": "string"
+              }
+            }
+          },
+          "BillingAddress": {
+            "type": "string"
+          },
+          "BillingAddressRecipient": {
+            "type": "string"
+          },
+          "CountryRegion": {
+            "type": "string"
+          },
+          "CustomerAddress": {
+            "type": "string"
+          },
+          "CustomerAddressRecipient": {
+            "type": "string"
+          },
+          "CustomerId": {
+            "type": "string"
+          },
+          "CustomerName": {
+            "type": "string"
+          },
+          "CustomerTaxId": {
+            "type": "string"
+          },
+          "DueDate": {
+            "type": "date"
+          },
+          "InvoiceDate": {
+            "type": "date"
+          },
+          "InvoiceId": {
+            "type": "string"
+          },
+          "LineItems": {
+            "type": "array"
+          },
+          "PaymentTerm": {
+            "type": "string"
+          },
+          "PONumber": {
+            "type": "string"
+          },
+          "RemittanceAddress": {
+            "type": "string"
+          },
+          "RemittanceAddressRecipient": {
+            "type": "string"
+          },
+          "ServiceAddress": {
+            "type": "string"
+          },
+          "ServiceAddressRecipient": {
+            "type": "string"
+          },
+          "ShippingAddress": {
+            "type": "string"
+          },
+          "ShippingAddressRecipient": {
+            "type": "string"
+          },
+          "SubtotalAmount": {
+            "type": "object",
+            "valueObject": {
+              "Amount": {
+                "type": "number"
+              },
+              "CurrencyCode": {
+                "type": "string"
+              }
+            }
+          },
+          "TaxDetails": {
+            "type": "array"
+          },
+          "TotalAmount": {
+            "type": "object",
+            "valueObject": {
+              "Amount": {
+                "type": "number"
+              },
+              "CurrencyCode": {
+                "type": "string"
+              }
+            }
+          },
+          "TotalDiscountAmount": {
+            "type": "object",
+            "valueObject": {
+              "Amount": {
+                "type": "number"
+              },
+              "CurrencyCode": {
+                "type": "string"
+              }
+            }
+          },
+          "TotalTaxAmount": {
+            "type": "object",
+            "valueObject": {
+              "Amount": {
+                "type": "number"
+              },
+              "CurrencyCode": {
+                "type": "string"
+              }
+            }
+          },
+          "VendorAddress": {
+            "type": "string"
+          },
+          "VendorAddressRecipient": {
+            "type": "string"
+          },
+          "VendorName": {
+            "type": "string"
+          },
+          "VendorTaxId": {
+            "type": "string"
+          }
+        },
+        "kind": "document",
+        "startPageNumber": 1,
+        "endPageNumber": 1,
+        "analyzerId": "prebuilt-invoice",
+        "mimeType": "image/jpeg"
+      }
+    ]
+  },
+  "usage": {
+    "documentPagesMinimal": 1,
+    "contextualizationTokens": 1000,
+    "tokens": {
+      "gpt-4.1-input": 10263,
+      "gpt-4.1-output": 323,
+      "text-embedding-3-large": 4
+    }
+  }
+}
