@@ -1,10 +1,10 @@
 {
-  "id": "5519f846-2e6e-4cef-8399-b059e1a20e99",
+  "id": "1f42928c-8a66-4989-a0b0-9752ccd7c8bc",
   "status": "Succeeded",
   "result": {
     "analyzerId": "prebuilt-invoice",
     "apiVersion": "2025-11-01",
-    "createdAt": "2026-02-10T11:15:10Z",
+    "createdAt": "2026-02-10T13:37:15Z",
     "stringEncoding": "utf16",
     "warnings": [],
     "contents": [
@@ -172,57 +172,7 @@
     }
   },
   "_extracted": {
-    "field_values": {
-      "AmountDue": {
-        "Amount": "{'type': 'number'}",
-        "CurrencyCode": "{'type': 'string'}"
-      },
-      "BalanceForward": {
-        "Amount": "{'type': 'number'}",
-        "CurrencyCode": "{'type': 'string'}"
-      },
-      "BillingAddress": "{'type': 'string'}",
-      "BillingAddressRecipient": "{'type': 'string'}",
-      "CountryRegion": "{'type': 'string'}",
-      "CustomerAddress": "{'type': 'string'}",
-      "CustomerAddressRecipient": "{'type': 'string'}",
-      "CustomerId": "{'type': 'string'}",
-      "CustomerName": "{'type': 'string'}",
-      "CustomerTaxId": "{'type': 'string'}",
-      "DueDate": "{'type': 'date'}",
-      "InvoiceDate": "{'type': 'date'}",
-      "InvoiceId": "{'type': 'string'}",
-      "LineItems": "{'type': 'array'}",
-      "PaymentTerm": "{'type': 'string'}",
-      "PONumber": "{'type': 'string'}",
-      "RemittanceAddress": "{'type': 'string'}",
-      "RemittanceAddressRecipient": "{'type': 'string'}",
-      "ServiceAddress": "{'type': 'string'}",
-      "ServiceAddressRecipient": "{'type': 'string'}",
-      "ShippingAddress": "{'type': 'string'}",
-      "ShippingAddressRecipient": "{'type': 'string'}",
-      "SubtotalAmount": {
-        "Amount": "{'type': 'number'}",
-        "CurrencyCode": "{'type': 'string'}"
-      },
-      "TaxDetails": "{'type': 'array'}",
-      "TotalAmount": {
-        "Amount": "{'type': 'number'}",
-        "CurrencyCode": "{'type': 'string'}"
-      },
-      "TotalDiscountAmount": {
-        "Amount": "{'type': 'number'}",
-        "CurrencyCode": "{'type': 'string'}"
-      },
-      "TotalTaxAmount": {
-        "Amount": "{'type': 'number'}",
-        "CurrencyCode": "{'type': 'string'}"
-      },
-      "VendorAddress": "{'type': 'string'}",
-      "VendorAddressRecipient": "{'type': 'string'}",
-      "VendorName": "{'type': 'string'}",
-      "VendorTaxId": "{'type': 'string'}"
-    },
-    "description": "Le contenu extrait du document \"batch1-0002.jpg\" est vide ; aucune information n’a été détectée. Il n’est donc pas possible de déterminer le type de document, l’émetteur, le destinataire, le montant total, la date ou tout autre élément clé à partir des données fournies."
+    "field_values": {},
+    "description": "Il s'agit d'une facture (Invoice no: 12847181) émise par Fitzpatrick and Sons (Spencerport, NY, USA) à destination de Duncan PLC (DPO AP 81970), datée du 03/03/2012. Le montant total TTC est de 6 860,45 $. Le document détaille la vente de plusieurs ordinateurs et composants informatiques, avec une TVA appliquée de 10 %."
   }
 }

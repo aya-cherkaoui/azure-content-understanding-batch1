@@ -1,10 +1,10 @@
 {
-  "id": "fd26870d-86e7-4dfd-bc48-229b6e377a57",
+  "id": "a7c4f61b-fb2d-4201-b462-b447e040a6b6",
   "status": "Succeeded",
   "result": {
     "analyzerId": "prebuilt-invoice",
     "apiVersion": "2025-11-01",
-    "createdAt": "2026-02-10T10:53:45Z",
+    "createdAt": "2026-02-10T13:37:37Z",
     "stringEncoding": "utf16",
     "warnings": [],
     "contents": [
@@ -170,5 +170,9 @@
       "gpt-4.1-output": 323,
       "text-embedding-3-large": 4
     }
+  },
+  "_extracted": {
+    "field_values": {},
+    "description": "Ce document est une facture (Invoice no: 98858130) émise le 28/01/2021 par la société Dominguez, Jackson and Steele à Michaelbury, RI, à destination de Rodriguez, Hall and Tanner (APO AP 07491). Le montant total TTC de la facture est de 442,07 $ pour divers articles liés au vin, avec une TVA de 10 %. Les informations clés incluent les coordonnées fiscales des deux parties et le détail des articles facturés."
   }
 }

@@ -1,10 +1,10 @@
 {
-  "id": "a9a430e7-f0c2-4dbc-9a87-56d447b08f90",
+  "id": "40abf007-bd47-4a13-845f-c8179b03ea87",
   "status": "Succeeded",
   "result": {
     "analyzerId": "prebuilt-invoice",
     "apiVersion": "2025-11-01",
-    "createdAt": "2026-02-10T10:53:41Z",
+    "createdAt": "2026-02-10T13:37:31Z",
     "stringEncoding": "utf16",
     "warnings": [],
     "contents": [
@@ -170,5 +170,9 @@
       "gpt-4.1-output": 323,
       "text-embedding-3-large": 4
     }
+  },
+  "_extracted": {
+    "field_values": {},
+    "description": "Ce document est une facture (invoice) émise par la société Schmidt LLC à l'attention de la société Allen PLC, datée du 17/10/2015. Le montant total TTC s'élève à 237,29 dollars pour l'achat de plusieurs livres, avec une TVA de 10%. Les informations clés incluent les coordonnées des deux sociétés, le détail des articles facturés et le numéro de facture 57986024."
   }
 }

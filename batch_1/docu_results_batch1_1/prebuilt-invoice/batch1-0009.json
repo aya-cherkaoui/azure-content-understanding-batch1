@@ -1,10 +1,10 @@
 {
-  "id": "de1453b4-b89d-45bc-b9bb-916b874276a2",
+  "id": "a89b2a23-ee2a-491c-a358-12406dec5256",
   "status": "Succeeded",
   "result": {
     "analyzerId": "prebuilt-invoice",
     "apiVersion": "2025-11-01",
-    "createdAt": "2026-02-10T10:53:37Z",
+    "createdAt": "2026-02-10T13:37:26Z",
     "stringEncoding": "utf16",
     "warnings": [],
     "contents": [
@@ -170,5 +170,9 @@
       "gpt-4.1-output": 323,
       "text-embedding-3-large": 4
     }
+  },
+  "_extracted": {
+    "field_values": {},
+    "description": "Ce document est une facture émise par Padilla-Miller (53017 Lopez Locks, Alecborough, OH) à l'attention de Johnson Ltd (West Jason, CT). La facture, datée du (17/01/2013), concerne la vente de porte-bouteilles et d'ouvre-bouteilles électriques pour un montant total de 124,79 $. Les éléments clés incluent le numéro de facture 81978187 et un taux de TVA de 10 %."
   }
 }

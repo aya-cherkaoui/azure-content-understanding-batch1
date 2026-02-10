@@ -1,10 +1,10 @@
 {
-  "id": "e9c9fb5a-d77b-4d8c-9ea9-6c24c409175d",
+  "id": "a79aeb80-7dd1-44af-8105-7a58841759f8",
   "status": "Succeeded",
   "result": {
     "analyzerId": "prebuilt-invoice",
     "apiVersion": "2025-11-01",
-    "createdAt": "2026-02-10T10:53:36Z",
+    "createdAt": "2026-02-10T13:37:24Z",
     "stringEncoding": "utf16",
     "warnings": [],
     "contents": [
@@ -170,5 +170,9 @@
       "gpt-4.1-output": 323,
       "text-embedding-3-large": 4
     }
+  },
+  "_extracted": {
+    "field_values": {},
+    "description": "[LLM error: 429 Client Error: Too Many Requests for url: https://aya-demo-ai.cognitiveservices.azure.com/openai/deployments/gpt-4.1/chat/completions?api-version=2024-12-01-preview]"
   }
 }

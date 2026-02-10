@@ -1,10 +1,10 @@
 {
-  "id": "6f0a7aaf-6584-40d4-b287-caa7c4e2e457",
+  "id": "51a1eedd-cf57-4f54-bf35-293f9eb939a6",
   "status": "Succeeded",
   "result": {
     "analyzerId": "prebuilt-invoice",
     "apiVersion": "2025-11-01",
-    "createdAt": "2026-02-10T10:53:38Z",
+    "createdAt": "2026-02-10T13:37:27Z",
     "stringEncoding": "utf16",
     "warnings": [],
     "contents": [
@@ -170,5 +170,9 @@
       "gpt-4.1-output": 323,
       "text-embedding-3-large": 4
     }
+  },
+  "_extracted": {
+    "field_values": {},
+    "description": "Ce document est une facture (invoice) émise par \"Michael, Farrell and Lee\" à \"Collins, Barrett and Schroeder\" en date du 25/06/2014. Le montant total TTC est de 6 573,33 $ pour l'achat de chaises gonflables et d'une table en marbre. Les éléments clés incluent un taux de TVA de 10 % et le numéro de facture 99314100."
   }
 }

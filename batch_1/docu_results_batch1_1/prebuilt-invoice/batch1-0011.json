@@ -1,10 +1,10 @@
 {
-  "id": "775b72ce-1b39-444f-b2cf-408c2cde96b5",
+  "id": "9d6a985e-72f2-4185-8dd1-0941f8e1e64e",
   "status": "Succeeded",
   "result": {
     "analyzerId": "prebuilt-invoice",
     "apiVersion": "2025-11-01",
-    "createdAt": "2026-02-10T10:53:39Z",
+    "createdAt": "2026-02-10T13:37:28Z",
     "stringEncoding": "utf16",
     "warnings": [],
     "contents": [
@@ -170,5 +170,9 @@
       "gpt-4.1-output": 323,
       "text-embedding-3-large": 4
     }
+  },
+  "_extracted": {
+    "field_values": {},
+    "description": "Ce document est une facture (invoice) émise par la société Torres and Sons à l'attention de Dennis, Levy and Bowen, datée du 20/03/2016. Le montant total TTC s'élève à 91,27 $ pour l'achat de chaussures de sport, avec un taux de TVA de 10 %. Les informations clés incluent le numéro de facture 68688408, les adresses et identifiants fiscaux des deux parties."
   }
 }

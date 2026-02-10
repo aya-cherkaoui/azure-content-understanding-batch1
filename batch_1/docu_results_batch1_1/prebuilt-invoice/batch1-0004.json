@@ -1,10 +1,10 @@
 {
-  "id": "1f15cbb7-7f15-4e5d-b32c-56474e5bc07c",
+  "id": "8bbb64a9-5877-4cdb-b95e-eaabb2777fb9",
   "status": "Succeeded",
   "result": {
     "analyzerId": "prebuilt-invoice",
     "apiVersion": "2025-11-01",
-    "createdAt": "2026-02-10T11:15:12Z",
+    "createdAt": "2026-02-10T13:37:18Z",
     "stringEncoding": "utf16",
     "warnings": [],
     "contents": [
@@ -172,57 +172,7 @@
     }
   },
   "_extracted": {
-    "field_values": {
-      "AmountDue": {
-        "Amount": "{'type': 'number'}",
-        "CurrencyCode": "{'type': 'string'}"
-      },
-      "BalanceForward": {
-        "Amount": "{'type': 'number'}",
-        "CurrencyCode": "{'type': 'string'}"
-      },
-      "BillingAddress": "{'type': 'string'}",
-      "BillingAddressRecipient": "{'type': 'string'}",
-      "CountryRegion": "{'type': 'string'}",
-      "CustomerAddress": "{'type': 'string'}",
-      "CustomerAddressRecipient": "{'type': 'string'}",
-      "CustomerId": "{'type': 'string'}",
-      "CustomerName": "{'type': 'string'}",
-      "CustomerTaxId": "{'type': 'string'}",
-      "DueDate": "{'type': 'date'}",
-      "InvoiceDate": "{'type': 'date'}",
-      "InvoiceId": "{'type': 'string'}",
-      "LineItems": "{'type': 'array'}",
-      "PaymentTerm": "{'type': 'string'}",
-      "PONumber": "{'type': 'string'}",
-      "RemittanceAddress": "{'type': 'string'}",
-      "RemittanceAddressRecipient": "{'type': 'string'}",
-      "ServiceAddress": "{'type': 'string'}",
-      "ServiceAddressRecipient": "{'type': 'string'}",
-      "ShippingAddress": "{'type': 'string'}",
-      "ShippingAddressRecipient": "{'type': 'string'}",
-      "SubtotalAmount": {
-        "Amount": "{'type': 'number'}",
-        "CurrencyCode": "{'type': 'string'}"
-      },
-      "TaxDetails": "{'type': 'array'}",
-      "TotalAmount": {
-        "Amount": "{'type': 'number'}",
-        "CurrencyCode": "{'type': 'string'}"
-      },
-      "TotalDiscountAmount": {
-        "Amount": "{'type': 'number'}",
-        "CurrencyCode": "{'type': 'string'}"
-      },
-      "TotalTaxAmount": {
-        "Amount": "{'type': 'number'}",
-        "CurrencyCode": "{'type': 'string'}"
-      },
-      "VendorAddress": "{'type': 'string'}",
-      "VendorAddressRecipient": "{'type': 'string'}",
-      "VendorName": "{'type': 'string'}",
-      "VendorTaxId": "{'type': 'string'}"
-    },
-    "description": "Le contenu extrait du document \"batch1-0004.jpg\" est vide, il n'y a donc aucune information disponible permettant d'identifier le type de document, l'émetteur, le destinataire, le montant total, la date ou tout autre élément clé. Il n'est pas possible de fournir une description globale de ce document sur la base des informations fournies."
+    "field_values": {},
+    "description": "[LLM error: 429 Client Error: Too Many Requests for url: https://aya-demo-ai.cognitiveservices.azure.com/openai/deployments/gpt-4.1/chat/completions?api-version=2024-12-01-preview]"
   }
 }

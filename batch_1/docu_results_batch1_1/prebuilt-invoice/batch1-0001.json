@@ -1,10 +1,10 @@
 {
-  "id": "64bf8103-edc2-498a-b3c5-18b2bd1d5501",
+  "id": "27f9ac11-3a8a-4b72-b2b6-11e7099bf424",
   "status": "Succeeded",
   "result": {
     "analyzerId": "prebuilt-invoice",
     "apiVersion": "2025-11-01",
-    "createdAt": "2026-02-10T11:15:09Z",
+    "createdAt": "2026-02-10T13:37:14Z",
     "stringEncoding": "utf16",
     "warnings": [],
     "contents": [
@@ -167,62 +167,12 @@
     "contextualizationTokens": 1000,
     "tokens": {
       "gpt-4.1-input": 10263,
-      "gpt-4.1-output": 321,
+      "gpt-4.1-output": 323,
       "text-embedding-3-large": 4
     }
   },
   "_extracted": {
-    "field_values": {
-      "AmountDue": {
-        "Amount": "{'type': 'number'}",
-        "CurrencyCode": "{'type': 'string'}"
-      },
-      "BalanceForward": {
-        "Amount": "{'type': 'number'}",
-        "CurrencyCode": "{'type': 'string'}"
-      },
-      "BillingAddress": "{'type': 'string'}",
-      "BillingAddressRecipient": "{'type': 'string'}",
-      "CountryRegion": "{'type': 'string'}",
-      "CustomerAddress": "{'type': 'string'}",
-      "CustomerAddressRecipient": "{'type': 'string'}",
-      "CustomerId": "{'type': 'string'}",
-      "CustomerName": "{'type': 'string'}",
-      "CustomerTaxId": "{'type': 'string'}",
-      "DueDate": "{'type': 'date'}",
-      "InvoiceDate": "{'type': 'date'}",
-      "InvoiceId": "{'type': 'string'}",
-      "LineItems": "{'type': 'array'}",
-      "PaymentTerm": "{'type': 'string'}",
-      "PONumber": "{'type': 'string'}",
-      "RemittanceAddress": "{'type': 'string'}",
-      "RemittanceAddressRecipient": "{'type': 'string'}",
-      "ServiceAddress": "{'type': 'string'}",
-      "ServiceAddressRecipient": "{'type': 'string'}",
-      "ShippingAddress": "{'type': 'string'}",
-      "ShippingAddressRecipient": "{'type': 'string'}",
-      "SubtotalAmount": {
-        "Amount": "{'type': 'number'}",
-        "CurrencyCode": "{'type': 'string'}"
-      },
-      "TaxDetails": "{'type': 'array'}",
-      "TotalAmount": {
-        "Amount": "{'type': 'number'}",
-        "CurrencyCode": "{'type': 'string'}"
-      },
-      "TotalDiscountAmount": {
-        "Amount": "{'type': 'number'}",
-        "CurrencyCode": "{'type': 'string'}"
-      },
-      "TotalTaxAmount": {
-        "Amount": "{'type': 'number'}",
-        "CurrencyCode": "{'type': 'string'}"
-      },
-      "VendorAddress": "{'type': 'string'}",
-      "VendorAddressRecipient": "{'type': 'string'}",
-      "VendorName": "{'type': 'string'}",
-      "VendorTaxId": "{'type': 'string'}"
-    },
-    "description": "Le contenu extrait du document \"batch1-0001.jpg\" est vide ; aucune information n’a été détectée dans le texte fourni. Il n’est donc pas possible de déterminer le type de document, l’émetteur, le destinataire, le montant total, la date ou tout autre élément clé à partir de ce contenu."
+    "field_values": {},
+    "description": "Ce document est une facture (invoice) émise par la société Andrews, Kirby and Valdez à Becker Ltd, datée du 13/04/2013. Le montant total TTC est de 6 204,19 $ pour l’achat de plusieurs ordinateurs et composants informatiques. Les éléments clés incluent le numéro de facture 51109338, la TVA appliquée à 10 %, et le détail des articles achetés."
   }
 }

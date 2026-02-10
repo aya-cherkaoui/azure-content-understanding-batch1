@@ -1,10 +1,10 @@
 {
-  "id": "72757585-610b-4b7c-b4fc-e7380396055a",
+  "id": "40e49301-c99c-47a0-9a49-218475c29d12",
   "status": "Succeeded",
   "result": {
     "analyzerId": "prebuilt-invoice",
     "apiVersion": "2025-11-01",
-    "createdAt": "2026-02-10T10:53:46Z",
+    "createdAt": "2026-02-10T13:37:39Z",
     "stringEncoding": "utf16",
     "warnings": [],
     "contents": [
@@ -170,5 +170,9 @@
       "gpt-4.1-output": 323,
       "text-embedding-3-large": 4
     }
+  },
+  "_extracted": {
+    "field_values": {},
+    "description": "Ce document est une facture émise par la société Lopez, Murray and Johnston (Emilyshire, IN) à destination de White Ltd (Port Stacey, NM), datée du 01/05/2017. Le montant total TTC de la facture est de 518,80 $, incluant une TVA de 10 %. Les articles facturés concernent principalement des chaussures et jouets pour enfants."
   }
 }
