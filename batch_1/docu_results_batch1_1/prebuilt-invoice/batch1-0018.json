@@ -1,25 +1,35 @@
 {
-  "id": "40e49301-c99c-47a0-9a49-218475c29d12",
+  "id": "9a59e637-8640-4b29-9fac-5d980e302bdb",
   "status": "Succeeded",
   "result": {
     "analyzerId": "prebuilt-invoice",
     "apiVersion": "2025-11-01",
-    "createdAt": "2026-02-10T13:37:39Z",
-    "stringEncoding": "utf16",
+    "createdAt": "2026-02-10T15:10:39Z",
+    "stringEncoding": "codePoint",
     "warnings": [],
     "contents": [
       {
         "path": "input1",
-        "markdown": "```text\n\n```\n",
+        "markdown": "Invoice no: 36187296\n\nDate of issue:\n\n01/05/2017\n\nSeller:\nLopez, Murray and Johnston\n62820 White Glen\nEmilyshire, IN 44602\n\nTax Id: 951-73-0229\n\nIBAN: GB48OUAZ93098629612648\n\nClient:\nWhite Ltd\n58435 Kline Wall\nPort Stacey, NM 41817\n\nTax Id: 966-84-8472\n\n\n# ITEMS\n\n\n<table>\n<tr>\n<th>No.</th>\n<th>Description</th>\n<th>Qty</th>\n<th>UM</th>\n<th>Net price</th>\n<th>Net worth</th>\n<th>VAT [%]</th>\n<th>Gross worth</th>\n</tr>\n<tr>\n<td>1.</td>\n<td>Nike Kids KD Trey 5 / Nike Black Size 4.5aY</td>\n<td>5,00</td>\n<td>each</td>\n<td>22,00</td>\n<td>110,00</td>\n<td>10%</td>\n<td>121,00</td>\n</tr>\n<tr>\n<td>2.</td>\n<td>Lego Star Wars Minifigures<br>Stormtrooper Darth Vader Yoda Obi Van Mandalorian New</td>\n<td>1,00</td>\n<td>each</td>\n<td>2,98</td>\n<td>2,98</td>\n<td>10%</td>\n<td>3,28</td>\n</tr>\n<tr>\n<td>3.</td>\n<td>Nike Air Jordan 1 Mid Obsidian 640735-174 Toddler Kids Children Size 8C Blue</td>\n<td>5,00</td>\n<td>each</td>\n<td>24,99</td>\n<td>124,95</td>\n<td>10%</td>\n<td>137,44</td>\n</tr>\n<tr>\n<td>4.</td>\n<td>Oomphies Boys Ankle Boots Shoes Gray Green Kids Size 2 EUC</td>\n<td>4,00</td>\n<td>each</td>\n<td>11,99</td>\n<td>47,96</td>\n<td>10%</td>\n<td>52,76</td>\n</tr>\n<tr>\n<td>5.</td>\n<td>Jordan 10 Retro Fusion Red Size 6Y</td>\n<td>3,00</td>\n<td>each</td>\n<td>60,00</td>\n<td>180,00</td>\n<td>10%</td>\n<td>198,00</td>\n</tr>\n<tr>\n<td>6.</td>\n<td>Jordan Hydro 2 (TD)-Child Size 10c</td>\n<td>1,00</td>\n<td>each</td>\n<td>5,75</td>\n<td>5,75</td>\n<td>10%</td>\n<td>6,33</td>\n</tr>\n</table>\n\n\n# SUMMARY\n\n\n<table>\n<tr>\n<th>VAT [%]</th>\n<th>Net worth</th>\n<th>VAT</th>\n<th>Gross worth</th>\n</tr>\n<tr>\n<td>10%</td>\n<td>471,64</td>\n<td>47,16</td>\n<td>518,80</td>\n</tr>\n<tr>\n<td>Total</td>\n<td>$ 471,64</td>\n<td>$ 47,16</td>\n<td>$ 518,80</td>\n</tr>\n</table>\n",
         "fields": {
           "AmountDue": {
             "type": "object",
             "valueObject": {
               "Amount": {
-                "type": "number"
+                "type": "number",
+                "valueNumber": 518.8,
+                "spans": [
+                  {
+                    "offset": 1703,
+                    "length": 8
+                  }
+                ],
+                "confidence": 0.791,
+                "source": "D(1,1392.0000,1775.0000,1505.0000,1775.0000,1505.0000,1800.0000,1392.0000,1800.0000)"
               },
               "CurrencyCode": {
-                "type": "string"
+                "type": "string",
+                "valueString": "USD"
               }
             }
           },
@@ -27,7 +37,8 @@
             "type": "object",
             "valueObject": {
               "Amount": {
-                "type": "number"
+                "type": "number",
+                "confidence": 0.959
               },
               "CurrencyCode": {
                 "type": "string"
@@ -35,87 +46,1021 @@
             }
           },
           "BillingAddress": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.715
           },
           "BillingAddressRecipient": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.762
           },
           "CountryRegion": {
-            "type": "string"
+            "type": "string",
+            "valueString": "USA"
           },
           "CustomerAddress": {
-            "type": "string"
+            "type": "string",
+            "valueString": "58435 Kline Wall Port Stacey, NM 41817",
+            "spans": [
+              {
+                "offset": 193,
+                "length": 16
+              },
+              {
+                "offset": 210,
+                "length": 21
+              }
+            ],
+            "confidence": 0.706,
+            "source": "D(1,833.0000,542.0000,1070.0000,542.0000,1070.0000,572.0000,833.0000,572.0000);D(1,833.0000,577.0000,1153.0000,577.0000,1153.0000,610.0000,833.0000,610.0000)"
           },
           "CustomerAddressRecipient": {
-            "type": "string"
+            "type": "string",
+            "valueString": "White Ltd",
+            "spans": [
+              {
+                "offset": 183,
+                "length": 9
+              }
+            ],
+            "confidence": 0.83,
+            "source": "D(1,833.0000,506.0000,969.0000,506.0000,969.0000,536.0000,833.0000,536.0000)"
           },
           "CustomerId": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.815
           },
           "CustomerName": {
-            "type": "string"
+            "type": "string",
+            "valueString": "White Ltd",
+            "spans": [
+              {
+                "offset": 183,
+                "length": 9
+              }
+            ],
+            "confidence": 0.85,
+            "source": "D(1,833.0000,506.0000,969.0000,506.0000,969.0000,536.0000,833.0000,536.0000)"
           },
           "CustomerTaxId": {
-            "type": "string"
+            "type": "string",
+            "valueString": "966-84-8472",
+            "spans": [
+              {
+                "offset": 241,
+                "length": 11
+              }
+            ],
+            "confidence": 0.932,
+            "source": "D(1,937.0000,649.0000,1117.0000,648.0000,1117.0000,679.0000,937.0000,680.0000)"
           },
           "DueDate": {
-            "type": "date"
+            "type": "date",
+            "confidence": 0.793
           },
           "InvoiceDate": {
-            "type": "date"
+            "type": "date",
+            "valueDate": "2017-01-05",
+            "spans": [
+              {
+                "offset": 38,
+                "length": 10
+              }
+            ],
+            "confidence": 0.97,
+            "source": "D(1,800.0000,140.0000,978.0000,140.0000,978.0000,174.0000,800.0000,175.0000)"
           },
           "InvoiceId": {
-            "type": "string"
+            "type": "string",
+            "valueString": "36187296",
+            "spans": [
+              {
+                "offset": 12,
+                "length": 8
+              }
+            ],
+            "confidence": 0.952,
+            "source": "D(1,350.0000,72.0000,538.0000,72.0000,538.0000,107.0000,350.0000,108.0000)"
           },
           "LineItems": {
-            "type": "array"
+            "type": "array",
+            "valueArray": [
+              {
+                "type": "object",
+                "valueObject": {
+                  "Date": {
+                    "type": "date",
+                    "confidence": 0.823
+                  },
+                  "Description": {
+                    "type": "string",
+                    "valueString": "Nike Kids KD Trey 5 / Nike Black Size 4.5aY",
+                    "spans": [
+                      {
+                        "offset": 440,
+                        "length": 32
+                      },
+                      {
+                        "offset": 473,
+                        "length": 10
+                      }
+                    ],
+                    "confidence": 0.518,
+                    "source": "D(1,237.0000,931.0000,600.0000,931.0000,600.0000,959.0000,237.0000,959.0000);D(1,238.0150,958.6631,357.2921,960.0033,356.9907,986.8314,237.7136,985.4912)"
+                  },
+                  "ProductCode": {
+                    "type": "string",
+                    "confidence": 0.902
+                  },
+                  "Quantity": {
+                    "type": "number",
+                    "valueNumber": 5,
+                    "spans": [
+                      {
+                        "offset": 493,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.903,
+                    "source": "D(1,672.0000,933.0000,725.0000,933.0000,725.0000,958.0000,672.0000,958.0000)"
+                  },
+                  "QuantityUnit": {
+                    "type": "string",
+                    "valueString": "each",
+                    "spans": [
+                      {
+                        "offset": 507,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.828,
+                    "source": "D(1,769.0000,934.0000,827.0000,934.0000,827.0000,957.0000,769.0000,958.0000)"
+                  },
+                  "TaxAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 110,
+                        "spans": [
+                          {
+                            "offset": 536,
+                            "length": 6
+                          }
+                        ],
+                        "confidence": 0.61,
+                        "source": "D(1,1106.0000,933.0000,1186.0000,933.0000,1186.0000,959.0000,1106.0000,959.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "TaxRate": {
+                    "type": "number",
+                    "valueNumber": 0.1,
+                    "spans": [
+                      {
+                        "offset": 552,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.864,
+                    "source": "D(1,1280.0226,931.9171,1332.5206,933.0108,1331.9774,959.0829,1279.4794,957.9892)"
+                  },
+                  "TotalAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 121,
+                        "spans": [
+                          {
+                            "offset": 565,
+                            "length": 6
+                          }
+                        ],
+                        "confidence": 0.938,
+                        "source": "D(1,1421.0000,933.0000,1500.0000,933.0000,1500.0000,958.0000,1421.0000,958.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "UnitPrice": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 22,
+                        "spans": [
+                          {
+                            "offset": 521,
+                            "length": 5
+                          }
+                        ],
+                        "confidence": 0.903,
+                        "source": "D(1,950.0000,933.0000,1016.0000,933.0000,1016.0000,959.0000,950.0000,959.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "Date": {
+                    "type": "date",
+                    "confidence": 0.823
+                  },
+                  "Description": {
+                    "type": "string",
+                    "valueString": "Lego Star Wars Minifigures",
+                    "spans": [
+                      {
+                        "offset": 604,
+                        "length": 26
+                      }
+                    ],
+                    "confidence": 0.664,
+                    "source": "D(1,236.7452,1018.9584,539.9851,1016.2984,540.2456,1045.9978,237.0058,1048.6578)"
+                  },
+                  "ProductCode": {
+                    "type": "string",
+                    "confidence": 0.902
+                  },
+                  "Quantity": {
+                    "type": "number",
+                    "valueNumber": 1,
+                    "spans": [
+                      {
+                        "offset": 697,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.903,
+                    "source": "D(1,674.0000,1019.0000,724.0000,1019.0000,724.0000,1044.0000,674.0000,1045.0000)"
+                  },
+                  "QuantityUnit": {
+                    "type": "string",
+                    "valueString": "each",
+                    "spans": [
+                      {
+                        "offset": 711,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.832,
+                    "source": "D(1,770.0000,1020.0000,827.0000,1020.0000,827.0000,1043.0000,770.0000,1043.0000)"
+                  },
+                  "TaxAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 6.33,
+                        "spans": [
+                          {
+                            "offset": 1432,
+                            "length": 3
+                          },
+                          {
+                            "offset": 1445,
+                            "length": 4
+                          }
+                        ],
+                        "confidence": 0.015,
+                        "source": "D(1,1281.4615,1446.6923,1333.1576,1451.1876,1330.5385,1481.3077,1278.8424,1476.8124);D(1,1448.0000,1450.0000,1501.0000,1450.0000,1501.0000,1476.0000,1448.0000,1475.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "TaxRate": {
+                    "type": "number",
+                    "valueNumber": 0.1,
+                    "spans": [
+                      {
+                        "offset": 753,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.87,
+                    "source": "D(1,1281.0000,1019.0000,1331.0000,1019.0000,1331.0000,1044.0000,1281.0000,1044.0000)"
+                  },
+                  "TotalAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 3.28,
+                        "spans": [
+                          {
+                            "offset": 766,
+                            "length": 4
+                          }
+                        ],
+                        "confidence": 0.901,
+                        "source": "D(1,1448.0000,1019.0000,1501.0000,1019.0000,1501.0000,1045.0000,1448.0000,1045.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "UnitPrice": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 2.98,
+                        "spans": [
+                          {
+                            "offset": 725,
+                            "length": 4
+                          }
+                        ],
+                        "confidence": 0.903,
+                        "source": "D(1,963.0000,1019.0000,1016.0000,1019.0000,1016.0000,1045.0000,963.0000,1045.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "Date": {
+                    "type": "date",
+                    "confidence": 0.823
+                  },
+                  "Description": {
+                    "type": "string",
+                    "valueString": "Nike Air Jordan 1 Mid Obsidian 640735-174 Toddler Kids Children Size 8C Blue",
+                    "spans": [
+                      {
+                        "offset": 803,
+                        "length": 30
+                      },
+                      {
+                        "offset": 834,
+                        "length": 23
+                      },
+                      {
+                        "offset": 858,
+                        "length": 21
+                      }
+                    ],
+                    "confidence": 0.584,
+                    "source": "D(1,237.0000,1133.0000,579.0000,1133.0000,579.0000,1160.0000,237.0000,1160.0000);D(1,238.0000,1160.0000,522.0000,1160.0000,522.0000,1187.0000,238.0000,1187.0000);D(1,238.0000,1189.0000,480.0000,1189.0000,480.0000,1216.0000,238.0000,1216.0000)"
+                  },
+                  "ProductCode": {
+                    "type": "string",
+                    "confidence": 0.902
+                  },
+                  "Quantity": {
+                    "type": "number",
+                    "valueNumber": 5,
+                    "spans": [
+                      {
+                        "offset": 889,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.914,
+                    "source": "D(1,672.0000,1134.0000,725.0000,1134.0000,725.0000,1159.0000,672.0000,1159.0000)"
+                  },
+                  "QuantityUnit": {
+                    "type": "string",
+                    "valueString": "each",
+                    "spans": [
+                      {
+                        "offset": 903,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.828,
+                    "source": "D(1,769.0000,1135.0000,827.0000,1135.0000,827.0000,1158.0000,769.0000,1158.0000)"
+                  },
+                  "TaxAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 124.95,
+                        "spans": [
+                          {
+                            "offset": 932,
+                            "length": 6
+                          }
+                        ],
+                        "confidence": 0.519,
+                        "source": "D(1,1106.0000,1133.0000,1184.0000,1134.0000,1184.0000,1159.0000,1106.0000,1159.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "TaxRate": {
+                    "type": "number",
+                    "valueNumber": 0.1,
+                    "spans": [
+                      {
+                        "offset": 948,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.87,
+                    "source": "D(1,1281.0000,1134.0000,1332.0000,1134.0000,1332.0000,1159.0000,1281.0000,1159.0000)"
+                  },
+                  "TotalAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 137.44,
+                        "spans": [
+                          {
+                            "offset": 961,
+                            "length": 6
+                          }
+                        ],
+                        "confidence": 0.938,
+                        "source": "D(1,1421.0000,1134.0000,1501.0000,1134.0000,1501.0000,1159.0000,1421.0000,1159.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "UnitPrice": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 24.99,
+                        "spans": [
+                          {
+                            "offset": 917,
+                            "length": 5
+                          }
+                        ],
+                        "confidence": 0.955,
+                        "source": "D(1,950.0000,1134.0000,1016.0000,1134.0000,1016.0000,1159.0000,950.0000,1159.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "Date": {
+                    "type": "date",
+                    "confidence": 0.823
+                  },
+                  "Description": {
+                    "type": "string",
+                    "valueString": "Oomphies Boys Ankle Boots Shoes Gray Green Kids Size 2 EUC",
+                    "spans": [
+                      {
+                        "offset": 1000,
+                        "length": 25
+                      },
+                      {
+                        "offset": 1026,
+                        "length": 28
+                      },
+                      {
+                        "offset": 1055,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.587,
+                    "source": "D(1,238.0000,1247.0000,553.0000,1247.0000,553.0000,1276.0000,238.0000,1276.0000);D(1,237.0000,1276.0000,571.0000,1276.0000,571.0000,1303.0000,237.0000,1303.0000);D(1,238.0000,1304.0000,287.0000,1304.0000,287.0000,1330.0000,238.0000,1330.0000)"
+                  },
+                  "ProductCode": {
+                    "type": "string",
+                    "confidence": 0.902
+                  },
+                  "Quantity": {
+                    "type": "number",
+                    "valueNumber": 4,
+                    "spans": [
+                      {
+                        "offset": 1068,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.914,
+                    "source": "D(1,672.0000,1250.0000,725.0000,1250.0000,725.0000,1275.0000,672.0000,1275.0000)"
+                  },
+                  "QuantityUnit": {
+                    "type": "string",
+                    "valueString": "each",
+                    "spans": [
+                      {
+                        "offset": 1082,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.832,
+                    "source": "D(1,770.0000,1250.0000,826.0000,1250.0000,826.0000,1274.0000,770.0000,1274.0000)"
+                  },
+                  "TaxAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 518.8,
+                        "spans": [
+                          {
+                            "offset": 1705,
+                            "length": 6
+                          }
+                        ],
+                        "confidence": 0.257,
+                        "source": "D(1,1415.0000,1775.0000,1505.0000,1775.0000,1505.0000,1800.0000,1415.0000,1800.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "TaxRate": {
+                    "type": "number",
+                    "valueNumber": 0.1,
+                    "spans": [
+                      {
+                        "offset": 1126,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.882,
+                    "source": "D(1,1281.2183,1243.5552,1333.2145,1248.1977,1330.7295,1276.0294,1278.7333,1271.3869)"
+                  },
+                  "TotalAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 52.76,
+                        "spans": [
+                          {
+                            "offset": 1139,
+                            "length": 5
+                          }
+                        ],
+                        "confidence": 0.91,
+                        "source": "D(1,1434.0000,1250.0000,1501.0000,1250.0000,1501.0000,1275.0000,1434.0000,1275.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "UnitPrice": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 11.99,
+                        "spans": [
+                          {
+                            "offset": 1096,
+                            "length": 5
+                          }
+                        ],
+                        "confidence": 0.916,
+                        "source": "D(1,951.0000,1248.0000,1016.0000,1248.0000,1016.0000,1276.0000,951.0000,1275.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "Date": {
+                    "type": "date",
+                    "confidence": 0.823
+                  },
+                  "Description": {
+                    "type": "string",
+                    "valueString": "Jordan 10 Retro Fusion Red Size 6Y",
+                    "spans": [
+                      {
+                        "offset": 1177,
+                        "length": 31
+                      },
+                      {
+                        "offset": 1209,
+                        "length": 2
+                      }
+                    ],
+                    "confidence": 0.514,
+                    "source": "D(1,234.0000,1363.0000,598.0000,1363.0000,598.0000,1390.0000,234.0000,1390.0000);D(1,238.0000,1392.0000,270.0000,1393.0000,270.0000,1416.0000,238.0000,1415.0000)"
+                  },
+                  "ProductCode": {
+                    "type": "string",
+                    "confidence": 0.902
+                  },
+                  "Quantity": {
+                    "type": "number",
+                    "valueNumber": 3,
+                    "spans": [
+                      {
+                        "offset": 1221,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.903,
+                    "source": "D(1,672.0000,1364.0000,724.0000,1364.0000,724.0000,1389.0000,672.0000,1389.0000)"
+                  },
+                  "QuantityUnit": {
+                    "type": "string",
+                    "valueString": "each",
+                    "spans": [
+                      {
+                        "offset": 1235,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.844,
+                    "source": "D(1,769.0000,1364.0000,826.0000,1364.0000,826.0000,1388.0000,769.0000,1388.0000)"
+                  },
+                  "TaxAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 180,
+                        "spans": [
+                          {
+                            "offset": 1264,
+                            "length": 6
+                          }
+                        ],
+                        "confidence": 0.828,
+                        "source": "D(1,1106.0000,1362.0000,1185.0000,1363.0000,1185.0000,1390.0000,1106.0000,1390.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "TaxRate": {
+                    "type": "number",
+                    "valueNumber": 0.1,
+                    "spans": [
+                      {
+                        "offset": 1280,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.882,
+                    "source": "D(1,1280.0094,1361.7830,1332.0849,1364.0472,1330.9472,1390.2151,1278.8717,1387.9509)"
+                  },
+                  "TotalAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 198,
+                        "spans": [
+                          {
+                            "offset": 1293,
+                            "length": 6
+                          }
+                        ],
+                        "confidence": 0.91,
+                        "source": "D(1,1421.0000,1363.0000,1500.0000,1362.0000,1500.0000,1390.0000,1421.0000,1390.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "UnitPrice": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 60,
+                        "spans": [
+                          {
+                            "offset": 1249,
+                            "length": 5
+                          }
+                        ],
+                        "confidence": 0.937,
+                        "source": "D(1,950.0000,1364.0000,1016.0000,1364.0000,1016.0000,1389.0000,950.0000,1389.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "Date": {
+                    "type": "date",
+                    "confidence": 0.823
+                  },
+                  "Description": {
+                    "type": "string",
+                    "valueString": "Jordan Hydro 2 (TD)-Child Size 10c",
+                    "spans": [
+                      {
+                        "offset": 1332,
+                        "length": 30
+                      },
+                      {
+                        "offset": 1363,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.509,
+                    "source": "D(1,235.0000,1449.0000,580.0000,1449.0000,580.0000,1477.0000,235.0000,1477.0000);D(1,239.0000,1480.0000,282.0000,1479.0000,282.0000,1504.0000,239.0000,1503.0000)"
+                  },
+                  "ProductCode": {
+                    "type": "string",
+                    "confidence": 0.902
+                  },
+                  "Quantity": {
+                    "type": "number",
+                    "valueNumber": 1,
+                    "spans": [
+                      {
+                        "offset": 1376,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.879,
+                    "source": "D(1,674.0000,1451.0000,724.0000,1452.0000,724.0000,1477.0000,674.0000,1476.0000)"
+                  },
+                  "QuantityUnit": {
+                    "type": "string",
+                    "valueString": "each",
+                    "spans": [
+                      {
+                        "offset": 1390,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.803,
+                    "source": "D(1,770.0000,1451.0000,827.0000,1452.0000,827.0000,1476.0000,770.0000,1475.0000)"
+                  },
+                  "TaxAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 5.75,
+                        "spans": [
+                          {
+                            "offset": 1418,
+                            "length": 4
+                          }
+                        ],
+                        "confidence": 0.169,
+                        "source": "D(1,1134.0000,1450.0000,1186.0000,1451.0000,1186.0000,1477.0000,1134.0000,1476.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "TaxRate": {
+                    "type": "number",
+                    "valueNumber": 0.1,
+                    "spans": [
+                      {
+                        "offset": 1432,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.872,
+                    "source": "D(1,1281.4615,1446.6923,1333.1576,1451.1876,1330.5385,1481.3077,1278.8424,1476.8124)"
+                  },
+                  "TotalAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 6.33,
+                        "spans": [
+                          {
+                            "offset": 1445,
+                            "length": 4
+                          }
+                        ],
+                        "confidence": 0.873,
+                        "source": "D(1,1448.0000,1450.0000,1501.0000,1450.0000,1501.0000,1476.0000,1448.0000,1475.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "UnitPrice": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 5.75,
+                        "spans": [
+                          {
+                            "offset": 1404,
+                            "length": 4
+                          }
+                        ],
+                        "confidence": 0.903,
+                        "source": "D(1,964.0000,1451.0000,1016.0000,1452.0000,1016.0000,1477.0000,964.0000,1477.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
           },
           "PaymentTerm": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.816
           },
           "PONumber": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.746
           },
           "RemittanceAddress": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.905
           },
           "RemittanceAddressRecipient": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.814
           },
           "ServiceAddress": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.782
           },
           "ServiceAddressRecipient": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.82
           },
           "ShippingAddress": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.775
           },
           "ShippingAddressRecipient": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.81
           },
           "SubtotalAmount": {
             "type": "object",
             "valueObject": {
               "Amount": {
-                "type": "number"
+                "type": "number",
+                "valueNumber": 471.64
               },
               "CurrencyCode": {
-                "type": "string"
+                "type": "string",
+                "valueString": "USD"
               }
             }
           },
           "TaxDetails": {
-            "type": "array"
+            "type": "array",
+            "valueArray": [
+              {
+                "type": "object",
+                "valueObject": {
+                  "Amount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 47.16,
+                        "spans": [
+                          {
+                            "offset": 1611,
+                            "length": 5
+                          }
+                        ],
+                        "confidence": 0.877,
+                        "source": "D(1,1174.0000,1714.0000,1241.0000,1716.0000,1241.0000,1741.0000,1174.0000,1739.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "Description": {
+                    "type": "string",
+                    "valueString": "10%",
+                    "spans": [
+                      {
+                        "offset": 1582,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.008,
+                    "source": "D(1,667.0650,1713.1809,718.8917,1715.0318,717.9350,1741.8191,666.1083,1739.9682)"
+                  },
+                  "NetAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 471.64,
+                        "spans": [
+                          {
+                            "offset": 1595,
+                            "length": 6
+                          }
+                        ],
+                        "confidence": 0.903,
+                        "source": "D(1,976.0000,1713.0000,1056.0000,1714.0000,1056.0000,1740.0000,976.0000,1739.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "Rate": {
+                    "type": "number",
+                    "valueNumber": 0.1,
+                    "spans": [
+                      {
+                        "offset": 1582,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.873,
+                    "source": "D(1,667.0650,1713.1809,718.8917,1715.0318,717.9350,1741.8191,666.1083,1739.9682)"
+                  }
+                }
+              }
+            ]
           },
           "TotalAmount": {
             "type": "object",
             "valueObject": {
               "Amount": {
-                "type": "number"
+                "type": "number",
+                "valueNumber": 518.8,
+                "spans": [
+                  {
+                    "offset": 1626,
+                    "length": 6
+                  }
+                ],
+                "confidence": 0.661,
+                "source": "D(1,1424.0000,1716.0000,1504.0000,1717.0000,1504.0000,1742.0000,1424.0000,1742.0000)"
               },
               "CurrencyCode": {
-                "type": "string"
+                "type": "string",
+                "valueString": "USD"
               }
             }
           },
@@ -123,7 +1068,8 @@
             "type": "object",
             "valueObject": {
               "Amount": {
-                "type": "number"
+                "type": "number",
+                "confidence": 0.934
               },
               "CurrencyCode": {
                 "type": "string"
@@ -134,45 +1080,4617 @@
             "type": "object",
             "valueObject": {
               "Amount": {
-                "type": "number"
+                "type": "number",
+                "valueNumber": 47.16
               },
               "CurrencyCode": {
-                "type": "string"
+                "type": "string",
+                "valueString": "USD"
               }
             }
           },
           "VendorAddress": {
-            "type": "string"
+            "type": "string",
+            "valueString": "62820 White Glen Emilyshire, IN 44602",
+            "spans": [
+              {
+                "offset": 85,
+                "length": 16
+              },
+              {
+                "offset": 102,
+                "length": 20
+              }
+            ],
+            "confidence": 0.823,
+            "source": "D(1,140.0000,542.0000,393.0000,542.0000,393.0000,573.0000,140.0000,573.0000);D(1,140.0000,577.0000,430.0000,577.0000,430.0000,611.0000,140.0000,611.0000)"
           },
           "VendorAddressRecipient": {
-            "type": "string"
+            "type": "string",
+            "valueString": "Lopez, Murray and Johnston",
+            "spans": [
+              {
+                "offset": 58,
+                "length": 26
+              }
+            ],
+            "confidence": 0.756,
+            "source": "D(1,140.0000,506.0000,531.0000,506.0000,531.0000,540.0000,140.0000,540.0000)"
           },
           "VendorName": {
-            "type": "string"
+            "type": "string",
+            "valueString": "Lopez, Murray and Johnston",
+            "spans": [
+              {
+                "offset": 58,
+                "length": 26
+              }
+            ],
+            "confidence": 0.771,
+            "source": "D(1,140.0000,506.0000,531.0000,506.0000,531.0000,540.0000,140.0000,540.0000)"
           },
           "VendorTaxId": {
-            "type": "string"
+            "type": "string",
+            "valueString": "951-73-0229",
+            "spans": [
+              {
+                "offset": 132,
+                "length": 11
+              }
+            ],
+            "confidence": 0.903,
+            "source": "D(1,244.0000,649.0000,424.0000,648.0000,424.0000,679.0000,244.0000,679.0000)"
           }
         },
         "kind": "document",
         "startPageNumber": 1,
         "endPageNumber": 1,
+        "unit": "pixel",
+        "pages": [
+          {
+            "pageNumber": 1,
+            "angle": 0,
+            "width": 1654,
+            "height": 2339,
+            "spans": [
+              {
+                "offset": 0,
+                "length": 1732
+              }
+            ],
+            "words": [
+              {
+                "content": "Invoice",
+                "span": {
+                  "offset": 0,
+                  "length": 7
+                },
+                "confidence": 0.94,
+                "source": "D(1,131,73,264,72,264,108,131,108)"
+              },
+              {
+                "content": "no",
+                "span": {
+                  "offset": 8,
+                  "length": 2
+                },
+                "confidence": 0.998,
+                "source": "D(1,280,72,323,72,323,108,280,108)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 10,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,327,72,335,72,335,108,327,108)"
+              },
+              {
+                "content": "36187296",
+                "span": {
+                  "offset": 12,
+                  "length": 8
+                },
+                "confidence": 0.996,
+                "source": "D(1,350,72,538,72,538,107,350,108)"
+              },
+              {
+                "content": "Date",
+                "span": {
+                  "offset": 22,
+                  "length": 4
+                },
+                "confidence": 0.998,
+                "source": "D(1,131,141,205,141,205,173,131,173)"
+              },
+              {
+                "content": "of",
+                "span": {
+                  "offset": 27,
+                  "length": 2
+                },
+                "confidence": 0.997,
+                "source": "D(1,216,141,247,141,247,173,216,173)"
+              },
+              {
+                "content": "issue",
+                "span": {
+                  "offset": 30,
+                  "length": 5
+                },
+                "confidence": 0.996,
+                "source": "D(1,255,141,332,142,332,174,255,173)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 35,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,334,142,345,142,345,174,334,174)"
+              },
+              {
+                "content": "01/05/2017",
+                "span": {
+                  "offset": 38,
+                  "length": 10
+                },
+                "confidence": 0.994,
+                "source": "D(1,800,140,978,140,978,174,800,175)"
+              },
+              {
+                "content": "Seller",
+                "span": {
+                  "offset": 50,
+                  "length": 6
+                },
+                "confidence": 0.997,
+                "source": "D(1,131,443,241,443,241,476,131,476)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 56,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,242,443,255,443,255,476,242,476)"
+              },
+              {
+                "content": "Lopez",
+                "span": {
+                  "offset": 58,
+                  "length": 5
+                },
+                "confidence": 0.998,
+                "source": "D(1,140,507,220,506,220,539,140,540)"
+              },
+              {
+                "content": ",",
+                "span": {
+                  "offset": 63,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,222,506,229,506,229,539,222,539)"
+              },
+              {
+                "content": "Murray",
+                "span": {
+                  "offset": 65,
+                  "length": 6
+                },
+                "confidence": 0.997,
+                "source": "D(1,240,506,337,506,337,539,240,539)"
+              },
+              {
+                "content": "and",
+                "span": {
+                  "offset": 72,
+                  "length": 3
+                },
+                "confidence": 0.999,
+                "source": "D(1,347,506,397,506,397,539,347,539)"
+              },
+              {
+                "content": "Johnston",
+                "span": {
+                  "offset": 76,
+                  "length": 8
+                },
+                "confidence": 0.995,
+                "source": "D(1,404,506,531,506,531,539,404,539)"
+              },
+              {
+                "content": "62820",
+                "span": {
+                  "offset": 85,
+                  "length": 5
+                },
+                "confidence": 0.985,
+                "source": "D(1,140,542,228,542,228,573,140,572)"
+              },
+              {
+                "content": "White",
+                "span": {
+                  "offset": 91,
+                  "length": 5
+                },
+                "confidence": 0.986,
+                "source": "D(1,236,542,318,542,318,573,236,573)"
+              },
+              {
+                "content": "Glen",
+                "span": {
+                  "offset": 97,
+                  "length": 4
+                },
+                "confidence": 0.99,
+                "source": "D(1,328,542,393,542,393,572,328,573)"
+              },
+              {
+                "content": "Emilyshire",
+                "span": {
+                  "offset": 102,
+                  "length": 10
+                },
+                "confidence": 0.987,
+                "source": "D(1,140,578,284,577,284,610,140,611)"
+              },
+              {
+                "content": ",",
+                "span": {
+                  "offset": 112,
+                  "length": 1
+                },
+                "confidence": 0.997,
+                "source": "D(1,286,577,292,577,292,610,286,610)"
+              },
+              {
+                "content": "IN",
+                "span": {
+                  "offset": 114,
+                  "length": 2
+                },
+                "confidence": 0.938,
+                "source": "D(1,304,577,330,577,330,610,304,610)"
+              },
+              {
+                "content": "44602",
+                "span": {
+                  "offset": 117,
+                  "length": 5
+                },
+                "confidence": 0.984,
+                "source": "D(1,340,577,430,577,430,611,340,610)"
+              },
+              {
+                "content": "Tax",
+                "span": {
+                  "offset": 124,
+                  "length": 3
+                },
+                "confidence": 0.985,
+                "source": "D(1,138,648,190,648,190,679,139,678)"
+              },
+              {
+                "content": "Id",
+                "span": {
+                  "offset": 128,
+                  "length": 2
+                },
+                "confidence": 0.878,
+                "source": "D(1,201,648,223,649,223,679,201,679)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 130,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,227,649,233,649,233,679,227,679)"
+              },
+              {
+                "content": "951-73-0229",
+                "span": {
+                  "offset": 132,
+                  "length": 11
+                },
+                "confidence": 0.985,
+                "source": "D(1,244,649,424,648,424,679,244,679)"
+              },
+              {
+                "content": "IBAN",
+                "span": {
+                  "offset": 145,
+                  "length": 4
+                },
+                "confidence": 0.995,
+                "source": "D(1,139,683,204,683,204,714,139,714)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 149,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,208,683,213,683,214,714,208,714)"
+              },
+              {
+                "content": "GB48OUAZ93098629612648",
+                "span": {
+                  "offset": 151,
+                  "length": 22
+                },
+                "confidence": 0.989,
+                "source": "D(1,226,683,632,683,632,714,226,714)"
+              },
+              {
+                "content": "Client",
+                "span": {
+                  "offset": 175,
+                  "length": 6
+                },
+                "confidence": 0.994,
+                "source": "D(1,824,442,935,442,935,476,824,477)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 181,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,937,442,949,442,949,476,937,476)"
+              },
+              {
+                "content": "White",
+                "span": {
+                  "offset": 183,
+                  "length": 5
+                },
+                "confidence": 0.996,
+                "source": "D(1,833,507,913,506,913,535,833,536)"
+              },
+              {
+                "content": "Ltd",
+                "span": {
+                  "offset": 189,
+                  "length": 3
+                },
+                "confidence": 0.996,
+                "source": "D(1,923,506,969,506,969,535,923,535)"
+              },
+              {
+                "content": "58435",
+                "span": {
+                  "offset": 193,
+                  "length": 5
+                },
+                "confidence": 0.994,
+                "source": "D(1,833,542,920,542,920,572,833,572)"
+              },
+              {
+                "content": "Kline",
+                "span": {
+                  "offset": 199,
+                  "length": 5
+                },
+                "confidence": 0.989,
+                "source": "D(1,932,542,998,542,998,572,932,572)"
+              },
+              {
+                "content": "Wall",
+                "span": {
+                  "offset": 205,
+                  "length": 4
+                },
+                "confidence": 0.993,
+                "source": "D(1,1006,542,1070,542,1070,572,1006,572)"
+              },
+              {
+                "content": "Port",
+                "span": {
+                  "offset": 210,
+                  "length": 4
+                },
+                "confidence": 0.997,
+                "source": "D(1,833,578,890,578,890,610,833,610)"
+              },
+              {
+                "content": "Stacey",
+                "span": {
+                  "offset": 215,
+                  "length": 6
+                },
+                "confidence": 0.996,
+                "source": "D(1,898,578,991,578,991,610,898,610)"
+              },
+              {
+                "content": ",",
+                "span": {
+                  "offset": 221,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,992,578,999,578,999,610,992,610)"
+              },
+              {
+                "content": "NM",
+                "span": {
+                  "offset": 223,
+                  "length": 2
+                },
+                "confidence": 0.987,
+                "source": "D(1,1011,578,1052,578,1052,610,1011,610)"
+              },
+              {
+                "content": "41817",
+                "span": {
+                  "offset": 226,
+                  "length": 5
+                },
+                "confidence": 0.988,
+                "source": "D(1,1063,577,1153,577,1153,609,1063,610)"
+              },
+              {
+                "content": "Tax",
+                "span": {
+                  "offset": 233,
+                  "length": 3
+                },
+                "confidence": 0.982,
+                "source": "D(1,830,648,882,648,882,679,830,679)"
+              },
+              {
+                "content": "Id",
+                "span": {
+                  "offset": 237,
+                  "length": 2
+                },
+                "confidence": 0.716,
+                "source": "D(1,893,649,916,649,916,679,893,679)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 239,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,920,649,925,649,925,680,920,680)"
+              },
+              {
+                "content": "966-84-8472",
+                "span": {
+                  "offset": 241,
+                  "length": 11
+                },
+                "confidence": 0.991,
+                "source": "D(1,937,649,1117,648,1117,679,937,680)"
+              },
+              {
+                "content": "ITEMS",
+                "span": {
+                  "offset": 257,
+                  "length": 5
+                },
+                "confidence": 0.98,
+                "source": "D(1,131,759,248,759,248,792,131,792)"
+              },
+              {
+                "content": "No",
+                "span": {
+                  "offset": 282,
+                  "length": 2
+                },
+                "confidence": 0.966,
+                "source": "D(1,158,848,193,846,193,869,158,870)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 284,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,193,846,202,846,202,869,193,869)"
+              },
+              {
+                "content": "Description",
+                "span": {
+                  "offset": 295,
+                  "length": 11
+                },
+                "confidence": 0.997,
+                "source": "D(1,237,846,385,847,385,873,237,872)"
+              },
+              {
+                "content": "Qty",
+                "span": {
+                  "offset": 316,
+                  "length": 3
+                },
+                "confidence": 0.992,
+                "source": "D(1,677,845,725,848,725,875,677,872)"
+              },
+              {
+                "content": "UM",
+                "span": {
+                  "offset": 329,
+                  "length": 2
+                },
+                "confidence": 0.981,
+                "source": "D(1,776,846,820,846,820,870,776,870)"
+              },
+              {
+                "content": "Net",
+                "span": {
+                  "offset": 341,
+                  "length": 3
+                },
+                "confidence": 0.998,
+                "source": "D(1,898,844,944,846,944,872,898,871)"
+              },
+              {
+                "content": "price",
+                "span": {
+                  "offset": 345,
+                  "length": 5
+                },
+                "confidence": 0.998,
+                "source": "D(1,952,846,1018,845,1018,871,952,872)"
+              },
+              {
+                "content": "Net",
+                "span": {
+                  "offset": 360,
+                  "length": 3
+                },
+                "confidence": 0.998,
+                "source": "D(1,1057,844,1103,845,1103,871,1057,869)"
+              },
+              {
+                "content": "worth",
+                "span": {
+                  "offset": 364,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,1110,845,1186,846,1186,871,1110,871)"
+              },
+              {
+                "content": "VAT",
+                "span": {
+                  "offset": 379,
+                  "length": 3
+                },
+                "confidence": 0.992,
+                "source": "D(1,1227,844,1280,845,1280,872,1227,871)"
+              },
+              {
+                "content": "[",
+                "span": {
+                  "offset": 383,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1287,845,1297,845,1297,873,1287,873)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 384,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1296,845,1319,845,1319,872,1296,873)"
+              },
+              {
+                "content": "]",
+                "span": {
+                  "offset": 385,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,1319,845,1332,845,1332,872,1319,872)"
+              },
+              {
+                "content": "Gross",
+                "span": {
+                  "offset": 396,
+                  "length": 5
+                },
+                "confidence": 0.998,
+                "source": "D(1,1428,848,1501,848,1501,871,1428,870)"
+              },
+              {
+                "content": "worth",
+                "span": {
+                  "offset": 402,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,1425,874,1501,874,1501,897,1425,897)"
+              },
+              {
+                "content": "1",
+                "span": {
+                  "offset": 428,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,169,934,182,934,182,957,169,957)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 429,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,184,934,192,934,192,957,184,957)"
+              },
+              {
+                "content": "Nike",
+                "span": {
+                  "offset": 440,
+                  "length": 4
+                },
+                "confidence": 0.994,
+                "source": "D(1,237,931,286,931,286,958,237,958)"
+              },
+              {
+                "content": "Kids",
+                "span": {
+                  "offset": 445,
+                  "length": 4
+                },
+                "confidence": 0.986,
+                "source": "D(1,295,931,340,931,340,959,295,958)"
+              },
+              {
+                "content": "KD",
+                "span": {
+                  "offset": 450,
+                  "length": 2
+                },
+                "confidence": 0.99,
+                "source": "D(1,348,932,378,932,378,959,348,959)"
+              },
+              {
+                "content": "Trey",
+                "span": {
+                  "offset": 453,
+                  "length": 4
+                },
+                "confidence": 0.979,
+                "source": "D(1,385,932,436,932,436,959,385,959)"
+              },
+              {
+                "content": "5",
+                "span": {
+                  "offset": 458,
+                  "length": 1
+                },
+                "confidence": 0.953,
+                "source": "D(1,443,932,456,932,456,959,443,959)"
+              },
+              {
+                "content": "/",
+                "span": {
+                  "offset": 460,
+                  "length": 1
+                },
+                "confidence": 0.997,
+                "source": "D(1,462,932,473,932,473,959,462,959)"
+              },
+              {
+                "content": "Nike",
+                "span": {
+                  "offset": 462,
+                  "length": 4
+                },
+                "confidence": 0.992,
+                "source": "D(1,479,932,528,932,528,959,479,959)"
+              },
+              {
+                "content": "Black",
+                "span": {
+                  "offset": 467,
+                  "length": 5
+                },
+                "confidence": 0.993,
+                "source": "D(1,536,932,600,932,600,959,536,959)"
+              },
+              {
+                "content": "Size",
+                "span": {
+                  "offset": 473,
+                  "length": 4
+                },
+                "confidence": 0.989,
+                "source": "D(1,238,960,283,960,283,986,239,985)"
+              },
+              {
+                "content": "4.5aY",
+                "span": {
+                  "offset": 478,
+                  "length": 5
+                },
+                "confidence": 0.713,
+                "source": "D(1,290,960,357,960,357,986,290,986)"
+              },
+              {
+                "content": "5,00",
+                "span": {
+                  "offset": 493,
+                  "length": 4
+                },
+                "confidence": 0.994,
+                "source": "D(1,672,933,725,933,725,958,672,958)"
+              },
+              {
+                "content": "each",
+                "span": {
+                  "offset": 507,
+                  "length": 4
+                },
+                "confidence": 0.999,
+                "source": "D(1,769,934,827,934,827,957,769,958)"
+              },
+              {
+                "content": "22,00",
+                "span": {
+                  "offset": 521,
+                  "length": 5
+                },
+                "confidence": 0.996,
+                "source": "D(1,950,933,1016,933,1016,959,950,959)"
+              },
+              {
+                "content": "110,00",
+                "span": {
+                  "offset": 536,
+                  "length": 6
+                },
+                "confidence": 0.996,
+                "source": "D(1,1106,933,1186,933,1186,959,1106,959)"
+              },
+              {
+                "content": "10",
+                "span": {
+                  "offset": 552,
+                  "length": 2
+                },
+                "confidence": 0.999,
+                "source": "D(1,1280,933,1308,933,1308,957,1280,958)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 554,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1308,933,1332,933,1332,958,1308,957)"
+              },
+              {
+                "content": "121,00",
+                "span": {
+                  "offset": 565,
+                  "length": 6
+                },
+                "confidence": 0.995,
+                "source": "D(1,1421,933,1500,933,1500,958,1421,958)"
+              },
+              {
+                "content": "2",
+                "span": {
+                  "offset": 592,
+                  "length": 1
+                },
+                "confidence": 0.984,
+                "source": "D(1,169,1020,183,1020,183,1043,169,1043)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 593,
+                  "length": 1
+                },
+                "confidence": 0.997,
+                "source": "D(1,185,1020,192,1020,192,1043,185,1043)"
+              },
+              {
+                "content": "Lego",
+                "span": {
+                  "offset": 604,
+                  "length": 4
+                },
+                "confidence": 0.994,
+                "source": "D(1,237,1019,291,1019,291,1047,237,1048)"
+              },
+              {
+                "content": "Star",
+                "span": {
+                  "offset": 609,
+                  "length": 4
+                },
+                "confidence": 0.996,
+                "source": "D(1,298,1019,346,1018,346,1047,298,1047)"
+              },
+              {
+                "content": "Wars",
+                "span": {
+                  "offset": 614,
+                  "length": 4
+                },
+                "confidence": 0.997,
+                "source": "D(1,351,1018,408,1018,408,1046,351,1047)"
+              },
+              {
+                "content": "Minifigures",
+                "span": {
+                  "offset": 619,
+                  "length": 11
+                },
+                "confidence": 0.995,
+                "source": "D(1,416,1018,540,1018,540,1046,416,1046)"
+              },
+              {
+                "content": "Stormtrooper",
+                "span": {
+                  "offset": 634,
+                  "length": 12
+                },
+                "confidence": 0.997,
+                "source": "D(1,238,1046,389,1046,389,1074,238,1073)"
+              },
+              {
+                "content": "Darth",
+                "span": {
+                  "offset": 647,
+                  "length": 5
+                },
+                "confidence": 0.998,
+                "source": "D(1,396,1046,457,1046,457,1074,396,1074)"
+              },
+              {
+                "content": "Vader",
+                "span": {
+                  "offset": 653,
+                  "length": 5
+                },
+                "confidence": 0.991,
+                "source": "D(1,465,1046,531,1046,531,1073,465,1074)"
+              },
+              {
+                "content": "Yoda",
+                "span": {
+                  "offset": 659,
+                  "length": 4
+                },
+                "confidence": 0.991,
+                "source": "D(1,537,1046,594,1046,594,1073,537,1073)"
+              },
+              {
+                "content": "Obi",
+                "span": {
+                  "offset": 664,
+                  "length": 3
+                },
+                "confidence": 0.987,
+                "source": "D(1,239,1074,275,1074,275,1100,239,1100)"
+              },
+              {
+                "content": "Van",
+                "span": {
+                  "offset": 668,
+                  "length": 3
+                },
+                "confidence": 0.995,
+                "source": "D(1,283,1074,325,1074,325,1100,283,1100)"
+              },
+              {
+                "content": "Mandalorian",
+                "span": {
+                  "offset": 672,
+                  "length": 11
+                },
+                "confidence": 0.995,
+                "source": "D(1,335,1074,471,1074,471,1100,335,1100)"
+              },
+              {
+                "content": "New",
+                "span": {
+                  "offset": 684,
+                  "length": 3
+                },
+                "confidence": 0.997,
+                "source": "D(1,480,1074,529,1074,529,1100,480,1100)"
+              },
+              {
+                "content": "1,00",
+                "span": {
+                  "offset": 697,
+                  "length": 4
+                },
+                "confidence": 0.994,
+                "source": "D(1,674,1019,724,1019,724,1044,674,1045)"
+              },
+              {
+                "content": "each",
+                "span": {
+                  "offset": 711,
+                  "length": 4
+                },
+                "confidence": 0.999,
+                "source": "D(1,770,1020,827,1020,827,1043,770,1043)"
+              },
+              {
+                "content": "2,98",
+                "span": {
+                  "offset": 725,
+                  "length": 4
+                },
+                "confidence": 0.991,
+                "source": "D(1,963,1019,1016,1019,1016,1045,963,1045)"
+              },
+              {
+                "content": "2,98",
+                "span": {
+                  "offset": 739,
+                  "length": 4
+                },
+                "confidence": 0.991,
+                "source": "D(1,1133,1019,1186,1018,1186,1045,1133,1045)"
+              },
+              {
+                "content": "10",
+                "span": {
+                  "offset": 753,
+                  "length": 2
+                },
+                "confidence": 0.999,
+                "source": "D(1,1281,1019,1308,1019,1308,1044,1281,1044)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 755,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1309,1019,1331,1019,1331,1044,1309,1044)"
+              },
+              {
+                "content": "3,28",
+                "span": {
+                  "offset": 766,
+                  "length": 4
+                },
+                "confidence": 0.993,
+                "source": "D(1,1448,1019,1501,1019,1501,1045,1448,1045)"
+              },
+              {
+                "content": "3",
+                "span": {
+                  "offset": 791,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,169,1135,183,1135,183,1158,169,1158)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 792,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,184,1135,192,1135,192,1158,184,1158)"
+              },
+              {
+                "content": "Nike",
+                "span": {
+                  "offset": 803,
+                  "length": 4
+                },
+                "confidence": 0.995,
+                "source": "D(1,237,1133,287,1133,287,1160,237,1160)"
+              },
+              {
+                "content": "Air",
+                "span": {
+                  "offset": 808,
+                  "length": 3
+                },
+                "confidence": 0.994,
+                "source": "D(1,294,1133,326,1133,326,1160,294,1160)"
+              },
+              {
+                "content": "Jordan",
+                "span": {
+                  "offset": 812,
+                  "length": 6
+                },
+                "confidence": 0.972,
+                "source": "D(1,330,1133,402,1134,402,1160,330,1160)"
+              },
+              {
+                "content": "1",
+                "span": {
+                  "offset": 819,
+                  "length": 1
+                },
+                "confidence": 0.966,
+                "source": "D(1,412,1134,423,1134,423,1160,412,1160)"
+              },
+              {
+                "content": "Mid",
+                "span": {
+                  "offset": 821,
+                  "length": 3
+                },
+                "confidence": 0.969,
+                "source": "D(1,433,1134,471,1134,471,1160,433,1160)"
+              },
+              {
+                "content": "Obsidian",
+                "span": {
+                  "offset": 825,
+                  "length": 8
+                },
+                "confidence": 0.994,
+                "source": "D(1,479,1134,579,1133,579,1160,479,1160)"
+              },
+              {
+                "content": "640735-174",
+                "span": {
+                  "offset": 834,
+                  "length": 10
+                },
+                "confidence": 0.843,
+                "source": "D(1,238,1161,373,1160,373,1186,238,1187)"
+              },
+              {
+                "content": "Toddler",
+                "span": {
+                  "offset": 845,
+                  "length": 7
+                },
+                "confidence": 0.896,
+                "source": "D(1,380,1160,466,1160,466,1186,380,1186)"
+              },
+              {
+                "content": "Kids",
+                "span": {
+                  "offset": 853,
+                  "length": 4
+                },
+                "confidence": 0.969,
+                "source": "D(1,473,1160,522,1160,522,1186,473,1186)"
+              },
+              {
+                "content": "Children",
+                "span": {
+                  "offset": 858,
+                  "length": 8
+                },
+                "confidence": 0.982,
+                "source": "D(1,238,1189,330,1189,330,1215,239,1216)"
+              },
+              {
+                "content": "Size",
+                "span": {
+                  "offset": 867,
+                  "length": 4
+                },
+                "confidence": 0.991,
+                "source": "D(1,338,1189,383,1189,383,1215,339,1215)"
+              },
+              {
+                "content": "8C",
+                "span": {
+                  "offset": 872,
+                  "length": 2
+                },
+                "confidence": 0.955,
+                "source": "D(1,392,1189,421,1189,421,1215,392,1215)"
+              },
+              {
+                "content": "Blue",
+                "span": {
+                  "offset": 875,
+                  "length": 4
+                },
+                "confidence": 0.982,
+                "source": "D(1,429,1189,480,1189,480,1215,430,1215)"
+              },
+              {
+                "content": "5,00",
+                "span": {
+                  "offset": 889,
+                  "length": 4
+                },
+                "confidence": 0.996,
+                "source": "D(1,672,1134,725,1134,725,1159,672,1159)"
+              },
+              {
+                "content": "each",
+                "span": {
+                  "offset": 903,
+                  "length": 4
+                },
+                "confidence": 0.998,
+                "source": "D(1,769,1135,827,1135,827,1158,769,1158)"
+              },
+              {
+                "content": "24,99",
+                "span": {
+                  "offset": 917,
+                  "length": 5
+                },
+                "confidence": 0.978,
+                "source": "D(1,950,1134,1016,1134,1016,1159,950,1159)"
+              },
+              {
+                "content": "124,95",
+                "span": {
+                  "offset": 932,
+                  "length": 6
+                },
+                "confidence": 0.993,
+                "source": "D(1,1106,1133,1184,1134,1184,1159,1106,1159)"
+              },
+              {
+                "content": "10",
+                "span": {
+                  "offset": 948,
+                  "length": 2
+                },
+                "confidence": 0.999,
+                "source": "D(1,1281,1134,1308,1134,1308,1159,1281,1159)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 950,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1309,1134,1332,1134,1332,1159,1309,1159)"
+              },
+              {
+                "content": "137,44",
+                "span": {
+                  "offset": 961,
+                  "length": 6
+                },
+                "confidence": 0.982,
+                "source": "D(1,1421,1134,1501,1134,1501,1159,1421,1159)"
+              },
+              {
+                "content": "4",
+                "span": {
+                  "offset": 988,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,169,1249,183,1249,183,1272,169,1272)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 989,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,184,1249,191,1249,191,1272,184,1272)"
+              },
+              {
+                "content": "Oomphies",
+                "span": {
+                  "offset": 1000,
+                  "length": 8
+                },
+                "confidence": 0.997,
+                "source": "D(1,238,1248,350,1248,350,1275,238,1276)"
+              },
+              {
+                "content": "Boys",
+                "span": {
+                  "offset": 1009,
+                  "length": 4
+                },
+                "confidence": 0.998,
+                "source": "D(1,358,1248,411,1248,411,1275,358,1275)"
+              },
+              {
+                "content": "Ankle",
+                "span": {
+                  "offset": 1014,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,418,1248,480,1247,480,1275,418,1275)"
+              },
+              {
+                "content": "Boots",
+                "span": {
+                  "offset": 1020,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,489,1247,553,1247,553,1275,489,1275)"
+              },
+              {
+                "content": "Shoes",
+                "span": {
+                  "offset": 1026,
+                  "length": 5
+                },
+                "confidence": 0.996,
+                "source": "D(1,237,1276,304,1276,304,1303,237,1303)"
+              },
+              {
+                "content": "Gray",
+                "span": {
+                  "offset": 1032,
+                  "length": 4
+                },
+                "confidence": 0.998,
+                "source": "D(1,312,1276,364,1276,364,1303,312,1303)"
+              },
+              {
+                "content": "Green",
+                "span": {
+                  "offset": 1037,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,372,1276,438,1276,438,1303,372,1303)"
+              },
+              {
+                "content": "Kids",
+                "span": {
+                  "offset": 1043,
+                  "length": 4
+                },
+                "confidence": 0.994,
+                "source": "D(1,447,1276,493,1276,493,1303,447,1303)"
+              },
+              {
+                "content": "Size",
+                "span": {
+                  "offset": 1048,
+                  "length": 4
+                },
+                "confidence": 0.971,
+                "source": "D(1,500,1276,546,1276,546,1303,500,1303)"
+              },
+              {
+                "content": "2",
+                "span": {
+                  "offset": 1053,
+                  "length": 1
+                },
+                "confidence": 0.963,
+                "source": "D(1,554,1276,571,1276,571,1303,554,1303)"
+              },
+              {
+                "content": "EUC",
+                "span": {
+                  "offset": 1055,
+                  "length": 3
+                },
+                "confidence": 0.994,
+                "source": "D(1,238,1304,287,1304,287,1330,238,1330)"
+              },
+              {
+                "content": "4,00",
+                "span": {
+                  "offset": 1068,
+                  "length": 4
+                },
+                "confidence": 0.996,
+                "source": "D(1,672,1250,725,1250,725,1275,672,1275)"
+              },
+              {
+                "content": "each",
+                "span": {
+                  "offset": 1082,
+                  "length": 4
+                },
+                "confidence": 0.999,
+                "source": "D(1,770,1250,826,1250,826,1274,770,1274)"
+              },
+              {
+                "content": "11,99",
+                "span": {
+                  "offset": 1096,
+                  "length": 5
+                },
+                "confidence": 0.992,
+                "source": "D(1,951,1248,1016,1248,1016,1276,951,1275)"
+              },
+              {
+                "content": "47,96",
+                "span": {
+                  "offset": 1111,
+                  "length": 5
+                },
+                "confidence": 0.936,
+                "source": "D(1,1119,1248,1185,1250,1185,1275,1119,1274)"
+              },
+              {
+                "content": "10",
+                "span": {
+                  "offset": 1126,
+                  "length": 2
+                },
+                "confidence": 0.999,
+                "source": "D(1,1281,1246,1309,1248,1309,1274,1281,1271)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 1128,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1308,1248,1331,1248,1331,1273,1308,1274)"
+              },
+              {
+                "content": "52,76",
+                "span": {
+                  "offset": 1139,
+                  "length": 5
+                },
+                "confidence": 0.983,
+                "source": "D(1,1434,1250,1501,1250,1501,1275,1434,1275)"
+              },
+              {
+                "content": "5",
+                "span": {
+                  "offset": 1165,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,169,1365,182,1364,182,1387,169,1388)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 1166,
+                  "length": 1
+                },
+                "confidence": 0.996,
+                "source": "D(1,184,1364,192,1365,192,1388,184,1387)"
+              },
+              {
+                "content": "Jordan",
+                "span": {
+                  "offset": 1177,
+                  "length": 6
+                },
+                "confidence": 0.987,
+                "source": "D(1,234,1363,307,1363,307,1390,235,1390)"
+              },
+              {
+                "content": "10",
+                "span": {
+                  "offset": 1184,
+                  "length": 2
+                },
+                "confidence": 0.985,
+                "source": "D(1,317,1363,344,1363,344,1390,317,1390)"
+              },
+              {
+                "content": "Retro",
+                "span": {
+                  "offset": 1187,
+                  "length": 5
+                },
+                "confidence": 0.99,
+                "source": "D(1,353,1363,412,1363,412,1390,353,1390)"
+              },
+              {
+                "content": "Fusion",
+                "span": {
+                  "offset": 1193,
+                  "length": 6
+                },
+                "confidence": 0.991,
+                "source": "D(1,421,1363,491,1363,491,1390,421,1390)"
+              },
+              {
+                "content": "Red",
+                "span": {
+                  "offset": 1200,
+                  "length": 3
+                },
+                "confidence": 0.995,
+                "source": "D(1,500,1363,541,1363,541,1390,500,1390)"
+              },
+              {
+                "content": "Size",
+                "span": {
+                  "offset": 1204,
+                  "length": 4
+                },
+                "confidence": 0.994,
+                "source": "D(1,550,1363,598,1363,598,1390,550,1390)"
+              },
+              {
+                "content": "6Y",
+                "span": {
+                  "offset": 1209,
+                  "length": 2
+                },
+                "confidence": 0.523,
+                "source": "D(1,238,1392,270,1393,270,1416,238,1415)"
+              },
+              {
+                "content": "3,00",
+                "span": {
+                  "offset": 1221,
+                  "length": 4
+                },
+                "confidence": 0.998,
+                "source": "D(1,672,1364,724,1364,724,1389,672,1389)"
+              },
+              {
+                "content": "each",
+                "span": {
+                  "offset": 1235,
+                  "length": 4
+                },
+                "confidence": 0.999,
+                "source": "D(1,769,1364,826,1364,826,1388,769,1388)"
+              },
+              {
+                "content": "60,00",
+                "span": {
+                  "offset": 1249,
+                  "length": 5
+                },
+                "confidence": 0.99,
+                "source": "D(1,950,1364,1016,1364,1016,1389,950,1389)"
+              },
+              {
+                "content": "180,00",
+                "span": {
+                  "offset": 1264,
+                  "length": 6
+                },
+                "confidence": 0.996,
+                "source": "D(1,1106,1362,1185,1363,1185,1390,1106,1390)"
+              },
+              {
+                "content": "10",
+                "span": {
+                  "offset": 1280,
+                  "length": 2
+                },
+                "confidence": 0.999,
+                "source": "D(1,1280,1362,1308,1363,1308,1388,1280,1388)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 1282,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1308,1363,1331,1364,1331,1389,1308,1388)"
+              },
+              {
+                "content": "198,00",
+                "span": {
+                  "offset": 1293,
+                  "length": 6
+                },
+                "confidence": 0.994,
+                "source": "D(1,1421,1363,1500,1362,1500,1390,1421,1390)"
+              },
+              {
+                "content": "6",
+                "span": {
+                  "offset": 1320,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,169,1452,183,1450,183,1473,169,1475)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 1321,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,184,1450,191,1451,191,1474,184,1473)"
+              },
+              {
+                "content": "Jordan",
+                "span": {
+                  "offset": 1332,
+                  "length": 6
+                },
+                "confidence": 0.995,
+                "source": "D(1,235,1449,308,1450,308,1477,235,1477)"
+              },
+              {
+                "content": "Hydro",
+                "span": {
+                  "offset": 1339,
+                  "length": 5
+                },
+                "confidence": 0.981,
+                "source": "D(1,318,1450,384,1450,384,1477,318,1477)"
+              },
+              {
+                "content": "2",
+                "span": {
+                  "offset": 1345,
+                  "length": 1
+                },
+                "confidence": 0.978,
+                "source": "D(1,392,1450,404,1450,404,1477,392,1477)"
+              },
+              {
+                "content": "(",
+                "span": {
+                  "offset": 1347,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,412,1450,420,1450,420,1477,412,1477)"
+              },
+              {
+                "content": "TD",
+                "span": {
+                  "offset": 1348,
+                  "length": 2
+                },
+                "confidence": 0.998,
+                "source": "D(1,421,1450,450,1450,450,1477,421,1477)"
+              },
+              {
+                "content": ")",
+                "span": {
+                  "offset": 1350,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,452,1450,459,1450,459,1477,452,1477)"
+              },
+              {
+                "content": "-",
+                "span": {
+                  "offset": 1351,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,460,1450,467,1450,467,1477,460,1477)"
+              },
+              {
+                "content": "Child",
+                "span": {
+                  "offset": 1352,
+                  "length": 5
+                },
+                "confidence": 0.994,
+                "source": "D(1,468,1450,523,1449,523,1477,468,1477)"
+              },
+              {
+                "content": "Size",
+                "span": {
+                  "offset": 1358,
+                  "length": 4
+                },
+                "confidence": 0.995,
+                "source": "D(1,532,1449,580,1449,580,1476,532,1477)"
+              },
+              {
+                "content": "10c",
+                "span": {
+                  "offset": 1363,
+                  "length": 3
+                },
+                "confidence": 0.959,
+                "source": "D(1,239,1480,282,1479,282,1504,239,1503)"
+              },
+              {
+                "content": "1,00",
+                "span": {
+                  "offset": 1376,
+                  "length": 4
+                },
+                "confidence": 0.994,
+                "source": "D(1,674,1451,724,1452,724,1477,674,1476)"
+              },
+              {
+                "content": "each",
+                "span": {
+                  "offset": 1390,
+                  "length": 4
+                },
+                "confidence": 0.998,
+                "source": "D(1,770,1451,827,1452,827,1476,770,1475)"
+              },
+              {
+                "content": "5,75",
+                "span": {
+                  "offset": 1404,
+                  "length": 4
+                },
+                "confidence": 0.898,
+                "source": "D(1,964,1451,1016,1452,1016,1477,964,1477)"
+              },
+              {
+                "content": "5,75",
+                "span": {
+                  "offset": 1418,
+                  "length": 4
+                },
+                "confidence": 0.942,
+                "source": "D(1,1134,1450,1186,1451,1186,1477,1134,1476)"
+              },
+              {
+                "content": "10",
+                "span": {
+                  "offset": 1432,
+                  "length": 2
+                },
+                "confidence": 0.999,
+                "source": "D(1,1281,1452,1308,1449,1308,1474,1281,1477)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 1434,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1308,1449,1331,1451,1331,1476,1308,1474)"
+              },
+              {
+                "content": "6,33",
+                "span": {
+                  "offset": 1445,
+                  "length": 4
+                },
+                "confidence": 0.991,
+                "source": "D(1,1448,1450,1501,1450,1501,1476,1448,1475)"
+              },
+              {
+                "content": "SUMMARY",
+                "span": {
+                  "offset": 1474,
+                  "length": 7
+                },
+                "confidence": 0.991,
+                "source": "D(1,132,1569,327,1569,327,1603,132,1603)"
+              },
+              {
+                "content": "VAT",
+                "span": {
+                  "offset": 1501,
+                  "length": 3
+                },
+                "confidence": 0.988,
+                "source": "D(1,640,1654,692,1654,692,1681,640,1682)"
+              },
+              {
+                "content": "[",
+                "span": {
+                  "offset": 1505,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,699,1654,708,1654,708,1682,699,1681)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 1506,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,708,1654,731,1655,731,1682,708,1682)"
+              },
+              {
+                "content": "]",
+                "span": {
+                  "offset": 1507,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,731,1655,744,1655,744,1683,731,1682)"
+              },
+              {
+                "content": "Net",
+                "span": {
+                  "offset": 1518,
+                  "length": 3
+                },
+                "confidence": 0.998,
+                "source": "D(1,927,1655,973,1655,973,1680,927,1680)"
+              },
+              {
+                "content": "worth",
+                "span": {
+                  "offset": 1522,
+                  "length": 5
+                },
+                "confidence": 0.996,
+                "source": "D(1,980,1655,1055,1655,1055,1680,980,1680)"
+              },
+              {
+                "content": "VAT",
+                "span": {
+                  "offset": 1537,
+                  "length": 3
+                },
+                "confidence": 0.95,
+                "source": "D(1,1188,1655,1242,1655,1242,1680,1188,1680)"
+              },
+              {
+                "content": "Gross",
+                "span": {
+                  "offset": 1550,
+                  "length": 5
+                },
+                "confidence": 0.998,
+                "source": "D(1,1350,1655,1421,1655,1421,1680,1350,1680)"
+              },
+              {
+                "content": "worth",
+                "span": {
+                  "offset": 1556,
+                  "length": 5
+                },
+                "confidence": 0.998,
+                "source": "D(1,1429,1655,1504,1655,1504,1680,1429,1680)"
+              },
+              {
+                "content": "10",
+                "span": {
+                  "offset": 1582,
+                  "length": 2
+                },
+                "confidence": 0.999,
+                "source": "D(1,667,1715,695,1716,695,1741,667,1740)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 1584,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,695,1716,718,1715,718,1740,695,1741)"
+              },
+              {
+                "content": "471,64",
+                "span": {
+                  "offset": 1595,
+                  "length": 6
+                },
+                "confidence": 0.993,
+                "source": "D(1,976,1713,1056,1714,1056,1740,976,1739)"
+              },
+              {
+                "content": "47,16",
+                "span": {
+                  "offset": 1611,
+                  "length": 5
+                },
+                "confidence": 0.977,
+                "source": "D(1,1174,1714,1241,1716,1241,1741,1174,1739)"
+              },
+              {
+                "content": "518,80",
+                "span": {
+                  "offset": 1626,
+                  "length": 6
+                },
+                "confidence": 0.993,
+                "source": "D(1,1424,1716,1504,1717,1504,1742,1424,1742)"
+              },
+              {
+                "content": "Total",
+                "span": {
+                  "offset": 1653,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,500,1774,569,1774,569,1799,500,1799)"
+              },
+              {
+                "content": "$",
+                "span": {
+                  "offset": 1668,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,942,1775,958,1775,958,1800,942,1800)"
+              },
+              {
+                "content": "471,64",
+                "span": {
+                  "offset": 1670,
+                  "length": 6
+                },
+                "confidence": 0.969,
+                "source": "D(1,966,1775,1056,1775,1056,1800,966,1800)"
+              },
+              {
+                "content": "$",
+                "span": {
+                  "offset": 1686,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1144,1775,1158,1775,1158,1800,1144,1800)"
+              },
+              {
+                "content": "47,16",
+                "span": {
+                  "offset": 1688,
+                  "length": 5
+                },
+                "confidence": 0.974,
+                "source": "D(1,1166,1775,1240,1775,1240,1800,1166,1800)"
+              },
+              {
+                "content": "$",
+                "span": {
+                  "offset": 1703,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1392,1775,1406,1775,1406,1800,1392,1800)"
+              },
+              {
+                "content": "518,80",
+                "span": {
+                  "offset": 1705,
+                  "length": 6
+                },
+                "confidence": 0.98,
+                "source": "D(1,1415,1775,1505,1775,1505,1800,1415,1800)"
+              }
+            ],
+            "lines": [
+              {
+                "content": "Invoice no: 36187296",
+                "source": "D(1,131,72,538,71,538,107,131,108)",
+                "span": {
+                  "offset": 0,
+                  "length": 20
+                }
+              },
+              {
+                "content": "Date of issue:",
+                "source": "D(1,131,141,345,141,345,174,131,173)",
+                "span": {
+                  "offset": 22,
+                  "length": 14
+                }
+              },
+              {
+                "content": "01/05/2017",
+                "source": "D(1,800,140,978,140,978,174,800,175)",
+                "span": {
+                  "offset": 38,
+                  "length": 10
+                }
+              },
+              {
+                "content": "Seller:",
+                "source": "D(1,131,443,255,443,255,476,131,476)",
+                "span": {
+                  "offset": 50,
+                  "length": 7
+                }
+              },
+              {
+                "content": "Lopez, Murray and Johnston",
+                "source": "D(1,140,506,531,506,531,539,140,540)",
+                "span": {
+                  "offset": 58,
+                  "length": 26
+                }
+              },
+              {
+                "content": "62820 White Glen",
+                "source": "D(1,140,542,393,542,393,573,140,573)",
+                "span": {
+                  "offset": 85,
+                  "length": 16
+                }
+              },
+              {
+                "content": "Emilyshire, IN 44602",
+                "source": "D(1,140,578,430,577,431,611,140,611)",
+                "span": {
+                  "offset": 102,
+                  "length": 20
+                }
+              },
+              {
+                "content": "Tax Id: 951-73-0229",
+                "source": "D(1,138,648,424,648,424,679,138,679)",
+                "span": {
+                  "offset": 124,
+                  "length": 19
+                }
+              },
+              {
+                "content": "IBAN: GB48OUAZ93098629612648",
+                "source": "D(1,139,683,632,682,632,714,139,714)",
+                "span": {
+                  "offset": 145,
+                  "length": 28
+                }
+              },
+              {
+                "content": "Client:",
+                "source": "D(1,824,442,949,442,949,477,824,477)",
+                "span": {
+                  "offset": 175,
+                  "length": 7
+                }
+              },
+              {
+                "content": "White Ltd",
+                "source": "D(1,833,506,969,506,969,535,833,536)",
+                "span": {
+                  "offset": 183,
+                  "length": 9
+                }
+              },
+              {
+                "content": "58435 Kline Wall",
+                "source": "D(1,833,542,1070,542,1070,572,833,572)",
+                "span": {
+                  "offset": 193,
+                  "length": 16
+                }
+              },
+              {
+                "content": "Port Stacey, NM 41817",
+                "source": "D(1,833,578,1153,577,1153,610,833,611)",
+                "span": {
+                  "offset": 210,
+                  "length": 21
+                }
+              },
+              {
+                "content": "Tax Id: 966-84-8472",
+                "source": "D(1,830,648,1117,648,1117,679,830,680)",
+                "span": {
+                  "offset": 233,
+                  "length": 19
+                }
+              },
+              {
+                "content": "ITEMS",
+                "source": "D(1,131,759,248,759,248,792,131,792)",
+                "span": {
+                  "offset": 257,
+                  "length": 5
+                }
+              },
+              {
+                "content": "No.",
+                "source": "D(1,158,848,202,846,202,869,158,870)",
+                "span": {
+                  "offset": 282,
+                  "length": 3
+                }
+              },
+              {
+                "content": "Description",
+                "source": "D(1,237,845,385,846,385,873,237,872)",
+                "span": {
+                  "offset": 295,
+                  "length": 11
+                }
+              },
+              {
+                "content": "Qty",
+                "source": "D(1,677,845,726,848,725,875,677,871)",
+                "span": {
+                  "offset": 316,
+                  "length": 3
+                }
+              },
+              {
+                "content": "UM",
+                "source": "D(1,776,845,820,845,820,870,776,870)",
+                "span": {
+                  "offset": 329,
+                  "length": 2
+                }
+              },
+              {
+                "content": "Net price",
+                "source": "D(1,898,844,1018,845,1018,872,898,872)",
+                "span": {
+                  "offset": 341,
+                  "length": 9
+                }
+              },
+              {
+                "content": "Net worth",
+                "source": "D(1,1057,844,1186,846,1186,872,1057,870)",
+                "span": {
+                  "offset": 360,
+                  "length": 9
+                }
+              },
+              {
+                "content": "VAT [%]",
+                "source": "D(1,1227,844,1332,845,1332,873,1226,872)",
+                "span": {
+                  "offset": 379,
+                  "length": 7
+                }
+              },
+              {
+                "content": "Gross",
+                "source": "D(1,1428,847,1502,847,1501,871,1428,870)",
+                "span": {
+                  "offset": 396,
+                  "length": 5
+                }
+              },
+              {
+                "content": "worth",
+                "source": "D(1,1425,874,1501,874,1501,897,1425,897)",
+                "span": {
+                  "offset": 402,
+                  "length": 5
+                }
+              },
+              {
+                "content": "1.",
+                "source": "D(1,169,934,192,934,192,957,169,957)",
+                "span": {
+                  "offset": 428,
+                  "length": 2
+                }
+              },
+              {
+                "content": "Nike Kids KD Trey 5 / Nike Black",
+                "source": "D(1,237,931,600,932,600,960,237,959)",
+                "span": {
+                  "offset": 440,
+                  "length": 32
+                }
+              },
+              {
+                "content": "Size 4.5aY",
+                "source": "D(1,238,960,357,960,357,986,238,985)",
+                "span": {
+                  "offset": 473,
+                  "length": 10
+                }
+              },
+              {
+                "content": "5,00",
+                "source": "D(1,672,933,725,933,725,958,672,958)",
+                "span": {
+                  "offset": 493,
+                  "length": 4
+                }
+              },
+              {
+                "content": "each",
+                "source": "D(1,769,934,827,934,827,958,769,958)",
+                "span": {
+                  "offset": 507,
+                  "length": 4
+                }
+              },
+              {
+                "content": "22,00",
+                "source": "D(1,950,933,1016,933,1016,959,950,959)",
+                "span": {
+                  "offset": 521,
+                  "length": 5
+                }
+              },
+              {
+                "content": "110,00",
+                "source": "D(1,1106,933,1186,933,1186,959,1106,959)",
+                "span": {
+                  "offset": 536,
+                  "length": 6
+                }
+              },
+              {
+                "content": "10%",
+                "source": "D(1,1280,932,1332,933,1332,958,1280,958)",
+                "span": {
+                  "offset": 552,
+                  "length": 3
+                }
+              },
+              {
+                "content": "121,00",
+                "source": "D(1,1421,933,1500,933,1500,958,1421,958)",
+                "span": {
+                  "offset": 565,
+                  "length": 6
+                }
+              },
+              {
+                "content": "2.",
+                "source": "D(1,169,1020,192,1020,192,1043,169,1043)",
+                "span": {
+                  "offset": 592,
+                  "length": 2
+                }
+              },
+              {
+                "content": "Lego Star Wars Minifigures",
+                "source": "D(1,237,1019,540,1018,540,1046,237,1048)",
+                "span": {
+                  "offset": 604,
+                  "length": 26
+                }
+              },
+              {
+                "content": "Stormtrooper Darth Vader Yoda",
+                "source": "D(1,238,1046,594,1046,594,1073,238,1074)",
+                "span": {
+                  "offset": 634,
+                  "length": 29
+                }
+              },
+              {
+                "content": "Obi Van Mandalorian New",
+                "source": "D(1,239,1074,529,1074,529,1101,239,1100)",
+                "span": {
+                  "offset": 664,
+                  "length": 23
+                }
+              },
+              {
+                "content": "1,00",
+                "source": "D(1,673,1019,724,1019,725,1045,674,1045)",
+                "span": {
+                  "offset": 697,
+                  "length": 4
+                }
+              },
+              {
+                "content": "each",
+                "source": "D(1,770,1020,827,1020,827,1043,770,1044)",
+                "span": {
+                  "offset": 711,
+                  "length": 4
+                }
+              },
+              {
+                "content": "2,98",
+                "source": "D(1,963,1019,1016,1019,1016,1045,963,1045)",
+                "span": {
+                  "offset": 725,
+                  "length": 4
+                }
+              },
+              {
+                "content": "2,98",
+                "source": "D(1,1133,1019,1186,1018,1186,1045,1133,1045)",
+                "span": {
+                  "offset": 739,
+                  "length": 4
+                }
+              },
+              {
+                "content": "10%",
+                "source": "D(1,1281,1019,1331,1019,1331,1044,1281,1044)",
+                "span": {
+                  "offset": 753,
+                  "length": 3
+                }
+              },
+              {
+                "content": "3,28",
+                "source": "D(1,1448,1019,1501,1019,1501,1045,1448,1045)",
+                "span": {
+                  "offset": 766,
+                  "length": 4
+                }
+              },
+              {
+                "content": "3.",
+                "source": "D(1,169,1135,192,1135,192,1158,169,1158)",
+                "span": {
+                  "offset": 791,
+                  "length": 2
+                }
+              },
+              {
+                "content": "Nike Air Jordan 1 Mid Obsidian",
+                "source": "D(1,237,1133,579,1133,579,1160,237,1160)",
+                "span": {
+                  "offset": 803,
+                  "length": 30
+                }
+              },
+              {
+                "content": "640735-174 Toddler Kids",
+                "source": "D(1,238,1160,522,1159,522,1186,238,1187)",
+                "span": {
+                  "offset": 834,
+                  "length": 23
+                }
+              },
+              {
+                "content": "Children Size 8C Blue",
+                "source": "D(1,238,1189,480,1188,480,1215,239,1216)",
+                "span": {
+                  "offset": 858,
+                  "length": 21
+                }
+              },
+              {
+                "content": "5,00",
+                "source": "D(1,672,1134,725,1134,725,1160,672,1159)",
+                "span": {
+                  "offset": 889,
+                  "length": 4
+                }
+              },
+              {
+                "content": "each",
+                "source": "D(1,769,1135,827,1135,827,1159,769,1159)",
+                "span": {
+                  "offset": 903,
+                  "length": 4
+                }
+              },
+              {
+                "content": "24,99",
+                "source": "D(1,950,1134,1016,1134,1016,1159,950,1159)",
+                "span": {
+                  "offset": 917,
+                  "length": 5
+                }
+              },
+              {
+                "content": "124,95",
+                "source": "D(1,1106,1133,1184,1133,1184,1159,1106,1159)",
+                "span": {
+                  "offset": 932,
+                  "length": 6
+                }
+              },
+              {
+                "content": "10%",
+                "source": "D(1,1281,1134,1332,1134,1332,1159,1281,1159)",
+                "span": {
+                  "offset": 948,
+                  "length": 3
+                }
+              },
+              {
+                "content": "137,44",
+                "source": "D(1,1421,1134,1501,1134,1501,1159,1421,1159)",
+                "span": {
+                  "offset": 961,
+                  "length": 6
+                }
+              },
+              {
+                "content": "4.",
+                "source": "D(1,169,1249,191,1249,191,1272,169,1272)",
+                "span": {
+                  "offset": 988,
+                  "length": 2
+                }
+              },
+              {
+                "content": "Oomphies Boys Ankle Boots",
+                "source": "D(1,238,1248,553,1247,553,1275,238,1276)",
+                "span": {
+                  "offset": 1000,
+                  "length": 25
+                }
+              },
+              {
+                "content": "Shoes Gray Green Kids Size 2",
+                "source": "D(1,237,1276,571,1276,571,1303,237,1303)",
+                "span": {
+                  "offset": 1026,
+                  "length": 28
+                }
+              },
+              {
+                "content": "EUC",
+                "source": "D(1,238,1304,287,1304,287,1330,238,1330)",
+                "span": {
+                  "offset": 1055,
+                  "length": 3
+                }
+              },
+              {
+                "content": "4,00",
+                "source": "D(1,672,1248,725,1248,725,1275,672,1275)",
+                "span": {
+                  "offset": 1068,
+                  "length": 4
+                }
+              },
+              {
+                "content": "each",
+                "source": "D(1,770,1249,826,1249,826,1274,770,1274)",
+                "span": {
+                  "offset": 1082,
+                  "length": 4
+                }
+              },
+              {
+                "content": "11,99",
+                "source": "D(1,951,1248,1016,1248,1016,1276,951,1276)",
+                "span": {
+                  "offset": 1096,
+                  "length": 5
+                }
+              },
+              {
+                "content": "47,96",
+                "source": "D(1,1119,1248,1185,1249,1185,1275,1118,1274)",
+                "span": {
+                  "offset": 1111,
+                  "length": 5
+                }
+              },
+              {
+                "content": "10%",
+                "source": "D(1,1281,1246,1331,1248,1331,1274,1280,1273)",
+                "span": {
+                  "offset": 1126,
+                  "length": 3
+                }
+              },
+              {
+                "content": "52,76",
+                "source": "D(1,1434,1248,1501,1248,1501,1275,1434,1275)",
+                "span": {
+                  "offset": 1139,
+                  "length": 5
+                }
+              },
+              {
+                "content": "5.",
+                "source": "D(1,169,1364,192,1364,192,1388,169,1388)",
+                "span": {
+                  "offset": 1165,
+                  "length": 2
+                }
+              },
+              {
+                "content": "Jordan 10 Retro Fusion Red Size",
+                "source": "D(1,234,1363,598,1363,598,1390,234,1390)",
+                "span": {
+                  "offset": 1177,
+                  "length": 31
+                }
+              },
+              {
+                "content": "6Y",
+                "source": "D(1,238,1392,270,1393,270,1416,238,1415)",
+                "span": {
+                  "offset": 1209,
+                  "length": 2
+                }
+              },
+              {
+                "content": "3,00",
+                "source": "D(1,672,1364,724,1364,724,1389,672,1389)",
+                "span": {
+                  "offset": 1221,
+                  "length": 4
+                }
+              },
+              {
+                "content": "each",
+                "source": "D(1,769,1364,826,1364,826,1388,769,1388)",
+                "span": {
+                  "offset": 1235,
+                  "length": 4
+                }
+              },
+              {
+                "content": "60,00",
+                "source": "D(1,950,1364,1016,1364,1016,1389,950,1389)",
+                "span": {
+                  "offset": 1249,
+                  "length": 5
+                }
+              },
+              {
+                "content": "180,00",
+                "source": "D(1,1106,1362,1185,1362,1185,1390,1106,1390)",
+                "span": {
+                  "offset": 1264,
+                  "length": 6
+                }
+              },
+              {
+                "content": "10%",
+                "source": "D(1,1280,1362,1331,1364,1331,1389,1280,1388)",
+                "span": {
+                  "offset": 1280,
+                  "length": 3
+                }
+              },
+              {
+                "content": "198,00",
+                "source": "D(1,1421,1362,1500,1362,1500,1390,1421,1390)",
+                "span": {
+                  "offset": 1293,
+                  "length": 6
+                }
+              },
+              {
+                "content": "6.",
+                "source": "D(1,169,1450,191,1450,191,1475,169,1475)",
+                "span": {
+                  "offset": 1320,
+                  "length": 2
+                }
+              },
+              {
+                "content": "Jordan Hydro 2 (TD)-Child Size",
+                "source": "D(1,235,1449,580,1449,580,1477,235,1477)",
+                "span": {
+                  "offset": 1332,
+                  "length": 30
+                }
+              },
+              {
+                "content": "10c",
+                "source": "D(1,239,1478,283,1479,282,1504,238,1503)",
+                "span": {
+                  "offset": 1363,
+                  "length": 3
+                }
+              },
+              {
+                "content": "1,00",
+                "source": "D(1,674,1450,725,1451,724,1477,673,1476)",
+                "span": {
+                  "offset": 1376,
+                  "length": 4
+                }
+              },
+              {
+                "content": "each",
+                "source": "D(1,770,1450,827,1451,827,1476,769,1475)",
+                "span": {
+                  "offset": 1390,
+                  "length": 4
+                }
+              },
+              {
+                "content": "5,75",
+                "source": "D(1,964,1450,1016,1450,1016,1477,964,1477)",
+                "span": {
+                  "offset": 1404,
+                  "length": 4
+                }
+              },
+              {
+                "content": "5,75",
+                "source": "D(1,1134,1450,1186,1451,1186,1477,1133,1476)",
+                "span": {
+                  "offset": 1418,
+                  "length": 4
+                }
+              },
+              {
+                "content": "10%",
+                "source": "D(1,1281,1450,1331,1449,1331,1476,1281,1477)",
+                "span": {
+                  "offset": 1432,
+                  "length": 3
+                }
+              },
+              {
+                "content": "6,33",
+                "source": "D(1,1448,1450,1501,1450,1501,1476,1448,1476)",
+                "span": {
+                  "offset": 1445,
+                  "length": 4
+                }
+              },
+              {
+                "content": "SUMMARY",
+                "source": "D(1,132,1569,327,1569,327,1603,132,1603)",
+                "span": {
+                  "offset": 1474,
+                  "length": 7
+                }
+              },
+              {
+                "content": "VAT [%]",
+                "source": "D(1,640,1653,744,1654,744,1683,639,1682)",
+                "span": {
+                  "offset": 1501,
+                  "length": 7
+                }
+              },
+              {
+                "content": "Net worth",
+                "source": "D(1,927,1655,1055,1655,1055,1680,927,1680)",
+                "span": {
+                  "offset": 1518,
+                  "length": 9
+                }
+              },
+              {
+                "content": "VAT",
+                "source": "D(1,1188,1654,1242,1655,1242,1680,1188,1680)",
+                "span": {
+                  "offset": 1537,
+                  "length": 3
+                }
+              },
+              {
+                "content": "Gross worth",
+                "source": "D(1,1350,1655,1504,1655,1504,1680,1350,1680)",
+                "span": {
+                  "offset": 1550,
+                  "length": 11
+                }
+              },
+              {
+                "content": "10%",
+                "source": "D(1,667,1715,719,1715,718,1741,667,1741)",
+                "span": {
+                  "offset": 1582,
+                  "length": 3
+                }
+              },
+              {
+                "content": "471,64",
+                "source": "D(1,976,1713,1057,1714,1056,1742,975,1741)",
+                "span": {
+                  "offset": 1595,
+                  "length": 6
+                }
+              },
+              {
+                "content": "47,16",
+                "source": "D(1,1174,1714,1242,1716,1241,1742,1174,1740)",
+                "span": {
+                  "offset": 1611,
+                  "length": 5
+                }
+              },
+              {
+                "content": "518,80",
+                "source": "D(1,1424,1716,1504,1716,1504,1742,1424,1742)",
+                "span": {
+                  "offset": 1626,
+                  "length": 6
+                }
+              },
+              {
+                "content": "Total",
+                "source": "D(1,500,1774,569,1774,569,1799,500,1799)",
+                "span": {
+                  "offset": 1653,
+                  "length": 5
+                }
+              },
+              {
+                "content": "$ 471,64",
+                "source": "D(1,942,1775,1056,1775,1056,1800,942,1800)",
+                "span": {
+                  "offset": 1668,
+                  "length": 8
+                }
+              },
+              {
+                "content": "$ 47,16",
+                "source": "D(1,1144,1775,1240,1775,1240,1800,1144,1800)",
+                "span": {
+                  "offset": 1686,
+                  "length": 7
+                }
+              },
+              {
+                "content": "$ 518,80",
+                "source": "D(1,1392,1775,1505,1775,1505,1800,1392,1800)",
+                "span": {
+                  "offset": 1703,
+                  "length": 8
+                }
+              }
+            ]
+          }
+        ],
+        "paragraphs": [
+          {
+            "content": "Invoice no: 36187296",
+            "source": "D(1,131,72,538,71,538,107,131,108)",
+            "span": {
+              "offset": 0,
+              "length": 20
+            }
+          },
+          {
+            "content": "Date of issue:",
+            "source": "D(1,131,141,345,141,345,174,131,173)",
+            "span": {
+              "offset": 22,
+              "length": 14
+            }
+          },
+          {
+            "content": "01/05/2017",
+            "source": "D(1,800,140,978,140,978,174,800,175)",
+            "span": {
+              "offset": 38,
+              "length": 10
+            }
+          },
+          {
+            "content": "Seller: Lopez, Murray and Johnston 62820 White Glen Emilyshire, IN 44602",
+            "source": "D(1,131,443,531,442,531,610,131,611)",
+            "span": {
+              "offset": 50,
+              "length": 72
+            }
+          },
+          {
+            "content": "Tax Id: 951-73-0229",
+            "source": "D(1,138,648,424,648,424,679,138,679)",
+            "span": {
+              "offset": 124,
+              "length": 19
+            }
+          },
+          {
+            "content": "IBAN: GB48OUAZ93098629612648",
+            "source": "D(1,139,683,632,682,632,714,139,714)",
+            "span": {
+              "offset": 145,
+              "length": 28
+            }
+          },
+          {
+            "content": "Client: White Ltd 58435 Kline Wall Port Stacey, NM 41817",
+            "source": "D(1,824,442,1153,441,1153,610,825,611)",
+            "span": {
+              "offset": 175,
+              "length": 56
+            }
+          },
+          {
+            "content": "Tax Id: 966-84-8472",
+            "source": "D(1,830,648,1117,648,1117,679,830,680)",
+            "span": {
+              "offset": 233,
+              "length": 19
+            }
+          },
+          {
+            "role": "sectionHeading",
+            "content": "ITEMS",
+            "source": "D(1,131,759,248,759,248,792,131,792)",
+            "span": {
+              "offset": 255,
+              "length": 7
+            }
+          },
+          {
+            "content": "No.",
+            "source": "D(1,158,848,202,846,202,869,158,870)",
+            "span": {
+              "offset": 282,
+              "length": 3
+            }
+          },
+          {
+            "content": "Description",
+            "source": "D(1,237,846,385,847,385,873,237,872)",
+            "span": {
+              "offset": 295,
+              "length": 11
+            }
+          },
+          {
+            "content": "Qty",
+            "source": "D(1,677,845,727,848,725,875,676,871)",
+            "span": {
+              "offset": 316,
+              "length": 3
+            }
+          },
+          {
+            "content": "UM",
+            "source": "D(1,776,846,820,846,820,870,776,870)",
+            "span": {
+              "offset": 329,
+              "length": 2
+            }
+          },
+          {
+            "content": "Net price",
+            "source": "D(1,898,842,1018,845,1018,874,897,871)",
+            "span": {
+              "offset": 341,
+              "length": 9
+            }
+          },
+          {
+            "content": "Net worth",
+            "source": "D(1,1057,842,1186,846,1186,873,1056,869)",
+            "span": {
+              "offset": 360,
+              "length": 9
+            }
+          },
+          {
+            "content": "VAT [%]",
+            "source": "D(1,1227,844,1332,845,1332,873,1226,872)",
+            "span": {
+              "offset": 379,
+              "length": 7
+            }
+          },
+          {
+            "content": "Gross worth",
+            "source": "D(1,1425,848,1502,848,1501,897,1424,897)",
+            "span": {
+              "offset": 396,
+              "length": 11
+            }
+          },
+          {
+            "content": "1.",
+            "source": "D(1,169,933,192,934,192,957,169,957)",
+            "span": {
+              "offset": 428,
+              "length": 2
+            }
+          },
+          {
+            "content": "Nike Kids KD Trey 5 / Nike Black Size 4.5aY",
+            "source": "D(1,237,930,600,932,600,987,237,985)",
+            "span": {
+              "offset": 440,
+              "length": 43
+            }
+          },
+          {
+            "content": "5,00",
+            "source": "D(1,672,933,725,933,725,958,672,958)",
+            "span": {
+              "offset": 493,
+              "length": 4
+            }
+          },
+          {
+            "content": "each",
+            "source": "D(1,769,934,827,933,827,958,769,958)",
+            "span": {
+              "offset": 507,
+              "length": 4
+            }
+          },
+          {
+            "content": "22,00",
+            "source": "D(1,950,933,1016,933,1016,959,950,959)",
+            "span": {
+              "offset": 521,
+              "length": 5
+            }
+          },
+          {
+            "content": "110,00",
+            "source": "D(1,1106,932,1186,933,1186,959,1106,959)",
+            "span": {
+              "offset": 536,
+              "length": 6
+            }
+          },
+          {
+            "content": "10%",
+            "source": "D(1,1280,932,1332,933,1332,959,1279,958)",
+            "span": {
+              "offset": 552,
+              "length": 3
+            }
+          },
+          {
+            "content": "121,00",
+            "source": "D(1,1421,933,1500,933,1500,958,1421,958)",
+            "span": {
+              "offset": 565,
+              "length": 6
+            }
+          },
+          {
+            "content": "2.",
+            "source": "D(1,169,1020,192,1020,192,1043,169,1043)",
+            "span": {
+              "offset": 592,
+              "length": 2
+            }
+          },
+          {
+            "content": "Lego Star Wars Minifigures",
+            "source": "D(1,237,1019,540,1018,540,1047,237,1048)",
+            "span": {
+              "offset": 604,
+              "length": 26
+            }
+          },
+          {
+            "content": "Stormtrooper Darth Vader Yoda Obi Van Mandalorian New",
+            "source": "D(1,238,1046,594,1046,594,1100,238,1100)",
+            "span": {
+              "offset": 634,
+              "length": 53
+            }
+          },
+          {
+            "content": "1,00",
+            "source": "D(1,673,1019,724,1019,725,1044,674,1045)",
+            "span": {
+              "offset": 697,
+              "length": 4
+            }
+          },
+          {
+            "content": "each",
+            "source": "D(1,770,1020,827,1020,827,1043,770,1043)",
+            "span": {
+              "offset": 711,
+              "length": 4
+            }
+          },
+          {
+            "content": "2,98",
+            "source": "D(1,963,1019,1016,1019,1016,1045,963,1045)",
+            "span": {
+              "offset": 725,
+              "length": 4
+            }
+          },
+          {
+            "content": "2,98",
+            "source": "D(1,1133,1019,1186,1018,1186,1045,1133,1045)",
+            "span": {
+              "offset": 739,
+              "length": 4
+            }
+          },
+          {
+            "content": "10%",
+            "source": "D(1,1281,1019,1331,1019,1331,1045,1280,1044)",
+            "span": {
+              "offset": 753,
+              "length": 3
+            }
+          },
+          {
+            "content": "3,28",
+            "source": "D(1,1448,1019,1501,1019,1501,1045,1448,1045)",
+            "span": {
+              "offset": 766,
+              "length": 4
+            }
+          },
+          {
+            "content": "3.",
+            "source": "D(1,169,1135,192,1135,192,1158,169,1158)",
+            "span": {
+              "offset": 791,
+              "length": 2
+            }
+          },
+          {
+            "content": "Nike Air Jordan 1 Mid Obsidian 640735-174 Toddler Kids Children Size 8C Blue",
+            "source": "D(1,237,1133,579,1133,579,1216,237,1216)",
+            "span": {
+              "offset": 803,
+              "length": 76
+            }
+          },
+          {
+            "content": "5,00",
+            "source": "D(1,672,1134,725,1134,725,1159,672,1159)",
+            "span": {
+              "offset": 889,
+              "length": 4
+            }
+          },
+          {
+            "content": "each",
+            "source": "D(1,769,1135,827,1135,827,1158,769,1158)",
+            "span": {
+              "offset": 903,
+              "length": 4
+            }
+          },
+          {
+            "content": "24,99",
+            "source": "D(1,950,1134,1016,1134,1016,1159,950,1159)",
+            "span": {
+              "offset": 917,
+              "length": 5
+            }
+          },
+          {
+            "content": "124,95",
+            "source": "D(1,1106,1133,1184,1133,1184,1159,1106,1159)",
+            "span": {
+              "offset": 932,
+              "length": 6
+            }
+          },
+          {
+            "content": "10%",
+            "source": "D(1,1281,1133,1332,1134,1332,1160,1281,1159)",
+            "span": {
+              "offset": 948,
+              "length": 3
+            }
+          },
+          {
+            "content": "137,44",
+            "source": "D(1,1421,1134,1501,1134,1501,1159,1421,1159)",
+            "span": {
+              "offset": 961,
+              "length": 6
+            }
+          },
+          {
+            "content": "4.",
+            "source": "D(1,169,1249,191,1249,191,1272,169,1272)",
+            "span": {
+              "offset": 988,
+              "length": 2
+            }
+          },
+          {
+            "content": "Oomphies Boys Ankle Boots Shoes Gray Green Kids Size 2 EUC",
+            "source": "D(1,237,1247,571,1247,571,1330,237,1330)",
+            "span": {
+              "offset": 1000,
+              "length": 58
+            }
+          },
+          {
+            "content": "4,00",
+            "source": "D(1,672,1250,725,1250,725,1275,672,1275)",
+            "span": {
+              "offset": 1068,
+              "length": 4
+            }
+          },
+          {
+            "content": "each",
+            "source": "D(1,770,1250,826,1250,826,1274,770,1274)",
+            "span": {
+              "offset": 1082,
+              "length": 4
+            }
+          },
+          {
+            "content": "11,99",
+            "source": "D(1,951,1248,1016,1248,1016,1276,951,1275)",
+            "span": {
+              "offset": 1096,
+              "length": 5
+            }
+          },
+          {
+            "content": "47,96",
+            "source": "D(1,1119,1248,1185,1250,1185,1275,1118,1274)",
+            "span": {
+              "offset": 1111,
+              "length": 5
+            }
+          },
+          {
+            "content": "10%",
+            "source": "D(1,1281,1244,1333,1248,1331,1275,1279,1271)",
+            "span": {
+              "offset": 1126,
+              "length": 3
+            }
+          },
+          {
+            "content": "52,76",
+            "source": "D(1,1434,1250,1501,1250,1501,1275,1434,1275)",
+            "span": {
+              "offset": 1139,
+              "length": 5
+            }
+          },
+          {
+            "content": "5.",
+            "source": "D(1,170,1361,196,1366,191,1392,165,1387)",
+            "span": {
+              "offset": 1165,
+              "length": 2
+            }
+          },
+          {
+            "content": "Jordan 10 Retro Fusion Red Size 6Y",
+            "source": "D(1,234,1363,598,1363,598,1416,234,1416)",
+            "span": {
+              "offset": 1177,
+              "length": 34
+            }
+          },
+          {
+            "content": "3,00",
+            "source": "D(1,672,1364,724,1364,724,1389,672,1389)",
+            "span": {
+              "offset": 1221,
+              "length": 4
+            }
+          },
+          {
+            "content": "each",
+            "source": "D(1,769,1364,826,1364,826,1388,769,1388)",
+            "span": {
+              "offset": 1235,
+              "length": 4
+            }
+          },
+          {
+            "content": "60,00",
+            "source": "D(1,950,1364,1016,1364,1016,1389,950,1389)",
+            "span": {
+              "offset": 1249,
+              "length": 5
+            }
+          },
+          {
+            "content": "180,00",
+            "source": "D(1,1106,1362,1185,1362,1185,1390,1106,1390)",
+            "span": {
+              "offset": 1264,
+              "length": 6
+            }
+          },
+          {
+            "content": "10%",
+            "source": "D(1,1280,1362,1332,1364,1331,1389,1279,1388)",
+            "span": {
+              "offset": 1280,
+              "length": 3
+            }
+          },
+          {
+            "content": "198,00",
+            "source": "D(1,1421,1362,1500,1362,1500,1390,1421,1390)",
+            "span": {
+              "offset": 1293,
+              "length": 6
+            }
+          },
+          {
+            "content": "6.",
+            "source": "D(1,170,1449,193,1451,191,1476,168,1475)",
+            "span": {
+              "offset": 1320,
+              "length": 2
+            }
+          },
+          {
+            "content": "Jordan Hydro 2 (TD)-Child Size 10c",
+            "source": "D(1,235,1449,580,1449,580,1503,235,1504)",
+            "span": {
+              "offset": 1332,
+              "length": 34
+            }
+          },
+          {
+            "content": "1,00",
+            "source": "D(1,674,1451,725,1452,724,1477,673,1476)",
+            "span": {
+              "offset": 1376,
+              "length": 4
+            }
+          },
+          {
+            "content": "each",
+            "source": "D(1,770,1451,827,1452,827,1476,769,1475)",
+            "span": {
+              "offset": 1390,
+              "length": 4
+            }
+          },
+          {
+            "content": "5,75",
+            "source": "D(1,964,1451,1016,1451,1016,1478,964,1477)",
+            "span": {
+              "offset": 1404,
+              "length": 4
+            }
+          },
+          {
+            "content": "5,75",
+            "source": "D(1,1134,1450,1186,1451,1186,1477,1133,1476)",
+            "span": {
+              "offset": 1418,
+              "length": 4
+            }
+          },
+          {
+            "content": "10%",
+            "source": "D(1,1281,1447,1333,1451,1331,1481,1279,1477)",
+            "span": {
+              "offset": 1432,
+              "length": 3
+            }
+          },
+          {
+            "content": "6,33",
+            "source": "D(1,1448,1450,1501,1450,1501,1476,1448,1475)",
+            "span": {
+              "offset": 1445,
+              "length": 4
+            }
+          },
+          {
+            "role": "sectionHeading",
+            "content": "SUMMARY",
+            "source": "D(1,132,1569,327,1569,327,1603,132,1603)",
+            "span": {
+              "offset": 1472,
+              "length": 9
+            }
+          },
+          {
+            "content": "VAT [%]",
+            "source": "D(1,640,1652,745,1655,744,1685,639,1682)",
+            "span": {
+              "offset": 1501,
+              "length": 7
+            }
+          },
+          {
+            "content": "Net worth",
+            "source": "D(1,927,1655,1055,1655,1055,1680,927,1680)",
+            "span": {
+              "offset": 1518,
+              "length": 9
+            }
+          },
+          {
+            "content": "VAT",
+            "source": "D(1,1188,1655,1242,1655,1242,1680,1188,1680)",
+            "span": {
+              "offset": 1537,
+              "length": 3
+            }
+          },
+          {
+            "content": "Gross worth",
+            "source": "D(1,1350,1654,1504,1655,1504,1680,1349,1680)",
+            "span": {
+              "offset": 1550,
+              "length": 11
+            }
+          },
+          {
+            "content": "10%",
+            "source": "D(1,667,1714,719,1715,718,1742,666,1740)",
+            "span": {
+              "offset": 1582,
+              "length": 3
+            }
+          },
+          {
+            "content": "471,64",
+            "source": "D(1,976,1713,1057,1714,1056,1740,975,1739)",
+            "span": {
+              "offset": 1595,
+              "length": 6
+            }
+          },
+          {
+            "content": "47,16",
+            "source": "D(1,1174,1714,1242,1716,1241,1741,1173,1739)",
+            "span": {
+              "offset": 1611,
+              "length": 5
+            }
+          },
+          {
+            "content": "518,80",
+            "source": "D(1,1424,1716,1504,1717,1504,1742,1424,1742)",
+            "span": {
+              "offset": 1626,
+              "length": 6
+            }
+          },
+          {
+            "content": "Total",
+            "source": "D(1,500,1774,569,1774,569,1799,500,1799)",
+            "span": {
+              "offset": 1653,
+              "length": 5
+            }
+          },
+          {
+            "content": "$ 471,64",
+            "source": "D(1,942,1775,1056,1775,1056,1800,942,1800)",
+            "span": {
+              "offset": 1668,
+              "length": 8
+            }
+          },
+          {
+            "content": "$ 47,16",
+            "source": "D(1,1144,1775,1240,1775,1240,1800,1144,1800)",
+            "span": {
+              "offset": 1686,
+              "length": 7
+            }
+          },
+          {
+            "content": "$ 518,80",
+            "source": "D(1,1392,1775,1505,1775,1505,1800,1392,1800)",
+            "span": {
+              "offset": 1703,
+              "length": 8
+            }
+          }
+        ],
+        "sections": [
+          {
+            "span": {
+              "offset": 0,
+              "length": 1731
+            },
+            "elements": [
+              "/sections/1",
+              "/sections/2",
+              "/sections/3"
+            ]
+          },
+          {
+            "span": {
+              "offset": 0,
+              "length": 252
+            },
+            "elements": [
+              "/paragraphs/0",
+              "/paragraphs/1",
+              "/paragraphs/2",
+              "/paragraphs/3",
+              "/paragraphs/4",
+              "/paragraphs/5",
+              "/paragraphs/6",
+              "/paragraphs/7"
+            ]
+          },
+          {
+            "span": {
+              "offset": 255,
+              "length": 1214
+            },
+            "elements": [
+              "/paragraphs/8",
+              "/tables/0"
+            ]
+          },
+          {
+            "span": {
+              "offset": 1472,
+              "length": 259
+            },
+            "elements": [
+              "/paragraphs/66",
+              "/tables/1"
+            ]
+          }
+        ],
+        "tables": [
+          {
+            "rowCount": 7,
+            "columnCount": 8,
+            "cells": [
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "No.",
+                "source": "D(1,133,828,228,827,228,916,133,916)",
+                "span": {
+                  "offset": 282,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/9"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Description",
+                "source": "D(1,228,827,639,827,638,916,228,916)",
+                "span": {
+                  "offset": 295,
+                  "length": 11
+                },
+                "elements": [
+                  "/paragraphs/10"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Qty",
+                "source": "D(1,639,827,751,827,751,916,638,916)",
+                "span": {
+                  "offset": 316,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/11"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "UM",
+                "source": "D(1,751,827,869,827,868,916,751,916)",
+                "span": {
+                  "offset": 329,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/12"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 4,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Net price",
+                "source": "D(1,869,827,1043,827,1043,916,868,916)",
+                "span": {
+                  "offset": 341,
+                  "length": 9
+                },
+                "elements": [
+                  "/paragraphs/13"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 5,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Net worth",
+                "source": "D(1,1043,827,1214,827,1213,916,1043,916)",
+                "span": {
+                  "offset": 360,
+                  "length": 9
+                },
+                "elements": [
+                  "/paragraphs/14"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 6,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "VAT [%]",
+                "source": "D(1,1214,827,1378,827,1378,916,1213,916)",
+                "span": {
+                  "offset": 379,
+                  "length": 7
+                },
+                "elements": [
+                  "/paragraphs/15"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 7,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Gross worth",
+                "source": "D(1,1378,827,1518,828,1518,916,1378,916)",
+                "span": {
+                  "offset": 396,
+                  "length": 11
+                },
+                "elements": [
+                  "/paragraphs/16"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "1.",
+                "source": "D(1,133,916,228,916,228,1002,133,1002)",
+                "span": {
+                  "offset": 428,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/17"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Nike Kids KD Trey 5 / Nike Black Size 4.5aY",
+                "source": "D(1,228,916,638,916,638,1002,228,1002)",
+                "span": {
+                  "offset": 440,
+                  "length": 43
+                },
+                "elements": [
+                  "/paragraphs/18"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "5,00",
+                "source": "D(1,638,916,751,916,751,1002,638,1002)",
+                "span": {
+                  "offset": 493,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/19"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "each",
+                "source": "D(1,751,916,868,916,869,1002,751,1002)",
+                "span": {
+                  "offset": 507,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/20"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 4,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "22,00",
+                "source": "D(1,868,916,1043,916,1044,1002,869,1002)",
+                "span": {
+                  "offset": 521,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/21"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 5,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "110,00",
+                "source": "D(1,1043,916,1213,916,1214,1002,1044,1002)",
+                "span": {
+                  "offset": 536,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/22"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 6,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "10%",
+                "source": "D(1,1213,916,1378,916,1378,1002,1214,1002)",
+                "span": {
+                  "offset": 552,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/23"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 7,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "121,00",
+                "source": "D(1,1378,916,1518,916,1518,1002,1378,1002)",
+                "span": {
+                  "offset": 565,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/24"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "2.",
+                "source": "D(1,133,1002,228,1002,228,1116,133,1117)",
+                "span": {
+                  "offset": 592,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/25"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Lego Star Wars Minifigures\nStormtrooper Darth Vader Yoda Obi Van Mandalorian New",
+                "source": "D(1,228,1002,638,1002,638,1116,228,1116)",
+                "span": {
+                  "offset": 604,
+                  "length": 83
+                },
+                "elements": [
+                  "/paragraphs/26",
+                  "/paragraphs/27"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "1,00",
+                "source": "D(1,638,1002,751,1002,751,1116,638,1116)",
+                "span": {
+                  "offset": 697,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/28"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "each",
+                "source": "D(1,751,1002,869,1002,869,1116,751,1116)",
+                "span": {
+                  "offset": 711,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/29"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 4,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "2,98",
+                "source": "D(1,869,1002,1044,1002,1044,1116,869,1116)",
+                "span": {
+                  "offset": 725,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/30"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 5,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "2,98",
+                "source": "D(1,1044,1002,1214,1002,1214,1116,1044,1116)",
+                "span": {
+                  "offset": 739,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/31"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 6,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "10%",
+                "source": "D(1,1214,1002,1378,1002,1378,1116,1214,1116)",
+                "span": {
+                  "offset": 753,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/32"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 7,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "3,28",
+                "source": "D(1,1378,1002,1518,1002,1518,1116,1378,1116)",
+                "span": {
+                  "offset": 766,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/33"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "3.",
+                "source": "D(1,133,1117,228,1116,228,1231,133,1231)",
+                "span": {
+                  "offset": 791,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/34"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Nike Air Jordan 1 Mid Obsidian 640735-174 Toddler Kids Children Size 8C Blue",
+                "source": "D(1,228,1116,638,1116,638,1231,228,1231)",
+                "span": {
+                  "offset": 803,
+                  "length": 76
+                },
+                "elements": [
+                  "/paragraphs/35"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "5,00",
+                "source": "D(1,638,1116,751,1116,751,1231,638,1231)",
+                "span": {
+                  "offset": 889,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/36"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "each",
+                "source": "D(1,751,1116,869,1116,869,1231,751,1231)",
+                "span": {
+                  "offset": 903,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/37"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 4,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "24,99",
+                "source": "D(1,869,1116,1044,1116,1044,1231,869,1231)",
+                "span": {
+                  "offset": 917,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/38"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 5,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "124,95",
+                "source": "D(1,1044,1116,1214,1116,1215,1231,1044,1231)",
+                "span": {
+                  "offset": 932,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/39"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 6,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "10%",
+                "source": "D(1,1214,1116,1378,1116,1378,1231,1215,1231)",
+                "span": {
+                  "offset": 948,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/40"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 7,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "137,44",
+                "source": "D(1,1378,1116,1518,1116,1518,1231,1378,1231)",
+                "span": {
+                  "offset": 961,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/41"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "4.",
+                "source": "D(1,133,1231,228,1231,228,1345,133,1345)",
+                "span": {
+                  "offset": 988,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/42"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Oomphies Boys Ankle Boots Shoes Gray Green Kids Size 2 EUC",
+                "source": "D(1,228,1231,638,1231,639,1345,228,1345)",
+                "span": {
+                  "offset": 1000,
+                  "length": 58
+                },
+                "elements": [
+                  "/paragraphs/43"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "4,00",
+                "source": "D(1,638,1231,751,1231,752,1345,639,1345)",
+                "span": {
+                  "offset": 1068,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/44"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "each",
+                "source": "D(1,751,1231,869,1231,869,1345,752,1345)",
+                "span": {
+                  "offset": 1082,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/45"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 4,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "11,99",
+                "source": "D(1,869,1231,1044,1231,1045,1345,869,1345)",
+                "span": {
+                  "offset": 1096,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/46"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 5,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "47,96",
+                "source": "D(1,1044,1231,1215,1231,1215,1345,1045,1345)",
+                "span": {
+                  "offset": 1111,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/47"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 6,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "10%",
+                "source": "D(1,1215,1231,1378,1231,1379,1345,1215,1345)",
+                "span": {
+                  "offset": 1126,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/48"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 7,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "52,76",
+                "source": "D(1,1378,1231,1518,1231,1518,1345,1379,1345)",
+                "span": {
+                  "offset": 1139,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/49"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "5.",
+                "source": "D(1,133,1345,228,1345,228,1434,133,1434)",
+                "span": {
+                  "offset": 1165,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/50"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Jordan 10 Retro Fusion Red Size 6Y",
+                "source": "D(1,228,1345,639,1345,639,1434,228,1434)",
+                "span": {
+                  "offset": 1177,
+                  "length": 34
+                },
+                "elements": [
+                  "/paragraphs/51"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "3,00",
+                "source": "D(1,639,1345,752,1345,752,1434,639,1434)",
+                "span": {
+                  "offset": 1221,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/52"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "each",
+                "source": "D(1,752,1345,869,1345,870,1434,752,1434)",
+                "span": {
+                  "offset": 1235,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/53"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 4,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "60,00",
+                "source": "D(1,869,1345,1045,1345,1045,1434,870,1434)",
+                "span": {
+                  "offset": 1249,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/54"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 5,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "180,00",
+                "source": "D(1,1045,1345,1215,1345,1216,1434,1045,1434)",
+                "span": {
+                  "offset": 1264,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/55"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 6,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "10%",
+                "source": "D(1,1215,1345,1379,1345,1380,1434,1216,1434)",
+                "span": {
+                  "offset": 1280,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/56"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 7,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "198,00",
+                "source": "D(1,1379,1345,1518,1345,1518,1434,1380,1434)",
+                "span": {
+                  "offset": 1293,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/57"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 6,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "6.",
+                "source": "D(1,133,1434,228,1434,228,1520,132,1520)",
+                "span": {
+                  "offset": 1320,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/58"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 6,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Jordan Hydro 2 (TD)-Child Size 10c",
+                "source": "D(1,228,1434,639,1434,639,1520,228,1520)",
+                "span": {
+                  "offset": 1332,
+                  "length": 34
+                },
+                "elements": [
+                  "/paragraphs/59"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 6,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "1,00",
+                "source": "D(1,639,1434,752,1434,752,1520,639,1520)",
+                "span": {
+                  "offset": 1376,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/60"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 6,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "each",
+                "source": "D(1,752,1434,870,1434,870,1520,752,1520)",
+                "span": {
+                  "offset": 1390,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/61"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 6,
+                "columnIndex": 4,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "5,75",
+                "source": "D(1,870,1434,1045,1434,1045,1520,870,1520)",
+                "span": {
+                  "offset": 1404,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/62"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 6,
+                "columnIndex": 5,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "5,75",
+                "source": "D(1,1045,1434,1216,1434,1217,1520,1045,1520)",
+                "span": {
+                  "offset": 1418,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/63"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 6,
+                "columnIndex": 6,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "10%",
+                "source": "D(1,1216,1434,1380,1434,1379,1520,1217,1520)",
+                "span": {
+                  "offset": 1432,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/64"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 6,
+                "columnIndex": 7,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "6,33",
+                "source": "D(1,1380,1434,1518,1434,1518,1520,1379,1520)",
+                "span": {
+                  "offset": 1445,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/65"
+                ]
+              }
+            ],
+            "source": "D(1,131,827,1518,825,1517,1520,131,1522)",
+            "span": {
+              "offset": 265,
+              "length": 1204
+            }
+          },
+          {
+            "rowCount": 3,
+            "columnCount": 4,
+            "cells": [
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "VAT [%]",
+                "source": "D(1,133,1637,836,1637,836,1698,133,1698)",
+                "span": {
+                  "offset": 1501,
+                  "length": 7
+                },
+                "elements": [
+                  "/paragraphs/67"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Net worth",
+                "source": "D(1,836,1637,1107,1637,1106,1698,836,1698)",
+                "span": {
+                  "offset": 1518,
+                  "length": 9
+                },
+                "elements": [
+                  "/paragraphs/68"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "VAT",
+                "source": "D(1,1107,1637,1301,1637,1301,1698,1106,1698)",
+                "span": {
+                  "offset": 1537,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/69"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Gross worth",
+                "source": "D(1,1301,1637,1518,1638,1518,1698,1301,1698)",
+                "span": {
+                  "offset": 1550,
+                  "length": 11
+                },
+                "elements": [
+                  "/paragraphs/70"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "10%",
+                "source": "D(1,133,1698,836,1698,836,1756,133,1757)",
+                "span": {
+                  "offset": 1582,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/71"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "471,64",
+                "source": "D(1,836,1698,1106,1698,1107,1756,836,1756)",
+                "span": {
+                  "offset": 1595,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/72"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "47,16",
+                "source": "D(1,1106,1698,1301,1698,1301,1756,1107,1756)",
+                "span": {
+                  "offset": 1611,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/73"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "518,80",
+                "source": "D(1,1301,1698,1518,1698,1518,1756,1301,1756)",
+                "span": {
+                  "offset": 1626,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/74"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Total",
+                "source": "D(1,133,1757,836,1756,836,1816,133,1816)",
+                "span": {
+                  "offset": 1653,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/75"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "$ 471,64",
+                "source": "D(1,836,1756,1107,1756,1107,1816,836,1816)",
+                "span": {
+                  "offset": 1668,
+                  "length": 8
+                },
+                "elements": [
+                  "/paragraphs/76"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "$ 47,16",
+                "source": "D(1,1107,1756,1301,1756,1301,1816,1107,1816)",
+                "span": {
+                  "offset": 1686,
+                  "length": 7
+                },
+                "elements": [
+                  "/paragraphs/77"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "$ 518,80",
+                "source": "D(1,1301,1756,1518,1756,1518,1816,1301,1816)",
+                "span": {
+                  "offset": 1703,
+                  "length": 8
+                },
+                "elements": [
+                  "/paragraphs/78"
+                ]
+              }
+            ],
+            "source": "D(1,128,1639,1518,1639,1518,1818,128,1817)",
+            "span": {
+              "offset": 1484,
+              "length": 247
+            }
+          }
+        ],
         "analyzerId": "prebuilt-invoice",
         "mimeType": "image/jpeg"
       }
     ]
   },
   "usage": {
-    "documentPagesMinimal": 1,
+    "documentPagesStandard": 1,
     "contextualizationTokens": 1000,
     "tokens": {
-      "gpt-4.1-input": 10263,
-      "gpt-4.1-output": 323,
-      "text-embedding-3-large": 4
+      "gpt-4.1-input": 14174,
+      "gpt-4.1-output": 2743,
+      "text-embedding-3-large": 731
     }
   },
   "_extracted": {
-    "field_values": {},
-    "description": "Ce document est une facture émise par la société Lopez, Murray and Johnston (Emilyshire, IN) à destination de White Ltd (Port Stacey, NM), datée du 01/05/2017. Le montant total TTC de la facture est de 518,80 $, incluant une TVA de 10 %. Les articles facturés concernent principalement des chaussures et jouets pour enfants."
+    "field_values": {
+      "AmountDue": {
+        "Amount": 518.8,
+        "CurrencyCode": "USD"
+      },
+      "CountryRegion": "USA",
+      "CustomerAddress": "58435 Kline Wall Port Stacey, NM 41817",
+      "CustomerAddressRecipient": "White Ltd",
+      "CustomerName": "White Ltd",
+      "CustomerTaxId": "966-84-8472",
+      "InvoiceDate": "2017-01-05",
+      "InvoiceId": "36187296",
+      "LineItems": [
+        {
+          "Description": "Nike Kids KD Trey 5 / Nike Black Size 4.5aY",
+          "Quantity": 5,
+          "QuantityUnit": "each",
+          "TaxAmount": {
+            "Amount": 110,
+            "CurrencyCode": "USD"
+          },
+          "TaxRate": 0.1,
+          "TotalAmount": {
+            "Amount": 121,
+            "CurrencyCode": "USD"
+          },
+          "UnitPrice": {
+            "Amount": 22,
+            "CurrencyCode": "USD"
+          }
+        },
+        {
+          "Description": "Lego Star Wars Minifigures",
+          "Quantity": 1,
+          "QuantityUnit": "each",
+          "TaxAmount": {
+            "Amount": 6.33,
+            "CurrencyCode": "USD"
+          },
+          "TaxRate": 0.1,
+          "TotalAmount": {
+            "Amount": 3.28,
+            "CurrencyCode": "USD"
+          },
+          "UnitPrice": {
+            "Amount": 2.98,
+            "CurrencyCode": "USD"
+          }
+        },
+        {
+          "Description": "Nike Air Jordan 1 Mid Obsidian 640735-174 Toddler Kids Children Size 8C Blue",
+          "Quantity": 5,
+          "QuantityUnit": "each",
+          "TaxAmount": {
+            "Amount": 124.95,
+            "CurrencyCode": "USD"
+          },
+          "TaxRate": 0.1,
+          "TotalAmount": {
+            "Amount": 137.44,
+            "CurrencyCode": "USD"
+          },
+          "UnitPrice": {
+            "Amount": 24.99,
+            "CurrencyCode": "USD"
+          }
+        },
+        {
+          "Description": "Oomphies Boys Ankle Boots Shoes Gray Green Kids Size 2 EUC",
+          "Quantity": 4,
+          "QuantityUnit": "each",
+          "TaxAmount": {
+            "Amount": 518.8,
+            "CurrencyCode": "USD"
+          },
+          "TaxRate": 0.1,
+          "TotalAmount": {
+            "Amount": 52.76,
+            "CurrencyCode": "USD"
+          },
+          "UnitPrice": {
+            "Amount": 11.99,
+            "CurrencyCode": "USD"
+          }
+        },
+        {
+          "Description": "Jordan 10 Retro Fusion Red Size 6Y",
+          "Quantity": 3,
+          "QuantityUnit": "each",
+          "TaxAmount": {
+            "Amount": 180,
+            "CurrencyCode": "USD"
+          },
+          "TaxRate": 0.1,
+          "TotalAmount": {
+            "Amount": 198,
+            "CurrencyCode": "USD"
+          },
+          "UnitPrice": {
+            "Amount": 60,
+            "CurrencyCode": "USD"
+          }
+        },
+        {
+          "Description": "Jordan Hydro 2 (TD)-Child Size 10c",
+          "Quantity": 1,
+          "QuantityUnit": "each",
+          "TaxAmount": {
+            "Amount": 5.75,
+            "CurrencyCode": "USD"
+          },
+          "TaxRate": 0.1,
+          "TotalAmount": {
+            "Amount": 6.33,
+            "CurrencyCode": "USD"
+          },
+          "UnitPrice": {
+            "Amount": 5.75,
+            "CurrencyCode": "USD"
+          }
+        }
+      ],
+      "SubtotalAmount": {
+        "Amount": 471.64,
+        "CurrencyCode": "USD"
+      },
+      "TaxDetails": [
+        {
+          "Amount": {
+            "Amount": 47.16,
+            "CurrencyCode": "USD"
+          },
+          "Description": "10%",
+          "NetAmount": {
+            "Amount": 471.64,
+            "CurrencyCode": "USD"
+          },
+          "Rate": 0.1
+        }
+      ],
+      "TotalAmount": {
+        "Amount": 518.8,
+        "CurrencyCode": "USD"
+      },
+      "TotalTaxAmount": {
+        "Amount": 47.16,
+        "CurrencyCode": "USD"
+      },
+      "VendorAddress": "62820 White Glen Emilyshire, IN 44602",
+      "VendorAddressRecipient": "Lopez, Murray and Johnston",
+      "VendorName": "Lopez, Murray and Johnston",
+      "VendorTaxId": "951-73-0229"
+    },
+    "description": "Ce document est une facture émise par Lopez, Murray and Johnston (Emilyshire, IN) à l'attention de White Ltd (Port Stacey, NM), datée du 01/05/2017. Le montant total TTC s'élève à 518,80 $, incluant une TVA de 10 %. Les articles facturés sont principalement des chaussures et des jouets pour enfants."
   }
 }

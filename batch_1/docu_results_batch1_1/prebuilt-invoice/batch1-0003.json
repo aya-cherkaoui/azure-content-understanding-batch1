@@ -1,25 +1,35 @@
 {
-  "id": "c3f2151c-16cd-4ae3-974b-f0a1bdfb69bc",
+  "id": "b52fabb7-d84f-4e6b-b479-9e4208e4cf56",
   "status": "Succeeded",
   "result": {
     "analyzerId": "prebuilt-invoice",
     "apiVersion": "2025-11-01",
-    "createdAt": "2026-02-10T13:37:17Z",
-    "stringEncoding": "utf16",
+    "createdAt": "2026-02-10T15:10:23Z",
+    "stringEncoding": "codePoint",
     "warnings": [],
     "contents": [
       {
         "path": "input1",
-        "markdown": "```text\n\n```\n",
+        "markdown": "Invoice no: 19471831\n\nDate of issue:\n\n04/09/2014\n\nSeller:\nPalmer Ltd\n9790 Bauer Hills Apt. 146\nSouth Patriciaton, SD 32497\n\nTax Id: 924-71-1106\n\nIBAN: GB05YUTG50853913677557\n\nClient:\nRios, Oneill and Rowe\n3571 Tina Trafficway\nBuckleyland, LA 97688\n\nTax Id: 922-72-5979\n\n\n# ITEMS\n\n\n<table>\n<tr>\n<th>No.</th>\n<th>Description</th>\n<th>Qty</th>\n<th>UM</th>\n<th>Net price</th>\n<th>Net worth</th>\n<th>VAT [%]</th>\n<th>Gross worth</th>\n</tr>\n<tr>\n<td>1.</td>\n<td>15\"x15\" White Decorative Coffee Table Top Lapis Lazuli Marquetery Patio Décor</td>\n<td>3,00</td>\n<td>each</td>\n<td>645,77</td>\n<td>1 937,31</td>\n<td>10%</td>\n<td>2 131,04</td>\n</tr>\n<tr>\n<td>2.</td>\n<td>4'x2' Marble Dining Table Top Pietra Dura Birds Inlay Art Furniture Decors B444</td>\n<td>5,00</td>\n<td>each</td>\n<td>1 840,10</td>\n<td>9 200,50</td>\n<td>10%</td>\n<td>10 120,55</td>\n</tr>\n<tr>\n<td>3.</td>\n<td>60 Inches Marble Dinning Table Top Hand Inlaid Garden Table with Gemstones</td>\n<td>5,00</td>\n<td>each</td>\n<td>5 908,00</td>\n<td>29 540,00</td>\n<td>10%</td>\n<td>32 494,00</td>\n</tr>\n</table>\n\n\n# SUMMARY\n\n\n<table>\n<tr>\n<th>VAT [%]</th>\n<th>Net worth</th>\n<th>VAT</th>\n<th>Gross worth</th>\n</tr>\n<tr>\n<td>10%</td>\n<td>40 677,81</td>\n<td>4 067,78</td>\n<td>44 745,59</td>\n</tr>\n<tr>\n<td>Total</td>\n<td>$ 40 677,81</td>\n<td>$ 4 067,78</td>\n<td>$ 44 745,59</td>\n</tr>\n</table>\n",
         "fields": {
           "AmountDue": {
             "type": "object",
             "valueObject": {
               "Amount": {
-                "type": "number"
+                "type": "number",
+                "valueNumber": 44745.59,
+                "spans": [
+                  {
+                    "offset": 1307,
+                    "length": 11
+                  }
+                ],
+                "confidence": 0.784,
+                "source": "D(1,1354.0000,1513.0000,1505.0000,1513.0000,1505.0000,1539.0000,1354.0000,1539.0000)"
               },
               "CurrencyCode": {
-                "type": "string"
+                "type": "string",
+                "valueString": "USD"
               }
             }
           },
@@ -27,7 +37,8 @@
             "type": "object",
             "valueObject": {
               "Amount": {
-                "type": "number"
+                "type": "number",
+                "confidence": 0.959
               },
               "CurrencyCode": {
                 "type": "string"
@@ -35,87 +46,629 @@
             }
           },
           "BillingAddress": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.715
           },
           "BillingAddressRecipient": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.762
           },
           "CountryRegion": {
-            "type": "string"
+            "type": "string",
+            "valueString": "USA"
           },
           "CustomerAddress": {
-            "type": "string"
+            "type": "string",
+            "valueString": "3571 Tina Trafficway Buckleyland, LA 97688",
+            "spans": [
+              {
+                "offset": 205,
+                "length": 20
+              },
+              {
+                "offset": 226,
+                "length": 21
+              }
+            ],
+            "confidence": 0.817,
+            "source": "D(1,833.0000,541.0000,1127.0000,541.0000,1127.0000,575.0000,833.0000,575.0000);D(1,833.0000,577.0000,1154.0000,577.0000,1154.0000,610.0000,833.0000,610.0000)"
           },
           "CustomerAddressRecipient": {
-            "type": "string"
+            "type": "string",
+            "valueString": "Rios, Oneill and Rowe",
+            "spans": [
+              {
+                "offset": 183,
+                "length": 21
+              }
+            ],
+            "confidence": 0.804,
+            "source": "D(1,833.0000,505.0000,1137.0000,505.0000,1137.0000,538.0000,833.0000,538.0000)"
           },
           "CustomerId": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.815
           },
           "CustomerName": {
-            "type": "string"
+            "type": "string",
+            "valueString": "Rios, Oneill and Rowe",
+            "spans": [
+              {
+                "offset": 183,
+                "length": 21
+              }
+            ],
+            "confidence": 0.832,
+            "source": "D(1,833.0000,505.0000,1137.0000,505.0000,1137.0000,538.0000,833.0000,538.0000)"
           },
           "CustomerTaxId": {
-            "type": "string"
+            "type": "string",
+            "valueString": "922-72-5979",
+            "spans": [
+              {
+                "offset": 257,
+                "length": 11
+              }
+            ],
+            "confidence": 0.823,
+            "source": "D(1,937.0000,649.0000,1118.0000,648.0000,1118.0000,679.0000,937.0000,679.0000)"
           },
           "DueDate": {
-            "type": "date"
+            "type": "date",
+            "confidence": 0.793
           },
           "InvoiceDate": {
-            "type": "date"
+            "type": "date",
+            "valueDate": "2014-04-09",
+            "spans": [
+              {
+                "offset": 38,
+                "length": 10
+              }
+            ],
+            "confidence": 0.97,
+            "source": "D(1,800.0000,140.0000,981.0000,141.0000,981.0000,174.0000,800.0000,174.0000)"
           },
           "InvoiceId": {
-            "type": "string"
+            "type": "string",
+            "valueString": "19471831",
+            "spans": [
+              {
+                "offset": 12,
+                "length": 8
+              }
+            ],
+            "confidence": 0.952,
+            "source": "D(1,351.0000,72.0000,538.0000,72.0000,538.0000,107.0000,351.0000,107.0000)"
           },
           "LineItems": {
-            "type": "array"
+            "type": "array",
+            "valueArray": [
+              {
+                "type": "object",
+                "valueObject": {
+                  "Date": {
+                    "type": "date",
+                    "confidence": 0.823
+                  },
+                  "Description": {
+                    "type": "string",
+                    "valueString": "15\"x15\" White Decorative Coffee Table Top Lapis Lazuli Marquetery Patio Décor",
+                    "spans": [
+                      {
+                        "offset": 456,
+                        "length": 24
+                      },
+                      {
+                        "offset": 481,
+                        "length": 29
+                      },
+                      {
+                        "offset": 511,
+                        "length": 22
+                      }
+                    ],
+                    "confidence": 0.652,
+                    "source": "D(1,239.0000,932.0000,531.0000,932.0000,531.0000,958.0000,239.0000,958.0000);D(1,239.0000,959.0000,567.0000,959.0000,567.0000,986.0000,239.0000,986.0000);D(1,238.7937,987.9427,505.9925,985.9780,506.2022,1014.4985,239.0034,1016.4632)"
+                  },
+                  "ProductCode": {
+                    "type": "string",
+                    "confidence": 0.902
+                  },
+                  "Quantity": {
+                    "type": "number",
+                    "valueNumber": 3,
+                    "spans": [
+                      {
+                        "offset": 543,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.903,
+                    "source": "D(1,672.0000,933.0000,726.0000,933.0000,726.0000,958.0000,672.0000,958.0000)"
+                  },
+                  "QuantityUnit": {
+                    "type": "string",
+                    "valueString": "each",
+                    "spans": [
+                      {
+                        "offset": 557,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.828,
+                    "source": "D(1,769.0000,934.0000,827.0000,934.0000,827.0000,957.0000,769.0000,957.0000)"
+                  },
+                  "TaxAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "confidence": 0.445
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "TaxRate": {
+                    "type": "number",
+                    "valueNumber": 0.1,
+                    "spans": [
+                      {
+                        "offset": 605,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.887,
+                    "source": "D(1,1280.0069,931.8336,1332.9983,934.0416,1331.9515,959.1646,1278.9601,956.9567)"
+                  },
+                  "TotalAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 2131.04,
+                        "spans": [
+                          {
+                            "offset": 618,
+                            "length": 8
+                          }
+                        ],
+                        "confidence": 0.52,
+                        "source": "D(1,1398.0165,932.6964,1501.3164,934.0040,1500.9835,960.3036,1397.6836,958.9960)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "UnitPrice": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 645.77,
+                        "spans": [
+                          {
+                            "offset": 571,
+                            "length": 6
+                          }
+                        ],
+                        "confidence": 0.901,
+                        "source": "D(1,936.0000,934.0000,1015.0000,933.0000,1015.0000,958.0000,936.0000,959.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "Date": {
+                    "type": "date",
+                    "confidence": 0.823
+                  },
+                  "Description": {
+                    "type": "string",
+                    "valueString": "4'x2' Marble Dining Table Top Pietra Dura Birds Inlay Art Furniture Decors B444",
+                    "spans": [
+                      {
+                        "offset": 659,
+                        "length": 29
+                      },
+                      {
+                        "offset": 689,
+                        "length": 27
+                      },
+                      {
+                        "offset": 717,
+                        "length": 21
+                      }
+                    ],
+                    "confidence": 0.587,
+                    "source": "D(1,237.0000,1046.0000,573.0000,1046.0000,573.0000,1074.0000,237.0000,1074.0000);D(1,238.0000,1074.0000,532.0000,1074.0000,532.0000,1100.0000,238.0000,1100.0000);D(1,238.0000,1102.0000,493.0000,1102.0000,493.0000,1128.0000,238.0000,1128.0000)"
+                  },
+                  "ProductCode": {
+                    "type": "string",
+                    "valueString": "B444",
+                    "spans": [
+                      {
+                        "offset": 734,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.872,
+                    "source": "D(1,432.0000,1103.0000,493.0000,1102.0000,493.0000,1127.0000,432.0000,1128.0000)"
+                  },
+                  "Quantity": {
+                    "type": "number",
+                    "valueNumber": 5,
+                    "spans": [
+                      {
+                        "offset": 748,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.907,
+                    "source": "D(1,672.0000,1047.0000,725.0000,1047.0000,725.0000,1072.0000,672.0000,1072.0000)"
+                  },
+                  "QuantityUnit": {
+                    "type": "string",
+                    "valueString": "each",
+                    "spans": [
+                      {
+                        "offset": 762,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.832,
+                    "source": "D(1,770.0000,1048.0000,827.0000,1048.0000,827.0000,1071.0000,770.0000,1071.0000)"
+                  },
+                  "TaxAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "confidence": 0.437
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "TaxRate": {
+                    "type": "number",
+                    "valueNumber": 0.1,
+                    "spans": [
+                      {
+                        "offset": 812,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.89,
+                    "source": "D(1,1281.2101,1043.5835,1334.1576,1048.1876,1331.7036,1076.4090,1278.7561,1071.8049)"
+                  },
+                  "TotalAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 10120.55,
+                        "spans": [
+                          {
+                            "offset": 825,
+                            "length": 9
+                          }
+                        ],
+                        "confidence": 0.665,
+                        "source": "D(1,1386.0000,1047.0000,1500.0000,1047.0000,1500.0000,1072.0000,1386.0000,1072.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "UnitPrice": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 1840.1,
+                        "spans": [
+                          {
+                            "offset": 776,
+                            "length": 8
+                          }
+                        ],
+                        "confidence": 0.614,
+                        "source": "D(1,916.0000,1047.0000,1016.0000,1047.0000,1016.0000,1072.0000,916.0000,1072.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "Date": {
+                    "type": "date",
+                    "confidence": 0.823
+                  },
+                  "Description": {
+                    "type": "string",
+                    "valueString": "60 Inches Marble Dinning Table Top Hand Inlaid Garden Table with Gemstones",
+                    "spans": [
+                      {
+                        "offset": 867,
+                        "length": 30
+                      },
+                      {
+                        "offset": 898,
+                        "length": 28
+                      },
+                      {
+                        "offset": 927,
+                        "length": 14
+                      }
+                    ],
+                    "confidence": 0.608,
+                    "source": "D(1,238.0000,1161.0000,593.0000,1161.0000,593.0000,1188.0000,238.0000,1188.0000);D(1,237.0000,1189.0000,574.0000,1189.0000,574.0000,1216.0000,237.0000,1216.0000);D(1,238.0000,1217.0000,422.0000,1217.0000,422.0000,1243.0000,238.0000,1243.0000)"
+                  },
+                  "ProductCode": {
+                    "type": "string",
+                    "confidence": 0.902
+                  },
+                  "Quantity": {
+                    "type": "number",
+                    "valueNumber": 5,
+                    "spans": [
+                      {
+                        "offset": 951,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.914,
+                    "source": "D(1,672.0000,1162.0000,726.0000,1162.0000,726.0000,1187.0000,672.0000,1187.0000)"
+                  },
+                  "QuantityUnit": {
+                    "type": "string",
+                    "valueString": "each",
+                    "spans": [
+                      {
+                        "offset": 965,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.832,
+                    "source": "D(1,769.0000,1162.0000,827.0000,1162.0000,827.0000,1185.0000,769.0000,1185.0000)"
+                  },
+                  "TaxAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "confidence": 0.426
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "TaxRate": {
+                    "type": "number",
+                    "valueNumber": 0.1,
+                    "spans": [
+                      {
+                        "offset": 1016,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.896,
+                    "source": "D(1,1280.2640,1155.3046,1333.7766,1159.1269,1331.7360,1187.6954,1278.2234,1183.8731)"
+                  },
+                  "TotalAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 32494,
+                        "spans": [
+                          {
+                            "offset": 1029,
+                            "length": 9
+                          }
+                        ],
+                        "confidence": 0.674,
+                        "source": "D(1,1384.0000,1161.0000,1501.0000,1161.0000,1501.0000,1187.0000,1384.0000,1187.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "UnitPrice": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 5908,
+                        "spans": [
+                          {
+                            "offset": 979,
+                            "length": 8
+                          }
+                        ],
+                        "confidence": 0.754,
+                        "source": "D(1,915.0000,1161.0000,1016.0000,1161.0000,1016.0000,1188.0000,915.0000,1188.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
           },
           "PaymentTerm": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.816
           },
           "PONumber": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.746
           },
           "RemittanceAddress": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.905
           },
           "RemittanceAddressRecipient": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.814
           },
           "ServiceAddress": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.782
           },
           "ServiceAddressRecipient": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.82
           },
           "ShippingAddress": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.775
           },
           "ShippingAddressRecipient": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.81
           },
           "SubtotalAmount": {
             "type": "object",
             "valueObject": {
               "Amount": {
-                "type": "number"
+                "type": "number",
+                "valueNumber": 40677.81
               },
               "CurrencyCode": {
-                "type": "string"
+                "type": "string",
+                "valueString": "USD"
               }
             }
           },
           "TaxDetails": {
-            "type": "array"
+            "type": "array",
+            "valueArray": [
+              {
+                "type": "object",
+                "valueObject": {
+                  "Amount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 4067.78,
+                        "spans": [
+                          {
+                            "offset": 1203,
+                            "length": 8
+                          }
+                        ],
+                        "confidence": 0.693,
+                        "source": "D(1,1138.5178,1444.7513,1241.7766,1452.1269,1239.4822,1484.2487,1136.2234,1476.8731)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "Description": {
+                    "type": "string",
+                    "valueString": "VAT [%] 10%",
+                    "spans": [
+                      {
+                        "offset": 1090,
+                        "length": 7
+                      },
+                      {
+                        "offset": 1171,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.154,
+                    "source": "D(1,639.0255,1390.8266,744.6495,1393.1228,743.9721,1424.2820,638.3481,1421.9858);D(1,667.0000,1452.0000,719.0000,1452.0000,719.0000,1478.0000,667.0000,1478.0000)"
+                  },
+                  "NetAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 40677.81,
+                        "spans": [
+                          {
+                            "offset": 1184,
+                            "length": 9
+                          }
+                        ],
+                        "confidence": 0.773,
+                        "source": "D(1,940.2985,1445.6277,1056.3846,1452.0769,1054.6462,1483.3692,938.5600,1476.9200)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "Rate": {
+                    "type": "number",
+                    "valueNumber": 0.1,
+                    "spans": [
+                      {
+                        "offset": 1171,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.802,
+                    "source": "D(1,667.0000,1452.0000,719.0000,1452.0000,719.0000,1478.0000,667.0000,1478.0000)"
+                  }
+                }
+              }
+            ]
           },
           "TotalAmount": {
             "type": "object",
             "valueObject": {
               "Amount": {
-                "type": "number"
+                "type": "number",
+                "valueNumber": 44745.59,
+                "spans": [
+                  {
+                    "offset": 1221,
+                    "length": 9
+                  }
+                ],
+                "confidence": 0.721,
+                "source": "D(1,1389.0000,1453.0000,1505.0000,1453.0000,1505.0000,1478.0000,1389.0000,1478.0000)"
               },
               "CurrencyCode": {
-                "type": "string"
+                "type": "string",
+                "valueString": "USD"
               }
             }
           },
@@ -123,7 +676,8 @@
             "type": "object",
             "valueObject": {
               "Amount": {
-                "type": "number"
+                "type": "number",
+                "confidence": 0.934
               },
               "CurrencyCode": {
                 "type": "string"
@@ -134,45 +688,3481 @@
             "type": "object",
             "valueObject": {
               "Amount": {
-                "type": "number"
+                "type": "number",
+                "valueNumber": 4067.78
               },
               "CurrencyCode": {
-                "type": "string"
+                "type": "string",
+                "valueString": "USD"
               }
             }
           },
           "VendorAddress": {
-            "type": "string"
+            "type": "string",
+            "valueString": "9790 Bauer Hills Apt. 146 South Patriciaton, SD 32497",
+            "spans": [
+              {
+                "offset": 69,
+                "length": 25
+              },
+              {
+                "offset": 95,
+                "length": 27
+              }
+            ],
+            "confidence": 0.734,
+            "source": "D(1,140.0000,542.0000,499.0000,542.0000,499.0000,574.0000,140.0000,574.0000);D(1,140.0000,577.0000,535.0000,577.0000,535.0000,610.0000,140.0000,610.0000)"
           },
           "VendorAddressRecipient": {
-            "type": "string"
+            "type": "string",
+            "valueString": "Palmer Ltd",
+            "spans": [
+              {
+                "offset": 58,
+                "length": 10
+              }
+            ],
+            "confidence": 0.848,
+            "source": "D(1,140.0000,506.0000,293.0000,506.0000,293.0000,535.0000,140.0000,535.0000)"
           },
           "VendorName": {
-            "type": "string"
+            "type": "string",
+            "valueString": "Palmer Ltd",
+            "spans": [
+              {
+                "offset": 58,
+                "length": 10
+              }
+            ],
+            "confidence": 0.825,
+            "source": "D(1,140.0000,506.0000,293.0000,506.0000,293.0000,535.0000,140.0000,535.0000)"
           },
           "VendorTaxId": {
-            "type": "string"
+            "type": "string",
+            "valueString": "924-71-1106",
+            "spans": [
+              {
+                "offset": 132,
+                "length": 11
+              }
+            ],
+            "confidence": 0.903,
+            "source": "D(1,244.0000,649.0000,425.0000,649.0000,425.0000,678.0000,244.0000,679.0000)"
           }
         },
         "kind": "document",
         "startPageNumber": 1,
         "endPageNumber": 1,
+        "unit": "pixel",
+        "pages": [
+          {
+            "pageNumber": 1,
+            "angle": 0,
+            "width": 1654,
+            "height": 2339,
+            "spans": [
+              {
+                "offset": 0,
+                "length": 1339
+              }
+            ],
+            "words": [
+              {
+                "content": "Invoice",
+                "span": {
+                  "offset": 0,
+                  "length": 7
+                },
+                "confidence": 0.92,
+                "source": "D(1,131,73,265,72,265,107,131,108)"
+              },
+              {
+                "content": "no",
+                "span": {
+                  "offset": 8,
+                  "length": 2
+                },
+                "confidence": 0.997,
+                "source": "D(1,280,72,323,72,323,107,280,107)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 10,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,326,72,334,72,334,107,326,107)"
+              },
+              {
+                "content": "19471831",
+                "span": {
+                  "offset": 12,
+                  "length": 8
+                },
+                "confidence": 0.996,
+                "source": "D(1,351,72,538,72,538,107,351,107)"
+              },
+              {
+                "content": "Date",
+                "span": {
+                  "offset": 22,
+                  "length": 4
+                },
+                "confidence": 0.998,
+                "source": "D(1,131,141,205,141,205,173,131,173)"
+              },
+              {
+                "content": "of",
+                "span": {
+                  "offset": 27,
+                  "length": 2
+                },
+                "confidence": 0.997,
+                "source": "D(1,216,141,247,141,247,173,216,173)"
+              },
+              {
+                "content": "issue",
+                "span": {
+                  "offset": 30,
+                  "length": 5
+                },
+                "confidence": 0.996,
+                "source": "D(1,255,141,332,142,332,173,255,173)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 35,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,334,142,345,142,345,173,334,173)"
+              },
+              {
+                "content": "04/09/2014",
+                "span": {
+                  "offset": 38,
+                  "length": 10
+                },
+                "confidence": 0.991,
+                "source": "D(1,800,140,981,141,981,174,800,174)"
+              },
+              {
+                "content": "Seller",
+                "span": {
+                  "offset": 50,
+                  "length": 6
+                },
+                "confidence": 0.997,
+                "source": "D(1,131,444,241,443,241,476,131,476)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 56,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,242,443,255,443,255,476,242,476)"
+              },
+              {
+                "content": "Palmer",
+                "span": {
+                  "offset": 58,
+                  "length": 6
+                },
+                "confidence": 0.991,
+                "source": "D(1,140,506,238,506,238,535,140,535)"
+              },
+              {
+                "content": "Ltd",
+                "span": {
+                  "offset": 65,
+                  "length": 3
+                },
+                "confidence": 0.991,
+                "source": "D(1,248,506,293,506,293,535,248,535)"
+              },
+              {
+                "content": "9790",
+                "span": {
+                  "offset": 69,
+                  "length": 4
+                },
+                "confidence": 0.996,
+                "source": "D(1,140,542,208,542,208,573,140,573)"
+              },
+              {
+                "content": "Bauer",
+                "span": {
+                  "offset": 74,
+                  "length": 5
+                },
+                "confidence": 0.996,
+                "source": "D(1,220,542,302,542,302,573,220,573)"
+              },
+              {
+                "content": "Hills",
+                "span": {
+                  "offset": 80,
+                  "length": 5
+                },
+                "confidence": 0.992,
+                "source": "D(1,311,542,367,542,367,574,311,573)"
+              },
+              {
+                "content": "Apt",
+                "span": {
+                  "offset": 86,
+                  "length": 3
+                },
+                "confidence": 0.993,
+                "source": "D(1,375,542,425,542,425,574,375,574)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 89,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,426,542,431,542,431,574,426,574)"
+              },
+              {
+                "content": "146",
+                "span": {
+                  "offset": 91,
+                  "length": 3
+                },
+                "confidence": 0.997,
+                "source": "D(1,444,542,499,542,499,574,444,574)"
+              },
+              {
+                "content": "South",
+                "span": {
+                  "offset": 95,
+                  "length": 5
+                },
+                "confidence": 0.998,
+                "source": "D(1,140,578,219,578,219,609,140,609)"
+              },
+              {
+                "content": "Patriciaton",
+                "span": {
+                  "offset": 101,
+                  "length": 11
+                },
+                "confidence": 0.995,
+                "source": "D(1,231,578,378,578,378,610,231,609)"
+              },
+              {
+                "content": ",",
+                "span": {
+                  "offset": 112,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,380,578,386,578,386,610,380,610)"
+              },
+              {
+                "content": "SD",
+                "span": {
+                  "offset": 114,
+                  "length": 2
+                },
+                "confidence": 0.994,
+                "source": "D(1,397,578,434,578,434,609,397,610)"
+              },
+              {
+                "content": "32497",
+                "span": {
+                  "offset": 117,
+                  "length": 5
+                },
+                "confidence": 0.986,
+                "source": "D(1,445,578,535,577,535,609,445,609)"
+              },
+              {
+                "content": "Tax",
+                "span": {
+                  "offset": 124,
+                  "length": 3
+                },
+                "confidence": 0.978,
+                "source": "D(1,138,648,190,649,190,679,139,678)"
+              },
+              {
+                "content": "Id",
+                "span": {
+                  "offset": 128,
+                  "length": 2
+                },
+                "confidence": 0.844,
+                "source": "D(1,201,649,223,649,223,679,201,679)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 130,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,226,649,232,649,232,679,226,679)"
+              },
+              {
+                "content": "924-71-1106",
+                "span": {
+                  "offset": 132,
+                  "length": 11
+                },
+                "confidence": 0.983,
+                "source": "D(1,244,649,425,649,425,678,244,679)"
+              },
+              {
+                "content": "IBAN",
+                "span": {
+                  "offset": 145,
+                  "length": 4
+                },
+                "confidence": 0.994,
+                "source": "D(1,139,684,204,684,204,713,140,713)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 149,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,207,684,213,684,214,713,207,713)"
+              },
+              {
+                "content": "GB05YUTG50853913677557",
+                "span": {
+                  "offset": 151,
+                  "length": 22
+                },
+                "confidence": 0.992,
+                "source": "D(1,226,683,626,683,626,714,226,713)"
+              },
+              {
+                "content": "Client",
+                "span": {
+                  "offset": 175,
+                  "length": 6
+                },
+                "confidence": 0.996,
+                "source": "D(1,824,442,935,442,935,477,824,477)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 181,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,937,442,950,442,950,477,937,477)"
+              },
+              {
+                "content": "Rios",
+                "span": {
+                  "offset": 183,
+                  "length": 4
+                },
+                "confidence": 0.994,
+                "source": "D(1,833,506,889,505,889,537,833,537)"
+              },
+              {
+                "content": ",",
+                "span": {
+                  "offset": 187,
+                  "length": 1
+                },
+                "confidence": 0.997,
+                "source": "D(1,890,505,896,505,896,537,890,537)"
+              },
+              {
+                "content": "Oneill",
+                "span": {
+                  "offset": 189,
+                  "length": 6
+                },
+                "confidence": 0.994,
+                "source": "D(1,907,505,985,505,985,537,907,537)"
+              },
+              {
+                "content": "and",
+                "span": {
+                  "offset": 196,
+                  "length": 3
+                },
+                "confidence": 0.999,
+                "source": "D(1,995,505,1047,506,1047,537,995,537)"
+              },
+              {
+                "content": "Rowe",
+                "span": {
+                  "offset": 200,
+                  "length": 4
+                },
+                "confidence": 0.998,
+                "source": "D(1,1059,506,1137,507,1137,538,1059,537)"
+              },
+              {
+                "content": "3571",
+                "span": {
+                  "offset": 205,
+                  "length": 4
+                },
+                "confidence": 0.984,
+                "source": "D(1,833,541,900,541,900,574,833,574)"
+              },
+              {
+                "content": "Tina",
+                "span": {
+                  "offset": 210,
+                  "length": 4
+                },
+                "confidence": 0.994,
+                "source": "D(1,912,541,970,541,970,574,912,574)"
+              },
+              {
+                "content": "Trafficway",
+                "span": {
+                  "offset": 215,
+                  "length": 10
+                },
+                "confidence": 0.991,
+                "source": "D(1,981,541,1127,542,1127,575,981,574)"
+              },
+              {
+                "content": "Buckleyland",
+                "span": {
+                  "offset": 226,
+                  "length": 11
+                },
+                "confidence": 0.99,
+                "source": "D(1,833,577,1000,578,1000,610,833,610)"
+              },
+              {
+                "content": ",",
+                "span": {
+                  "offset": 237,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,1003,578,1009,578,1009,610,1003,610)"
+              },
+              {
+                "content": "LA",
+                "span": {
+                  "offset": 239,
+                  "length": 2
+                },
+                "confidence": 0.991,
+                "source": "D(1,1022,578,1056,577,1056,610,1022,610)"
+              },
+              {
+                "content": "97688",
+                "span": {
+                  "offset": 242,
+                  "length": 5
+                },
+                "confidence": 0.99,
+                "source": "D(1,1064,577,1154,577,1154,609,1064,610)"
+              },
+              {
+                "content": "Tax",
+                "span": {
+                  "offset": 249,
+                  "length": 3
+                },
+                "confidence": 0.98,
+                "source": "D(1,831,648,883,648,883,679,831,679)"
+              },
+              {
+                "content": "Id",
+                "span": {
+                  "offset": 253,
+                  "length": 2
+                },
+                "confidence": 0.716,
+                "source": "D(1,893,648,917,649,917,679,893,679)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 255,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,920,649,925,649,925,679,920,679)"
+              },
+              {
+                "content": "922-72-5979",
+                "span": {
+                  "offset": 257,
+                  "length": 11
+                },
+                "confidence": 0.984,
+                "source": "D(1,937,649,1118,648,1118,679,937,679)"
+              },
+              {
+                "content": "ITEMS",
+                "span": {
+                  "offset": 273,
+                  "length": 5
+                },
+                "confidence": 0.983,
+                "source": "D(1,131,759,249,759,249,792,131,791)"
+              },
+              {
+                "content": "No",
+                "span": {
+                  "offset": 298,
+                  "length": 2
+                },
+                "confidence": 0.946,
+                "source": "D(1,158,848,192,847,192,869,158,870)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 300,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,194,847,202,846,202,869,194,869)"
+              },
+              {
+                "content": "Description",
+                "span": {
+                  "offset": 311,
+                  "length": 11
+                },
+                "confidence": 0.997,
+                "source": "D(1,238,846,385,847,385,873,238,872)"
+              },
+              {
+                "content": "Qty",
+                "span": {
+                  "offset": 332,
+                  "length": 3
+                },
+                "confidence": 0.993,
+                "source": "D(1,678,845,726,848,726,875,678,872)"
+              },
+              {
+                "content": "UM",
+                "span": {
+                  "offset": 345,
+                  "length": 2
+                },
+                "confidence": 0.986,
+                "source": "D(1,776,846,821,846,821,870,776,870)"
+              },
+              {
+                "content": "Net",
+                "span": {
+                  "offset": 357,
+                  "length": 3
+                },
+                "confidence": 0.998,
+                "source": "D(1,899,844,945,846,945,872,899,871)"
+              },
+              {
+                "content": "price",
+                "span": {
+                  "offset": 361,
+                  "length": 5
+                },
+                "confidence": 0.998,
+                "source": "D(1,953,846,1018,845,1018,872,953,872)"
+              },
+              {
+                "content": "Net",
+                "span": {
+                  "offset": 376,
+                  "length": 3
+                },
+                "confidence": 0.998,
+                "source": "D(1,1057,845,1103,846,1103,871,1057,870)"
+              },
+              {
+                "content": "worth",
+                "span": {
+                  "offset": 380,
+                  "length": 5
+                },
+                "confidence": 0.998,
+                "source": "D(1,1110,846,1186,846,1186,870,1110,871)"
+              },
+              {
+                "content": "VAT",
+                "span": {
+                  "offset": 395,
+                  "length": 3
+                },
+                "confidence": 0.988,
+                "source": "D(1,1227,844,1281,845,1281,872,1227,871)"
+              },
+              {
+                "content": "[",
+                "span": {
+                  "offset": 399,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1288,845,1297,845,1297,873,1288,873)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 400,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1297,845,1320,845,1320,872,1297,873)"
+              },
+              {
+                "content": "]",
+                "span": {
+                  "offset": 401,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,1320,845,1332,845,1332,872,1320,872)"
+              },
+              {
+                "content": "Gross",
+                "span": {
+                  "offset": 412,
+                  "length": 5
+                },
+                "confidence": 0.998,
+                "source": "D(1,1428,848,1501,848,1501,871,1428,870)"
+              },
+              {
+                "content": "worth",
+                "span": {
+                  "offset": 418,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,1425,875,1501,875,1501,898,1425,897)"
+              },
+              {
+                "content": "1",
+                "span": {
+                  "offset": 444,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,169,934,182,934,182,957,169,957)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 445,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,185,934,192,934,192,957,185,957)"
+              },
+              {
+                "content": "15",
+                "span": {
+                  "offset": 456,
+                  "length": 2
+                },
+                "confidence": 0.933,
+                "source": "D(1,239,932,266,932,266,958,239,958)"
+              },
+              {
+                "content": "\"",
+                "span": {
+                  "offset": 458,
+                  "length": 1
+                },
+                "confidence": 0.918,
+                "source": "D(1,268,932,277,933,277,958,268,958)"
+              },
+              {
+                "content": "x15",
+                "span": {
+                  "offset": 459,
+                  "length": 3
+                },
+                "confidence": 0.769,
+                "source": "D(1,277,933,317,933,317,958,277,958)"
+              },
+              {
+                "content": "\"",
+                "span": {
+                  "offset": 462,
+                  "length": 1
+                },
+                "confidence": 0.912,
+                "source": "D(1,320,933,327,933,327,958,320,958)"
+              },
+              {
+                "content": "White",
+                "span": {
+                  "offset": 464,
+                  "length": 5
+                },
+                "confidence": 0.989,
+                "source": "D(1,334,933,400,933,400,958,334,958)"
+              },
+              {
+                "content": "Decorative",
+                "span": {
+                  "offset": 470,
+                  "length": 10
+                },
+                "confidence": 0.995,
+                "source": "D(1,410,933,531,933,531,958,410,958)"
+              },
+              {
+                "content": "Coffee",
+                "span": {
+                  "offset": 481,
+                  "length": 6
+                },
+                "confidence": 0.996,
+                "source": "D(1,239,959,310,959,310,986,239,986)"
+              },
+              {
+                "content": "Table",
+                "span": {
+                  "offset": 488,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,317,960,379,960,379,986,317,986)"
+              },
+              {
+                "content": "Top",
+                "span": {
+                  "offset": 494,
+                  "length": 3
+                },
+                "confidence": 0.998,
+                "source": "D(1,386,960,427,960,427,986,386,986)"
+              },
+              {
+                "content": "Lapis",
+                "span": {
+                  "offset": 498,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,435,960,492,960,492,986,435,986)"
+              },
+              {
+                "content": "Lazuli",
+                "span": {
+                  "offset": 504,
+                  "length": 6
+                },
+                "confidence": 0.997,
+                "source": "D(1,501,960,567,959,567,986,501,986)"
+              },
+              {
+                "content": "Marquetery",
+                "span": {
+                  "offset": 511,
+                  "length": 10
+                },
+                "confidence": 0.997,
+                "source": "D(1,239,988,367,987,367,1015,239,1016)"
+              },
+              {
+                "content": "Patio",
+                "span": {
+                  "offset": 522,
+                  "length": 5
+                },
+                "confidence": 0.996,
+                "source": "D(1,375,987,429,987,429,1015,375,1015)"
+              },
+              {
+                "content": "Décor",
+                "span": {
+                  "offset": 528,
+                  "length": 5
+                },
+                "confidence": 0.998,
+                "source": "D(1,438,987,506,987,506,1014,438,1015)"
+              },
+              {
+                "content": "3,00",
+                "span": {
+                  "offset": 543,
+                  "length": 4
+                },
+                "confidence": 0.996,
+                "source": "D(1,672,933,726,933,726,958,672,958)"
+              },
+              {
+                "content": "each",
+                "span": {
+                  "offset": 557,
+                  "length": 4
+                },
+                "confidence": 0.999,
+                "source": "D(1,769,934,827,934,827,957,769,957)"
+              },
+              {
+                "content": "645,77",
+                "span": {
+                  "offset": 571,
+                  "length": 6
+                },
+                "confidence": 0.98,
+                "source": "D(1,936,934,1015,933,1015,958,936,959)"
+              },
+              {
+                "content": "1",
+                "span": {
+                  "offset": 587,
+                  "length": 1
+                },
+                "confidence": 0.971,
+                "source": "D(1,1085,933,1097,933,1097,959,1085,959)"
+              },
+              {
+                "content": "937,31",
+                "span": {
+                  "offset": 589,
+                  "length": 6
+                },
+                "confidence": 0.915,
+                "source": "D(1,1106,933,1186,933,1186,958,1106,959)"
+              },
+              {
+                "content": "10",
+                "span": {
+                  "offset": 605,
+                  "length": 2
+                },
+                "confidence": 0.999,
+                "source": "D(1,1280,932,1308,933,1308,957,1280,957)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 607,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1308,933,1332,934,1332,958,1308,957)"
+              },
+              {
+                "content": "2",
+                "span": {
+                  "offset": 618,
+                  "length": 1
+                },
+                "confidence": 0.991,
+                "source": "D(1,1398,934,1412,934,1412,959,1398,959)"
+              },
+              {
+                "content": "131,04",
+                "span": {
+                  "offset": 620,
+                  "length": 6
+                },
+                "confidence": 0.977,
+                "source": "D(1,1422,933,1501,934,1501,959,1422,958)"
+              },
+              {
+                "content": "2",
+                "span": {
+                  "offset": 647,
+                  "length": 1
+                },
+                "confidence": 0.979,
+                "source": "D(1,168,1047,183,1047,183,1070,168,1070)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 648,
+                  "length": 1
+                },
+                "confidence": 0.996,
+                "source": "D(1,185,1048,192,1049,192,1072,185,1070)"
+              },
+              {
+                "content": "4",
+                "span": {
+                  "offset": 659,
+                  "length": 1
+                },
+                "confidence": 0.603,
+                "source": "D(1,237,1046,252,1046,252,1074,237,1074)"
+              },
+              {
+                "content": "'",
+                "span": {
+                  "offset": 660,
+                  "length": 1
+                },
+                "confidence": 0.815,
+                "source": "D(1,253,1046,259,1046,259,1074,253,1074)"
+              },
+              {
+                "content": "x2",
+                "span": {
+                  "offset": 661,
+                  "length": 2
+                },
+                "confidence": 0.585,
+                "source": "D(1,258,1046,285,1046,285,1074,258,1074)"
+              },
+              {
+                "content": "'",
+                "span": {
+                  "offset": 663,
+                  "length": 1
+                },
+                "confidence": 0.963,
+                "source": "D(1,286,1046,291,1046,291,1074,286,1074)"
+              },
+              {
+                "content": "Marble",
+                "span": {
+                  "offset": 665,
+                  "length": 6
+                },
+                "confidence": 0.976,
+                "source": "D(1,300,1046,375,1046,375,1073,300,1074)"
+              },
+              {
+                "content": "Dining",
+                "span": {
+                  "offset": 672,
+                  "length": 6
+                },
+                "confidence": 0.993,
+                "source": "D(1,384,1046,453,1046,453,1074,384,1074)"
+              },
+              {
+                "content": "Table",
+                "span": {
+                  "offset": 679,
+                  "length": 5
+                },
+                "confidence": 0.993,
+                "source": "D(1,460,1046,522,1046,522,1074,460,1074)"
+              },
+              {
+                "content": "Top",
+                "span": {
+                  "offset": 685,
+                  "length": 3
+                },
+                "confidence": 0.993,
+                "source": "D(1,529,1046,573,1046,573,1074,529,1074)"
+              },
+              {
+                "content": "Pietra",
+                "span": {
+                  "offset": 689,
+                  "length": 6
+                },
+                "confidence": 0.996,
+                "source": "D(1,238,1074,302,1074,302,1100,238,1100)"
+              },
+              {
+                "content": "Dura",
+                "span": {
+                  "offset": 696,
+                  "length": 4
+                },
+                "confidence": 0.998,
+                "source": "D(1,310,1074,362,1074,362,1100,310,1100)"
+              },
+              {
+                "content": "Birds",
+                "span": {
+                  "offset": 701,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,372,1074,428,1074,428,1100,372,1100)"
+              },
+              {
+                "content": "Inlay",
+                "span": {
+                  "offset": 707,
+                  "length": 5
+                },
+                "confidence": 0.974,
+                "source": "D(1,436,1074,489,1074,489,1100,436,1100)"
+              },
+              {
+                "content": "Art",
+                "span": {
+                  "offset": 713,
+                  "length": 3
+                },
+                "confidence": 0.995,
+                "source": "D(1,495,1074,532,1074,532,1100,495,1100)"
+              },
+              {
+                "content": "Furniture",
+                "span": {
+                  "offset": 717,
+                  "length": 9
+                },
+                "confidence": 0.998,
+                "source": "D(1,238,1103,339,1103,339,1128,238,1128)"
+              },
+              {
+                "content": "Decors",
+                "span": {
+                  "offset": 727,
+                  "length": 6
+                },
+                "confidence": 0.999,
+                "source": "D(1,347,1103,423,1103,423,1128,347,1128)"
+              },
+              {
+                "content": "B444",
+                "span": {
+                  "offset": 734,
+                  "length": 4
+                },
+                "confidence": 0.988,
+                "source": "D(1,432,1103,493,1102,493,1127,432,1128)"
+              },
+              {
+                "content": "5,00",
+                "span": {
+                  "offset": 748,
+                  "length": 4
+                },
+                "confidence": 0.985,
+                "source": "D(1,672,1047,725,1047,725,1072,672,1072)"
+              },
+              {
+                "content": "each",
+                "span": {
+                  "offset": 762,
+                  "length": 4
+                },
+                "confidence": 0.999,
+                "source": "D(1,770,1048,827,1048,827,1071,770,1071)"
+              },
+              {
+                "content": "1",
+                "span": {
+                  "offset": 776,
+                  "length": 1
+                },
+                "confidence": 0.954,
+                "source": "D(1,916,1047,927,1047,927,1072,916,1072)"
+              },
+              {
+                "content": "840,10",
+                "span": {
+                  "offset": 778,
+                  "length": 6
+                },
+                "confidence": 0.879,
+                "source": "D(1,937,1047,1016,1047,1016,1072,937,1072)"
+              },
+              {
+                "content": "9",
+                "span": {
+                  "offset": 794,
+                  "length": 1
+                },
+                "confidence": 0.938,
+                "source": "D(1,1083,1046,1097,1046,1097,1072,1083,1072)"
+              },
+              {
+                "content": "200,50",
+                "span": {
+                  "offset": 796,
+                  "length": 6
+                },
+                "confidence": 0.868,
+                "source": "D(1,1106,1047,1186,1046,1186,1072,1106,1072)"
+              },
+              {
+                "content": "10",
+                "span": {
+                  "offset": 812,
+                  "length": 2
+                },
+                "confidence": 0.999,
+                "source": "D(1,1281,1046,1308,1046,1308,1071,1281,1072)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 814,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1309,1046,1332,1048,1332,1073,1309,1071)"
+              },
+              {
+                "content": "10",
+                "span": {
+                  "offset": 825,
+                  "length": 2
+                },
+                "confidence": 0.984,
+                "source": "D(1,1386,1047,1413,1047,1413,1072,1386,1072)"
+              },
+              {
+                "content": "120,55",
+                "span": {
+                  "offset": 828,
+                  "length": 6
+                },
+                "confidence": 0.95,
+                "source": "D(1,1422,1047,1500,1047,1500,1072,1422,1072)"
+              },
+              {
+                "content": "3",
+                "span": {
+                  "offset": 855,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,169,1163,183,1162,183,1184,169,1186)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 856,
+                  "length": 1
+                },
+                "confidence": 0.996,
+                "source": "D(1,185,1162,192,1163,192,1185,185,1184)"
+              },
+              {
+                "content": "60",
+                "span": {
+                  "offset": 867,
+                  "length": 2
+                },
+                "confidence": 0.981,
+                "source": "D(1,238,1161,265,1161,265,1188,238,1188)"
+              },
+              {
+                "content": "Inches",
+                "span": {
+                  "offset": 870,
+                  "length": 6
+                },
+                "confidence": 0.869,
+                "source": "D(1,274,1161,345,1161,345,1188,274,1188)"
+              },
+              {
+                "content": "Marble",
+                "span": {
+                  "offset": 877,
+                  "length": 6
+                },
+                "confidence": 0.994,
+                "source": "D(1,353,1161,429,1161,429,1188,353,1188)"
+              },
+              {
+                "content": "Dinning",
+                "span": {
+                  "offset": 884,
+                  "length": 7
+                },
+                "confidence": 0.989,
+                "source": "D(1,438,1161,521,1161,521,1188,438,1188)"
+              },
+              {
+                "content": "Table",
+                "span": {
+                  "offset": 892,
+                  "length": 5
+                },
+                "confidence": 0.995,
+                "source": "D(1,528,1161,593,1161,593,1188,528,1188)"
+              },
+              {
+                "content": "Top",
+                "span": {
+                  "offset": 898,
+                  "length": 3
+                },
+                "confidence": 0.994,
+                "source": "D(1,237,1189,279,1189,279,1216,237,1216)"
+              },
+              {
+                "content": "Hand",
+                "span": {
+                  "offset": 902,
+                  "length": 4
+                },
+                "confidence": 0.995,
+                "source": "D(1,288,1189,344,1189,344,1216,288,1216)"
+              },
+              {
+                "content": "Inlaid",
+                "span": {
+                  "offset": 907,
+                  "length": 6
+                },
+                "confidence": 0.979,
+                "source": "D(1,354,1189,413,1189,413,1216,354,1216)"
+              },
+              {
+                "content": "Garden",
+                "span": {
+                  "offset": 914,
+                  "length": 6
+                },
+                "confidence": 0.991,
+                "source": "D(1,422,1189,502,1189,502,1216,422,1216)"
+              },
+              {
+                "content": "Table",
+                "span": {
+                  "offset": 921,
+                  "length": 5
+                },
+                "confidence": 0.991,
+                "source": "D(1,509,1189,574,1189,574,1216,509,1216)"
+              },
+              {
+                "content": "with",
+                "span": {
+                  "offset": 927,
+                  "length": 4
+                },
+                "confidence": 0.998,
+                "source": "D(1,238,1217,285,1217,285,1243,238,1243)"
+              },
+              {
+                "content": "Gemstones",
+                "span": {
+                  "offset": 932,
+                  "length": 9
+                },
+                "confidence": 0.994,
+                "source": "D(1,293,1217,422,1217,422,1243,293,1243)"
+              },
+              {
+                "content": "5,00",
+                "span": {
+                  "offset": 951,
+                  "length": 4
+                },
+                "confidence": 0.995,
+                "source": "D(1,672,1162,726,1162,726,1187,672,1187)"
+              },
+              {
+                "content": "each",
+                "span": {
+                  "offset": 965,
+                  "length": 4
+                },
+                "confidence": 0.999,
+                "source": "D(1,769,1162,827,1162,827,1185,769,1185)"
+              },
+              {
+                "content": "5",
+                "span": {
+                  "offset": 979,
+                  "length": 1
+                },
+                "confidence": 0.992,
+                "source": "D(1,915,1161,927,1161,927,1188,915,1188)"
+              },
+              {
+                "content": "908,00",
+                "span": {
+                  "offset": 981,
+                  "length": 6
+                },
+                "confidence": 0.968,
+                "source": "D(1,935,1161,1016,1161,1016,1188,935,1188)"
+              },
+              {
+                "content": "29",
+                "span": {
+                  "offset": 997,
+                  "length": 2
+                },
+                "confidence": 0.994,
+                "source": "D(1,1069,1161,1097,1161,1097,1188,1069,1188)"
+              },
+              {
+                "content": "540,00",
+                "span": {
+                  "offset": 1000,
+                  "length": 6
+                },
+                "confidence": 0.965,
+                "source": "D(1,1104,1161,1185,1161,1185,1188,1104,1188)"
+              },
+              {
+                "content": "10",
+                "span": {
+                  "offset": 1016,
+                  "length": 2
+                },
+                "confidence": 0.999,
+                "source": "D(1,1280,1159,1308,1161,1308,1186,1280,1184)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 1018,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1308,1161,1332,1159,1332,1184,1308,1186)"
+              },
+              {
+                "content": "32",
+                "span": {
+                  "offset": 1029,
+                  "length": 2
+                },
+                "confidence": 0.993,
+                "source": "D(1,1384,1161,1413,1161,1413,1187,1384,1187)"
+              },
+              {
+                "content": "494,00",
+                "span": {
+                  "offset": 1032,
+                  "length": 6
+                },
+                "confidence": 0.976,
+                "source": "D(1,1420,1161,1501,1161,1501,1186,1420,1187)"
+              },
+              {
+                "content": "SUMMARY",
+                "span": {
+                  "offset": 1063,
+                  "length": 7
+                },
+                "confidence": 0.991,
+                "source": "D(1,132,1309,328,1309,328,1343,132,1343)"
+              },
+              {
+                "content": "VAT",
+                "span": {
+                  "offset": 1090,
+                  "length": 3
+                },
+                "confidence": 0.994,
+                "source": "D(1,639,1392,693,1392,693,1422,639,1422)"
+              },
+              {
+                "content": "[",
+                "span": {
+                  "offset": 1094,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,700,1393,709,1393,709,1422,700,1422)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 1095,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,709,1393,732,1393,732,1423,709,1422)"
+              },
+              {
+                "content": "]",
+                "span": {
+                  "offset": 1096,
+                  "length": 1
+                },
+                "confidence": 0.997,
+                "source": "D(1,731,1393,744,1394,744,1423,731,1423)"
+              },
+              {
+                "content": "Net",
+                "span": {
+                  "offset": 1107,
+                  "length": 3
+                },
+                "confidence": 0.998,
+                "source": "D(1,927,1394,973,1394,973,1420,927,1419)"
+              },
+              {
+                "content": "worth",
+                "span": {
+                  "offset": 1111,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,979,1394,1056,1393,1056,1418,979,1419)"
+              },
+              {
+                "content": "VAT",
+                "span": {
+                  "offset": 1126,
+                  "length": 3
+                },
+                "confidence": 0.955,
+                "source": "D(1,1186,1394,1241,1394,1241,1418,1186,1418)"
+              },
+              {
+                "content": "Gross",
+                "span": {
+                  "offset": 1139,
+                  "length": 5
+                },
+                "confidence": 0.998,
+                "source": "D(1,1350,1394,1422,1394,1422,1420,1350,1420)"
+              },
+              {
+                "content": "worth",
+                "span": {
+                  "offset": 1145,
+                  "length": 5
+                },
+                "confidence": 0.998,
+                "source": "D(1,1429,1394,1505,1394,1505,1420,1429,1420)"
+              },
+              {
+                "content": "10",
+                "span": {
+                  "offset": 1171,
+                  "length": 2
+                },
+                "confidence": 0.999,
+                "source": "D(1,667,1453,695,1453,695,1478,667,1478)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 1173,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,695,1453,719,1452,719,1477,695,1478)"
+              },
+              {
+                "content": "40",
+                "span": {
+                  "offset": 1184,
+                  "length": 2
+                },
+                "confidence": 0.989,
+                "source": "D(1,940,1451,967,1453,967,1478,940,1477)"
+              },
+              {
+                "content": "677,81",
+                "span": {
+                  "offset": 1187,
+                  "length": 6
+                },
+                "confidence": 0.968,
+                "source": "D(1,976,1453,1055,1452,1055,1477,976,1478)"
+              },
+              {
+                "content": "4",
+                "span": {
+                  "offset": 1203,
+                  "length": 1
+                },
+                "confidence": 0.985,
+                "source": "D(1,1138,1452,1152,1453,1152,1478,1138,1477)"
+              },
+              {
+                "content": "067,78",
+                "span": {
+                  "offset": 1205,
+                  "length": 6
+                },
+                "confidence": 0.906,
+                "source": "D(1,1160,1453,1240,1452,1240,1477,1160,1478)"
+              },
+              {
+                "content": "44",
+                "span": {
+                  "offset": 1221,
+                  "length": 2
+                },
+                "confidence": 0.986,
+                "source": "D(1,1389,1453,1417,1453,1417,1478,1389,1478)"
+              },
+              {
+                "content": "745,59",
+                "span": {
+                  "offset": 1224,
+                  "length": 6
+                },
+                "confidence": 0.936,
+                "source": "D(1,1426,1453,1505,1453,1505,1478,1426,1478)"
+              },
+              {
+                "content": "Total",
+                "span": {
+                  "offset": 1251,
+                  "length": 5
+                },
+                "confidence": 0.998,
+                "source": "D(1,500,1512,569,1511,569,1536,500,1538)"
+              },
+              {
+                "content": "$",
+                "span": {
+                  "offset": 1266,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,905,1512,919,1512,919,1540,905,1540)"
+              },
+              {
+                "content": "40",
+                "span": {
+                  "offset": 1268,
+                  "length": 2
+                },
+                "confidence": 0.839,
+                "source": "D(1,927,1512,958,1512,958,1540,927,1540)"
+              },
+              {
+                "content": "677,81",
+                "span": {
+                  "offset": 1271,
+                  "length": 6
+                },
+                "confidence": 0.711,
+                "source": "D(1,968,1512,1056,1512,1056,1540,968,1540)"
+              },
+              {
+                "content": "$",
+                "span": {
+                  "offset": 1287,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1105,1514,1120,1513,1120,1541,1105,1541)"
+              },
+              {
+                "content": "4",
+                "span": {
+                  "offset": 1289,
+                  "length": 1
+                },
+                "confidence": 0.859,
+                "source": "D(1,1128,1513,1144,1513,1144,1541,1128,1541)"
+              },
+              {
+                "content": "067,78",
+                "span": {
+                  "offset": 1291,
+                  "length": 6
+                },
+                "confidence": 0.657,
+                "source": "D(1,1153,1513,1241,1514,1241,1541,1153,1540)"
+              },
+              {
+                "content": "$",
+                "span": {
+                  "offset": 1307,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1354,1513,1368,1513,1368,1538,1354,1538)"
+              },
+              {
+                "content": "44",
+                "span": {
+                  "offset": 1309,
+                  "length": 2
+                },
+                "confidence": 0.907,
+                "source": "D(1,1375,1513,1408,1513,1408,1539,1375,1538)"
+              },
+              {
+                "content": "745,59",
+                "span": {
+                  "offset": 1312,
+                  "length": 6
+                },
+                "confidence": 0.781,
+                "source": "D(1,1416,1513,1505,1513,1505,1538,1416,1539)"
+              }
+            ],
+            "lines": [
+              {
+                "content": "Invoice no: 19471831",
+                "source": "D(1,131,72,538,72,538,107,131,108)",
+                "span": {
+                  "offset": 0,
+                  "length": 20
+                }
+              },
+              {
+                "content": "Date of issue:",
+                "source": "D(1,131,141,345,141,345,173,131,173)",
+                "span": {
+                  "offset": 22,
+                  "length": 14
+                }
+              },
+              {
+                "content": "04/09/2014",
+                "source": "D(1,800,140,981,140,981,174,800,174)",
+                "span": {
+                  "offset": 38,
+                  "length": 10
+                }
+              },
+              {
+                "content": "Seller:",
+                "source": "D(1,131,443,255,443,255,476,131,476)",
+                "span": {
+                  "offset": 50,
+                  "length": 7
+                }
+              },
+              {
+                "content": "Palmer Ltd",
+                "source": "D(1,140,506,293,506,293,535,140,535)",
+                "span": {
+                  "offset": 58,
+                  "length": 10
+                }
+              },
+              {
+                "content": "9790 Bauer Hills Apt. 146",
+                "source": "D(1,140,542,499,542,499,574,140,574)",
+                "span": {
+                  "offset": 69,
+                  "length": 25
+                }
+              },
+              {
+                "content": "South Patriciaton, SD 32497",
+                "source": "D(1,140,578,535,577,535,609,140,610)",
+                "span": {
+                  "offset": 95,
+                  "length": 27
+                }
+              },
+              {
+                "content": "Tax Id: 924-71-1106",
+                "source": "D(1,138,648,425,649,425,679,138,679)",
+                "span": {
+                  "offset": 124,
+                  "length": 19
+                }
+              },
+              {
+                "content": "IBAN: GB05YUTG50853913677557",
+                "source": "D(1,139,683,626,683,626,714,139,714)",
+                "span": {
+                  "offset": 145,
+                  "length": 28
+                }
+              },
+              {
+                "content": "Client:",
+                "source": "D(1,824,442,950,442,950,477,824,477)",
+                "span": {
+                  "offset": 175,
+                  "length": 7
+                }
+              },
+              {
+                "content": "Rios, Oneill and Rowe",
+                "source": "D(1,833,505,1137,505,1137,538,833,537)",
+                "span": {
+                  "offset": 183,
+                  "length": 21
+                }
+              },
+              {
+                "content": "3571 Tina Trafficway",
+                "source": "D(1,833,541,1128,542,1127,575,833,574)",
+                "span": {
+                  "offset": 205,
+                  "length": 20
+                }
+              },
+              {
+                "content": "Buckleyland, LA 97688",
+                "source": "D(1,833,577,1154,577,1154,610,833,610)",
+                "span": {
+                  "offset": 226,
+                  "length": 21
+                }
+              },
+              {
+                "content": "Tax Id: 922-72-5979",
+                "source": "D(1,831,648,1118,648,1118,679,831,679)",
+                "span": {
+                  "offset": 249,
+                  "length": 19
+                }
+              },
+              {
+                "content": "ITEMS",
+                "source": "D(1,131,759,249,759,249,792,131,792)",
+                "span": {
+                  "offset": 273,
+                  "length": 5
+                }
+              },
+              {
+                "content": "No.",
+                "source": "D(1,158,848,202,846,203,869,158,870)",
+                "span": {
+                  "offset": 298,
+                  "length": 3
+                }
+              },
+              {
+                "content": "Description",
+                "source": "D(1,238,845,385,846,385,873,238,872)",
+                "span": {
+                  "offset": 311,
+                  "length": 11
+                }
+              },
+              {
+                "content": "Qty",
+                "source": "D(1,678,845,727,848,726,875,678,872)",
+                "span": {
+                  "offset": 332,
+                  "length": 3
+                }
+              },
+              {
+                "content": "UM",
+                "source": "D(1,776,845,821,845,821,870,776,870)",
+                "span": {
+                  "offset": 345,
+                  "length": 2
+                }
+              },
+              {
+                "content": "Net price",
+                "source": "D(1,899,844,1018,845,1018,872,899,872)",
+                "span": {
+                  "offset": 357,
+                  "length": 9
+                }
+              },
+              {
+                "content": "Net worth",
+                "source": "D(1,1057,845,1187,846,1186,871,1057,871)",
+                "span": {
+                  "offset": 376,
+                  "length": 9
+                }
+              },
+              {
+                "content": "VAT [%]",
+                "source": "D(1,1227,844,1332,845,1332,873,1226,872)",
+                "span": {
+                  "offset": 395,
+                  "length": 7
+                }
+              },
+              {
+                "content": "Gross",
+                "source": "D(1,1428,847,1502,848,1501,871,1428,870)",
+                "span": {
+                  "offset": 412,
+                  "length": 5
+                }
+              },
+              {
+                "content": "worth",
+                "source": "D(1,1425,874,1502,874,1501,898,1424,897)",
+                "span": {
+                  "offset": 418,
+                  "length": 5
+                }
+              },
+              {
+                "content": "1.",
+                "source": "D(1,169,934,192,934,192,957,169,957)",
+                "span": {
+                  "offset": 444,
+                  "length": 2
+                }
+              },
+              {
+                "content": "15\"x15\" White Decorative",
+                "source": "D(1,239,932,531,933,531,959,239,958)",
+                "span": {
+                  "offset": 456,
+                  "length": 24
+                }
+              },
+              {
+                "content": "Coffee Table Top Lapis Lazuli",
+                "source": "D(1,239,959,567,959,567,987,239,986)",
+                "span": {
+                  "offset": 481,
+                  "length": 29
+                }
+              },
+              {
+                "content": "Marquetery Patio Décor",
+                "source": "D(1,239,987,506,987,506,1015,239,1016)",
+                "span": {
+                  "offset": 511,
+                  "length": 22
+                }
+              },
+              {
+                "content": "3,00",
+                "source": "D(1,672,933,726,933,726,958,672,958)",
+                "span": {
+                  "offset": 543,
+                  "length": 4
+                }
+              },
+              {
+                "content": "each",
+                "source": "D(1,769,934,827,934,827,957,769,957)",
+                "span": {
+                  "offset": 557,
+                  "length": 4
+                }
+              },
+              {
+                "content": "645,77",
+                "source": "D(1,936,933,1015,933,1015,958,936,959)",
+                "span": {
+                  "offset": 571,
+                  "length": 6
+                }
+              },
+              {
+                "content": "1 937,31",
+                "source": "D(1,1085,933,1186,933,1186,959,1085,959)",
+                "span": {
+                  "offset": 587,
+                  "length": 8
+                }
+              },
+              {
+                "content": "10%",
+                "source": "D(1,1280,932,1332,933,1332,958,1280,957)",
+                "span": {
+                  "offset": 605,
+                  "length": 3
+                }
+              },
+              {
+                "content": "2 131,04",
+                "source": "D(1,1398,933,1501,933,1501,959,1398,959)",
+                "span": {
+                  "offset": 618,
+                  "length": 8
+                }
+              },
+              {
+                "content": "2.",
+                "source": "D(1,168,1047,192,1047,192,1072,168,1072)",
+                "span": {
+                  "offset": 647,
+                  "length": 2
+                }
+              },
+              {
+                "content": "4'x2' Marble Dining Table Top",
+                "source": "D(1,237,1046,573,1046,573,1074,237,1074)",
+                "span": {
+                  "offset": 659,
+                  "length": 29
+                }
+              },
+              {
+                "content": "Pietra Dura Birds Inlay Art",
+                "source": "D(1,238,1074,532,1074,532,1100,238,1100)",
+                "span": {
+                  "offset": 689,
+                  "length": 27
+                }
+              },
+              {
+                "content": "Furniture Decors B444",
+                "source": "D(1,238,1103,493,1102,493,1128,238,1128)",
+                "span": {
+                  "offset": 717,
+                  "length": 21
+                }
+              },
+              {
+                "content": "5,00",
+                "source": "D(1,672,1047,725,1047,725,1072,672,1072)",
+                "span": {
+                  "offset": 748,
+                  "length": 4
+                }
+              },
+              {
+                "content": "each",
+                "source": "D(1,770,1048,827,1048,827,1071,770,1071)",
+                "span": {
+                  "offset": 762,
+                  "length": 4
+                }
+              },
+              {
+                "content": "1 840,10",
+                "source": "D(1,916,1047,1016,1047,1016,1072,916,1073)",
+                "span": {
+                  "offset": 776,
+                  "length": 8
+                }
+              },
+              {
+                "content": "9 200,50",
+                "source": "D(1,1083,1046,1186,1046,1186,1073,1083,1073)",
+                "span": {
+                  "offset": 794,
+                  "length": 8
+                }
+              },
+              {
+                "content": "10%",
+                "source": "D(1,1281,1046,1332,1047,1332,1073,1280,1072)",
+                "span": {
+                  "offset": 812,
+                  "length": 3
+                }
+              },
+              {
+                "content": "10 120,55",
+                "source": "D(1,1386,1047,1500,1047,1500,1072,1386,1072)",
+                "span": {
+                  "offset": 825,
+                  "length": 9
+                }
+              },
+              {
+                "content": "3.",
+                "source": "D(1,169,1162,192,1162,192,1186,169,1186)",
+                "span": {
+                  "offset": 855,
+                  "length": 2
+                }
+              },
+              {
+                "content": "60 Inches Marble Dinning Table",
+                "source": "D(1,238,1161,593,1161,593,1188,238,1188)",
+                "span": {
+                  "offset": 867,
+                  "length": 30
+                }
+              },
+              {
+                "content": "Top Hand Inlaid Garden Table",
+                "source": "D(1,237,1189,574,1189,574,1216,237,1216)",
+                "span": {
+                  "offset": 898,
+                  "length": 28
+                }
+              },
+              {
+                "content": "with Gemstones",
+                "source": "D(1,238,1217,422,1217,422,1243,238,1243)",
+                "span": {
+                  "offset": 927,
+                  "length": 14
+                }
+              },
+              {
+                "content": "5,00",
+                "source": "D(1,672,1162,726,1162,726,1187,672,1187)",
+                "span": {
+                  "offset": 951,
+                  "length": 4
+                }
+              },
+              {
+                "content": "each",
+                "source": "D(1,769,1162,827,1162,827,1186,769,1186)",
+                "span": {
+                  "offset": 965,
+                  "length": 4
+                }
+              },
+              {
+                "content": "5 908,00",
+                "source": "D(1,915,1161,1016,1161,1016,1188,915,1188)",
+                "span": {
+                  "offset": 979,
+                  "length": 8
+                }
+              },
+              {
+                "content": "29 540,00",
+                "source": "D(1,1069,1161,1185,1161,1185,1188,1069,1188)",
+                "span": {
+                  "offset": 997,
+                  "length": 9
+                }
+              },
+              {
+                "content": "10%",
+                "source": "D(1,1280,1159,1332,1159,1332,1186,1280,1186)",
+                "span": {
+                  "offset": 1016,
+                  "length": 3
+                }
+              },
+              {
+                "content": "32 494,00",
+                "source": "D(1,1384,1161,1501,1161,1501,1187,1384,1187)",
+                "span": {
+                  "offset": 1029,
+                  "length": 9
+                }
+              },
+              {
+                "content": "SUMMARY",
+                "source": "D(1,132,1308,328,1308,328,1343,132,1343)",
+                "span": {
+                  "offset": 1063,
+                  "length": 7
+                }
+              },
+              {
+                "content": "VAT [%]",
+                "source": "D(1,639,1392,744,1393,744,1423,639,1422)",
+                "span": {
+                  "offset": 1090,
+                  "length": 7
+                }
+              },
+              {
+                "content": "Net worth",
+                "source": "D(1,927,1394,1056,1393,1057,1419,927,1420)",
+                "span": {
+                  "offset": 1107,
+                  "length": 9
+                }
+              },
+              {
+                "content": "VAT",
+                "source": "D(1,1186,1394,1241,1394,1242,1418,1186,1419)",
+                "span": {
+                  "offset": 1126,
+                  "length": 3
+                }
+              },
+              {
+                "content": "Gross worth",
+                "source": "D(1,1350,1394,1505,1394,1505,1420,1350,1420)",
+                "span": {
+                  "offset": 1139,
+                  "length": 11
+                }
+              },
+              {
+                "content": "10%",
+                "source": "D(1,666,1453,719,1452,720,1477,667,1478)",
+                "span": {
+                  "offset": 1171,
+                  "length": 3
+                }
+              },
+              {
+                "content": "40 677,81",
+                "source": "D(1,940,1451,1055,1452,1055,1478,940,1478)",
+                "span": {
+                  "offset": 1184,
+                  "length": 9
+                }
+              },
+              {
+                "content": "4 067,78",
+                "source": "D(1,1138,1452,1240,1452,1241,1478,1138,1478)",
+                "span": {
+                  "offset": 1203,
+                  "length": 8
+                }
+              },
+              {
+                "content": "44 745,59",
+                "source": "D(1,1389,1453,1505,1453,1505,1478,1389,1478)",
+                "span": {
+                  "offset": 1221,
+                  "length": 9
+                }
+              },
+              {
+                "content": "Total",
+                "source": "D(1,499,1512,569,1511,569,1537,500,1538)",
+                "span": {
+                  "offset": 1251,
+                  "length": 5
+                }
+              },
+              {
+                "content": "$ 40 677,81",
+                "source": "D(1,905,1512,1056,1512,1056,1540,905,1540)",
+                "span": {
+                  "offset": 1266,
+                  "length": 11
+                }
+              },
+              {
+                "content": "$ 4 067,78",
+                "source": "D(1,1105,1513,1241,1513,1241,1541,1105,1541)",
+                "span": {
+                  "offset": 1287,
+                  "length": 10
+                }
+              },
+              {
+                "content": "$ 44 745,59",
+                "source": "D(1,1354,1513,1505,1513,1505,1539,1354,1539)",
+                "span": {
+                  "offset": 1307,
+                  "length": 11
+                }
+              }
+            ]
+          }
+        ],
+        "paragraphs": [
+          {
+            "content": "Invoice no: 19471831",
+            "source": "D(1,131,72,538,72,538,107,131,108)",
+            "span": {
+              "offset": 0,
+              "length": 20
+            }
+          },
+          {
+            "content": "Date of issue:",
+            "source": "D(1,131,141,345,141,345,173,131,173)",
+            "span": {
+              "offset": 22,
+              "length": 14
+            }
+          },
+          {
+            "content": "04/09/2014",
+            "source": "D(1,800,140,981,140,981,174,800,174)",
+            "span": {
+              "offset": 38,
+              "length": 10
+            }
+          },
+          {
+            "content": "Seller: Palmer Ltd 9790 Bauer Hills Apt. 146 South Patriciaton, SD 32497",
+            "source": "D(1,131,443,535,442,535,609,132,610)",
+            "span": {
+              "offset": 50,
+              "length": 72
+            }
+          },
+          {
+            "content": "Tax Id: 924-71-1106",
+            "source": "D(1,138,648,425,649,425,679,138,679)",
+            "span": {
+              "offset": 124,
+              "length": 19
+            }
+          },
+          {
+            "content": "IBAN: GB05YUTG50853913677557",
+            "source": "D(1,139,683,626,683,626,714,139,714)",
+            "span": {
+              "offset": 145,
+              "length": 28
+            }
+          },
+          {
+            "content": "Client: Rios, Oneill and Rowe 3571 Tina Trafficway Buckleyland, LA 97688",
+            "source": "D(1,824,442,1154,441,1154,610,824,610)",
+            "span": {
+              "offset": 175,
+              "length": 72
+            }
+          },
+          {
+            "content": "Tax Id: 922-72-5979",
+            "source": "D(1,831,648,1118,648,1118,679,831,679)",
+            "span": {
+              "offset": 249,
+              "length": 19
+            }
+          },
+          {
+            "role": "sectionHeading",
+            "content": "ITEMS",
+            "source": "D(1,131,759,249,759,249,792,131,792)",
+            "span": {
+              "offset": 271,
+              "length": 7
+            }
+          },
+          {
+            "content": "No.",
+            "source": "D(1,158,848,202,846,203,869,158,870)",
+            "span": {
+              "offset": 298,
+              "length": 3
+            }
+          },
+          {
+            "content": "Description",
+            "source": "D(1,238,846,385,847,385,873,238,872)",
+            "span": {
+              "offset": 311,
+              "length": 11
+            }
+          },
+          {
+            "content": "Qty",
+            "source": "D(1,678,845,728,848,726,875,677,872)",
+            "span": {
+              "offset": 332,
+              "length": 3
+            }
+          },
+          {
+            "content": "UM",
+            "source": "D(1,776,846,821,846,821,870,776,870)",
+            "span": {
+              "offset": 345,
+              "length": 2
+            }
+          },
+          {
+            "content": "Net price",
+            "source": "D(1,899,842,1018,845,1018,874,898,871)",
+            "span": {
+              "offset": 357,
+              "length": 9
+            }
+          },
+          {
+            "content": "Net worth",
+            "source": "D(1,1057,844,1187,846,1186,872,1057,870)",
+            "span": {
+              "offset": 376,
+              "length": 9
+            }
+          },
+          {
+            "content": "VAT [%]",
+            "source": "D(1,1227,844,1332,845,1332,873,1227,872)",
+            "span": {
+              "offset": 395,
+              "length": 7
+            }
+          },
+          {
+            "content": "Gross worth",
+            "source": "D(1,1425,848,1502,848,1501,898,1424,897)",
+            "span": {
+              "offset": 412,
+              "length": 11
+            }
+          },
+          {
+            "content": "1.",
+            "source": "D(1,169,933,192,934,191,957,169,957)",
+            "span": {
+              "offset": 444,
+              "length": 2
+            }
+          },
+          {
+            "content": "15\"x15\" White Decorative Coffee Table Top Lapis Lazuli Marquetery Patio Décor",
+            "source": "D(1,239,932,567,933,566,1016,238,1016)",
+            "span": {
+              "offset": 456,
+              "length": 77
+            }
+          },
+          {
+            "content": "3,00",
+            "source": "D(1,672,933,726,933,726,958,672,958)",
+            "span": {
+              "offset": 543,
+              "length": 4
+            }
+          },
+          {
+            "content": "each",
+            "source": "D(1,769,934,827,933,827,957,769,957)",
+            "span": {
+              "offset": 557,
+              "length": 4
+            }
+          },
+          {
+            "content": "645,77",
+            "source": "D(1,936,934,1015,933,1015,958,936,959)",
+            "span": {
+              "offset": 571,
+              "length": 6
+            }
+          },
+          {
+            "content": "1 937,31",
+            "source": "D(1,1085,933,1186,933,1186,959,1085,959)",
+            "span": {
+              "offset": 587,
+              "length": 8
+            }
+          },
+          {
+            "content": "10%",
+            "source": "D(1,1280,932,1333,934,1332,959,1279,957)",
+            "span": {
+              "offset": 605,
+              "length": 3
+            }
+          },
+          {
+            "content": "2 131,04",
+            "source": "D(1,1398,933,1502,934,1501,960,1398,959)",
+            "span": {
+              "offset": 618,
+              "length": 8
+            }
+          },
+          {
+            "content": "2.",
+            "source": "D(1,168,1045,195,1049,191,1074,164,1070)",
+            "span": {
+              "offset": 647,
+              "length": 2
+            }
+          },
+          {
+            "content": "4'x2' Marble Dining Table Top Pietra Dura Birds Inlay Art Furniture Decors B444",
+            "source": "D(1,237,1046,573,1046,573,1128,237,1128)",
+            "span": {
+              "offset": 659,
+              "length": 79
+            }
+          },
+          {
+            "content": "5,00",
+            "source": "D(1,672,1047,725,1047,725,1072,672,1072)",
+            "span": {
+              "offset": 748,
+              "length": 4
+            }
+          },
+          {
+            "content": "each",
+            "source": "D(1,770,1048,827,1048,827,1071,770,1071)",
+            "span": {
+              "offset": 762,
+              "length": 4
+            }
+          },
+          {
+            "content": "1 840,10",
+            "source": "D(1,916,1046,1016,1047,1016,1073,916,1072)",
+            "span": {
+              "offset": 776,
+              "length": 8
+            }
+          },
+          {
+            "content": "9 200,50",
+            "source": "D(1,1083,1045,1187,1046,1186,1073,1083,1072)",
+            "span": {
+              "offset": 794,
+              "length": 8
+            }
+          },
+          {
+            "content": "10%",
+            "source": "D(1,1281,1045,1333,1048,1332,1075,1279,1072)",
+            "span": {
+              "offset": 812,
+              "length": 3
+            }
+          },
+          {
+            "content": "10 120,55",
+            "source": "D(1,1386,1046,1500,1047,1500,1073,1386,1072)",
+            "span": {
+              "offset": 825,
+              "length": 9
+            }
+          },
+          {
+            "content": "3.",
+            "source": "D(1,169,1159,195,1163,191,1189,166,1185)",
+            "span": {
+              "offset": 855,
+              "length": 2
+            }
+          },
+          {
+            "content": "60 Inches Marble Dinning Table Top Hand Inlaid Garden Table with Gemstones",
+            "source": "D(1,237,1161,593,1161,593,1243,237,1243)",
+            "span": {
+              "offset": 867,
+              "length": 74
+            }
+          },
+          {
+            "content": "5,00",
+            "source": "D(1,672,1162,726,1162,726,1187,672,1187)",
+            "span": {
+              "offset": 951,
+              "length": 4
+            }
+          },
+          {
+            "content": "each",
+            "source": "D(1,769,1162,827,1162,827,1185,769,1185)",
+            "span": {
+              "offset": 965,
+              "length": 4
+            }
+          },
+          {
+            "content": "5 908,00",
+            "source": "D(1,915,1161,1016,1161,1016,1188,915,1188)",
+            "span": {
+              "offset": 979,
+              "length": 8
+            }
+          },
+          {
+            "content": "29 540,00",
+            "source": "D(1,1069,1161,1185,1161,1185,1188,1069,1188)",
+            "span": {
+              "offset": 997,
+              "length": 9
+            }
+          },
+          {
+            "content": "10%",
+            "source": "D(1,1280,1156,1334,1159,1332,1188,1278,1184)",
+            "span": {
+              "offset": 1016,
+              "length": 3
+            }
+          },
+          {
+            "content": "32 494,00",
+            "source": "D(1,1384,1161,1501,1161,1501,1187,1384,1187)",
+            "span": {
+              "offset": 1029,
+              "length": 9
+            }
+          },
+          {
+            "role": "sectionHeading",
+            "content": "SUMMARY",
+            "source": "D(1,132,1308,328,1308,328,1343,132,1343)",
+            "span": {
+              "offset": 1061,
+              "length": 9
+            }
+          },
+          {
+            "content": "VAT [%]",
+            "source": "D(1,639,1391,745,1394,744,1425,638,1422)",
+            "span": {
+              "offset": 1090,
+              "length": 7
+            }
+          },
+          {
+            "content": "Net worth",
+            "source": "D(1,927,1392,1057,1393,1056,1420,927,1419)",
+            "span": {
+              "offset": 1107,
+              "length": 9
+            }
+          },
+          {
+            "content": "VAT",
+            "source": "D(1,1186,1394,1241,1394,1242,1418,1186,1418)",
+            "span": {
+              "offset": 1126,
+              "length": 3
+            }
+          },
+          {
+            "content": "Gross worth",
+            "source": "D(1,1350,1394,1505,1394,1505,1420,1350,1420)",
+            "span": {
+              "offset": 1139,
+              "length": 11
+            }
+          },
+          {
+            "content": "10%",
+            "source": "D(1,667,1451,719,1452,719,1478,667,1478)",
+            "span": {
+              "offset": 1171,
+              "length": 3
+            }
+          },
+          {
+            "content": "40 677,81",
+            "source": "D(1,940,1447,1056,1452,1055,1481,939,1476)",
+            "span": {
+              "offset": 1184,
+              "length": 9
+            }
+          },
+          {
+            "content": "4 067,78",
+            "source": "D(1,1138,1450,1241,1452,1240,1480,1137,1477)",
+            "span": {
+              "offset": 1203,
+              "length": 8
+            }
+          },
+          {
+            "content": "44 745,59",
+            "source": "D(1,1389,1453,1505,1453,1505,1478,1389,1478)",
+            "span": {
+              "offset": 1221,
+              "length": 9
+            }
+          },
+          {
+            "content": "Total",
+            "source": "D(1,499,1512,569,1511,569,1536,500,1538)",
+            "span": {
+              "offset": 1251,
+              "length": 5
+            }
+          },
+          {
+            "content": "$ 40 677,81",
+            "source": "D(1,905,1512,1056,1512,1056,1540,905,1540)",
+            "span": {
+              "offset": 1266,
+              "length": 11
+            }
+          },
+          {
+            "content": "$ 4 067,78",
+            "source": "D(1,1105,1514,1241,1512,1242,1541,1105,1542)",
+            "span": {
+              "offset": 1287,
+              "length": 10
+            }
+          },
+          {
+            "content": "$ 44 745,59",
+            "source": "D(1,1354,1512,1505,1513,1505,1539,1353,1538)",
+            "span": {
+              "offset": 1307,
+              "length": 11
+            }
+          }
+        ],
+        "sections": [
+          {
+            "span": {
+              "offset": 0,
+              "length": 1338
+            },
+            "elements": [
+              "/sections/1",
+              "/sections/2",
+              "/sections/3"
+            ]
+          },
+          {
+            "span": {
+              "offset": 0,
+              "length": 268
+            },
+            "elements": [
+              "/paragraphs/0",
+              "/paragraphs/1",
+              "/paragraphs/2",
+              "/paragraphs/3",
+              "/paragraphs/4",
+              "/paragraphs/5",
+              "/paragraphs/6",
+              "/paragraphs/7"
+            ]
+          },
+          {
+            "span": {
+              "offset": 271,
+              "length": 787
+            },
+            "elements": [
+              "/paragraphs/8",
+              "/tables/0"
+            ]
+          },
+          {
+            "span": {
+              "offset": 1061,
+              "length": 277
+            },
+            "elements": [
+              "/paragraphs/41",
+              "/tables/1"
+            ]
+          }
+        ],
+        "tables": [
+          {
+            "rowCount": 4,
+            "columnCount": 8,
+            "cells": [
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "No.",
+                "source": "D(1,133,827,232,827,231,916,132,916)",
+                "span": {
+                  "offset": 298,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/9"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Description",
+                "source": "D(1,232,827,629,827,629,916,231,916)",
+                "span": {
+                  "offset": 311,
+                  "length": 11
+                },
+                "elements": [
+                  "/paragraphs/10"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Qty",
+                "source": "D(1,629,827,752,827,752,916,629,916)",
+                "span": {
+                  "offset": 332,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/11"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "UM",
+                "source": "D(1,752,827,866,827,866,916,752,916)",
+                "span": {
+                  "offset": 345,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/12"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 4,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Net price",
+                "source": "D(1,866,827,1041,827,1041,916,866,916)",
+                "span": {
+                  "offset": 357,
+                  "length": 9
+                },
+                "elements": [
+                  "/paragraphs/13"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 5,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Net worth",
+                "source": "D(1,1041,827,1213,827,1214,916,1041,916)",
+                "span": {
+                  "offset": 376,
+                  "length": 9
+                },
+                "elements": [
+                  "/paragraphs/14"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 6,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "VAT [%]",
+                "source": "D(1,1213,827,1365,827,1365,916,1214,916)",
+                "span": {
+                  "offset": 395,
+                  "length": 7
+                },
+                "elements": [
+                  "/paragraphs/15"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 7,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Gross worth",
+                "source": "D(1,1365,827,1518,827,1518,916,1365,916)",
+                "span": {
+                  "offset": 412,
+                  "length": 11
+                },
+                "elements": [
+                  "/paragraphs/16"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "1.",
+                "source": "D(1,132,916,231,916,231,1030,132,1030)",
+                "span": {
+                  "offset": 444,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/17"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "15\"x15\" White Decorative Coffee Table Top Lapis Lazuli Marquetery Patio Décor",
+                "source": "D(1,231,916,629,916,629,1029,231,1030)",
+                "span": {
+                  "offset": 456,
+                  "length": 77
+                },
+                "elements": [
+                  "/paragraphs/18"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "3,00",
+                "source": "D(1,629,916,752,916,752,1029,629,1029)",
+                "span": {
+                  "offset": 543,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/19"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "each",
+                "source": "D(1,752,916,866,916,866,1029,752,1029)",
+                "span": {
+                  "offset": 557,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/20"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 4,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "645,77",
+                "source": "D(1,866,916,1041,916,1042,1029,866,1029)",
+                "span": {
+                  "offset": 571,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/21"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 5,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "1 937,31",
+                "source": "D(1,1041,916,1214,916,1214,1029,1042,1029)",
+                "span": {
+                  "offset": 587,
+                  "length": 8
+                },
+                "elements": [
+                  "/paragraphs/22"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 6,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "10%",
+                "source": "D(1,1214,916,1365,916,1365,1029,1214,1029)",
+                "span": {
+                  "offset": 605,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/23"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 7,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "2 131,04",
+                "source": "D(1,1365,916,1518,916,1518,1029,1365,1029)",
+                "span": {
+                  "offset": 618,
+                  "length": 8
+                },
+                "elements": [
+                  "/paragraphs/24"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "2.",
+                "source": "D(1,132,1030,231,1030,231,1144,132,1144)",
+                "span": {
+                  "offset": 647,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/25"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "4'x2' Marble Dining Table Top Pietra Dura Birds Inlay Art Furniture Decors B444",
+                "source": "D(1,231,1030,629,1029,629,1144,231,1144)",
+                "span": {
+                  "offset": 659,
+                  "length": 79
+                },
+                "elements": [
+                  "/paragraphs/26"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "5,00",
+                "source": "D(1,629,1029,752,1029,753,1143,629,1144)",
+                "span": {
+                  "offset": 748,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/27"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "each",
+                "source": "D(1,752,1029,866,1029,867,1143,753,1143)",
+                "span": {
+                  "offset": 762,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/28"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 4,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "1 840,10",
+                "source": "D(1,866,1029,1042,1029,1042,1143,867,1143)",
+                "span": {
+                  "offset": 776,
+                  "length": 8
+                },
+                "elements": [
+                  "/paragraphs/29"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 5,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "9 200,50",
+                "source": "D(1,1042,1029,1214,1029,1215,1143,1042,1143)",
+                "span": {
+                  "offset": 794,
+                  "length": 8
+                },
+                "elements": [
+                  "/paragraphs/30"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 6,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "10%",
+                "source": "D(1,1214,1029,1365,1029,1365,1143,1215,1143)",
+                "span": {
+                  "offset": 812,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/31"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 7,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "10 120,55",
+                "source": "D(1,1365,1029,1518,1029,1518,1143,1365,1143)",
+                "span": {
+                  "offset": 825,
+                  "length": 9
+                },
+                "elements": [
+                  "/paragraphs/32"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "3.",
+                "source": "D(1,132,1144,231,1144,231,1259,132,1259)",
+                "span": {
+                  "offset": 855,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/33"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "60 Inches Marble Dinning Table Top Hand Inlaid Garden Table with Gemstones",
+                "source": "D(1,231,1144,629,1144,629,1259,231,1259)",
+                "span": {
+                  "offset": 867,
+                  "length": 74
+                },
+                "elements": [
+                  "/paragraphs/34"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "5,00",
+                "source": "D(1,629,1144,753,1143,753,1259,629,1259)",
+                "span": {
+                  "offset": 951,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/35"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "each",
+                "source": "D(1,753,1143,867,1143,867,1259,753,1259)",
+                "span": {
+                  "offset": 965,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/36"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 4,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "5 908,00",
+                "source": "D(1,867,1143,1042,1143,1042,1259,867,1259)",
+                "span": {
+                  "offset": 979,
+                  "length": 8
+                },
+                "elements": [
+                  "/paragraphs/37"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 5,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "29 540,00",
+                "source": "D(1,1042,1143,1215,1143,1216,1259,1042,1259)",
+                "span": {
+                  "offset": 997,
+                  "length": 9
+                },
+                "elements": [
+                  "/paragraphs/38"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 6,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "10%",
+                "source": "D(1,1215,1143,1365,1143,1366,1259,1216,1259)",
+                "span": {
+                  "offset": 1016,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/39"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 7,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "32 494,00",
+                "source": "D(1,1365,1143,1518,1143,1518,1259,1366,1259)",
+                "span": {
+                  "offset": 1029,
+                  "length": 9
+                },
+                "elements": [
+                  "/paragraphs/40"
+                ]
+              }
+            ],
+            "source": "D(1,131,826,1518,825,1518,1260,131,1262)",
+            "span": {
+              "offset": 281,
+              "length": 777
+            }
+          },
+          {
+            "rowCount": 3,
+            "columnCount": 4,
+            "cells": [
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "VAT [%]",
+                "source": "D(1,133,1377,830,1377,830,1437,133,1438)",
+                "span": {
+                  "offset": 1090,
+                  "length": 7
+                },
+                "elements": [
+                  "/paragraphs/42"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Net worth",
+                "source": "D(1,830,1377,1088,1377,1088,1437,830,1437)",
+                "span": {
+                  "offset": 1107,
+                  "length": 9
+                },
+                "elements": [
+                  "/paragraphs/43"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "VAT",
+                "source": "D(1,1088,1377,1300,1377,1300,1437,1088,1437)",
+                "span": {
+                  "offset": 1126,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/44"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Gross worth",
+                "source": "D(1,1300,1377,1518,1377,1518,1437,1300,1437)",
+                "span": {
+                  "offset": 1139,
+                  "length": 11
+                },
+                "elements": [
+                  "/paragraphs/45"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "10%",
+                "source": "D(1,133,1438,830,1437,830,1495,132,1495)",
+                "span": {
+                  "offset": 1171,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/46"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "40 677,81",
+                "source": "D(1,830,1437,1088,1437,1088,1495,830,1495)",
+                "span": {
+                  "offset": 1184,
+                  "length": 9
+                },
+                "elements": [
+                  "/paragraphs/47"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "4 067,78",
+                "source": "D(1,1088,1437,1300,1437,1300,1495,1088,1495)",
+                "span": {
+                  "offset": 1203,
+                  "length": 8
+                },
+                "elements": [
+                  "/paragraphs/48"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "44 745,59",
+                "source": "D(1,1300,1437,1518,1437,1518,1495,1300,1495)",
+                "span": {
+                  "offset": 1221,
+                  "length": 9
+                },
+                "elements": [
+                  "/paragraphs/49"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Total",
+                "source": "D(1,132,1495,830,1495,830,1554,133,1554)",
+                "span": {
+                  "offset": 1251,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/50"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "$ 40 677,81",
+                "source": "D(1,830,1495,1088,1495,1088,1554,830,1554)",
+                "span": {
+                  "offset": 1266,
+                  "length": 11
+                },
+                "elements": [
+                  "/paragraphs/51"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "$ 4 067,78",
+                "source": "D(1,1088,1495,1300,1495,1301,1554,1088,1554)",
+                "span": {
+                  "offset": 1287,
+                  "length": 10
+                },
+                "elements": [
+                  "/paragraphs/52"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "$ 44 745,59",
+                "source": "D(1,1300,1495,1518,1495,1518,1554,1301,1554)",
+                "span": {
+                  "offset": 1307,
+                  "length": 11
+                },
+                "elements": [
+                  "/paragraphs/53"
+                ]
+              }
+            ],
+            "source": "D(1,130,1377,1518,1376,1518,1557,129,1557)",
+            "span": {
+              "offset": 1073,
+              "length": 265
+            }
+          }
+        ],
         "analyzerId": "prebuilt-invoice",
         "mimeType": "image/jpeg"
       }
     ]
   },
   "usage": {
-    "documentPagesMinimal": 1,
+    "documentPagesStandard": 1,
     "contextualizationTokens": 1000,
     "tokens": {
-      "gpt-4.1-input": 10263,
-      "gpt-4.1-output": 323,
-      "text-embedding-3-large": 4
+      "gpt-4.1-input": 13249,
+      "gpt-4.1-output": 1851,
+      "text-embedding-3-large": 551
     }
   },
   "_extracted": {
-    "field_values": {},
+    "field_values": {
+      "AmountDue": {
+        "Amount": 44745.59,
+        "CurrencyCode": "USD"
+      },
+      "CountryRegion": "USA",
+      "CustomerAddress": "3571 Tina Trafficway Buckleyland, LA 97688",
+      "CustomerAddressRecipient": "Rios, Oneill and Rowe",
+      "CustomerName": "Rios, Oneill and Rowe",
+      "CustomerTaxId": "922-72-5979",
+      "InvoiceDate": "2014-04-09",
+      "InvoiceId": "19471831",
+      "LineItems": [
+        {
+          "Description": "15\"x15\" White Decorative Coffee Table Top Lapis Lazuli Marquetery Patio Décor",
+          "Quantity": 3,
+          "QuantityUnit": "each",
+          "TaxAmount": {
+            "CurrencyCode": "USD"
+          },
+          "TaxRate": 0.1,
+          "TotalAmount": {
+            "Amount": 2131.04,
+            "CurrencyCode": "USD"
+          },
+          "UnitPrice": {
+            "Amount": 645.77,
+            "CurrencyCode": "USD"
+          }
+        },
+        {
+          "Description": "4'x2' Marble Dining Table Top Pietra Dura Birds Inlay Art Furniture Decors B444",
+          "ProductCode": "B444",
+          "Quantity": 5,
+          "QuantityUnit": "each",
+          "TaxAmount": {
+            "CurrencyCode": "USD"
+          },
+          "TaxRate": 0.1,
+          "TotalAmount": {
+            "Amount": 10120.55,
+            "CurrencyCode": "USD"
+          },
+          "UnitPrice": {
+            "Amount": 1840.1,
+            "CurrencyCode": "USD"
+          }
+        },
+        {
+          "Description": "60 Inches Marble Dinning Table Top Hand Inlaid Garden Table with Gemstones",
+          "Quantity": 5,
+          "QuantityUnit": "each",
+          "TaxAmount": {
+            "CurrencyCode": "USD"
+          },
+          "TaxRate": 0.1,
+          "TotalAmount": {
+            "Amount": 32494,
+            "CurrencyCode": "USD"
+          },
+          "UnitPrice": {
+            "Amount": 5908,
+            "CurrencyCode": "USD"
+          }
+        }
+      ],
+      "SubtotalAmount": {
+        "Amount": 40677.81,
+        "CurrencyCode": "USD"
+      },
+      "TaxDetails": [
+        {
+          "Amount": {
+            "Amount": 4067.78,
+            "CurrencyCode": "USD"
+          },
+          "Description": "VAT [%] 10%",
+          "NetAmount": {
+            "Amount": 40677.81,
+            "CurrencyCode": "USD"
+          },
+          "Rate": 0.1
+        }
+      ],
+      "TotalAmount": {
+        "Amount": 44745.59,
+        "CurrencyCode": "USD"
+      },
+      "TotalTaxAmount": {
+        "Amount": 4067.78,
+        "CurrencyCode": "USD"
+      },
+      "VendorAddress": "9790 Bauer Hills Apt. 146 South Patriciaton, SD 32497",
+      "VendorAddressRecipient": "Palmer Ltd",
+      "VendorName": "Palmer Ltd",
+      "VendorTaxId": "924-71-1106"
+    },
     "description": "[LLM error: 429 Client Error: Too Many Requests for url: https://aya-demo-ai.cognitiveservices.azure.com/openai/deployments/gpt-4.1/chat/completions?api-version=2024-12-01-preview]"
   }
 }

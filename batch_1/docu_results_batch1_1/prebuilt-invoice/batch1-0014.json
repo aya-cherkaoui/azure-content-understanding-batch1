@@ -1,25 +1,35 @@
 {
-  "id": "ab6ce62f-12a2-40ac-8b4d-24764ce7acba",
+  "id": "fa7aebdf-057f-4078-9f16-c0be4aa6113c",
   "status": "Succeeded",
   "result": {
     "analyzerId": "prebuilt-invoice",
     "apiVersion": "2025-11-01",
-    "createdAt": "2026-02-10T13:37:33Z",
-    "stringEncoding": "utf16",
+    "createdAt": "2026-02-10T15:10:34Z",
+    "stringEncoding": "codePoint",
     "warnings": [],
     "contents": [
       {
         "path": "input1",
-        "markdown": "```text\n\n```\n",
+        "markdown": "Invoice no: 77596491\n\nDate of issue:\n\n01/31/2021\n\nSeller:\nTran, Hurst and Rodgers\nUnit 2493 Box 1389\nDPO AP 75814\n\nTax Id: 988-83-0971\n\nIBAN: GB04ZWCK22425880230961\n\nClient:\nStephenson Inc\n716 Wright Flat Apt. 385\nSouth Carrie, GA 17790\n\nTax Id: 926-85-5660\n\n\n# ITEMS\n\n\n<table>\n<tr>\n<th>No.</th>\n<th>Description</th>\n<th>Qty</th>\n<th>UM</th>\n<th>Net price</th>\n<th>Net worth</th>\n<th>VAT [%]</th>\n<th>Gross worth</th>\n</tr>\n<tr>\n<td>1.</td>\n<td>Earl Scruggs and the 5-String Banjo: Revised and Enhanced Edition (Paperback or</td>\n<td>1,00</td>\n<td>each</td>\n<td>22,68</td>\n<td>22,68</td>\n<td>10%</td>\n<td>24,95</td>\n</tr>\n</table>\n\n\n# SUMMARY\n\n\n<table>\n<tr>\n<th>VAT [%]</th>\n<th>Net worth</th>\n<th>VAT</th>\n<th>Gross worth</th>\n</tr>\n<tr>\n<td>10%</td>\n<td>22,68</td>\n<td>2,27</td>\n<td>24,95</td>\n</tr>\n<tr>\n<td>Total</td>\n<td>$ 22,68</td>\n<td>$ 2,27</td>\n<td>$ 24,95</td>\n</tr>\n</table>\n",
         "fields": {
           "AmountDue": {
             "type": "object",
             "valueObject": {
               "Amount": {
-                "type": "number"
+                "type": "number",
+                "valueNumber": 24.95,
+                "spans": [
+                  {
+                    "offset": 859,
+                    "length": 7
+                  }
+                ],
+                "confidence": 0.781,
+                "source": "D(1,1408.0000,1283.0000,1505.0000,1283.0000,1505.0000,1309.0000,1408.0000,1309.0000)"
               },
               "CurrencyCode": {
-                "type": "string"
+                "type": "string",
+                "valueString": "USD"
               }
             }
           },
@@ -27,7 +37,8 @@
             "type": "object",
             "valueObject": {
               "Amount": {
-                "type": "number"
+                "type": "number",
+                "confidence": 0.959
               },
               "CurrencyCode": {
                 "type": "string"
@@ -35,87 +46,377 @@
             }
           },
           "BillingAddress": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.715
           },
           "BillingAddressRecipient": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.762
           },
           "CountryRegion": {
-            "type": "string"
+            "type": "string",
+            "valueString": "USA"
           },
           "CustomerAddress": {
-            "type": "string"
+            "type": "string",
+            "valueString": "716 Wright Flat Apt. 385 South Carrie, GA 17790",
+            "spans": [
+              {
+                "offset": 189,
+                "length": 24
+              },
+              {
+                "offset": 214,
+                "length": 22
+              }
+            ],
+            "confidence": 0.72,
+            "source": "D(1,833.0000,541.0000,1177.0000,541.0000,1177.0000,574.0000,833.0000,574.0000);D(1,833.0000,577.0000,1164.0000,577.0000,1164.0000,609.0000,833.0000,609.0000)"
           },
           "CustomerAddressRecipient": {
-            "type": "string"
+            "type": "string",
+            "valueString": "Stephenson Inc",
+            "spans": [
+              {
+                "offset": 174,
+                "length": 14
+              }
+            ],
+            "confidence": 0.745,
+            "source": "D(1,832.0168,504.5229,1050.3636,507.0041,1049.9719,541.4770,831.6250,538.9957)"
           },
           "CustomerId": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.815
           },
           "CustomerName": {
-            "type": "string"
+            "type": "string",
+            "valueString": "Stephenson Inc",
+            "spans": [
+              {
+                "offset": 174,
+                "length": 14
+              }
+            ],
+            "confidence": 0.742,
+            "source": "D(1,832.0168,504.5229,1050.3636,507.0041,1049.9719,541.4770,831.6250,538.9957)"
           },
           "CustomerTaxId": {
-            "type": "string"
+            "type": "string",
+            "valueString": "926-85-5660",
+            "spans": [
+              {
+                "offset": 246,
+                "length": 11
+              }
+            ],
+            "confidence": 0.902,
+            "source": "D(1,937.0000,649.0000,1118.0000,648.0000,1118.0000,679.0000,937.0000,680.0000)"
           },
           "DueDate": {
-            "type": "date"
+            "type": "date",
+            "confidence": 0.793
           },
           "InvoiceDate": {
-            "type": "date"
+            "type": "date",
+            "valueDate": "2021-01-31",
+            "spans": [
+              {
+                "offset": 38,
+                "length": 10
+              }
+            ],
+            "confidence": 0.97,
+            "source": "D(1,800.0000,140.0000,979.0000,141.0000,979.0000,174.0000,800.0000,174.0000)"
           },
           "InvoiceId": {
-            "type": "string"
+            "type": "string",
+            "valueString": "77596491",
+            "spans": [
+              {
+                "offset": 12,
+                "length": 8
+              }
+            ],
+            "confidence": 0.936,
+            "source": "D(1,349.0000,72.0000,538.0000,72.0000,538.0000,107.0000,349.0000,107.0000)"
           },
           "LineItems": {
-            "type": "array"
+            "type": "array",
+            "valueArray": [
+              {
+                "type": "object",
+                "valueObject": {
+                  "Date": {
+                    "type": "date",
+                    "confidence": 0.823
+                  },
+                  "Description": {
+                    "type": "string",
+                    "valueString": "Earl Scruggs and the 5-String Banjo: Revised and Enhanced Edition (Paperback or",
+                    "spans": [
+                      {
+                        "offset": 445,
+                        "length": 29
+                      },
+                      {
+                        "offset": 475,
+                        "length": 27
+                      },
+                      {
+                        "offset": 503,
+                        "length": 21
+                      }
+                    ],
+                    "confidence": 0.662,
+                    "source": "D(1,239.0000,932.0000,568.0000,932.0000,568.0000,960.0000,239.0000,960.0000);D(1,238.0000,959.0000,573.0000,959.0000,573.0000,986.0000,238.0000,986.0000);D(1,239.0000,987.0000,481.0000,987.0000,481.0000,1015.0000,239.0000,1015.0000)"
+                  },
+                  "ProductCode": {
+                    "type": "string",
+                    "confidence": 0.902
+                  },
+                  "Quantity": {
+                    "type": "number",
+                    "valueNumber": 1,
+                    "spans": [
+                      {
+                        "offset": 534,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.903,
+                    "source": "D(1,673.0000,933.0000,725.0000,933.0000,725.0000,958.0000,673.0000,958.0000)"
+                  },
+                  "QuantityUnit": {
+                    "type": "string",
+                    "valueString": "each",
+                    "spans": [
+                      {
+                        "offset": 548,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.869,
+                    "source": "D(1,769.0000,934.0000,827.0000,933.0000,827.0000,957.0000,769.0000,958.0000)"
+                  },
+                  "TaxAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 2.27,
+                        "spans": [
+                          {
+                            "offset": 771,
+                            "length": 4
+                          }
+                        ],
+                        "confidence": 0.823,
+                        "source": "D(1,1189.0000,1224.0000,1240.0000,1224.0000,1240.0000,1249.0000,1189.0000,1249.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "TaxRate": {
+                    "type": "number",
+                    "valueNumber": 0.1,
+                    "spans": [
+                      {
+                        "offset": 592,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.83,
+                    "source": "D(1,1280.0226,931.9171,1332.5206,933.0108,1331.9983,958.0833,1279.5002,956.9896)"
+                  },
+                  "TotalAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 24.95,
+                        "spans": [
+                          {
+                            "offset": 605,
+                            "length": 5
+                          }
+                        ],
+                        "confidence": 0.901,
+                        "source": "D(1,1434.0000,934.0000,1500.0000,933.0000,1500.0000,957.0000,1434.0000,958.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "UnitPrice": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 22.68,
+                        "spans": [
+                          {
+                            "offset": 562,
+                            "length": 5
+                          }
+                        ],
+                        "confidence": 0.903,
+                        "source": "D(1,950.0000,932.0000,1015.0000,932.0000,1015.0000,959.0000,950.0000,959.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
           },
           "PaymentTerm": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.816
           },
           "PONumber": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.746
           },
           "RemittanceAddress": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.905
           },
           "RemittanceAddressRecipient": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.814
           },
           "ServiceAddress": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.782
           },
           "ServiceAddressRecipient": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.82
           },
           "ShippingAddress": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.775
           },
           "ShippingAddressRecipient": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.81
           },
           "SubtotalAmount": {
             "type": "object",
             "valueObject": {
               "Amount": {
-                "type": "number"
+                "type": "number",
+                "valueNumber": 22.68
               },
               "CurrencyCode": {
-                "type": "string"
+                "type": "string",
+                "valueString": "USD"
               }
             }
           },
           "TaxDetails": {
-            "type": "array"
+            "type": "array",
+            "valueArray": [
+              {
+                "type": "object",
+                "valueObject": {
+                  "Amount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 2.27,
+                        "spans": [
+                          {
+                            "offset": 771,
+                            "length": 4
+                          }
+                        ],
+                        "confidence": 0.707,
+                        "source": "D(1,1189.0000,1224.0000,1240.0000,1224.0000,1240.0000,1249.0000,1189.0000,1249.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "Description": {
+                    "type": "string",
+                    "valueString": "VAT",
+                    "spans": [
+                      {
+                        "offset": 698,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.374,
+                    "source": "D(1,1188.0000,1166.0000,1242.0000,1165.0000,1242.0000,1190.0000,1188.0000,1190.0000)"
+                  },
+                  "NetAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 22.68,
+                        "spans": [
+                          {
+                            "offset": 756,
+                            "length": 5
+                          }
+                        ],
+                        "confidence": 0.939,
+                        "source": "D(1,989.0000,1225.0000,1056.0000,1225.0000,1056.0000,1250.0000,989.0000,1250.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "Rate": {
+                    "type": "number",
+                    "valueNumber": 0.1,
+                    "spans": [
+                      {
+                        "offset": 743,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.873,
+                    "source": "D(1,666.2000,1220.6000,721.0690,1225.1724,718.7172,1253.3931,663.8483,1248.8207)"
+                  }
+                }
+              }
+            ]
           },
           "TotalAmount": {
             "type": "object",
             "valueObject": {
               "Amount": {
-                "type": "number"
+                "type": "number",
+                "valueNumber": 24.95,
+                "spans": [
+                  {
+                    "offset": 785,
+                    "length": 5
+                  }
+                ],
+                "confidence": 0.804,
+                "source": "D(1,1438.0000,1224.0000,1505.0000,1224.0000,1505.0000,1250.0000,1438.0000,1249.0000)"
               },
               "CurrencyCode": {
-                "type": "string"
+                "type": "string",
+                "valueString": "USD"
               }
             }
           },
@@ -123,7 +424,8 @@
             "type": "object",
             "valueObject": {
               "Amount": {
-                "type": "number"
+                "type": "number",
+                "confidence": 0.934
               },
               "CurrencyCode": {
                 "type": "string"
@@ -134,45 +436,2381 @@
             "type": "object",
             "valueObject": {
               "Amount": {
-                "type": "number"
+                "type": "number",
+                "valueNumber": 2.27
               },
               "CurrencyCode": {
-                "type": "string"
+                "type": "string",
+                "valueString": "USD"
               }
             }
           },
           "VendorAddress": {
-            "type": "string"
+            "type": "string",
+            "valueString": "Unit 2493 Box 1389 DPO AP 75814",
+            "spans": [
+              {
+                "offset": 82,
+                "length": 18
+              },
+              {
+                "offset": 101,
+                "length": 12
+              }
+            ],
+            "confidence": 0.751,
+            "source": "D(1,140.0000,542.0000,419.0000,542.0000,419.0000,572.0000,140.0000,572.0000);D(1,140.0000,578.0000,345.0000,578.0000,345.0000,607.0000,140.0000,607.0000)"
           },
           "VendorAddressRecipient": {
-            "type": "string"
+            "type": "string",
+            "valueString": "Tran, Hurst and Rodgers",
+            "spans": [
+              {
+                "offset": 58,
+                "length": 23
+              }
+            ],
+            "confidence": 0.769,
+            "source": "D(1,139.0000,506.0000,483.0000,506.0000,483.0000,539.0000,139.0000,539.0000)"
           },
           "VendorName": {
-            "type": "string"
+            "type": "string",
+            "valueString": "Tran, Hurst and Rodgers",
+            "spans": [
+              {
+                "offset": 58,
+                "length": 23
+              }
+            ],
+            "confidence": 0.739,
+            "source": "D(1,139.0000,506.0000,483.0000,506.0000,483.0000,539.0000,139.0000,539.0000)"
           },
           "VendorTaxId": {
-            "type": "string"
+            "type": "string",
+            "valueString": "988-83-0971",
+            "spans": [
+              {
+                "offset": 123,
+                "length": 11
+              }
+            ],
+            "confidence": 0.781,
+            "source": "D(1,244.0000,649.0000,424.0000,649.0000,424.0000,678.0000,244.0000,679.0000)"
           }
         },
         "kind": "document",
         "startPageNumber": 1,
         "endPageNumber": 1,
+        "unit": "pixel",
+        "pages": [
+          {
+            "pageNumber": 1,
+            "angle": 0,
+            "width": 1654,
+            "height": 2339,
+            "spans": [
+              {
+                "offset": 0,
+                "length": 887
+              }
+            ],
+            "words": [
+              {
+                "content": "Invoice",
+                "span": {
+                  "offset": 0,
+                  "length": 7
+                },
+                "confidence": 0.942,
+                "source": "D(1,131,73,265,72,266,107,131,107)"
+              },
+              {
+                "content": "no",
+                "span": {
+                  "offset": 8,
+                  "length": 2
+                },
+                "confidence": 0.997,
+                "source": "D(1,280,72,323,72,323,107,280,107)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 10,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,326,72,335,72,335,107,326,107)"
+              },
+              {
+                "content": "77596491",
+                "span": {
+                  "offset": 12,
+                  "length": 8
+                },
+                "confidence": 0.997,
+                "source": "D(1,349,72,538,72,538,107,349,107)"
+              },
+              {
+                "content": "Date",
+                "span": {
+                  "offset": 22,
+                  "length": 4
+                },
+                "confidence": 0.998,
+                "source": "D(1,131,141,205,141,205,173,131,173)"
+              },
+              {
+                "content": "of",
+                "span": {
+                  "offset": 27,
+                  "length": 2
+                },
+                "confidence": 0.998,
+                "source": "D(1,216,141,247,141,247,173,216,173)"
+              },
+              {
+                "content": "issue",
+                "span": {
+                  "offset": 30,
+                  "length": 5
+                },
+                "confidence": 0.996,
+                "source": "D(1,254,141,332,142,332,173,254,173)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 35,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,334,142,345,142,345,173,335,173)"
+              },
+              {
+                "content": "01/31/2021",
+                "span": {
+                  "offset": 38,
+                  "length": 10
+                },
+                "confidence": 0.993,
+                "source": "D(1,800,140,979,141,979,174,800,174)"
+              },
+              {
+                "content": "Seller",
+                "span": {
+                  "offset": 50,
+                  "length": 6
+                },
+                "confidence": 0.997,
+                "source": "D(1,131,443,241,443,241,476,131,476)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 56,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,242,443,255,443,255,476,242,476)"
+              },
+              {
+                "content": "Tran",
+                "span": {
+                  "offset": 58,
+                  "length": 4
+                },
+                "confidence": 0.998,
+                "source": "D(1,139,507,201,506,201,538,139,539)"
+              },
+              {
+                "content": ",",
+                "span": {
+                  "offset": 62,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,203,506,209,506,209,538,203,538)"
+              },
+              {
+                "content": "Hurst",
+                "span": {
+                  "offset": 64,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,221,506,295,506,295,538,221,538)"
+              },
+              {
+                "content": "and",
+                "span": {
+                  "offset": 70,
+                  "length": 3
+                },
+                "confidence": 0.999,
+                "source": "D(1,304,506,354,506,354,538,304,538)"
+              },
+              {
+                "content": "Rodgers",
+                "span": {
+                  "offset": 74,
+                  "length": 7
+                },
+                "confidence": 0.998,
+                "source": "D(1,366,506,483,507,483,539,366,538)"
+              },
+              {
+                "content": "Unit",
+                "span": {
+                  "offset": 82,
+                  "length": 4
+                },
+                "confidence": 0.986,
+                "source": "D(1,140,542,197,542,197,572,140,572)"
+              },
+              {
+                "content": "2493",
+                "span": {
+                  "offset": 87,
+                  "length": 4
+                },
+                "confidence": 0.989,
+                "source": "D(1,204,542,275,542,275,572,204,572)"
+              },
+              {
+                "content": "Box",
+                "span": {
+                  "offset": 92,
+                  "length": 3
+                },
+                "confidence": 0.955,
+                "source": "D(1,286,542,337,542,337,572,286,572)"
+              },
+              {
+                "content": "1389",
+                "span": {
+                  "offset": 96,
+                  "length": 4
+                },
+                "confidence": 0.991,
+                "source": "D(1,347,542,419,542,419,572,347,572)"
+              },
+              {
+                "content": "DPO",
+                "span": {
+                  "offset": 101,
+                  "length": 3
+                },
+                "confidence": 0.977,
+                "source": "D(1,140,578,198,578,198,607,140,607)"
+              },
+              {
+                "content": "AP",
+                "span": {
+                  "offset": 105,
+                  "length": 2
+                },
+                "confidence": 0.984,
+                "source": "D(1,208,578,244,578,244,607,208,607)"
+              },
+              {
+                "content": "75814",
+                "span": {
+                  "offset": 108,
+                  "length": 5
+                },
+                "confidence": 0.991,
+                "source": "D(1,254,578,345,578,345,607,254,607)"
+              },
+              {
+                "content": "Tax",
+                "span": {
+                  "offset": 115,
+                  "length": 3
+                },
+                "confidence": 0.971,
+                "source": "D(1,138,649,189,649,190,678,139,678)"
+              },
+              {
+                "content": "Id",
+                "span": {
+                  "offset": 119,
+                  "length": 2
+                },
+                "confidence": 0.786,
+                "source": "D(1,201,649,223,649,223,679,201,679)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 121,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,227,649,232,649,232,679,227,679)"
+              },
+              {
+                "content": "988-83-0971",
+                "span": {
+                  "offset": 123,
+                  "length": 11
+                },
+                "confidence": 0.989,
+                "source": "D(1,244,649,424,649,424,678,244,679)"
+              },
+              {
+                "content": "IBAN",
+                "span": {
+                  "offset": 136,
+                  "length": 4
+                },
+                "confidence": 0.995,
+                "source": "D(1,139,684,205,684,206,713,140,713)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 140,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,209,684,214,683,215,713,209,713)"
+              },
+              {
+                "content": "GB04ZWCK22425880230961",
+                "span": {
+                  "offset": 142,
+                  "length": 22
+                },
+                "confidence": 0.993,
+                "source": "D(1,227,683,634,683,634,714,227,713)"
+              },
+              {
+                "content": "Client",
+                "span": {
+                  "offset": 166,
+                  "length": 6
+                },
+                "confidence": 0.996,
+                "source": "D(1,824,442,935,443,935,477,824,477)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 172,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,937,443,950,443,950,477,937,477)"
+              },
+              {
+                "content": "Stephenson",
+                "span": {
+                  "offset": 174,
+                  "length": 10
+                },
+                "confidence": 0.989,
+                "source": "D(1,832,506,995,507,995,538,832,539)"
+              },
+              {
+                "content": "Inc",
+                "span": {
+                  "offset": 185,
+                  "length": 3
+                },
+                "confidence": 0.886,
+                "source": "D(1,1006,507,1050,507,1050,539,1006,538)"
+              },
+              {
+                "content": "716",
+                "span": {
+                  "offset": 189,
+                  "length": 3
+                },
+                "confidence": 0.997,
+                "source": "D(1,833,542,885,542,885,574,833,574)"
+              },
+              {
+                "content": "Wright",
+                "span": {
+                  "offset": 193,
+                  "length": 6
+                },
+                "confidence": 0.994,
+                "source": "D(1,894,541,987,541,987,574,894,574)"
+              },
+              {
+                "content": "Flat",
+                "span": {
+                  "offset": 200,
+                  "length": 4
+                },
+                "confidence": 0.996,
+                "source": "D(1,998,541,1049,541,1049,574,998,574)"
+              },
+              {
+                "content": "Apt",
+                "span": {
+                  "offset": 205,
+                  "length": 3
+                },
+                "confidence": 0.992,
+                "source": "D(1,1056,541,1106,541,1106,574,1056,574)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 208,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,1106,541,1111,541,1111,574,1106,574)"
+              },
+              {
+                "content": "385",
+                "span": {
+                  "offset": 210,
+                  "length": 3
+                },
+                "confidence": 0.996,
+                "source": "D(1,1122,541,1177,541,1177,574,1122,574)"
+              },
+              {
+                "content": "South",
+                "span": {
+                  "offset": 214,
+                  "length": 5
+                },
+                "confidence": 0.996,
+                "source": "D(1,833,577,913,577,913,608,833,608)"
+              },
+              {
+                "content": "Carrie",
+                "span": {
+                  "offset": 220,
+                  "length": 6
+                },
+                "confidence": 0.996,
+                "source": "D(1,923,577,1005,577,1005,609,923,609)"
+              },
+              {
+                "content": ",",
+                "span": {
+                  "offset": 226,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,1008,577,1014,577,1014,609,1008,609)"
+              },
+              {
+                "content": "GA",
+                "span": {
+                  "offset": 228,
+                  "length": 2
+                },
+                "confidence": 0.974,
+                "source": "D(1,1026,577,1065,577,1065,609,1026,609)"
+              },
+              {
+                "content": "17790",
+                "span": {
+                  "offset": 231,
+                  "length": 5
+                },
+                "confidence": 0.946,
+                "source": "D(1,1075,577,1164,577,1164,608,1075,609)"
+              },
+              {
+                "content": "Tax",
+                "span": {
+                  "offset": 238,
+                  "length": 3
+                },
+                "confidence": 0.977,
+                "source": "D(1,831,649,883,649,883,680,831,680)"
+              },
+              {
+                "content": "Id",
+                "span": {
+                  "offset": 242,
+                  "length": 2
+                },
+                "confidence": 0.698,
+                "source": "D(1,893,649,917,649,917,680,893,680)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 244,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,920,649,926,649,926,680,920,680)"
+              },
+              {
+                "content": "926-85-5660",
+                "span": {
+                  "offset": 246,
+                  "length": 11
+                },
+                "confidence": 0.985,
+                "source": "D(1,937,649,1118,648,1118,679,937,680)"
+              },
+              {
+                "content": "ITEMS",
+                "span": {
+                  "offset": 262,
+                  "length": 5
+                },
+                "confidence": 0.983,
+                "source": "D(1,131,759,248,759,248,791,131,791)"
+              },
+              {
+                "content": "No",
+                "span": {
+                  "offset": 287,
+                  "length": 2
+                },
+                "confidence": 0.933,
+                "source": "D(1,158,848,193,846,193,870,158,870)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 289,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,193,846,202,846,202,870,193,870)"
+              },
+              {
+                "content": "Description",
+                "span": {
+                  "offset": 300,
+                  "length": 11
+                },
+                "confidence": 0.997,
+                "source": "D(1,238,846,385,847,385,873,238,872)"
+              },
+              {
+                "content": "Qty",
+                "span": {
+                  "offset": 321,
+                  "length": 3
+                },
+                "confidence": 0.993,
+                "source": "D(1,678,845,726,848,726,874,678,871)"
+              },
+              {
+                "content": "UM",
+                "span": {
+                  "offset": 334,
+                  "length": 2
+                },
+                "confidence": 0.983,
+                "source": "D(1,777,845,821,845,821,869,777,869)"
+              },
+              {
+                "content": "Net",
+                "span": {
+                  "offset": 346,
+                  "length": 3
+                },
+                "confidence": 0.998,
+                "source": "D(1,898,844,944,846,944,872,898,871)"
+              },
+              {
+                "content": "price",
+                "span": {
+                  "offset": 350,
+                  "length": 5
+                },
+                "confidence": 0.998,
+                "source": "D(1,952,846,1018,845,1018,871,952,872)"
+              },
+              {
+                "content": "Net",
+                "span": {
+                  "offset": 365,
+                  "length": 3
+                },
+                "confidence": 0.998,
+                "source": "D(1,1057,845,1103,845,1103,871,1057,870)"
+              },
+              {
+                "content": "worth",
+                "span": {
+                  "offset": 369,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,1110,845,1186,846,1186,871,1110,871)"
+              },
+              {
+                "content": "VAT",
+                "span": {
+                  "offset": 384,
+                  "length": 3
+                },
+                "confidence": 0.994,
+                "source": "D(1,1226,844,1280,845,1280,872,1226,871)"
+              },
+              {
+                "content": "[",
+                "span": {
+                  "offset": 388,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1287,845,1296,845,1296,873,1287,873)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 389,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1296,845,1319,845,1319,873,1296,873)"
+              },
+              {
+                "content": "]",
+                "span": {
+                  "offset": 390,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,1319,845,1332,845,1332,872,1319,873)"
+              },
+              {
+                "content": "Gross",
+                "span": {
+                  "offset": 401,
+                  "length": 5
+                },
+                "confidence": 0.998,
+                "source": "D(1,1428,848,1501,848,1501,871,1428,870)"
+              },
+              {
+                "content": "worth",
+                "span": {
+                  "offset": 407,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,1425,875,1501,875,1501,897,1425,897)"
+              },
+              {
+                "content": "1",
+                "span": {
+                  "offset": 433,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,170,934,182,934,182,958,170,958)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 434,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,184,934,192,934,192,958,184,958)"
+              },
+              {
+                "content": "Earl",
+                "span": {
+                  "offset": 445,
+                  "length": 4
+                },
+                "confidence": 0.996,
+                "source": "D(1,239,933,280,933,280,960,239,960)"
+              },
+              {
+                "content": "Scruggs",
+                "span": {
+                  "offset": 450,
+                  "length": 7
+                },
+                "confidence": 0.996,
+                "source": "D(1,288,933,377,932,377,960,288,960)"
+              },
+              {
+                "content": "and",
+                "span": {
+                  "offset": 458,
+                  "length": 3
+                },
+                "confidence": 0.998,
+                "source": "D(1,385,932,426,932,426,960,385,960)"
+              },
+              {
+                "content": "the",
+                "span": {
+                  "offset": 462,
+                  "length": 3
+                },
+                "confidence": 0.996,
+                "source": "D(1,433,932,470,932,470,960,433,960)"
+              },
+              {
+                "content": "5",
+                "span": {
+                  "offset": 466,
+                  "length": 1
+                },
+                "confidence": 0.983,
+                "source": "D(1,477,932,490,932,490,960,477,960)"
+              },
+              {
+                "content": "-",
+                "span": {
+                  "offset": 467,
+                  "length": 1
+                },
+                "confidence": 0.997,
+                "source": "D(1,491,932,499,932,499,960,491,960)"
+              },
+              {
+                "content": "String",
+                "span": {
+                  "offset": 468,
+                  "length": 6
+                },
+                "confidence": 0.994,
+                "source": "D(1,499,932,568,933,568,960,499,960)"
+              },
+              {
+                "content": "Banjo",
+                "span": {
+                  "offset": 475,
+                  "length": 5
+                },
+                "confidence": 0.995,
+                "source": "D(1,238,960,300,960,300,986,239,986)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 480,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,302,960,307,960,307,986,303,986)"
+              },
+              {
+                "content": "Revised",
+                "span": {
+                  "offset": 482,
+                  "length": 7
+                },
+                "confidence": 0.996,
+                "source": "D(1,317,960,403,960,403,986,317,986)"
+              },
+              {
+                "content": "and",
+                "span": {
+                  "offset": 490,
+                  "length": 3
+                },
+                "confidence": 0.999,
+                "source": "D(1,412,960,452,960,452,986,412,986)"
+              },
+              {
+                "content": "Enhanced",
+                "span": {
+                  "offset": 494,
+                  "length": 8
+                },
+                "confidence": 0.996,
+                "source": "D(1,462,960,573,959,573,986,462,986)"
+              },
+              {
+                "content": "Edition",
+                "span": {
+                  "offset": 503,
+                  "length": 7
+                },
+                "confidence": 0.995,
+                "source": "D(1,239,987,314,987,314,1014,239,1014)"
+              },
+              {
+                "content": "(",
+                "span": {
+                  "offset": 511,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,323,987,330,987,330,1014,323,1014)"
+              },
+              {
+                "content": "Paperback",
+                "span": {
+                  "offset": 512,
+                  "length": 9
+                },
+                "confidence": 0.992,
+                "source": "D(1,333,987,450,988,450,1015,333,1015)"
+              },
+              {
+                "content": "or",
+                "span": {
+                  "offset": 522,
+                  "length": 2
+                },
+                "confidence": 0.997,
+                "source": "D(1,457,988,481,988,481,1015,457,1015)"
+              },
+              {
+                "content": "1,00",
+                "span": {
+                  "offset": 534,
+                  "length": 4
+                },
+                "confidence": 0.992,
+                "source": "D(1,673,933,725,933,725,958,673,958)"
+              },
+              {
+                "content": "each",
+                "span": {
+                  "offset": 548,
+                  "length": 4
+                },
+                "confidence": 0.999,
+                "source": "D(1,769,934,827,933,827,957,769,958)"
+              },
+              {
+                "content": "22,68",
+                "span": {
+                  "offset": 562,
+                  "length": 5
+                },
+                "confidence": 0.993,
+                "source": "D(1,950,932,1015,932,1015,959,950,959)"
+              },
+              {
+                "content": "22,68",
+                "span": {
+                  "offset": 577,
+                  "length": 5
+                },
+                "confidence": 0.99,
+                "source": "D(1,1119,932,1186,932,1186,959,1119,959)"
+              },
+              {
+                "content": "10",
+                "span": {
+                  "offset": 592,
+                  "length": 2
+                },
+                "confidence": 0.999,
+                "source": "D(1,1280,933,1308,933,1308,957,1280,957)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 594,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1308,933,1332,933,1332,958,1308,957)"
+              },
+              {
+                "content": "24,95",
+                "span": {
+                  "offset": 605,
+                  "length": 5
+                },
+                "confidence": 0.991,
+                "source": "D(1,1434,934,1500,933,1500,957,1434,958)"
+              },
+              {
+                "content": "SUMMARY",
+                "span": {
+                  "offset": 635,
+                  "length": 7
+                },
+                "confidence": 0.996,
+                "source": "D(1,132,1079,327,1079,327,1113,132,1113)"
+              },
+              {
+                "content": "VAT",
+                "span": {
+                  "offset": 662,
+                  "length": 3
+                },
+                "confidence": 0.996,
+                "source": "D(1,640,1164,692,1164,692,1192,640,1192)"
+              },
+              {
+                "content": "[",
+                "span": {
+                  "offset": 666,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,699,1164,708,1164,708,1192,699,1192)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 667,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,708,1164,731,1165,731,1192,708,1192)"
+              },
+              {
+                "content": "]",
+                "span": {
+                  "offset": 668,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,731,1165,744,1165,744,1193,731,1192)"
+              },
+              {
+                "content": "Net",
+                "span": {
+                  "offset": 679,
+                  "length": 3
+                },
+                "confidence": 0.996,
+                "source": "D(1,927,1165,973,1164,973,1190,927,1190)"
+              },
+              {
+                "content": "worth",
+                "span": {
+                  "offset": 683,
+                  "length": 5
+                },
+                "confidence": 0.994,
+                "source": "D(1,980,1164,1056,1165,1056,1190,980,1190)"
+              },
+              {
+                "content": "VAT",
+                "span": {
+                  "offset": 698,
+                  "length": 3
+                },
+                "confidence": 0.938,
+                "source": "D(1,1188,1166,1242,1165,1242,1190,1188,1190)"
+              },
+              {
+                "content": "Gross",
+                "span": {
+                  "offset": 711,
+                  "length": 5
+                },
+                "confidence": 0.998,
+                "source": "D(1,1350,1166,1422,1165,1422,1190,1350,1191)"
+              },
+              {
+                "content": "worth",
+                "span": {
+                  "offset": 717,
+                  "length": 5
+                },
+                "confidence": 0.998,
+                "source": "D(1,1429,1165,1505,1165,1505,1190,1429,1190)"
+              },
+              {
+                "content": "10",
+                "span": {
+                  "offset": 743,
+                  "length": 2
+                },
+                "confidence": 0.999,
+                "source": "D(1,666,1223,695,1223,695,1248,666,1249)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 745,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,695,1223,719,1225,719,1250,695,1248)"
+              },
+              {
+                "content": "22,68",
+                "span": {
+                  "offset": 756,
+                  "length": 5
+                },
+                "confidence": 0.992,
+                "source": "D(1,989,1225,1056,1225,1056,1250,989,1250)"
+              },
+              {
+                "content": "2,27",
+                "span": {
+                  "offset": 771,
+                  "length": 4
+                },
+                "confidence": 0.99,
+                "source": "D(1,1189,1224,1240,1224,1240,1249,1189,1249)"
+              },
+              {
+                "content": "24,95",
+                "span": {
+                  "offset": 785,
+                  "length": 5
+                },
+                "confidence": 0.951,
+                "source": "D(1,1438,1224,1505,1224,1505,1250,1438,1249)"
+              },
+              {
+                "content": "Total",
+                "span": {
+                  "offset": 811,
+                  "length": 5
+                },
+                "confidence": 0.998,
+                "source": "D(1,501,1283,569,1283,569,1308,501,1308)"
+              },
+              {
+                "content": "$",
+                "span": {
+                  "offset": 826,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,958,1283,973,1283,973,1310,958,1310)"
+              },
+              {
+                "content": "22,68",
+                "span": {
+                  "offset": 828,
+                  "length": 5
+                },
+                "confidence": 0.987,
+                "source": "D(1,982,1283,1056,1282,1056,1310,982,1310)"
+              },
+              {
+                "content": "$",
+                "span": {
+                  "offset": 843,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1159,1284,1173,1283,1173,1310,1159,1310)"
+              },
+              {
+                "content": "2,27",
+                "span": {
+                  "offset": 845,
+                  "length": 4
+                },
+                "confidence": 0.983,
+                "source": "D(1,1183,1283,1240,1282,1240,1310,1183,1310)"
+              },
+              {
+                "content": "$",
+                "span": {
+                  "offset": 859,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1408,1284,1422,1284,1422,1309,1408,1309)"
+              },
+              {
+                "content": "24,95",
+                "span": {
+                  "offset": 861,
+                  "length": 5
+                },
+                "confidence": 0.979,
+                "source": "D(1,1431,1284,1505,1283,1505,1309,1431,1309)"
+              }
+            ],
+            "lines": [
+              {
+                "content": "Invoice no: 77596491",
+                "source": "D(1,131,72,538,72,538,107,131,107)",
+                "span": {
+                  "offset": 0,
+                  "length": 20
+                }
+              },
+              {
+                "content": "Date of issue:",
+                "source": "D(1,131,141,345,141,345,173,131,173)",
+                "span": {
+                  "offset": 22,
+                  "length": 14
+                }
+              },
+              {
+                "content": "01/31/2021",
+                "source": "D(1,800,140,979,140,979,174,800,174)",
+                "span": {
+                  "offset": 38,
+                  "length": 10
+                }
+              },
+              {
+                "content": "Seller:",
+                "source": "D(1,131,443,255,443,255,476,131,476)",
+                "span": {
+                  "offset": 50,
+                  "length": 7
+                }
+              },
+              {
+                "content": "Tran, Hurst and Rodgers",
+                "source": "D(1,139,506,483,506,483,539,138,539)",
+                "span": {
+                  "offset": 58,
+                  "length": 23
+                }
+              },
+              {
+                "content": "Unit 2493 Box 1389",
+                "source": "D(1,140,542,419,542,419,572,140,572)",
+                "span": {
+                  "offset": 82,
+                  "length": 18
+                }
+              },
+              {
+                "content": "DPO AP 75814",
+                "source": "D(1,140,578,345,578,345,607,140,607)",
+                "span": {
+                  "offset": 101,
+                  "length": 12
+                }
+              },
+              {
+                "content": "Tax Id: 988-83-0971",
+                "source": "D(1,138,649,424,649,424,679,138,679)",
+                "span": {
+                  "offset": 115,
+                  "length": 19
+                }
+              },
+              {
+                "content": "IBAN: GB04ZWCK22425880230961",
+                "source": "D(1,139,684,634,683,634,714,139,714)",
+                "span": {
+                  "offset": 136,
+                  "length": 28
+                }
+              },
+              {
+                "content": "Client:",
+                "source": "D(1,824,442,950,442,950,477,824,477)",
+                "span": {
+                  "offset": 166,
+                  "length": 7
+                }
+              },
+              {
+                "content": "Stephenson Inc",
+                "source": "D(1,832,506,1050,506,1050,539,832,539)",
+                "span": {
+                  "offset": 174,
+                  "length": 14
+                }
+              },
+              {
+                "content": "716 Wright Flat Apt. 385",
+                "source": "D(1,833,541,1177,541,1177,574,833,574)",
+                "span": {
+                  "offset": 189,
+                  "length": 24
+                }
+              },
+              {
+                "content": "South Carrie, GA 17790",
+                "source": "D(1,833,577,1164,577,1164,609,833,609)",
+                "span": {
+                  "offset": 214,
+                  "length": 22
+                }
+              },
+              {
+                "content": "Tax Id: 926-85-5660",
+                "source": "D(1,831,649,1118,648,1118,679,831,680)",
+                "span": {
+                  "offset": 238,
+                  "length": 19
+                }
+              },
+              {
+                "content": "ITEMS",
+                "source": "D(1,131,759,248,759,248,791,131,791)",
+                "span": {
+                  "offset": 262,
+                  "length": 5
+                }
+              },
+              {
+                "content": "No.",
+                "source": "D(1,157,847,202,846,203,870,158,871)",
+                "span": {
+                  "offset": 287,
+                  "length": 3
+                }
+              },
+              {
+                "content": "Description",
+                "source": "D(1,238,845,385,846,385,873,238,872)",
+                "span": {
+                  "offset": 300,
+                  "length": 11
+                }
+              },
+              {
+                "content": "Qty",
+                "source": "D(1,678,845,727,848,726,875,678,872)",
+                "span": {
+                  "offset": 321,
+                  "length": 3
+                }
+              },
+              {
+                "content": "UM",
+                "source": "D(1,776,845,821,845,821,869,777,870)",
+                "span": {
+                  "offset": 334,
+                  "length": 2
+                }
+              },
+              {
+                "content": "Net price",
+                "source": "D(1,898,844,1018,845,1018,873,898,872)",
+                "span": {
+                  "offset": 346,
+                  "length": 9
+                }
+              },
+              {
+                "content": "Net worth",
+                "source": "D(1,1057,845,1186,846,1186,871,1057,871)",
+                "span": {
+                  "offset": 365,
+                  "length": 9
+                }
+              },
+              {
+                "content": "VAT [%]",
+                "source": "D(1,1226,844,1332,845,1332,873,1226,872)",
+                "span": {
+                  "offset": 384,
+                  "length": 7
+                }
+              },
+              {
+                "content": "Gross",
+                "source": "D(1,1428,847,1502,848,1501,871,1428,870)",
+                "span": {
+                  "offset": 401,
+                  "length": 5
+                }
+              },
+              {
+                "content": "worth",
+                "source": "D(1,1425,874,1501,874,1501,897,1425,897)",
+                "span": {
+                  "offset": 407,
+                  "length": 5
+                }
+              },
+              {
+                "content": "1.",
+                "source": "D(1,170,934,192,934,192,958,170,958)",
+                "span": {
+                  "offset": 433,
+                  "length": 2
+                }
+              },
+              {
+                "content": "Earl Scruggs and the 5-String",
+                "source": "D(1,239,932,568,932,568,960,239,960)",
+                "span": {
+                  "offset": 445,
+                  "length": 29
+                }
+              },
+              {
+                "content": "Banjo: Revised and Enhanced",
+                "source": "D(1,238,960,573,959,573,986,238,986)",
+                "span": {
+                  "offset": 475,
+                  "length": 27
+                }
+              },
+              {
+                "content": "Edition (Paperback or",
+                "source": "D(1,239,987,481,988,481,1015,239,1014)",
+                "span": {
+                  "offset": 503,
+                  "length": 21
+                }
+              },
+              {
+                "content": "1,00",
+                "source": "D(1,673,933,725,933,725,959,673,959)",
+                "span": {
+                  "offset": 534,
+                  "length": 4
+                }
+              },
+              {
+                "content": "each",
+                "source": "D(1,769,934,827,933,827,957,769,958)",
+                "span": {
+                  "offset": 548,
+                  "length": 4
+                }
+              },
+              {
+                "content": "22,68",
+                "source": "D(1,950,932,1015,932,1015,959,950,959)",
+                "span": {
+                  "offset": 562,
+                  "length": 5
+                }
+              },
+              {
+                "content": "22,68",
+                "source": "D(1,1119,932,1186,932,1186,959,1119,959)",
+                "span": {
+                  "offset": 577,
+                  "length": 5
+                }
+              },
+              {
+                "content": "10%",
+                "source": "D(1,1280,932,1332,933,1332,958,1280,957)",
+                "span": {
+                  "offset": 592,
+                  "length": 3
+                }
+              },
+              {
+                "content": "24,95",
+                "source": "D(1,1434,934,1500,933,1500,957,1434,958)",
+                "span": {
+                  "offset": 605,
+                  "length": 5
+                }
+              },
+              {
+                "content": "SUMMARY",
+                "source": "D(1,132,1079,327,1079,327,1113,132,1113)",
+                "span": {
+                  "offset": 635,
+                  "length": 7
+                }
+              },
+              {
+                "content": "VAT [%]",
+                "source": "D(1,640,1164,744,1164,744,1193,640,1192)",
+                "span": {
+                  "offset": 662,
+                  "length": 7
+                }
+              },
+              {
+                "content": "Net worth",
+                "source": "D(1,927,1164,1056,1164,1056,1190,927,1190)",
+                "span": {
+                  "offset": 679,
+                  "length": 9
+                }
+              },
+              {
+                "content": "VAT",
+                "source": "D(1,1188,1165,1242,1165,1242,1190,1188,1190)",
+                "span": {
+                  "offset": 698,
+                  "length": 3
+                }
+              },
+              {
+                "content": "Gross worth",
+                "source": "D(1,1349,1165,1505,1165,1506,1190,1350,1191)",
+                "span": {
+                  "offset": 711,
+                  "length": 11
+                }
+              },
+              {
+                "content": "10%",
+                "source": "D(1,666,1223,720,1224,719,1250,666,1249)",
+                "span": {
+                  "offset": 743,
+                  "length": 3
+                }
+              },
+              {
+                "content": "22,68",
+                "source": "D(1,988,1224,1056,1224,1056,1250,989,1250)",
+                "span": {
+                  "offset": 756,
+                  "length": 5
+                }
+              },
+              {
+                "content": "2,27",
+                "source": "D(1,1189,1224,1240,1224,1240,1249,1189,1249)",
+                "span": {
+                  "offset": 771,
+                  "length": 4
+                }
+              },
+              {
+                "content": "24,95",
+                "source": "D(1,1438,1224,1505,1224,1505,1250,1437,1249)",
+                "span": {
+                  "offset": 785,
+                  "length": 5
+                }
+              },
+              {
+                "content": "Total",
+                "source": "D(1,501,1283,569,1283,569,1308,501,1308)",
+                "span": {
+                  "offset": 811,
+                  "length": 5
+                }
+              },
+              {
+                "content": "$ 22,68",
+                "source": "D(1,958,1283,1056,1282,1056,1310,958,1310)",
+                "span": {
+                  "offset": 826,
+                  "length": 7
+                }
+              },
+              {
+                "content": "$ 2,27",
+                "source": "D(1,1159,1283,1240,1282,1240,1310,1159,1311)",
+                "span": {
+                  "offset": 843,
+                  "length": 6
+                }
+              },
+              {
+                "content": "$ 24,95",
+                "source": "D(1,1408,1284,1505,1283,1505,1309,1408,1309)",
+                "span": {
+                  "offset": 859,
+                  "length": 7
+                }
+              }
+            ]
+          }
+        ],
+        "paragraphs": [
+          {
+            "content": "Invoice no: 77596491",
+            "source": "D(1,131,72,538,72,538,107,131,107)",
+            "span": {
+              "offset": 0,
+              "length": 20
+            }
+          },
+          {
+            "content": "Date of issue:",
+            "source": "D(1,131,141,345,141,345,173,131,173)",
+            "span": {
+              "offset": 22,
+              "length": 14
+            }
+          },
+          {
+            "content": "01/31/2021",
+            "source": "D(1,800,140,979,140,979,174,800,174)",
+            "span": {
+              "offset": 38,
+              "length": 10
+            }
+          },
+          {
+            "content": "Seller: Tran, Hurst and Rodgers Unit 2493 Box 1389 DPO AP 75814",
+            "source": "D(1,131,443,483,443,483,607,131,607)",
+            "span": {
+              "offset": 50,
+              "length": 63
+            }
+          },
+          {
+            "content": "Tax Id: 988-83-0971",
+            "source": "D(1,138,649,424,649,424,679,138,679)",
+            "span": {
+              "offset": 115,
+              "length": 19
+            }
+          },
+          {
+            "content": "IBAN: GB04ZWCK22425880230961",
+            "source": "D(1,139,684,634,683,634,714,139,715)",
+            "span": {
+              "offset": 136,
+              "length": 28
+            }
+          },
+          {
+            "content": "Client: Stephenson Inc 716 Wright Flat Apt. 385 South Carrie, GA 17790",
+            "source": "D(1,824,442,1177,442,1177,609,824,609)",
+            "span": {
+              "offset": 166,
+              "length": 70
+            }
+          },
+          {
+            "content": "Tax Id: 926-85-5660",
+            "source": "D(1,831,649,1118,648,1118,679,831,680)",
+            "span": {
+              "offset": 238,
+              "length": 19
+            }
+          },
+          {
+            "role": "sectionHeading",
+            "content": "ITEMS",
+            "source": "D(1,131,759,248,759,248,791,131,791)",
+            "span": {
+              "offset": 260,
+              "length": 7
+            }
+          },
+          {
+            "content": "No.",
+            "source": "D(1,157,847,202,846,203,870,158,871)",
+            "span": {
+              "offset": 287,
+              "length": 3
+            }
+          },
+          {
+            "content": "Description",
+            "source": "D(1,238,846,385,847,385,873,238,872)",
+            "span": {
+              "offset": 300,
+              "length": 11
+            }
+          },
+          {
+            "content": "Qty",
+            "source": "D(1,678,845,728,848,726,874,677,871)",
+            "span": {
+              "offset": 321,
+              "length": 3
+            }
+          },
+          {
+            "content": "UM",
+            "source": "D(1,776,845,821,845,821,869,777,869)",
+            "span": {
+              "offset": 334,
+              "length": 2
+            }
+          },
+          {
+            "content": "Net price",
+            "source": "D(1,898,842,1018,845,1018,874,897,871)",
+            "span": {
+              "offset": 346,
+              "length": 9
+            }
+          },
+          {
+            "content": "Net worth",
+            "source": "D(1,1057,845,1186,846,1186,871,1057,871)",
+            "span": {
+              "offset": 365,
+              "length": 9
+            }
+          },
+          {
+            "content": "VAT [%]",
+            "source": "D(1,1226,844,1332,845,1332,873,1226,872)",
+            "span": {
+              "offset": 384,
+              "length": 7
+            }
+          },
+          {
+            "content": "Gross worth",
+            "source": "D(1,1425,847,1502,848,1501,898,1424,897)",
+            "span": {
+              "offset": 401,
+              "length": 11
+            }
+          },
+          {
+            "content": "1.",
+            "source": "D(1,170,934,192,934,192,958,170,958)",
+            "span": {
+              "offset": 433,
+              "length": 2
+            }
+          },
+          {
+            "content": "Earl Scruggs and the 5-String Banjo: Revised and Enhanced Edition (Paperback or",
+            "source": "D(1,238,932,573,932,573,1015,238,1015)",
+            "span": {
+              "offset": 445,
+              "length": 79
+            }
+          },
+          {
+            "content": "1,00",
+            "source": "D(1,673,933,725,932,725,958,673,958)",
+            "span": {
+              "offset": 534,
+              "length": 4
+            }
+          },
+          {
+            "content": "each",
+            "source": "D(1,769,934,827,933,827,957,769,958)",
+            "span": {
+              "offset": 548,
+              "length": 4
+            }
+          },
+          {
+            "content": "22,68",
+            "source": "D(1,950,932,1015,932,1015,959,950,959)",
+            "span": {
+              "offset": 562,
+              "length": 5
+            }
+          },
+          {
+            "content": "22,68",
+            "source": "D(1,1119,932,1186,932,1186,959,1119,959)",
+            "span": {
+              "offset": 577,
+              "length": 5
+            }
+          },
+          {
+            "content": "10%",
+            "source": "D(1,1280,932,1333,933,1332,959,1279,957)",
+            "span": {
+              "offset": 592,
+              "length": 3
+            }
+          },
+          {
+            "content": "24,95",
+            "source": "D(1,1434,933,1500,933,1500,957,1434,958)",
+            "span": {
+              "offset": 605,
+              "length": 5
+            }
+          },
+          {
+            "role": "sectionHeading",
+            "content": "SUMMARY",
+            "source": "D(1,132,1079,327,1079,327,1113,132,1113)",
+            "span": {
+              "offset": 633,
+              "length": 9
+            }
+          },
+          {
+            "content": "VAT [%]",
+            "source": "D(1,640,1163,744,1165,744,1194,639,1192)",
+            "span": {
+              "offset": 662,
+              "length": 7
+            }
+          },
+          {
+            "content": "Net worth",
+            "source": "D(1,927,1164,1056,1165,1056,1190,927,1190)",
+            "span": {
+              "offset": 679,
+              "length": 9
+            }
+          },
+          {
+            "content": "VAT",
+            "source": "D(1,1188,1165,1242,1165,1242,1190,1188,1190)",
+            "span": {
+              "offset": 698,
+              "length": 3
+            }
+          },
+          {
+            "content": "Gross worth",
+            "source": "D(1,1350,1165,1505,1165,1505,1191,1350,1191)",
+            "span": {
+              "offset": 711,
+              "length": 11
+            }
+          },
+          {
+            "content": "10%",
+            "source": "D(1,666,1221,721,1225,719,1252,665,1249)",
+            "span": {
+              "offset": 743,
+              "length": 3
+            }
+          },
+          {
+            "content": "22,68",
+            "source": "D(1,988,1225,1056,1224,1056,1250,989,1250)",
+            "span": {
+              "offset": 756,
+              "length": 5
+            }
+          },
+          {
+            "content": "2,27",
+            "source": "D(1,1189,1224,1240,1224,1240,1249,1189,1249)",
+            "span": {
+              "offset": 771,
+              "length": 4
+            }
+          },
+          {
+            "content": "24,95",
+            "source": "D(1,1438,1224,1505,1224,1505,1250,1437,1249)",
+            "span": {
+              "offset": 785,
+              "length": 5
+            }
+          },
+          {
+            "content": "Total",
+            "source": "D(1,501,1283,569,1283,569,1308,501,1308)",
+            "span": {
+              "offset": 811,
+              "length": 5
+            }
+          },
+          {
+            "content": "$ 22,68",
+            "source": "D(1,958,1282,1057,1282,1056,1311,958,1310)",
+            "span": {
+              "offset": 826,
+              "length": 7
+            }
+          },
+          {
+            "content": "$ 2,27",
+            "source": "D(1,1159,1282,1240,1282,1240,1310,1159,1310)",
+            "span": {
+              "offset": 843,
+              "length": 6
+            }
+          },
+          {
+            "content": "$ 24,95",
+            "source": "D(1,1408,1282,1505,1283,1505,1310,1407,1309)",
+            "span": {
+              "offset": 859,
+              "length": 7
+            }
+          }
+        ],
+        "sections": [
+          {
+            "span": {
+              "offset": 0,
+              "length": 886
+            },
+            "elements": [
+              "/sections/1",
+              "/sections/2",
+              "/sections/3"
+            ]
+          },
+          {
+            "span": {
+              "offset": 0,
+              "length": 257
+            },
+            "elements": [
+              "/paragraphs/0",
+              "/paragraphs/1",
+              "/paragraphs/2",
+              "/paragraphs/3",
+              "/paragraphs/4",
+              "/paragraphs/5",
+              "/paragraphs/6",
+              "/paragraphs/7"
+            ]
+          },
+          {
+            "span": {
+              "offset": 260,
+              "length": 370
+            },
+            "elements": [
+              "/paragraphs/8",
+              "/tables/0"
+            ]
+          },
+          {
+            "span": {
+              "offset": 633,
+              "length": 253
+            },
+            "elements": [
+              "/paragraphs/25",
+              "/tables/1"
+            ]
+          }
+        ],
+        "tables": [
+          {
+            "rowCount": 2,
+            "columnCount": 8,
+            "cells": [
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "No.",
+                "source": "D(1,133,828,234,828,234,916,133,916)",
+                "span": {
+                  "offset": 287,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/9"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Description",
+                "source": "D(1,234,828,631,828,631,916,234,916)",
+                "span": {
+                  "offset": 300,
+                  "length": 11
+                },
+                "elements": [
+                  "/paragraphs/10"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Qty",
+                "source": "D(1,631,828,754,827,754,916,631,916)",
+                "span": {
+                  "offset": 321,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/11"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "UM",
+                "source": "D(1,754,827,864,828,864,916,754,916)",
+                "span": {
+                  "offset": 334,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/12"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 4,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Net price",
+                "source": "D(1,864,828,1041,828,1041,916,864,916)",
+                "span": {
+                  "offset": 346,
+                  "length": 9
+                },
+                "elements": [
+                  "/paragraphs/13"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 5,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Net worth",
+                "source": "D(1,1041,828,1213,828,1213,916,1041,916)",
+                "span": {
+                  "offset": 365,
+                  "length": 9
+                },
+                "elements": [
+                  "/paragraphs/14"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 6,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "VAT [%]",
+                "source": "D(1,1213,828,1380,827,1380,915,1213,916)",
+                "span": {
+                  "offset": 384,
+                  "length": 7
+                },
+                "elements": [
+                  "/paragraphs/15"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 7,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Gross worth",
+                "source": "D(1,1380,827,1518,828,1518,916,1380,915)",
+                "span": {
+                  "offset": 401,
+                  "length": 11
+                },
+                "elements": [
+                  "/paragraphs/16"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "1.",
+                "source": "D(1,133,916,234,916,234,1028,133,1029)",
+                "span": {
+                  "offset": 433,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/17"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Earl Scruggs and the 5-String Banjo: Revised and Enhanced Edition (Paperback or",
+                "source": "D(1,234,916,631,916,631,1028,234,1028)",
+                "span": {
+                  "offset": 445,
+                  "length": 79
+                },
+                "elements": [
+                  "/paragraphs/18"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "1,00",
+                "source": "D(1,631,916,754,916,754,1028,631,1028)",
+                "span": {
+                  "offset": 534,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/19"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "each",
+                "source": "D(1,754,916,864,916,864,1028,754,1028)",
+                "span": {
+                  "offset": 548,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/20"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 4,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "22,68",
+                "source": "D(1,864,916,1041,916,1041,1028,864,1028)",
+                "span": {
+                  "offset": 562,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/21"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 5,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "22,68",
+                "source": "D(1,1041,916,1213,916,1214,1028,1041,1028)",
+                "span": {
+                  "offset": 577,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/22"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 6,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "10%",
+                "source": "D(1,1213,916,1380,915,1380,1028,1214,1028)",
+                "span": {
+                  "offset": 592,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/23"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 7,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "24,95",
+                "source": "D(1,1380,915,1518,916,1518,1028,1380,1028)",
+                "span": {
+                  "offset": 605,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/24"
+                ]
+              }
+            ],
+            "source": "D(1,131,827,1518,827,1518,1031,131,1031)",
+            "span": {
+              "offset": 270,
+              "length": 360
+            }
+          },
+          {
+            "rowCount": 3,
+            "columnCount": 4,
+            "cells": [
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "VAT [%]",
+                "source": "D(1,133,1146,836,1146,836,1207,133,1208)",
+                "span": {
+                  "offset": 662,
+                  "length": 7
+                },
+                "elements": [
+                  "/paragraphs/26"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Net worth",
+                "source": "D(1,836,1146,1114,1146,1114,1207,836,1207)",
+                "span": {
+                  "offset": 679,
+                  "length": 9
+                },
+                "elements": [
+                  "/paragraphs/27"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "VAT",
+                "source": "D(1,1114,1146,1302,1146,1302,1207,1114,1207)",
+                "span": {
+                  "offset": 698,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/28"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Gross worth",
+                "source": "D(1,1302,1146,1519,1146,1519,1207,1302,1207)",
+                "span": {
+                  "offset": 711,
+                  "length": 11
+                },
+                "elements": [
+                  "/paragraphs/29"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "10%",
+                "source": "D(1,133,1208,836,1207,836,1266,132,1267)",
+                "span": {
+                  "offset": 743,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/30"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "22,68",
+                "source": "D(1,836,1207,1114,1207,1114,1266,836,1266)",
+                "span": {
+                  "offset": 756,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/31"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "2,27",
+                "source": "D(1,1114,1207,1302,1207,1302,1266,1114,1266)",
+                "span": {
+                  "offset": 771,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/32"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "24,95",
+                "source": "D(1,1302,1207,1519,1207,1519,1266,1302,1266)",
+                "span": {
+                  "offset": 785,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/33"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Total",
+                "source": "D(1,132,1267,836,1266,836,1325,133,1325)",
+                "span": {
+                  "offset": 811,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/34"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "$ 22,68",
+                "source": "D(1,836,1266,1114,1266,1114,1325,836,1325)",
+                "span": {
+                  "offset": 826,
+                  "length": 7
+                },
+                "elements": [
+                  "/paragraphs/35"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "$ 2,27",
+                "source": "D(1,1114,1266,1302,1266,1302,1325,1114,1325)",
+                "span": {
+                  "offset": 843,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/36"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "$ 24,95",
+                "source": "D(1,1302,1266,1519,1266,1519,1325,1302,1325)",
+                "span": {
+                  "offset": 859,
+                  "length": 7
+                },
+                "elements": [
+                  "/paragraphs/37"
+                ]
+              }
+            ],
+            "source": "D(1,130,1149,1518,1147,1518,1327,129,1327)",
+            "span": {
+              "offset": 645,
+              "length": 241
+            }
+          }
+        ],
         "analyzerId": "prebuilt-invoice",
         "mimeType": "image/jpeg"
       }
     ]
   },
   "usage": {
-    "documentPagesMinimal": 1,
+    "documentPagesStandard": 1,
     "contextualizationTokens": 1000,
     "tokens": {
-      "gpt-4.1-input": 10263,
-      "gpt-4.1-output": 323,
-      "text-embedding-3-large": 4
+      "gpt-4.1-input": 12372,
+      "gpt-4.1-output": 1071,
+      "text-embedding-3-large": 363
     }
   },
   "_extracted": {
-    "field_values": {},
-    "description": "Ce document est une facture émise par Tran, Hurst and Rodgers à Stephenson Inc, datée du 31/01/2021. Le montant total TTC est de 24,95 $ pour l'achat d'un livre (\"Earl Scruggs and the 5-String Banjo\"), avec une TVA de 10 %. Les informations clés incluent le numéro de facture 77596491 et les coordonnées bancaires de l'émetteur."
+    "field_values": {
+      "AmountDue": {
+        "Amount": 24.95,
+        "CurrencyCode": "USD"
+      },
+      "CountryRegion": "USA",
+      "CustomerAddress": "716 Wright Flat Apt. 385 South Carrie, GA 17790",
+      "CustomerAddressRecipient": "Stephenson Inc",
+      "CustomerName": "Stephenson Inc",
+      "CustomerTaxId": "926-85-5660",
+      "InvoiceDate": "2021-01-31",
+      "InvoiceId": "77596491",
+      "LineItems": [
+        {
+          "Description": "Earl Scruggs and the 5-String Banjo: Revised and Enhanced Edition (Paperback or",
+          "Quantity": 1,
+          "QuantityUnit": "each",
+          "TaxAmount": {
+            "Amount": 2.27,
+            "CurrencyCode": "USD"
+          },
+          "TaxRate": 0.1,
+          "TotalAmount": {
+            "Amount": 24.95,
+            "CurrencyCode": "USD"
+          },
+          "UnitPrice": {
+            "Amount": 22.68,
+            "CurrencyCode": "USD"
+          }
+        }
+      ],
+      "SubtotalAmount": {
+        "Amount": 22.68,
+        "CurrencyCode": "USD"
+      },
+      "TaxDetails": [
+        {
+          "Amount": {
+            "Amount": 2.27,
+            "CurrencyCode": "USD"
+          },
+          "Description": "VAT",
+          "NetAmount": {
+            "Amount": 22.68,
+            "CurrencyCode": "USD"
+          },
+          "Rate": 0.1
+        }
+      ],
+      "TotalAmount": {
+        "Amount": 24.95,
+        "CurrencyCode": "USD"
+      },
+      "TotalTaxAmount": {
+        "Amount": 2.27,
+        "CurrencyCode": "USD"
+      },
+      "VendorAddress": "Unit 2493 Box 1389 DPO AP 75814",
+      "VendorAddressRecipient": "Tran, Hurst and Rodgers",
+      "VendorName": "Tran, Hurst and Rodgers",
+      "VendorTaxId": "988-83-0971"
+    },
+    "description": "Ce document est une facture émise par Tran, Hurst and Rodgers à Stephenson Inc, datée du 31/01/2021. Elle concerne l'achat d'un livre pour un montant total de 24,95 $ (TVA incluse). Les informations clés incluent le numéro de facture 77596491, un taux de TVA de 10 %, et une description détaillée de l'article facturé."
   }
 }

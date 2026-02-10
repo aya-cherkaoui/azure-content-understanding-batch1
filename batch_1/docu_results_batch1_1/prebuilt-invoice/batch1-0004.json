@@ -1,25 +1,35 @@
 {
-  "id": "8bbb64a9-5877-4cdb-b95e-eaabb2777fb9",
+  "id": "10702935-3540-4355-8f67-2ef04ac8310c",
   "status": "Succeeded",
   "result": {
     "analyzerId": "prebuilt-invoice",
     "apiVersion": "2025-11-01",
-    "createdAt": "2026-02-10T13:37:18Z",
-    "stringEncoding": "utf16",
+    "createdAt": "2026-02-10T15:10:24Z",
+    "stringEncoding": "codePoint",
     "warnings": [],
     "contents": [
       {
         "path": "input1",
-        "markdown": "```text\n\n```\n",
+        "markdown": "Invoice no: 16273983\n\nDate of issue:\n\n04/01/2017\n\nSeller:\nReyes, Holloway and Lee\n38676 Johnson Burg Suite 666\nWest Rebeccamouth, SD 02588\n\nTax Id: 909-83-7738\n\nIBAN: GB96VWUL52026848004193\n\nClient:\nCastillo LLC\n70391 Kelsey Terrace\nGarcialand, VT 41740\n\nTax Id: 901-88-0463\n\n\n# ITEMS\n\n\n<table>\n<tr>\n<th>No.</th>\n<th>Description</th>\n<th>Qty</th>\n<th>UM</th>\n<th>Net price</th>\n<th>Net worth</th>\n<th>VAT [%]</th>\n<th>Gross worth</th>\n</tr>\n<tr>\n<td>1.</td>\n<td>Handmade Thick round warm crochet Rug Carpet Mat 97% acrylic 3% me Floor Decor</td>\n<td>4,00</td>\n<td>each</td>\n<td>44,99</td>\n<td>179,96</td>\n<td>10%</td>\n<td>197,96</td>\n</tr>\n<tr>\n<td>2.</td>\n<td>Rug White Moroccan Beni Ourain Trellis Shag Area Rug Authentic Handmade Carpet</td>\n<td>2,00</td>\n<td>each</td>\n<td>245,00</td>\n<td>490,00</td>\n<td>10%</td>\n<td>539,00</td>\n</tr>\n<tr>\n<td>3.</td>\n<td>Abstract Living Room Carpet Home Decor Nordic Style Bedside Area Rug Floor Mats</td>\n<td>1,00</td>\n<td>each</td>\n<td>24,01</td>\n<td>24,01</td>\n<td>10%</td>\n<td>26,41</td>\n</tr>\n<tr>\n<td>4.</td>\n<td>Leopard Printed Rug Skin Mat Leather Faux Fur Animals Area Rugs Home Carpets</td>\n<td>1,00</td>\n<td>each</td>\n<td>19,49</td>\n<td>19,49</td>\n<td>10%</td>\n<td>21,44</td>\n</tr>\n<tr>\n<td>5.</td>\n<td>1pc Exquisite Durable Foot Cloth Christmas Carpet Xmas Cushion for Kitchen</td>\n<td>2,00</td>\n<td>each</td>\n<td>15,57</td>\n<td>31,14</td>\n<td>10%</td>\n<td>34,25</td>\n</tr>\n</table>\n\n\n# SUMMARY\n\n\n<table>\n<tr>\n<th>VAT [%]</th>\n<th>Net worth</th>\n<th>VAT</th>\n<th>Gross worth</th>\n</tr>\n<tr>\n<td>10%</td>\n<td>744,60</td>\n<td>74,46</td>\n<td>819,06</td>\n</tr>\n<tr>\n<td>Total</td>\n<td>$ 744,60</td>\n<td>$ 74,46</td>\n<td>$ 819,06</td>\n</tr>\n</table>\n",
         "fields": {
           "AmountDue": {
             "type": "object",
             "valueObject": {
               "Amount": {
-                "type": "number"
+                "type": "number",
+                "valueNumber": 819.06,
+                "spans": [
+                  {
+                    "offset": 1668,
+                    "length": 8
+                  }
+                ],
+                "confidence": 0.813,
+                "source": "D(1,1392.0000,1743.0000,1505.0000,1743.0000,1505.0000,1768.0000,1392.0000,1768.0000)"
               },
               "CurrencyCode": {
-                "type": "string"
+                "type": "string",
+                "valueString": "USD"
               }
             }
           },
@@ -27,7 +37,8 @@
             "type": "object",
             "valueObject": {
               "Amount": {
-                "type": "number"
+                "type": "number",
+                "confidence": 0.959
               },
               "CurrencyCode": {
                 "type": "string"
@@ -35,87 +46,913 @@
             }
           },
           "BillingAddress": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.715
           },
           "BillingAddressRecipient": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.762
           },
           "CountryRegion": {
-            "type": "string"
+            "type": "string",
+            "valueString": "USA"
           },
           "CustomerAddress": {
-            "type": "string"
+            "type": "string",
+            "valueString": "70391 Kelsey Terrace Garcialand, VT 41740",
+            "spans": [
+              {
+                "offset": 212,
+                "length": 20
+              },
+              {
+                "offset": 233,
+                "length": 20
+              }
+            ],
+            "confidence": 0.738,
+            "source": "D(1,833.0066,540.5505,1139.1516,541.9548,1138.9981,575.4037,832.8532,573.9993);D(1,833.0000,577.0000,1136.0000,577.0000,1136.0000,610.0000,833.0000,610.0000)"
           },
           "CustomerAddressRecipient": {
-            "type": "string"
+            "type": "string",
+            "valueString": "Castillo LLC",
+            "spans": [
+              {
+                "offset": 199,
+                "length": 12
+              }
+            ],
+            "confidence": 0.759,
+            "source": "D(1,832.0000,505.0000,997.0000,505.0000,997.0000,536.0000,832.0000,536.0000)"
           },
           "CustomerId": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.815
           },
           "CustomerName": {
-            "type": "string"
+            "type": "string",
+            "valueString": "Castillo LLC",
+            "spans": [
+              {
+                "offset": 199,
+                "length": 12
+              }
+            ],
+            "confidence": 0.726,
+            "source": "D(1,832.0000,505.0000,997.0000,505.0000,997.0000,536.0000,832.0000,536.0000)"
           },
           "CustomerTaxId": {
-            "type": "string"
+            "type": "string",
+            "valueString": "901-88-0463",
+            "spans": [
+              {
+                "offset": 263,
+                "length": 11
+              }
+            ],
+            "confidence": 0.925,
+            "source": "D(1,937.0000,649.0000,1118.0000,648.0000,1118.0000,679.0000,937.0000,680.0000)"
           },
           "DueDate": {
-            "type": "date"
+            "type": "date",
+            "confidence": 0.793
           },
           "InvoiceDate": {
-            "type": "date"
+            "type": "date",
+            "valueDate": "2017-04-01",
+            "spans": [
+              {
+                "offset": 38,
+                "length": 10
+              }
+            ],
+            "confidence": 0.97,
+            "source": "D(1,800.0000,140.0000,979.0000,140.0000,979.0000,174.0000,800.0000,175.0000)"
           },
           "InvoiceId": {
-            "type": "string"
+            "type": "string",
+            "valueString": "16273983",
+            "spans": [
+              {
+                "offset": 12,
+                "length": 8
+              }
+            ],
+            "confidence": 0.952,
+            "source": "D(1,352.0000,72.0000,538.0000,71.0000,538.0000,107.0000,352.0000,108.0000)"
           },
           "LineItems": {
-            "type": "array"
+            "type": "array",
+            "valueArray": [
+              {
+                "type": "object",
+                "valueObject": {
+                  "Date": {
+                    "type": "date",
+                    "confidence": 0.823
+                  },
+                  "Description": {
+                    "type": "string",
+                    "valueString": "Handmade Thick round warm crochet Rug Carpet Mat 97% acrylic 3% me Floor Decor",
+                    "spans": [
+                      {
+                        "offset": 462,
+                        "length": 25
+                      },
+                      {
+                        "offset": 488,
+                        "length": 26
+                      },
+                      {
+                        "offset": 515,
+                        "length": 25
+                      }
+                    ],
+                    "confidence": 0.588,
+                    "source": "D(1,237.0000,932.0000,570.0000,932.0000,570.0000,959.0000,237.0000,959.0000);D(1,238.0000,958.0000,563.0000,958.0000,563.0000,987.0000,238.0000,987.0000);D(1,238.0000,986.0000,535.0000,986.0000,535.0000,1015.0000,238.0000,1015.0000)"
+                  },
+                  "ProductCode": {
+                    "type": "string",
+                    "confidence": 0.902
+                  },
+                  "Quantity": {
+                    "type": "number",
+                    "valueNumber": 4,
+                    "spans": [
+                      {
+                        "offset": 550,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.903,
+                    "source": "D(1,672.0000,933.0000,725.0000,933.0000,725.0000,958.0000,672.0000,958.0000)"
+                  },
+                  "QuantityUnit": {
+                    "type": "string",
+                    "valueString": "each",
+                    "spans": [
+                      {
+                        "offset": 564,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.828,
+                    "source": "D(1,769.0000,934.0000,827.0000,934.0000,827.0000,957.0000,769.0000,958.0000)"
+                  },
+                  "TaxAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 179.96,
+                        "spans": [
+                          {
+                            "offset": 593,
+                            "length": 6
+                          }
+                        ],
+                        "confidence": 0.053,
+                        "source": "D(1,1106.0000,933.0000,1186.0000,932.0000,1186.0000,958.0000,1106.0000,959.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "TaxRate": {
+                    "type": "number",
+                    "valueNumber": 0.1,
+                    "spans": [
+                      {
+                        "offset": 609,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.864,
+                    "source": "D(1,1279.0230,931.8963,1332.5206,933.0108,1331.9978,958.1041,1278.5002,956.9896)"
+                  },
+                  "TotalAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 197.96,
+                        "spans": [
+                          {
+                            "offset": 622,
+                            "length": 6
+                          }
+                        ],
+                        "confidence": 0.518,
+                        "source": "D(1,1421.0000,933.0000,1500.0000,933.0000,1500.0000,958.0000,1421.0000,957.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "UnitPrice": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 44.99,
+                        "spans": [
+                          {
+                            "offset": 578,
+                            "length": 5
+                          }
+                        ],
+                        "confidence": 0.938,
+                        "source": "D(1,950.0000,933.0000,1015.0000,933.0000,1015.0000,958.0000,950.0000,958.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "Date": {
+                    "type": "date",
+                    "confidence": 0.823
+                  },
+                  "Description": {
+                    "type": "string",
+                    "valueString": "Rug White Moroccan Beni Ourain Trellis Shag Area Rug Authentic Handmade Carpet",
+                    "spans": [
+                      {
+                        "offset": 661,
+                        "length": 23
+                      },
+                      {
+                        "offset": 685,
+                        "length": 28
+                      },
+                      {
+                        "offset": 714,
+                        "length": 25
+                      }
+                    ],
+                    "confidence": 0.586,
+                    "source": "D(1,238.0000,1046.0000,528.0000,1046.0000,528.0000,1074.0000,238.0000,1074.0000);D(1,238.0000,1074.0000,561.0000,1074.0000,561.0000,1102.0000,238.0000,1102.0000);D(1,237.0000,1101.0000,560.0000,1101.0000,560.0000,1129.0000,237.0000,1129.0000)"
+                  },
+                  "ProductCode": {
+                    "type": "string",
+                    "confidence": 0.902
+                  },
+                  "Quantity": {
+                    "type": "number",
+                    "valueNumber": 2,
+                    "spans": [
+                      {
+                        "offset": 749,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.903,
+                    "source": "D(1,672.0000,1047.0000,725.0000,1047.0000,725.0000,1072.0000,672.0000,1072.0000)"
+                  },
+                  "QuantityUnit": {
+                    "type": "string",
+                    "valueString": "each",
+                    "spans": [
+                      {
+                        "offset": 763,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.832,
+                    "source": "D(1,770.0000,1048.0000,826.0000,1048.0000,826.0000,1072.0000,770.0000,1072.0000)"
+                  },
+                  "TaxAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 490,
+                        "spans": [
+                          {
+                            "offset": 793,
+                            "length": 6
+                          }
+                        ],
+                        "confidence": 0.621,
+                        "source": "D(1,1106.0000,1046.0000,1186.0000,1046.0000,1186.0000,1073.0000,1106.0000,1073.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "TaxRate": {
+                    "type": "number",
+                    "valueNumber": 0.1,
+                    "spans": [
+                      {
+                        "offset": 809,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.89,
+                    "source": "D(1,1281.3197,1043.4836,1333.2541,1048.2049,1330.6803,1076.5164,1278.7459,1071.7951)"
+                  },
+                  "TotalAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 539,
+                        "spans": [
+                          {
+                            "offset": 822,
+                            "length": 6
+                          }
+                        ],
+                        "confidence": 0.877,
+                        "source": "D(1,1420.0000,1046.0000,1500.0000,1046.0000,1500.0000,1072.0000,1420.0000,1072.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "UnitPrice": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 245,
+                        "spans": [
+                          {
+                            "offset": 777,
+                            "length": 6
+                          }
+                        ],
+                        "confidence": 0.903,
+                        "source": "D(1,935.0000,1046.0000,1017.0000,1046.0000,1017.0000,1073.0000,935.0000,1072.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "Date": {
+                    "type": "date",
+                    "confidence": 0.823
+                  },
+                  "Description": {
+                    "type": "string",
+                    "valueString": "Abstract Living Room Carpet Home Decor Nordic Style Bedside Area Rug Floor Mats",
+                    "spans": [
+                      {
+                        "offset": 861,
+                        "length": 27
+                      },
+                      {
+                        "offset": 889,
+                        "length": 23
+                      },
+                      {
+                        "offset": 913,
+                        "length": 27
+                      }
+                    ],
+                    "confidence": 0.522,
+                    "source": "D(1,237.0000,1160.0000,562.0000,1160.0000,562.0000,1189.0000,237.0000,1189.0000);D(1,238.0000,1189.0000,522.0000,1189.0000,522.0000,1216.0000,238.0000,1216.0000);D(1,239.0000,1216.0000,562.0000,1216.0000,562.0000,1245.0000,239.0000,1245.0000)"
+                  },
+                  "ProductCode": {
+                    "type": "string",
+                    "confidence": 0.902
+                  },
+                  "Quantity": {
+                    "type": "number",
+                    "valueNumber": 1,
+                    "spans": [
+                      {
+                        "offset": 950,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.903,
+                    "source": "D(1,674.0000,1161.0000,725.0000,1162.0000,725.0000,1187.0000,674.0000,1188.0000)"
+                  },
+                  "QuantityUnit": {
+                    "type": "string",
+                    "valueString": "each",
+                    "spans": [
+                      {
+                        "offset": 964,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.832,
+                    "source": "D(1,769.0000,1162.0000,827.0000,1162.0000,827.0000,1185.0000,769.0000,1185.0000)"
+                  },
+                  "TaxAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 21.44,
+                        "spans": [
+                          {
+                            "offset": 1216,
+                            "length": 5
+                          }
+                        ],
+                        "confidence": 0.296,
+                        "source": "D(1,1434.0000,1277.0000,1501.0000,1277.0000,1501.0000,1302.0000,1434.0000,1302.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "TaxRate": {
+                    "type": "number",
+                    "valueNumber": 0.1,
+                    "spans": [
+                      {
+                        "offset": 1008,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.896,
+                    "source": "D(1,1280.0962,1159.7868,1332.0849,1162.0472,1330.9038,1189.2132,1278.9151,1186.9528)"
+                  },
+                  "TotalAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 26.41,
+                        "spans": [
+                          {
+                            "offset": 1021,
+                            "length": 5
+                          }
+                        ],
+                        "confidence": 0.937,
+                        "source": "D(1,1434.0000,1161.0000,1501.0000,1162.0000,1501.0000,1187.0000,1434.0000,1187.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "UnitPrice": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 24.01,
+                        "spans": [
+                          {
+                            "offset": 978,
+                            "length": 5
+                          }
+                        ],
+                        "confidence": 0.916,
+                        "source": "D(1,950.0000,1161.0000,1016.0000,1161.0000,1016.0000,1188.0000,950.0000,1188.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "Date": {
+                    "type": "date",
+                    "confidence": 0.823
+                  },
+                  "Description": {
+                    "type": "string",
+                    "valueString": "Leopard Printed Rug Skin Mat Leather Faux Fur Animals Area Rugs Home Carpets",
+                    "spans": [
+                      {
+                        "offset": 1059,
+                        "length": 28
+                      },
+                      {
+                        "offset": 1088,
+                        "length": 29
+                      },
+                      {
+                        "offset": 1118,
+                        "length": 17
+                      }
+                    ],
+                    "confidence": 0.519,
+                    "source": "D(1,237.0000,1276.0000,573.0000,1276.0000,573.0000,1303.0000,237.0000,1303.0000);D(1,238.0000,1303.0000,584.0000,1303.0000,584.0000,1331.0000,238.0000,1331.0000);D(1,238.0000,1332.0000,462.0000,1332.0000,462.0000,1360.0000,238.0000,1360.0000)"
+                  },
+                  "ProductCode": {
+                    "type": "string",
+                    "confidence": 0.902
+                  },
+                  "Quantity": {
+                    "type": "number",
+                    "valueNumber": 1,
+                    "spans": [
+                      {
+                        "offset": 1145,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.916,
+                    "source": "D(1,674.0000,1277.0000,724.0000,1277.0000,724.0000,1302.0000,674.0000,1302.0000)"
+                  },
+                  "QuantityUnit": {
+                    "type": "string",
+                    "valueString": "each",
+                    "spans": [
+                      {
+                        "offset": 1159,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.829,
+                    "source": "D(1,770.0000,1276.0000,827.0000,1277.0000,827.0000,1301.0000,770.0000,1301.0000)"
+                  },
+                  "TaxAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 15.57,
+                        "spans": [
+                          {
+                            "offset": 1366,
+                            "length": 5
+                          }
+                        ],
+                        "confidence": 0.428,
+                        "source": "D(1,951.0000,1390.0000,1016.0000,1392.0000,1016.0000,1417.0000,951.0000,1415.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "TaxRate": {
+                    "type": "number",
+                    "valueNumber": 0.1,
+                    "spans": [
+                      {
+                        "offset": 1203,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.883,
+                    "source": "D(1,1281.0372,1275.3645,1331.5792,1276.5132,1330.9742,1303.1358,1280.4321,1301.9871)"
+                  },
+                  "TotalAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 21.44,
+                        "spans": [
+                          {
+                            "offset": 1216,
+                            "length": 5
+                          }
+                        ],
+                        "confidence": 0.956,
+                        "source": "D(1,1434.0000,1277.0000,1501.0000,1277.0000,1501.0000,1302.0000,1434.0000,1302.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "UnitPrice": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 19.49,
+                        "spans": [
+                          {
+                            "offset": 1173,
+                            "length": 5
+                          }
+                        ],
+                        "confidence": 0.955,
+                        "source": "D(1,951.0000,1277.0000,1015.0000,1277.0000,1015.0000,1302.0000,951.0000,1302.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "Date": {
+                    "type": "date",
+                    "confidence": 0.823
+                  },
+                  "Description": {
+                    "type": "string",
+                    "valueString": "1pc Exquisite Durable Foot Cloth Christmas Carpet Xmas Cushion for Kitchen",
+                    "spans": [
+                      {
+                        "offset": 1254,
+                        "length": 26
+                      },
+                      {
+                        "offset": 1281,
+                        "length": 27
+                      },
+                      {
+                        "offset": 1309,
+                        "length": 19
+                      }
+                    ],
+                    "confidence": 0.626,
+                    "source": "D(1,239.0000,1391.0000,542.0000,1391.0000,542.0000,1418.0000,239.0000,1418.0000);D(1,238.0000,1418.0000,570.0000,1418.0000,570.0000,1446.0000,238.0000,1446.0000);D(1,238.0000,1447.0000,458.0000,1447.0000,458.0000,1473.0000,238.0000,1473.0000)"
+                  },
+                  "ProductCode": {
+                    "type": "string",
+                    "confidence": 0.902
+                  },
+                  "Quantity": {
+                    "type": "number",
+                    "valueNumber": 2,
+                    "spans": [
+                      {
+                        "offset": 1338,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.903,
+                    "source": "D(1,672.0000,1392.0000,724.0000,1392.0000,724.0000,1417.0000,672.0000,1417.0000)"
+                  },
+                  "QuantityUnit": {
+                    "type": "string",
+                    "valueString": "each",
+                    "spans": [
+                      {
+                        "offset": 1352,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.827,
+                    "source": "D(1,770.0000,1393.0000,826.0000,1394.0000,826.0000,1416.0000,770.0000,1416.0000)"
+                  },
+                  "TaxAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 31.14,
+                        "spans": [
+                          {
+                            "offset": 1381,
+                            "length": 5
+                          },
+                          {
+                            "offset": 1396,
+                            "length": 2
+                          }
+                        ],
+                        "confidence": 0.158,
+                        "source": "D(1,1119.0000,1391.0000,1186.0000,1391.0000,1186.0000,1419.0000,1119.0000,1418.0000);D(1,1281.0000,1391.0000,1308.0000,1391.0000,1308.0000,1416.0000,1281.0000,1416.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "TaxRate": {
+                    "type": "number",
+                    "valueNumber": 0.1,
+                    "spans": [
+                      {
+                        "offset": 1396,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.832,
+                    "source": "D(1,1281.0000,1391.0000,1332.0000,1391.0000,1332.0000,1416.0000,1281.0000,1416.0000)"
+                  },
+                  "TotalAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 34.25,
+                        "spans": [
+                          {
+                            "offset": 1409,
+                            "length": 5
+                          }
+                        ],
+                        "confidence": 0.903,
+                        "source": "D(1,1434.0000,1392.0000,1501.0000,1390.0000,1501.0000,1416.0000,1434.0000,1417.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "UnitPrice": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 15.57,
+                        "spans": [
+                          {
+                            "offset": 1366,
+                            "length": 5
+                          }
+                        ],
+                        "confidence": 0.903,
+                        "source": "D(1,951.0000,1390.0000,1016.0000,1392.0000,1016.0000,1417.0000,951.0000,1415.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
           },
           "PaymentTerm": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.816
           },
           "PONumber": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.746
           },
           "RemittanceAddress": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.905
           },
           "RemittanceAddressRecipient": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.814
           },
           "ServiceAddress": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.782
           },
           "ServiceAddressRecipient": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.82
           },
           "ShippingAddress": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.775
           },
           "ShippingAddressRecipient": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.81
           },
           "SubtotalAmount": {
             "type": "object",
             "valueObject": {
               "Amount": {
-                "type": "number"
+                "type": "number",
+                "valueNumber": 744.6
               },
               "CurrencyCode": {
-                "type": "string"
+                "type": "string",
+                "valueString": "USD"
               }
             }
           },
           "TaxDetails": {
-            "type": "array"
+            "type": "array",
+            "valueArray": [
+              {
+                "type": "object",
+                "valueObject": {
+                  "Amount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 74.46,
+                        "spans": [
+                          {
+                            "offset": 1576,
+                            "length": 5
+                          }
+                        ],
+                        "confidence": 0.903,
+                        "source": "D(1,1175.0000,1683.0000,1240.0000,1683.0000,1240.0000,1709.0000,1175.0000,1709.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "Description": {
+                    "type": "string",
+                    "valueString": "VAT [%] 10%",
+                    "spans": [
+                      {
+                        "offset": 1466,
+                        "length": 7
+                      },
+                      {
+                        "offset": 1547,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.149,
+                    "source": "D(1,639.0000,1623.0000,744.0000,1623.0000,744.0000,1651.0000,639.0000,1651.0000);D(1,666.0113,1681.7396,719.0849,1684.0472,717.9887,1709.2604,664.9151,1706.9528)"
+                  },
+                  "NetAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 744.6,
+                        "spans": [
+                          {
+                            "offset": 1560,
+                            "length": 6
+                          }
+                        ],
+                        "confidence": 0.903,
+                        "source": "D(1,976.0000,1683.0000,1056.0000,1683.0000,1056.0000,1709.0000,976.0000,1709.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "Rate": {
+                    "type": "number",
+                    "valueNumber": 0.1,
+                    "spans": [
+                      {
+                        "offset": 1547,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.873,
+                    "source": "D(1,666.0113,1681.7396,719.0849,1684.0472,717.9887,1709.2604,664.9151,1706.9528)"
+                  }
+                }
+              }
+            ]
           },
           "TotalAmount": {
             "type": "object",
             "valueObject": {
               "Amount": {
-                "type": "number"
+                "type": "number",
+                "valueNumber": 819.06,
+                "spans": [
+                  {
+                    "offset": 1591,
+                    "length": 6
+                  }
+                ],
+                "confidence": 0.757,
+                "source": "D(1,1424.0000,1683.0000,1504.0000,1683.0000,1504.0000,1709.0000,1424.0000,1709.0000)"
               },
               "CurrencyCode": {
-                "type": "string"
+                "type": "string",
+                "valueString": "USD"
               }
             }
           },
@@ -123,7 +960,8 @@
             "type": "object",
             "valueObject": {
               "Amount": {
-                "type": "number"
+                "type": "number",
+                "confidence": 0.934
               },
               "CurrencyCode": {
                 "type": "string"
@@ -134,45 +972,4297 @@
             "type": "object",
             "valueObject": {
               "Amount": {
-                "type": "number"
+                "type": "number",
+                "valueNumber": 74.46
               },
               "CurrencyCode": {
-                "type": "string"
+                "type": "string",
+                "valueString": "USD"
               }
             }
           },
           "VendorAddress": {
-            "type": "string"
+            "type": "string",
+            "valueString": "38676 Johnson Burg Suite 666 West Rebeccamouth, SD 02588",
+            "spans": [
+              {
+                "offset": 82,
+                "length": 28
+              },
+              {
+                "offset": 111,
+                "length": 27
+              }
+            ],
+            "confidence": 0.682,
+            "source": "D(1,140.0000,541.0000,566.0000,541.0000,566.0000,575.0000,140.0000,575.0000);D(1,139.0000,576.0000,584.0000,576.0000,584.0000,610.0000,139.0000,610.0000)"
           },
           "VendorAddressRecipient": {
-            "type": "string"
+            "type": "string",
+            "valueString": "Reyes, Holloway and Lee",
+            "spans": [
+              {
+                "offset": 58,
+                "length": 23
+              }
+            ],
+            "confidence": 0.817,
+            "source": "D(1,140.0000,506.0000,491.0000,506.0000,491.0000,540.0000,140.0000,540.0000)"
           },
           "VendorName": {
-            "type": "string"
+            "type": "string",
+            "valueString": "Reyes, Holloway and Lee",
+            "spans": [
+              {
+                "offset": 58,
+                "length": 23
+              }
+            ],
+            "confidence": 0.817,
+            "source": "D(1,140.0000,506.0000,491.0000,506.0000,491.0000,540.0000,140.0000,540.0000)"
           },
           "VendorTaxId": {
-            "type": "string"
+            "type": "string",
+            "valueString": "909-83-7738",
+            "spans": [
+              {
+                "offset": 148,
+                "length": 11
+              }
+            ],
+            "confidence": 0.903,
+            "source": "D(1,244.0000,648.0000,425.0000,648.0000,425.0000,678.0000,244.0000,679.0000)"
           }
         },
         "kind": "document",
         "startPageNumber": 1,
         "endPageNumber": 1,
+        "unit": "pixel",
+        "pages": [
+          {
+            "pageNumber": 1,
+            "angle": 0,
+            "width": 1654,
+            "height": 2339,
+            "spans": [
+              {
+                "offset": 0,
+                "length": 1697
+              }
+            ],
+            "words": [
+              {
+                "content": "Invoice",
+                "span": {
+                  "offset": 0,
+                  "length": 7
+                },
+                "confidence": 0.936,
+                "source": "D(1,131,72,264,72,264,108,131,108)"
+              },
+              {
+                "content": "no",
+                "span": {
+                  "offset": 8,
+                  "length": 2
+                },
+                "confidence": 0.997,
+                "source": "D(1,280,72,323,72,323,108,280,108)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 10,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,327,72,335,72,335,108,327,108)"
+              },
+              {
+                "content": "16273983",
+                "span": {
+                  "offset": 12,
+                  "length": 8
+                },
+                "confidence": 0.996,
+                "source": "D(1,352,72,538,71,538,107,352,108)"
+              },
+              {
+                "content": "Date",
+                "span": {
+                  "offset": 22,
+                  "length": 4
+                },
+                "confidence": 0.998,
+                "source": "D(1,131,141,205,141,205,173,131,173)"
+              },
+              {
+                "content": "of",
+                "span": {
+                  "offset": 27,
+                  "length": 2
+                },
+                "confidence": 0.997,
+                "source": "D(1,216,141,247,141,247,173,216,173)"
+              },
+              {
+                "content": "issue",
+                "span": {
+                  "offset": 30,
+                  "length": 5
+                },
+                "confidence": 0.996,
+                "source": "D(1,255,141,332,141,332,174,255,173)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 35,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,335,142,345,142,345,174,335,174)"
+              },
+              {
+                "content": "04/01/2017",
+                "span": {
+                  "offset": 38,
+                  "length": 10
+                },
+                "confidence": 0.992,
+                "source": "D(1,800,140,979,140,979,174,800,175)"
+              },
+              {
+                "content": "Seller",
+                "span": {
+                  "offset": 50,
+                  "length": 6
+                },
+                "confidence": 0.997,
+                "source": "D(1,131,443,241,443,241,476,131,476)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 56,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,242,443,255,443,255,476,242,476)"
+              },
+              {
+                "content": "Reyes",
+                "span": {
+                  "offset": 58,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,140,507,223,506,223,539,140,540)"
+              },
+              {
+                "content": ",",
+                "span": {
+                  "offset": 63,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,224,506,230,506,230,539,224,539)"
+              },
+              {
+                "content": "Holloway",
+                "span": {
+                  "offset": 65,
+                  "length": 8
+                },
+                "confidence": 0.995,
+                "source": "D(1,242,506,367,506,367,539,242,539)"
+              },
+              {
+                "content": "and",
+                "span": {
+                  "offset": 74,
+                  "length": 3
+                },
+                "confidence": 0.997,
+                "source": "D(1,376,506,427,506,427,539,376,539)"
+              },
+              {
+                "content": "Lee",
+                "span": {
+                  "offset": 78,
+                  "length": 3
+                },
+                "confidence": 0.997,
+                "source": "D(1,439,506,491,506,491,539,439,539)"
+              },
+              {
+                "content": "38676",
+                "span": {
+                  "offset": 82,
+                  "length": 5
+                },
+                "confidence": 0.977,
+                "source": "D(1,140,542,225,541,225,575,140,575)"
+              },
+              {
+                "content": "Johnson",
+                "span": {
+                  "offset": 88,
+                  "length": 7
+                },
+                "confidence": 0.962,
+                "source": "D(1,233,541,343,541,343,575,233,575)"
+              },
+              {
+                "content": "Burg",
+                "span": {
+                  "offset": 96,
+                  "length": 4
+                },
+                "confidence": 0.996,
+                "source": "D(1,355,541,418,541,418,575,356,575)"
+              },
+              {
+                "content": "Suite",
+                "span": {
+                  "offset": 101,
+                  "length": 5
+                },
+                "confidence": 0.996,
+                "source": "D(1,429,541,500,541,500,574,429,575)"
+              },
+              {
+                "content": "666",
+                "span": {
+                  "offset": 107,
+                  "length": 3
+                },
+                "confidence": 0.994,
+                "source": "D(1,510,541,566,541,566,574,510,574)"
+              },
+              {
+                "content": "West",
+                "span": {
+                  "offset": 111,
+                  "length": 4
+                },
+                "confidence": 0.995,
+                "source": "D(1,139,576,210,577,210,609,139,608)"
+              },
+              {
+                "content": "Rebeccamouth",
+                "span": {
+                  "offset": 116,
+                  "length": 12
+                },
+                "confidence": 0.993,
+                "source": "D(1,219,577,427,578,427,610,219,609)"
+              },
+              {
+                "content": ",",
+                "span": {
+                  "offset": 128,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,429,578,435,578,436,610,429,610)"
+              },
+              {
+                "content": "SD",
+                "span": {
+                  "offset": 130,
+                  "length": 2
+                },
+                "confidence": 0.991,
+                "source": "D(1,446,577,483,577,483,609,446,610)"
+              },
+              {
+                "content": "02588",
+                "span": {
+                  "offset": 133,
+                  "length": 5
+                },
+                "confidence": 0.978,
+                "source": "D(1,495,577,584,576,584,609,495,609)"
+              },
+              {
+                "content": "Tax",
+                "span": {
+                  "offset": 140,
+                  "length": 3
+                },
+                "confidence": 0.982,
+                "source": "D(1,138,648,190,648,190,679,139,679)"
+              },
+              {
+                "content": "Id",
+                "span": {
+                  "offset": 144,
+                  "length": 2
+                },
+                "confidence": 0.765,
+                "source": "D(1,201,648,223,648,223,679,201,679)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 146,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,227,648,233,648,233,679,228,679)"
+              },
+              {
+                "content": "909-83-7738",
+                "span": {
+                  "offset": 148,
+                  "length": 11
+                },
+                "confidence": 0.99,
+                "source": "D(1,244,648,425,648,425,678,244,679)"
+              },
+              {
+                "content": "IBAN",
+                "span": {
+                  "offset": 161,
+                  "length": 4
+                },
+                "confidence": 0.997,
+                "source": "D(1,139,683,204,683,204,714,140,713)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 165,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,208,683,213,683,214,714,208,714)"
+              },
+              {
+                "content": "GB96VWUL52026848004193",
+                "span": {
+                  "offset": 167,
+                  "length": 22
+                },
+                "confidence": 0.993,
+                "source": "D(1,225,683,633,683,633,714,225,714)"
+              },
+              {
+                "content": "Client",
+                "span": {
+                  "offset": 191,
+                  "length": 6
+                },
+                "confidence": 0.995,
+                "source": "D(1,824,442,935,442,935,477,824,477)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 197,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,937,442,950,443,950,477,937,477)"
+              },
+              {
+                "content": "Castillo",
+                "span": {
+                  "offset": 199,
+                  "length": 8
+                },
+                "confidence": 0.973,
+                "source": "D(1,832,506,934,505,934,536,832,536)"
+              },
+              {
+                "content": "LLC",
+                "span": {
+                  "offset": 208,
+                  "length": 3
+                },
+                "confidence": 0.991,
+                "source": "D(1,945,505,997,505,997,536,945,536)"
+              },
+              {
+                "content": "70391",
+                "span": {
+                  "offset": 212,
+                  "length": 5
+                },
+                "confidence": 0.992,
+                "source": "D(1,833,542,919,542,919,574,833,574)"
+              },
+              {
+                "content": "Kelsey",
+                "span": {
+                  "offset": 218,
+                  "length": 6
+                },
+                "confidence": 0.99,
+                "source": "D(1,931,541,1022,542,1022,574,931,574)"
+              },
+              {
+                "content": "Terrace",
+                "span": {
+                  "offset": 225,
+                  "length": 7
+                },
+                "confidence": 0.996,
+                "source": "D(1,1030,542,1139,542,1139,575,1030,574)"
+              },
+              {
+                "content": "Garcialand",
+                "span": {
+                  "offset": 233,
+                  "length": 10
+                },
+                "confidence": 0.993,
+                "source": "D(1,833,578,979,578,979,610,833,610)"
+              },
+              {
+                "content": ",",
+                "span": {
+                  "offset": 243,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,982,578,988,578,988,610,982,610)"
+              },
+              {
+                "content": "VT",
+                "span": {
+                  "offset": 245,
+                  "length": 2
+                },
+                "confidence": 0.981,
+                "source": "D(1,998,578,1036,577,1036,609,998,610)"
+              },
+              {
+                "content": "41740",
+                "span": {
+                  "offset": 248,
+                  "length": 5
+                },
+                "confidence": 0.986,
+                "source": "D(1,1043,577,1136,577,1136,609,1043,609)"
+              },
+              {
+                "content": "Tax",
+                "span": {
+                  "offset": 255,
+                  "length": 3
+                },
+                "confidence": 0.987,
+                "source": "D(1,830,649,883,649,883,680,830,680)"
+              },
+              {
+                "content": "Id",
+                "span": {
+                  "offset": 259,
+                  "length": 2
+                },
+                "confidence": 0.797,
+                "source": "D(1,893,649,916,649,916,680,893,680)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 261,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,920,649,926,649,926,680,920,680)"
+              },
+              {
+                "content": "901-88-0463",
+                "span": {
+                  "offset": 263,
+                  "length": 11
+                },
+                "confidence": 0.991,
+                "source": "D(1,937,649,1118,648,1118,679,937,680)"
+              },
+              {
+                "content": "ITEMS",
+                "span": {
+                  "offset": 279,
+                  "length": 5
+                },
+                "confidence": 0.98,
+                "source": "D(1,131,759,248,759,248,792,131,792)"
+              },
+              {
+                "content": "No",
+                "span": {
+                  "offset": 304,
+                  "length": 2
+                },
+                "confidence": 0.964,
+                "source": "D(1,158,848,193,847,193,869,158,870)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 306,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,193,847,202,846,202,869,193,869)"
+              },
+              {
+                "content": "Description",
+                "span": {
+                  "offset": 317,
+                  "length": 11
+                },
+                "confidence": 0.997,
+                "source": "D(1,238,845,385,847,385,873,238,871)"
+              },
+              {
+                "content": "Qty",
+                "span": {
+                  "offset": 338,
+                  "length": 3
+                },
+                "confidence": 0.993,
+                "source": "D(1,678,846,726,848,726,874,678,872)"
+              },
+              {
+                "content": "UM",
+                "span": {
+                  "offset": 351,
+                  "length": 2
+                },
+                "confidence": 0.981,
+                "source": "D(1,776,846,820,846,820,870,776,870)"
+              },
+              {
+                "content": "Net",
+                "span": {
+                  "offset": 363,
+                  "length": 3
+                },
+                "confidence": 0.998,
+                "source": "D(1,898,844,944,845,944,872,898,871)"
+              },
+              {
+                "content": "price",
+                "span": {
+                  "offset": 367,
+                  "length": 5
+                },
+                "confidence": 0.998,
+                "source": "D(1,952,845,1018,845,1018,871,952,872)"
+              },
+              {
+                "content": "Net",
+                "span": {
+                  "offset": 382,
+                  "length": 3
+                },
+                "confidence": 0.998,
+                "source": "D(1,1057,846,1103,846,1103,871,1057,871)"
+              },
+              {
+                "content": "worth",
+                "span": {
+                  "offset": 386,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,1110,846,1186,846,1186,871,1110,871)"
+              },
+              {
+                "content": "VAT",
+                "span": {
+                  "offset": 401,
+                  "length": 3
+                },
+                "confidence": 0.992,
+                "source": "D(1,1227,844,1280,845,1280,872,1227,871)"
+              },
+              {
+                "content": "[",
+                "span": {
+                  "offset": 405,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1287,845,1297,845,1297,873,1287,873)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 406,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1296,845,1319,845,1319,872,1296,873)"
+              },
+              {
+                "content": "]",
+                "span": {
+                  "offset": 407,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,1319,845,1332,845,1332,872,1319,872)"
+              },
+              {
+                "content": "Gross",
+                "span": {
+                  "offset": 418,
+                  "length": 5
+                },
+                "confidence": 0.998,
+                "source": "D(1,1428,848,1501,848,1501,871,1428,870)"
+              },
+              {
+                "content": "worth",
+                "span": {
+                  "offset": 424,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,1425,875,1501,875,1501,897,1425,897)"
+              },
+              {
+                "content": "1",
+                "span": {
+                  "offset": 450,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,170,934,182,934,182,957,170,957)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 451,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,185,934,192,934,192,957,185,957)"
+              },
+              {
+                "content": "Handmade",
+                "span": {
+                  "offset": 462,
+                  "length": 8
+                },
+                "confidence": 0.995,
+                "source": "D(1,237,932,360,933,360,959,237,958)"
+              },
+              {
+                "content": "Thick",
+                "span": {
+                  "offset": 471,
+                  "length": 5
+                },
+                "confidence": 0.998,
+                "source": "D(1,367,933,428,933,428,958,367,958)"
+              },
+              {
+                "content": "round",
+                "span": {
+                  "offset": 477,
+                  "length": 5
+                },
+                "confidence": 0.998,
+                "source": "D(1,435,933,497,932,497,958,435,958)"
+              },
+              {
+                "content": "warm",
+                "span": {
+                  "offset": 483,
+                  "length": 4
+                },
+                "confidence": 0.998,
+                "source": "D(1,505,932,570,932,570,958,505,958)"
+              },
+              {
+                "content": "crochet",
+                "span": {
+                  "offset": 488,
+                  "length": 7
+                },
+                "confidence": 0.998,
+                "source": "D(1,238,960,323,960,323,987,239,986)"
+              },
+              {
+                "content": "Rug",
+                "span": {
+                  "offset": 496,
+                  "length": 3
+                },
+                "confidence": 0.998,
+                "source": "D(1,330,960,372,960,373,987,330,987)"
+              },
+              {
+                "content": "Carpet",
+                "span": {
+                  "offset": 500,
+                  "length": 6
+                },
+                "confidence": 0.996,
+                "source": "D(1,381,960,455,960,455,986,381,987)"
+              },
+              {
+                "content": "Mat",
+                "span": {
+                  "offset": 507,
+                  "length": 3
+                },
+                "confidence": 0.994,
+                "source": "D(1,463,960,504,959,504,985,463,986)"
+              },
+              {
+                "content": "97",
+                "span": {
+                  "offset": 511,
+                  "length": 2
+                },
+                "confidence": 0.997,
+                "source": "D(1,511,959,540,959,540,985,511,985)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 513,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,539,959,563,958,563,984,539,985)"
+              },
+              {
+                "content": "acrylic",
+                "span": {
+                  "offset": 515,
+                  "length": 7
+                },
+                "confidence": 0.993,
+                "source": "D(1,238,988,311,987,311,1015,238,1015)"
+              },
+              {
+                "content": "3",
+                "span": {
+                  "offset": 523,
+                  "length": 1
+                },
+                "confidence": 0.992,
+                "source": "D(1,318,987,331,987,331,1015,318,1015)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 524,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,331,987,352,987,352,1015,331,1015)"
+              },
+              {
+                "content": "me",
+                "span": {
+                  "offset": 526,
+                  "length": 2
+                },
+                "confidence": 0.998,
+                "source": "D(1,359,987,395,987,395,1015,359,1015)"
+              },
+              {
+                "content": "Floor",
+                "span": {
+                  "offset": 529,
+                  "length": 5
+                },
+                "confidence": 0.996,
+                "source": "D(1,404,987,460,987,460,1014,404,1014)"
+              },
+              {
+                "content": "Decor",
+                "span": {
+                  "offset": 535,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,466,987,535,986,535,1014,466,1014)"
+              },
+              {
+                "content": "4,00",
+                "span": {
+                  "offset": 550,
+                  "length": 4
+                },
+                "confidence": 0.994,
+                "source": "D(1,672,933,725,933,725,958,672,958)"
+              },
+              {
+                "content": "each",
+                "span": {
+                  "offset": 564,
+                  "length": 4
+                },
+                "confidence": 0.999,
+                "source": "D(1,769,934,827,934,827,957,769,958)"
+              },
+              {
+                "content": "44,99",
+                "span": {
+                  "offset": 578,
+                  "length": 5
+                },
+                "confidence": 0.979,
+                "source": "D(1,950,933,1015,933,1015,958,950,958)"
+              },
+              {
+                "content": "179,96",
+                "span": {
+                  "offset": 593,
+                  "length": 6
+                },
+                "confidence": 0.996,
+                "source": "D(1,1106,933,1186,932,1186,958,1106,959)"
+              },
+              {
+                "content": "10",
+                "span": {
+                  "offset": 609,
+                  "length": 2
+                },
+                "confidence": 0.999,
+                "source": "D(1,1279,933,1308,933,1308,957,1279,957)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 611,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1308,933,1332,933,1332,958,1308,957)"
+              },
+              {
+                "content": "197,96",
+                "span": {
+                  "offset": 622,
+                  "length": 6
+                },
+                "confidence": 0.991,
+                "source": "D(1,1421,933,1500,933,1500,958,1421,957)"
+              },
+              {
+                "content": "2",
+                "span": {
+                  "offset": 649,
+                  "length": 1
+                },
+                "confidence": 0.982,
+                "source": "D(1,169,1049,183,1048,183,1071,169,1072)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 650,
+                  "length": 1
+                },
+                "confidence": 0.996,
+                "source": "D(1,185,1048,191,1048,191,1071,185,1071)"
+              },
+              {
+                "content": "Rug",
+                "span": {
+                  "offset": 661,
+                  "length": 3
+                },
+                "confidence": 0.997,
+                "source": "D(1,238,1046,281,1046,281,1074,238,1073)"
+              },
+              {
+                "content": "White",
+                "span": {
+                  "offset": 665,
+                  "length": 5
+                },
+                "confidence": 0.998,
+                "source": "D(1,288,1046,352,1046,352,1074,288,1074)"
+              },
+              {
+                "content": "Moroccan",
+                "span": {
+                  "offset": 671,
+                  "length": 8
+                },
+                "confidence": 0.998,
+                "source": "D(1,360,1046,467,1046,467,1073,360,1074)"
+              },
+              {
+                "content": "Beni",
+                "span": {
+                  "offset": 680,
+                  "length": 4
+                },
+                "confidence": 0.998,
+                "source": "D(1,476,1046,528,1046,528,1073,476,1073)"
+              },
+              {
+                "content": "Ourain",
+                "span": {
+                  "offset": 685,
+                  "length": 6
+                },
+                "confidence": 0.995,
+                "source": "D(1,238,1074,312,1074,312,1101,238,1101)"
+              },
+              {
+                "content": "Trellis",
+                "span": {
+                  "offset": 692,
+                  "length": 7
+                },
+                "confidence": 0.995,
+                "source": "D(1,320,1074,386,1074,386,1101,320,1101)"
+              },
+              {
+                "content": "Shag",
+                "span": {
+                  "offset": 700,
+                  "length": 4
+                },
+                "confidence": 0.995,
+                "source": "D(1,394,1074,449,1074,449,1101,394,1101)"
+              },
+              {
+                "content": "Area",
+                "span": {
+                  "offset": 705,
+                  "length": 4
+                },
+                "confidence": 0.995,
+                "source": "D(1,456,1074,508,1074,508,1101,456,1101)"
+              },
+              {
+                "content": "Rug",
+                "span": {
+                  "offset": 710,
+                  "length": 3
+                },
+                "confidence": 0.995,
+                "source": "D(1,517,1074,561,1074,561,1102,517,1102)"
+              },
+              {
+                "content": "Authentic",
+                "span": {
+                  "offset": 714,
+                  "length": 9
+                },
+                "confidence": 0.997,
+                "source": "D(1,237,1101,346,1102,346,1129,237,1128)"
+              },
+              {
+                "content": "Handmade",
+                "span": {
+                  "offset": 724,
+                  "length": 8
+                },
+                "confidence": 0.996,
+                "source": "D(1,354,1102,474,1102,474,1129,354,1129)"
+              },
+              {
+                "content": "Carpet",
+                "span": {
+                  "offset": 733,
+                  "length": 6
+                },
+                "confidence": 0.996,
+                "source": "D(1,482,1102,560,1102,560,1129,482,1129)"
+              },
+              {
+                "content": "2,00",
+                "span": {
+                  "offset": 749,
+                  "length": 4
+                },
+                "confidence": 0.993,
+                "source": "D(1,672,1047,725,1047,725,1072,672,1072)"
+              },
+              {
+                "content": "each",
+                "span": {
+                  "offset": 763,
+                  "length": 4
+                },
+                "confidence": 0.999,
+                "source": "D(1,770,1048,826,1048,826,1072,770,1072)"
+              },
+              {
+                "content": "245,00",
+                "span": {
+                  "offset": 777,
+                  "length": 6
+                },
+                "confidence": 0.951,
+                "source": "D(1,935,1046,1017,1046,1017,1073,935,1072)"
+              },
+              {
+                "content": "490,00",
+                "span": {
+                  "offset": 793,
+                  "length": 6
+                },
+                "confidence": 0.986,
+                "source": "D(1,1106,1046,1186,1046,1186,1073,1106,1073)"
+              },
+              {
+                "content": "10",
+                "span": {
+                  "offset": 809,
+                  "length": 2
+                },
+                "confidence": 0.999,
+                "source": "D(1,1281,1047,1308,1046,1308,1071,1281,1072)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 811,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1309,1046,1331,1048,1331,1073,1309,1071)"
+              },
+              {
+                "content": "539,00",
+                "span": {
+                  "offset": 822,
+                  "length": 6
+                },
+                "confidence": 0.997,
+                "source": "D(1,1420,1046,1500,1046,1500,1072,1420,1072)"
+              },
+              {
+                "content": "3",
+                "span": {
+                  "offset": 849,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,169,1163,183,1162,183,1184,169,1186)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 850,
+                  "length": 1
+                },
+                "confidence": 0.997,
+                "source": "D(1,185,1162,192,1163,192,1185,185,1184)"
+              },
+              {
+                "content": "Abstract",
+                "span": {
+                  "offset": 861,
+                  "length": 8
+                },
+                "confidence": 0.995,
+                "source": "D(1,237,1161,332,1160,332,1188,237,1189)"
+              },
+              {
+                "content": "Living",
+                "span": {
+                  "offset": 870,
+                  "length": 6
+                },
+                "confidence": 0.995,
+                "source": "D(1,340,1160,404,1160,404,1188,340,1188)"
+              },
+              {
+                "content": "Room",
+                "span": {
+                  "offset": 877,
+                  "length": 4
+                },
+                "confidence": 0.998,
+                "source": "D(1,413,1160,476,1160,476,1188,413,1188)"
+              },
+              {
+                "content": "Carpet",
+                "span": {
+                  "offset": 882,
+                  "length": 6
+                },
+                "confidence": 0.996,
+                "source": "D(1,484,1160,562,1160,562,1188,484,1188)"
+              },
+              {
+                "content": "Home",
+                "span": {
+                  "offset": 889,
+                  "length": 4
+                },
+                "confidence": 0.997,
+                "source": "D(1,238,1189,303,1189,303,1216,238,1216)"
+              },
+              {
+                "content": "Decor",
+                "span": {
+                  "offset": 894,
+                  "length": 5
+                },
+                "confidence": 0.995,
+                "source": "D(1,312,1189,378,1189,378,1216,312,1216)"
+              },
+              {
+                "content": "Nordic",
+                "span": {
+                  "offset": 900,
+                  "length": 6
+                },
+                "confidence": 0.99,
+                "source": "D(1,385,1189,457,1189,457,1216,385,1216)"
+              },
+              {
+                "content": "Style",
+                "span": {
+                  "offset": 907,
+                  "length": 5
+                },
+                "confidence": 0.993,
+                "source": "D(1,463,1189,522,1189,522,1216,463,1216)"
+              },
+              {
+                "content": "Bedside",
+                "span": {
+                  "offset": 913,
+                  "length": 7
+                },
+                "confidence": 0.996,
+                "source": "D(1,239,1217,326,1217,326,1244,239,1245)"
+              },
+              {
+                "content": "Area",
+                "span": {
+                  "offset": 921,
+                  "length": 4
+                },
+                "confidence": 0.997,
+                "source": "D(1,333,1217,384,1216,384,1244,333,1244)"
+              },
+              {
+                "content": "Rug",
+                "span": {
+                  "offset": 926,
+                  "length": 3
+                },
+                "confidence": 0.996,
+                "source": "D(1,394,1216,436,1216,436,1244,394,1244)"
+              },
+              {
+                "content": "Floor",
+                "span": {
+                  "offset": 930,
+                  "length": 5
+                },
+                "confidence": 0.994,
+                "source": "D(1,445,1216,501,1217,501,1244,445,1244)"
+              },
+              {
+                "content": "Mats",
+                "span": {
+                  "offset": 936,
+                  "length": 4
+                },
+                "confidence": 0.995,
+                "source": "D(1,508,1217,562,1217,562,1244,508,1244)"
+              },
+              {
+                "content": "1,00",
+                "span": {
+                  "offset": 950,
+                  "length": 4
+                },
+                "confidence": 0.996,
+                "source": "D(1,674,1161,725,1162,725,1187,674,1188)"
+              },
+              {
+                "content": "each",
+                "span": {
+                  "offset": 964,
+                  "length": 4
+                },
+                "confidence": 0.999,
+                "source": "D(1,769,1162,827,1162,827,1185,769,1185)"
+              },
+              {
+                "content": "24,01",
+                "span": {
+                  "offset": 978,
+                  "length": 5
+                },
+                "confidence": 0.992,
+                "source": "D(1,950,1161,1016,1161,1016,1188,950,1188)"
+              },
+              {
+                "content": "24,01",
+                "span": {
+                  "offset": 993,
+                  "length": 5
+                },
+                "confidence": 0.995,
+                "source": "D(1,1119,1161,1185,1161,1185,1188,1119,1188)"
+              },
+              {
+                "content": "10",
+                "span": {
+                  "offset": 1008,
+                  "length": 2
+                },
+                "confidence": 0.999,
+                "source": "D(1,1280,1162,1308,1161,1308,1186,1280,1187)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 1010,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1308,1161,1331,1162,1331,1187,1308,1186)"
+              },
+              {
+                "content": "26,41",
+                "span": {
+                  "offset": 1021,
+                  "length": 5
+                },
+                "confidence": 0.987,
+                "source": "D(1,1434,1161,1501,1162,1501,1187,1434,1187)"
+              },
+              {
+                "content": "4",
+                "span": {
+                  "offset": 1047,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,169,1278,183,1277,183,1300,169,1301)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 1048,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,184,1277,192,1278,192,1301,184,1300)"
+              },
+              {
+                "content": "Leopard",
+                "span": {
+                  "offset": 1059,
+                  "length": 7
+                },
+                "confidence": 0.996,
+                "source": "D(1,237,1276,328,1276,328,1303,237,1303)"
+              },
+              {
+                "content": "Printed",
+                "span": {
+                  "offset": 1067,
+                  "length": 7
+                },
+                "confidence": 0.996,
+                "source": "D(1,338,1276,415,1276,415,1303,338,1303)"
+              },
+              {
+                "content": "Rug",
+                "span": {
+                  "offset": 1075,
+                  "length": 3
+                },
+                "confidence": 0.996,
+                "source": "D(1,424,1276,465,1276,465,1303,424,1303)"
+              },
+              {
+                "content": "Skin",
+                "span": {
+                  "offset": 1079,
+                  "length": 4
+                },
+                "confidence": 0.994,
+                "source": "D(1,473,1276,520,1276,520,1303,473,1303)"
+              },
+              {
+                "content": "Mat",
+                "span": {
+                  "offset": 1084,
+                  "length": 3
+                },
+                "confidence": 0.995,
+                "source": "D(1,529,1276,573,1276,573,1303,529,1303)"
+              },
+              {
+                "content": "Leather",
+                "span": {
+                  "offset": 1088,
+                  "length": 7
+                },
+                "confidence": 0.992,
+                "source": "D(1,238,1305,324,1304,324,1331,238,1330)"
+              },
+              {
+                "content": "Faux",
+                "span": {
+                  "offset": 1096,
+                  "length": 4
+                },
+                "confidence": 0.99,
+                "source": "D(1,332,1304,384,1304,384,1331,332,1331)"
+              },
+              {
+                "content": "Fur",
+                "span": {
+                  "offset": 1101,
+                  "length": 3
+                },
+                "confidence": 0.995,
+                "source": "D(1,392,1304,429,1304,429,1331,392,1331)"
+              },
+              {
+                "content": "Animals",
+                "span": {
+                  "offset": 1105,
+                  "length": 7
+                },
+                "confidence": 0.992,
+                "source": "D(1,434,1304,523,1303,523,1330,434,1331)"
+              },
+              {
+                "content": "Area",
+                "span": {
+                  "offset": 1113,
+                  "length": 4
+                },
+                "confidence": 0.996,
+                "source": "D(1,529,1303,584,1303,584,1330,529,1330)"
+              },
+              {
+                "content": "Rugs",
+                "span": {
+                  "offset": 1118,
+                  "length": 4
+                },
+                "confidence": 0.995,
+                "source": "D(1,238,1333,293,1332,293,1360,238,1360)"
+              },
+              {
+                "content": "Home",
+                "span": {
+                  "offset": 1123,
+                  "length": 4
+                },
+                "confidence": 0.998,
+                "source": "D(1,301,1332,365,1332,365,1360,301,1360)"
+              },
+              {
+                "content": "Carpets",
+                "span": {
+                  "offset": 1128,
+                  "length": 7
+                },
+                "confidence": 0.997,
+                "source": "D(1,373,1333,462,1333,462,1360,373,1360)"
+              },
+              {
+                "content": "1,00",
+                "span": {
+                  "offset": 1145,
+                  "length": 4
+                },
+                "confidence": 0.99,
+                "source": "D(1,674,1277,724,1277,724,1302,674,1302)"
+              },
+              {
+                "content": "each",
+                "span": {
+                  "offset": 1159,
+                  "length": 4
+                },
+                "confidence": 0.999,
+                "source": "D(1,770,1276,827,1277,827,1301,770,1301)"
+              },
+              {
+                "content": "19,49",
+                "span": {
+                  "offset": 1173,
+                  "length": 5
+                },
+                "confidence": 0.964,
+                "source": "D(1,951,1277,1015,1277,1015,1302,951,1302)"
+              },
+              {
+                "content": "19,49",
+                "span": {
+                  "offset": 1188,
+                  "length": 5
+                },
+                "confidence": 0.993,
+                "source": "D(1,1119,1277,1185,1277,1185,1302,1119,1302)"
+              },
+              {
+                "content": "10",
+                "span": {
+                  "offset": 1203,
+                  "length": 2
+                },
+                "confidence": 0.999,
+                "source": "D(1,1281,1277,1308,1276,1308,1302,1281,1302)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 1205,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1309,1276,1331,1277,1331,1302,1309,1302)"
+              },
+              {
+                "content": "21,44",
+                "span": {
+                  "offset": 1216,
+                  "length": 5
+                },
+                "confidence": 0.992,
+                "source": "D(1,1434,1277,1501,1277,1501,1302,1434,1302)"
+              },
+              {
+                "content": "5",
+                "span": {
+                  "offset": 1242,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,169,1393,182,1392,182,1415,169,1416)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 1243,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,185,1392,192,1391,192,1416,185,1415)"
+              },
+              {
+                "content": "1pc",
+                "span": {
+                  "offset": 1254,
+                  "length": 3
+                },
+                "confidence": 0.982,
+                "source": "D(1,239,1391,278,1391,278,1418,239,1418)"
+              },
+              {
+                "content": "Exquisite",
+                "span": {
+                  "offset": 1258,
+                  "length": 9
+                },
+                "confidence": 0.988,
+                "source": "D(1,287,1391,387,1391,387,1418,287,1418)"
+              },
+              {
+                "content": "Durable",
+                "span": {
+                  "offset": 1268,
+                  "length": 7
+                },
+                "confidence": 0.992,
+                "source": "D(1,396,1391,483,1391,483,1418,396,1418)"
+              },
+              {
+                "content": "Foot",
+                "span": {
+                  "offset": 1276,
+                  "length": 4
+                },
+                "confidence": 0.993,
+                "source": "D(1,491,1391,542,1391,542,1418,491,1418)"
+              },
+              {
+                "content": "Cloth",
+                "span": {
+                  "offset": 1281,
+                  "length": 5
+                },
+                "confidence": 0.994,
+                "source": "D(1,238,1418,296,1418,296,1446,238,1446)"
+              },
+              {
+                "content": "Christmas",
+                "span": {
+                  "offset": 1287,
+                  "length": 9
+                },
+                "confidence": 0.993,
+                "source": "D(1,304,1418,416,1418,416,1446,304,1446)"
+              },
+              {
+                "content": "Carpet",
+                "span": {
+                  "offset": 1297,
+                  "length": 6
+                },
+                "confidence": 0.995,
+                "source": "D(1,424,1418,498,1418,498,1446,424,1446)"
+              },
+              {
+                "content": "Xmas",
+                "span": {
+                  "offset": 1304,
+                  "length": 4
+                },
+                "confidence": 0.992,
+                "source": "D(1,505,1418,570,1418,570,1446,505,1446)"
+              },
+              {
+                "content": "Cushion",
+                "span": {
+                  "offset": 1309,
+                  "length": 7
+                },
+                "confidence": 0.995,
+                "source": "D(1,238,1447,327,1447,327,1472,239,1472)"
+              },
+              {
+                "content": "for",
+                "span": {
+                  "offset": 1317,
+                  "length": 3
+                },
+                "confidence": 0.998,
+                "source": "D(1,334,1447,366,1447,367,1472,334,1472)"
+              },
+              {
+                "content": "Kitchen",
+                "span": {
+                  "offset": 1321,
+                  "length": 7
+                },
+                "confidence": 0.994,
+                "source": "D(1,373,1447,458,1448,458,1473,373,1472)"
+              },
+              {
+                "content": "2,00",
+                "span": {
+                  "offset": 1338,
+                  "length": 4
+                },
+                "confidence": 0.996,
+                "source": "D(1,672,1392,724,1392,724,1417,672,1417)"
+              },
+              {
+                "content": "each",
+                "span": {
+                  "offset": 1352,
+                  "length": 4
+                },
+                "confidence": 0.998,
+                "source": "D(1,770,1393,826,1394,826,1416,770,1416)"
+              },
+              {
+                "content": "15,57",
+                "span": {
+                  "offset": 1366,
+                  "length": 5
+                },
+                "confidence": 0.992,
+                "source": "D(1,951,1390,1016,1392,1016,1417,951,1415)"
+              },
+              {
+                "content": "31,14",
+                "span": {
+                  "offset": 1381,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,1119,1391,1186,1391,1186,1419,1119,1418)"
+              },
+              {
+                "content": "10",
+                "span": {
+                  "offset": 1396,
+                  "length": 2
+                },
+                "confidence": 0.999,
+                "source": "D(1,1281,1391,1308,1391,1308,1416,1281,1416)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 1398,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1309,1391,1332,1391,1332,1416,1309,1416)"
+              },
+              {
+                "content": "34,25",
+                "span": {
+                  "offset": 1409,
+                  "length": 5
+                },
+                "confidence": 0.986,
+                "source": "D(1,1434,1392,1501,1390,1501,1416,1434,1417)"
+              },
+              {
+                "content": "SUMMARY",
+                "span": {
+                  "offset": 1439,
+                  "length": 7
+                },
+                "confidence": 0.992,
+                "source": "D(1,131,1538,328,1539,328,1574,131,1573)"
+              },
+              {
+                "content": "VAT",
+                "span": {
+                  "offset": 1466,
+                  "length": 3
+                },
+                "confidence": 0.993,
+                "source": "D(1,639,1623,692,1623,692,1651,639,1651)"
+              },
+              {
+                "content": "[",
+                "span": {
+                  "offset": 1470,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,699,1623,708,1623,708,1651,699,1651)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 1471,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,708,1623,731,1623,731,1651,708,1651)"
+              },
+              {
+                "content": "]",
+                "span": {
+                  "offset": 1472,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,731,1623,744,1623,744,1651,731,1651)"
+              },
+              {
+                "content": "Net",
+                "span": {
+                  "offset": 1483,
+                  "length": 3
+                },
+                "confidence": 0.997,
+                "source": "D(1,927,1624,973,1624,973,1649,927,1649)"
+              },
+              {
+                "content": "worth",
+                "span": {
+                  "offset": 1487,
+                  "length": 5
+                },
+                "confidence": 0.996,
+                "source": "D(1,979,1624,1056,1623,1056,1648,979,1649)"
+              },
+              {
+                "content": "VAT",
+                "span": {
+                  "offset": 1502,
+                  "length": 3
+                },
+                "confidence": 0.971,
+                "source": "D(1,1187,1623,1241,1623,1241,1648,1187,1648)"
+              },
+              {
+                "content": "Gross",
+                "span": {
+                  "offset": 1515,
+                  "length": 5
+                },
+                "confidence": 0.998,
+                "source": "D(1,1350,1624,1421,1624,1421,1649,1350,1649)"
+              },
+              {
+                "content": "worth",
+                "span": {
+                  "offset": 1521,
+                  "length": 5
+                },
+                "confidence": 0.998,
+                "source": "D(1,1429,1624,1504,1625,1504,1650,1429,1649)"
+              },
+              {
+                "content": "10",
+                "span": {
+                  "offset": 1547,
+                  "length": 2
+                },
+                "confidence": 0.999,
+                "source": "D(1,666,1682,695,1683,695,1708,666,1707)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 1549,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,695,1683,718,1684,718,1709,695,1708)"
+              },
+              {
+                "content": "744,60",
+                "span": {
+                  "offset": 1560,
+                  "length": 6
+                },
+                "confidence": 0.991,
+                "source": "D(1,976,1683,1056,1683,1056,1709,976,1709)"
+              },
+              {
+                "content": "74,46",
+                "span": {
+                  "offset": 1576,
+                  "length": 5
+                },
+                "confidence": 0.989,
+                "source": "D(1,1175,1683,1240,1683,1240,1709,1175,1709)"
+              },
+              {
+                "content": "819,06",
+                "span": {
+                  "offset": 1591,
+                  "length": 6
+                },
+                "confidence": 0.995,
+                "source": "D(1,1424,1683,1504,1683,1504,1709,1424,1709)"
+              },
+              {
+                "content": "Total",
+                "span": {
+                  "offset": 1618,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,500,1742,569,1742,569,1767,500,1767)"
+              },
+              {
+                "content": "$",
+                "span": {
+                  "offset": 1633,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,942,1744,958,1744,958,1769,942,1769)"
+              },
+              {
+                "content": "744,60",
+                "span": {
+                  "offset": 1635,
+                  "length": 6
+                },
+                "confidence": 0.94,
+                "source": "D(1,967,1744,1056,1743,1056,1768,967,1769)"
+              },
+              {
+                "content": "$",
+                "span": {
+                  "offset": 1651,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1144,1744,1159,1744,1159,1769,1144,1769)"
+              },
+              {
+                "content": "74,46",
+                "span": {
+                  "offset": 1653,
+                  "length": 5
+                },
+                "confidence": 0.974,
+                "source": "D(1,1167,1744,1240,1744,1240,1769,1167,1769)"
+              },
+              {
+                "content": "$",
+                "span": {
+                  "offset": 1668,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1392,1743,1407,1743,1407,1768,1392,1768)"
+              },
+              {
+                "content": "819,06",
+                "span": {
+                  "offset": 1670,
+                  "length": 6
+                },
+                "confidence": 0.976,
+                "source": "D(1,1416,1743,1505,1743,1505,1768,1416,1768)"
+              }
+            ],
+            "lines": [
+              {
+                "content": "Invoice no: 16273983",
+                "source": "D(1,131,72,538,71,538,107,131,108)",
+                "span": {
+                  "offset": 0,
+                  "length": 20
+                }
+              },
+              {
+                "content": "Date of issue:",
+                "source": "D(1,131,141,345,141,345,174,131,173)",
+                "span": {
+                  "offset": 22,
+                  "length": 14
+                }
+              },
+              {
+                "content": "04/01/2017",
+                "source": "D(1,800,140,979,140,979,174,800,175)",
+                "span": {
+                  "offset": 38,
+                  "length": 10
+                }
+              },
+              {
+                "content": "Seller:",
+                "source": "D(1,131,443,255,443,255,476,131,476)",
+                "span": {
+                  "offset": 50,
+                  "length": 7
+                }
+              },
+              {
+                "content": "Reyes, Holloway and Lee",
+                "source": "D(1,140,506,491,506,491,539,140,540)",
+                "span": {
+                  "offset": 58,
+                  "length": 23
+                }
+              },
+              {
+                "content": "38676 Johnson Burg Suite 666",
+                "source": "D(1,140,542,566,541,566,574,140,575)",
+                "span": {
+                  "offset": 82,
+                  "length": 28
+                }
+              },
+              {
+                "content": "West Rebeccamouth, SD 02588",
+                "source": "D(1,139,576,584,576,584,610,139,610)",
+                "span": {
+                  "offset": 111,
+                  "length": 27
+                }
+              },
+              {
+                "content": "Tax Id: 909-83-7738",
+                "source": "D(1,138,648,425,648,425,678,138,679)",
+                "span": {
+                  "offset": 140,
+                  "length": 19
+                }
+              },
+              {
+                "content": "IBAN: GB96VWUL52026848004193",
+                "source": "D(1,139,683,633,683,633,714,139,715)",
+                "span": {
+                  "offset": 161,
+                  "length": 28
+                }
+              },
+              {
+                "content": "Client:",
+                "source": "D(1,824,442,950,442,950,477,824,477)",
+                "span": {
+                  "offset": 191,
+                  "length": 7
+                }
+              },
+              {
+                "content": "Castillo LLC",
+                "source": "D(1,832,505,997,505,997,536,832,536)",
+                "span": {
+                  "offset": 199,
+                  "length": 12
+                }
+              },
+              {
+                "content": "70391 Kelsey Terrace",
+                "source": "D(1,833,541,1139,542,1139,575,833,574)",
+                "span": {
+                  "offset": 212,
+                  "length": 20
+                }
+              },
+              {
+                "content": "Garcialand, VT 41740",
+                "source": "D(1,832,578,1136,577,1136,609,833,610)",
+                "span": {
+                  "offset": 233,
+                  "length": 20
+                }
+              },
+              {
+                "content": "Tax Id: 901-88-0463",
+                "source": "D(1,830,649,1118,648,1118,679,830,680)",
+                "span": {
+                  "offset": 255,
+                  "length": 19
+                }
+              },
+              {
+                "content": "ITEMS",
+                "source": "D(1,131,759,248,759,248,792,131,792)",
+                "span": {
+                  "offset": 279,
+                  "length": 5
+                }
+              },
+              {
+                "content": "No.",
+                "source": "D(1,158,848,202,846,202,869,158,870)",
+                "span": {
+                  "offset": 304,
+                  "length": 3
+                }
+              },
+              {
+                "content": "Description",
+                "source": "D(1,238,845,385,847,385,873,237,871)",
+                "span": {
+                  "offset": 317,
+                  "length": 11
+                }
+              },
+              {
+                "content": "Qty",
+                "source": "D(1,678,845,727,848,726,874,678,872)",
+                "span": {
+                  "offset": 338,
+                  "length": 3
+                }
+              },
+              {
+                "content": "UM",
+                "source": "D(1,776,845,820,845,820,870,776,870)",
+                "span": {
+                  "offset": 351,
+                  "length": 2
+                }
+              },
+              {
+                "content": "Net price",
+                "source": "D(1,898,844,1018,845,1018,873,898,872)",
+                "span": {
+                  "offset": 363,
+                  "length": 9
+                }
+              },
+              {
+                "content": "Net worth",
+                "source": "D(1,1057,846,1186,845,1186,871,1057,871)",
+                "span": {
+                  "offset": 382,
+                  "length": 9
+                }
+              },
+              {
+                "content": "VAT [%]",
+                "source": "D(1,1227,844,1332,845,1332,873,1226,872)",
+                "span": {
+                  "offset": 401,
+                  "length": 7
+                }
+              },
+              {
+                "content": "Gross",
+                "source": "D(1,1428,847,1502,848,1501,871,1428,870)",
+                "span": {
+                  "offset": 418,
+                  "length": 5
+                }
+              },
+              {
+                "content": "worth",
+                "source": "D(1,1425,874,1501,874,1501,897,1425,897)",
+                "span": {
+                  "offset": 424,
+                  "length": 5
+                }
+              },
+              {
+                "content": "1.",
+                "source": "D(1,170,934,192,934,192,957,170,957)",
+                "span": {
+                  "offset": 450,
+                  "length": 2
+                }
+              },
+              {
+                "content": "Handmade Thick round warm",
+                "source": "D(1,237,932,570,932,570,959,237,958)",
+                "span": {
+                  "offset": 462,
+                  "length": 25
+                }
+              },
+              {
+                "content": "crochet Rug Carpet Mat 97%",
+                "source": "D(1,238,960,563,958,563,986,239,987)",
+                "span": {
+                  "offset": 488,
+                  "length": 26
+                }
+              },
+              {
+                "content": "acrylic 3% me Floor Decor",
+                "source": "D(1,238,988,535,986,535,1014,238,1015)",
+                "span": {
+                  "offset": 515,
+                  "length": 25
+                }
+              },
+              {
+                "content": "4,00",
+                "source": "D(1,672,933,725,933,725,958,672,958)",
+                "span": {
+                  "offset": 550,
+                  "length": 4
+                }
+              },
+              {
+                "content": "each",
+                "source": "D(1,769,934,827,934,827,958,769,958)",
+                "span": {
+                  "offset": 564,
+                  "length": 4
+                }
+              },
+              {
+                "content": "44,99",
+                "source": "D(1,950,933,1015,933,1015,958,950,958)",
+                "span": {
+                  "offset": 578,
+                  "length": 5
+                }
+              },
+              {
+                "content": "179,96",
+                "source": "D(1,1105,933,1186,932,1186,958,1106,959)",
+                "span": {
+                  "offset": 593,
+                  "length": 6
+                }
+              },
+              {
+                "content": "10%",
+                "source": "D(1,1279,932,1332,933,1332,958,1279,957)",
+                "span": {
+                  "offset": 609,
+                  "length": 3
+                }
+              },
+              {
+                "content": "197,96",
+                "source": "D(1,1421,933,1500,933,1500,958,1421,958)",
+                "span": {
+                  "offset": 622,
+                  "length": 6
+                }
+              },
+              {
+                "content": "2.",
+                "source": "D(1,169,1048,191,1048,191,1072,169,1072)",
+                "span": {
+                  "offset": 649,
+                  "length": 2
+                }
+              },
+              {
+                "content": "Rug White Moroccan Beni",
+                "source": "D(1,238,1046,528,1046,528,1074,238,1074)",
+                "span": {
+                  "offset": 661,
+                  "length": 23
+                }
+              },
+              {
+                "content": "Ourain Trellis Shag Area Rug",
+                "source": "D(1,238,1073,561,1074,561,1102,238,1101)",
+                "span": {
+                  "offset": 685,
+                  "length": 28
+                }
+              },
+              {
+                "content": "Authentic Handmade Carpet",
+                "source": "D(1,237,1101,560,1102,560,1129,237,1129)",
+                "span": {
+                  "offset": 714,
+                  "length": 25
+                }
+              },
+              {
+                "content": "2,00",
+                "source": "D(1,672,1047,725,1047,725,1072,672,1072)",
+                "span": {
+                  "offset": 749,
+                  "length": 4
+                }
+              },
+              {
+                "content": "each",
+                "source": "D(1,770,1048,826,1048,826,1072,770,1072)",
+                "span": {
+                  "offset": 763,
+                  "length": 4
+                }
+              },
+              {
+                "content": "245,00",
+                "source": "D(1,935,1046,1017,1046,1017,1073,935,1073)",
+                "span": {
+                  "offset": 777,
+                  "length": 6
+                }
+              },
+              {
+                "content": "490,00",
+                "source": "D(1,1106,1046,1186,1046,1186,1073,1106,1073)",
+                "span": {
+                  "offset": 793,
+                  "length": 6
+                }
+              },
+              {
+                "content": "10%",
+                "source": "D(1,1281,1045,1331,1047,1331,1073,1280,1072)",
+                "span": {
+                  "offset": 809,
+                  "length": 3
+                }
+              },
+              {
+                "content": "539,00",
+                "source": "D(1,1420,1046,1500,1046,1500,1072,1420,1072)",
+                "span": {
+                  "offset": 822,
+                  "length": 6
+                }
+              },
+              {
+                "content": "3.",
+                "source": "D(1,169,1162,192,1162,192,1186,169,1186)",
+                "span": {
+                  "offset": 849,
+                  "length": 2
+                }
+              },
+              {
+                "content": "Abstract Living Room Carpet",
+                "source": "D(1,237,1160,562,1160,562,1188,237,1189)",
+                "span": {
+                  "offset": 861,
+                  "length": 27
+                }
+              },
+              {
+                "content": "Home Decor Nordic Style",
+                "source": "D(1,238,1189,522,1189,522,1216,238,1216)",
+                "span": {
+                  "offset": 889,
+                  "length": 23
+                }
+              },
+              {
+                "content": "Bedside Area Rug Floor Mats",
+                "source": "D(1,239,1217,562,1216,562,1244,239,1245)",
+                "span": {
+                  "offset": 913,
+                  "length": 27
+                }
+              },
+              {
+                "content": "1,00",
+                "source": "D(1,674,1161,725,1161,725,1188,674,1188)",
+                "span": {
+                  "offset": 950,
+                  "length": 4
+                }
+              },
+              {
+                "content": "each",
+                "source": "D(1,769,1162,827,1162,827,1185,769,1185)",
+                "span": {
+                  "offset": 964,
+                  "length": 4
+                }
+              },
+              {
+                "content": "24,01",
+                "source": "D(1,950,1161,1016,1161,1016,1188,950,1188)",
+                "span": {
+                  "offset": 978,
+                  "length": 5
+                }
+              },
+              {
+                "content": "24,01",
+                "source": "D(1,1119,1161,1185,1161,1185,1188,1119,1188)",
+                "span": {
+                  "offset": 993,
+                  "length": 5
+                }
+              },
+              {
+                "content": "10%",
+                "source": "D(1,1280,1161,1331,1161,1331,1187,1280,1187)",
+                "span": {
+                  "offset": 1008,
+                  "length": 3
+                }
+              },
+              {
+                "content": "26,41",
+                "source": "D(1,1434,1161,1501,1161,1501,1187,1434,1187)",
+                "span": {
+                  "offset": 1021,
+                  "length": 5
+                }
+              },
+              {
+                "content": "4.",
+                "source": "D(1,169,1277,192,1277,192,1301,169,1301)",
+                "span": {
+                  "offset": 1047,
+                  "length": 2
+                }
+              },
+              {
+                "content": "Leopard Printed Rug Skin Mat",
+                "source": "D(1,237,1276,573,1276,573,1303,237,1303)",
+                "span": {
+                  "offset": 1059,
+                  "length": 28
+                }
+              },
+              {
+                "content": "Leather Faux Fur Animals Area",
+                "source": "D(1,238,1305,584,1303,584,1330,238,1331)",
+                "span": {
+                  "offset": 1088,
+                  "length": 29
+                }
+              },
+              {
+                "content": "Rugs Home Carpets",
+                "source": "D(1,238,1332,462,1333,462,1360,238,1360)",
+                "span": {
+                  "offset": 1118,
+                  "length": 17
+                }
+              },
+              {
+                "content": "1,00",
+                "source": "D(1,674,1277,724,1277,724,1302,674,1302)",
+                "span": {
+                  "offset": 1145,
+                  "length": 4
+                }
+              },
+              {
+                "content": "each",
+                "source": "D(1,770,1276,827,1276,827,1301,770,1301)",
+                "span": {
+                  "offset": 1159,
+                  "length": 4
+                }
+              },
+              {
+                "content": "19,49",
+                "source": "D(1,951,1277,1015,1277,1015,1302,951,1302)",
+                "span": {
+                  "offset": 1173,
+                  "length": 5
+                }
+              },
+              {
+                "content": "19,49",
+                "source": "D(1,1119,1277,1185,1277,1185,1302,1119,1302)",
+                "span": {
+                  "offset": 1188,
+                  "length": 5
+                }
+              },
+              {
+                "content": "10%",
+                "source": "D(1,1281,1276,1331,1276,1331,1302,1281,1302)",
+                "span": {
+                  "offset": 1203,
+                  "length": 3
+                }
+              },
+              {
+                "content": "21,44",
+                "source": "D(1,1434,1277,1501,1277,1501,1302,1434,1302)",
+                "span": {
+                  "offset": 1216,
+                  "length": 5
+                }
+              },
+              {
+                "content": "5.",
+                "source": "D(1,169,1391,192,1391,192,1416,169,1416)",
+                "span": {
+                  "offset": 1242,
+                  "length": 2
+                }
+              },
+              {
+                "content": "1pc Exquisite Durable Foot",
+                "source": "D(1,239,1391,542,1391,542,1418,239,1418)",
+                "span": {
+                  "offset": 1254,
+                  "length": 26
+                }
+              },
+              {
+                "content": "Cloth Christmas Carpet Xmas",
+                "source": "D(1,238,1418,570,1418,570,1446,238,1446)",
+                "span": {
+                  "offset": 1281,
+                  "length": 27
+                }
+              },
+              {
+                "content": "Cushion for Kitchen",
+                "source": "D(1,238,1446,458,1447,458,1473,238,1472)",
+                "span": {
+                  "offset": 1309,
+                  "length": 19
+                }
+              },
+              {
+                "content": "2,00",
+                "source": "D(1,672,1392,724,1392,724,1417,672,1417)",
+                "span": {
+                  "offset": 1338,
+                  "length": 4
+                }
+              },
+              {
+                "content": "each",
+                "source": "D(1,770,1393,826,1393,826,1416,770,1416)",
+                "span": {
+                  "offset": 1352,
+                  "length": 4
+                }
+              },
+              {
+                "content": "15,57",
+                "source": "D(1,951,1390,1016,1392,1016,1418,951,1416)",
+                "span": {
+                  "offset": 1366,
+                  "length": 5
+                }
+              },
+              {
+                "content": "31,14",
+                "source": "D(1,1119,1391,1186,1391,1186,1419,1118,1418)",
+                "span": {
+                  "offset": 1381,
+                  "length": 5
+                }
+              },
+              {
+                "content": "10%",
+                "source": "D(1,1281,1391,1332,1391,1332,1416,1281,1416)",
+                "span": {
+                  "offset": 1396,
+                  "length": 3
+                }
+              },
+              {
+                "content": "34,25",
+                "source": "D(1,1434,1392,1501,1390,1501,1416,1434,1417)",
+                "span": {
+                  "offset": 1409,
+                  "length": 5
+                }
+              },
+              {
+                "content": "SUMMARY",
+                "source": "D(1,131,1538,328,1539,328,1574,131,1573)",
+                "span": {
+                  "offset": 1439,
+                  "length": 7
+                }
+              },
+              {
+                "content": "VAT [%]",
+                "source": "D(1,639,1623,744,1623,744,1651,639,1651)",
+                "span": {
+                  "offset": 1466,
+                  "length": 7
+                }
+              },
+              {
+                "content": "Net worth",
+                "source": "D(1,927,1624,1056,1623,1057,1648,927,1650)",
+                "span": {
+                  "offset": 1483,
+                  "length": 9
+                }
+              },
+              {
+                "content": "VAT",
+                "source": "D(1,1187,1623,1241,1623,1241,1649,1187,1648)",
+                "span": {
+                  "offset": 1502,
+                  "length": 3
+                }
+              },
+              {
+                "content": "Gross worth",
+                "source": "D(1,1350,1624,1504,1625,1504,1650,1349,1649)",
+                "span": {
+                  "offset": 1515,
+                  "length": 11
+                }
+              },
+              {
+                "content": "10%",
+                "source": "D(1,666,1682,719,1684,718,1709,666,1707)",
+                "span": {
+                  "offset": 1547,
+                  "length": 3
+                }
+              },
+              {
+                "content": "744,60",
+                "source": "D(1,976,1683,1056,1683,1056,1709,976,1709)",
+                "span": {
+                  "offset": 1560,
+                  "length": 6
+                }
+              },
+              {
+                "content": "74,46",
+                "source": "D(1,1175,1683,1240,1683,1240,1709,1175,1709)",
+                "span": {
+                  "offset": 1576,
+                  "length": 5
+                }
+              },
+              {
+                "content": "819,06",
+                "source": "D(1,1424,1683,1504,1683,1504,1709,1424,1709)",
+                "span": {
+                  "offset": 1591,
+                  "length": 6
+                }
+              },
+              {
+                "content": "Total",
+                "source": "D(1,500,1742,569,1742,569,1767,500,1767)",
+                "span": {
+                  "offset": 1618,
+                  "length": 5
+                }
+              },
+              {
+                "content": "$ 744,60",
+                "source": "D(1,942,1744,1056,1743,1057,1768,942,1769)",
+                "span": {
+                  "offset": 1633,
+                  "length": 8
+                }
+              },
+              {
+                "content": "$ 74,46",
+                "source": "D(1,1144,1744,1240,1744,1241,1769,1144,1769)",
+                "span": {
+                  "offset": 1651,
+                  "length": 7
+                }
+              },
+              {
+                "content": "$ 819,06",
+                "source": "D(1,1392,1743,1505,1743,1505,1769,1391,1769)",
+                "span": {
+                  "offset": 1668,
+                  "length": 8
+                }
+              }
+            ]
+          }
+        ],
+        "paragraphs": [
+          {
+            "content": "Invoice no: 16273983",
+            "source": "D(1,131,72,538,71,538,107,131,108)",
+            "span": {
+              "offset": 0,
+              "length": 20
+            }
+          },
+          {
+            "content": "Date of issue:",
+            "source": "D(1,131,141,345,141,345,174,131,173)",
+            "span": {
+              "offset": 22,
+              "length": 14
+            }
+          },
+          {
+            "content": "04/01/2017",
+            "source": "D(1,800,140,979,140,979,174,800,175)",
+            "span": {
+              "offset": 38,
+              "length": 10
+            }
+          },
+          {
+            "content": "Seller: Reyes, Holloway and Lee 38676 Johnson Burg Suite 666 West Rebeccamouth, SD 02588",
+            "source": "D(1,131,443,584,443,584,610,131,610)",
+            "span": {
+              "offset": 50,
+              "length": 88
+            }
+          },
+          {
+            "content": "Tax Id: 909-83-7738",
+            "source": "D(1,138,648,425,648,425,678,138,679)",
+            "span": {
+              "offset": 140,
+              "length": 19
+            }
+          },
+          {
+            "content": "IBAN: GB96VWUL52026848004193",
+            "source": "D(1,139,683,633,683,633,714,139,715)",
+            "span": {
+              "offset": 161,
+              "length": 28
+            }
+          },
+          {
+            "content": "Client: Castillo LLC 70391 Kelsey Terrace Garcialand, VT 41740",
+            "source": "D(1,824,442,1138,441,1139,609,824,610)",
+            "span": {
+              "offset": 191,
+              "length": 62
+            }
+          },
+          {
+            "content": "Tax Id: 901-88-0463",
+            "source": "D(1,830,649,1118,648,1118,679,830,680)",
+            "span": {
+              "offset": 255,
+              "length": 19
+            }
+          },
+          {
+            "role": "sectionHeading",
+            "content": "ITEMS",
+            "source": "D(1,131,759,248,759,248,792,131,792)",
+            "span": {
+              "offset": 277,
+              "length": 7
+            }
+          },
+          {
+            "content": "No.",
+            "source": "D(1,158,847,202,846,202,869,158,870)",
+            "span": {
+              "offset": 304,
+              "length": 3
+            }
+          },
+          {
+            "content": "Description",
+            "source": "D(1,238,845,385,847,385,873,237,871)",
+            "span": {
+              "offset": 317,
+              "length": 11
+            }
+          },
+          {
+            "content": "Qty",
+            "source": "D(1,678,846,728,848,726,874,677,872)",
+            "span": {
+              "offset": 338,
+              "length": 3
+            }
+          },
+          {
+            "content": "UM",
+            "source": "D(1,776,846,820,846,820,870,776,870)",
+            "span": {
+              "offset": 351,
+              "length": 2
+            }
+          },
+          {
+            "content": "Net price",
+            "source": "D(1,898,842,1018,845,1018,874,897,871)",
+            "span": {
+              "offset": 363,
+              "length": 9
+            }
+          },
+          {
+            "content": "Net worth",
+            "source": "D(1,1057,846,1186,845,1186,871,1057,871)",
+            "span": {
+              "offset": 382,
+              "length": 9
+            }
+          },
+          {
+            "content": "VAT [%]",
+            "source": "D(1,1227,844,1332,845,1332,873,1226,872)",
+            "span": {
+              "offset": 401,
+              "length": 7
+            }
+          },
+          {
+            "content": "Gross worth",
+            "source": "D(1,1425,847,1502,848,1501,898,1424,897)",
+            "span": {
+              "offset": 418,
+              "length": 11
+            }
+          },
+          {
+            "content": "1.",
+            "source": "D(1,170,933,192,934,191,957,169,957)",
+            "span": {
+              "offset": 450,
+              "length": 2
+            }
+          },
+          {
+            "content": "Handmade Thick round warm crochet Rug Carpet Mat 97% acrylic 3% me Floor Decor",
+            "source": "D(1,237,932,570,931,571,1014,238,1015)",
+            "span": {
+              "offset": 462,
+              "length": 78
+            }
+          },
+          {
+            "content": "4,00",
+            "source": "D(1,672,933,725,933,725,958,672,958)",
+            "span": {
+              "offset": 550,
+              "length": 4
+            }
+          },
+          {
+            "content": "each",
+            "source": "D(1,769,934,827,933,827,957,769,958)",
+            "span": {
+              "offset": 564,
+              "length": 4
+            }
+          },
+          {
+            "content": "44,99",
+            "source": "D(1,950,933,1015,933,1015,958,950,958)",
+            "span": {
+              "offset": 578,
+              "length": 5
+            }
+          },
+          {
+            "content": "179,96",
+            "source": "D(1,1105,933,1186,932,1186,958,1106,959)",
+            "span": {
+              "offset": 593,
+              "length": 6
+            }
+          },
+          {
+            "content": "10%",
+            "source": "D(1,1279,932,1332,933,1332,959,1279,957)",
+            "span": {
+              "offset": 609,
+              "length": 3
+            }
+          },
+          {
+            "content": "197,96",
+            "source": "D(1,1421,932,1500,933,1500,958,1421,958)",
+            "span": {
+              "offset": 622,
+              "length": 6
+            }
+          },
+          {
+            "content": "2.",
+            "source": "D(1,169,1047,192,1048,191,1072,169,1072)",
+            "span": {
+              "offset": 649,
+              "length": 2
+            }
+          },
+          {
+            "content": "Rug White Moroccan Beni Ourain Trellis Shag Area Rug Authentic Handmade Carpet",
+            "source": "D(1,237,1046,561,1046,561,1129,237,1129)",
+            "span": {
+              "offset": 661,
+              "length": 78
+            }
+          },
+          {
+            "content": "2,00",
+            "source": "D(1,672,1047,725,1047,725,1072,672,1072)",
+            "span": {
+              "offset": 749,
+              "length": 4
+            }
+          },
+          {
+            "content": "each",
+            "source": "D(1,770,1048,826,1048,826,1072,770,1072)",
+            "span": {
+              "offset": 763,
+              "length": 4
+            }
+          },
+          {
+            "content": "245,00",
+            "source": "D(1,935,1046,1017,1046,1017,1073,935,1072)",
+            "span": {
+              "offset": 777,
+              "length": 6
+            }
+          },
+          {
+            "content": "490,00",
+            "source": "D(1,1106,1046,1186,1046,1186,1073,1106,1073)",
+            "span": {
+              "offset": 793,
+              "length": 6
+            }
+          },
+          {
+            "content": "10%",
+            "source": "D(1,1281,1044,1333,1048,1331,1076,1279,1072)",
+            "span": {
+              "offset": 809,
+              "length": 3
+            }
+          },
+          {
+            "content": "539,00",
+            "source": "D(1,1420,1046,1500,1046,1500,1072,1420,1072)",
+            "span": {
+              "offset": 822,
+              "length": 6
+            }
+          },
+          {
+            "content": "3.",
+            "source": "D(1,170,1159,195,1163,191,1189,166,1185)",
+            "span": {
+              "offset": 849,
+              "length": 2
+            }
+          },
+          {
+            "content": "Abstract Living Room Carpet Home Decor Nordic Style Bedside Area Rug Floor Mats",
+            "source": "D(1,237,1160,562,1160,562,1245,237,1245)",
+            "span": {
+              "offset": 861,
+              "length": 79
+            }
+          },
+          {
+            "content": "1,00",
+            "source": "D(1,673,1161,725,1161,725,1188,674,1188)",
+            "span": {
+              "offset": 950,
+              "length": 4
+            }
+          },
+          {
+            "content": "each",
+            "source": "D(1,769,1162,827,1162,827,1185,769,1185)",
+            "span": {
+              "offset": 964,
+              "length": 4
+            }
+          },
+          {
+            "content": "24,01",
+            "source": "D(1,950,1161,1016,1161,1016,1188,950,1188)",
+            "span": {
+              "offset": 978,
+              "length": 5
+            }
+          },
+          {
+            "content": "24,01",
+            "source": "D(1,1118,1161,1185,1161,1185,1188,1119,1188)",
+            "span": {
+              "offset": 993,
+              "length": 5
+            }
+          },
+          {
+            "content": "10%",
+            "source": "D(1,1280,1160,1332,1162,1331,1189,1279,1187)",
+            "span": {
+              "offset": 1008,
+              "length": 3
+            }
+          },
+          {
+            "content": "26,41",
+            "source": "D(1,1434,1161,1501,1162,1501,1187,1434,1187)",
+            "span": {
+              "offset": 1021,
+              "length": 5
+            }
+          },
+          {
+            "content": "4.",
+            "source": "D(1,169,1276,194,1278,191,1303,167,1301)",
+            "span": {
+              "offset": 1047,
+              "length": 2
+            }
+          },
+          {
+            "content": "Leopard Printed Rug Skin Mat Leather Faux Fur Animals Area Rugs Home Carpets",
+            "source": "D(1,237,1276,584,1276,584,1360,237,1360)",
+            "span": {
+              "offset": 1059,
+              "length": 76
+            }
+          },
+          {
+            "content": "1,00",
+            "source": "D(1,674,1277,724,1277,724,1302,674,1302)",
+            "span": {
+              "offset": 1145,
+              "length": 4
+            }
+          },
+          {
+            "content": "each",
+            "source": "D(1,770,1276,827,1277,827,1301,769,1301)",
+            "span": {
+              "offset": 1159,
+              "length": 4
+            }
+          },
+          {
+            "content": "19,49",
+            "source": "D(1,951,1277,1015,1277,1015,1302,951,1302)",
+            "span": {
+              "offset": 1173,
+              "length": 5
+            }
+          },
+          {
+            "content": "19,49",
+            "source": "D(1,1119,1277,1185,1277,1185,1302,1119,1302)",
+            "span": {
+              "offset": 1188,
+              "length": 5
+            }
+          },
+          {
+            "content": "10%",
+            "source": "D(1,1281,1276,1332,1277,1331,1303,1280,1302)",
+            "span": {
+              "offset": 1203,
+              "length": 3
+            }
+          },
+          {
+            "content": "21,44",
+            "source": "D(1,1434,1277,1501,1277,1501,1302,1434,1302)",
+            "span": {
+              "offset": 1216,
+              "length": 5
+            }
+          },
+          {
+            "content": "5.",
+            "source": "D(1,169,1392,192,1391,192,1416,169,1416)",
+            "span": {
+              "offset": 1242,
+              "length": 2
+            }
+          },
+          {
+            "content": "1pc Exquisite Durable Foot Cloth Christmas Carpet Xmas Cushion for Kitchen",
+            "source": "D(1,238,1391,570,1391,570,1473,238,1473)",
+            "span": {
+              "offset": 1254,
+              "length": 74
+            }
+          },
+          {
+            "content": "2,00",
+            "source": "D(1,672,1392,724,1392,724,1417,672,1417)",
+            "span": {
+              "offset": 1338,
+              "length": 4
+            }
+          },
+          {
+            "content": "each",
+            "source": "D(1,770,1393,826,1393,826,1416,770,1416)",
+            "span": {
+              "offset": 1352,
+              "length": 4
+            }
+          },
+          {
+            "content": "15,57",
+            "source": "D(1,951,1390,1017,1392,1016,1417,951,1415)",
+            "span": {
+              "offset": 1366,
+              "length": 5
+            }
+          },
+          {
+            "content": "31,14",
+            "source": "D(1,1119,1391,1186,1391,1186,1419,1118,1418)",
+            "span": {
+              "offset": 1381,
+              "length": 5
+            }
+          },
+          {
+            "content": "10%",
+            "source": "D(1,1281,1391,1332,1391,1332,1416,1281,1416)",
+            "span": {
+              "offset": 1396,
+              "length": 3
+            }
+          },
+          {
+            "content": "34,25",
+            "source": "D(1,1434,1392,1501,1390,1501,1416,1434,1417)",
+            "span": {
+              "offset": 1409,
+              "length": 5
+            }
+          },
+          {
+            "role": "sectionHeading",
+            "content": "SUMMARY",
+            "source": "D(1,131,1538,328,1539,328,1574,131,1573)",
+            "span": {
+              "offset": 1437,
+              "length": 9
+            }
+          },
+          {
+            "content": "VAT [%]",
+            "source": "D(1,639,1623,744,1623,744,1651,639,1651)",
+            "span": {
+              "offset": 1466,
+              "length": 7
+            }
+          },
+          {
+            "content": "Net worth",
+            "source": "D(1,927,1623,1056,1623,1056,1649,927,1649)",
+            "span": {
+              "offset": 1483,
+              "length": 9
+            }
+          },
+          {
+            "content": "VAT",
+            "source": "D(1,1187,1623,1241,1623,1241,1648,1187,1648)",
+            "span": {
+              "offset": 1502,
+              "length": 3
+            }
+          },
+          {
+            "content": "Gross worth",
+            "source": "D(1,1350,1623,1504,1625,1504,1652,1349,1649)",
+            "span": {
+              "offset": 1515,
+              "length": 11
+            }
+          },
+          {
+            "content": "10%",
+            "source": "D(1,666,1681,719,1684,718,1709,665,1707)",
+            "span": {
+              "offset": 1547,
+              "length": 3
+            }
+          },
+          {
+            "content": "744,60",
+            "source": "D(1,976,1683,1056,1683,1056,1709,976,1709)",
+            "span": {
+              "offset": 1560,
+              "length": 6
+            }
+          },
+          {
+            "content": "74,46",
+            "source": "D(1,1175,1683,1240,1683,1240,1709,1175,1709)",
+            "span": {
+              "offset": 1576,
+              "length": 5
+            }
+          },
+          {
+            "content": "819,06",
+            "source": "D(1,1424,1683,1504,1683,1504,1709,1424,1709)",
+            "span": {
+              "offset": 1591,
+              "length": 6
+            }
+          },
+          {
+            "content": "Total",
+            "source": "D(1,500,1742,569,1742,569,1767,500,1767)",
+            "span": {
+              "offset": 1618,
+              "length": 5
+            }
+          },
+          {
+            "content": "$ 744,60",
+            "source": "D(1,942,1743,1056,1743,1056,1769,942,1769)",
+            "span": {
+              "offset": 1633,
+              "length": 8
+            }
+          },
+          {
+            "content": "$ 74,46",
+            "source": "D(1,1144,1744,1240,1744,1241,1769,1144,1769)",
+            "span": {
+              "offset": 1651,
+              "length": 7
+            }
+          },
+          {
+            "content": "$ 819,06",
+            "source": "D(1,1392,1740,1505,1743,1505,1771,1391,1768)",
+            "span": {
+              "offset": 1668,
+              "length": 8
+            }
+          }
+        ],
+        "sections": [
+          {
+            "span": {
+              "offset": 0,
+              "length": 1696
+            },
+            "elements": [
+              "/sections/1",
+              "/sections/2",
+              "/sections/3"
+            ]
+          },
+          {
+            "span": {
+              "offset": 0,
+              "length": 274
+            },
+            "elements": [
+              "/paragraphs/0",
+              "/paragraphs/1",
+              "/paragraphs/2",
+              "/paragraphs/3",
+              "/paragraphs/4",
+              "/paragraphs/5",
+              "/paragraphs/6",
+              "/paragraphs/7"
+            ]
+          },
+          {
+            "span": {
+              "offset": 277,
+              "length": 1157
+            },
+            "elements": [
+              "/paragraphs/8",
+              "/tables/0"
+            ]
+          },
+          {
+            "span": {
+              "offset": 1437,
+              "length": 259
+            },
+            "elements": [
+              "/paragraphs/57",
+              "/tables/1"
+            ]
+          }
+        ],
+        "tables": [
+          {
+            "rowCount": 6,
+            "columnCount": 8,
+            "cells": [
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "No.",
+                "source": "D(1,132,827,228,827,228,916,132,916)",
+                "span": {
+                  "offset": 304,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/9"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Description",
+                "source": "D(1,228,827,623,827,623,916,228,916)",
+                "span": {
+                  "offset": 317,
+                  "length": 11
+                },
+                "elements": [
+                  "/paragraphs/10"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Qty",
+                "source": "D(1,623,827,752,827,752,916,623,916)",
+                "span": {
+                  "offset": 338,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/11"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "UM",
+                "source": "D(1,752,827,868,827,868,916,752,916)",
+                "span": {
+                  "offset": 351,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/12"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 4,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Net price",
+                "source": "D(1,868,827,1043,827,1043,916,868,916)",
+                "span": {
+                  "offset": 363,
+                  "length": 9
+                },
+                "elements": [
+                  "/paragraphs/13"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 5,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Net worth",
+                "source": "D(1,1043,827,1213,827,1213,916,1043,916)",
+                "span": {
+                  "offset": 382,
+                  "length": 9
+                },
+                "elements": [
+                  "/paragraphs/14"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 6,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "VAT [%]",
+                "source": "D(1,1213,827,1377,827,1378,916,1213,916)",
+                "span": {
+                  "offset": 401,
+                  "length": 7
+                },
+                "elements": [
+                  "/paragraphs/15"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 7,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Gross worth",
+                "source": "D(1,1377,827,1518,827,1518,916,1378,916)",
+                "span": {
+                  "offset": 418,
+                  "length": 11
+                },
+                "elements": [
+                  "/paragraphs/16"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "1.",
+                "source": "D(1,132,916,228,916,228,1030,132,1030)",
+                "span": {
+                  "offset": 450,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/17"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Handmade Thick round warm crochet Rug Carpet Mat 97% acrylic 3% me Floor Decor",
+                "source": "D(1,228,916,623,916,623,1030,228,1030)",
+                "span": {
+                  "offset": 462,
+                  "length": 78
+                },
+                "elements": [
+                  "/paragraphs/18"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "4,00",
+                "source": "D(1,623,916,752,916,753,1030,623,1030)",
+                "span": {
+                  "offset": 550,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/19"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "each",
+                "source": "D(1,752,916,868,916,869,1030,753,1030)",
+                "span": {
+                  "offset": 564,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/20"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 4,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "44,99",
+                "source": "D(1,868,916,1043,916,1044,1030,869,1030)",
+                "span": {
+                  "offset": 578,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/21"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 5,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "179,96",
+                "source": "D(1,1043,916,1213,916,1214,1030,1044,1030)",
+                "span": {
+                  "offset": 593,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/22"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 6,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "10%",
+                "source": "D(1,1213,916,1378,916,1378,1030,1214,1030)",
+                "span": {
+                  "offset": 609,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/23"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 7,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "197,96",
+                "source": "D(1,1378,916,1518,916,1518,1030,1378,1030)",
+                "span": {
+                  "offset": 622,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/24"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "2.",
+                "source": "D(1,132,1030,228,1030,228,1143,132,1143)",
+                "span": {
+                  "offset": 649,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/25"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Rug White Moroccan Beni Ourain Trellis Shag Area Rug Authentic Handmade Carpet",
+                "source": "D(1,228,1030,623,1030,623,1143,228,1143)",
+                "span": {
+                  "offset": 661,
+                  "length": 78
+                },
+                "elements": [
+                  "/paragraphs/26"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "2,00",
+                "source": "D(1,623,1030,753,1030,753,1143,623,1143)",
+                "span": {
+                  "offset": 749,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/27"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "each",
+                "source": "D(1,753,1030,869,1030,869,1143,753,1143)",
+                "span": {
+                  "offset": 763,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/28"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 4,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "245,00",
+                "source": "D(1,869,1030,1044,1030,1044,1143,869,1143)",
+                "span": {
+                  "offset": 777,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/29"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 5,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "490,00",
+                "source": "D(1,1044,1030,1214,1030,1215,1143,1044,1143)",
+                "span": {
+                  "offset": 793,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/30"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 6,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "10%",
+                "source": "D(1,1214,1030,1378,1030,1378,1143,1215,1143)",
+                "span": {
+                  "offset": 809,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/31"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 7,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "539,00",
+                "source": "D(1,1378,1030,1518,1030,1518,1143,1378,1143)",
+                "span": {
+                  "offset": 822,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/32"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "3.",
+                "source": "D(1,132,1143,228,1143,228,1260,132,1260)",
+                "span": {
+                  "offset": 849,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/33"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Abstract Living Room Carpet Home Decor Nordic Style Bedside Area Rug Floor Mats",
+                "source": "D(1,228,1143,623,1143,623,1260,228,1260)",
+                "span": {
+                  "offset": 861,
+                  "length": 79
+                },
+                "elements": [
+                  "/paragraphs/34"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "1,00",
+                "source": "D(1,623,1143,753,1143,753,1260,623,1260)",
+                "span": {
+                  "offset": 950,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/35"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "each",
+                "source": "D(1,753,1143,869,1143,869,1260,753,1260)",
+                "span": {
+                  "offset": 964,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/36"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 4,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "24,01",
+                "source": "D(1,869,1143,1044,1143,1045,1260,869,1260)",
+                "span": {
+                  "offset": 978,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/37"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 5,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "24,01",
+                "source": "D(1,1044,1143,1215,1143,1216,1260,1045,1260)",
+                "span": {
+                  "offset": 993,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/38"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 6,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "10%",
+                "source": "D(1,1215,1143,1378,1143,1379,1260,1216,1260)",
+                "span": {
+                  "offset": 1008,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/39"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 7,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "26,41",
+                "source": "D(1,1378,1143,1518,1143,1518,1260,1379,1260)",
+                "span": {
+                  "offset": 1021,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/40"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "4.",
+                "source": "D(1,132,1260,228,1260,228,1374,132,1374)",
+                "span": {
+                  "offset": 1047,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/41"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Leopard Printed Rug Skin Mat Leather Faux Fur Animals Area Rugs Home Carpets",
+                "source": "D(1,228,1260,623,1260,623,1374,228,1374)",
+                "span": {
+                  "offset": 1059,
+                  "length": 76
+                },
+                "elements": [
+                  "/paragraphs/42"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "1,00",
+                "source": "D(1,623,1260,753,1260,754,1374,623,1374)",
+                "span": {
+                  "offset": 1145,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/43"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "each",
+                "source": "D(1,753,1260,869,1260,870,1374,754,1374)",
+                "span": {
+                  "offset": 1159,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/44"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 4,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "19,49",
+                "source": "D(1,869,1260,1045,1260,1046,1374,870,1374)",
+                "span": {
+                  "offset": 1173,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/45"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 5,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "19,49",
+                "source": "D(1,1045,1260,1216,1260,1217,1374,1046,1374)",
+                "span": {
+                  "offset": 1188,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/46"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 6,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "10%",
+                "source": "D(1,1216,1260,1379,1260,1379,1374,1217,1374)",
+                "span": {
+                  "offset": 1203,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/47"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 7,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "21,44",
+                "source": "D(1,1379,1260,1518,1260,1518,1374,1379,1374)",
+                "span": {
+                  "offset": 1216,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/48"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "5.",
+                "source": "D(1,132,1374,228,1374,228,1489,131,1489)",
+                "span": {
+                  "offset": 1242,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/49"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "1pc Exquisite Durable Foot Cloth Christmas Carpet Xmas Cushion for Kitchen",
+                "source": "D(1,228,1374,623,1374,623,1489,228,1489)",
+                "span": {
+                  "offset": 1254,
+                  "length": 74
+                },
+                "elements": [
+                  "/paragraphs/50"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "2,00",
+                "source": "D(1,623,1374,754,1374,754,1489,623,1489)",
+                "span": {
+                  "offset": 1338,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/51"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "each",
+                "source": "D(1,754,1374,870,1374,870,1489,754,1489)",
+                "span": {
+                  "offset": 1352,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/52"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 4,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "15,57",
+                "source": "D(1,870,1374,1046,1374,1046,1489,870,1489)",
+                "span": {
+                  "offset": 1366,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/53"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 5,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "31,14",
+                "source": "D(1,1046,1374,1217,1374,1218,1489,1046,1489)",
+                "span": {
+                  "offset": 1381,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/54"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 6,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "10%",
+                "source": "D(1,1217,1374,1379,1374,1379,1489,1218,1489)",
+                "span": {
+                  "offset": 1396,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/55"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 7,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "34,25",
+                "source": "D(1,1379,1374,1518,1374,1518,1489,1379,1489)",
+                "span": {
+                  "offset": 1409,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/56"
+                ]
+              }
+            ],
+            "source": "D(1,131,826,1518,825,1518,1492,131,1492)",
+            "span": {
+              "offset": 287,
+              "length": 1147
+            }
+          },
+          {
+            "rowCount": 3,
+            "columnCount": 4,
+            "cells": [
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "VAT [%]",
+                "source": "D(1,133,1606,834,1606,833,1667,133,1668)",
+                "span": {
+                  "offset": 1466,
+                  "length": 7
+                },
+                "elements": [
+                  "/paragraphs/58"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Net worth",
+                "source": "D(1,834,1606,1105,1606,1105,1667,833,1667)",
+                "span": {
+                  "offset": 1483,
+                  "length": 9
+                },
+                "elements": [
+                  "/paragraphs/59"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "VAT",
+                "source": "D(1,1105,1606,1303,1606,1303,1667,1105,1667)",
+                "span": {
+                  "offset": 1502,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/60"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Gross worth",
+                "source": "D(1,1303,1606,1518,1607,1518,1667,1303,1667)",
+                "span": {
+                  "offset": 1515,
+                  "length": 11
+                },
+                "elements": [
+                  "/paragraphs/61"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "10%",
+                "source": "D(1,133,1668,833,1667,833,1725,133,1725)",
+                "span": {
+                  "offset": 1547,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/62"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "744,60",
+                "source": "D(1,833,1667,1105,1667,1106,1725,833,1725)",
+                "span": {
+                  "offset": 1560,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/63"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "74,46",
+                "source": "D(1,1105,1667,1303,1667,1303,1725,1106,1725)",
+                "span": {
+                  "offset": 1576,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/64"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "819,06",
+                "source": "D(1,1303,1667,1518,1667,1518,1725,1303,1725)",
+                "span": {
+                  "offset": 1591,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/65"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Total",
+                "source": "D(1,133,1725,833,1725,833,1785,133,1785)",
+                "span": {
+                  "offset": 1618,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/66"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "$ 744,60",
+                "source": "D(1,833,1725,1106,1725,1106,1784,833,1785)",
+                "span": {
+                  "offset": 1633,
+                  "length": 8
+                },
+                "elements": [
+                  "/paragraphs/67"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "$ 74,46",
+                "source": "D(1,1106,1725,1303,1725,1303,1784,1106,1784)",
+                "span": {
+                  "offset": 1651,
+                  "length": 7
+                },
+                "elements": [
+                  "/paragraphs/68"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "$ 819,06",
+                "source": "D(1,1303,1725,1518,1725,1518,1784,1303,1784)",
+                "span": {
+                  "offset": 1668,
+                  "length": 8
+                },
+                "elements": [
+                  "/paragraphs/69"
+                ]
+              }
+            ],
+            "source": "D(1,129,1606,1518,1606,1518,1787,129,1787)",
+            "span": {
+              "offset": 1449,
+              "length": 247
+            }
+          }
+        ],
         "analyzerId": "prebuilt-invoice",
         "mimeType": "image/jpeg"
       }
     ]
   },
   "usage": {
-    "documentPagesMinimal": 1,
+    "documentPagesStandard": 1,
     "contextualizationTokens": 1000,
     "tokens": {
-      "gpt-4.1-input": 10263,
-      "gpt-4.1-output": 323,
-      "text-embedding-3-large": 4
+      "gpt-4.1-input": 13881,
+      "gpt-4.1-output": 2466,
+      "text-embedding-3-large": 669
     }
   },
   "_extracted": {
-    "field_values": {},
+    "field_values": {
+      "AmountDue": {
+        "Amount": 819.06,
+        "CurrencyCode": "USD"
+      },
+      "CountryRegion": "USA",
+      "CustomerAddress": "70391 Kelsey Terrace Garcialand, VT 41740",
+      "CustomerAddressRecipient": "Castillo LLC",
+      "CustomerName": "Castillo LLC",
+      "CustomerTaxId": "901-88-0463",
+      "InvoiceDate": "2017-04-01",
+      "InvoiceId": "16273983",
+      "LineItems": [
+        {
+          "Description": "Handmade Thick round warm crochet Rug Carpet Mat 97% acrylic 3% me Floor Decor",
+          "Quantity": 4,
+          "QuantityUnit": "each",
+          "TaxAmount": {
+            "Amount": 179.96,
+            "CurrencyCode": "USD"
+          },
+          "TaxRate": 0.1,
+          "TotalAmount": {
+            "Amount": 197.96,
+            "CurrencyCode": "USD"
+          },
+          "UnitPrice": {
+            "Amount": 44.99,
+            "CurrencyCode": "USD"
+          }
+        },
+        {
+          "Description": "Rug White Moroccan Beni Ourain Trellis Shag Area Rug Authentic Handmade Carpet",
+          "Quantity": 2,
+          "QuantityUnit": "each",
+          "TaxAmount": {
+            "Amount": 490,
+            "CurrencyCode": "USD"
+          },
+          "TaxRate": 0.1,
+          "TotalAmount": {
+            "Amount": 539,
+            "CurrencyCode": "USD"
+          },
+          "UnitPrice": {
+            "Amount": 245,
+            "CurrencyCode": "USD"
+          }
+        },
+        {
+          "Description": "Abstract Living Room Carpet Home Decor Nordic Style Bedside Area Rug Floor Mats",
+          "Quantity": 1,
+          "QuantityUnit": "each",
+          "TaxAmount": {
+            "Amount": 21.44,
+            "CurrencyCode": "USD"
+          },
+          "TaxRate": 0.1,
+          "TotalAmount": {
+            "Amount": 26.41,
+            "CurrencyCode": "USD"
+          },
+          "UnitPrice": {
+            "Amount": 24.01,
+            "CurrencyCode": "USD"
+          }
+        },
+        {
+          "Description": "Leopard Printed Rug Skin Mat Leather Faux Fur Animals Area Rugs Home Carpets",
+          "Quantity": 1,
+          "QuantityUnit": "each",
+          "TaxAmount": {
+            "Amount": 15.57,
+            "CurrencyCode": "USD"
+          },
+          "TaxRate": 0.1,
+          "TotalAmount": {
+            "Amount": 21.44,
+            "CurrencyCode": "USD"
+          },
+          "UnitPrice": {
+            "Amount": 19.49,
+            "CurrencyCode": "USD"
+          }
+        },
+        {
+          "Description": "1pc Exquisite Durable Foot Cloth Christmas Carpet Xmas Cushion for Kitchen",
+          "Quantity": 2,
+          "QuantityUnit": "each",
+          "TaxAmount": {
+            "Amount": 31.14,
+            "CurrencyCode": "USD"
+          },
+          "TaxRate": 0.1,
+          "TotalAmount": {
+            "Amount": 34.25,
+            "CurrencyCode": "USD"
+          },
+          "UnitPrice": {
+            "Amount": 15.57,
+            "CurrencyCode": "USD"
+          }
+        }
+      ],
+      "SubtotalAmount": {
+        "Amount": 744.6,
+        "CurrencyCode": "USD"
+      },
+      "TaxDetails": [
+        {
+          "Amount": {
+            "Amount": 74.46,
+            "CurrencyCode": "USD"
+          },
+          "Description": "VAT [%] 10%",
+          "NetAmount": {
+            "Amount": 744.6,
+            "CurrencyCode": "USD"
+          },
+          "Rate": 0.1
+        }
+      ],
+      "TotalAmount": {
+        "Amount": 819.06,
+        "CurrencyCode": "USD"
+      },
+      "TotalTaxAmount": {
+        "Amount": 74.46,
+        "CurrencyCode": "USD"
+      },
+      "VendorAddress": "38676 Johnson Burg Suite 666 West Rebeccamouth, SD 02588",
+      "VendorAddressRecipient": "Reyes, Holloway and Lee",
+      "VendorName": "Reyes, Holloway and Lee",
+      "VendorTaxId": "909-83-7738"
+    },
     "description": "[LLM error: 429 Client Error: Too Many Requests for url: https://aya-demo-ai.cognitiveservices.azure.com/openai/deployments/gpt-4.1/chat/completions?api-version=2024-12-01-preview]"
   }
 }

@@ -1,25 +1,35 @@
 {
-  "id": "556d79e6-f3fd-424e-9da5-01206bd9bd24",
+  "id": "25078070-1c32-46f6-bb97-d7086b5c8205",
   "status": "Succeeded",
   "result": {
     "analyzerId": "prebuilt-invoice",
     "apiVersion": "2025-11-01",
-    "createdAt": "2026-02-10T13:37:20Z",
-    "stringEncoding": "utf16",
+    "createdAt": "2026-02-10T15:10:25Z",
+    "stringEncoding": "codePoint",
     "warnings": [],
     "contents": [
       {
         "path": "input1",
-        "markdown": "```text\n\n```\n",
+        "markdown": "Invoice no: 89969473\n\nDate of issue:\n\n10/29/2016\n\nSeller:\nJohnson-Martin\n3836 Moore Ports\nNorth Michael, MO 01844\n\nTax Id: 972-82-0713\n\nIBAN: GB71GBDG68039919194335\n\nClient:\nDeleon, Davila and Allen\n355 King Lake Suite 071\nSouth Haleyshire, KY 55765\n\nTax Id: 944-77-3882\n\n\n# ITEMS\n\n\n<table>\n<tr>\n<th>No.</th>\n<th>Description</th>\n<th>Qty</th>\n<th>UM</th>\n<th>Net price</th>\n<th>Net worth</th>\n<th>VAT [%]</th>\n<th>Gross worth</th>\n</tr>\n<tr>\n<td>1.</td>\n<td>Wild West Wine</td>\n<td>2,00</td>\n<td>each</td>\n<td>27,00</td>\n<td>54,00</td>\n<td>10%</td>\n<td>59,40</td>\n</tr>\n<tr>\n<td>2.</td>\n<td>Press Wine 15L Fruit Cider Apple Crusher Juice Grape Stainless Maker Grapes New</td>\n<td>2,00</td>\n<td>each</td>\n<td>279,00</td>\n<td>558,00</td>\n<td>10%</td>\n<td>613,80</td>\n</tr>\n<tr>\n<td>3.</td>\n<td>Wine Rack Holder Iron Art Hanging Racks Glass Cup Stemware Shelf Mounted 2 Color</td>\n<td>3,00</td>\n<td>each</td>\n<td>18,75</td>\n<td>56,25</td>\n<td>10%</td>\n<td>61,87</td>\n</tr>\n<tr>\n<td>4.</td>\n<td>Rust Proof Three Rows Tool Wine Glass Holder Simple Iron Wire Home Hanging Rack</td>\n<td>2,00</td>\n<td>each</td>\n<td>11,56</td>\n<td>23,12</td>\n<td>10%</td>\n<td>25,43</td>\n</tr>\n<tr>\n<td>5.</td>\n<td>VTG 1970s MCM Brown Steel Tube Wall or Desk Mounted 12-Wine Rack Bottle Holder</td>\n<td>1,00</td>\n<td>each</td>\n<td>34,00</td>\n<td>34,00</td>\n<td>10%</td>\n<td>37,40</td>\n</tr>\n</table>\n\n\n# SUMMARY\n\n\n<table>\n<tr>\n<th>VAT [%]</th>\n<th>Net worth</th>\n<th>VAT</th>\n<th>Gross worth</th>\n</tr>\n<tr>\n<td>10%</td>\n<td>725,37</td>\n<td>72,54</td>\n<td>797,91</td>\n</tr>\n<tr>\n<td>Total</td>\n<td>$ 725,37</td>\n<td>$ 72,54</td>\n<td>$ 797,91</td>\n</tr>\n</table>\n",
         "fields": {
           "AmountDue": {
             "type": "object",
             "valueObject": {
               "Amount": {
-                "type": "number"
+                "type": "number",
+                "valueNumber": 797.91,
+                "spans": [
+                  {
+                    "offset": 1607,
+                    "length": 8
+                  }
+                ],
+                "confidence": 0.783,
+                "source": "D(1,1392.0000,1715.0000,1505.0000,1715.0000,1505.0000,1742.0000,1392.0000,1742.0000)"
               },
               "CurrencyCode": {
-                "type": "string"
+                "type": "string",
+                "valueString": "USD"
               }
             }
           },
@@ -27,7 +37,8 @@
             "type": "object",
             "valueObject": {
               "Amount": {
-                "type": "number"
+                "type": "number",
+                "confidence": 0.959
               },
               "CurrencyCode": {
                 "type": "string"
@@ -35,87 +46,905 @@
             }
           },
           "BillingAddress": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.715
           },
           "BillingAddressRecipient": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.762
           },
           "CountryRegion": {
-            "type": "string"
+            "type": "string",
+            "valueString": "USA"
           },
           "CustomerAddress": {
-            "type": "string"
+            "type": "string",
+            "valueString": "355 King Lake Suite 071 South Haleyshire, KY 55765",
+            "spans": [
+              {
+                "offset": 199,
+                "length": 23
+              },
+              {
+                "offset": 223,
+                "length": 26
+              }
+            ],
+            "confidence": 0.739,
+            "source": "D(1,833.0000,541.0000,1173.0000,541.0000,1173.0000,575.0000,833.0000,575.0000);D(1,833.0000,576.0000,1221.0000,576.0000,1221.0000,611.0000,833.0000,611.0000)"
           },
           "CustomerAddressRecipient": {
-            "type": "string"
+            "type": "string",
+            "valueString": "Deleon, Davila and Allen",
+            "spans": [
+              {
+                "offset": 174,
+                "length": 24
+              }
+            ],
+            "confidence": 0.774,
+            "source": "D(1,833.0101,503.3036,1178.2002,505.3583,1177.9937,540.0535,832.8036,537.9988)"
           },
           "CustomerId": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.815
           },
           "CustomerName": {
-            "type": "string"
+            "type": "string",
+            "valueString": "Deleon, Davila and Allen",
+            "spans": [
+              {
+                "offset": 174,
+                "length": 24
+              }
+            ],
+            "confidence": 0.769,
+            "source": "D(1,833.0101,503.3036,1178.2002,505.3583,1177.9937,540.0535,832.8036,537.9988)"
           },
           "CustomerTaxId": {
-            "type": "string"
+            "type": "string",
+            "valueString": "944-77-3882",
+            "spans": [
+              {
+                "offset": 259,
+                "length": 11
+              }
+            ],
+            "confidence": 0.905,
+            "source": "D(1,936.0000,649.0000,1116.0000,649.0000,1116.0000,679.0000,936.0000,678.0000)"
           },
           "DueDate": {
-            "type": "date"
+            "type": "date",
+            "confidence": 0.793
           },
           "InvoiceDate": {
-            "type": "date"
+            "type": "date",
+            "valueDate": "2016-10-29",
+            "spans": [
+              {
+                "offset": 38,
+                "length": 10
+              }
+            ],
+            "confidence": 0.97,
+            "source": "D(1,801.0000,140.0000,980.0000,140.0000,980.0000,174.0000,801.0000,175.0000)"
           },
           "InvoiceId": {
-            "type": "string"
+            "type": "string",
+            "valueString": "89969473",
+            "spans": [
+              {
+                "offset": 12,
+                "length": 8
+              }
+            ],
+            "confidence": 0.938,
+            "source": "D(1,349.0000,71.0000,538.0000,71.0000,538.0000,107.0000,349.0000,108.0000)"
           },
           "LineItems": {
-            "type": "array"
+            "type": "array",
+            "valueArray": [
+              {
+                "type": "object",
+                "valueObject": {
+                  "Date": {
+                    "type": "date",
+                    "confidence": 0.823
+                  },
+                  "Description": {
+                    "type": "string",
+                    "valueString": "Wild West Wine",
+                    "spans": [
+                      {
+                        "offset": 458,
+                        "length": 14
+                      }
+                    ],
+                    "confidence": 0.723,
+                    "source": "D(1,237.0000,932.0000,416.0000,932.0000,416.0000,958.0000,237.0000,958.0000)"
+                  },
+                  "ProductCode": {
+                    "type": "string",
+                    "confidence": 0.902
+                  },
+                  "Quantity": {
+                    "type": "number",
+                    "valueNumber": 2,
+                    "spans": [
+                      {
+                        "offset": 482,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.903,
+                    "source": "D(1,672.0000,933.0000,724.0000,933.0000,724.0000,958.0000,672.0000,958.0000)"
+                  },
+                  "QuantityUnit": {
+                    "type": "string",
+                    "valueString": "each",
+                    "spans": [
+                      {
+                        "offset": 496,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.828,
+                    "source": "D(1,769.0000,934.0000,827.0000,934.0000,827.0000,958.0000,769.0000,958.0000)"
+                  },
+                  "TaxAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 37.4,
+                        "spans": [
+                          {
+                            "offset": 1348,
+                            "length": 5
+                          }
+                        ],
+                        "confidence": 0.438,
+                        "source": "D(1,1434.0000,1364.0000,1501.0000,1364.0000,1501.0000,1389.0000,1434.0000,1389.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "TaxRate": {
+                    "type": "number",
+                    "valueNumber": 0.1,
+                    "spans": [
+                      {
+                        "offset": 540,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.879,
+                    "source": "D(1,1280.0000,933.0000,1331.0000,933.0000,1331.0000,958.0000,1280.0000,958.0000)"
+                  },
+                  "TotalAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 59.4,
+                        "spans": [
+                          {
+                            "offset": 553,
+                            "length": 5
+                          }
+                        ],
+                        "confidence": 0.819,
+                        "source": "D(1,1435.0000,934.0000,1501.0000,933.0000,1501.0000,958.0000,1435.0000,958.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "UnitPrice": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 27,
+                        "spans": [
+                          {
+                            "offset": 510,
+                            "length": 5
+                          }
+                        ],
+                        "confidence": 0.903,
+                        "source": "D(1,950.0000,932.0000,1016.0000,932.0000,1016.0000,958.0000,950.0000,958.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "Date": {
+                    "type": "date",
+                    "confidence": 0.823
+                  },
+                  "Description": {
+                    "type": "string",
+                    "valueString": "Press Wine 15L Fruit Cider Apple Crusher Juice Grape Stainless Maker Grapes New",
+                    "spans": [
+                      {
+                        "offset": 591,
+                        "length": 26
+                      },
+                      {
+                        "offset": 618,
+                        "length": 25
+                      },
+                      {
+                        "offset": 644,
+                        "length": 26
+                      }
+                    ],
+                    "confidence": 0.518,
+                    "source": "D(1,237.0000,990.0000,535.0000,990.0000,535.0000,1017.0000,237.0000,1017.0000);D(1,237.0000,1020.0000,533.0000,1020.0000,533.0000,1047.0000,237.0000,1047.0000);D(1,238.0000,1046.0000,558.0000,1046.0000,558.0000,1073.0000,238.0000,1073.0000)"
+                  },
+                  "ProductCode": {
+                    "type": "string",
+                    "confidence": 0.902
+                  },
+                  "Quantity": {
+                    "type": "number",
+                    "valueNumber": 2,
+                    "spans": [
+                      {
+                        "offset": 680,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.903,
+                    "source": "D(1,672.0000,992.0000,724.0000,990.0000,724.0000,1015.0000,672.0000,1017.0000)"
+                  },
+                  "QuantityUnit": {
+                    "type": "string",
+                    "valueString": "each",
+                    "spans": [
+                      {
+                        "offset": 694,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.823,
+                    "source": "D(1,770.0000,992.0000,826.0000,993.0000,826.0000,1017.0000,770.0000,1017.0000)"
+                  },
+                  "TaxAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 558,
+                        "spans": [
+                          {
+                            "offset": 724,
+                            "length": 6
+                          }
+                        ],
+                        "confidence": 0.515,
+                        "source": "D(1,1106.0000,991.0000,1186.0000,989.0000,1186.0000,1016.0000,1106.0000,1018.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "TaxRate": {
+                    "type": "number",
+                    "valueNumber": 0.1,
+                    "spans": [
+                      {
+                        "offset": 740,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.837,
+                    "source": "D(1,1281.0000,990.0000,1331.0000,990.0000,1331.0000,1015.0000,1281.0000,1015.0000)"
+                  },
+                  "TotalAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 613.8,
+                        "spans": [
+                          {
+                            "offset": 753,
+                            "length": 6
+                          }
+                        ],
+                        "confidence": 0.928,
+                        "source": "D(1,1420.0000,991.0000,1500.0000,992.0000,1500.0000,1017.0000,1420.0000,1016.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "UnitPrice": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 279,
+                        "spans": [
+                          {
+                            "offset": 708,
+                            "length": 6
+                          }
+                        ],
+                        "confidence": 0.902,
+                        "source": "D(1,935.0000,990.0000,1016.0000,990.0000,1016.0000,1016.0000,935.0000,1016.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "Date": {
+                    "type": "date",
+                    "confidence": 0.823
+                  },
+                  "Description": {
+                    "type": "string",
+                    "valueString": "Wine Rack Holder Iron Art Hanging Racks Glass Cup Stemware Shelf Mounted 2 Color",
+                    "spans": [
+                      {
+                        "offset": 792,
+                        "length": 25
+                      },
+                      {
+                        "offset": 818,
+                        "length": 23
+                      },
+                      {
+                        "offset": 842,
+                        "length": 24
+                      },
+                      {
+                        "offset": 867,
+                        "length": 5
+                      }
+                    ],
+                    "confidence": 0.594,
+                    "source": "D(1,237.0000,1106.0000,530.0000,1106.0000,530.0000,1132.0000,237.0000,1132.0000);D(1,238.0000,1133.0000,525.0000,1133.0000,525.0000,1161.0000,238.0000,1161.0000);D(1,238.0060,1159.6489,542.1200,1161.0005,541.9995,1188.1067,237.8855,1186.7550);D(1,238.0000,1190.0000,300.0000,1190.0000,300.0000,1215.0000,238.0000,1215.0000)"
+                  },
+                  "ProductCode": {
+                    "type": "string",
+                    "confidence": 0.902
+                  },
+                  "Quantity": {
+                    "type": "number",
+                    "valueNumber": 3,
+                    "spans": [
+                      {
+                        "offset": 882,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.903,
+                    "source": "D(1,672.0000,1106.0000,724.0000,1106.0000,724.0000,1132.0000,672.0000,1132.0000)"
+                  },
+                  "QuantityUnit": {
+                    "type": "string",
+                    "valueString": "each",
+                    "spans": [
+                      {
+                        "offset": 896,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.832,
+                    "source": "D(1,769.0000,1107.0000,827.0000,1107.0000,827.0000,1131.0000,769.0000,1131.0000)"
+                  },
+                  "TaxAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 725.37,
+                        "spans": [
+                          {
+                            "offset": 1574,
+                            "length": 6
+                          }
+                        ],
+                        "confidence": 0.03,
+                        "source": "D(1,968.0000,1715.0000,1055.0000,1715.0000,1055.0000,1742.0000,968.0000,1742.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "TaxRate": {
+                    "type": "number",
+                    "valueNumber": 0.1,
+                    "spans": [
+                      {
+                        "offset": 940,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.896,
+                    "source": "D(1,1281.0685,1104.1507,1331.9247,1106.0342,1330.9315,1132.8493,1280.0753,1130.9658)"
+                  },
+                  "TotalAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 61.87,
+                        "spans": [
+                          {
+                            "offset": 953,
+                            "length": 5
+                          }
+                        ],
+                        "confidence": 0.927,
+                        "source": "D(1,1434.0000,1106.0000,1500.0000,1106.0000,1500.0000,1132.0000,1434.0000,1133.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "UnitPrice": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 18.75,
+                        "spans": [
+                          {
+                            "offset": 910,
+                            "length": 5
+                          }
+                        ],
+                        "confidence": 0.916,
+                        "source": "D(1,951.0000,1106.0000,1016.0000,1106.0000,1016.0000,1132.0000,951.0000,1132.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "Date": {
+                    "type": "date",
+                    "confidence": 0.823
+                  },
+                  "Description": {
+                    "type": "string",
+                    "valueString": "Rust Proof Three Rows Tool Wine Glass Holder Simple Iron Wire Home Hanging Rack",
+                    "spans": [
+                      {
+                        "offset": 991,
+                        "length": 26
+                      },
+                      {
+                        "offset": 1018,
+                        "length": 29
+                      },
+                      {
+                        "offset": 1048,
+                        "length": 22
+                      }
+                    ],
+                    "confidence": 0.468,
+                    "source": "D(1,237.0000,1247.0000,546.0000,1247.0000,546.0000,1273.0000,237.0000,1273.0000);D(1,237.0000,1276.0000,578.0000,1276.0000,578.0000,1303.0000,237.0000,1303.0000);D(1,237.0000,1304.0000,527.0000,1304.0000,527.0000,1332.0000,237.0000,1332.0000)"
+                  },
+                  "ProductCode": {
+                    "type": "string",
+                    "confidence": 0.902
+                  },
+                  "Quantity": {
+                    "type": "number",
+                    "valueNumber": 2,
+                    "spans": [
+                      {
+                        "offset": 1080,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.903,
+                    "source": "D(1,672.0000,1249.0000,725.0000,1250.0000,725.0000,1275.0000,672.0000,1275.0000)"
+                  },
+                  "QuantityUnit": {
+                    "type": "string",
+                    "valueString": "each",
+                    "spans": [
+                      {
+                        "offset": 1094,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.832,
+                    "source": "D(1,770.0000,1249.0000,826.0000,1250.0000,826.0000,1274.0000,770.0000,1273.0000)"
+                  },
+                  "TaxAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 725.37,
+                        "spans": [
+                          {
+                            "offset": 1574,
+                            "length": 6
+                          }
+                        ],
+                        "confidence": 0.227,
+                        "source": "D(1,968.0000,1715.0000,1055.0000,1715.0000,1055.0000,1742.0000,968.0000,1742.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "TaxRate": {
+                    "type": "number",
+                    "valueNumber": 0.1,
+                    "spans": [
+                      {
+                        "offset": 1138,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.833,
+                    "source": "D(1,1281.0000,1248.0000,1331.0000,1248.0000,1331.0000,1273.0000,1281.0000,1273.0000)"
+                  },
+                  "TotalAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 25.43,
+                        "spans": [
+                          {
+                            "offset": 1151,
+                            "length": 5
+                          }
+                        ],
+                        "confidence": 0.956,
+                        "source": "D(1,1434.0000,1250.0000,1501.0000,1250.0000,1501.0000,1275.0000,1434.0000,1275.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "UnitPrice": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 11.56,
+                        "spans": [
+                          {
+                            "offset": 1108,
+                            "length": 5
+                          }
+                        ],
+                        "confidence": 0.916,
+                        "source": "D(1,951.0000,1249.0000,1015.0000,1248.0000,1015.0000,1276.0000,951.0000,1275.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "Date": {
+                    "type": "date",
+                    "confidence": 0.823
+                  },
+                  "Description": {
+                    "type": "string",
+                    "valueString": "VTG 1970s MCM Brown Steel Tube Wall or Desk Mounted 12-Wine Rack Bottle Holder",
+                    "spans": [
+                      {
+                        "offset": 1189,
+                        "length": 25
+                      },
+                      {
+                        "offset": 1215,
+                        "length": 25
+                      },
+                      {
+                        "offset": 1241,
+                        "length": 26
+                      }
+                    ],
+                    "confidence": 0.52,
+                    "source": "D(1,236.8008,1362.9059,563.9816,1360.5001,564.1912,1388.9986,237.0103,1391.4043);D(1,237.0000,1391.0000,548.0000,1391.0000,548.0000,1416.0000,237.0000,1416.0000);D(1,239.0000,1418.0000,549.0000,1418.0000,549.0000,1446.0000,239.0000,1446.0000)"
+                  },
+                  "ProductCode": {
+                    "type": "string",
+                    "confidence": 0.902
+                  },
+                  "Quantity": {
+                    "type": "number",
+                    "valueNumber": 1,
+                    "spans": [
+                      {
+                        "offset": 1277,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.906,
+                    "source": "D(1,674.0000,1363.0000,724.0000,1363.0000,724.0000,1388.0000,674.0000,1388.0000)"
+                  },
+                  "QuantityUnit": {
+                    "type": "string",
+                    "valueString": "each",
+                    "spans": [
+                      {
+                        "offset": 1291,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.832,
+                    "source": "D(1,769.0000,1364.0000,826.0000,1364.0000,826.0000,1388.0000,769.0000,1388.0000)"
+                  },
+                  "TaxAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 34,
+                        "spans": [
+                          {
+                            "offset": 1320,
+                            "length": 5
+                          }
+                        ],
+                        "confidence": 0.511,
+                        "source": "D(1,1119.0000,1362.0000,1185.0000,1363.0000,1185.0000,1390.0000,1119.0000,1390.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "TaxRate": {
+                    "type": "number",
+                    "valueNumber": 0.1,
+                    "spans": [
+                      {
+                        "offset": 1335,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.882,
+                    "source": "D(1,1281.0075,1361.8264,1332.0849,1364.0472,1330.9491,1390.1717,1279.8717,1387.9509)"
+                  },
+                  "TotalAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 37.4,
+                        "spans": [
+                          {
+                            "offset": 1348,
+                            "length": 5
+                          }
+                        ],
+                        "confidence": 0.936,
+                        "source": "D(1,1434.0000,1364.0000,1501.0000,1364.0000,1501.0000,1389.0000,1434.0000,1389.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "UnitPrice": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 34,
+                        "spans": [
+                          {
+                            "offset": 1305,
+                            "length": 5
+                          }
+                        ],
+                        "confidence": 0.903,
+                        "source": "D(1,950.0000,1362.0000,1016.0000,1363.0000,1016.0000,1390.0000,950.0000,1390.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
           },
           "PaymentTerm": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.816
           },
           "PONumber": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.746
           },
           "RemittanceAddress": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.905
           },
           "RemittanceAddressRecipient": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.814
           },
           "ServiceAddress": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.782
           },
           "ServiceAddressRecipient": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.82
           },
           "ShippingAddress": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.775
           },
           "ShippingAddressRecipient": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.81
           },
           "SubtotalAmount": {
             "type": "object",
             "valueObject": {
               "Amount": {
-                "type": "number"
+                "type": "number",
+                "valueNumber": 725.37
               },
               "CurrencyCode": {
-                "type": "string"
+                "type": "string",
+                "valueString": "USD"
               }
             }
           },
           "TaxDetails": {
-            "type": "array"
+            "type": "array",
+            "valueArray": [
+              {
+                "type": "object",
+                "valueObject": {
+                  "Amount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 72.54,
+                        "spans": [
+                          {
+                            "offset": 1515,
+                            "length": 5
+                          }
+                        ],
+                        "confidence": 0.903,
+                        "source": "D(1,1175.0000,1655.0000,1241.0000,1655.0000,1241.0000,1680.0000,1175.0000,1680.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "Description": {
+                    "type": "string",
+                    "valueString": "VAT [%] 10%",
+                    "spans": [
+                      {
+                        "offset": 1405,
+                        "length": 7
+                      },
+                      {
+                        "offset": 1486,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.159,
+                    "source": "D(1,640.0104,1593.5220,744.5914,1595.7955,743.9754,1624.1299,639.3944,1621.8564);D(1,666.0137,1653.3699,718.5541,1654.5120,717.9754,1681.1299,665.4350,1679.9877)"
+                  },
+                  "NetAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 725.37,
+                        "spans": [
+                          {
+                            "offset": 1499,
+                            "length": 6
+                          }
+                        ],
+                        "confidence": 0.928,
+                        "source": "D(1,976.0000,1655.0000,1056.0000,1655.0000,1056.0000,1680.0000,976.0000,1680.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "Rate": {
+                    "type": "number",
+                    "valueNumber": 0.1,
+                    "spans": [
+                      {
+                        "offset": 1486,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.814,
+                    "source": "D(1,666.0137,1653.3699,718.5541,1654.5120,717.9754,1681.1299,665.4350,1679.9877)"
+                  }
+                }
+              }
+            ]
           },
           "TotalAmount": {
             "type": "object",
             "valueObject": {
               "Amount": {
-                "type": "number"
+                "type": "number",
+                "valueNumber": 797.91,
+                "spans": [
+                  {
+                    "offset": 1530,
+                    "length": 6
+                  }
+                ],
+                "confidence": 0.593,
+                "source": "D(1,1424.0000,1655.0000,1504.0000,1655.0000,1504.0000,1680.0000,1424.0000,1680.0000)"
               },
               "CurrencyCode": {
-                "type": "string"
+                "type": "string",
+                "valueString": "USD"
               }
             }
           },
@@ -123,7 +952,8 @@
             "type": "object",
             "valueObject": {
               "Amount": {
-                "type": "number"
+                "type": "number",
+                "confidence": 0.934
               },
               "CurrencyCode": {
                 "type": "string"
@@ -134,45 +964,4262 @@
             "type": "object",
             "valueObject": {
               "Amount": {
-                "type": "number"
+                "type": "number",
+                "valueNumber": 72.54
               },
               "CurrencyCode": {
-                "type": "string"
+                "type": "string",
+                "valueString": "USD"
               }
             }
           },
           "VendorAddress": {
-            "type": "string"
+            "type": "string",
+            "valueString": "3836 Moore Ports North Michael, MO 01844",
+            "spans": [
+              {
+                "offset": 73,
+                "length": 16
+              },
+              {
+                "offset": 90,
+                "length": 23
+              }
+            ],
+            "confidence": 0.729,
+            "source": "D(1,140.0000,542.0000,388.0000,542.0000,388.0000,572.0000,140.0000,572.0000);D(1,140.0000,577.0000,497.0000,577.0000,497.0000,608.0000,140.0000,608.0000)"
           },
           "VendorAddressRecipient": {
-            "type": "string"
+            "type": "string",
+            "valueString": "Johnson-Martin",
+            "spans": [
+              {
+                "offset": 58,
+                "length": 14
+              }
+            ],
+            "confidence": 0.742,
+            "source": "D(1,136.0000,505.0000,351.0000,505.0000,351.0000,538.0000,136.0000,538.0000)"
           },
           "VendorName": {
-            "type": "string"
+            "type": "string",
+            "valueString": "Johnson-Martin",
+            "spans": [
+              {
+                "offset": 58,
+                "length": 14
+              }
+            ],
+            "confidence": 0.734,
+            "source": "D(1,136.0000,505.0000,351.0000,505.0000,351.0000,538.0000,136.0000,538.0000)"
           },
           "VendorTaxId": {
-            "type": "string"
+            "type": "string",
+            "valueString": "972-82-0713",
+            "spans": [
+              {
+                "offset": 123,
+                "length": 11
+              }
+            ],
+            "confidence": 0.917,
+            "source": "D(1,244.0000,649.0000,424.0000,649.0000,424.0000,678.0000,244.0000,678.0000)"
           }
         },
         "kind": "document",
         "startPageNumber": 1,
         "endPageNumber": 1,
+        "unit": "pixel",
+        "pages": [
+          {
+            "pageNumber": 1,
+            "angle": 0,
+            "width": 1654,
+            "height": 2339,
+            "spans": [
+              {
+                "offset": 0,
+                "length": 1636
+              }
+            ],
+            "words": [
+              {
+                "content": "Invoice",
+                "span": {
+                  "offset": 0,
+                  "length": 7
+                },
+                "confidence": 0.961,
+                "source": "D(1,131,72,264,71,264,108,131,108)"
+              },
+              {
+                "content": "no",
+                "span": {
+                  "offset": 8,
+                  "length": 2
+                },
+                "confidence": 0.998,
+                "source": "D(1,279,71,322,71,322,108,279,108)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 10,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,326,71,334,71,334,108,326,108)"
+              },
+              {
+                "content": "89969473",
+                "span": {
+                  "offset": 12,
+                  "length": 8
+                },
+                "confidence": 0.997,
+                "source": "D(1,349,71,538,71,538,107,349,108)"
+              },
+              {
+                "content": "Date",
+                "span": {
+                  "offset": 22,
+                  "length": 4
+                },
+                "confidence": 0.998,
+                "source": "D(1,131,141,205,141,205,173,131,173)"
+              },
+              {
+                "content": "of",
+                "span": {
+                  "offset": 27,
+                  "length": 2
+                },
+                "confidence": 0.997,
+                "source": "D(1,216,141,247,141,247,173,216,173)"
+              },
+              {
+                "content": "issue",
+                "span": {
+                  "offset": 30,
+                  "length": 5
+                },
+                "confidence": 0.996,
+                "source": "D(1,255,141,332,141,332,174,255,173)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 35,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,334,141,345,142,345,174,334,174)"
+              },
+              {
+                "content": "10/29/2016",
+                "span": {
+                  "offset": 38,
+                  "length": 10
+                },
+                "confidence": 0.995,
+                "source": "D(1,801,140,980,140,980,174,801,175)"
+              },
+              {
+                "content": "Seller",
+                "span": {
+                  "offset": 50,
+                  "length": 6
+                },
+                "confidence": 0.997,
+                "source": "D(1,131,443,241,443,241,476,131,476)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 56,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,242,443,255,443,255,476,242,476)"
+              },
+              {
+                "content": "Johnson",
+                "span": {
+                  "offset": 58,
+                  "length": 7
+                },
+                "confidence": 0.997,
+                "source": "D(1,136,506,248,505,248,537,136,538)"
+              },
+              {
+                "content": "-",
+                "span": {
+                  "offset": 65,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,250,505,259,505,259,537,250,537)"
+              },
+              {
+                "content": "Martin",
+                "span": {
+                  "offset": 66,
+                  "length": 6
+                },
+                "confidence": 0.998,
+                "source": "D(1,261,505,351,505,351,537,261,537)"
+              },
+              {
+                "content": "3836",
+                "span": {
+                  "offset": 73,
+                  "length": 4
+                },
+                "confidence": 0.996,
+                "source": "D(1,140,542,210,542,210,572,140,572)"
+              },
+              {
+                "content": "Moore",
+                "span": {
+                  "offset": 78,
+                  "length": 5
+                },
+                "confidence": 0.996,
+                "source": "D(1,222,542,305,542,305,572,222,572)"
+              },
+              {
+                "content": "Ports",
+                "span": {
+                  "offset": 84,
+                  "length": 5
+                },
+                "confidence": 0.996,
+                "source": "D(1,316,542,388,542,388,572,316,572)"
+              },
+              {
+                "content": "North",
+                "span": {
+                  "offset": 90,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,140,577,216,577,216,608,140,608)"
+              },
+              {
+                "content": "Michael",
+                "span": {
+                  "offset": 96,
+                  "length": 7
+                },
+                "confidence": 0.993,
+                "source": "D(1,228,577,332,577,332,608,228,608)"
+              },
+              {
+                "content": ",",
+                "span": {
+                  "offset": 103,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,334,577,340,577,340,608,334,608)"
+              },
+              {
+                "content": "MO",
+                "span": {
+                  "offset": 105,
+                  "length": 2
+                },
+                "confidence": 0.982,
+                "source": "D(1,351,577,396,577,396,608,351,608)"
+              },
+              {
+                "content": "01844",
+                "span": {
+                  "offset": 108,
+                  "length": 5
+                },
+                "confidence": 0.99,
+                "source": "D(1,407,577,497,577,497,608,407,608)"
+              },
+              {
+                "content": "Tax",
+                "span": {
+                  "offset": 115,
+                  "length": 3
+                },
+                "confidence": 0.978,
+                "source": "D(1,138,649,189,649,190,678,139,679)"
+              },
+              {
+                "content": "Id",
+                "span": {
+                  "offset": 119,
+                  "length": 2
+                },
+                "confidence": 0.795,
+                "source": "D(1,200,649,222,649,222,678,201,678)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 121,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,227,649,232,649,232,678,227,678)"
+              },
+              {
+                "content": "972-82-0713",
+                "span": {
+                  "offset": 123,
+                  "length": 11
+                },
+                "confidence": 0.986,
+                "source": "D(1,244,649,424,649,424,678,244,678)"
+              },
+              {
+                "content": "IBAN",
+                "span": {
+                  "offset": 136,
+                  "length": 4
+                },
+                "confidence": 0.995,
+                "source": "D(1,139,683,205,683,205,713,140,713)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 140,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,209,683,214,683,214,714,209,714)"
+              },
+              {
+                "content": "GB71GBDG68039919194335",
+                "span": {
+                  "offset": 142,
+                  "length": 22
+                },
+                "confidence": 0.996,
+                "source": "D(1,227,683,634,683,634,713,227,714)"
+              },
+              {
+                "content": "Client",
+                "span": {
+                  "offset": 166,
+                  "length": 6
+                },
+                "confidence": 0.995,
+                "source": "D(1,824,442,935,442,935,477,824,477)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 172,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,937,442,950,442,950,477,937,477)"
+              },
+              {
+                "content": "Deleon",
+                "span": {
+                  "offset": 174,
+                  "length": 6
+                },
+                "confidence": 0.993,
+                "source": "D(1,833,505,929,505,929,537,833,538)"
+              },
+              {
+                "content": ",",
+                "span": {
+                  "offset": 180,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,931,505,938,505,938,537,931,537)"
+              },
+              {
+                "content": "Davila",
+                "span": {
+                  "offset": 182,
+                  "length": 6
+                },
+                "confidence": 0.996,
+                "source": "D(1,950,504,1034,505,1034,537,950,537)"
+              },
+              {
+                "content": "and",
+                "span": {
+                  "offset": 189,
+                  "length": 3
+                },
+                "confidence": 0.998,
+                "source": "D(1,1045,505,1095,505,1095,538,1045,537)"
+              },
+              {
+                "content": "Allen",
+                "span": {
+                  "offset": 193,
+                  "length": 5
+                },
+                "confidence": 0.991,
+                "source": "D(1,1105,506,1178,507,1178,539,1105,538)"
+              },
+              {
+                "content": "355",
+                "span": {
+                  "offset": 199,
+                  "length": 3
+                },
+                "confidence": 0.986,
+                "source": "D(1,833,541,883,541,883,575,833,575)"
+              },
+              {
+                "content": "King",
+                "span": {
+                  "offset": 203,
+                  "length": 4
+                },
+                "confidence": 0.978,
+                "source": "D(1,895,541,952,541,952,574,895,575)"
+              },
+              {
+                "content": "Lake",
+                "span": {
+                  "offset": 208,
+                  "length": 4
+                },
+                "confidence": 0.992,
+                "source": "D(1,965,541,1028,541,1028,574,965,574)"
+              },
+              {
+                "content": "Suite",
+                "span": {
+                  "offset": 213,
+                  "length": 5
+                },
+                "confidence": 0.992,
+                "source": "D(1,1038,541,1109,541,1109,574,1038,574)"
+              },
+              {
+                "content": "071",
+                "span": {
+                  "offset": 219,
+                  "length": 3
+                },
+                "confidence": 0.994,
+                "source": "D(1,1119,541,1173,541,1173,574,1119,574)"
+              },
+              {
+                "content": "South",
+                "span": {
+                  "offset": 223,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,833,577,912,577,912,610,833,610)"
+              },
+              {
+                "content": "Haleyshire",
+                "span": {
+                  "offset": 229,
+                  "length": 10
+                },
+                "confidence": 0.995,
+                "source": "D(1,924,577,1070,577,1070,610,924,611)"
+              },
+              {
+                "content": ",",
+                "span": {
+                  "offset": 239,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,1070,577,1077,577,1077,610,1070,610)"
+              },
+              {
+                "content": "KY",
+                "span": {
+                  "offset": 241,
+                  "length": 2
+                },
+                "confidence": 0.985,
+                "source": "D(1,1088,577,1124,577,1124,610,1088,610)"
+              },
+              {
+                "content": "55765",
+                "span": {
+                  "offset": 244,
+                  "length": 5
+                },
+                "confidence": 0.99,
+                "source": "D(1,1132,577,1221,576,1221,609,1132,610)"
+              },
+              {
+                "content": "Tax",
+                "span": {
+                  "offset": 251,
+                  "length": 3
+                },
+                "confidence": 0.975,
+                "source": "D(1,831,649,883,649,883,679,831,680)"
+              },
+              {
+                "content": "Id",
+                "span": {
+                  "offset": 255,
+                  "length": 2
+                },
+                "confidence": 0.671,
+                "source": "D(1,893,649,916,649,916,679,893,679)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 257,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,919,649,925,649,925,678,919,679)"
+              },
+              {
+                "content": "944-77-3882",
+                "span": {
+                  "offset": 259,
+                  "length": 11
+                },
+                "confidence": 0.987,
+                "source": "D(1,936,649,1116,649,1116,679,936,678)"
+              },
+              {
+                "content": "ITEMS",
+                "span": {
+                  "offset": 275,
+                  "length": 5
+                },
+                "confidence": 0.98,
+                "source": "D(1,131,759,248,759,248,792,131,792)"
+              },
+              {
+                "content": "No",
+                "span": {
+                  "offset": 300,
+                  "length": 2
+                },
+                "confidence": 0.946,
+                "source": "D(1,158,848,193,847,193,869,158,870)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 302,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,193,847,202,846,202,869,193,869)"
+              },
+              {
+                "content": "Description",
+                "span": {
+                  "offset": 313,
+                  "length": 11
+                },
+                "confidence": 0.997,
+                "source": "D(1,237,845,385,847,385,873,237,871)"
+              },
+              {
+                "content": "Qty",
+                "span": {
+                  "offset": 334,
+                  "length": 3
+                },
+                "confidence": 0.994,
+                "source": "D(1,678,846,725,848,725,875,678,872)"
+              },
+              {
+                "content": "UM",
+                "span": {
+                  "offset": 347,
+                  "length": 2
+                },
+                "confidence": 0.988,
+                "source": "D(1,776,845,820,845,820,869,776,869)"
+              },
+              {
+                "content": "Net",
+                "span": {
+                  "offset": 359,
+                  "length": 3
+                },
+                "confidence": 0.998,
+                "source": "D(1,898,844,944,846,944,872,898,871)"
+              },
+              {
+                "content": "price",
+                "span": {
+                  "offset": 363,
+                  "length": 5
+                },
+                "confidence": 0.998,
+                "source": "D(1,952,846,1018,845,1018,871,952,872)"
+              },
+              {
+                "content": "Net",
+                "span": {
+                  "offset": 378,
+                  "length": 3
+                },
+                "confidence": 0.998,
+                "source": "D(1,1056,845,1103,845,1103,871,1056,870)"
+              },
+              {
+                "content": "worth",
+                "span": {
+                  "offset": 382,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,1109,845,1186,846,1186,871,1109,871)"
+              },
+              {
+                "content": "VAT",
+                "span": {
+                  "offset": 397,
+                  "length": 3
+                },
+                "confidence": 0.992,
+                "source": "D(1,1227,844,1280,845,1280,872,1227,871)"
+              },
+              {
+                "content": "[",
+                "span": {
+                  "offset": 401,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1287,845,1297,845,1297,873,1287,873)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 402,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1296,845,1319,845,1319,873,1296,873)"
+              },
+              {
+                "content": "]",
+                "span": {
+                  "offset": 403,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,1319,845,1332,845,1332,872,1319,873)"
+              },
+              {
+                "content": "Gross",
+                "span": {
+                  "offset": 414,
+                  "length": 5
+                },
+                "confidence": 0.998,
+                "source": "D(1,1428,848,1501,848,1501,871,1428,870)"
+              },
+              {
+                "content": "worth",
+                "span": {
+                  "offset": 420,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,1425,875,1501,875,1501,897,1425,897)"
+              },
+              {
+                "content": "1",
+                "span": {
+                  "offset": 446,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,169,934,182,934,182,957,169,957)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 447,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,185,934,192,934,192,957,185,957)"
+              },
+              {
+                "content": "Wild",
+                "span": {
+                  "offset": 458,
+                  "length": 4
+                },
+                "confidence": 0.993,
+                "source": "D(1,237,932,286,932,286,958,237,958)"
+              },
+              {
+                "content": "West",
+                "span": {
+                  "offset": 463,
+                  "length": 4
+                },
+                "confidence": 0.995,
+                "source": "D(1,293,932,351,932,351,958,293,958)"
+              },
+              {
+                "content": "Wine",
+                "span": {
+                  "offset": 468,
+                  "length": 4
+                },
+                "confidence": 0.993,
+                "source": "D(1,356,932,416,932,416,958,356,958)"
+              },
+              {
+                "content": "2,00",
+                "span": {
+                  "offset": 482,
+                  "length": 4
+                },
+                "confidence": 0.996,
+                "source": "D(1,672,933,724,933,724,958,672,958)"
+              },
+              {
+                "content": "each",
+                "span": {
+                  "offset": 496,
+                  "length": 4
+                },
+                "confidence": 0.999,
+                "source": "D(1,769,934,827,934,827,958,769,958)"
+              },
+              {
+                "content": "27,00",
+                "span": {
+                  "offset": 510,
+                  "length": 5
+                },
+                "confidence": 0.991,
+                "source": "D(1,950,932,1016,932,1016,958,950,958)"
+              },
+              {
+                "content": "54,00",
+                "span": {
+                  "offset": 525,
+                  "length": 5
+                },
+                "confidence": 0.996,
+                "source": "D(1,1119,933,1185,933,1185,959,1119,959)"
+              },
+              {
+                "content": "10",
+                "span": {
+                  "offset": 540,
+                  "length": 2
+                },
+                "confidence": 0.999,
+                "source": "D(1,1280,933,1308,933,1308,958,1280,958)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 542,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1308,933,1331,933,1331,958,1308,958)"
+              },
+              {
+                "content": "59,40",
+                "span": {
+                  "offset": 553,
+                  "length": 5
+                },
+                "confidence": 0.989,
+                "source": "D(1,1435,934,1501,933,1501,958,1435,958)"
+              },
+              {
+                "content": "2",
+                "span": {
+                  "offset": 579,
+                  "length": 1
+                },
+                "confidence": 0.987,
+                "source": "D(1,169,992,183,991,183,1014,169,1014)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 580,
+                  "length": 1
+                },
+                "confidence": 0.997,
+                "source": "D(1,185,991,191,992,191,1014,185,1014)"
+              },
+              {
+                "content": "Press",
+                "span": {
+                  "offset": 591,
+                  "length": 5
+                },
+                "confidence": 0.985,
+                "source": "D(1,237,990,296,990,296,1017,237,1017)"
+              },
+              {
+                "content": "Wine",
+                "span": {
+                  "offset": 597,
+                  "length": 4
+                },
+                "confidence": 0.98,
+                "source": "D(1,303,990,360,990,360,1017,303,1017)"
+              },
+              {
+                "content": "15L",
+                "span": {
+                  "offset": 602,
+                  "length": 3
+                },
+                "confidence": 0.938,
+                "source": "D(1,369,990,410,990,410,1016,369,1017)"
+              },
+              {
+                "content": "Fruit",
+                "span": {
+                  "offset": 606,
+                  "length": 5
+                },
+                "confidence": 0.98,
+                "source": "D(1,418,990,468,990,468,1016,418,1016)"
+              },
+              {
+                "content": "Cider",
+                "span": {
+                  "offset": 612,
+                  "length": 5
+                },
+                "confidence": 0.99,
+                "source": "D(1,474,990,535,990,535,1016,474,1016)"
+              },
+              {
+                "content": "Apple",
+                "span": {
+                  "offset": 618,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,237,1020,300,1020,300,1047,238,1047)"
+              },
+              {
+                "content": "Crusher",
+                "span": {
+                  "offset": 624,
+                  "length": 7
+                },
+                "confidence": 0.992,
+                "source": "D(1,308,1020,396,1020,397,1047,308,1047)"
+              },
+              {
+                "content": "Juice",
+                "span": {
+                  "offset": 632,
+                  "length": 5
+                },
+                "confidence": 0.99,
+                "source": "D(1,401,1020,456,1020,456,1047,401,1047)"
+              },
+              {
+                "content": "Grape",
+                "span": {
+                  "offset": 638,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,464,1020,533,1020,533,1047,464,1047)"
+              },
+              {
+                "content": "Stainless",
+                "span": {
+                  "offset": 644,
+                  "length": 9
+                },
+                "confidence": 0.997,
+                "source": "D(1,238,1046,338,1046,338,1073,238,1073)"
+              },
+              {
+                "content": "Maker",
+                "span": {
+                  "offset": 654,
+                  "length": 5
+                },
+                "confidence": 0.998,
+                "source": "D(1,346,1046,415,1046,415,1073,346,1073)"
+              },
+              {
+                "content": "Grapes",
+                "span": {
+                  "offset": 660,
+                  "length": 6
+                },
+                "confidence": 0.997,
+                "source": "D(1,421,1046,501,1046,501,1073,421,1073)"
+              },
+              {
+                "content": "New",
+                "span": {
+                  "offset": 667,
+                  "length": 3
+                },
+                "confidence": 0.998,
+                "source": "D(1,508,1046,558,1046,558,1073,508,1073)"
+              },
+              {
+                "content": "2,00",
+                "span": {
+                  "offset": 680,
+                  "length": 4
+                },
+                "confidence": 0.995,
+                "source": "D(1,672,992,724,990,724,1015,672,1017)"
+              },
+              {
+                "content": "each",
+                "span": {
+                  "offset": 694,
+                  "length": 4
+                },
+                "confidence": 0.998,
+                "source": "D(1,770,992,826,993,826,1017,770,1017)"
+              },
+              {
+                "content": "279,00",
+                "span": {
+                  "offset": 708,
+                  "length": 6
+                },
+                "confidence": 0.993,
+                "source": "D(1,935,990,1016,990,1016,1016,935,1016)"
+              },
+              {
+                "content": "558,00",
+                "span": {
+                  "offset": 724,
+                  "length": 6
+                },
+                "confidence": 0.984,
+                "source": "D(1,1106,991,1186,989,1186,1016,1106,1018)"
+              },
+              {
+                "content": "10",
+                "span": {
+                  "offset": 740,
+                  "length": 2
+                },
+                "confidence": 0.999,
+                "source": "D(1,1281,990,1308,990,1308,1015,1281,1015)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 742,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1309,990,1331,990,1331,1015,1309,1015)"
+              },
+              {
+                "content": "613,80",
+                "span": {
+                  "offset": 753,
+                  "length": 6
+                },
+                "confidence": 0.993,
+                "source": "D(1,1420,991,1500,992,1500,1017,1420,1016)"
+              },
+              {
+                "content": "3",
+                "span": {
+                  "offset": 780,
+                  "length": 1
+                },
+                "confidence": 0.997,
+                "source": "D(1,168,1107,183,1107,182,1131,168,1130)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 781,
+                  "length": 1
+                },
+                "confidence": 0.997,
+                "source": "D(1,185,1107,192,1107,192,1131,185,1131)"
+              },
+              {
+                "content": "Wine",
+                "span": {
+                  "offset": 792,
+                  "length": 4
+                },
+                "confidence": 0.994,
+                "source": "D(1,237,1106,292,1106,292,1132,237,1132)"
+              },
+              {
+                "content": "Rack",
+                "span": {
+                  "offset": 797,
+                  "length": 4
+                },
+                "confidence": 0.996,
+                "source": "D(1,301,1106,355,1106,355,1132,301,1132)"
+              },
+              {
+                "content": "Holder",
+                "span": {
+                  "offset": 802,
+                  "length": 6
+                },
+                "confidence": 0.992,
+                "source": "D(1,363,1106,436,1106,436,1132,363,1132)"
+              },
+              {
+                "content": "Iron",
+                "span": {
+                  "offset": 809,
+                  "length": 4
+                },
+                "confidence": 0.927,
+                "source": "D(1,443,1106,485,1106,485,1132,443,1132)"
+              },
+              {
+                "content": "Art",
+                "span": {
+                  "offset": 814,
+                  "length": 3
+                },
+                "confidence": 0.996,
+                "source": "D(1,491,1106,530,1106,530,1132,491,1132)"
+              },
+              {
+                "content": "Hanging",
+                "span": {
+                  "offset": 818,
+                  "length": 7
+                },
+                "confidence": 0.997,
+                "source": "D(1,238,1134,329,1134,329,1161,238,1161)"
+              },
+              {
+                "content": "Racks",
+                "span": {
+                  "offset": 826,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,338,1134,403,1134,403,1161,338,1161)"
+              },
+              {
+                "content": "Glass",
+                "span": {
+                  "offset": 832,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,411,1134,470,1133,470,1160,411,1161)"
+              },
+              {
+                "content": "Cup",
+                "span": {
+                  "offset": 838,
+                  "length": 3
+                },
+                "confidence": 0.995,
+                "source": "D(1,477,1133,525,1133,525,1160,477,1160)"
+              },
+              {
+                "content": "Stemware",
+                "span": {
+                  "offset": 842,
+                  "length": 8
+                },
+                "confidence": 0.984,
+                "source": "D(1,238,1161,350,1161,351,1187,238,1186)"
+              },
+              {
+                "content": "Shelf",
+                "span": {
+                  "offset": 851,
+                  "length": 5
+                },
+                "confidence": 0.995,
+                "source": "D(1,359,1161,415,1161,415,1187,359,1187)"
+              },
+              {
+                "content": "Mounted",
+                "span": {
+                  "offset": 857,
+                  "length": 7
+                },
+                "confidence": 0.979,
+                "source": "D(1,422,1161,518,1161,518,1188,423,1187)"
+              },
+              {
+                "content": "2",
+                "span": {
+                  "offset": 865,
+                  "length": 1
+                },
+                "confidence": 0.972,
+                "source": "D(1,527,1161,542,1161,542,1188,527,1188)"
+              },
+              {
+                "content": "Color",
+                "span": {
+                  "offset": 867,
+                  "length": 5
+                },
+                "confidence": 0.996,
+                "source": "D(1,238,1190,300,1190,300,1215,238,1215)"
+              },
+              {
+                "content": "3,00",
+                "span": {
+                  "offset": 882,
+                  "length": 4
+                },
+                "confidence": 0.998,
+                "source": "D(1,672,1106,724,1106,724,1132,672,1132)"
+              },
+              {
+                "content": "each",
+                "span": {
+                  "offset": 896,
+                  "length": 4
+                },
+                "confidence": 0.999,
+                "source": "D(1,769,1107,827,1107,827,1131,769,1131)"
+              },
+              {
+                "content": "18,75",
+                "span": {
+                  "offset": 910,
+                  "length": 5
+                },
+                "confidence": 0.953,
+                "source": "D(1,951,1106,1016,1106,1016,1132,951,1132)"
+              },
+              {
+                "content": "56,25",
+                "span": {
+                  "offset": 925,
+                  "length": 5
+                },
+                "confidence": 0.988,
+                "source": "D(1,1119,1106,1185,1106,1185,1132,1119,1132)"
+              },
+              {
+                "content": "10",
+                "span": {
+                  "offset": 940,
+                  "length": 2
+                },
+                "confidence": 0.999,
+                "source": "D(1,1281,1106,1308,1107,1308,1132,1281,1131)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 942,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1308,1107,1331,1106,1331,1131,1308,1132)"
+              },
+              {
+                "content": "61,87",
+                "span": {
+                  "offset": 953,
+                  "length": 5
+                },
+                "confidence": 0.995,
+                "source": "D(1,1434,1106,1500,1106,1500,1132,1434,1133)"
+              },
+              {
+                "content": "4",
+                "span": {
+                  "offset": 979,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,169,1249,183,1249,183,1272,169,1272)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 980,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,185,1249,191,1249,191,1272,185,1272)"
+              },
+              {
+                "content": "Rust",
+                "span": {
+                  "offset": 991,
+                  "length": 4
+                },
+                "confidence": 0.997,
+                "source": "D(1,237,1248,289,1248,289,1273,237,1273)"
+              },
+              {
+                "content": "Proof",
+                "span": {
+                  "offset": 996,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,297,1248,355,1247,355,1273,297,1273)"
+              },
+              {
+                "content": "Three",
+                "span": {
+                  "offset": 1002,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,360,1247,424,1247,424,1273,360,1273)"
+              },
+              {
+                "content": "Rows",
+                "span": {
+                  "offset": 1008,
+                  "length": 4
+                },
+                "confidence": 0.998,
+                "source": "D(1,433,1247,490,1248,490,1273,433,1273)"
+              },
+              {
+                "content": "Tool",
+                "span": {
+                  "offset": 1013,
+                  "length": 4
+                },
+                "confidence": 0.998,
+                "source": "D(1,497,1248,546,1248,546,1273,497,1273)"
+              },
+              {
+                "content": "Wine",
+                "span": {
+                  "offset": 1018,
+                  "length": 4
+                },
+                "confidence": 0.996,
+                "source": "D(1,237,1276,293,1276,293,1303,237,1303)"
+              },
+              {
+                "content": "Glass",
+                "span": {
+                  "offset": 1023,
+                  "length": 5
+                },
+                "confidence": 0.996,
+                "source": "D(1,302,1276,361,1276,361,1303,302,1303)"
+              },
+              {
+                "content": "Holder",
+                "span": {
+                  "offset": 1029,
+                  "length": 6
+                },
+                "confidence": 0.995,
+                "source": "D(1,370,1276,443,1276,443,1303,370,1303)"
+              },
+              {
+                "content": "Simple",
+                "span": {
+                  "offset": 1036,
+                  "length": 6
+                },
+                "confidence": 0.989,
+                "source": "D(1,449,1276,525,1276,525,1303,449,1303)"
+              },
+              {
+                "content": "Iron",
+                "span": {
+                  "offset": 1043,
+                  "length": 4
+                },
+                "confidence": 0.846,
+                "source": "D(1,533,1276,578,1276,578,1303,533,1303)"
+              },
+              {
+                "content": "Wire",
+                "span": {
+                  "offset": 1048,
+                  "length": 4
+                },
+                "confidence": 0.994,
+                "source": "D(1,237,1304,289,1304,289,1332,237,1332)"
+              },
+              {
+                "content": "Home",
+                "span": {
+                  "offset": 1053,
+                  "length": 4
+                },
+                "confidence": 0.996,
+                "source": "D(1,298,1304,361,1304,361,1332,298,1332)"
+              },
+              {
+                "content": "Hanging",
+                "span": {
+                  "offset": 1058,
+                  "length": 7
+                },
+                "confidence": 0.993,
+                "source": "D(1,371,1304,461,1304,461,1332,371,1332)"
+              },
+              {
+                "content": "Rack",
+                "span": {
+                  "offset": 1066,
+                  "length": 4
+                },
+                "confidence": 0.996,
+                "source": "D(1,470,1304,527,1304,527,1332,470,1332)"
+              },
+              {
+                "content": "2,00",
+                "span": {
+                  "offset": 1080,
+                  "length": 4
+                },
+                "confidence": 0.994,
+                "source": "D(1,672,1249,725,1250,725,1275,672,1275)"
+              },
+              {
+                "content": "each",
+                "span": {
+                  "offset": 1094,
+                  "length": 4
+                },
+                "confidence": 0.999,
+                "source": "D(1,770,1249,826,1250,826,1274,770,1273)"
+              },
+              {
+                "content": "11,56",
+                "span": {
+                  "offset": 1108,
+                  "length": 5
+                },
+                "confidence": 0.991,
+                "source": "D(1,951,1249,1015,1248,1015,1276,951,1275)"
+              },
+              {
+                "content": "23,12",
+                "span": {
+                  "offset": 1123,
+                  "length": 5
+                },
+                "confidence": 0.991,
+                "source": "D(1,1119,1248,1185,1249,1185,1276,1119,1276)"
+              },
+              {
+                "content": "10",
+                "span": {
+                  "offset": 1138,
+                  "length": 2
+                },
+                "confidence": 0.999,
+                "source": "D(1,1281,1248,1308,1248,1308,1273,1281,1273)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 1140,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1309,1248,1331,1248,1331,1273,1309,1273)"
+              },
+              {
+                "content": "25,43",
+                "span": {
+                  "offset": 1151,
+                  "length": 5
+                },
+                "confidence": 0.981,
+                "source": "D(1,1434,1250,1501,1250,1501,1275,1434,1275)"
+              },
+              {
+                "content": "5",
+                "span": {
+                  "offset": 1177,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,169,1365,182,1364,182,1387,169,1388)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 1178,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,184,1364,192,1365,192,1388,184,1387)"
+              },
+              {
+                "content": "VTG",
+                "span": {
+                  "offset": 1189,
+                  "length": 3
+                },
+                "confidence": 0.988,
+                "source": "D(1,237,1364,283,1363,283,1389,237,1390)"
+              },
+              {
+                "content": "1970s",
+                "span": {
+                  "offset": 1193,
+                  "length": 5
+                },
+                "confidence": 0.966,
+                "source": "D(1,292,1363,360,1362,360,1389,292,1389)"
+              },
+              {
+                "content": "MCM",
+                "span": {
+                  "offset": 1199,
+                  "length": 3
+                },
+                "confidence": 0.995,
+                "source": "D(1,368,1362,419,1362,419,1388,368,1389)"
+              },
+              {
+                "content": "Brown",
+                "span": {
+                  "offset": 1203,
+                  "length": 5
+                },
+                "confidence": 0.995,
+                "source": "D(1,428,1362,497,1362,497,1389,428,1388)"
+              },
+              {
+                "content": "Steel",
+                "span": {
+                  "offset": 1209,
+                  "length": 5
+                },
+                "confidence": 0.994,
+                "source": "D(1,505,1362,564,1363,564,1389,505,1389)"
+              },
+              {
+                "content": "Tube",
+                "span": {
+                  "offset": 1215,
+                  "length": 4
+                },
+                "confidence": 0.992,
+                "source": "D(1,237,1391,294,1391,294,1416,237,1416)"
+              },
+              {
+                "content": "Wall",
+                "span": {
+                  "offset": 1220,
+                  "length": 4
+                },
+                "confidence": 0.996,
+                "source": "D(1,300,1391,349,1391,349,1416,300,1416)"
+              },
+              {
+                "content": "or",
+                "span": {
+                  "offset": 1225,
+                  "length": 2
+                },
+                "confidence": 0.996,
+                "source": "D(1,357,1391,380,1391,380,1416,357,1416)"
+              },
+              {
+                "content": "Desk",
+                "span": {
+                  "offset": 1228,
+                  "length": 4
+                },
+                "confidence": 0.994,
+                "source": "D(1,387,1391,442,1391,442,1416,387,1416)"
+              },
+              {
+                "content": "Mounted",
+                "span": {
+                  "offset": 1233,
+                  "length": 7
+                },
+                "confidence": 0.994,
+                "source": "D(1,449,1391,548,1391,548,1416,449,1416)"
+              },
+              {
+                "content": "12",
+                "span": {
+                  "offset": 1241,
+                  "length": 2
+                },
+                "confidence": 0.995,
+                "source": "D(1,239,1419,266,1418,266,1446,239,1446)"
+              },
+              {
+                "content": "-",
+                "span": {
+                  "offset": 1243,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,267,1418,274,1418,274,1446,267,1446)"
+              },
+              {
+                "content": "Wine",
+                "span": {
+                  "offset": 1244,
+                  "length": 4
+                },
+                "confidence": 0.994,
+                "source": "D(1,274,1418,329,1418,329,1445,274,1446)"
+              },
+              {
+                "content": "Rack",
+                "span": {
+                  "offset": 1249,
+                  "length": 4
+                },
+                "confidence": 0.997,
+                "source": "D(1,338,1418,392,1418,392,1445,338,1445)"
+              },
+              {
+                "content": "Bottle",
+                "span": {
+                  "offset": 1254,
+                  "length": 6
+                },
+                "confidence": 0.993,
+                "source": "D(1,400,1418,465,1418,465,1445,400,1445)"
+              },
+              {
+                "content": "Holder",
+                "span": {
+                  "offset": 1261,
+                  "length": 6
+                },
+                "confidence": 0.996,
+                "source": "D(1,475,1418,549,1419,549,1446,475,1445)"
+              },
+              {
+                "content": "1,00",
+                "span": {
+                  "offset": 1277,
+                  "length": 4
+                },
+                "confidence": 0.996,
+                "source": "D(1,674,1363,724,1363,724,1388,674,1388)"
+              },
+              {
+                "content": "each",
+                "span": {
+                  "offset": 1291,
+                  "length": 4
+                },
+                "confidence": 0.999,
+                "source": "D(1,769,1364,826,1364,826,1388,769,1388)"
+              },
+              {
+                "content": "34,00",
+                "span": {
+                  "offset": 1305,
+                  "length": 5
+                },
+                "confidence": 0.996,
+                "source": "D(1,950,1362,1016,1363,1016,1390,950,1390)"
+              },
+              {
+                "content": "34,00",
+                "span": {
+                  "offset": 1320,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,1119,1362,1185,1363,1185,1390,1119,1390)"
+              },
+              {
+                "content": "10",
+                "span": {
+                  "offset": 1335,
+                  "length": 2
+                },
+                "confidence": 0.999,
+                "source": "D(1,1281,1362,1308,1363,1308,1388,1281,1388)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 1337,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1308,1363,1331,1364,1331,1389,1308,1388)"
+              },
+              {
+                "content": "37,40",
+                "span": {
+                  "offset": 1348,
+                  "length": 5
+                },
+                "confidence": 0.994,
+                "source": "D(1,1434,1364,1501,1364,1501,1389,1434,1389)"
+              },
+              {
+                "content": "SUMMARY",
+                "span": {
+                  "offset": 1378,
+                  "length": 7
+                },
+                "confidence": 0.993,
+                "source": "D(1,131,1510,327,1510,327,1544,131,1544)"
+              },
+              {
+                "content": "VAT",
+                "span": {
+                  "offset": 1405,
+                  "length": 3
+                },
+                "confidence": 0.994,
+                "source": "D(1,640,1594,692,1595,692,1623,640,1621)"
+              },
+              {
+                "content": "[",
+                "span": {
+                  "offset": 1409,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,699,1595,708,1595,708,1623,699,1623)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 1410,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,708,1595,731,1596,731,1623,708,1623)"
+              },
+              {
+                "content": "]",
+                "span": {
+                  "offset": 1411,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,731,1596,744,1596,744,1623,731,1623)"
+              },
+              {
+                "content": "Net",
+                "span": {
+                  "offset": 1422,
+                  "length": 3
+                },
+                "confidence": 0.997,
+                "source": "D(1,927,1596,973,1596,973,1621,927,1621)"
+              },
+              {
+                "content": "worth",
+                "span": {
+                  "offset": 1426,
+                  "length": 5
+                },
+                "confidence": 0.996,
+                "source": "D(1,979,1596,1056,1596,1056,1621,979,1621)"
+              },
+              {
+                "content": "VAT",
+                "span": {
+                  "offset": 1441,
+                  "length": 3
+                },
+                "confidence": 0.971,
+                "source": "D(1,1187,1596,1242,1596,1242,1621,1187,1621)"
+              },
+              {
+                "content": "Gross",
+                "span": {
+                  "offset": 1454,
+                  "length": 5
+                },
+                "confidence": 0.998,
+                "source": "D(1,1350,1597,1421,1596,1421,1621,1350,1622)"
+              },
+              {
+                "content": "worth",
+                "span": {
+                  "offset": 1460,
+                  "length": 5
+                },
+                "confidence": 0.998,
+                "source": "D(1,1429,1596,1504,1595,1504,1621,1429,1621)"
+              },
+              {
+                "content": "10",
+                "span": {
+                  "offset": 1486,
+                  "length": 2
+                },
+                "confidence": 0.999,
+                "source": "D(1,666,1654,695,1654,695,1680,666,1680)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 1488,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,695,1654,718,1655,718,1680,695,1680)"
+              },
+              {
+                "content": "725,37",
+                "span": {
+                  "offset": 1499,
+                  "length": 6
+                },
+                "confidence": 0.992,
+                "source": "D(1,976,1655,1056,1655,1056,1680,976,1680)"
+              },
+              {
+                "content": "72,54",
+                "span": {
+                  "offset": 1515,
+                  "length": 5
+                },
+                "confidence": 0.99,
+                "source": "D(1,1175,1655,1241,1655,1241,1680,1175,1680)"
+              },
+              {
+                "content": "797,91",
+                "span": {
+                  "offset": 1530,
+                  "length": 6
+                },
+                "confidence": 0.994,
+                "source": "D(1,1424,1655,1504,1655,1504,1680,1424,1680)"
+              },
+              {
+                "content": "Total",
+                "span": {
+                  "offset": 1557,
+                  "length": 5
+                },
+                "confidence": 0.998,
+                "source": "D(1,500,1715,568,1715,568,1739,500,1739)"
+              },
+              {
+                "content": "$",
+                "span": {
+                  "offset": 1572,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,943,1715,958,1715,958,1742,943,1741)"
+              },
+              {
+                "content": "725,37",
+                "span": {
+                  "offset": 1574,
+                  "length": 6
+                },
+                "confidence": 0.955,
+                "source": "D(1,968,1715,1055,1715,1055,1742,968,1742)"
+              },
+              {
+                "content": "$",
+                "span": {
+                  "offset": 1590,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1144,1715,1158,1715,1158,1742,1144,1742)"
+              },
+              {
+                "content": "72,54",
+                "span": {
+                  "offset": 1592,
+                  "length": 5
+                },
+                "confidence": 0.981,
+                "source": "D(1,1168,1715,1240,1715,1240,1742,1168,1742)"
+              },
+              {
+                "content": "$",
+                "span": {
+                  "offset": 1607,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,1392,1715,1407,1715,1407,1742,1392,1742)"
+              },
+              {
+                "content": "797,91",
+                "span": {
+                  "offset": 1609,
+                  "length": 6
+                },
+                "confidence": 0.965,
+                "source": "D(1,1417,1715,1505,1715,1505,1742,1417,1742)"
+              }
+            ],
+            "lines": [
+              {
+                "content": "Invoice no: 89969473",
+                "source": "D(1,131,72,538,71,538,107,131,108)",
+                "span": {
+                  "offset": 0,
+                  "length": 20
+                }
+              },
+              {
+                "content": "Date of issue:",
+                "source": "D(1,131,141,345,141,345,174,131,173)",
+                "span": {
+                  "offset": 22,
+                  "length": 14
+                }
+              },
+              {
+                "content": "10/29/2016",
+                "source": "D(1,801,140,980,140,980,175,801,175)",
+                "span": {
+                  "offset": 38,
+                  "length": 10
+                }
+              },
+              {
+                "content": "Seller:",
+                "source": "D(1,131,443,255,443,255,476,131,476)",
+                "span": {
+                  "offset": 50,
+                  "length": 7
+                }
+              },
+              {
+                "content": "Johnson-Martin",
+                "source": "D(1,136,506,351,505,351,537,136,538)",
+                "span": {
+                  "offset": 58,
+                  "length": 14
+                }
+              },
+              {
+                "content": "3836 Moore Ports",
+                "source": "D(1,140,542,388,542,388,572,140,572)",
+                "span": {
+                  "offset": 73,
+                  "length": 16
+                }
+              },
+              {
+                "content": "North Michael, MO 01844",
+                "source": "D(1,140,577,497,577,497,608,140,609)",
+                "span": {
+                  "offset": 90,
+                  "length": 23
+                }
+              },
+              {
+                "content": "Tax Id: 972-82-0713",
+                "source": "D(1,138,649,424,649,424,678,138,679)",
+                "span": {
+                  "offset": 115,
+                  "length": 19
+                }
+              },
+              {
+                "content": "IBAN: GB71GBDG68039919194335",
+                "source": "D(1,139,683,634,683,634,714,139,714)",
+                "span": {
+                  "offset": 136,
+                  "length": 28
+                }
+              },
+              {
+                "content": "Client:",
+                "source": "D(1,824,442,950,442,950,477,824,477)",
+                "span": {
+                  "offset": 166,
+                  "length": 7
+                }
+              },
+              {
+                "content": "Deleon, Davila and Allen",
+                "source": "D(1,833,504,1178,505,1178,539,833,538)",
+                "span": {
+                  "offset": 174,
+                  "length": 24
+                }
+              },
+              {
+                "content": "355 King Lake Suite 071",
+                "source": "D(1,833,541,1173,540,1173,574,833,575)",
+                "span": {
+                  "offset": 199,
+                  "length": 23
+                }
+              },
+              {
+                "content": "South Haleyshire, KY 55765",
+                "source": "D(1,833,577,1221,576,1221,610,833,611)",
+                "span": {
+                  "offset": 223,
+                  "length": 26
+                }
+              },
+              {
+                "content": "Tax Id: 944-77-3882",
+                "source": "D(1,831,649,1116,648,1116,679,831,680)",
+                "span": {
+                  "offset": 251,
+                  "length": 19
+                }
+              },
+              {
+                "content": "ITEMS",
+                "source": "D(1,131,759,248,759,248,792,131,792)",
+                "span": {
+                  "offset": 275,
+                  "length": 5
+                }
+              },
+              {
+                "content": "No.",
+                "source": "D(1,157,847,202,846,202,869,158,870)",
+                "span": {
+                  "offset": 300,
+                  "length": 3
+                }
+              },
+              {
+                "content": "Description",
+                "source": "D(1,237,845,385,847,385,873,237,871)",
+                "span": {
+                  "offset": 313,
+                  "length": 11
+                }
+              },
+              {
+                "content": "Qty",
+                "source": "D(1,678,845,726,848,725,875,677,872)",
+                "span": {
+                  "offset": 334,
+                  "length": 3
+                }
+              },
+              {
+                "content": "UM",
+                "source": "D(1,775,845,820,845,821,869,776,870)",
+                "span": {
+                  "offset": 347,
+                  "length": 2
+                }
+              },
+              {
+                "content": "Net price",
+                "source": "D(1,898,844,1018,845,1018,873,898,872)",
+                "span": {
+                  "offset": 359,
+                  "length": 9
+                }
+              },
+              {
+                "content": "Net worth",
+                "source": "D(1,1056,845,1186,845,1186,871,1056,871)",
+                "span": {
+                  "offset": 378,
+                  "length": 9
+                }
+              },
+              {
+                "content": "VAT [%]",
+                "source": "D(1,1227,844,1332,845,1332,873,1226,872)",
+                "span": {
+                  "offset": 397,
+                  "length": 7
+                }
+              },
+              {
+                "content": "Gross",
+                "source": "D(1,1428,847,1501,847,1501,871,1428,870)",
+                "span": {
+                  "offset": 414,
+                  "length": 5
+                }
+              },
+              {
+                "content": "worth",
+                "source": "D(1,1425,874,1501,874,1501,897,1425,897)",
+                "span": {
+                  "offset": 420,
+                  "length": 5
+                }
+              },
+              {
+                "content": "1.",
+                "source": "D(1,169,934,192,934,192,957,169,957)",
+                "span": {
+                  "offset": 446,
+                  "length": 2
+                }
+              },
+              {
+                "content": "Wild West Wine",
+                "source": "D(1,237,932,416,932,416,958,237,958)",
+                "span": {
+                  "offset": 458,
+                  "length": 14
+                }
+              },
+              {
+                "content": "2,00",
+                "source": "D(1,672,933,724,933,724,958,672,958)",
+                "span": {
+                  "offset": 482,
+                  "length": 4
+                }
+              },
+              {
+                "content": "each",
+                "source": "D(1,769,934,827,934,827,958,769,958)",
+                "span": {
+                  "offset": 496,
+                  "length": 4
+                }
+              },
+              {
+                "content": "27,00",
+                "source": "D(1,950,932,1016,932,1016,958,950,958)",
+                "span": {
+                  "offset": 510,
+                  "length": 5
+                }
+              },
+              {
+                "content": "54,00",
+                "source": "D(1,1119,932,1185,933,1185,959,1119,959)",
+                "span": {
+                  "offset": 525,
+                  "length": 5
+                }
+              },
+              {
+                "content": "10%",
+                "source": "D(1,1280,932,1331,933,1331,958,1280,958)",
+                "span": {
+                  "offset": 540,
+                  "length": 3
+                }
+              },
+              {
+                "content": "59,40",
+                "source": "D(1,1435,934,1501,933,1501,958,1435,958)",
+                "span": {
+                  "offset": 553,
+                  "length": 5
+                }
+              },
+              {
+                "content": "2.",
+                "source": "D(1,169,991,191,991,191,1014,169,1014)",
+                "span": {
+                  "offset": 579,
+                  "length": 2
+                }
+              },
+              {
+                "content": "Press Wine 15L Fruit Cider",
+                "source": "D(1,237,990,535,990,535,1016,237,1017)",
+                "span": {
+                  "offset": 591,
+                  "length": 26
+                }
+              },
+              {
+                "content": "Apple Crusher Juice Grape",
+                "source": "D(1,237,1020,533,1020,533,1047,237,1047)",
+                "span": {
+                  "offset": 618,
+                  "length": 25
+                }
+              },
+              {
+                "content": "Stainless Maker Grapes New",
+                "source": "D(1,238,1046,558,1046,558,1073,238,1074)",
+                "span": {
+                  "offset": 644,
+                  "length": 26
+                }
+              },
+              {
+                "content": "2,00",
+                "source": "D(1,671,992,724,990,725,1016,672,1018)",
+                "span": {
+                  "offset": 680,
+                  "length": 4
+                }
+              },
+              {
+                "content": "each",
+                "source": "D(1,770,992,826,992,826,1017,770,1017)",
+                "span": {
+                  "offset": 694,
+                  "length": 4
+                }
+              },
+              {
+                "content": "279,00",
+                "source": "D(1,935,990,1016,990,1016,1016,935,1016)",
+                "span": {
+                  "offset": 708,
+                  "length": 6
+                }
+              },
+              {
+                "content": "558,00",
+                "source": "D(1,1105,992,1186,989,1186,1016,1106,1018)",
+                "span": {
+                  "offset": 724,
+                  "length": 6
+                }
+              },
+              {
+                "content": "10%",
+                "source": "D(1,1281,990,1331,990,1331,1015,1281,1015)",
+                "span": {
+                  "offset": 740,
+                  "length": 3
+                }
+              },
+              {
+                "content": "613,80",
+                "source": "D(1,1420,990,1500,991,1500,1017,1419,1016)",
+                "span": {
+                  "offset": 753,
+                  "length": 6
+                }
+              },
+              {
+                "content": "3.",
+                "source": "D(1,168,1107,192,1107,192,1131,168,1131)",
+                "span": {
+                  "offset": 780,
+                  "length": 2
+                }
+              },
+              {
+                "content": "Wine Rack Holder Iron Art",
+                "source": "D(1,237,1106,530,1106,530,1132,237,1133)",
+                "span": {
+                  "offset": 792,
+                  "length": 25
+                }
+              },
+              {
+                "content": "Hanging Racks Glass Cup",
+                "source": "D(1,238,1134,525,1133,525,1161,238,1161)",
+                "span": {
+                  "offset": 818,
+                  "length": 23
+                }
+              },
+              {
+                "content": "Stemware Shelf Mounted 2",
+                "source": "D(1,238,1160,542,1161,542,1188,238,1187)",
+                "span": {
+                  "offset": 842,
+                  "length": 24
+                }
+              },
+              {
+                "content": "Color",
+                "source": "D(1,238,1190,300,1190,300,1215,238,1215)",
+                "span": {
+                  "offset": 867,
+                  "length": 5
+                }
+              },
+              {
+                "content": "3,00",
+                "source": "D(1,672,1106,725,1106,724,1133,672,1132)",
+                "span": {
+                  "offset": 882,
+                  "length": 4
+                }
+              },
+              {
+                "content": "each",
+                "source": "D(1,769,1107,827,1107,827,1131,769,1131)",
+                "span": {
+                  "offset": 896,
+                  "length": 4
+                }
+              },
+              {
+                "content": "18,75",
+                "source": "D(1,951,1106,1016,1106,1016,1132,950,1132)",
+                "span": {
+                  "offset": 910,
+                  "length": 5
+                }
+              },
+              {
+                "content": "56,25",
+                "source": "D(1,1119,1106,1185,1106,1185,1132,1119,1132)",
+                "span": {
+                  "offset": 925,
+                  "length": 5
+                }
+              },
+              {
+                "content": "10%",
+                "source": "D(1,1281,1106,1331,1106,1331,1132,1281,1132)",
+                "span": {
+                  "offset": 940,
+                  "length": 3
+                }
+              },
+              {
+                "content": "61,87",
+                "source": "D(1,1434,1106,1500,1106,1500,1132,1434,1133)",
+                "span": {
+                  "offset": 953,
+                  "length": 5
+                }
+              },
+              {
+                "content": "4.",
+                "source": "D(1,169,1249,191,1249,191,1272,169,1272)",
+                "span": {
+                  "offset": 979,
+                  "length": 2
+                }
+              },
+              {
+                "content": "Rust Proof Three Rows Tool",
+                "source": "D(1,237,1247,546,1247,546,1273,237,1273)",
+                "span": {
+                  "offset": 991,
+                  "length": 26
+                }
+              },
+              {
+                "content": "Wine Glass Holder Simple Iron",
+                "source": "D(1,237,1276,578,1276,578,1303,237,1303)",
+                "span": {
+                  "offset": 1018,
+                  "length": 29
+                }
+              },
+              {
+                "content": "Wire Home Hanging Rack",
+                "source": "D(1,237,1304,527,1304,527,1332,237,1332)",
+                "span": {
+                  "offset": 1048,
+                  "length": 22
+                }
+              },
+              {
+                "content": "2,00",
+                "source": "D(1,672,1248,725,1248,725,1275,672,1275)",
+                "span": {
+                  "offset": 1080,
+                  "length": 4
+                }
+              },
+              {
+                "content": "each",
+                "source": "D(1,770,1249,826,1249,826,1274,769,1273)",
+                "span": {
+                  "offset": 1094,
+                  "length": 4
+                }
+              },
+              {
+                "content": "11,56",
+                "source": "D(1,951,1248,1015,1248,1015,1276,951,1276)",
+                "span": {
+                  "offset": 1108,
+                  "length": 5
+                }
+              },
+              {
+                "content": "23,12",
+                "source": "D(1,1119,1247,1185,1248,1185,1276,1118,1276)",
+                "span": {
+                  "offset": 1123,
+                  "length": 5
+                }
+              },
+              {
+                "content": "10%",
+                "source": "D(1,1281,1248,1331,1248,1331,1273,1281,1273)",
+                "span": {
+                  "offset": 1138,
+                  "length": 3
+                }
+              },
+              {
+                "content": "25,43",
+                "source": "D(1,1434,1248,1501,1248,1501,1275,1434,1275)",
+                "span": {
+                  "offset": 1151,
+                  "length": 5
+                }
+              },
+              {
+                "content": "5.",
+                "source": "D(1,169,1364,192,1364,192,1388,169,1388)",
+                "span": {
+                  "offset": 1177,
+                  "length": 2
+                }
+              },
+              {
+                "content": "VTG 1970s MCM Brown Steel",
+                "source": "D(1,237,1362,564,1361,564,1389,237,1390)",
+                "span": {
+                  "offset": 1189,
+                  "length": 25
+                }
+              },
+              {
+                "content": "Tube Wall or Desk Mounted",
+                "source": "D(1,237,1391,548,1391,548,1416,237,1416)",
+                "span": {
+                  "offset": 1215,
+                  "length": 25
+                }
+              },
+              {
+                "content": "12-Wine Rack Bottle Holder",
+                "source": "D(1,239,1418,549,1418,549,1446,239,1446)",
+                "span": {
+                  "offset": 1241,
+                  "length": 26
+                }
+              },
+              {
+                "content": "1,00",
+                "source": "D(1,673,1363,724,1363,725,1389,674,1389)",
+                "span": {
+                  "offset": 1277,
+                  "length": 4
+                }
+              },
+              {
+                "content": "each",
+                "source": "D(1,769,1364,826,1364,826,1388,769,1388)",
+                "span": {
+                  "offset": 1291,
+                  "length": 4
+                }
+              },
+              {
+                "content": "34,00",
+                "source": "D(1,950,1362,1016,1362,1016,1390,950,1390)",
+                "span": {
+                  "offset": 1305,
+                  "length": 5
+                }
+              },
+              {
+                "content": "34,00",
+                "source": "D(1,1119,1362,1185,1362,1185,1390,1118,1390)",
+                "span": {
+                  "offset": 1320,
+                  "length": 5
+                }
+              },
+              {
+                "content": "10%",
+                "source": "D(1,1281,1362,1331,1364,1331,1389,1280,1388)",
+                "span": {
+                  "offset": 1335,
+                  "length": 3
+                }
+              },
+              {
+                "content": "37,40",
+                "source": "D(1,1434,1364,1501,1364,1501,1389,1434,1389)",
+                "span": {
+                  "offset": 1348,
+                  "length": 5
+                }
+              },
+              {
+                "content": "SUMMARY",
+                "source": "D(1,131,1510,327,1510,327,1545,131,1545)",
+                "span": {
+                  "offset": 1378,
+                  "length": 7
+                }
+              },
+              {
+                "content": "VAT [%]",
+                "source": "D(1,640,1594,744,1596,744,1623,639,1622)",
+                "span": {
+                  "offset": 1405,
+                  "length": 7
+                }
+              },
+              {
+                "content": "Net worth",
+                "source": "D(1,927,1596,1056,1596,1056,1621,927,1621)",
+                "span": {
+                  "offset": 1422,
+                  "length": 9
+                }
+              },
+              {
+                "content": "VAT",
+                "source": "D(1,1187,1596,1242,1596,1242,1621,1187,1621)",
+                "span": {
+                  "offset": 1441,
+                  "length": 3
+                }
+              },
+              {
+                "content": "Gross worth",
+                "source": "D(1,1349,1597,1504,1595,1504,1621,1350,1622)",
+                "span": {
+                  "offset": 1454,
+                  "length": 11
+                }
+              },
+              {
+                "content": "10%",
+                "source": "D(1,666,1654,719,1655,718,1680,665,1680)",
+                "span": {
+                  "offset": 1486,
+                  "length": 3
+                }
+              },
+              {
+                "content": "725,37",
+                "source": "D(1,976,1655,1056,1655,1056,1680,976,1680)",
+                "span": {
+                  "offset": 1499,
+                  "length": 6
+                }
+              },
+              {
+                "content": "72,54",
+                "source": "D(1,1175,1655,1241,1655,1241,1680,1175,1680)",
+                "span": {
+                  "offset": 1515,
+                  "length": 5
+                }
+              },
+              {
+                "content": "797,91",
+                "source": "D(1,1424,1655,1504,1655,1504,1680,1424,1680)",
+                "span": {
+                  "offset": 1530,
+                  "length": 6
+                }
+              },
+              {
+                "content": "Total",
+                "source": "D(1,500,1714,568,1714,568,1739,500,1739)",
+                "span": {
+                  "offset": 1557,
+                  "length": 5
+                }
+              },
+              {
+                "content": "$ 725,37",
+                "source": "D(1,943,1715,1055,1715,1055,1743,943,1743)",
+                "span": {
+                  "offset": 1572,
+                  "length": 8
+                }
+              },
+              {
+                "content": "$ 72,54",
+                "source": "D(1,1144,1715,1240,1715,1240,1742,1144,1742)",
+                "span": {
+                  "offset": 1590,
+                  "length": 7
+                }
+              },
+              {
+                "content": "$ 797,91",
+                "source": "D(1,1392,1715,1505,1715,1505,1743,1392,1743)",
+                "span": {
+                  "offset": 1607,
+                  "length": 8
+                }
+              }
+            ]
+          }
+        ],
+        "paragraphs": [
+          {
+            "content": "Invoice no: 89969473",
+            "source": "D(1,131,72,538,71,538,107,131,108)",
+            "span": {
+              "offset": 0,
+              "length": 20
+            }
+          },
+          {
+            "content": "Date of issue:",
+            "source": "D(1,131,141,345,141,345,174,131,173)",
+            "span": {
+              "offset": 22,
+              "length": 14
+            }
+          },
+          {
+            "content": "10/29/2016",
+            "source": "D(1,801,140,980,140,980,175,801,175)",
+            "span": {
+              "offset": 38,
+              "length": 10
+            }
+          },
+          {
+            "content": "Seller: Johnson-Martin 3836 Moore Ports North Michael, MO 01844",
+            "source": "D(1,131,443,497,443,497,608,131,609)",
+            "span": {
+              "offset": 50,
+              "length": 63
+            }
+          },
+          {
+            "content": "Tax Id: 972-82-0713",
+            "source": "D(1,138,649,424,649,424,678,138,679)",
+            "span": {
+              "offset": 115,
+              "length": 19
+            }
+          },
+          {
+            "content": "IBAN: GB71GBDG68039919194335",
+            "source": "D(1,139,683,634,683,634,714,139,714)",
+            "span": {
+              "offset": 136,
+              "length": 28
+            }
+          },
+          {
+            "content": "Client: Deleon, Davila and Allen 355 King Lake Suite 071 South Haleyshire, KY 55765",
+            "source": "D(1,824,442,1221,441,1221,610,824,611)",
+            "span": {
+              "offset": 166,
+              "length": 83
+            }
+          },
+          {
+            "content": "Tax Id: 944-77-3882",
+            "source": "D(1,831,649,1116,648,1116,679,831,680)",
+            "span": {
+              "offset": 251,
+              "length": 19
+            }
+          },
+          {
+            "role": "sectionHeading",
+            "content": "ITEMS",
+            "source": "D(1,131,759,248,759,248,792,131,792)",
+            "span": {
+              "offset": 273,
+              "length": 7
+            }
+          },
+          {
+            "content": "No.",
+            "source": "D(1,157,847,202,846,202,870,158,870)",
+            "span": {
+              "offset": 300,
+              "length": 3
+            }
+          },
+          {
+            "content": "Description",
+            "source": "D(1,237,845,385,847,385,873,237,871)",
+            "span": {
+              "offset": 313,
+              "length": 11
+            }
+          },
+          {
+            "content": "Qty",
+            "source": "D(1,678,846,727,848,725,875,676,872)",
+            "span": {
+              "offset": 334,
+              "length": 3
+            }
+          },
+          {
+            "content": "UM",
+            "source": "D(1,775,845,820,845,821,869,776,869)",
+            "span": {
+              "offset": 347,
+              "length": 2
+            }
+          },
+          {
+            "content": "Net price",
+            "source": "D(1,898,842,1018,845,1018,874,897,871)",
+            "span": {
+              "offset": 359,
+              "length": 9
+            }
+          },
+          {
+            "content": "Net worth",
+            "source": "D(1,1056,845,1186,846,1186,871,1056,870)",
+            "span": {
+              "offset": 378,
+              "length": 9
+            }
+          },
+          {
+            "content": "VAT [%]",
+            "source": "D(1,1227,844,1332,845,1332,873,1226,872)",
+            "span": {
+              "offset": 397,
+              "length": 7
+            }
+          },
+          {
+            "content": "Gross worth",
+            "source": "D(1,1425,847,1502,848,1501,898,1425,897)",
+            "span": {
+              "offset": 414,
+              "length": 11
+            }
+          },
+          {
+            "content": "1.",
+            "source": "D(1,169,933,192,934,191,957,169,957)",
+            "span": {
+              "offset": 446,
+              "length": 2
+            }
+          },
+          {
+            "content": "Wild West Wine",
+            "source": "D(1,237,932,416,932,416,958,237,958)",
+            "span": {
+              "offset": 458,
+              "length": 14
+            }
+          },
+          {
+            "content": "2,00",
+            "source": "D(1,672,933,724,933,724,958,672,958)",
+            "span": {
+              "offset": 482,
+              "length": 4
+            }
+          },
+          {
+            "content": "each",
+            "source": "D(1,769,934,827,934,827,958,769,958)",
+            "span": {
+              "offset": 496,
+              "length": 4
+            }
+          },
+          {
+            "content": "27,00",
+            "source": "D(1,950,932,1016,932,1016,958,950,958)",
+            "span": {
+              "offset": 510,
+              "length": 5
+            }
+          },
+          {
+            "content": "54,00",
+            "source": "D(1,1119,933,1185,933,1185,959,1119,959)",
+            "span": {
+              "offset": 525,
+              "length": 5
+            }
+          },
+          {
+            "content": "10%",
+            "source": "D(1,1280,932,1332,933,1331,959,1279,958)",
+            "span": {
+              "offset": 540,
+              "length": 3
+            }
+          },
+          {
+            "content": "59,40",
+            "source": "D(1,1435,934,1501,933,1501,958,1435,958)",
+            "span": {
+              "offset": 553,
+              "length": 5
+            }
+          },
+          {
+            "content": "2.",
+            "source": "D(1,169,991,191,992,191,1014,168,1014)",
+            "span": {
+              "offset": 579,
+              "length": 2
+            }
+          },
+          {
+            "content": "Press Wine 15L Fruit Cider Apple Crusher Juice Grape Stainless Maker Grapes New",
+            "source": "D(1,237,990,558,990,559,1073,237,1074)",
+            "span": {
+              "offset": 591,
+              "length": 79
+            }
+          },
+          {
+            "content": "2,00",
+            "source": "D(1,671,992,724,990,726,1015,672,1017)",
+            "span": {
+              "offset": 680,
+              "length": 4
+            }
+          },
+          {
+            "content": "each",
+            "source": "D(1,770,992,826,992,826,1017,770,1017)",
+            "span": {
+              "offset": 694,
+              "length": 4
+            }
+          },
+          {
+            "content": "279,00",
+            "source": "D(1,935,990,1016,990,1016,1016,935,1016)",
+            "span": {
+              "offset": 708,
+              "length": 6
+            }
+          },
+          {
+            "content": "558,00",
+            "source": "D(1,1105,991,1186,989,1186,1016,1106,1018)",
+            "span": {
+              "offset": 724,
+              "length": 6
+            }
+          },
+          {
+            "content": "10%",
+            "source": "D(1,1281,990,1331,990,1331,1015,1281,1015)",
+            "span": {
+              "offset": 740,
+              "length": 3
+            }
+          },
+          {
+            "content": "613,80",
+            "source": "D(1,1420,991,1500,992,1500,1017,1419,1016)",
+            "span": {
+              "offset": 753,
+              "length": 6
+            }
+          },
+          {
+            "content": "3.",
+            "source": "D(1,168,1106,193,1107,192,1131,167,1130)",
+            "span": {
+              "offset": 780,
+              "length": 2
+            }
+          },
+          {
+            "content": "Wine Rack Holder Iron Art Hanging Racks Glass Cup Stemware Shelf Mounted 2 Color",
+            "source": "D(1,237,1106,542,1106,542,1215,237,1215)",
+            "span": {
+              "offset": 792,
+              "length": 80
+            }
+          },
+          {
+            "content": "3,00",
+            "source": "D(1,672,1106,725,1106,724,1132,672,1132)",
+            "span": {
+              "offset": 882,
+              "length": 4
+            }
+          },
+          {
+            "content": "each",
+            "source": "D(1,769,1107,827,1107,827,1131,769,1131)",
+            "span": {
+              "offset": 896,
+              "length": 4
+            }
+          },
+          {
+            "content": "18,75",
+            "source": "D(1,951,1106,1016,1106,1016,1132,950,1132)",
+            "span": {
+              "offset": 910,
+              "length": 5
+            }
+          },
+          {
+            "content": "56,25",
+            "source": "D(1,1119,1106,1185,1106,1185,1132,1119,1132)",
+            "span": {
+              "offset": 925,
+              "length": 5
+            }
+          },
+          {
+            "content": "10%",
+            "source": "D(1,1281,1105,1331,1106,1331,1132,1280,1131)",
+            "span": {
+              "offset": 940,
+              "length": 3
+            }
+          },
+          {
+            "content": "61,87",
+            "source": "D(1,1434,1106,1500,1106,1500,1132,1434,1133)",
+            "span": {
+              "offset": 953,
+              "length": 5
+            }
+          },
+          {
+            "content": "4.",
+            "source": "D(1,169,1249,191,1249,191,1272,169,1272)",
+            "span": {
+              "offset": 979,
+              "length": 2
+            }
+          },
+          {
+            "content": "Rust Proof Three Rows Tool Wine Glass Holder Simple Iron Wire Home Hanging Rack",
+            "source": "D(1,237,1247,578,1247,578,1332,237,1332)",
+            "span": {
+              "offset": 991,
+              "length": 79
+            }
+          },
+          {
+            "content": "2,00",
+            "source": "D(1,672,1249,725,1249,725,1275,672,1275)",
+            "span": {
+              "offset": 1080,
+              "length": 4
+            }
+          },
+          {
+            "content": "each",
+            "source": "D(1,770,1249,826,1250,826,1274,769,1273)",
+            "span": {
+              "offset": 1094,
+              "length": 4
+            }
+          },
+          {
+            "content": "11,56",
+            "source": "D(1,951,1248,1015,1248,1015,1276,951,1276)",
+            "span": {
+              "offset": 1108,
+              "length": 5
+            }
+          },
+          {
+            "content": "23,12",
+            "source": "D(1,1119,1248,1185,1249,1185,1276,1118,1276)",
+            "span": {
+              "offset": 1123,
+              "length": 5
+            }
+          },
+          {
+            "content": "10%",
+            "source": "D(1,1281,1248,1331,1248,1331,1273,1281,1273)",
+            "span": {
+              "offset": 1138,
+              "length": 3
+            }
+          },
+          {
+            "content": "25,43",
+            "source": "D(1,1434,1250,1501,1250,1501,1275,1434,1275)",
+            "span": {
+              "offset": 1151,
+              "length": 5
+            }
+          },
+          {
+            "content": "5.",
+            "source": "D(1,169,1362,194,1365,191,1391,166,1388)",
+            "span": {
+              "offset": 1177,
+              "length": 2
+            }
+          },
+          {
+            "content": "VTG 1970s MCM Brown Steel Tube Wall or Desk Mounted 12-Wine Rack Bottle Holder",
+            "source": "D(1,237,1362,564,1362,564,1446,237,1446)",
+            "span": {
+              "offset": 1189,
+              "length": 78
+            }
+          },
+          {
+            "content": "1,00",
+            "source": "D(1,673,1363,724,1363,725,1388,674,1388)",
+            "span": {
+              "offset": 1277,
+              "length": 4
+            }
+          },
+          {
+            "content": "each",
+            "source": "D(1,769,1364,826,1364,826,1388,769,1388)",
+            "span": {
+              "offset": 1291,
+              "length": 4
+            }
+          },
+          {
+            "content": "34,00",
+            "source": "D(1,950,1362,1016,1362,1016,1390,950,1390)",
+            "span": {
+              "offset": 1305,
+              "length": 5
+            }
+          },
+          {
+            "content": "34,00",
+            "source": "D(1,1119,1362,1185,1363,1185,1390,1118,1390)",
+            "span": {
+              "offset": 1320,
+              "length": 5
+            }
+          },
+          {
+            "content": "10%",
+            "source": "D(1,1281,1362,1332,1364,1331,1389,1280,1388)",
+            "span": {
+              "offset": 1335,
+              "length": 3
+            }
+          },
+          {
+            "content": "37,40",
+            "source": "D(1,1434,1364,1501,1364,1501,1389,1434,1389)",
+            "span": {
+              "offset": 1348,
+              "length": 5
+            }
+          },
+          {
+            "role": "sectionHeading",
+            "content": "SUMMARY",
+            "source": "D(1,131,1510,327,1510,327,1545,131,1545)",
+            "span": {
+              "offset": 1376,
+              "length": 9
+            }
+          },
+          {
+            "content": "VAT [%]",
+            "source": "D(1,640,1594,744,1596,744,1623,639,1622)",
+            "span": {
+              "offset": 1405,
+              "length": 7
+            }
+          },
+          {
+            "content": "Net worth",
+            "source": "D(1,927,1596,1056,1596,1056,1621,927,1621)",
+            "span": {
+              "offset": 1422,
+              "length": 9
+            }
+          },
+          {
+            "content": "VAT",
+            "source": "D(1,1187,1596,1242,1596,1242,1621,1187,1621)",
+            "span": {
+              "offset": 1441,
+              "length": 3
+            }
+          },
+          {
+            "content": "Gross worth",
+            "source": "D(1,1349,1596,1504,1595,1504,1621,1350,1622)",
+            "span": {
+              "offset": 1454,
+              "length": 11
+            }
+          },
+          {
+            "content": "10%",
+            "source": "D(1,666,1653,719,1655,718,1682,665,1680)",
+            "span": {
+              "offset": 1486,
+              "length": 3
+            }
+          },
+          {
+            "content": "725,37",
+            "source": "D(1,976,1655,1056,1655,1056,1680,976,1680)",
+            "span": {
+              "offset": 1499,
+              "length": 6
+            }
+          },
+          {
+            "content": "72,54",
+            "source": "D(1,1175,1655,1241,1655,1241,1680,1175,1680)",
+            "span": {
+              "offset": 1515,
+              "length": 5
+            }
+          },
+          {
+            "content": "797,91",
+            "source": "D(1,1424,1655,1504,1655,1504,1680,1424,1680)",
+            "span": {
+              "offset": 1530,
+              "length": 6
+            }
+          },
+          {
+            "content": "Total",
+            "source": "D(1,500,1715,568,1715,568,1739,500,1739)",
+            "span": {
+              "offset": 1557,
+              "length": 5
+            }
+          },
+          {
+            "content": "$ 725,37",
+            "source": "D(1,943,1714,1055,1715,1055,1744,943,1742)",
+            "span": {
+              "offset": 1572,
+              "length": 8
+            }
+          },
+          {
+            "content": "$ 72,54",
+            "source": "D(1,1144,1715,1240,1715,1240,1742,1144,1742)",
+            "span": {
+              "offset": 1590,
+              "length": 7
+            }
+          },
+          {
+            "content": "$ 797,91",
+            "source": "D(1,1392,1714,1505,1715,1505,1743,1391,1742)",
+            "span": {
+              "offset": 1607,
+              "length": 8
+            }
+          }
+        ],
+        "sections": [
+          {
+            "span": {
+              "offset": 0,
+              "length": 1635
+            },
+            "elements": [
+              "/sections/1",
+              "/sections/2",
+              "/sections/3"
+            ]
+          },
+          {
+            "span": {
+              "offset": 0,
+              "length": 270
+            },
+            "elements": [
+              "/paragraphs/0",
+              "/paragraphs/1",
+              "/paragraphs/2",
+              "/paragraphs/3",
+              "/paragraphs/4",
+              "/paragraphs/5",
+              "/paragraphs/6",
+              "/paragraphs/7"
+            ]
+          },
+          {
+            "span": {
+              "offset": 273,
+              "length": 1100
+            },
+            "elements": [
+              "/paragraphs/8",
+              "/tables/0"
+            ]
+          },
+          {
+            "span": {
+              "offset": 1376,
+              "length": 259
+            },
+            "elements": [
+              "/paragraphs/57",
+              "/tables/1"
+            ]
+          }
+        ],
+        "tables": [
+          {
+            "rowCount": 6,
+            "columnCount": 8,
+            "cells": [
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "No.",
+                "source": "D(1,133,826,228,826,228,915,133,915)",
+                "span": {
+                  "offset": 300,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/9"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Description",
+                "source": "D(1,228,826,627,826,626,915,228,915)",
+                "span": {
+                  "offset": 313,
+                  "length": 11
+                },
+                "elements": [
+                  "/paragraphs/10"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Qty",
+                "source": "D(1,627,826,751,826,751,915,626,915)",
+                "span": {
+                  "offset": 334,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/11"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "UM",
+                "source": "D(1,751,826,873,826,873,915,751,915)",
+                "span": {
+                  "offset": 347,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/12"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 4,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Net price",
+                "source": "D(1,873,826,1041,826,1042,915,873,915)",
+                "span": {
+                  "offset": 359,
+                  "length": 9
+                },
+                "elements": [
+                  "/paragraphs/13"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 5,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Net worth",
+                "source": "D(1,1041,826,1213,826,1214,915,1042,915)",
+                "span": {
+                  "offset": 378,
+                  "length": 9
+                },
+                "elements": [
+                  "/paragraphs/14"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 6,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "VAT [%]",
+                "source": "D(1,1213,826,1378,826,1378,915,1214,915)",
+                "span": {
+                  "offset": 397,
+                  "length": 7
+                },
+                "elements": [
+                  "/paragraphs/15"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 7,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Gross worth",
+                "source": "D(1,1378,826,1519,826,1519,915,1378,915)",
+                "span": {
+                  "offset": 414,
+                  "length": 11
+                },
+                "elements": [
+                  "/paragraphs/16"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "1.",
+                "source": "D(1,133,915,228,915,228,975,132,975)",
+                "span": {
+                  "offset": 446,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/17"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Wild West Wine",
+                "source": "D(1,228,915,626,915,627,975,228,975)",
+                "span": {
+                  "offset": 458,
+                  "length": 14
+                },
+                "elements": [
+                  "/paragraphs/18"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "2,00",
+                "source": "D(1,626,915,751,915,751,974,627,975)",
+                "span": {
+                  "offset": 482,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/19"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "each",
+                "source": "D(1,751,915,873,915,874,974,751,974)",
+                "span": {
+                  "offset": 496,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/20"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 4,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "27,00",
+                "source": "D(1,873,915,1042,915,1042,974,874,974)",
+                "span": {
+                  "offset": 510,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/21"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 5,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "54,00",
+                "source": "D(1,1042,915,1214,915,1214,974,1042,974)",
+                "span": {
+                  "offset": 525,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/22"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 6,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "10%",
+                "source": "D(1,1214,915,1378,915,1379,974,1214,974)",
+                "span": {
+                  "offset": 540,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/23"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 7,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "59,40",
+                "source": "D(1,1378,915,1519,915,1519,975,1379,974)",
+                "span": {
+                  "offset": 553,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/24"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "2.",
+                "source": "D(1,132,975,228,975,228,1089,132,1089)",
+                "span": {
+                  "offset": 579,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/25"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Press Wine 15L Fruit Cider Apple Crusher Juice Grape Stainless Maker Grapes New",
+                "source": "D(1,228,975,627,975,627,1089,228,1089)",
+                "span": {
+                  "offset": 591,
+                  "length": 79
+                },
+                "elements": [
+                  "/paragraphs/26"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "2,00",
+                "source": "D(1,627,975,751,974,751,1089,627,1089)",
+                "span": {
+                  "offset": 680,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/27"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "each",
+                "source": "D(1,751,974,874,974,874,1089,751,1089)",
+                "span": {
+                  "offset": 694,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/28"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 4,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "279,00",
+                "source": "D(1,874,974,1042,974,1042,1089,874,1089)",
+                "span": {
+                  "offset": 708,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/29"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 5,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "558,00",
+                "source": "D(1,1042,974,1214,974,1215,1089,1042,1089)",
+                "span": {
+                  "offset": 724,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/30"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 6,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "10%",
+                "source": "D(1,1214,974,1379,974,1379,1089,1215,1089)",
+                "span": {
+                  "offset": 740,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/31"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 7,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "613,80",
+                "source": "D(1,1379,974,1519,975,1519,1090,1379,1089)",
+                "span": {
+                  "offset": 753,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/32"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "3.",
+                "source": "D(1,132,1089,228,1089,228,1231,132,1232)",
+                "span": {
+                  "offset": 780,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/33"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Wine Rack Holder Iron Art Hanging Racks Glass Cup Stemware Shelf Mounted 2 Color",
+                "source": "D(1,228,1089,627,1089,627,1231,228,1231)",
+                "span": {
+                  "offset": 792,
+                  "length": 80
+                },
+                "elements": [
+                  "/paragraphs/34"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "3,00",
+                "source": "D(1,627,1089,751,1089,752,1231,627,1231)",
+                "span": {
+                  "offset": 882,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/35"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "each",
+                "source": "D(1,751,1089,874,1089,874,1231,752,1231)",
+                "span": {
+                  "offset": 896,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/36"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 4,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "18,75",
+                "source": "D(1,874,1089,1042,1089,1043,1231,874,1231)",
+                "span": {
+                  "offset": 910,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/37"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 5,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "56,25",
+                "source": "D(1,1042,1089,1215,1089,1215,1231,1043,1231)",
+                "span": {
+                  "offset": 925,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/38"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 6,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "10%",
+                "source": "D(1,1215,1089,1379,1089,1379,1231,1215,1231)",
+                "span": {
+                  "offset": 940,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/39"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 7,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "61,87",
+                "source": "D(1,1379,1089,1519,1090,1519,1231,1379,1231)",
+                "span": {
+                  "offset": 953,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/40"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "4.",
+                "source": "D(1,132,1232,228,1231,228,1346,132,1346)",
+                "span": {
+                  "offset": 979,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/41"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Rust Proof Three Rows Tool Wine Glass Holder Simple Iron Wire Home Hanging Rack",
+                "source": "D(1,228,1231,627,1231,627,1345,228,1346)",
+                "span": {
+                  "offset": 991,
+                  "length": 79
+                },
+                "elements": [
+                  "/paragraphs/42"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "2,00",
+                "source": "D(1,627,1231,752,1231,752,1345,627,1345)",
+                "span": {
+                  "offset": 1080,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/43"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "each",
+                "source": "D(1,752,1231,874,1231,875,1345,752,1345)",
+                "span": {
+                  "offset": 1094,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/44"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 4,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "11,56",
+                "source": "D(1,874,1231,1043,1231,1043,1345,875,1345)",
+                "span": {
+                  "offset": 1108,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/45"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 5,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "23,12",
+                "source": "D(1,1043,1231,1215,1231,1216,1345,1043,1345)",
+                "span": {
+                  "offset": 1123,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/46"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 6,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "10%",
+                "source": "D(1,1215,1231,1379,1231,1380,1345,1216,1345)",
+                "span": {
+                  "offset": 1138,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/47"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 7,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "25,43",
+                "source": "D(1,1379,1231,1519,1231,1519,1345,1380,1345)",
+                "span": {
+                  "offset": 1151,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/48"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "5.",
+                "source": "D(1,132,1346,228,1346,228,1461,132,1462)",
+                "span": {
+                  "offset": 1177,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/49"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "VTG 1970s MCM Brown Steel Tube Wall or Desk Mounted 12-Wine Rack Bottle Holder",
+                "source": "D(1,228,1346,627,1345,627,1461,228,1461)",
+                "span": {
+                  "offset": 1189,
+                  "length": 78
+                },
+                "elements": [
+                  "/paragraphs/50"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "1,00",
+                "source": "D(1,627,1345,752,1345,752,1461,627,1461)",
+                "span": {
+                  "offset": 1277,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/51"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "each",
+                "source": "D(1,752,1345,875,1345,875,1461,752,1461)",
+                "span": {
+                  "offset": 1291,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/52"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 4,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "34,00",
+                "source": "D(1,875,1345,1043,1345,1044,1461,875,1461)",
+                "span": {
+                  "offset": 1305,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/53"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 5,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "34,00",
+                "source": "D(1,1043,1345,1216,1345,1217,1461,1044,1461)",
+                "span": {
+                  "offset": 1320,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/54"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 6,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "10%",
+                "source": "D(1,1216,1345,1380,1345,1380,1461,1217,1461)",
+                "span": {
+                  "offset": 1335,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/55"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 7,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "37,40",
+                "source": "D(1,1380,1345,1519,1345,1519,1461,1380,1461)",
+                "span": {
+                  "offset": 1348,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/56"
+                ]
+              }
+            ],
+            "source": "D(1,131,827,1518,825,1518,1463,131,1463)",
+            "span": {
+              "offset": 283,
+              "length": 1090
+            }
+          },
+          {
+            "rowCount": 3,
+            "columnCount": 4,
+            "cells": [
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "VAT [%]",
+                "source": "D(1,133,1578,834,1578,834,1640,133,1640)",
+                "span": {
+                  "offset": 1405,
+                  "length": 7
+                },
+                "elements": [
+                  "/paragraphs/58"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Net worth",
+                "source": "D(1,834,1578,1106,1578,1106,1640,834,1640)",
+                "span": {
+                  "offset": 1422,
+                  "length": 9
+                },
+                "elements": [
+                  "/paragraphs/59"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "VAT",
+                "source": "D(1,1106,1578,1303,1578,1303,1640,1106,1640)",
+                "span": {
+                  "offset": 1441,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/60"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Gross worth",
+                "source": "D(1,1303,1578,1519,1578,1519,1640,1303,1640)",
+                "span": {
+                  "offset": 1454,
+                  "length": 11
+                },
+                "elements": [
+                  "/paragraphs/61"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "10%",
+                "source": "D(1,133,1640,834,1640,834,1697,133,1698)",
+                "span": {
+                  "offset": 1486,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/62"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "725,37",
+                "source": "D(1,834,1640,1106,1640,1106,1697,834,1697)",
+                "span": {
+                  "offset": 1499,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/63"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "72,54",
+                "source": "D(1,1106,1640,1303,1640,1303,1697,1106,1697)",
+                "span": {
+                  "offset": 1515,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/64"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "797,91",
+                "source": "D(1,1303,1640,1519,1640,1519,1697,1303,1697)",
+                "span": {
+                  "offset": 1530,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/65"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Total",
+                "source": "D(1,133,1698,834,1697,834,1757,133,1757)",
+                "span": {
+                  "offset": 1557,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/66"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "$ 725,37",
+                "source": "D(1,834,1697,1106,1697,1106,1757,834,1757)",
+                "span": {
+                  "offset": 1572,
+                  "length": 8
+                },
+                "elements": [
+                  "/paragraphs/67"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "$ 72,54",
+                "source": "D(1,1106,1697,1303,1697,1304,1757,1106,1757)",
+                "span": {
+                  "offset": 1590,
+                  "length": 7
+                },
+                "elements": [
+                  "/paragraphs/68"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "$ 797,91",
+                "source": "D(1,1303,1697,1519,1697,1519,1757,1304,1757)",
+                "span": {
+                  "offset": 1607,
+                  "length": 8
+                },
+                "elements": [
+                  "/paragraphs/69"
+                ]
+              }
+            ],
+            "source": "D(1,129,1578,1518,1578,1518,1759,129,1760)",
+            "span": {
+              "offset": 1388,
+              "length": 247
+            }
+          }
+        ],
         "analyzerId": "prebuilt-invoice",
         "mimeType": "image/jpeg"
       }
     ]
   },
   "usage": {
-    "documentPagesMinimal": 1,
+    "documentPagesStandard": 1,
     "contextualizationTokens": 1000,
     "tokens": {
-      "gpt-4.1-input": 10263,
-      "gpt-4.1-output": 323,
-      "text-embedding-3-large": 4
+      "gpt-4.1-input": 13807,
+      "gpt-4.1-output": 2443,
+      "text-embedding-3-large": 651
     }
   },
   "_extracted": {
-    "field_values": {},
+    "field_values": {
+      "AmountDue": {
+        "Amount": 797.91,
+        "CurrencyCode": "USD"
+      },
+      "CountryRegion": "USA",
+      "CustomerAddress": "355 King Lake Suite 071 South Haleyshire, KY 55765",
+      "CustomerAddressRecipient": "Deleon, Davila and Allen",
+      "CustomerName": "Deleon, Davila and Allen",
+      "CustomerTaxId": "944-77-3882",
+      "InvoiceDate": "2016-10-29",
+      "InvoiceId": "89969473",
+      "LineItems": [
+        {
+          "Description": "Wild West Wine",
+          "Quantity": 2,
+          "QuantityUnit": "each",
+          "TaxAmount": {
+            "Amount": 37.4,
+            "CurrencyCode": "USD"
+          },
+          "TaxRate": 0.1,
+          "TotalAmount": {
+            "Amount": 59.4,
+            "CurrencyCode": "USD"
+          },
+          "UnitPrice": {
+            "Amount": 27,
+            "CurrencyCode": "USD"
+          }
+        },
+        {
+          "Description": "Press Wine 15L Fruit Cider Apple Crusher Juice Grape Stainless Maker Grapes New",
+          "Quantity": 2,
+          "QuantityUnit": "each",
+          "TaxAmount": {
+            "Amount": 558,
+            "CurrencyCode": "USD"
+          },
+          "TaxRate": 0.1,
+          "TotalAmount": {
+            "Amount": 613.8,
+            "CurrencyCode": "USD"
+          },
+          "UnitPrice": {
+            "Amount": 279,
+            "CurrencyCode": "USD"
+          }
+        },
+        {
+          "Description": "Wine Rack Holder Iron Art Hanging Racks Glass Cup Stemware Shelf Mounted 2 Color",
+          "Quantity": 3,
+          "QuantityUnit": "each",
+          "TaxAmount": {
+            "Amount": 725.37,
+            "CurrencyCode": "USD"
+          },
+          "TaxRate": 0.1,
+          "TotalAmount": {
+            "Amount": 61.87,
+            "CurrencyCode": "USD"
+          },
+          "UnitPrice": {
+            "Amount": 18.75,
+            "CurrencyCode": "USD"
+          }
+        },
+        {
+          "Description": "Rust Proof Three Rows Tool Wine Glass Holder Simple Iron Wire Home Hanging Rack",
+          "Quantity": 2,
+          "QuantityUnit": "each",
+          "TaxAmount": {
+            "Amount": 725.37,
+            "CurrencyCode": "USD"
+          },
+          "TaxRate": 0.1,
+          "TotalAmount": {
+            "Amount": 25.43,
+            "CurrencyCode": "USD"
+          },
+          "UnitPrice": {
+            "Amount": 11.56,
+            "CurrencyCode": "USD"
+          }
+        },
+        {
+          "Description": "VTG 1970s MCM Brown Steel Tube Wall or Desk Mounted 12-Wine Rack Bottle Holder",
+          "Quantity": 1,
+          "QuantityUnit": "each",
+          "TaxAmount": {
+            "Amount": 34,
+            "CurrencyCode": "USD"
+          },
+          "TaxRate": 0.1,
+          "TotalAmount": {
+            "Amount": 37.4,
+            "CurrencyCode": "USD"
+          },
+          "UnitPrice": {
+            "Amount": 34,
+            "CurrencyCode": "USD"
+          }
+        }
+      ],
+      "SubtotalAmount": {
+        "Amount": 725.37,
+        "CurrencyCode": "USD"
+      },
+      "TaxDetails": [
+        {
+          "Amount": {
+            "Amount": 72.54,
+            "CurrencyCode": "USD"
+          },
+          "Description": "VAT [%] 10%",
+          "NetAmount": {
+            "Amount": 725.37,
+            "CurrencyCode": "USD"
+          },
+          "Rate": 0.1
+        }
+      ],
+      "TotalAmount": {
+        "Amount": 797.91,
+        "CurrencyCode": "USD"
+      },
+      "TotalTaxAmount": {
+        "Amount": 72.54,
+        "CurrencyCode": "USD"
+      },
+      "VendorAddress": "3836 Moore Ports North Michael, MO 01844",
+      "VendorAddressRecipient": "Johnson-Martin",
+      "VendorName": "Johnson-Martin",
+      "VendorTaxId": "972-82-0713"
+    },
     "description": "[LLM error: 429 Client Error: Too Many Requests for url: https://aya-demo-ai.cognitiveservices.azure.com/openai/deployments/gpt-4.1/chat/completions?api-version=2024-12-01-preview]"
   }
 }

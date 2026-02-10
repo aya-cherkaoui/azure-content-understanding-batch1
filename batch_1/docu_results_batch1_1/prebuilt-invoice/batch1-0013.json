@@ -1,25 +1,35 @@
 {
-  "id": "40abf007-bd47-4a13-845f-c8179b03ea87",
+  "id": "9bcf0d49-c391-493a-b7b2-00d827e0a75f",
   "status": "Succeeded",
   "result": {
     "analyzerId": "prebuilt-invoice",
     "apiVersion": "2025-11-01",
-    "createdAt": "2026-02-10T13:37:31Z",
-    "stringEncoding": "utf16",
+    "createdAt": "2026-02-10T15:10:33Z",
+    "stringEncoding": "codePoint",
     "warnings": [],
     "contents": [
       {
         "path": "input1",
-        "markdown": "```text\n\n```\n",
+        "markdown": "Invoice no: 57986024\n\nDate of issue:\n\n10/17/2015\n\nSeller:\nSchmidt LLC\n5107 Christina Orchard Apt. 670\nWest Conniemouth, MD 43698\n\nTax Id: 959-72-2889\n\nIBAN: GB02QDFL22211399552517\n\nClient:\nAllen PLC\n157 Michaela Station\nMariafort, IL 29394\n\nTax Id: 907-74-8078\n\n\n# ITEMS\n\n\n<table>\n<tr>\n<th>No.</th>\n<th>Description</th>\n<th>Qty</th>\n<th>UM</th>\n<th>Net price</th>\n<th>Net worth</th>\n<th>VAT [%]</th>\n<th>Gross worth</th>\n</tr>\n<tr>\n<td>1.</td>\n<td>Straw Dogs : Thoughts on Humans and Other Animals, Paperback by Gray, John, L…</td>\n<td>5,00</td>\n<td>each</td>\n<td>13,99</td>\n<td>69,95</td>\n<td>10%</td>\n<td>76,95</td>\n</tr>\n<tr>\n<td>2.</td>\n<td>Quilts of Illusion</td>\n<td>5,00</td>\n<td>each</td>\n<td>5,79</td>\n<td>28,95</td>\n<td>10%</td>\n<td>31,85</td>\n</tr>\n<tr>\n<td>3.</td>\n<td>Selected poetry of W H Auden</td>\n<td>1,00</td>\n<td>each</td>\n<td>4,89</td>\n<td>4,89</td>\n<td>10%</td>\n<td>5,38</td>\n</tr>\n<tr>\n<td>4.</td>\n<td>In the Footsteps of the Russian Snowman (Paperback or Softback)</td>\n<td>4,00</td>\n<td>each</td>\n<td>25,87</td>\n<td>103,48</td>\n<td>10%</td>\n<td>113,83</td>\n</tr>\n<tr>\n<td>5.</td>\n<td>Steam Yacht Varuna, Brand New, Free shipping in the US</td>\n<td>1,00</td>\n<td>each</td>\n<td>8,45</td>\n<td>8,45</td>\n<td>10%</td>\n<td>9,29</td>\n</tr>\n</table>\n\n\n# SUMMARY\n\n\n<table>\n<tr>\n<th>VAT [%]</th>\n<th>Net worth</th>\n<th>VAT</th>\n<th>Gross worth</th>\n</tr>\n<tr>\n<td>10%</td>\n<td>215,72</td>\n<td>21,57</td>\n<td>237,29</td>\n</tr>\n<tr>\n<td>Total</td>\n<td>$ 215,72</td>\n<td>$ 21,57</td>\n<td>$ 237,29</td>\n</tr>\n</table>\n",
         "fields": {
           "AmountDue": {
             "type": "object",
             "valueObject": {
               "Amount": {
-                "type": "number"
+                "type": "number",
+                "valueNumber": 237.29,
+                "spans": [
+                  {
+                    "offset": 1500,
+                    "length": 8
+                  }
+                ],
+                "confidence": 0.757,
+                "source": "D(1,1392.0000,1604.0000,1505.0000,1604.0000,1505.0000,1631.0000,1392.0000,1631.0000)"
               },
               "CurrencyCode": {
-                "type": "string"
+                "type": "string",
+                "valueString": "USD"
               }
             }
           },
@@ -27,7 +37,8 @@
             "type": "object",
             "valueObject": {
               "Amount": {
-                "type": "number"
+                "type": "number",
+                "confidence": 0.959
               },
               "CurrencyCode": {
                 "type": "string"
@@ -35,87 +46,897 @@
             }
           },
           "BillingAddress": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.715
           },
           "BillingAddressRecipient": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.762
           },
           "CountryRegion": {
-            "type": "string"
+            "type": "string",
+            "valueString": "USA"
           },
           "CustomerAddress": {
-            "type": "string"
+            "type": "string",
+            "valueString": "157 Michaela Station Mariafort, IL 29394",
+            "spans": [
+              {
+                "offset": 199,
+                "length": 20
+              },
+              {
+                "offset": 220,
+                "length": 19
+              }
+            ],
+            "confidence": 0.829,
+            "source": "D(1,834.0000,542.0000,1128.0000,542.0000,1128.0000,572.0000,834.0000,572.0000);D(1,832.0000,577.0000,1100.0000,577.0000,1100.0000,608.0000,832.0000,608.0000)"
           },
           "CustomerAddressRecipient": {
-            "type": "string"
+            "type": "string",
+            "valueString": "Allen PLC",
+            "spans": [
+              {
+                "offset": 189,
+                "length": 9
+              }
+            ],
+            "confidence": 0.74,
+            "source": "D(1,831.0000,506.0000,966.0000,506.0000,966.0000,536.0000,831.0000,536.0000)"
           },
           "CustomerId": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.815
           },
           "CustomerName": {
-            "type": "string"
+            "type": "string",
+            "valueString": "Allen PLC",
+            "spans": [
+              {
+                "offset": 189,
+                "length": 9
+              }
+            ],
+            "confidence": 0.762,
+            "source": "D(1,831.0000,506.0000,966.0000,506.0000,966.0000,536.0000,831.0000,536.0000)"
           },
           "CustomerTaxId": {
-            "type": "string"
+            "type": "string",
+            "valueString": "907-74-8078",
+            "spans": [
+              {
+                "offset": 249,
+                "length": 11
+              }
+            ],
+            "confidence": 0.902,
+            "source": "D(1,937.0000,648.0000,1118.0000,648.0000,1118.0000,679.0000,937.0000,679.0000)"
           },
           "DueDate": {
-            "type": "date"
+            "type": "date",
+            "confidence": 0.793
           },
           "InvoiceDate": {
-            "type": "date"
+            "type": "date",
+            "valueDate": "2015-10-17",
+            "spans": [
+              {
+                "offset": 38,
+                "length": 10
+              }
+            ],
+            "confidence": 0.97,
+            "source": "D(1,802.0000,140.0000,979.0000,141.0000,979.0000,174.0000,802.0000,174.0000)"
           },
           "InvoiceId": {
-            "type": "string"
+            "type": "string",
+            "valueString": "57986024",
+            "spans": [
+              {
+                "offset": 12,
+                "length": 8
+              }
+            ],
+            "confidence": 0.952,
+            "source": "D(1,350.0000,72.0000,538.0000,72.0000,538.0000,107.0000,350.0000,107.0000)"
           },
           "LineItems": {
-            "type": "array"
+            "type": "array",
+            "valueArray": [
+              {
+                "type": "object",
+                "valueObject": {
+                  "Date": {
+                    "type": "date",
+                    "confidence": 0.823
+                  },
+                  "Description": {
+                    "type": "string",
+                    "valueString": "Straw Dogs : Thoughts on Humans and Other Animals, Paperback by Gray, John, L…",
+                    "spans": [
+                      {
+                        "offset": 448,
+                        "length": 24
+                      },
+                      {
+                        "offset": 473,
+                        "length": 25
+                      },
+                      {
+                        "offset": 499,
+                        "length": 27
+                      }
+                    ],
+                    "confidence": 0.498,
+                    "source": "D(1,238.0000,932.0000,528.0000,932.0000,528.0000,960.0000,238.0000,960.0000);D(1,238.0000,960.0000,553.0000,960.0000,553.0000,986.0000,238.0000,986.0000);D(1,239.0000,986.0000,562.0000,986.0000,562.0000,1017.0000,239.0000,1017.0000)"
+                  },
+                  "ProductCode": {
+                    "type": "string",
+                    "confidence": 0.902
+                  },
+                  "Quantity": {
+                    "type": "number",
+                    "valueNumber": 5,
+                    "spans": [
+                      {
+                        "offset": 536,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.903,
+                    "source": "D(1,672.0000,933.0000,725.0000,933.0000,725.0000,958.0000,672.0000,958.0000)"
+                  },
+                  "QuantityUnit": {
+                    "type": "string",
+                    "valueString": "each",
+                    "spans": [
+                      {
+                        "offset": 550,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.828,
+                    "source": "D(1,769.0000,934.0000,827.0000,934.0000,827.0000,958.0000,769.0000,958.0000)"
+                  },
+                  "TaxAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 1,
+                        "spans": [
+                          {
+                            "offset": 1173,
+                            "length": 4
+                          }
+                        ],
+                        "confidence": 0.071,
+                        "source": "D(1,674.0000,1280.0000,725.0000,1280.0000,725.0000,1306.0000,674.0000,1305.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "TaxRate": {
+                    "type": "number",
+                    "valueNumber": 0.1,
+                    "spans": [
+                      {
+                        "offset": 594,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.864,
+                    "source": "D(1,1279.0000,933.0000,1332.0000,933.0000,1332.0000,958.0000,1279.0000,958.0000)"
+                  },
+                  "TotalAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 76.95,
+                        "spans": [
+                          {
+                            "offset": 607,
+                            "length": 5
+                          }
+                        ],
+                        "confidence": 0.872,
+                        "source": "D(1,1435.0000,934.0000,1501.0000,933.0000,1501.0000,958.0000,1435.0000,958.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "UnitPrice": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 13.99,
+                        "spans": [
+                          {
+                            "offset": 564,
+                            "length": 5
+                          }
+                        ],
+                        "confidence": 0.903,
+                        "source": "D(1,951.0000,932.0000,1015.0000,932.0000,1015.0000,958.0000,951.0000,959.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "Date": {
+                    "type": "date",
+                    "confidence": 0.823
+                  },
+                  "Description": {
+                    "type": "string",
+                    "valueString": "Quilts of Illusion",
+                    "spans": [
+                      {
+                        "offset": 645,
+                        "length": 18
+                      }
+                    ],
+                    "confidence": 0.733,
+                    "source": "D(1,238.0000,1046.0000,419.0000,1046.0000,419.0000,1073.0000,238.0000,1073.0000)"
+                  },
+                  "ProductCode": {
+                    "type": "string",
+                    "confidence": 0.902
+                  },
+                  "Quantity": {
+                    "type": "number",
+                    "valueNumber": 5,
+                    "spans": [
+                      {
+                        "offset": 673,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.903,
+                    "source": "D(1,672.0000,1047.0000,724.0000,1047.0000,724.0000,1072.0000,672.0000,1072.0000)"
+                  },
+                  "QuantityUnit": {
+                    "type": "string",
+                    "valueString": "each",
+                    "spans": [
+                      {
+                        "offset": 687,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.826,
+                    "source": "D(1,770.0000,1048.0000,827.0000,1048.0000,827.0000,1072.0000,770.0000,1072.0000)"
+                  },
+                  "TaxAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 237.29,
+                        "spans": [
+                          {
+                            "offset": 1502,
+                            "length": 6
+                          }
+                        ],
+                        "confidence": 0.036,
+                        "source": "D(1,1416.0000,1604.0000,1505.0000,1604.0000,1505.0000,1631.0000,1416.0000,1631.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "TaxRate": {
+                    "type": "number",
+                    "valueNumber": 0.1,
+                    "spans": [
+                      {
+                        "offset": 730,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.87,
+                    "source": "D(1,1281.0000,1047.0000,1331.0000,1047.0000,1331.0000,1072.0000,1281.0000,1072.0000)"
+                  },
+                  "TotalAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 31.85,
+                        "spans": [
+                          {
+                            "offset": 743,
+                            "length": 5
+                          }
+                        ],
+                        "confidence": 0.918,
+                        "source": "D(1,1434.0000,1046.0000,1501.0000,1047.0000,1501.0000,1072.0000,1434.0000,1072.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "UnitPrice": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 5.79,
+                        "spans": [
+                          {
+                            "offset": 701,
+                            "length": 4
+                          }
+                        ],
+                        "confidence": 0.963,
+                        "source": "D(1,964.0000,1047.0000,1016.0000,1047.0000,1016.0000,1072.0000,964.0000,1072.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "Date": {
+                    "type": "date",
+                    "confidence": 0.823
+                  },
+                  "Description": {
+                    "type": "string",
+                    "valueString": "Selected poetry of W H Auden",
+                    "spans": [
+                      {
+                        "offset": 781,
+                        "length": 28
+                      }
+                    ],
+                    "confidence": 0.51,
+                    "source": "D(1,237.0000,1105.0000,577.0000,1105.0000,577.0000,1134.0000,237.0000,1134.0000)"
+                  },
+                  "ProductCode": {
+                    "type": "string",
+                    "confidence": 0.902
+                  },
+                  "Quantity": {
+                    "type": "number",
+                    "valueNumber": 1,
+                    "spans": [
+                      {
+                        "offset": 819,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.903,
+                    "source": "D(1,674.0000,1106.0000,725.0000,1107.0000,725.0000,1132.0000,674.0000,1132.0000)"
+                  },
+                  "QuantityUnit": {
+                    "type": "string",
+                    "valueString": "each",
+                    "spans": [
+                      {
+                        "offset": 833,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.832,
+                    "source": "D(1,769.0000,1107.0000,827.0000,1107.0000,827.0000,1131.0000,769.0000,1131.0000)"
+                  },
+                  "TaxAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 10,
+                        "spans": [
+                          {
+                            "offset": 1229,
+                            "length": 2
+                          },
+                          {
+                            "offset": 1242,
+                            "length": 4
+                          }
+                        ],
+                        "confidence": 0.019,
+                        "source": "D(1,1280.0000,1279.0000,1308.0000,1279.0000,1308.0000,1304.0000,1280.0000,1304.0000);D(1,1448.0000,1280.0000,1501.0000,1280.0000,1501.0000,1306.0000,1448.0000,1306.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "TaxRate": {
+                    "type": "number",
+                    "valueNumber": 0.1,
+                    "spans": [
+                      {
+                        "offset": 875,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.833,
+                    "source": "D(1,1281.0171,1105.0744,1331.4628,1106.0086,1330.9829,1131.9256,1280.5372,1130.9914)"
+                  },
+                  "TotalAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 5.38,
+                        "spans": [
+                          {
+                            "offset": 888,
+                            "length": 4
+                          }
+                        ],
+                        "confidence": 0.897,
+                        "source": "D(1,1449.0000,1107.0000,1501.0000,1106.0000,1501.0000,1132.0000,1449.0000,1132.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "UnitPrice": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 4.89,
+                        "spans": [
+                          {
+                            "offset": 847,
+                            "length": 4
+                          }
+                        ],
+                        "confidence": 0.903,
+                        "source": "D(1,964.0000,1106.0000,1016.0000,1107.0000,1016.0000,1132.0000,964.0000,1132.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "Date": {
+                    "type": "date",
+                    "confidence": 0.823
+                  },
+                  "Description": {
+                    "type": "string",
+                    "valueString": "In the Footsteps of the Russian Snowman (Paperback or Softback)",
+                    "spans": [
+                      {
+                        "offset": 925,
+                        "length": 31
+                      },
+                      {
+                        "offset": 957,
+                        "length": 21
+                      },
+                      {
+                        "offset": 979,
+                        "length": 9
+                      }
+                    ],
+                    "confidence": 0.519,
+                    "source": "D(1,237.0000,1165.0000,586.0000,1165.0000,586.0000,1192.0000,237.0000,1192.0000);D(1,238.0194,1191.6892,513.2353,1194.0020,512.9890,1223.3108,237.7731,1220.9981);D(1,238.0000,1221.0000,346.0000,1221.0000,346.0000,1248.0000,238.0000,1248.0000)"
+                  },
+                  "ProductCode": {
+                    "type": "string",
+                    "confidence": 0.902
+                  },
+                  "Quantity": {
+                    "type": "number",
+                    "valueNumber": 4,
+                    "spans": [
+                      {
+                        "offset": 998,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.903,
+                    "source": "D(1,672.0000,1165.0000,724.0000,1164.0000,724.0000,1189.0000,672.0000,1190.0000)"
+                  },
+                  "QuantityUnit": {
+                    "type": "string",
+                    "valueString": "each",
+                    "spans": [
+                      {
+                        "offset": 1012,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.823,
+                    "source": "D(1,770.0000,1167.0000,826.0000,1167.0000,826.0000,1190.0000,770.0000,1190.0000)"
+                  },
+                  "TaxAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 10113.83,
+                        "spans": [
+                          {
+                            "offset": 1057,
+                            "length": 2
+                          },
+                          {
+                            "offset": 1070,
+                            "length": 6
+                          },
+                          {
+                            "offset": 1097,
+                            "length": 1
+                          }
+                        ],
+                        "confidence": 0.008,
+                        "source": "D(1,1281.0000,1165.0000,1308.0000,1165.0000,1308.0000,1190.0000,1281.0000,1190.0000);D(1,1421.0000,1165.0000,1500.0000,1164.0000,1500.0000,1190.0000,1421.0000,1191.0000);D(1,169.0000,1280.0000,182.0000,1280.0000,182.0000,1303.0000,169.0000,1303.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "TaxRate": {
+                    "type": "number",
+                    "valueNumber": 0.1,
+                    "spans": [
+                      {
+                        "offset": 1057,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.883,
+                    "source": "D(1,1281.0577,1163.7299,1332.1340,1166.0515,1330.9423,1192.2701,1279.8660,1189.9485)"
+                  },
+                  "TotalAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 113.83,
+                        "spans": [
+                          {
+                            "offset": 1070,
+                            "length": 6
+                          }
+                        ],
+                        "confidence": 0.902,
+                        "source": "D(1,1421.0000,1165.0000,1500.0000,1164.0000,1500.0000,1190.0000,1421.0000,1191.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "UnitPrice": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 25.87,
+                        "spans": [
+                          {
+                            "offset": 1026,
+                            "length": 5
+                          }
+                        ],
+                        "confidence": 0.916,
+                        "source": "D(1,950.0000,1165.0000,1016.0000,1165.0000,1016.0000,1191.0000,950.0000,1191.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "Date": {
+                    "type": "date",
+                    "confidence": 0.823
+                  },
+                  "Description": {
+                    "type": "string",
+                    "valueString": "Steam Yacht Varuna, Brand New, Free shipping in the US",
+                    "spans": [
+                      {
+                        "offset": 1109,
+                        "length": 25
+                      },
+                      {
+                        "offset": 1135,
+                        "length": 28
+                      }
+                    ],
+                    "confidence": 0.469,
+                    "source": "D(1,238.0000,1279.0000,549.0000,1279.0000,549.0000,1306.0000,238.0000,1306.0000);D(1,238.0000,1307.0000,563.0000,1307.0000,563.0000,1337.0000,238.0000,1337.0000)"
+                  },
+                  "ProductCode": {
+                    "type": "string",
+                    "confidence": 0.902
+                  },
+                  "Quantity": {
+                    "type": "number",
+                    "valueNumber": 1,
+                    "spans": [
+                      {
+                        "offset": 1173,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.903,
+                    "source": "D(1,674.0000,1280.0000,725.0000,1280.0000,725.0000,1306.0000,674.0000,1305.0000)"
+                  },
+                  "QuantityUnit": {
+                    "type": "string",
+                    "valueString": "each",
+                    "spans": [
+                      {
+                        "offset": 1187,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.825,
+                    "source": "D(1,769.0000,1281.0000,826.0000,1281.0000,826.0000,1304.0000,769.0000,1305.0000)"
+                  },
+                  "TaxAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 103.48,
+                        "spans": [
+                          {
+                            "offset": 1041,
+                            "length": 6
+                          }
+                        ],
+                        "confidence": 0.183,
+                        "source": "D(1,1106.0000,1165.0000,1186.0000,1164.0000,1186.0000,1189.0000,1106.0000,1191.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "TaxRate": {
+                    "type": "number",
+                    "valueNumber": 0.1,
+                    "spans": [
+                      {
+                        "offset": 1229,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.833,
+                    "source": "D(1,1280.0000,1279.0000,1331.0000,1279.0000,1331.0000,1304.0000,1280.0000,1304.0000)"
+                  },
+                  "TotalAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 9.29,
+                        "spans": [
+                          {
+                            "offset": 1242,
+                            "length": 4
+                          }
+                        ],
+                        "confidence": 0.883,
+                        "source": "D(1,1448.0000,1280.0000,1501.0000,1280.0000,1501.0000,1306.0000,1448.0000,1306.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "UnitPrice": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 8.45,
+                        "spans": [
+                          {
+                            "offset": 1201,
+                            "length": 4
+                          }
+                        ],
+                        "confidence": 0.903,
+                        "source": "D(1,964.0000,1279.0000,1016.0000,1280.0000,1016.0000,1305.0000,964.0000,1304.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
           },
           "PaymentTerm": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.816
           },
           "PONumber": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.746
           },
           "RemittanceAddress": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.905
           },
           "RemittanceAddressRecipient": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.814
           },
           "ServiceAddress": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.782
           },
           "ServiceAddressRecipient": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.82
           },
           "ShippingAddress": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.775
           },
           "ShippingAddressRecipient": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.81
           },
           "SubtotalAmount": {
             "type": "object",
             "valueObject": {
               "Amount": {
-                "type": "number"
+                "type": "number",
+                "valueNumber": 215.72
               },
               "CurrencyCode": {
-                "type": "string"
+                "type": "string",
+                "valueString": "USD"
               }
             }
           },
           "TaxDetails": {
-            "type": "array"
+            "type": "array",
+            "valueArray": [
+              {
+                "type": "object",
+                "valueObject": {
+                  "Amount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 21.57,
+                        "spans": [
+                          {
+                            "offset": 1408,
+                            "length": 5
+                          }
+                        ],
+                        "confidence": 0.902,
+                        "source": "D(1,1173.0000,1544.0000,1240.0000,1544.0000,1240.0000,1570.0000,1173.0000,1570.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "Description": {
+                    "type": "string",
+                    "valueString": "VAT",
+                    "spans": [
+                      {
+                        "offset": 1334,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.383,
+                    "source": "D(1,1187.0000,1485.0000,1242.0000,1486.0000,1242.0000,1511.0000,1187.0000,1510.0000)"
+                  },
+                  "NetAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 215.72,
+                        "spans": [
+                          {
+                            "offset": 1392,
+                            "length": 6
+                          }
+                        ],
+                        "confidence": 0.885,
+                        "source": "D(1,975.0000,1543.0000,1056.0000,1544.0000,1056.0000,1570.0000,975.0000,1568.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "Rate": {
+                    "type": "number",
+                    "valueNumber": 0.1,
+                    "spans": [
+                      {
+                        "offset": 1379,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.873,
+                    "source": "D(1,667.0000,1544.0000,719.0000,1544.0000,719.0000,1569.0000,667.0000,1569.0000)"
+                  }
+                }
+              }
+            ]
           },
           "TotalAmount": {
             "type": "object",
             "valueObject": {
               "Amount": {
-                "type": "number"
+                "type": "number",
+                "valueNumber": 237.29,
+                "spans": [
+                  {
+                    "offset": 1423,
+                    "length": 6
+                  }
+                ],
+                "confidence": 0.712,
+                "source": "D(1,1423.0000,1544.0000,1504.0000,1545.0000,1504.0000,1571.0000,1423.0000,1569.0000)"
               },
               "CurrencyCode": {
-                "type": "string"
+                "type": "string",
+                "valueString": "USD"
               }
             }
           },
@@ -123,7 +944,8 @@
             "type": "object",
             "valueObject": {
               "Amount": {
-                "type": "number"
+                "type": "number",
+                "confidence": 0.934
               },
               "CurrencyCode": {
                 "type": "string"
@@ -134,45 +956,4113 @@
             "type": "object",
             "valueObject": {
               "Amount": {
-                "type": "number"
+                "type": "number",
+                "valueNumber": 21.57
               },
               "CurrencyCode": {
-                "type": "string"
+                "type": "string",
+                "valueString": "USD"
               }
             }
           },
           "VendorAddress": {
-            "type": "string"
+            "type": "string",
+            "valueString": "5107 Christina Orchard Apt. 670 West Conniemouth, MD 43698",
+            "spans": [
+              {
+                "offset": 70,
+                "length": 31
+              },
+              {
+                "offset": 102,
+                "length": 26
+              }
+            ],
+            "confidence": 0.707,
+            "source": "D(1,140.0000,541.0000,594.0000,541.0000,594.0000,574.0000,140.0000,574.0000);D(1,139.0000,577.0000,569.0000,577.0000,569.0000,610.0000,139.0000,610.0000)"
           },
           "VendorAddressRecipient": {
-            "type": "string"
+            "type": "string",
+            "valueString": "Schmidt LLC",
+            "spans": [
+              {
+                "offset": 58,
+                "length": 11
+              }
+            ],
+            "confidence": 0.74,
+            "source": "D(1,140.0000,505.0000,317.0000,505.0000,317.0000,536.0000,140.0000,536.0000)"
           },
           "VendorName": {
-            "type": "string"
+            "type": "string",
+            "valueString": "Schmidt LLC",
+            "spans": [
+              {
+                "offset": 58,
+                "length": 11
+              }
+            ],
+            "confidence": 0.718,
+            "source": "D(1,140.0000,505.0000,317.0000,505.0000,317.0000,536.0000,140.0000,536.0000)"
           },
           "VendorTaxId": {
-            "type": "string"
+            "type": "string",
+            "valueString": "959-72-2889",
+            "spans": [
+              {
+                "offset": 138,
+                "length": 11
+              }
+            ],
+            "confidence": 0.901,
+            "source": "D(1,244.0000,649.0000,424.0000,648.0000,424.0000,678.0000,244.0000,679.0000)"
           }
         },
         "kind": "document",
         "startPageNumber": 1,
         "endPageNumber": 1,
+        "unit": "pixel",
+        "pages": [
+          {
+            "pageNumber": 1,
+            "angle": 0,
+            "width": 1654,
+            "height": 2339,
+            "spans": [
+              {
+                "offset": 0,
+                "length": 1529
+              }
+            ],
+            "words": [
+              {
+                "content": "Invoice",
+                "span": {
+                  "offset": 0,
+                  "length": 7
+                },
+                "confidence": 0.944,
+                "source": "D(1,131,72,264,72,264,107,131,108)"
+              },
+              {
+                "content": "no",
+                "span": {
+                  "offset": 8,
+                  "length": 2
+                },
+                "confidence": 0.997,
+                "source": "D(1,280,72,323,72,323,107,280,107)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 10,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,327,72,335,72,335,107,327,107)"
+              },
+              {
+                "content": "57986024",
+                "span": {
+                  "offset": 12,
+                  "length": 8
+                },
+                "confidence": 0.997,
+                "source": "D(1,350,72,538,72,538,107,350,107)"
+              },
+              {
+                "content": "Date",
+                "span": {
+                  "offset": 22,
+                  "length": 4
+                },
+                "confidence": 0.998,
+                "source": "D(1,131,141,205,141,205,173,131,174)"
+              },
+              {
+                "content": "of",
+                "span": {
+                  "offset": 27,
+                  "length": 2
+                },
+                "confidence": 0.998,
+                "source": "D(1,215,141,247,141,247,173,215,173)"
+              },
+              {
+                "content": "issue",
+                "span": {
+                  "offset": 30,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,254,141,332,142,332,174,255,173)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 35,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,334,142,345,142,345,174,334,174)"
+              },
+              {
+                "content": "10/17/2015",
+                "span": {
+                  "offset": 38,
+                  "length": 10
+                },
+                "confidence": 0.983,
+                "source": "D(1,802,140,979,141,979,174,802,174)"
+              },
+              {
+                "content": "Seller",
+                "span": {
+                  "offset": 50,
+                  "length": 6
+                },
+                "confidence": 0.997,
+                "source": "D(1,131,443,241,443,241,476,131,476)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 56,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,242,443,255,443,255,476,242,476)"
+              },
+              {
+                "content": "Schmidt",
+                "span": {
+                  "offset": 58,
+                  "length": 7
+                },
+                "confidence": 0.988,
+                "source": "D(1,140,506,254,505,254,536,140,536)"
+              },
+              {
+                "content": "LLC",
+                "span": {
+                  "offset": 66,
+                  "length": 3
+                },
+                "confidence": 0.994,
+                "source": "D(1,264,505,317,505,317,536,264,536)"
+              },
+              {
+                "content": "5107",
+                "span": {
+                  "offset": 70,
+                  "length": 4
+                },
+                "confidence": 0.992,
+                "source": "D(1,140,542,209,541,209,573,140,573)"
+              },
+              {
+                "content": "Christina",
+                "span": {
+                  "offset": 75,
+                  "length": 9
+                },
+                "confidence": 0.992,
+                "source": "D(1,219,541,341,541,341,574,219,573)"
+              },
+              {
+                "content": "Orchard",
+                "span": {
+                  "offset": 85,
+                  "length": 7
+                },
+                "confidence": 0.996,
+                "source": "D(1,352,541,464,541,464,574,352,574)"
+              },
+              {
+                "content": "Apt",
+                "span": {
+                  "offset": 93,
+                  "length": 3
+                },
+                "confidence": 0.994,
+                "source": "D(1,473,541,523,541,523,574,473,574)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 96,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,523,541,529,541,529,574,523,574)"
+              },
+              {
+                "content": "670",
+                "span": {
+                  "offset": 98,
+                  "length": 3
+                },
+                "confidence": 0.997,
+                "source": "D(1,540,541,594,541,594,574,540,574)"
+              },
+              {
+                "content": "West",
+                "span": {
+                  "offset": 102,
+                  "length": 4
+                },
+                "confidence": 0.998,
+                "source": "D(1,139,578,210,578,210,609,139,609)"
+              },
+              {
+                "content": "Conniemouth",
+                "span": {
+                  "offset": 107,
+                  "length": 11
+                },
+                "confidence": 0.996,
+                "source": "D(1,219,578,404,578,404,610,219,609)"
+              },
+              {
+                "content": ",",
+                "span": {
+                  "offset": 118,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,406,578,413,578,413,610,407,610)"
+              },
+              {
+                "content": "MD",
+                "span": {
+                  "offset": 120,
+                  "length": 2
+                },
+                "confidence": 0.982,
+                "source": "D(1,424,578,468,577,468,609,424,610)"
+              },
+              {
+                "content": "43698",
+                "span": {
+                  "offset": 123,
+                  "length": 5
+                },
+                "confidence": 0.983,
+                "source": "D(1,476,577,569,577,569,609,476,609)"
+              },
+              {
+                "content": "Tax",
+                "span": {
+                  "offset": 130,
+                  "length": 3
+                },
+                "confidence": 0.977,
+                "source": "D(1,138,648,190,648,190,679,139,679)"
+              },
+              {
+                "content": "Id",
+                "span": {
+                  "offset": 134,
+                  "length": 2
+                },
+                "confidence": 0.753,
+                "source": "D(1,201,648,223,649,223,679,201,679)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 136,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,227,649,232,649,232,679,227,679)"
+              },
+              {
+                "content": "959-72-2889",
+                "span": {
+                  "offset": 138,
+                  "length": 11
+                },
+                "confidence": 0.984,
+                "source": "D(1,244,649,424,648,424,678,244,679)"
+              },
+              {
+                "content": "IBAN",
+                "span": {
+                  "offset": 151,
+                  "length": 4
+                },
+                "confidence": 0.994,
+                "source": "D(1,140,683,205,683,205,715,140,715)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 155,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,208,683,213,683,213,715,208,715)"
+              },
+              {
+                "content": "GB02QDFL22211399552517",
+                "span": {
+                  "offset": 157,
+                  "length": 22
+                },
+                "confidence": 0.993,
+                "source": "D(1,227,683,625,683,625,715,227,715)"
+              },
+              {
+                "content": "Client",
+                "span": {
+                  "offset": 181,
+                  "length": 6
+                },
+                "confidence": 0.996,
+                "source": "D(1,824,442,935,442,935,477,824,477)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 187,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,937,442,950,443,950,477,937,477)"
+              },
+              {
+                "content": "Allen",
+                "span": {
+                  "offset": 189,
+                  "length": 5
+                },
+                "confidence": 0.981,
+                "source": "D(1,831,506,900,506,900,536,831,536)"
+              },
+              {
+                "content": "PLC",
+                "span": {
+                  "offset": 195,
+                  "length": 3
+                },
+                "confidence": 0.993,
+                "source": "D(1,911,506,966,506,966,536,911,536)"
+              },
+              {
+                "content": "157",
+                "span": {
+                  "offset": 199,
+                  "length": 3
+                },
+                "confidence": 0.986,
+                "source": "D(1,834,542,884,542,884,572,834,572)"
+              },
+              {
+                "content": "Michaela",
+                "span": {
+                  "offset": 203,
+                  "length": 8
+                },
+                "confidence": 0.989,
+                "source": "D(1,896,542,1015,542,1015,572,896,572)"
+              },
+              {
+                "content": "Station",
+                "span": {
+                  "offset": 212,
+                  "length": 7
+                },
+                "confidence": 0.994,
+                "source": "D(1,1026,542,1128,542,1128,572,1026,572)"
+              },
+              {
+                "content": "Mariafort",
+                "span": {
+                  "offset": 220,
+                  "length": 9
+                },
+                "confidence": 0.997,
+                "source": "D(1,832,577,959,577,959,608,832,608)"
+              },
+              {
+                "content": ",",
+                "span": {
+                  "offset": 229,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,960,577,967,577,967,608,960,608)"
+              },
+              {
+                "content": "IL",
+                "span": {
+                  "offset": 231,
+                  "length": 2
+                },
+                "confidence": 0.944,
+                "source": "D(1,978,577,1001,577,1001,608,978,608)"
+              },
+              {
+                "content": "29394",
+                "span": {
+                  "offset": 234,
+                  "length": 5
+                },
+                "confidence": 0.996,
+                "source": "D(1,1010,577,1100,577,1100,608,1010,608)"
+              },
+              {
+                "content": "Tax",
+                "span": {
+                  "offset": 241,
+                  "length": 3
+                },
+                "confidence": 0.988,
+                "source": "D(1,830,648,883,648,883,679,830,679)"
+              },
+              {
+                "content": "Id",
+                "span": {
+                  "offset": 245,
+                  "length": 2
+                },
+                "confidence": 0.751,
+                "source": "D(1,893,648,916,648,916,679,893,679)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 247,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,920,648,926,648,926,679,920,679)"
+              },
+              {
+                "content": "907-74-8078",
+                "span": {
+                  "offset": 249,
+                  "length": 11
+                },
+                "confidence": 0.989,
+                "source": "D(1,937,648,1118,648,1118,679,937,679)"
+              },
+              {
+                "content": "ITEMS",
+                "span": {
+                  "offset": 265,
+                  "length": 5
+                },
+                "confidence": 0.981,
+                "source": "D(1,131,759,248,759,248,792,131,792)"
+              },
+              {
+                "content": "No",
+                "span": {
+                  "offset": 290,
+                  "length": 2
+                },
+                "confidence": 0.936,
+                "source": "D(1,158,848,192,847,192,870,158,870)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 292,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,193,847,202,847,202,870,193,870)"
+              },
+              {
+                "content": "Description",
+                "span": {
+                  "offset": 303,
+                  "length": 11
+                },
+                "confidence": 0.997,
+                "source": "D(1,237,846,385,847,385,874,237,872)"
+              },
+              {
+                "content": "Qty",
+                "span": {
+                  "offset": 324,
+                  "length": 3
+                },
+                "confidence": 0.993,
+                "source": "D(1,678,845,726,848,726,874,678,871)"
+              },
+              {
+                "content": "UM",
+                "span": {
+                  "offset": 337,
+                  "length": 2
+                },
+                "confidence": 0.982,
+                "source": "D(1,776,846,820,846,820,870,776,870)"
+              },
+              {
+                "content": "Net",
+                "span": {
+                  "offset": 349,
+                  "length": 3
+                },
+                "confidence": 0.998,
+                "source": "D(1,899,845,945,845,945,872,899,872)"
+              },
+              {
+                "content": "price",
+                "span": {
+                  "offset": 353,
+                  "length": 5
+                },
+                "confidence": 0.998,
+                "source": "D(1,953,845,1018,846,1018,873,953,872)"
+              },
+              {
+                "content": "Net",
+                "span": {
+                  "offset": 368,
+                  "length": 3
+                },
+                "confidence": 0.998,
+                "source": "D(1,1057,843,1103,845,1103,872,1057,869)"
+              },
+              {
+                "content": "worth",
+                "span": {
+                  "offset": 372,
+                  "length": 5
+                },
+                "confidence": 0.996,
+                "source": "D(1,1110,845,1186,845,1186,871,1110,872)"
+              },
+              {
+                "content": "VAT",
+                "span": {
+                  "offset": 387,
+                  "length": 3
+                },
+                "confidence": 0.993,
+                "source": "D(1,1228,844,1280,845,1280,872,1228,871)"
+              },
+              {
+                "content": "[",
+                "span": {
+                  "offset": 391,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1287,845,1296,845,1296,873,1287,873)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 392,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1296,845,1319,845,1319,872,1296,873)"
+              },
+              {
+                "content": "]",
+                "span": {
+                  "offset": 393,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,1319,845,1332,845,1332,872,1319,872)"
+              },
+              {
+                "content": "Gross",
+                "span": {
+                  "offset": 404,
+                  "length": 5
+                },
+                "confidence": 0.998,
+                "source": "D(1,1428,848,1501,848,1501,871,1428,870)"
+              },
+              {
+                "content": "worth",
+                "span": {
+                  "offset": 410,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,1425,875,1501,875,1501,897,1425,897)"
+              },
+              {
+                "content": "1",
+                "span": {
+                  "offset": 436,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,169,933,182,934,182,957,169,956)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 437,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,185,934,192,933,192,957,185,957)"
+              },
+              {
+                "content": "Straw",
+                "span": {
+                  "offset": 448,
+                  "length": 5
+                },
+                "confidence": 0.995,
+                "source": "D(1,238,933,301,932,301,960,238,960)"
+              },
+              {
+                "content": "Dogs",
+                "span": {
+                  "offset": 454,
+                  "length": 4
+                },
+                "confidence": 0.993,
+                "source": "D(1,309,932,365,932,365,959,309,960)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 459,
+                  "length": 1
+                },
+                "confidence": 0.997,
+                "source": "D(1,372,932,378,932,378,959,372,959)"
+              },
+              {
+                "content": "Thoughts",
+                "span": {
+                  "offset": 461,
+                  "length": 8
+                },
+                "confidence": 0.993,
+                "source": "D(1,385,932,491,932,491,959,385,959)"
+              },
+              {
+                "content": "on",
+                "span": {
+                  "offset": 470,
+                  "length": 2
+                },
+                "confidence": 0.997,
+                "source": "D(1,498,932,528,932,528,959,498,959)"
+              },
+              {
+                "content": "Humans",
+                "span": {
+                  "offset": 473,
+                  "length": 6
+                },
+                "confidence": 0.994,
+                "source": "D(1,238,960,330,960,330,986,238,986)"
+              },
+              {
+                "content": "and",
+                "span": {
+                  "offset": 480,
+                  "length": 3
+                },
+                "confidence": 0.998,
+                "source": "D(1,337,960,379,960,379,986,338,986)"
+              },
+              {
+                "content": "Other",
+                "span": {
+                  "offset": 484,
+                  "length": 5
+                },
+                "confidence": 0.991,
+                "source": "D(1,387,960,450,960,450,986,387,986)"
+              },
+              {
+                "content": "Animals",
+                "span": {
+                  "offset": 490,
+                  "length": 7
+                },
+                "confidence": 0.996,
+                "source": "D(1,456,960,546,960,546,986,456,986)"
+              },
+              {
+                "content": ",",
+                "span": {
+                  "offset": 497,
+                  "length": 1
+                },
+                "confidence": 0.996,
+                "source": "D(1,546,960,553,960,553,986,546,986)"
+              },
+              {
+                "content": "Paperback",
+                "span": {
+                  "offset": 499,
+                  "length": 9
+                },
+                "confidence": 0.983,
+                "source": "D(1,239,988,357,987,357,1016,239,1017)"
+              },
+              {
+                "content": "by",
+                "span": {
+                  "offset": 509,
+                  "length": 2
+                },
+                "confidence": 0.989,
+                "source": "D(1,364,987,390,987,390,1016,364,1016)"
+              },
+              {
+                "content": "Gray",
+                "span": {
+                  "offset": 512,
+                  "length": 4
+                },
+                "confidence": 0.989,
+                "source": "D(1,397,987,450,986,450,1016,397,1016)"
+              },
+              {
+                "content": ",",
+                "span": {
+                  "offset": 516,
+                  "length": 1
+                },
+                "confidence": 0.997,
+                "source": "D(1,451,986,456,986,456,1016,451,1016)"
+              },
+              {
+                "content": "John",
+                "span": {
+                  "offset": 518,
+                  "length": 4
+                },
+                "confidence": 0.981,
+                "source": "D(1,463,986,512,986,512,1016,463,1016)"
+              },
+              {
+                "content": ",",
+                "span": {
+                  "offset": 522,
+                  "length": 1
+                },
+                "confidence": 0.997,
+                "source": "D(1,514,986,519,986,519,1015,514,1016)"
+              },
+              {
+                "content": "L",
+                "span": {
+                  "offset": 524,
+                  "length": 1
+                },
+                "confidence": 0.982,
+                "source": "D(1,528,986,542,986,542,1015,528,1015)"
+              },
+              {
+                "content": "…",
+                "span": {
+                  "offset": 525,
+                  "length": 1
+                },
+                "confidence": 0.476,
+                "source": "D(1,538,986,562,986,562,1015,538,1015)"
+              },
+              {
+                "content": "5,00",
+                "span": {
+                  "offset": 536,
+                  "length": 4
+                },
+                "confidence": 0.993,
+                "source": "D(1,672,933,725,933,725,958,672,958)"
+              },
+              {
+                "content": "each",
+                "span": {
+                  "offset": 550,
+                  "length": 4
+                },
+                "confidence": 0.999,
+                "source": "D(1,769,934,827,934,827,958,769,958)"
+              },
+              {
+                "content": "13,99",
+                "span": {
+                  "offset": 564,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,951,932,1015,932,1015,958,951,959)"
+              },
+              {
+                "content": "69,95",
+                "span": {
+                  "offset": 579,
+                  "length": 5
+                },
+                "confidence": 0.991,
+                "source": "D(1,1119,932,1185,932,1185,958,1119,958)"
+              },
+              {
+                "content": "10",
+                "span": {
+                  "offset": 594,
+                  "length": 2
+                },
+                "confidence": 0.999,
+                "source": "D(1,1279,933,1308,933,1308,958,1279,958)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 596,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1308,933,1332,933,1332,958,1308,958)"
+              },
+              {
+                "content": "76,95",
+                "span": {
+                  "offset": 607,
+                  "length": 5
+                },
+                "confidence": 0.993,
+                "source": "D(1,1435,934,1501,933,1501,958,1435,958)"
+              },
+              {
+                "content": "2",
+                "span": {
+                  "offset": 633,
+                  "length": 1
+                },
+                "confidence": 0.978,
+                "source": "D(1,169,1049,183,1048,183,1071,169,1072)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 634,
+                  "length": 1
+                },
+                "confidence": 0.996,
+                "source": "D(1,184,1048,191,1048,191,1071,184,1071)"
+              },
+              {
+                "content": "Quilts",
+                "span": {
+                  "offset": 645,
+                  "length": 6
+                },
+                "confidence": 0.994,
+                "source": "D(1,238,1046,303,1046,303,1073,238,1073)"
+              },
+              {
+                "content": "of",
+                "span": {
+                  "offset": 652,
+                  "length": 2
+                },
+                "confidence": 0.997,
+                "source": "D(1,310,1046,333,1046,333,1073,310,1073)"
+              },
+              {
+                "content": "Illusion",
+                "span": {
+                  "offset": 655,
+                  "length": 8
+                },
+                "confidence": 0.7,
+                "source": "D(1,340,1046,419,1046,419,1072,340,1073)"
+              },
+              {
+                "content": "5,00",
+                "span": {
+                  "offset": 673,
+                  "length": 4
+                },
+                "confidence": 0.993,
+                "source": "D(1,672,1047,724,1047,724,1072,672,1072)"
+              },
+              {
+                "content": "each",
+                "span": {
+                  "offset": 687,
+                  "length": 4
+                },
+                "confidence": 0.999,
+                "source": "D(1,770,1048,827,1048,827,1072,770,1072)"
+              },
+              {
+                "content": "5,79",
+                "span": {
+                  "offset": 701,
+                  "length": 4
+                },
+                "confidence": 0.878,
+                "source": "D(1,964,1047,1016,1047,1016,1072,964,1072)"
+              },
+              {
+                "content": "28,95",
+                "span": {
+                  "offset": 715,
+                  "length": 5
+                },
+                "confidence": 0.991,
+                "source": "D(1,1119,1047,1185,1047,1185,1073,1119,1073)"
+              },
+              {
+                "content": "10",
+                "span": {
+                  "offset": 730,
+                  "length": 2
+                },
+                "confidence": 0.999,
+                "source": "D(1,1281,1047,1308,1047,1308,1072,1281,1072)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 732,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1309,1047,1331,1047,1331,1072,1309,1072)"
+              },
+              {
+                "content": "31,85",
+                "span": {
+                  "offset": 743,
+                  "length": 5
+                },
+                "confidence": 0.995,
+                "source": "D(1,1434,1046,1501,1047,1501,1072,1434,1072)"
+              },
+              {
+                "content": "3",
+                "span": {
+                  "offset": 769,
+                  "length": 1
+                },
+                "confidence": 0.997,
+                "source": "D(1,169,1108,183,1107,183,1130,169,1130)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 770,
+                  "length": 1
+                },
+                "confidence": 0.997,
+                "source": "D(1,185,1107,192,1107,192,1130,185,1130)"
+              },
+              {
+                "content": "Selected",
+                "span": {
+                  "offset": 781,
+                  "length": 8
+                },
+                "confidence": 0.993,
+                "source": "D(1,237,1105,333,1105,333,1134,237,1134)"
+              },
+              {
+                "content": "poetry",
+                "span": {
+                  "offset": 790,
+                  "length": 6
+                },
+                "confidence": 0.995,
+                "source": "D(1,343,1105,416,1105,416,1134,343,1134)"
+              },
+              {
+                "content": "of",
+                "span": {
+                  "offset": 797,
+                  "length": 2
+                },
+                "confidence": 0.987,
+                "source": "D(1,422,1105,445,1105,445,1134,422,1134)"
+              },
+              {
+                "content": "W",
+                "span": {
+                  "offset": 800,
+                  "length": 1
+                },
+                "confidence": 0.945,
+                "source": "D(1,450,1105,472,1105,472,1133,450,1134)"
+              },
+              {
+                "content": "H",
+                "span": {
+                  "offset": 802,
+                  "length": 1
+                },
+                "confidence": 0.956,
+                "source": "D(1,480,1105,495,1105,495,1133,480,1133)"
+              },
+              {
+                "content": "Auden",
+                "span": {
+                  "offset": 804,
+                  "length": 5
+                },
+                "confidence": 0.981,
+                "source": "D(1,502,1105,577,1105,577,1133,502,1133)"
+              },
+              {
+                "content": "1,00",
+                "span": {
+                  "offset": 819,
+                  "length": 4
+                },
+                "confidence": 0.995,
+                "source": "D(1,674,1106,725,1107,725,1132,674,1132)"
+              },
+              {
+                "content": "each",
+                "span": {
+                  "offset": 833,
+                  "length": 4
+                },
+                "confidence": 0.999,
+                "source": "D(1,769,1107,827,1107,827,1131,769,1131)"
+              },
+              {
+                "content": "4,89",
+                "span": {
+                  "offset": 847,
+                  "length": 4
+                },
+                "confidence": 0.983,
+                "source": "D(1,964,1106,1016,1107,1016,1132,964,1132)"
+              },
+              {
+                "content": "4,89",
+                "span": {
+                  "offset": 861,
+                  "length": 4
+                },
+                "confidence": 0.987,
+                "source": "D(1,1134,1106,1185,1107,1185,1132,1134,1132)"
+              },
+              {
+                "content": "10",
+                "span": {
+                  "offset": 875,
+                  "length": 2
+                },
+                "confidence": 0.999,
+                "source": "D(1,1281,1106,1308,1107,1308,1131,1281,1131)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 877,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1308,1107,1331,1106,1331,1131,1308,1131)"
+              },
+              {
+                "content": "5,38",
+                "span": {
+                  "offset": 888,
+                  "length": 4
+                },
+                "confidence": 0.995,
+                "source": "D(1,1449,1107,1501,1106,1501,1132,1449,1132)"
+              },
+              {
+                "content": "4",
+                "span": {
+                  "offset": 913,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,169,1167,183,1166,183,1188,169,1189)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 914,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,184,1166,191,1166,191,1189,184,1188)"
+              },
+              {
+                "content": "In",
+                "span": {
+                  "offset": 925,
+                  "length": 2
+                },
+                "confidence": 0.973,
+                "source": "D(1,237,1165,258,1165,258,1192,237,1192)"
+              },
+              {
+                "content": "the",
+                "span": {
+                  "offset": 928,
+                  "length": 3
+                },
+                "confidence": 0.994,
+                "source": "D(1,266,1165,302,1165,302,1192,266,1192)"
+              },
+              {
+                "content": "Footsteps",
+                "span": {
+                  "offset": 932,
+                  "length": 9
+                },
+                "confidence": 0.996,
+                "source": "D(1,311,1165,418,1165,418,1192,311,1192)"
+              },
+              {
+                "content": "of",
+                "span": {
+                  "offset": 942,
+                  "length": 2
+                },
+                "confidence": 0.986,
+                "source": "D(1,426,1165,449,1165,449,1192,426,1192)"
+              },
+              {
+                "content": "the",
+                "span": {
+                  "offset": 945,
+                  "length": 3
+                },
+                "confidence": 0.956,
+                "source": "D(1,454,1165,490,1165,490,1192,454,1192)"
+              },
+              {
+                "content": "Russian",
+                "span": {
+                  "offset": 949,
+                  "length": 7
+                },
+                "confidence": 0.994,
+                "source": "D(1,498,1165,586,1165,586,1192,498,1192)"
+              },
+              {
+                "content": "Snowman",
+                "span": {
+                  "offset": 957,
+                  "length": 7
+                },
+                "confidence": 0.996,
+                "source": "D(1,238,1194,345,1193,345,1220,238,1221)"
+              },
+              {
+                "content": "(",
+                "span": {
+                  "offset": 965,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,354,1193,361,1193,361,1220,354,1220)"
+              },
+              {
+                "content": "Paperback",
+                "span": {
+                  "offset": 966,
+                  "length": 9
+                },
+                "confidence": 0.994,
+                "source": "D(1,363,1193,482,1194,482,1221,363,1220)"
+              },
+              {
+                "content": "or",
+                "span": {
+                  "offset": 976,
+                  "length": 2
+                },
+                "confidence": 0.998,
+                "source": "D(1,488,1194,513,1194,513,1222,488,1221)"
+              },
+              {
+                "content": "Softback",
+                "span": {
+                  "offset": 979,
+                  "length": 8
+                },
+                "confidence": 0.995,
+                "source": "D(1,238,1221,336,1221,336,1248,238,1248)"
+              },
+              {
+                "content": ")",
+                "span": {
+                  "offset": 987,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,336,1221,346,1221,346,1248,336,1248)"
+              },
+              {
+                "content": "4,00",
+                "span": {
+                  "offset": 998,
+                  "length": 4
+                },
+                "confidence": 0.995,
+                "source": "D(1,672,1165,724,1164,724,1189,672,1190)"
+              },
+              {
+                "content": "each",
+                "span": {
+                  "offset": 1012,
+                  "length": 4
+                },
+                "confidence": 0.998,
+                "source": "D(1,770,1167,826,1167,826,1190,770,1190)"
+              },
+              {
+                "content": "25,87",
+                "span": {
+                  "offset": 1026,
+                  "length": 5
+                },
+                "confidence": 0.962,
+                "source": "D(1,950,1165,1016,1165,1016,1191,950,1191)"
+              },
+              {
+                "content": "103,48",
+                "span": {
+                  "offset": 1041,
+                  "length": 6
+                },
+                "confidence": 0.993,
+                "source": "D(1,1106,1165,1186,1164,1186,1189,1106,1191)"
+              },
+              {
+                "content": "10",
+                "span": {
+                  "offset": 1057,
+                  "length": 2
+                },
+                "confidence": 0.999,
+                "source": "D(1,1281,1165,1308,1165,1308,1190,1281,1190)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 1059,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1309,1165,1331,1166,1331,1191,1309,1190)"
+              },
+              {
+                "content": "113,83",
+                "span": {
+                  "offset": 1070,
+                  "length": 6
+                },
+                "confidence": 0.995,
+                "source": "D(1,1421,1165,1500,1164,1500,1190,1421,1191)"
+              },
+              {
+                "content": "5",
+                "span": {
+                  "offset": 1097,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,169,1280,182,1280,182,1303,169,1303)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 1098,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,185,1280,192,1280,192,1303,185,1303)"
+              },
+              {
+                "content": "Steam",
+                "span": {
+                  "offset": 1109,
+                  "length": 5
+                },
+                "confidence": 0.994,
+                "source": "D(1,238,1279,308,1279,308,1306,238,1306)"
+              },
+              {
+                "content": "Yacht",
+                "span": {
+                  "offset": 1115,
+                  "length": 5
+                },
+                "confidence": 0.99,
+                "source": "D(1,316,1279,379,1279,379,1306,316,1306)"
+              },
+              {
+                "content": "Varuna",
+                "span": {
+                  "offset": 1121,
+                  "length": 6
+                },
+                "confidence": 0.994,
+                "source": "D(1,386,1279,466,1279,466,1306,386,1306)"
+              },
+              {
+                "content": ",",
+                "span": {
+                  "offset": 1127,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,467,1279,472,1279,472,1306,467,1306)"
+              },
+              {
+                "content": "Brand",
+                "span": {
+                  "offset": 1129,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,482,1279,549,1279,549,1306,482,1306)"
+              },
+              {
+                "content": "New",
+                "span": {
+                  "offset": 1135,
+                  "length": 3
+                },
+                "confidence": 0.996,
+                "source": "D(1,238,1309,285,1308,285,1337,238,1337)"
+              },
+              {
+                "content": ",",
+                "span": {
+                  "offset": 1138,
+                  "length": 1
+                },
+                "confidence": 0.997,
+                "source": "D(1,287,1308,292,1308,292,1337,287,1337)"
+              },
+              {
+                "content": "Free",
+                "span": {
+                  "offset": 1140,
+                  "length": 4
+                },
+                "confidence": 0.998,
+                "source": "D(1,302,1308,349,1307,349,1336,302,1337)"
+              },
+              {
+                "content": "shipping",
+                "span": {
+                  "offset": 1145,
+                  "length": 8
+                },
+                "confidence": 0.995,
+                "source": "D(1,358,1307,451,1307,451,1336,358,1336)"
+              },
+              {
+                "content": "in",
+                "span": {
+                  "offset": 1154,
+                  "length": 2
+                },
+                "confidence": 0.997,
+                "source": "D(1,460,1307,478,1307,478,1336,460,1336)"
+              },
+              {
+                "content": "the",
+                "span": {
+                  "offset": 1157,
+                  "length": 3
+                },
+                "confidence": 0.996,
+                "source": "D(1,486,1307,522,1307,522,1336,486,1336)"
+              },
+              {
+                "content": "US",
+                "span": {
+                  "offset": 1161,
+                  "length": 2
+                },
+                "confidence": 0.982,
+                "source": "D(1,530,1307,563,1308,563,1336,530,1336)"
+              },
+              {
+                "content": "1,00",
+                "span": {
+                  "offset": 1173,
+                  "length": 4
+                },
+                "confidence": 0.995,
+                "source": "D(1,674,1280,725,1280,725,1306,674,1305)"
+              },
+              {
+                "content": "each",
+                "span": {
+                  "offset": 1187,
+                  "length": 4
+                },
+                "confidence": 0.998,
+                "source": "D(1,769,1281,826,1281,826,1304,769,1305)"
+              },
+              {
+                "content": "8,45",
+                "span": {
+                  "offset": 1201,
+                  "length": 4
+                },
+                "confidence": 0.988,
+                "source": "D(1,964,1279,1016,1280,1016,1305,964,1304)"
+              },
+              {
+                "content": "8,45",
+                "span": {
+                  "offset": 1215,
+                  "length": 4
+                },
+                "confidence": 0.988,
+                "source": "D(1,1134,1280,1186,1280,1186,1306,1134,1305)"
+              },
+              {
+                "content": "10",
+                "span": {
+                  "offset": 1229,
+                  "length": 2
+                },
+                "confidence": 0.999,
+                "source": "D(1,1280,1279,1308,1279,1308,1304,1280,1304)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 1231,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1308,1279,1331,1279,1331,1304,1308,1304)"
+              },
+              {
+                "content": "9,29",
+                "span": {
+                  "offset": 1242,
+                  "length": 4
+                },
+                "confidence": 0.986,
+                "source": "D(1,1448,1280,1501,1280,1501,1306,1448,1306)"
+              },
+              {
+                "content": "SUMMARY",
+                "span": {
+                  "offset": 1271,
+                  "length": 7
+                },
+                "confidence": 0.991,
+                "source": "D(1,132,1399,327,1398,327,1432,132,1433)"
+              },
+              {
+                "content": "VAT",
+                "span": {
+                  "offset": 1298,
+                  "length": 3
+                },
+                "confidence": 0.995,
+                "source": "D(1,640,1485,692,1484,692,1512,640,1513)"
+              },
+              {
+                "content": "[",
+                "span": {
+                  "offset": 1302,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,699,1484,708,1485,708,1512,699,1512)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 1303,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,708,1485,731,1485,731,1513,708,1512)"
+              },
+              {
+                "content": "]",
+                "span": {
+                  "offset": 1304,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,731,1485,744,1485,744,1513,731,1513)"
+              },
+              {
+                "content": "Net",
+                "span": {
+                  "offset": 1315,
+                  "length": 3
+                },
+                "confidence": 0.996,
+                "source": "D(1,927,1485,973,1485,973,1510,927,1510)"
+              },
+              {
+                "content": "worth",
+                "span": {
+                  "offset": 1319,
+                  "length": 5
+                },
+                "confidence": 0.994,
+                "source": "D(1,980,1485,1055,1486,1055,1511,980,1510)"
+              },
+              {
+                "content": "VAT",
+                "span": {
+                  "offset": 1334,
+                  "length": 3
+                },
+                "confidence": 0.938,
+                "source": "D(1,1187,1485,1242,1486,1242,1511,1187,1510)"
+              },
+              {
+                "content": "Gross",
+                "span": {
+                  "offset": 1347,
+                  "length": 5
+                },
+                "confidence": 0.999,
+                "source": "D(1,1350,1486,1421,1485,1421,1510,1350,1511)"
+              },
+              {
+                "content": "worth",
+                "span": {
+                  "offset": 1353,
+                  "length": 5
+                },
+                "confidence": 0.998,
+                "source": "D(1,1429,1485,1504,1486,1504,1511,1429,1510)"
+              },
+              {
+                "content": "10",
+                "span": {
+                  "offset": 1379,
+                  "length": 2
+                },
+                "confidence": 0.999,
+                "source": "D(1,667,1544,695,1544,695,1569,667,1569)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 1381,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,695,1544,719,1544,719,1569,695,1569)"
+              },
+              {
+                "content": "215,72",
+                "span": {
+                  "offset": 1392,
+                  "length": 6
+                },
+                "confidence": 0.986,
+                "source": "D(1,975,1543,1056,1544,1056,1570,975,1568)"
+              },
+              {
+                "content": "21,57",
+                "span": {
+                  "offset": 1408,
+                  "length": 5
+                },
+                "confidence": 0.994,
+                "source": "D(1,1173,1544,1240,1544,1240,1570,1173,1570)"
+              },
+              {
+                "content": "237,29",
+                "span": {
+                  "offset": 1423,
+                  "length": 6
+                },
+                "confidence": 0.995,
+                "source": "D(1,1423,1544,1504,1545,1504,1571,1423,1569)"
+              },
+              {
+                "content": "Total",
+                "span": {
+                  "offset": 1450,
+                  "length": 5
+                },
+                "confidence": 0.998,
+                "source": "D(1,501,1605,569,1605,569,1630,501,1630)"
+              },
+              {
+                "content": "$",
+                "span": {
+                  "offset": 1465,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,943,1605,958,1605,958,1630,943,1630)"
+              },
+              {
+                "content": "215,72",
+                "span": {
+                  "offset": 1467,
+                  "length": 6
+                },
+                "confidence": 0.963,
+                "source": "D(1,967,1604,1056,1604,1056,1631,967,1631)"
+              },
+              {
+                "content": "$",
+                "span": {
+                  "offset": 1483,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1144,1605,1158,1605,1158,1630,1144,1630)"
+              },
+              {
+                "content": "21,57",
+                "span": {
+                  "offset": 1485,
+                  "length": 5
+                },
+                "confidence": 0.982,
+                "source": "D(1,1168,1605,1240,1604,1240,1630,1168,1630)"
+              },
+              {
+                "content": "$",
+                "span": {
+                  "offset": 1500,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1392,1604,1406,1604,1406,1631,1392,1631)"
+              },
+              {
+                "content": "237,29",
+                "span": {
+                  "offset": 1502,
+                  "length": 6
+                },
+                "confidence": 0.976,
+                "source": "D(1,1416,1604,1505,1604,1505,1631,1416,1631)"
+              }
+            ],
+            "lines": [
+              {
+                "content": "Invoice no: 57986024",
+                "source": "D(1,130,72,538,71,538,107,131,108)",
+                "span": {
+                  "offset": 0,
+                  "length": 20
+                }
+              },
+              {
+                "content": "Date of issue:",
+                "source": "D(1,131,141,345,141,345,174,131,174)",
+                "span": {
+                  "offset": 22,
+                  "length": 14
+                }
+              },
+              {
+                "content": "10/17/2015",
+                "source": "D(1,802,140,979,140,979,174,802,174)",
+                "span": {
+                  "offset": 38,
+                  "length": 10
+                }
+              },
+              {
+                "content": "Seller:",
+                "source": "D(1,131,443,255,443,255,476,131,476)",
+                "span": {
+                  "offset": 50,
+                  "length": 7
+                }
+              },
+              {
+                "content": "Schmidt LLC",
+                "source": "D(1,140,506,317,505,317,536,140,536)",
+                "span": {
+                  "offset": 58,
+                  "length": 11
+                }
+              },
+              {
+                "content": "5107 Christina Orchard Apt. 670",
+                "source": "D(1,140,541,594,541,594,574,140,574)",
+                "span": {
+                  "offset": 70,
+                  "length": 31
+                }
+              },
+              {
+                "content": "West Conniemouth, MD 43698",
+                "source": "D(1,139,578,569,577,569,609,139,610)",
+                "span": {
+                  "offset": 102,
+                  "length": 26
+                }
+              },
+              {
+                "content": "Tax Id: 959-72-2889",
+                "source": "D(1,138,648,424,648,424,679,138,679)",
+                "span": {
+                  "offset": 130,
+                  "length": 19
+                }
+              },
+              {
+                "content": "IBAN: GB02QDFL22211399552517",
+                "source": "D(1,140,683,625,683,626,715,140,715)",
+                "span": {
+                  "offset": 151,
+                  "length": 28
+                }
+              },
+              {
+                "content": "Client:",
+                "source": "D(1,824,442,950,442,950,477,824,477)",
+                "span": {
+                  "offset": 181,
+                  "length": 7
+                }
+              },
+              {
+                "content": "Allen PLC",
+                "source": "D(1,831,506,966,506,966,536,831,536)",
+                "span": {
+                  "offset": 189,
+                  "length": 9
+                }
+              },
+              {
+                "content": "157 Michaela Station",
+                "source": "D(1,834,542,1128,542,1128,572,834,572)",
+                "span": {
+                  "offset": 199,
+                  "length": 20
+                }
+              },
+              {
+                "content": "Mariafort, IL 29394",
+                "source": "D(1,832,577,1100,577,1100,608,832,608)",
+                "span": {
+                  "offset": 220,
+                  "length": 19
+                }
+              },
+              {
+                "content": "Tax Id: 907-74-8078",
+                "source": "D(1,830,648,1118,648,1118,679,830,679)",
+                "span": {
+                  "offset": 241,
+                  "length": 19
+                }
+              },
+              {
+                "content": "ITEMS",
+                "source": "D(1,131,759,248,759,248,792,131,792)",
+                "span": {
+                  "offset": 265,
+                  "length": 5
+                }
+              },
+              {
+                "content": "No.",
+                "source": "D(1,158,847,202,847,202,870,158,870)",
+                "span": {
+                  "offset": 290,
+                  "length": 3
+                }
+              },
+              {
+                "content": "Description",
+                "source": "D(1,237,845,385,846,385,874,237,872)",
+                "span": {
+                  "offset": 303,
+                  "length": 11
+                }
+              },
+              {
+                "content": "Qty",
+                "source": "D(1,678,845,727,848,726,874,678,872)",
+                "span": {
+                  "offset": 324,
+                  "length": 3
+                }
+              },
+              {
+                "content": "UM",
+                "source": "D(1,776,846,820,845,820,870,776,870)",
+                "span": {
+                  "offset": 337,
+                  "length": 2
+                }
+              },
+              {
+                "content": "Net price",
+                "source": "D(1,899,845,1018,846,1018,873,899,872)",
+                "span": {
+                  "offset": 349,
+                  "length": 9
+                }
+              },
+              {
+                "content": "Net worth",
+                "source": "D(1,1057,843,1187,845,1186,872,1057,871)",
+                "span": {
+                  "offset": 368,
+                  "length": 9
+                }
+              },
+              {
+                "content": "VAT [%]",
+                "source": "D(1,1228,844,1332,845,1332,873,1227,872)",
+                "span": {
+                  "offset": 387,
+                  "length": 7
+                }
+              },
+              {
+                "content": "Gross",
+                "source": "D(1,1428,846,1502,847,1501,871,1428,870)",
+                "span": {
+                  "offset": 404,
+                  "length": 5
+                }
+              },
+              {
+                "content": "worth",
+                "source": "D(1,1425,874,1501,874,1501,897,1425,897)",
+                "span": {
+                  "offset": 410,
+                  "length": 5
+                }
+              },
+              {
+                "content": "1.",
+                "source": "D(1,169,933,192,933,192,957,169,957)",
+                "span": {
+                  "offset": 436,
+                  "length": 2
+                }
+              },
+              {
+                "content": "Straw Dogs : Thoughts on",
+                "source": "D(1,238,933,528,932,528,959,238,960)",
+                "span": {
+                  "offset": 448,
+                  "length": 24
+                }
+              },
+              {
+                "content": "Humans and Other Animals,",
+                "source": "D(1,238,960,553,960,553,986,238,986)",
+                "span": {
+                  "offset": 473,
+                  "length": 25
+                }
+              },
+              {
+                "content": "Paperback by Gray, John, L…",
+                "source": "D(1,239,987,562,986,562,1016,239,1017)",
+                "span": {
+                  "offset": 499,
+                  "length": 27
+                }
+              },
+              {
+                "content": "5,00",
+                "source": "D(1,672,933,725,933,725,958,672,958)",
+                "span": {
+                  "offset": 536,
+                  "length": 4
+                }
+              },
+              {
+                "content": "each",
+                "source": "D(1,769,934,827,934,827,958,769,958)",
+                "span": {
+                  "offset": 550,
+                  "length": 4
+                }
+              },
+              {
+                "content": "13,99",
+                "source": "D(1,951,932,1015,932,1015,959,951,959)",
+                "span": {
+                  "offset": 564,
+                  "length": 5
+                }
+              },
+              {
+                "content": "69,95",
+                "source": "D(1,1119,932,1185,932,1185,958,1119,958)",
+                "span": {
+                  "offset": 579,
+                  "length": 5
+                }
+              },
+              {
+                "content": "10%",
+                "source": "D(1,1279,932,1332,933,1332,958,1279,958)",
+                "span": {
+                  "offset": 594,
+                  "length": 3
+                }
+              },
+              {
+                "content": "76,95",
+                "source": "D(1,1435,933,1501,933,1501,958,1435,958)",
+                "span": {
+                  "offset": 607,
+                  "length": 5
+                }
+              },
+              {
+                "content": "2.",
+                "source": "D(1,169,1048,191,1048,191,1072,169,1072)",
+                "span": {
+                  "offset": 633,
+                  "length": 2
+                }
+              },
+              {
+                "content": "Quilts of Illusion",
+                "source": "D(1,238,1046,419,1046,419,1074,238,1074)",
+                "span": {
+                  "offset": 645,
+                  "length": 18
+                }
+              },
+              {
+                "content": "5,00",
+                "source": "D(1,672,1047,724,1047,724,1072,672,1072)",
+                "span": {
+                  "offset": 673,
+                  "length": 4
+                }
+              },
+              {
+                "content": "each",
+                "source": "D(1,770,1048,827,1048,827,1072,770,1072)",
+                "span": {
+                  "offset": 687,
+                  "length": 4
+                }
+              },
+              {
+                "content": "5,79",
+                "source": "D(1,964,1047,1016,1047,1016,1072,964,1072)",
+                "span": {
+                  "offset": 701,
+                  "length": 4
+                }
+              },
+              {
+                "content": "28,95",
+                "source": "D(1,1119,1047,1185,1047,1185,1073,1119,1073)",
+                "span": {
+                  "offset": 715,
+                  "length": 5
+                }
+              },
+              {
+                "content": "10%",
+                "source": "D(1,1281,1047,1331,1047,1331,1072,1281,1072)",
+                "span": {
+                  "offset": 730,
+                  "length": 3
+                }
+              },
+              {
+                "content": "31,85",
+                "source": "D(1,1434,1046,1501,1047,1501,1073,1434,1072)",
+                "span": {
+                  "offset": 743,
+                  "length": 5
+                }
+              },
+              {
+                "content": "3.",
+                "source": "D(1,169,1107,192,1107,192,1130,169,1130)",
+                "span": {
+                  "offset": 769,
+                  "length": 2
+                }
+              },
+              {
+                "content": "Selected poetry of W H Auden",
+                "source": "D(1,237,1105,577,1105,577,1134,237,1134)",
+                "span": {
+                  "offset": 781,
+                  "length": 28
+                }
+              },
+              {
+                "content": "1,00",
+                "source": "D(1,674,1106,725,1106,725,1132,674,1132)",
+                "span": {
+                  "offset": 819,
+                  "length": 4
+                }
+              },
+              {
+                "content": "each",
+                "source": "D(1,769,1107,827,1107,827,1131,769,1131)",
+                "span": {
+                  "offset": 833,
+                  "length": 4
+                }
+              },
+              {
+                "content": "4,89",
+                "source": "D(1,964,1106,1016,1107,1016,1132,964,1132)",
+                "span": {
+                  "offset": 847,
+                  "length": 4
+                }
+              },
+              {
+                "content": "4,89",
+                "source": "D(1,1134,1106,1185,1107,1185,1132,1134,1132)",
+                "span": {
+                  "offset": 861,
+                  "length": 4
+                }
+              },
+              {
+                "content": "10%",
+                "source": "D(1,1281,1106,1331,1106,1331,1131,1281,1131)",
+                "span": {
+                  "offset": 875,
+                  "length": 3
+                }
+              },
+              {
+                "content": "5,38",
+                "source": "D(1,1449,1107,1501,1106,1501,1132,1449,1132)",
+                "span": {
+                  "offset": 888,
+                  "length": 4
+                }
+              },
+              {
+                "content": "4.",
+                "source": "D(1,169,1166,191,1166,191,1189,169,1189)",
+                "span": {
+                  "offset": 913,
+                  "length": 2
+                }
+              },
+              {
+                "content": "In the Footsteps of the Russian",
+                "source": "D(1,237,1165,586,1165,586,1192,237,1192)",
+                "span": {
+                  "offset": 925,
+                  "length": 31
+                }
+              },
+              {
+                "content": "Snowman (Paperback or",
+                "source": "D(1,238,1192,513,1193,513,1222,238,1221)",
+                "span": {
+                  "offset": 957,
+                  "length": 21
+                }
+              },
+              {
+                "content": "Softback)",
+                "source": "D(1,238,1221,346,1221,346,1248,238,1248)",
+                "span": {
+                  "offset": 979,
+                  "length": 9
+                }
+              },
+              {
+                "content": "4,00",
+                "source": "D(1,672,1165,724,1164,725,1190,672,1191)",
+                "span": {
+                  "offset": 998,
+                  "length": 4
+                }
+              },
+              {
+                "content": "each",
+                "source": "D(1,770,1166,826,1166,826,1190,770,1190)",
+                "span": {
+                  "offset": 1012,
+                  "length": 4
+                }
+              },
+              {
+                "content": "25,87",
+                "source": "D(1,950,1165,1016,1165,1016,1191,950,1191)",
+                "span": {
+                  "offset": 1026,
+                  "length": 5
+                }
+              },
+              {
+                "content": "103,48",
+                "source": "D(1,1105,1165,1186,1164,1186,1190,1106,1191)",
+                "span": {
+                  "offset": 1041,
+                  "length": 6
+                }
+              },
+              {
+                "content": "10%",
+                "source": "D(1,1281,1165,1331,1166,1331,1191,1281,1190)",
+                "span": {
+                  "offset": 1057,
+                  "length": 3
+                }
+              },
+              {
+                "content": "113,83",
+                "source": "D(1,1421,1165,1500,1164,1500,1190,1421,1191)",
+                "span": {
+                  "offset": 1070,
+                  "length": 6
+                }
+              },
+              {
+                "content": "5.",
+                "source": "D(1,169,1280,192,1280,192,1303,169,1303)",
+                "span": {
+                  "offset": 1097,
+                  "length": 2
+                }
+              },
+              {
+                "content": "Steam Yacht Varuna, Brand",
+                "source": "D(1,238,1279,549,1279,549,1306,238,1306)",
+                "span": {
+                  "offset": 1109,
+                  "length": 25
+                }
+              },
+              {
+                "content": "New, Free shipping in the US",
+                "source": "D(1,238,1307,563,1307,563,1336,238,1337)",
+                "span": {
+                  "offset": 1135,
+                  "length": 28
+                }
+              },
+              {
+                "content": "1,00",
+                "source": "D(1,674,1280,726,1280,725,1306,673,1305)",
+                "span": {
+                  "offset": 1173,
+                  "length": 4
+                }
+              },
+              {
+                "content": "each",
+                "source": "D(1,769,1281,826,1281,827,1305,769,1306)",
+                "span": {
+                  "offset": 1187,
+                  "length": 4
+                }
+              },
+              {
+                "content": "8,45",
+                "source": "D(1,964,1279,1016,1280,1016,1305,964,1304)",
+                "span": {
+                  "offset": 1201,
+                  "length": 4
+                }
+              },
+              {
+                "content": "8,45",
+                "source": "D(1,1134,1279,1186,1280,1186,1306,1134,1305)",
+                "span": {
+                  "offset": 1215,
+                  "length": 4
+                }
+              },
+              {
+                "content": "10%",
+                "source": "D(1,1280,1279,1331,1279,1331,1304,1280,1304)",
+                "span": {
+                  "offset": 1229,
+                  "length": 3
+                }
+              },
+              {
+                "content": "9,29",
+                "source": "D(1,1448,1279,1501,1279,1501,1306,1448,1306)",
+                "span": {
+                  "offset": 1242,
+                  "length": 4
+                }
+              },
+              {
+                "content": "SUMMARY",
+                "source": "D(1,132,1399,327,1398,328,1432,132,1434)",
+                "span": {
+                  "offset": 1271,
+                  "length": 7
+                }
+              },
+              {
+                "content": "VAT [%]",
+                "source": "D(1,640,1484,744,1485,744,1513,640,1513)",
+                "span": {
+                  "offset": 1298,
+                  "length": 7
+                }
+              },
+              {
+                "content": "Net worth",
+                "source": "D(1,927,1484,1055,1485,1055,1511,927,1510)",
+                "span": {
+                  "offset": 1315,
+                  "length": 9
+                }
+              },
+              {
+                "content": "VAT",
+                "source": "D(1,1187,1484,1242,1485,1242,1511,1187,1510)",
+                "span": {
+                  "offset": 1334,
+                  "length": 3
+                }
+              },
+              {
+                "content": "Gross worth",
+                "source": "D(1,1350,1485,1504,1485,1504,1511,1349,1511)",
+                "span": {
+                  "offset": 1347,
+                  "length": 11
+                }
+              },
+              {
+                "content": "10%",
+                "source": "D(1,667,1544,719,1544,719,1569,667,1569)",
+                "span": {
+                  "offset": 1379,
+                  "length": 3
+                }
+              },
+              {
+                "content": "215,72",
+                "source": "D(1,975,1543,1056,1544,1056,1571,974,1569)",
+                "span": {
+                  "offset": 1392,
+                  "length": 6
+                }
+              },
+              {
+                "content": "21,57",
+                "source": "D(1,1173,1544,1240,1544,1240,1570,1173,1570)",
+                "span": {
+                  "offset": 1408,
+                  "length": 5
+                }
+              },
+              {
+                "content": "237,29",
+                "source": "D(1,1423,1544,1504,1545,1504,1571,1423,1569)",
+                "span": {
+                  "offset": 1423,
+                  "length": 6
+                }
+              },
+              {
+                "content": "Total",
+                "source": "D(1,501,1605,569,1605,569,1630,501,1630)",
+                "span": {
+                  "offset": 1450,
+                  "length": 5
+                }
+              },
+              {
+                "content": "$ 215,72",
+                "source": "D(1,943,1604,1056,1604,1056,1631,943,1632)",
+                "span": {
+                  "offset": 1465,
+                  "length": 8
+                }
+              },
+              {
+                "content": "$ 21,57",
+                "source": "D(1,1144,1604,1240,1604,1240,1630,1144,1630)",
+                "span": {
+                  "offset": 1483,
+                  "length": 7
+                }
+              },
+              {
+                "content": "$ 237,29",
+                "source": "D(1,1392,1603,1505,1603,1505,1631,1392,1631)",
+                "span": {
+                  "offset": 1500,
+                  "length": 8
+                }
+              }
+            ]
+          }
+        ],
+        "paragraphs": [
+          {
+            "content": "Invoice no: 57986024",
+            "source": "D(1,130,72,538,71,538,107,131,108)",
+            "span": {
+              "offset": 0,
+              "length": 20
+            }
+          },
+          {
+            "content": "Date of issue:",
+            "source": "D(1,131,141,345,141,345,174,131,174)",
+            "span": {
+              "offset": 22,
+              "length": 14
+            }
+          },
+          {
+            "content": "10/17/2015",
+            "source": "D(1,802,140,979,140,979,174,802,174)",
+            "span": {
+              "offset": 38,
+              "length": 10
+            }
+          },
+          {
+            "content": "Seller: Schmidt LLC 5107 Christina Orchard Apt. 670 West Conniemouth, MD 43698",
+            "source": "D(1,131,443,594,442,594,609,131,610)",
+            "span": {
+              "offset": 50,
+              "length": 78
+            }
+          },
+          {
+            "content": "Tax Id: 959-72-2889",
+            "source": "D(1,138,648,424,648,424,679,138,679)",
+            "span": {
+              "offset": 130,
+              "length": 19
+            }
+          },
+          {
+            "content": "IBAN: GB02QDFL22211399552517",
+            "source": "D(1,140,683,625,683,626,715,140,715)",
+            "span": {
+              "offset": 151,
+              "length": 28
+            }
+          },
+          {
+            "content": "Client: Allen PLC 157 Michaela Station Mariafort, IL 29394",
+            "source": "D(1,824,442,1128,442,1128,608,824,608)",
+            "span": {
+              "offset": 181,
+              "length": 58
+            }
+          },
+          {
+            "content": "Tax Id: 907-74-8078",
+            "source": "D(1,830,648,1118,648,1118,679,830,679)",
+            "span": {
+              "offset": 241,
+              "length": 19
+            }
+          },
+          {
+            "role": "sectionHeading",
+            "content": "ITEMS",
+            "source": "D(1,131,759,248,759,248,792,131,792)",
+            "span": {
+              "offset": 263,
+              "length": 7
+            }
+          },
+          {
+            "content": "No.",
+            "source": "D(1,158,846,203,847,202,872,157,870)",
+            "span": {
+              "offset": 290,
+              "length": 3
+            }
+          },
+          {
+            "content": "Description",
+            "source": "D(1,237,846,385,847,385,874,237,873)",
+            "span": {
+              "offset": 303,
+              "length": 11
+            }
+          },
+          {
+            "content": "Qty",
+            "source": "D(1,678,845,728,848,726,874,677,871)",
+            "span": {
+              "offset": 324,
+              "length": 3
+            }
+          },
+          {
+            "content": "UM",
+            "source": "D(1,776,846,820,846,820,870,776,870)",
+            "span": {
+              "offset": 337,
+              "length": 2
+            }
+          },
+          {
+            "content": "Net price",
+            "source": "D(1,899,845,1018,846,1018,874,898,872)",
+            "span": {
+              "offset": 349,
+              "length": 9
+            }
+          },
+          {
+            "content": "Net worth",
+            "source": "D(1,1057,839,1188,845,1186,876,1056,869)",
+            "span": {
+              "offset": 368,
+              "length": 9
+            }
+          },
+          {
+            "content": "VAT [%]",
+            "source": "D(1,1228,844,1332,845,1332,873,1227,872)",
+            "span": {
+              "offset": 387,
+              "length": 7
+            }
+          },
+          {
+            "content": "Gross worth",
+            "source": "D(1,1425,847,1502,848,1501,898,1424,897)",
+            "span": {
+              "offset": 404,
+              "length": 11
+            }
+          },
+          {
+            "content": "1.",
+            "source": "D(1,169,931,194,934,191,958,167,955)",
+            "span": {
+              "offset": 436,
+              "length": 2
+            }
+          },
+          {
+            "content": "Straw Dogs : Thoughts on Humans and Other Animals, Paperback by Gray, John, L…",
+            "source": "D(1,238,933,562,932,562,1016,238,1017)",
+            "span": {
+              "offset": 448,
+              "length": 78
+            }
+          },
+          {
+            "content": "5,00",
+            "source": "D(1,672,933,725,933,725,958,672,958)",
+            "span": {
+              "offset": 536,
+              "length": 4
+            }
+          },
+          {
+            "content": "each",
+            "source": "D(1,769,934,827,934,827,958,769,958)",
+            "span": {
+              "offset": 550,
+              "length": 4
+            }
+          },
+          {
+            "content": "13,99",
+            "source": "D(1,951,932,1015,932,1015,959,951,959)",
+            "span": {
+              "offset": 564,
+              "length": 5
+            }
+          },
+          {
+            "content": "69,95",
+            "source": "D(1,1119,932,1185,932,1185,958,1119,958)",
+            "span": {
+              "offset": 579,
+              "length": 5
+            }
+          },
+          {
+            "content": "10%",
+            "source": "D(1,1279,932,1333,933,1332,960,1278,958)",
+            "span": {
+              "offset": 594,
+              "length": 3
+            }
+          },
+          {
+            "content": "76,95",
+            "source": "D(1,1435,933,1501,933,1501,958,1435,958)",
+            "span": {
+              "offset": 607,
+              "length": 5
+            }
+          },
+          {
+            "content": "2.",
+            "source": "D(1,169,1047,193,1049,191,1073,167,1071)",
+            "span": {
+              "offset": 633,
+              "length": 2
+            }
+          },
+          {
+            "content": "Quilts of Illusion",
+            "source": "D(1,238,1046,419,1045,419,1073,238,1074)",
+            "span": {
+              "offset": 645,
+              "length": 18
+            }
+          },
+          {
+            "content": "5,00",
+            "source": "D(1,672,1047,724,1047,724,1072,672,1072)",
+            "span": {
+              "offset": 673,
+              "length": 4
+            }
+          },
+          {
+            "content": "each",
+            "source": "D(1,770,1048,827,1048,827,1072,770,1072)",
+            "span": {
+              "offset": 687,
+              "length": 4
+            }
+          },
+          {
+            "content": "5,79",
+            "source": "D(1,964,1047,1016,1047,1016,1072,964,1072)",
+            "span": {
+              "offset": 701,
+              "length": 4
+            }
+          },
+          {
+            "content": "28,95",
+            "source": "D(1,1119,1047,1185,1047,1185,1073,1119,1073)",
+            "span": {
+              "offset": 715,
+              "length": 5
+            }
+          },
+          {
+            "content": "10%",
+            "source": "D(1,1281,1047,1331,1047,1331,1073,1280,1072)",
+            "span": {
+              "offset": 730,
+              "length": 3
+            }
+          },
+          {
+            "content": "31,85",
+            "source": "D(1,1434,1046,1501,1047,1501,1072,1434,1072)",
+            "span": {
+              "offset": 743,
+              "length": 5
+            }
+          },
+          {
+            "content": "3.",
+            "source": "D(1,169,1107,192,1107,191,1131,168,1130)",
+            "span": {
+              "offset": 769,
+              "length": 2
+            }
+          },
+          {
+            "content": "Selected poetry of W H Auden",
+            "source": "D(1,237,1105,577,1104,577,1133,237,1134)",
+            "span": {
+              "offset": 781,
+              "length": 28
+            }
+          },
+          {
+            "content": "1,00",
+            "source": "D(1,674,1106,725,1106,725,1133,673,1132)",
+            "span": {
+              "offset": 819,
+              "length": 4
+            }
+          },
+          {
+            "content": "each",
+            "source": "D(1,769,1107,827,1107,827,1131,769,1131)",
+            "span": {
+              "offset": 833,
+              "length": 4
+            }
+          },
+          {
+            "content": "4,89",
+            "source": "D(1,964,1106,1016,1107,1016,1132,964,1132)",
+            "span": {
+              "offset": 847,
+              "length": 4
+            }
+          },
+          {
+            "content": "4,89",
+            "source": "D(1,1134,1106,1185,1107,1185,1132,1134,1132)",
+            "span": {
+              "offset": 861,
+              "length": 4
+            }
+          },
+          {
+            "content": "10%",
+            "source": "D(1,1281,1105,1331,1106,1331,1132,1281,1131)",
+            "span": {
+              "offset": 875,
+              "length": 3
+            }
+          },
+          {
+            "content": "5,38",
+            "source": "D(1,1449,1106,1501,1106,1501,1132,1449,1132)",
+            "span": {
+              "offset": 888,
+              "length": 4
+            }
+          },
+          {
+            "content": "4.",
+            "source": "D(1,169,1165,192,1166,191,1190,167,1189)",
+            "span": {
+              "offset": 913,
+              "length": 2
+            }
+          },
+          {
+            "content": "In the Footsteps of the Russian Snowman (Paperback or Softback)",
+            "source": "D(1,237,1165,586,1165,586,1248,237,1248)",
+            "span": {
+              "offset": 925,
+              "length": 63
+            }
+          },
+          {
+            "content": "4,00",
+            "source": "D(1,672,1165,724,1164,725,1189,672,1190)",
+            "span": {
+              "offset": 998,
+              "length": 4
+            }
+          },
+          {
+            "content": "each",
+            "source": "D(1,770,1167,826,1167,826,1190,770,1190)",
+            "span": {
+              "offset": 1012,
+              "length": 4
+            }
+          },
+          {
+            "content": "25,87",
+            "source": "D(1,950,1165,1016,1165,1016,1191,950,1191)",
+            "span": {
+              "offset": 1026,
+              "length": 5
+            }
+          },
+          {
+            "content": "103,48",
+            "source": "D(1,1105,1165,1186,1164,1186,1189,1106,1191)",
+            "span": {
+              "offset": 1041,
+              "length": 6
+            }
+          },
+          {
+            "content": "10%",
+            "source": "D(1,1281,1164,1332,1166,1331,1192,1280,1190)",
+            "span": {
+              "offset": 1057,
+              "length": 3
+            }
+          },
+          {
+            "content": "113,83",
+            "source": "D(1,1421,1165,1500,1164,1500,1190,1421,1191)",
+            "span": {
+              "offset": 1070,
+              "length": 6
+            }
+          },
+          {
+            "content": "5.",
+            "source": "D(1,169,1280,192,1280,192,1303,169,1303)",
+            "span": {
+              "offset": 1097,
+              "length": 2
+            }
+          },
+          {
+            "content": "Steam Yacht Varuna, Brand New, Free shipping in the US",
+            "source": "D(1,238,1279,563,1279,563,1337,238,1337)",
+            "span": {
+              "offset": 1109,
+              "length": 54
+            }
+          },
+          {
+            "content": "1,00",
+            "source": "D(1,674,1280,726,1280,725,1306,673,1305)",
+            "span": {
+              "offset": 1173,
+              "length": 4
+            }
+          },
+          {
+            "content": "each",
+            "source": "D(1,769,1281,826,1280,827,1304,769,1305)",
+            "span": {
+              "offset": 1187,
+              "length": 4
+            }
+          },
+          {
+            "content": "8,45",
+            "source": "D(1,964,1279,1017,1280,1016,1305,964,1304)",
+            "span": {
+              "offset": 1201,
+              "length": 4
+            }
+          },
+          {
+            "content": "8,45",
+            "source": "D(1,1134,1280,1186,1280,1186,1306,1134,1305)",
+            "span": {
+              "offset": 1215,
+              "length": 4
+            }
+          },
+          {
+            "content": "10%",
+            "source": "D(1,1280,1279,1331,1279,1331,1304,1280,1304)",
+            "span": {
+              "offset": 1229,
+              "length": 3
+            }
+          },
+          {
+            "content": "9,29",
+            "source": "D(1,1448,1280,1501,1280,1501,1306,1448,1306)",
+            "span": {
+              "offset": 1242,
+              "length": 4
+            }
+          },
+          {
+            "role": "sectionHeading",
+            "content": "SUMMARY",
+            "source": "D(1,132,1399,327,1398,328,1432,132,1434)",
+            "span": {
+              "offset": 1269,
+              "length": 9
+            }
+          },
+          {
+            "content": "VAT [%]",
+            "source": "D(1,640,1483,744,1485,744,1514,639,1513)",
+            "span": {
+              "offset": 1298,
+              "length": 7
+            }
+          },
+          {
+            "content": "Net worth",
+            "source": "D(1,927,1484,1055,1486,1055,1512,927,1510)",
+            "span": {
+              "offset": 1315,
+              "length": 9
+            }
+          },
+          {
+            "content": "VAT",
+            "source": "D(1,1187,1485,1242,1486,1242,1511,1187,1510)",
+            "span": {
+              "offset": 1334,
+              "length": 3
+            }
+          },
+          {
+            "content": "Gross worth",
+            "source": "D(1,1350,1484,1504,1486,1504,1513,1349,1511)",
+            "span": {
+              "offset": 1347,
+              "length": 11
+            }
+          },
+          {
+            "content": "10%",
+            "source": "D(1,667,1544,719,1544,719,1569,667,1569)",
+            "span": {
+              "offset": 1379,
+              "length": 3
+            }
+          },
+          {
+            "content": "215,72",
+            "source": "D(1,975,1542,1056,1544,1056,1570,974,1568)",
+            "span": {
+              "offset": 1392,
+              "length": 6
+            }
+          },
+          {
+            "content": "21,57",
+            "source": "D(1,1173,1544,1240,1544,1240,1570,1173,1570)",
+            "span": {
+              "offset": 1408,
+              "length": 5
+            }
+          },
+          {
+            "content": "237,29",
+            "source": "D(1,1423,1544,1504,1545,1504,1571,1423,1570)",
+            "span": {
+              "offset": 1423,
+              "length": 6
+            }
+          },
+          {
+            "content": "Total",
+            "source": "D(1,501,1605,569,1605,569,1630,501,1630)",
+            "span": {
+              "offset": 1450,
+              "length": 5
+            }
+          },
+          {
+            "content": "$ 215,72",
+            "source": "D(1,943,1603,1056,1604,1056,1631,943,1631)",
+            "span": {
+              "offset": 1465,
+              "length": 8
+            }
+          },
+          {
+            "content": "$ 21,57",
+            "source": "D(1,1144,1604,1241,1604,1240,1631,1144,1630)",
+            "span": {
+              "offset": 1483,
+              "length": 7
+            }
+          },
+          {
+            "content": "$ 237,29",
+            "source": "D(1,1392,1604,1505,1604,1505,1631,1392,1631)",
+            "span": {
+              "offset": 1500,
+              "length": 8
+            }
+          }
+        ],
+        "sections": [
+          {
+            "span": {
+              "offset": 0,
+              "length": 1528
+            },
+            "elements": [
+              "/sections/1",
+              "/sections/2",
+              "/sections/3"
+            ]
+          },
+          {
+            "span": {
+              "offset": 0,
+              "length": 260
+            },
+            "elements": [
+              "/paragraphs/0",
+              "/paragraphs/1",
+              "/paragraphs/2",
+              "/paragraphs/3",
+              "/paragraphs/4",
+              "/paragraphs/5",
+              "/paragraphs/6",
+              "/paragraphs/7"
+            ]
+          },
+          {
+            "span": {
+              "offset": 263,
+              "length": 1003
+            },
+            "elements": [
+              "/paragraphs/8",
+              "/tables/0"
+            ]
+          },
+          {
+            "span": {
+              "offset": 1269,
+              "length": 259
+            },
+            "elements": [
+              "/paragraphs/57",
+              "/tables/1"
+            ]
+          }
+        ],
+        "tables": [
+          {
+            "rowCount": 6,
+            "columnCount": 8,
+            "cells": [
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "No.",
+                "source": "D(1,133,827,230,827,230,916,133,916)",
+                "span": {
+                  "offset": 290,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/9"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Description",
+                "source": "D(1,230,827,626,827,625,916,230,916)",
+                "span": {
+                  "offset": 303,
+                  "length": 11
+                },
+                "elements": [
+                  "/paragraphs/10"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Qty",
+                "source": "D(1,626,827,751,827,751,916,625,916)",
+                "span": {
+                  "offset": 324,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/11"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "UM",
+                "source": "D(1,751,827,871,827,871,916,751,916)",
+                "span": {
+                  "offset": 337,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/12"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 4,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Net price",
+                "source": "D(1,871,827,1042,827,1042,916,871,916)",
+                "span": {
+                  "offset": 349,
+                  "length": 9
+                },
+                "elements": [
+                  "/paragraphs/13"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 5,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Net worth",
+                "source": "D(1,1042,827,1212,827,1212,915,1042,916)",
+                "span": {
+                  "offset": 368,
+                  "length": 9
+                },
+                "elements": [
+                  "/paragraphs/14"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 6,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "VAT [%]",
+                "source": "D(1,1212,827,1381,827,1381,915,1212,915)",
+                "span": {
+                  "offset": 387,
+                  "length": 7
+                },
+                "elements": [
+                  "/paragraphs/15"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 7,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Gross worth",
+                "source": "D(1,1381,827,1519,827,1519,915,1381,915)",
+                "span": {
+                  "offset": 404,
+                  "length": 11
+                },
+                "elements": [
+                  "/paragraphs/16"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "1.",
+                "source": "D(1,133,916,230,916,229,1030,132,1030)",
+                "span": {
+                  "offset": 436,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/17"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Straw Dogs : Thoughts on Humans and Other Animals, Paperback by Gray, John, L…",
+                "source": "D(1,230,916,625,916,625,1030,229,1030)",
+                "span": {
+                  "offset": 448,
+                  "length": 78
+                },
+                "elements": [
+                  "/paragraphs/18"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "5,00",
+                "source": "D(1,625,916,751,916,751,1030,625,1030)",
+                "span": {
+                  "offset": 536,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/19"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "each",
+                "source": "D(1,751,916,871,916,871,1030,751,1030)",
+                "span": {
+                  "offset": 550,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/20"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 4,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "13,99",
+                "source": "D(1,871,916,1042,916,1043,1030,871,1030)",
+                "span": {
+                  "offset": 564,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/21"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 5,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "69,95",
+                "source": "D(1,1042,916,1212,915,1213,1030,1043,1030)",
+                "span": {
+                  "offset": 579,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/22"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 6,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "10%",
+                "source": "D(1,1212,915,1381,915,1381,1029,1213,1030)",
+                "span": {
+                  "offset": 594,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/23"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 7,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "76,95",
+                "source": "D(1,1381,915,1519,915,1519,1030,1381,1029)",
+                "span": {
+                  "offset": 607,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/24"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "2.",
+                "source": "D(1,132,1030,229,1030,229,1090,132,1090)",
+                "span": {
+                  "offset": 633,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/25"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Quilts of Illusion",
+                "source": "D(1,229,1030,625,1030,625,1090,229,1090)",
+                "span": {
+                  "offset": 645,
+                  "length": 18
+                },
+                "elements": [
+                  "/paragraphs/26"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "5,00",
+                "source": "D(1,625,1030,751,1030,751,1090,625,1090)",
+                "span": {
+                  "offset": 673,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/27"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "each",
+                "source": "D(1,751,1030,871,1030,872,1090,751,1090)",
+                "span": {
+                  "offset": 687,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/28"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 4,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "5,79",
+                "source": "D(1,871,1030,1043,1030,1043,1090,872,1090)",
+                "span": {
+                  "offset": 701,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/29"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 5,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "28,95",
+                "source": "D(1,1043,1030,1213,1030,1213,1089,1043,1090)",
+                "span": {
+                  "offset": 715,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/30"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 6,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "10%",
+                "source": "D(1,1213,1030,1381,1029,1382,1089,1213,1089)",
+                "span": {
+                  "offset": 730,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/31"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 7,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "31,85",
+                "source": "D(1,1381,1029,1519,1030,1519,1090,1382,1089)",
+                "span": {
+                  "offset": 743,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/32"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "3.",
+                "source": "D(1,132,1090,229,1090,229,1148,132,1148)",
+                "span": {
+                  "offset": 769,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/33"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Selected poetry of W H Auden",
+                "source": "D(1,229,1090,625,1090,625,1148,229,1148)",
+                "span": {
+                  "offset": 781,
+                  "length": 28
+                },
+                "elements": [
+                  "/paragraphs/34"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "1,00",
+                "source": "D(1,625,1090,751,1090,752,1148,625,1148)",
+                "span": {
+                  "offset": 819,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/35"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "each",
+                "source": "D(1,751,1090,872,1090,872,1148,752,1148)",
+                "span": {
+                  "offset": 833,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/36"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 4,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "4,89",
+                "source": "D(1,872,1090,1043,1090,1043,1148,872,1148)",
+                "span": {
+                  "offset": 847,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/37"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 5,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "4,89",
+                "source": "D(1,1043,1090,1213,1089,1214,1148,1043,1148)",
+                "span": {
+                  "offset": 861,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/38"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 6,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "10%",
+                "source": "D(1,1213,1089,1382,1089,1382,1147,1214,1148)",
+                "span": {
+                  "offset": 875,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/39"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 7,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "5,38",
+                "source": "D(1,1382,1089,1519,1090,1519,1148,1382,1147)",
+                "span": {
+                  "offset": 888,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/40"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "4.",
+                "source": "D(1,132,1148,229,1148,229,1262,132,1262)",
+                "span": {
+                  "offset": 913,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/41"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "In the Footsteps of the Russian Snowman (Paperback or Softback)",
+                "source": "D(1,229,1148,625,1148,626,1262,229,1262)",
+                "span": {
+                  "offset": 925,
+                  "length": 63
+                },
+                "elements": [
+                  "/paragraphs/42"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "4,00",
+                "source": "D(1,625,1148,752,1148,752,1262,626,1262)",
+                "span": {
+                  "offset": 998,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/43"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "each",
+                "source": "D(1,752,1148,872,1148,872,1262,752,1262)",
+                "span": {
+                  "offset": 1012,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/44"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 4,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "25,87",
+                "source": "D(1,872,1148,1043,1148,1044,1262,872,1262)",
+                "span": {
+                  "offset": 1026,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/45"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 5,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "103,48",
+                "source": "D(1,1043,1148,1214,1148,1215,1262,1044,1262)",
+                "span": {
+                  "offset": 1041,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/46"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 6,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "10%",
+                "source": "D(1,1214,1148,1382,1147,1382,1262,1215,1262)",
+                "span": {
+                  "offset": 1057,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/47"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 7,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "113,83",
+                "source": "D(1,1382,1147,1519,1148,1519,1262,1382,1262)",
+                "span": {
+                  "offset": 1070,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/48"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "5.",
+                "source": "D(1,132,1262,229,1262,230,1350,132,1350)",
+                "span": {
+                  "offset": 1097,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/49"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Steam Yacht Varuna, Brand New, Free shipping in the US",
+                "source": "D(1,229,1262,626,1262,626,1350,230,1350)",
+                "span": {
+                  "offset": 1109,
+                  "length": 54
+                },
+                "elements": [
+                  "/paragraphs/50"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "1,00",
+                "source": "D(1,626,1262,752,1262,753,1350,626,1350)",
+                "span": {
+                  "offset": 1173,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/51"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "each",
+                "source": "D(1,752,1262,872,1262,873,1350,753,1350)",
+                "span": {
+                  "offset": 1187,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/52"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 4,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "8,45",
+                "source": "D(1,872,1262,1044,1262,1044,1349,873,1350)",
+                "span": {
+                  "offset": 1201,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/53"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 5,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "8,45",
+                "source": "D(1,1044,1262,1215,1262,1216,1349,1044,1349)",
+                "span": {
+                  "offset": 1215,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/54"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 6,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "10%",
+                "source": "D(1,1215,1262,1382,1262,1383,1349,1216,1349)",
+                "span": {
+                  "offset": 1229,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/55"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 7,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "9,29",
+                "source": "D(1,1382,1262,1519,1262,1519,1349,1383,1349)",
+                "span": {
+                  "offset": 1242,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/56"
+                ]
+              }
+            ],
+            "source": "D(1,131,825,1518,826,1518,1351,131,1352)",
+            "span": {
+              "offset": 273,
+              "length": 993
+            }
+          },
+          {
+            "rowCount": 3,
+            "columnCount": 4,
+            "cells": [
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "VAT [%]",
+                "source": "D(1,133,1467,836,1467,836,1529,133,1529)",
+                "span": {
+                  "offset": 1298,
+                  "length": 7
+                },
+                "elements": [
+                  "/paragraphs/58"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Net worth",
+                "source": "D(1,836,1467,1108,1467,1107,1529,836,1529)",
+                "span": {
+                  "offset": 1315,
+                  "length": 9
+                },
+                "elements": [
+                  "/paragraphs/59"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "VAT",
+                "source": "D(1,1108,1467,1303,1467,1303,1529,1107,1529)",
+                "span": {
+                  "offset": 1334,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/60"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Gross worth",
+                "source": "D(1,1303,1467,1519,1467,1518,1529,1303,1529)",
+                "span": {
+                  "offset": 1347,
+                  "length": 11
+                },
+                "elements": [
+                  "/paragraphs/61"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "10%",
+                "source": "D(1,133,1529,836,1529,836,1586,132,1587)",
+                "span": {
+                  "offset": 1379,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/62"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "215,72",
+                "source": "D(1,836,1529,1107,1529,1108,1586,836,1586)",
+                "span": {
+                  "offset": 1392,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/63"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "21,57",
+                "source": "D(1,1107,1529,1303,1529,1303,1586,1108,1586)",
+                "span": {
+                  "offset": 1408,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/64"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "237,29",
+                "source": "D(1,1303,1529,1518,1529,1518,1586,1303,1586)",
+                "span": {
+                  "offset": 1423,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/65"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Total",
+                "source": "D(1,132,1587,836,1586,836,1646,133,1646)",
+                "span": {
+                  "offset": 1450,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/66"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "$ 215,72",
+                "source": "D(1,836,1586,1108,1586,1108,1646,836,1646)",
+                "span": {
+                  "offset": 1465,
+                  "length": 8
+                },
+                "elements": [
+                  "/paragraphs/67"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "$ 21,57",
+                "source": "D(1,1108,1586,1303,1586,1303,1646,1108,1646)",
+                "span": {
+                  "offset": 1483,
+                  "length": 7
+                },
+                "elements": [
+                  "/paragraphs/68"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "$ 237,29",
+                "source": "D(1,1303,1586,1518,1586,1519,1646,1303,1646)",
+                "span": {
+                  "offset": 1500,
+                  "length": 8
+                },
+                "elements": [
+                  "/paragraphs/69"
+                ]
+              }
+            ],
+            "source": "D(1,129,1469,1517,1468,1517,1648,129,1648)",
+            "span": {
+              "offset": 1281,
+              "length": 247
+            }
+          }
+        ],
         "analyzerId": "prebuilt-invoice",
         "mimeType": "image/jpeg"
       }
     ]
   },
   "usage": {
-    "documentPagesMinimal": 1,
+    "documentPagesStandard": 1,
     "contextualizationTokens": 1000,
     "tokens": {
-      "gpt-4.1-input": 10263,
-      "gpt-4.1-output": 323,
-      "text-embedding-3-large": 4
+      "gpt-4.1-input": 13752,
+      "gpt-4.1-output": 2376,
+      "text-embedding-3-large": 636
     }
   },
   "_extracted": {
-    "field_values": {},
-    "description": "Ce document est une facture (invoice) émise par la société Schmidt LLC à l'attention de la société Allen PLC, datée du 17/10/2015. Le montant total TTC s'élève à 237,29 dollars pour l'achat de plusieurs livres, avec une TVA de 10%. Les informations clés incluent les coordonnées des deux sociétés, le détail des articles facturés et le numéro de facture 57986024."
+    "field_values": {
+      "AmountDue": {
+        "Amount": 237.29,
+        "CurrencyCode": "USD"
+      },
+      "CountryRegion": "USA",
+      "CustomerAddress": "157 Michaela Station Mariafort, IL 29394",
+      "CustomerAddressRecipient": "Allen PLC",
+      "CustomerName": "Allen PLC",
+      "CustomerTaxId": "907-74-8078",
+      "InvoiceDate": "2015-10-17",
+      "InvoiceId": "57986024",
+      "LineItems": [
+        {
+          "Description": "Straw Dogs : Thoughts on Humans and Other Animals, Paperback by Gray, John, L…",
+          "Quantity": 5,
+          "QuantityUnit": "each",
+          "TaxAmount": {
+            "Amount": 1,
+            "CurrencyCode": "USD"
+          },
+          "TaxRate": 0.1,
+          "TotalAmount": {
+            "Amount": 76.95,
+            "CurrencyCode": "USD"
+          },
+          "UnitPrice": {
+            "Amount": 13.99,
+            "CurrencyCode": "USD"
+          }
+        },
+        {
+          "Description": "Quilts of Illusion",
+          "Quantity": 5,
+          "QuantityUnit": "each",
+          "TaxAmount": {
+            "Amount": 237.29,
+            "CurrencyCode": "USD"
+          },
+          "TaxRate": 0.1,
+          "TotalAmount": {
+            "Amount": 31.85,
+            "CurrencyCode": "USD"
+          },
+          "UnitPrice": {
+            "Amount": 5.79,
+            "CurrencyCode": "USD"
+          }
+        },
+        {
+          "Description": "Selected poetry of W H Auden",
+          "Quantity": 1,
+          "QuantityUnit": "each",
+          "TaxAmount": {
+            "Amount": 10,
+            "CurrencyCode": "USD"
+          },
+          "TaxRate": 0.1,
+          "TotalAmount": {
+            "Amount": 5.38,
+            "CurrencyCode": "USD"
+          },
+          "UnitPrice": {
+            "Amount": 4.89,
+            "CurrencyCode": "USD"
+          }
+        },
+        {
+          "Description": "In the Footsteps of the Russian Snowman (Paperback or Softback)",
+          "Quantity": 4,
+          "QuantityUnit": "each",
+          "TaxAmount": {
+            "Amount": 10113.83,
+            "CurrencyCode": "USD"
+          },
+          "TaxRate": 0.1,
+          "TotalAmount": {
+            "Amount": 113.83,
+            "CurrencyCode": "USD"
+          },
+          "UnitPrice": {
+            "Amount": 25.87,
+            "CurrencyCode": "USD"
+          }
+        },
+        {
+          "Description": "Steam Yacht Varuna, Brand New, Free shipping in the US",
+          "Quantity": 1,
+          "QuantityUnit": "each",
+          "TaxAmount": {
+            "Amount": 103.48,
+            "CurrencyCode": "USD"
+          },
+          "TaxRate": 0.1,
+          "TotalAmount": {
+            "Amount": 9.29,
+            "CurrencyCode": "USD"
+          },
+          "UnitPrice": {
+            "Amount": 8.45,
+            "CurrencyCode": "USD"
+          }
+        }
+      ],
+      "SubtotalAmount": {
+        "Amount": 215.72,
+        "CurrencyCode": "USD"
+      },
+      "TaxDetails": [
+        {
+          "Amount": {
+            "Amount": 21.57,
+            "CurrencyCode": "USD"
+          },
+          "Description": "VAT",
+          "NetAmount": {
+            "Amount": 215.72,
+            "CurrencyCode": "USD"
+          },
+          "Rate": 0.1
+        }
+      ],
+      "TotalAmount": {
+        "Amount": 237.29,
+        "CurrencyCode": "USD"
+      },
+      "TotalTaxAmount": {
+        "Amount": 21.57,
+        "CurrencyCode": "USD"
+      },
+      "VendorAddress": "5107 Christina Orchard Apt. 670 West Conniemouth, MD 43698",
+      "VendorAddressRecipient": "Schmidt LLC",
+      "VendorName": "Schmidt LLC",
+      "VendorTaxId": "959-72-2889"
+    },
+    "description": "Il s'agit d'une facture (invoice) émise par la société Schmidt LLC à Allen PLC, datée du 17/10/2015. Le montant total TTC est de 237,29 $, pour l'achat de plusieurs livres et un article divers. Les éléments clés incluent le numéro de facture 57986024, un taux de TVA de 10 %, et les coordonnées complètes des deux parties."
   }
 }

@@ -1,25 +1,35 @@
 {
-  "id": "1f42928c-8a66-4989-a0b0-9752ccd7c8bc",
+  "id": "a06b9afe-46a8-425f-9ad8-7c85f105c431",
   "status": "Succeeded",
   "result": {
     "analyzerId": "prebuilt-invoice",
     "apiVersion": "2025-11-01",
-    "createdAt": "2026-02-10T13:37:15Z",
-    "stringEncoding": "utf16",
+    "createdAt": "2026-02-10T15:10:22Z",
+    "stringEncoding": "codePoint",
     "warnings": [],
     "contents": [
       {
         "path": "input1",
-        "markdown": "```text\n\n```\n",
+        "markdown": "Invoice no: 12847181\n\nDate of issue:\n\n03/03/2012\n\nSeller:\nFitzpatrick and Sons\n00480 Cook Cove\nSpencerport, UT 12036\n\nTax Id: 998-99-5253\n\nIBAN: GB92PBPQ73499358975916\n\nClient:\nDuncan PLC\nUnit 8799 Box 0703\nDPO AP 81970\n\nTax Id: 911-82-7132\n\n\n# ITEMS\n\n\n<table>\n<tr>\n<th>No.</th>\n<th>Description</th>\n<th>Qty</th>\n<th>UM</th>\n<th>Net price</th>\n<th>Net worth</th>\n<th>VAT [%]</th>\n<th>Gross worth</th>\n</tr>\n<tr>\n<td>1.</td>\n<td>HP Desktop Computer PC Core i5 16GB 2TB HD 256GB SSD 22\" LCD Windows 10</td>\n<td>4,00</td>\n<td>each</td>\n<td>139,95</td>\n<td>559,80</td>\n<td>10%</td>\n<td>615,78</td>\n</tr>\n<tr>\n<td>2.</td>\n<td>CUSTOM BUILT AMD RYZEN THREADRIPPER GAMING COMPUTER , 32 GB RAM,</td>\n<td>3,00</td>\n<td>each</td>\n<td>1 400,00</td>\n<td>4 200,00</td>\n<td>10%</td>\n<td>4 620,00</td>\n</tr>\n<tr>\n<td>3.</td>\n<td>Fast Dell Optiplex Desktop PC Computer Dual Core 3.4Ghz 8GB 1TB Win 10 Pro WIFI</td>\n<td>1,00</td>\n<td>each</td>\n<td>217,00</td>\n<td>217,00</td>\n<td>10%</td>\n<td>238,70</td>\n</tr>\n<tr>\n<td>4.</td>\n<td>Dell Optiplex 790 Computer i7 @ 3.40 Ghz Quad Core 250GB 4GB Working</td>\n<td>3,00</td>\n<td>each</td>\n<td>159,99</td>\n<td>479,97</td>\n<td>10%</td>\n<td>527,97</td>\n</tr>\n<tr>\n<td>5.</td>\n<td>Vintage Microsolutions Pentium 133mhz Desktop Tower PC Windows 95 5.25 Floppy</td>\n<td>2,00</td>\n<td>each</td>\n<td>390,00</td>\n<td>780,00</td>\n<td>10%</td>\n<td>858,00</td>\n</tr>\n</table>\n\n\n# SUMMARY\n\n\n<table>\n<tr>\n<th>VAT [%]</th>\n<th>Net worth</th>\n<th>VAT</th>\n<th>Gross worth</th>\n</tr>\n<tr>\n<td>10%</td>\n<td>6 236,77</td>\n<td>623,68</td>\n<td>6 860,45</td>\n</tr>\n<tr>\n<td>Total</td>\n<td>$ 6 236,77</td>\n<td>$ 623,68</td>\n<td>$ 6 860,45</td>\n</tr>\n</table>\n",
         "fields": {
           "AmountDue": {
             "type": "object",
             "valueObject": {
               "Amount": {
-                "type": "number"
+                "type": "number",
+                "valueNumber": 6860.45,
+                "spans": [
+                  {
+                    "offset": 1632,
+                    "length": 10
+                  }
+                ],
+                "confidence": 0.815,
+                "source": "D(1,1369.0000,1743.0000,1505.0000,1743.0000,1505.0000,1769.0000,1369.0000,1769.0000)"
               },
               "CurrencyCode": {
-                "type": "string"
+                "type": "string",
+                "valueString": "USD"
               }
             }
           },
@@ -27,7 +37,8 @@
             "type": "object",
             "valueObject": {
               "Amount": {
-                "type": "number"
+                "type": "number",
+                "confidence": 0.959
               },
               "CurrencyCode": {
                 "type": "string"
@@ -35,87 +46,873 @@
             }
           },
           "BillingAddress": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.715
           },
           "BillingAddressRecipient": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.762
           },
           "CountryRegion": {
-            "type": "string"
+            "type": "string",
+            "valueString": "USA"
           },
           "CustomerAddress": {
-            "type": "string"
+            "type": "string",
+            "valueString": "Unit 8799 Box 0703 DPO AP 81970",
+            "spans": [
+              {
+                "offset": 188,
+                "length": 18
+              },
+              {
+                "offset": 207,
+                "length": 12
+              }
+            ],
+            "confidence": 0.806,
+            "source": "D(1,832.0000,541.0000,1112.0000,541.0000,1112.0000,572.0000,832.0000,572.0000);D(1,833.0000,577.0000,1037.0000,577.0000,1037.0000,607.0000,833.0000,607.0000)"
           },
           "CustomerAddressRecipient": {
-            "type": "string"
+            "type": "string",
+            "valueString": "Duncan PLC",
+            "spans": [
+              {
+                "offset": 177,
+                "length": 10
+              }
+            ],
+            "confidence": 0.728,
+            "source": "D(1,833.0000,506.0000,1003.0000,506.0000,1003.0000,535.0000,833.0000,535.0000)"
           },
           "CustomerId": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.815
           },
           "CustomerName": {
-            "type": "string"
+            "type": "string",
+            "valueString": "Duncan PLC",
+            "spans": [
+              {
+                "offset": 177,
+                "length": 10
+              }
+            ],
+            "confidence": 0.873,
+            "source": "D(1,833.0000,506.0000,1003.0000,506.0000,1003.0000,535.0000,833.0000,535.0000)"
           },
           "CustomerTaxId": {
-            "type": "string"
+            "type": "string",
+            "valueString": "911-82-7132",
+            "spans": [
+              {
+                "offset": 229,
+                "length": 11
+              }
+            ],
+            "confidence": 0.902,
+            "source": "D(1,937.0000,649.0000,1118.0000,648.0000,1118.0000,679.0000,937.0000,679.0000)"
           },
           "DueDate": {
-            "type": "date"
+            "type": "date",
+            "confidence": 0.793
           },
           "InvoiceDate": {
-            "type": "date"
+            "type": "date",
+            "valueDate": "2012-03-03",
+            "spans": [
+              {
+                "offset": 38,
+                "length": 10
+              }
+            ],
+            "confidence": 0.97,
+            "source": "D(1,800.0000,140.0000,979.0000,140.0000,979.0000,174.0000,800.0000,175.0000)"
           },
           "InvoiceId": {
-            "type": "string"
+            "type": "string",
+            "valueString": "12847181",
+            "spans": [
+              {
+                "offset": 12,
+                "length": 8
+              }
+            ],
+            "confidence": 0.952,
+            "source": "D(1,352.0000,72.0000,538.0000,72.0000,538.0000,107.0000,352.0000,107.0000)"
           },
           "LineItems": {
-            "type": "array"
+            "type": "array",
+            "valueArray": [
+              {
+                "type": "object",
+                "valueObject": {
+                  "Date": {
+                    "type": "date",
+                    "confidence": 0.823
+                  },
+                  "Description": {
+                    "type": "string",
+                    "valueString": "HP Desktop Computer PC Core i5 16GB 2TB HD 256GB SSD 22\" LCD Windows 10",
+                    "spans": [
+                      {
+                        "offset": 428,
+                        "length": 22
+                      },
+                      {
+                        "offset": 451,
+                        "length": 25
+                      },
+                      {
+                        "offset": 477,
+                        "length": 11
+                      },
+                      {
+                        "offset": 489,
+                        "length": 10
+                      }
+                    ],
+                    "confidence": 0.609,
+                    "source": "D(1,238.0000,932.0000,525.0000,932.0000,525.0000,959.0000,238.0000,959.0000);D(1,239.0000,958.0000,560.0000,958.0000,560.0000,985.0000,239.0000,985.0000);D(1,239.0000,988.0000,385.0000,988.0000,385.0000,1013.0000,239.0000,1013.0000);D(1,409.0000,988.0000,546.0000,988.0000,546.0000,1012.0000,409.0000,1012.0000)"
+                  },
+                  "ProductCode": {
+                    "type": "string",
+                    "confidence": 0.902
+                  },
+                  "Quantity": {
+                    "type": "number",
+                    "valueNumber": 4,
+                    "spans": [
+                      {
+                        "offset": 509,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.903,
+                    "source": "D(1,672.0000,934.0000,725.0000,934.0000,725.0000,958.0000,672.0000,958.0000)"
+                  },
+                  "QuantityUnit": {
+                    "type": "string",
+                    "valueString": "each",
+                    "spans": [
+                      {
+                        "offset": 523,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.828,
+                    "source": "D(1,769.0000,934.0000,827.0000,934.0000,827.0000,957.0000,769.0000,957.0000)"
+                  },
+                  "TaxAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "confidence": 0.292
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "TaxRate": {
+                    "type": "number",
+                    "valueNumber": 0.1,
+                    "spans": [
+                      {
+                        "offset": 569,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.864,
+                    "source": "D(1,1279.0230,931.8963,1332.5206,933.0108,1331.9978,958.1041,1278.5002,956.9896)"
+                  },
+                  "TotalAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 615.78,
+                        "spans": [
+                          {
+                            "offset": 582,
+                            "length": 6
+                          }
+                        ],
+                        "confidence": 0.873,
+                        "source": "D(1,1420.0000,933.0000,1501.0000,933.0000,1501.0000,958.0000,1420.0000,958.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "UnitPrice": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 139.95,
+                        "spans": [
+                          {
+                            "offset": 537,
+                            "length": 6
+                          }
+                        ],
+                        "confidence": 0.901,
+                        "source": "D(1,936.0000,933.0000,1016.0000,932.0000,1016.0000,958.0000,936.0000,958.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "Date": {
+                    "type": "date",
+                    "confidence": 0.823
+                  },
+                  "Description": {
+                    "type": "string",
+                    "valueString": "CUSTOM BUILT AMD RYZEN THREADRIPPER GAMING COMPUTER , 32 GB RAM,",
+                    "spans": [
+                      {
+                        "offset": 621,
+                        "length": 22
+                      },
+                      {
+                        "offset": 644,
+                        "length": 19
+                      },
+                      {
+                        "offset": 664,
+                        "length": 21
+                      }
+                    ],
+                    "confidence": 0.663,
+                    "source": "D(1,238.0000,1045.0000,549.0000,1045.0000,549.0000,1072.0000,238.0000,1072.0000);D(1,237.0150,1071.4129,510.1512,1073.0009,509.9908,1100.5872,236.8547,1098.9992);D(1,238.0000,1101.0000,518.0000,1101.0000,518.0000,1129.0000,238.0000,1129.0000)"
+                  },
+                  "ProductCode": {
+                    "type": "string",
+                    "confidence": 0.902
+                  },
+                  "Quantity": {
+                    "type": "number",
+                    "valueNumber": 3,
+                    "spans": [
+                      {
+                        "offset": 695,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.903,
+                    "source": "D(1,673.0000,1047.0000,725.0000,1047.0000,725.0000,1072.0000,673.0000,1072.0000)"
+                  },
+                  "QuantityUnit": {
+                    "type": "string",
+                    "valueString": "each",
+                    "spans": [
+                      {
+                        "offset": 709,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.826,
+                    "source": "D(1,770.0000,1048.0000,827.0000,1048.0000,827.0000,1071.0000,770.0000,1071.0000)"
+                  },
+                  "TaxAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "confidence": 0.607
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "TaxRate": {
+                    "type": "number",
+                    "valueNumber": 0.1,
+                    "spans": [
+                      {
+                        "offset": 759,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.896,
+                    "source": "D(1,1280.0293,1044.1796,1331.9274,1046.0331,1331.0000,1072.0000,1279.1019,1070.1465)"
+                  },
+                  "TotalAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 4620,
+                        "spans": [
+                          {
+                            "offset": 772,
+                            "length": 8
+                          }
+                        ],
+                        "confidence": 0.477,
+                        "source": "D(1,1399.0000,1046.0000,1501.0000,1046.0000,1501.0000,1072.0000,1399.0000,1072.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "UnitPrice": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 1400,
+                        "spans": [
+                          {
+                            "offset": 723,
+                            "length": 8
+                          }
+                        ],
+                        "confidence": 0.746,
+                        "source": "D(1,916.2062,1041.4639,1017.1794,1046.0536,1015.7938,1076.5361,914.8206,1071.9464)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "Date": {
+                    "type": "date",
+                    "confidence": 0.823
+                  },
+                  "Description": {
+                    "type": "string",
+                    "valueString": "Fast Dell Optiplex Desktop PC Computer Dual Core 3.4Ghz 8GB 1TB Win 10 Pro WIFI",
+                    "spans": [
+                      {
+                        "offset": 813,
+                        "length": 29
+                      },
+                      {
+                        "offset": 843,
+                        "length": 25
+                      },
+                      {
+                        "offset": 869,
+                        "length": 23
+                      }
+                    ],
+                    "confidence": 0.52,
+                    "source": "D(1,237.0000,1161.0000,574.0000,1161.0000,574.0000,1188.0000,237.0000,1188.0000);D(1,239.0000,1188.0000,555.0000,1188.0000,555.0000,1216.0000,239.0000,1216.0000);D(1,238.0000,1216.0000,521.0000,1216.0000,521.0000,1243.0000,238.0000,1243.0000)"
+                  },
+                  "ProductCode": {
+                    "type": "string",
+                    "confidence": 0.902
+                  },
+                  "Quantity": {
+                    "type": "number",
+                    "valueNumber": 1,
+                    "spans": [
+                      {
+                        "offset": 902,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.903,
+                    "source": "D(1,674.0000,1161.0000,725.0000,1161.0000,725.0000,1187.0000,674.0000,1187.0000)"
+                  },
+                  "QuantityUnit": {
+                    "type": "string",
+                    "valueString": "each",
+                    "spans": [
+                      {
+                        "offset": 916,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.826,
+                    "source": "D(1,769.0000,1162.0000,827.0000,1162.0000,827.0000,1185.0000,769.0000,1185.0000)"
+                  },
+                  "TaxAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "confidence": 0.678
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "TaxRate": {
+                    "type": "number",
+                    "valueNumber": 0.1,
+                    "spans": [
+                      {
+                        "offset": 962,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.883,
+                    "source": "D(1,1279.0273,1159.2078,1331.8610,1161.0297,1330.9727,1186.7922,1278.1390,1184.9703)"
+                  },
+                  "TotalAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 238.7,
+                        "spans": [
+                          {
+                            "offset": 975,
+                            "length": 6
+                          }
+                        ],
+                        "confidence": 0.905,
+                        "source": "D(1,1419.0000,1161.0000,1501.0000,1162.0000,1501.0000,1188.0000,1419.0000,1187.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "UnitPrice": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 217,
+                        "spans": [
+                          {
+                            "offset": 930,
+                            "length": 6
+                          }
+                        ],
+                        "confidence": 0.902,
+                        "source": "D(1,935.0000,1161.0000,1015.0000,1161.0000,1015.0000,1188.0000,935.0000,1188.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "Date": {
+                    "type": "date",
+                    "confidence": 0.823
+                  },
+                  "Description": {
+                    "type": "string",
+                    "valueString": "Dell Optiplex 790 Computer i7 @ 3.40 Ghz Quad Core 250GB 4GB Working",
+                    "spans": [
+                      {
+                        "offset": 1014,
+                        "length": 29
+                      },
+                      {
+                        "offset": 1044,
+                        "length": 26
+                      },
+                      {
+                        "offset": 1071,
+                        "length": 11
+                      }
+                    ],
+                    "confidence": 0.519,
+                    "source": "D(1,237.0000,1276.0000,579.0000,1276.0000,579.0000,1303.0000,237.0000,1303.0000);D(1,239.0000,1303.0000,577.0000,1303.0000,577.0000,1332.0000,239.0000,1332.0000);D(1,238.0356,1330.6964,387.4329,1333.0067,386.9644,1363.3036,237.5671,1360.9933)"
+                  },
+                  "ProductCode": {
+                    "type": "string",
+                    "confidence": 0.902
+                  },
+                  "Quantity": {
+                    "type": "number",
+                    "valueNumber": 3,
+                    "spans": [
+                      {
+                        "offset": 1092,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.914,
+                    "source": "D(1,672.0000,1277.0000,725.0000,1277.0000,725.0000,1302.0000,672.0000,1302.0000)"
+                  },
+                  "QuantityUnit": {
+                    "type": "string",
+                    "valueString": "each",
+                    "spans": [
+                      {
+                        "offset": 1106,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.829,
+                    "source": "D(1,770.0000,1277.0000,827.0000,1278.0000,827.0000,1301.0000,770.0000,1301.0000)"
+                  },
+                  "TaxAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "confidence": 0.233
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "TaxRate": {
+                    "type": "number",
+                    "valueNumber": 0.1,
+                    "spans": [
+                      {
+                        "offset": 1152,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.896,
+                    "source": "D(1,1281.0372,1275.3645,1331.5792,1276.5132,1330.9742,1303.1358,1280.4321,1301.9871)"
+                  },
+                  "TotalAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 527.97,
+                        "spans": [
+                          {
+                            "offset": 1165,
+                            "length": 6
+                          }
+                        ],
+                        "confidence": 0.936,
+                        "source": "D(1,1419.0000,1277.0000,1500.0000,1277.0000,1500.0000,1302.0000,1419.0000,1302.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "UnitPrice": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 159.99,
+                        "spans": [
+                          {
+                            "offset": 1120,
+                            "length": 6
+                          }
+                        ],
+                        "confidence": 0.903,
+                        "source": "D(1,936.0000,1276.0000,1016.0000,1276.0000,1016.0000,1303.0000,936.0000,1302.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "Date": {
+                    "type": "date",
+                    "confidence": 0.823
+                  },
+                  "Description": {
+                    "type": "string",
+                    "valueString": "Vintage Microsolutions Pentium 133mhz Desktop Tower PC Windows 95 5.25 Floppy",
+                    "spans": [
+                      {
+                        "offset": 1204,
+                        "length": 30
+                      },
+                      {
+                        "offset": 1235,
+                        "length": 23
+                      },
+                      {
+                        "offset": 1259,
+                        "length": 22
+                      }
+                    ],
+                    "confidence": 0.52,
+                    "source": "D(1,237.0000,1391.0000,593.0000,1391.0000,593.0000,1418.0000,237.0000,1418.0000);D(1,239.0000,1419.0000,542.0000,1419.0000,542.0000,1445.0000,239.0000,1445.0000);D(1,239.0059,1445.0909,514.1826,1446.8778,513.9990,1475.1493,238.8223,1473.3625)"
+                  },
+                  "ProductCode": {
+                    "type": "string",
+                    "confidence": 0.902
+                  },
+                  "Quantity": {
+                    "type": "number",
+                    "valueNumber": 2,
+                    "spans": [
+                      {
+                        "offset": 1291,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.902,
+                    "source": "D(1,672.0000,1392.0000,725.0000,1392.0000,725.0000,1418.0000,672.0000,1417.0000)"
+                  },
+                  "QuantityUnit": {
+                    "type": "string",
+                    "valueString": "each",
+                    "spans": [
+                      {
+                        "offset": 1305,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.83,
+                    "source": "D(1,769.0000,1393.0000,826.0000,1393.0000,826.0000,1416.0000,769.0000,1416.0000)"
+                  },
+                  "TaxAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "confidence": 0.848
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "TaxRate": {
+                    "type": "number",
+                    "valueNumber": 0.1,
+                    "spans": [
+                      {
+                        "offset": 1351,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.902,
+                    "source": "D(1,1279.0000,1390.0000,1333.0000,1390.0000,1333.0000,1416.0000,1279.0000,1416.0000)"
+                  },
+                  "TotalAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 858,
+                        "spans": [
+                          {
+                            "offset": 1364,
+                            "length": 6
+                          }
+                        ],
+                        "confidence": 0.902,
+                        "source": "D(1,1418.0000,1392.0000,1501.0000,1391.0000,1501.0000,1418.0000,1418.0000,1418.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "UnitPrice": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 390,
+                        "spans": [
+                          {
+                            "offset": 1319,
+                            "length": 6
+                          }
+                        ],
+                        "confidence": 0.902,
+                        "source": "D(1,934.0000,1390.0000,1015.0000,1391.0000,1015.0000,1418.0000,934.0000,1417.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
           },
           "PaymentTerm": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.816
           },
           "PONumber": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.746
           },
           "RemittanceAddress": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.905
           },
           "RemittanceAddressRecipient": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.814
           },
           "ServiceAddress": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.782
           },
           "ServiceAddressRecipient": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.82
           },
           "ShippingAddress": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.775
           },
           "ShippingAddressRecipient": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.81
           },
           "SubtotalAmount": {
             "type": "object",
             "valueObject": {
               "Amount": {
-                "type": "number"
+                "type": "number",
+                "valueNumber": 6236.77
               },
               "CurrencyCode": {
-                "type": "string"
+                "type": "string",
+                "valueString": "USD"
               }
             }
           },
           "TaxDetails": {
-            "type": "array"
+            "type": "array",
+            "valueArray": [
+              {
+                "type": "object",
+                "valueObject": {
+                  "Amount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 623.68,
+                        "spans": [
+                          {
+                            "offset": 1534,
+                            "length": 6
+                          }
+                        ],
+                        "confidence": 0.903,
+                        "source": "D(1,1161.0000,1683.0000,1240.0000,1683.0000,1240.0000,1709.0000,1161.0000,1709.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "Description": {
+                    "type": "string",
+                    "valueString": "VAT [%] 10%",
+                    "spans": [
+                      {
+                        "offset": 1422,
+                        "length": 7
+                      },
+                      {
+                        "offset": 1503,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.149,
+                    "source": "D(1,640.0000,1623.0000,744.0000,1623.0000,744.0000,1650.0000,640.0000,1650.0000);D(1,667.0650,1680.1809,718.8917,1682.0318,717.9350,1708.8191,666.1083,1706.9682)"
+                  },
+                  "NetAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 6236.77,
+                        "spans": [
+                          {
+                            "offset": 1516,
+                            "length": 8
+                          }
+                        ],
+                        "confidence": 0.819,
+                        "source": "D(1,953.0000,1683.0000,1055.0000,1683.0000,1055.0000,1709.0000,953.0000,1709.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "Rate": {
+                    "type": "number",
+                    "valueNumber": 0.1,
+                    "spans": [
+                      {
+                        "offset": 1503,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.877,
+                    "source": "D(1,667.0650,1680.1809,718.8917,1682.0318,717.9350,1708.8191,666.1083,1706.9682)"
+                  }
+                }
+              }
+            ]
           },
           "TotalAmount": {
             "type": "object",
             "valueObject": {
               "Amount": {
-                "type": "number"
+                "type": "number",
+                "valueNumber": 6860.45,
+                "spans": [
+                  {
+                    "offset": 1550,
+                    "length": 8
+                  }
+                ],
+                "confidence": 0.739,
+                "source": "D(1,1402.0000,1683.0000,1504.0000,1683.0000,1504.0000,1709.0000,1402.0000,1709.0000)"
               },
               "CurrencyCode": {
-                "type": "string"
+                "type": "string",
+                "valueString": "USD"
               }
             }
           },
@@ -123,7 +920,8 @@
             "type": "object",
             "valueObject": {
               "Amount": {
-                "type": "number"
+                "type": "number",
+                "confidence": 0.934
               },
               "CurrencyCode": {
                 "type": "string"
@@ -134,45 +932,4336 @@
             "type": "object",
             "valueObject": {
               "Amount": {
-                "type": "number"
+                "type": "number",
+                "valueNumber": 623.68
               },
               "CurrencyCode": {
-                "type": "string"
+                "type": "string",
+                "valueString": "USD"
               }
             }
           },
           "VendorAddress": {
-            "type": "string"
+            "type": "string",
+            "valueString": "00480 Cook Cove Spencerport, UT 12036",
+            "spans": [
+              {
+                "offset": 79,
+                "length": 15
+              },
+              {
+                "offset": 95,
+                "length": 21
+              }
+            ],
+            "confidence": 0.738,
+            "source": "D(1,140.0000,542.0000,389.0000,542.0000,389.0000,572.0000,140.0000,572.0000);D(1,139.0000,577.0000,466.0000,577.0000,466.0000,611.0000,139.0000,611.0000)"
           },
           "VendorAddressRecipient": {
-            "type": "string"
+            "type": "string",
+            "valueString": "Fitzpatrick and Sons",
+            "spans": [
+              {
+                "offset": 58,
+                "length": 20
+              }
+            ],
+            "confidence": 0.82,
+            "source": "D(1,140.0251,503.4656,425.3239,506.2903,424.9721,541.8215,139.6733,538.9968)"
           },
           "VendorName": {
-            "type": "string"
+            "type": "string",
+            "valueString": "Fitzpatrick and Sons",
+            "spans": [
+              {
+                "offset": 58,
+                "length": 20
+              }
+            ],
+            "confidence": 0.877,
+            "source": "D(1,140.0251,503.4656,425.3239,506.2903,424.9721,541.8215,139.6733,538.9968)"
           },
           "VendorTaxId": {
-            "type": "string"
+            "type": "string",
+            "valueString": "998-99-5253",
+            "spans": [
+              {
+                "offset": 126,
+                "length": 11
+              }
+            ],
+            "confidence": 0.902,
+            "source": "D(1,244.0000,650.0000,424.0000,648.0000,424.0000,678.0000,244.0000,679.0000)"
           }
         },
         "kind": "document",
         "startPageNumber": 1,
         "endPageNumber": 1,
+        "unit": "pixel",
+        "pages": [
+          {
+            "pageNumber": 1,
+            "angle": 0,
+            "width": 1654,
+            "height": 2339,
+            "spans": [
+              {
+                "offset": 0,
+                "length": 1663
+              }
+            ],
+            "words": [
+              {
+                "content": "Invoice",
+                "span": {
+                  "offset": 0,
+                  "length": 7
+                },
+                "confidence": 0.909,
+                "source": "D(1,131,73,265,72,265,107,131,108)"
+              },
+              {
+                "content": "no",
+                "span": {
+                  "offset": 8,
+                  "length": 2
+                },
+                "confidence": 0.997,
+                "source": "D(1,280,72,323,72,323,107,280,107)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 10,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,326,72,335,72,335,107,326,107)"
+              },
+              {
+                "content": "12847181",
+                "span": {
+                  "offset": 12,
+                  "length": 8
+                },
+                "confidence": 0.995,
+                "source": "D(1,352,72,538,72,538,107,352,107)"
+              },
+              {
+                "content": "Date",
+                "span": {
+                  "offset": 22,
+                  "length": 4
+                },
+                "confidence": 0.998,
+                "source": "D(1,131,141,205,141,205,173,131,173)"
+              },
+              {
+                "content": "of",
+                "span": {
+                  "offset": 27,
+                  "length": 2
+                },
+                "confidence": 0.998,
+                "source": "D(1,216,141,247,141,247,173,216,173)"
+              },
+              {
+                "content": "issue",
+                "span": {
+                  "offset": 30,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,255,141,332,141,332,173,255,173)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 35,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,334,141,345,141,345,173,334,173)"
+              },
+              {
+                "content": "03/03/2012",
+                "span": {
+                  "offset": 38,
+                  "length": 10
+                },
+                "confidence": 0.992,
+                "source": "D(1,800,140,979,140,979,174,800,175)"
+              },
+              {
+                "content": "Seller",
+                "span": {
+                  "offset": 50,
+                  "length": 6
+                },
+                "confidence": 0.997,
+                "source": "D(1,131,444,241,443,241,476,131,476)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 56,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,242,443,255,443,255,476,242,476)"
+              },
+              {
+                "content": "Fitzpatrick",
+                "span": {
+                  "offset": 58,
+                  "length": 11
+                },
+                "confidence": 0.996,
+                "source": "D(1,140,506,287,505,287,538,140,539)"
+              },
+              {
+                "content": "and",
+                "span": {
+                  "offset": 70,
+                  "length": 3
+                },
+                "confidence": 0.998,
+                "source": "D(1,295,505,345,506,345,538,294,538)"
+              },
+              {
+                "content": "Sons",
+                "span": {
+                  "offset": 74,
+                  "length": 4
+                },
+                "confidence": 0.996,
+                "source": "D(1,354,506,425,507,425,539,354,538)"
+              },
+              {
+                "content": "00480",
+                "span": {
+                  "offset": 79,
+                  "length": 5
+                },
+                "confidence": 0.995,
+                "source": "D(1,140,542,228,542,228,572,140,572)"
+              },
+              {
+                "content": "Cook",
+                "span": {
+                  "offset": 85,
+                  "length": 4
+                },
+                "confidence": 0.997,
+                "source": "D(1,238,542,307,542,307,572,238,572)"
+              },
+              {
+                "content": "Cove",
+                "span": {
+                  "offset": 90,
+                  "length": 4
+                },
+                "confidence": 0.997,
+                "source": "D(1,316,542,389,542,389,572,316,572)"
+              },
+              {
+                "content": "Spencerport",
+                "span": {
+                  "offset": 95,
+                  "length": 11
+                },
+                "confidence": 0.994,
+                "source": "D(1,139,578,311,578,311,611,140,611)"
+              },
+              {
+                "content": ",",
+                "span": {
+                  "offset": 106,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,312,578,318,578,318,611,312,611)"
+              },
+              {
+                "content": "UT",
+                "span": {
+                  "offset": 108,
+                  "length": 2
+                },
+                "confidence": 0.985,
+                "source": "D(1,328,578,367,577,367,610,328,610)"
+              },
+              {
+                "content": "12036",
+                "span": {
+                  "offset": 111,
+                  "length": 5
+                },
+                "confidence": 0.969,
+                "source": "D(1,376,577,466,577,466,609,376,610)"
+              },
+              {
+                "content": "Tax",
+                "span": {
+                  "offset": 118,
+                  "length": 3
+                },
+                "confidence": 0.976,
+                "source": "D(1,138,650,190,650,190,679,139,679)"
+              },
+              {
+                "content": "Id",
+                "span": {
+                  "offset": 122,
+                  "length": 2
+                },
+                "confidence": 0.847,
+                "source": "D(1,201,650,223,650,223,679,201,679)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 124,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,227,650,232,650,232,679,227,679)"
+              },
+              {
+                "content": "998-99-5253",
+                "span": {
+                  "offset": 126,
+                  "length": 11
+                },
+                "confidence": 0.988,
+                "source": "D(1,244,650,424,648,424,678,244,679)"
+              },
+              {
+                "content": "IBAN",
+                "span": {
+                  "offset": 139,
+                  "length": 4
+                },
+                "confidence": 0.995,
+                "source": "D(1,139,683,204,683,204,714,140,714)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 143,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,208,683,213,683,214,714,208,714)"
+              },
+              {
+                "content": "GB92PBPQ73499358975916",
+                "span": {
+                  "offset": 145,
+                  "length": 22
+                },
+                "confidence": 0.994,
+                "source": "D(1,227,683,626,683,626,714,227,715)"
+              },
+              {
+                "content": "Client",
+                "span": {
+                  "offset": 169,
+                  "length": 6
+                },
+                "confidence": 0.995,
+                "source": "D(1,824,442,935,443,935,476,824,477)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 175,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,937,442,950,442,950,476,937,476)"
+              },
+              {
+                "content": "Duncan",
+                "span": {
+                  "offset": 177,
+                  "length": 6
+                },
+                "confidence": 0.991,
+                "source": "D(1,833,506,938,506,938,535,833,535)"
+              },
+              {
+                "content": "PLC",
+                "span": {
+                  "offset": 184,
+                  "length": 3
+                },
+                "confidence": 0.995,
+                "source": "D(1,949,506,1003,506,1003,535,949,535)"
+              },
+              {
+                "content": "Unit",
+                "span": {
+                  "offset": 188,
+                  "length": 4
+                },
+                "confidence": 0.984,
+                "source": "D(1,832,542,889,542,889,572,832,572)"
+              },
+              {
+                "content": "8799",
+                "span": {
+                  "offset": 193,
+                  "length": 4
+                },
+                "confidence": 0.986,
+                "source": "D(1,897,542,967,542,967,572,897,572)"
+              },
+              {
+                "content": "Box",
+                "span": {
+                  "offset": 198,
+                  "length": 3
+                },
+                "confidence": 0.945,
+                "source": "D(1,979,542,1030,542,1030,572,979,572)"
+              },
+              {
+                "content": "0703",
+                "span": {
+                  "offset": 202,
+                  "length": 4
+                },
+                "confidence": 0.986,
+                "source": "D(1,1039,542,1112,541,1112,571,1039,572)"
+              },
+              {
+                "content": "DPO",
+                "span": {
+                  "offset": 207,
+                  "length": 3
+                },
+                "confidence": 0.948,
+                "source": "D(1,833,577,891,577,891,607,833,607)"
+              },
+              {
+                "content": "AP",
+                "span": {
+                  "offset": 211,
+                  "length": 2
+                },
+                "confidence": 0.97,
+                "source": "D(1,900,577,937,577,937,607,900,607)"
+              },
+              {
+                "content": "81970",
+                "span": {
+                  "offset": 214,
+                  "length": 5
+                },
+                "confidence": 0.98,
+                "source": "D(1,947,577,1037,577,1037,607,947,607)"
+              },
+              {
+                "content": "Tax",
+                "span": {
+                  "offset": 221,
+                  "length": 3
+                },
+                "confidence": 0.987,
+                "source": "D(1,831,648,882,648,882,679,831,679)"
+              },
+              {
+                "content": "Id",
+                "span": {
+                  "offset": 225,
+                  "length": 2
+                },
+                "confidence": 0.784,
+                "source": "D(1,893,649,916,649,916,679,893,679)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 227,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,920,649,925,649,925,679,920,679)"
+              },
+              {
+                "content": "911-82-7132",
+                "span": {
+                  "offset": 229,
+                  "length": 11
+                },
+                "confidence": 0.987,
+                "source": "D(1,937,649,1118,648,1118,679,937,679)"
+              },
+              {
+                "content": "ITEMS",
+                "span": {
+                  "offset": 245,
+                  "length": 5
+                },
+                "confidence": 0.98,
+                "source": "D(1,131,760,249,759,249,792,131,792)"
+              },
+              {
+                "content": "No",
+                "span": {
+                  "offset": 270,
+                  "length": 2
+                },
+                "confidence": 0.946,
+                "source": "D(1,158,848,192,847,192,869,158,870)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 272,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,194,847,202,846,202,869,194,869)"
+              },
+              {
+                "content": "Description",
+                "span": {
+                  "offset": 283,
+                  "length": 11
+                },
+                "confidence": 0.997,
+                "source": "D(1,237,846,385,847,385,873,237,872)"
+              },
+              {
+                "content": "Qty",
+                "span": {
+                  "offset": 304,
+                  "length": 3
+                },
+                "confidence": 0.995,
+                "source": "D(1,678,846,726,846,726,872,678,872)"
+              },
+              {
+                "content": "UM",
+                "span": {
+                  "offset": 317,
+                  "length": 2
+                },
+                "confidence": 0.982,
+                "source": "D(1,777,847,821,846,821,870,777,871)"
+              },
+              {
+                "content": "Net",
+                "span": {
+                  "offset": 329,
+                  "length": 3
+                },
+                "confidence": 0.998,
+                "source": "D(1,898,845,944,845,944,872,898,871)"
+              },
+              {
+                "content": "price",
+                "span": {
+                  "offset": 333,
+                  "length": 5
+                },
+                "confidence": 0.998,
+                "source": "D(1,952,846,1018,847,1018,873,952,872)"
+              },
+              {
+                "content": "Net",
+                "span": {
+                  "offset": 348,
+                  "length": 3
+                },
+                "confidence": 0.998,
+                "source": "D(1,1057,844,1103,845,1103,870,1057,869)"
+              },
+              {
+                "content": "worth",
+                "span": {
+                  "offset": 352,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,1110,845,1186,846,1186,871,1110,871)"
+              },
+              {
+                "content": "VAT",
+                "span": {
+                  "offset": 367,
+                  "length": 3
+                },
+                "confidence": 0.992,
+                "source": "D(1,1227,844,1280,845,1280,872,1227,871)"
+              },
+              {
+                "content": "[",
+                "span": {
+                  "offset": 371,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1287,845,1297,845,1297,873,1287,873)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 372,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1296,845,1319,845,1319,872,1296,873)"
+              },
+              {
+                "content": "]",
+                "span": {
+                  "offset": 373,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,1319,845,1332,845,1332,872,1319,872)"
+              },
+              {
+                "content": "Gross",
+                "span": {
+                  "offset": 384,
+                  "length": 5
+                },
+                "confidence": 0.998,
+                "source": "D(1,1428,848,1501,848,1501,871,1428,870)"
+              },
+              {
+                "content": "worth",
+                "span": {
+                  "offset": 390,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,1425,875,1501,875,1501,897,1425,897)"
+              },
+              {
+                "content": "1",
+                "span": {
+                  "offset": 416,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,169,934,182,934,182,957,169,957)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 417,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,184,934,192,934,192,957,184,957)"
+              },
+              {
+                "content": "HP",
+                "span": {
+                  "offset": 428,
+                  "length": 2
+                },
+                "confidence": 0.993,
+                "source": "D(1,238,933,269,933,269,959,238,959)"
+              },
+              {
+                "content": "Desktop",
+                "span": {
+                  "offset": 431,
+                  "length": 7
+                },
+                "confidence": 0.994,
+                "source": "D(1,277,933,367,932,367,959,277,959)"
+              },
+              {
+                "content": "Computer",
+                "span": {
+                  "offset": 439,
+                  "length": 8
+                },
+                "confidence": 0.995,
+                "source": "D(1,375,932,487,933,487,958,375,959)"
+              },
+              {
+                "content": "PC",
+                "span": {
+                  "offset": 448,
+                  "length": 2
+                },
+                "confidence": 0.993,
+                "source": "D(1,493,933,525,933,525,958,493,958)"
+              },
+              {
+                "content": "Core",
+                "span": {
+                  "offset": 451,
+                  "length": 4
+                },
+                "confidence": 0.989,
+                "source": "D(1,239,959,290,959,290,984,239,985)"
+              },
+              {
+                "content": "i5",
+                "span": {
+                  "offset": 456,
+                  "length": 2
+                },
+                "confidence": 0.958,
+                "source": "D(1,298,959,316,959,316,984,298,984)"
+              },
+              {
+                "content": "16GB",
+                "span": {
+                  "offset": 459,
+                  "length": 4
+                },
+                "confidence": 0.977,
+                "source": "D(1,326,959,385,959,385,984,326,984)"
+              },
+              {
+                "content": "2TB",
+                "span": {
+                  "offset": 464,
+                  "length": 3
+                },
+                "confidence": 0.988,
+                "source": "D(1,393,959,435,959,435,984,393,984)"
+              },
+              {
+                "content": "HD",
+                "span": {
+                  "offset": 468,
+                  "length": 2
+                },
+                "confidence": 0.992,
+                "source": "D(1,445,959,476,959,476,984,445,984)"
+              },
+              {
+                "content": "256GB",
+                "span": {
+                  "offset": 471,
+                  "length": 5
+                },
+                "confidence": 0.987,
+                "source": "D(1,483,959,560,958,560,983,483,984)"
+              },
+              {
+                "content": "SSD",
+                "span": {
+                  "offset": 477,
+                  "length": 3
+                },
+                "confidence": 0.989,
+                "source": "D(1,239,988,283,988,283,1013,239,1012)"
+              },
+              {
+                "content": "22",
+                "span": {
+                  "offset": 481,
+                  "length": 2
+                },
+                "confidence": 0.989,
+                "source": "D(1,291,988,318,988,318,1013,291,1013)"
+              },
+              {
+                "content": "\"",
+                "span": {
+                  "offset": 483,
+                  "length": 1
+                },
+                "confidence": 0.949,
+                "source": "D(1,320,988,329,988,329,1013,320,1013)"
+              },
+              {
+                "content": "LCD",
+                "span": {
+                  "offset": 485,
+                  "length": 3
+                },
+                "confidence": 0.989,
+                "source": "D(1,338,988,385,988,385,1012,338,1013)"
+              },
+              {
+                "content": "Windows",
+                "span": {
+                  "offset": 489,
+                  "length": 7
+                },
+                "confidence": 0.977,
+                "source": "D(1,409,988,509,988,509,1012,409,1012)"
+              },
+              {
+                "content": "10",
+                "span": {
+                  "offset": 497,
+                  "length": 2
+                },
+                "confidence": 0.993,
+                "source": "D(1,517,988,546,988,546,1012,517,1012)"
+              },
+              {
+                "content": "4,00",
+                "span": {
+                  "offset": 509,
+                  "length": 4
+                },
+                "confidence": 0.994,
+                "source": "D(1,672,934,725,934,725,958,672,958)"
+              },
+              {
+                "content": "each",
+                "span": {
+                  "offset": 523,
+                  "length": 4
+                },
+                "confidence": 0.999,
+                "source": "D(1,769,934,827,934,827,957,769,957)"
+              },
+              {
+                "content": "139,95",
+                "span": {
+                  "offset": 537,
+                  "length": 6
+                },
+                "confidence": 0.992,
+                "source": "D(1,936,933,1016,932,1016,958,936,958)"
+              },
+              {
+                "content": "559,80",
+                "span": {
+                  "offset": 553,
+                  "length": 6
+                },
+                "confidence": 0.993,
+                "source": "D(1,1106,932,1186,932,1186,958,1106,958)"
+              },
+              {
+                "content": "10",
+                "span": {
+                  "offset": 569,
+                  "length": 2
+                },
+                "confidence": 0.999,
+                "source": "D(1,1279,933,1308,933,1308,957,1279,957)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 571,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1308,933,1332,933,1332,958,1308,957)"
+              },
+              {
+                "content": "615,78",
+                "span": {
+                  "offset": 582,
+                  "length": 6
+                },
+                "confidence": 0.941,
+                "source": "D(1,1420,933,1501,933,1501,958,1420,958)"
+              },
+              {
+                "content": "2",
+                "span": {
+                  "offset": 609,
+                  "length": 1
+                },
+                "confidence": 0.973,
+                "source": "D(1,169,1047,183,1047,183,1070,169,1070)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 610,
+                  "length": 1
+                },
+                "confidence": 0.996,
+                "source": "D(1,184,1047,192,1049,192,1072,184,1070)"
+              },
+              {
+                "content": "CUSTOM",
+                "span": {
+                  "offset": 621,
+                  "length": 6
+                },
+                "confidence": 0.993,
+                "source": "D(1,238,1045,332,1045,332,1071,238,1072)"
+              },
+              {
+                "content": "BUILT",
+                "span": {
+                  "offset": 628,
+                  "length": 5
+                },
+                "confidence": 0.995,
+                "source": "D(1,342,1045,406,1045,406,1071,342,1071)"
+              },
+              {
+                "content": "AMD",
+                "span": {
+                  "offset": 634,
+                  "length": 3
+                },
+                "confidence": 0.994,
+                "source": "D(1,412,1045,465,1045,465,1071,412,1071)"
+              },
+              {
+                "content": "RYZEN",
+                "span": {
+                  "offset": 638,
+                  "length": 5
+                },
+                "confidence": 0.994,
+                "source": "D(1,472,1045,549,1045,549,1071,472,1071)"
+              },
+              {
+                "content": "THREADRIPPER",
+                "span": {
+                  "offset": 644,
+                  "length": 12
+                },
+                "confidence": 0.992,
+                "source": "D(1,237,1074,409,1075,409,1100,237,1099)"
+              },
+              {
+                "content": "GAMING",
+                "span": {
+                  "offset": 657,
+                  "length": 6
+                },
+                "confidence": 0.995,
+                "source": "D(1,418,1075,510,1073,510,1099,418,1100)"
+              },
+              {
+                "content": "COMPUTER",
+                "span": {
+                  "offset": 664,
+                  "length": 8
+                },
+                "confidence": 0.989,
+                "source": "D(1,238,1101,364,1102,364,1129,238,1128)"
+              },
+              {
+                "content": ",",
+                "span": {
+                  "offset": 673,
+                  "length": 1
+                },
+                "confidence": 0.994,
+                "source": "D(1,370,1102,376,1102,376,1129,370,1129)"
+              },
+              {
+                "content": "32",
+                "span": {
+                  "offset": 675,
+                  "length": 2
+                },
+                "confidence": 0.973,
+                "source": "D(1,385,1102,412,1102,412,1129,385,1129)"
+              },
+              {
+                "content": "GB",
+                "span": {
+                  "offset": 678,
+                  "length": 2
+                },
+                "confidence": 0.969,
+                "source": "D(1,421,1102,452,1102,452,1129,421,1129)"
+              },
+              {
+                "content": "RAM",
+                "span": {
+                  "offset": 681,
+                  "length": 3
+                },
+                "confidence": 0.991,
+                "source": "D(1,462,1102,508,1101,508,1129,462,1129)"
+              },
+              {
+                "content": ",",
+                "span": {
+                  "offset": 684,
+                  "length": 1
+                },
+                "confidence": 0.986,
+                "source": "D(1,510,1101,518,1101,518,1129,510,1129)"
+              },
+              {
+                "content": "3,00",
+                "span": {
+                  "offset": 695,
+                  "length": 4
+                },
+                "confidence": 0.994,
+                "source": "D(1,673,1047,725,1047,725,1072,673,1072)"
+              },
+              {
+                "content": "each",
+                "span": {
+                  "offset": 709,
+                  "length": 4
+                },
+                "confidence": 0.999,
+                "source": "D(1,770,1048,827,1048,827,1071,770,1071)"
+              },
+              {
+                "content": "1",
+                "span": {
+                  "offset": 723,
+                  "length": 1
+                },
+                "confidence": 0.935,
+                "source": "D(1,916,1046,927,1047,927,1072,916,1072)"
+              },
+              {
+                "content": "400,00",
+                "span": {
+                  "offset": 725,
+                  "length": 6
+                },
+                "confidence": 0.913,
+                "source": "D(1,936,1047,1016,1046,1016,1072,936,1072)"
+              },
+              {
+                "content": "4",
+                "span": {
+                  "offset": 741,
+                  "length": 1
+                },
+                "confidence": 0.966,
+                "source": "D(1,1083,1046,1097,1046,1097,1072,1083,1072)"
+              },
+              {
+                "content": "200,00",
+                "span": {
+                  "offset": 743,
+                  "length": 6
+                },
+                "confidence": 0.91,
+                "source": "D(1,1106,1047,1186,1046,1186,1072,1106,1072)"
+              },
+              {
+                "content": "10",
+                "span": {
+                  "offset": 759,
+                  "length": 2
+                },
+                "confidence": 0.999,
+                "source": "D(1,1280,1045,1308,1046,1308,1071,1280,1070)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 761,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1308,1046,1331,1046,1331,1072,1308,1071)"
+              },
+              {
+                "content": "4",
+                "span": {
+                  "offset": 772,
+                  "length": 1
+                },
+                "confidence": 0.986,
+                "source": "D(1,1399,1047,1412,1047,1412,1072,1399,1072)"
+              },
+              {
+                "content": "620,00",
+                "span": {
+                  "offset": 774,
+                  "length": 6
+                },
+                "confidence": 0.948,
+                "source": "D(1,1421,1047,1501,1046,1501,1072,1421,1072)"
+              },
+              {
+                "content": "3",
+                "span": {
+                  "offset": 801,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,169,1163,183,1161,183,1184,169,1186)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 802,
+                  "length": 1
+                },
+                "confidence": 0.997,
+                "source": "D(1,185,1161,191,1161,191,1184,185,1184)"
+              },
+              {
+                "content": "Fast",
+                "span": {
+                  "offset": 813,
+                  "length": 4
+                },
+                "confidence": 0.995,
+                "source": "D(1,237,1161,285,1161,285,1188,237,1188)"
+              },
+              {
+                "content": "Dell",
+                "span": {
+                  "offset": 818,
+                  "length": 4
+                },
+                "confidence": 0.997,
+                "source": "D(1,293,1161,334,1161,334,1188,293,1188)"
+              },
+              {
+                "content": "Optiplex",
+                "span": {
+                  "offset": 823,
+                  "length": 8
+                },
+                "confidence": 0.989,
+                "source": "D(1,342,1161,436,1161,436,1188,342,1188)"
+              },
+              {
+                "content": "Desktop",
+                "span": {
+                  "offset": 832,
+                  "length": 7
+                },
+                "confidence": 0.993,
+                "source": "D(1,445,1161,535,1161,535,1188,445,1188)"
+              },
+              {
+                "content": "PC",
+                "span": {
+                  "offset": 840,
+                  "length": 2
+                },
+                "confidence": 0.994,
+                "source": "D(1,543,1161,574,1161,574,1188,543,1188)"
+              },
+              {
+                "content": "Computer",
+                "span": {
+                  "offset": 843,
+                  "length": 8
+                },
+                "confidence": 0.994,
+                "source": "D(1,239,1189,349,1189,349,1216,239,1216)"
+              },
+              {
+                "content": "Dual",
+                "span": {
+                  "offset": 852,
+                  "length": 4
+                },
+                "confidence": 0.995,
+                "source": "D(1,355,1189,406,1189,406,1215,355,1216)"
+              },
+              {
+                "content": "Core",
+                "span": {
+                  "offset": 857,
+                  "length": 4
+                },
+                "confidence": 0.986,
+                "source": "D(1,413,1189,464,1189,464,1215,413,1215)"
+              },
+              {
+                "content": "3.4Ghz",
+                "span": {
+                  "offset": 862,
+                  "length": 6
+                },
+                "confidence": 0.969,
+                "source": "D(1,472,1189,555,1188,555,1215,472,1215)"
+              },
+              {
+                "content": "8GB",
+                "span": {
+                  "offset": 869,
+                  "length": 3
+                },
+                "confidence": 0.967,
+                "source": "D(1,238,1216,283,1216,283,1243,238,1243)"
+              },
+              {
+                "content": "1TB",
+                "span": {
+                  "offset": 873,
+                  "length": 3
+                },
+                "confidence": 0.973,
+                "source": "D(1,293,1216,334,1216,334,1243,293,1243)"
+              },
+              {
+                "content": "Win",
+                "span": {
+                  "offset": 877,
+                  "length": 3
+                },
+                "confidence": 0.975,
+                "source": "D(1,342,1216,383,1216,383,1243,342,1243)"
+              },
+              {
+                "content": "10",
+                "span": {
+                  "offset": 881,
+                  "length": 2
+                },
+                "confidence": 0.963,
+                "source": "D(1,393,1216,419,1216,419,1243,393,1243)"
+              },
+              {
+                "content": "Pro",
+                "span": {
+                  "offset": 884,
+                  "length": 3
+                },
+                "confidence": 0.964,
+                "source": "D(1,428,1216,463,1216,463,1243,428,1243)"
+              },
+              {
+                "content": "WIFI",
+                "span": {
+                  "offset": 888,
+                  "length": 4
+                },
+                "confidence": 0.939,
+                "source": "D(1,470,1217,521,1217,521,1243,470,1243)"
+              },
+              {
+                "content": "1,00",
+                "span": {
+                  "offset": 902,
+                  "length": 4
+                },
+                "confidence": 0.993,
+                "source": "D(1,674,1161,725,1161,725,1187,674,1187)"
+              },
+              {
+                "content": "each",
+                "span": {
+                  "offset": 916,
+                  "length": 4
+                },
+                "confidence": 0.999,
+                "source": "D(1,769,1162,827,1162,827,1185,769,1185)"
+              },
+              {
+                "content": "217,00",
+                "span": {
+                  "offset": 930,
+                  "length": 6
+                },
+                "confidence": 0.995,
+                "source": "D(1,935,1161,1015,1161,1015,1188,935,1188)"
+              },
+              {
+                "content": "217,00",
+                "span": {
+                  "offset": 946,
+                  "length": 6
+                },
+                "confidence": 0.993,
+                "source": "D(1,1105,1161,1186,1161,1186,1187,1105,1187)"
+              },
+              {
+                "content": "10",
+                "span": {
+                  "offset": 962,
+                  "length": 2
+                },
+                "confidence": 0.999,
+                "source": "D(1,1279,1160,1308,1161,1308,1186,1279,1185)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 964,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1308,1161,1331,1161,1331,1186,1308,1186)"
+              },
+              {
+                "content": "238,70",
+                "span": {
+                  "offset": 975,
+                  "length": 6
+                },
+                "confidence": 0.988,
+                "source": "D(1,1419,1161,1501,1162,1501,1188,1419,1187)"
+              },
+              {
+                "content": "4",
+                "span": {
+                  "offset": 1002,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,169,1278,183,1277,183,1300,169,1301)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 1003,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,185,1277,192,1278,192,1301,185,1300)"
+              },
+              {
+                "content": "Dell",
+                "span": {
+                  "offset": 1014,
+                  "length": 4
+                },
+                "confidence": 0.997,
+                "source": "D(1,237,1276,281,1276,281,1303,237,1303)"
+              },
+              {
+                "content": "Optiplex",
+                "span": {
+                  "offset": 1019,
+                  "length": 8
+                },
+                "confidence": 0.991,
+                "source": "D(1,288,1276,382,1276,382,1303,288,1303)"
+              },
+              {
+                "content": "790",
+                "span": {
+                  "offset": 1028,
+                  "length": 3
+                },
+                "confidence": 0.993,
+                "source": "D(1,390,1276,431,1276,431,1303,390,1303)"
+              },
+              {
+                "content": "Computer",
+                "span": {
+                  "offset": 1032,
+                  "length": 8
+                },
+                "confidence": 0.985,
+                "source": "D(1,439,1276,551,1276,551,1303,439,1303)"
+              },
+              {
+                "content": "i7",
+                "span": {
+                  "offset": 1041,
+                  "length": 2
+                },
+                "confidence": 0.983,
+                "source": "D(1,557,1276,579,1276,579,1303,557,1303)"
+              },
+              {
+                "content": "@",
+                "span": {
+                  "offset": 1044,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,239,1304,258,1304,259,1332,239,1332)"
+              },
+              {
+                "content": "3.40",
+                "span": {
+                  "offset": 1046,
+                  "length": 4
+                },
+                "confidence": 0.975,
+                "source": "D(1,267,1304,316,1304,316,1331,267,1332)"
+              },
+              {
+                "content": "Ghz",
+                "span": {
+                  "offset": 1051,
+                  "length": 3
+                },
+                "confidence": 0.99,
+                "source": "D(1,325,1304,367,1304,367,1331,325,1331)"
+              },
+              {
+                "content": "Quad",
+                "span": {
+                  "offset": 1055,
+                  "length": 4
+                },
+                "confidence": 0.995,
+                "source": "D(1,374,1304,432,1303,432,1331,375,1331)"
+              },
+              {
+                "content": "Core",
+                "span": {
+                  "offset": 1060,
+                  "length": 4
+                },
+                "confidence": 0.994,
+                "source": "D(1,441,1303,492,1303,493,1331,441,1331)"
+              },
+              {
+                "content": "250GB",
+                "span": {
+                  "offset": 1065,
+                  "length": 5
+                },
+                "confidence": 0.974,
+                "source": "D(1,500,1304,577,1304,577,1331,500,1331)"
+              },
+              {
+                "content": "4GB",
+                "span": {
+                  "offset": 1071,
+                  "length": 3
+                },
+                "confidence": 0.982,
+                "source": "D(1,238,1333,283,1332,283,1359,238,1361)"
+              },
+              {
+                "content": "Working",
+                "span": {
+                  "offset": 1075,
+                  "length": 7
+                },
+                "confidence": 0.99,
+                "source": "D(1,290,1332,387,1333,387,1361,290,1359)"
+              },
+              {
+                "content": "3,00",
+                "span": {
+                  "offset": 1092,
+                  "length": 4
+                },
+                "confidence": 0.996,
+                "source": "D(1,672,1277,725,1277,725,1302,672,1302)"
+              },
+              {
+                "content": "each",
+                "span": {
+                  "offset": 1106,
+                  "length": 4
+                },
+                "confidence": 0.999,
+                "source": "D(1,770,1277,827,1278,827,1301,770,1301)"
+              },
+              {
+                "content": "159,99",
+                "span": {
+                  "offset": 1120,
+                  "length": 6
+                },
+                "confidence": 0.993,
+                "source": "D(1,936,1276,1016,1276,1016,1303,936,1302)"
+              },
+              {
+                "content": "479,97",
+                "span": {
+                  "offset": 1136,
+                  "length": 6
+                },
+                "confidence": 0.984,
+                "source": "D(1,1106,1277,1186,1277,1186,1302,1106,1302)"
+              },
+              {
+                "content": "10",
+                "span": {
+                  "offset": 1152,
+                  "length": 2
+                },
+                "confidence": 0.999,
+                "source": "D(1,1281,1277,1308,1276,1308,1302,1281,1302)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 1154,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1309,1276,1331,1277,1331,1302,1309,1302)"
+              },
+              {
+                "content": "527,97",
+                "span": {
+                  "offset": 1165,
+                  "length": 6
+                },
+                "confidence": 0.995,
+                "source": "D(1,1419,1277,1500,1277,1500,1302,1419,1302)"
+              },
+              {
+                "content": "5",
+                "span": {
+                  "offset": 1192,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,169,1394,182,1392,182,1415,169,1417)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 1193,
+                  "length": 1
+                },
+                "confidence": 0.997,
+                "source": "D(1,184,1392,192,1392,192,1416,184,1415)"
+              },
+              {
+                "content": "Vintage",
+                "span": {
+                  "offset": 1204,
+                  "length": 7
+                },
+                "confidence": 0.997,
+                "source": "D(1,237,1391,323,1391,323,1418,237,1418)"
+              },
+              {
+                "content": "Microsolutions",
+                "span": {
+                  "offset": 1212,
+                  "length": 14
+                },
+                "confidence": 0.996,
+                "source": "D(1,331,1391,491,1391,491,1418,331,1418)"
+              },
+              {
+                "content": "Pentium",
+                "span": {
+                  "offset": 1227,
+                  "length": 7
+                },
+                "confidence": 0.997,
+                "source": "D(1,499,1391,593,1391,593,1418,499,1418)"
+              },
+              {
+                "content": "133mhz",
+                "span": {
+                  "offset": 1235,
+                  "length": 6
+                },
+                "confidence": 0.974,
+                "source": "D(1,239,1419,328,1419,328,1445,239,1445)"
+              },
+              {
+                "content": "Desktop",
+                "span": {
+                  "offset": 1242,
+                  "length": 7
+                },
+                "confidence": 0.991,
+                "source": "D(1,337,1419,427,1419,427,1445,337,1445)"
+              },
+              {
+                "content": "Tower",
+                "span": {
+                  "offset": 1250,
+                  "length": 5
+                },
+                "confidence": 0.992,
+                "source": "D(1,434,1419,503,1419,503,1445,434,1445)"
+              },
+              {
+                "content": "PC",
+                "span": {
+                  "offset": 1256,
+                  "length": 2
+                },
+                "confidence": 0.99,
+                "source": "D(1,511,1419,542,1419,542,1445,511,1445)"
+              },
+              {
+                "content": "Windows",
+                "span": {
+                  "offset": 1259,
+                  "length": 7
+                },
+                "confidence": 0.967,
+                "source": "D(1,239,1446,337,1446,337,1474,239,1473)"
+              },
+              {
+                "content": "95",
+                "span": {
+                  "offset": 1267,
+                  "length": 2
+                },
+                "confidence": 0.988,
+                "source": "D(1,344,1446,371,1446,371,1474,344,1474)"
+              },
+              {
+                "content": "5.25",
+                "span": {
+                  "offset": 1270,
+                  "length": 4
+                },
+                "confidence": 0.958,
+                "source": "D(1,379,1446,429,1447,429,1474,379,1474)"
+              },
+              {
+                "content": "Floppy",
+                "span": {
+                  "offset": 1275,
+                  "length": 6
+                },
+                "confidence": 0.978,
+                "source": "D(1,437,1447,514,1447,514,1475,437,1474)"
+              },
+              {
+                "content": "2,00",
+                "span": {
+                  "offset": 1291,
+                  "length": 4
+                },
+                "confidence": 0.995,
+                "source": "D(1,672,1392,725,1392,725,1418,672,1417)"
+              },
+              {
+                "content": "each",
+                "span": {
+                  "offset": 1305,
+                  "length": 4
+                },
+                "confidence": 0.998,
+                "source": "D(1,769,1393,826,1393,826,1416,769,1416)"
+              },
+              {
+                "content": "390,00",
+                "span": {
+                  "offset": 1319,
+                  "length": 6
+                },
+                "confidence": 0.992,
+                "source": "D(1,934,1390,1015,1391,1015,1418,934,1417)"
+              },
+              {
+                "content": "780,00",
+                "span": {
+                  "offset": 1335,
+                  "length": 6
+                },
+                "confidence": 0.997,
+                "source": "D(1,1106,1391,1186,1392,1186,1418,1106,1416)"
+              },
+              {
+                "content": "10",
+                "span": {
+                  "offset": 1351,
+                  "length": 2
+                },
+                "confidence": 0.999,
+                "source": "D(1,1279,1391,1308,1391,1308,1416,1279,1416)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 1353,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1308,1391,1333,1390,1333,1415,1308,1416)"
+              },
+              {
+                "content": "858,00",
+                "span": {
+                  "offset": 1364,
+                  "length": 6
+                },
+                "confidence": 0.992,
+                "source": "D(1,1418,1392,1501,1391,1501,1418,1418,1418)"
+              },
+              {
+                "content": "SUMMARY",
+                "span": {
+                  "offset": 1395,
+                  "length": 7
+                },
+                "confidence": 0.994,
+                "source": "D(1,131,1538,328,1539,328,1574,131,1573)"
+              },
+              {
+                "content": "VAT",
+                "span": {
+                  "offset": 1422,
+                  "length": 3
+                },
+                "confidence": 0.993,
+                "source": "D(1,640,1623,692,1623,692,1650,640,1650)"
+              },
+              {
+                "content": "[",
+                "span": {
+                  "offset": 1426,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,699,1623,709,1623,709,1650,699,1650)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 1427,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,708,1623,731,1623,731,1650,708,1650)"
+              },
+              {
+                "content": "]",
+                "span": {
+                  "offset": 1428,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,731,1623,744,1623,744,1650,731,1650)"
+              },
+              {
+                "content": "Net",
+                "span": {
+                  "offset": 1439,
+                  "length": 3
+                },
+                "confidence": 0.998,
+                "source": "D(1,927,1624,973,1624,973,1649,927,1649)"
+              },
+              {
+                "content": "worth",
+                "span": {
+                  "offset": 1443,
+                  "length": 5
+                },
+                "confidence": 0.996,
+                "source": "D(1,979,1624,1055,1625,1055,1650,979,1649)"
+              },
+              {
+                "content": "VAT",
+                "span": {
+                  "offset": 1458,
+                  "length": 3
+                },
+                "confidence": 0.973,
+                "source": "D(1,1186,1624,1241,1624,1241,1648,1186,1648)"
+              },
+              {
+                "content": "Gross",
+                "span": {
+                  "offset": 1471,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,1350,1624,1421,1624,1421,1649,1350,1649)"
+              },
+              {
+                "content": "worth",
+                "span": {
+                  "offset": 1477,
+                  "length": 5
+                },
+                "confidence": 0.998,
+                "source": "D(1,1429,1624,1504,1623,1504,1648,1429,1649)"
+              },
+              {
+                "content": "10",
+                "span": {
+                  "offset": 1503,
+                  "length": 2
+                },
+                "confidence": 0.999,
+                "source": "D(1,667,1682,695,1683,695,1708,667,1707)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 1505,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,695,1683,718,1682,718,1707,695,1708)"
+              },
+              {
+                "content": "6",
+                "span": {
+                  "offset": 1516,
+                  "length": 1
+                },
+                "confidence": 0.989,
+                "source": "D(1,953,1683,967,1683,967,1709,953,1709)"
+              },
+              {
+                "content": "236,77",
+                "span": {
+                  "offset": 1518,
+                  "length": 6
+                },
+                "confidence": 0.944,
+                "source": "D(1,975,1683,1055,1683,1055,1709,975,1709)"
+              },
+              {
+                "content": "623,68",
+                "span": {
+                  "offset": 1534,
+                  "length": 6
+                },
+                "confidence": 0.992,
+                "source": "D(1,1161,1683,1240,1683,1240,1709,1161,1709)"
+              },
+              {
+                "content": "6",
+                "span": {
+                  "offset": 1550,
+                  "length": 1
+                },
+                "confidence": 0.99,
+                "source": "D(1,1402,1683,1416,1683,1416,1709,1402,1709)"
+              },
+              {
+                "content": "860,45",
+                "span": {
+                  "offset": 1552,
+                  "length": 6
+                },
+                "confidence": 0.948,
+                "source": "D(1,1424,1683,1504,1683,1504,1709,1424,1709)"
+              },
+              {
+                "content": "Total",
+                "span": {
+                  "offset": 1579,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,500,1742,569,1742,569,1767,500,1767)"
+              },
+              {
+                "content": "$",
+                "span": {
+                  "offset": 1594,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,920,1743,934,1742,934,1769,920,1769)"
+              },
+              {
+                "content": "6",
+                "span": {
+                  "offset": 1596,
+                  "length": 1
+                },
+                "confidence": 0.931,
+                "source": "D(1,944,1742,958,1742,958,1769,944,1769)"
+              },
+              {
+                "content": "236,77",
+                "span": {
+                  "offset": 1598,
+                  "length": 6
+                },
+                "confidence": 0.829,
+                "source": "D(1,968,1742,1055,1743,1055,1769,968,1769)"
+              },
+              {
+                "content": "$",
+                "span": {
+                  "offset": 1614,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1128,1742,1143,1742,1143,1767,1128,1767)"
+              },
+              {
+                "content": "623,68",
+                "span": {
+                  "offset": 1616,
+                  "length": 6
+                },
+                "confidence": 0.973,
+                "source": "D(1,1152,1743,1240,1742,1240,1767,1152,1768)"
+              },
+              {
+                "content": "$",
+                "span": {
+                  "offset": 1632,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1369,1744,1384,1743,1384,1768,1369,1769)"
+              },
+              {
+                "content": "6",
+                "span": {
+                  "offset": 1634,
+                  "length": 1
+                },
+                "confidence": 0.902,
+                "source": "D(1,1393,1743,1407,1743,1407,1768,1393,1768)"
+              },
+              {
+                "content": "860,45",
+                "span": {
+                  "offset": 1636,
+                  "length": 6
+                },
+                "confidence": 0.79,
+                "source": "D(1,1417,1743,1505,1743,1505,1768,1417,1768)"
+              }
+            ],
+            "lines": [
+              {
+                "content": "Invoice no: 12847181",
+                "source": "D(1,130,72,538,72,538,107,131,108)",
+                "span": {
+                  "offset": 0,
+                  "length": 20
+                }
+              },
+              {
+                "content": "Date of issue:",
+                "source": "D(1,131,141,345,141,345,173,131,173)",
+                "span": {
+                  "offset": 22,
+                  "length": 14
+                }
+              },
+              {
+                "content": "03/03/2012",
+                "source": "D(1,800,140,979,140,979,174,800,175)",
+                "span": {
+                  "offset": 38,
+                  "length": 10
+                }
+              },
+              {
+                "content": "Seller:",
+                "source": "D(1,131,443,255,443,255,476,131,476)",
+                "span": {
+                  "offset": 50,
+                  "length": 7
+                }
+              },
+              {
+                "content": "Fitzpatrick and Sons",
+                "source": "D(1,140,505,425,505,425,539,140,539)",
+                "span": {
+                  "offset": 58,
+                  "length": 20
+                }
+              },
+              {
+                "content": "00480 Cook Cove",
+                "source": "D(1,140,542,389,542,389,572,140,572)",
+                "span": {
+                  "offset": 79,
+                  "length": 15
+                }
+              },
+              {
+                "content": "Spencerport, UT 12036",
+                "source": "D(1,139,578,466,577,466,610,140,611)",
+                "span": {
+                  "offset": 95,
+                  "length": 21
+                }
+              },
+              {
+                "content": "Tax Id: 998-99-5253",
+                "source": "D(1,138,650,424,648,424,679,139,680)",
+                "span": {
+                  "offset": 118,
+                  "length": 19
+                }
+              },
+              {
+                "content": "IBAN: GB92PBPQ73499358975916",
+                "source": "D(1,139,683,626,683,626,715,139,715)",
+                "span": {
+                  "offset": 139,
+                  "length": 28
+                }
+              },
+              {
+                "content": "Client:",
+                "source": "D(1,824,442,950,442,950,477,824,477)",
+                "span": {
+                  "offset": 169,
+                  "length": 7
+                }
+              },
+              {
+                "content": "Duncan PLC",
+                "source": "D(1,833,506,1003,506,1003,535,833,535)",
+                "span": {
+                  "offset": 177,
+                  "length": 10
+                }
+              },
+              {
+                "content": "Unit 8799 Box 0703",
+                "source": "D(1,832,542,1112,541,1112,572,832,573)",
+                "span": {
+                  "offset": 188,
+                  "length": 18
+                }
+              },
+              {
+                "content": "DPO AP 81970",
+                "source": "D(1,833,577,1037,577,1037,607,833,607)",
+                "span": {
+                  "offset": 207,
+                  "length": 12
+                }
+              },
+              {
+                "content": "Tax Id: 911-82-7132",
+                "source": "D(1,831,648,1118,648,1118,679,831,679)",
+                "span": {
+                  "offset": 221,
+                  "length": 19
+                }
+              },
+              {
+                "content": "ITEMS",
+                "source": "D(1,131,759,249,759,249,792,131,792)",
+                "span": {
+                  "offset": 245,
+                  "length": 5
+                }
+              },
+              {
+                "content": "No.",
+                "source": "D(1,158,848,202,846,203,869,158,870)",
+                "span": {
+                  "offset": 270,
+                  "length": 3
+                }
+              },
+              {
+                "content": "Description",
+                "source": "D(1,237,845,385,846,385,873,237,872)",
+                "span": {
+                  "offset": 283,
+                  "length": 11
+                }
+              },
+              {
+                "content": "Qty",
+                "source": "D(1,678,846,726,846,726,872,678,872)",
+                "span": {
+                  "offset": 304,
+                  "length": 3
+                }
+              },
+              {
+                "content": "UM",
+                "source": "D(1,776,846,821,845,821,870,777,871)",
+                "span": {
+                  "offset": 317,
+                  "length": 2
+                }
+              },
+              {
+                "content": "Net price",
+                "source": "D(1,898,845,1018,847,1018,873,898,871)",
+                "span": {
+                  "offset": 329,
+                  "length": 9
+                }
+              },
+              {
+                "content": "Net worth",
+                "source": "D(1,1057,844,1186,846,1186,871,1057,870)",
+                "span": {
+                  "offset": 348,
+                  "length": 9
+                }
+              },
+              {
+                "content": "VAT [%]",
+                "source": "D(1,1227,844,1332,845,1332,873,1226,872)",
+                "span": {
+                  "offset": 367,
+                  "length": 7
+                }
+              },
+              {
+                "content": "Gross",
+                "source": "D(1,1428,847,1502,848,1501,871,1428,870)",
+                "span": {
+                  "offset": 384,
+                  "length": 5
+                }
+              },
+              {
+                "content": "worth",
+                "source": "D(1,1425,874,1502,874,1501,897,1424,897)",
+                "span": {
+                  "offset": 390,
+                  "length": 5
+                }
+              },
+              {
+                "content": "1.",
+                "source": "D(1,169,934,192,934,192,957,169,957)",
+                "span": {
+                  "offset": 416,
+                  "length": 2
+                }
+              },
+              {
+                "content": "HP Desktop Computer PC",
+                "source": "D(1,238,932,525,932,525,959,238,959)",
+                "span": {
+                  "offset": 428,
+                  "length": 22
+                }
+              },
+              {
+                "content": "Core i5 16GB 2TB HD 256GB",
+                "source": "D(1,239,959,560,958,561,984,239,985)",
+                "span": {
+                  "offset": 451,
+                  "length": 25
+                }
+              },
+              {
+                "content": "SSD 22\" LCD",
+                "source": "D(1,239,988,385,988,385,1013,239,1013)",
+                "span": {
+                  "offset": 477,
+                  "length": 11
+                }
+              },
+              {
+                "content": "Windows 10",
+                "source": "D(1,409,988,546,988,546,1012,409,1012)",
+                "span": {
+                  "offset": 489,
+                  "length": 10
+                }
+              },
+              {
+                "content": "4,00",
+                "source": "D(1,672,934,725,934,725,958,672,958)",
+                "span": {
+                  "offset": 509,
+                  "length": 4
+                }
+              },
+              {
+                "content": "each",
+                "source": "D(1,769,934,827,934,827,957,769,957)",
+                "span": {
+                  "offset": 523,
+                  "length": 4
+                }
+              },
+              {
+                "content": "139,95",
+                "source": "D(1,936,933,1016,932,1016,958,936,958)",
+                "span": {
+                  "offset": 537,
+                  "length": 6
+                }
+              },
+              {
+                "content": "559,80",
+                "source": "D(1,1106,932,1186,932,1186,958,1106,958)",
+                "span": {
+                  "offset": 553,
+                  "length": 6
+                }
+              },
+              {
+                "content": "10%",
+                "source": "D(1,1279,932,1332,933,1332,958,1279,957)",
+                "span": {
+                  "offset": 569,
+                  "length": 3
+                }
+              },
+              {
+                "content": "615,78",
+                "source": "D(1,1420,933,1502,933,1501,959,1420,958)",
+                "span": {
+                  "offset": 582,
+                  "length": 6
+                }
+              },
+              {
+                "content": "2.",
+                "source": "D(1,169,1047,192,1047,192,1072,169,1072)",
+                "span": {
+                  "offset": 609,
+                  "length": 2
+                }
+              },
+              {
+                "content": "CUSTOM BUILT AMD RYZEN",
+                "source": "D(1,238,1045,549,1045,549,1071,238,1072)",
+                "span": {
+                  "offset": 621,
+                  "length": 22
+                }
+              },
+              {
+                "content": "THREADRIPPER GAMING",
+                "source": "D(1,237,1074,510,1073,510,1100,237,1100)",
+                "span": {
+                  "offset": 644,
+                  "length": 19
+                }
+              },
+              {
+                "content": "COMPUTER , 32 GB RAM,",
+                "source": "D(1,238,1101,518,1101,518,1129,238,1128)",
+                "span": {
+                  "offset": 664,
+                  "length": 21
+                }
+              },
+              {
+                "content": "3,00",
+                "source": "D(1,673,1047,725,1047,725,1072,673,1072)",
+                "span": {
+                  "offset": 695,
+                  "length": 4
+                }
+              },
+              {
+                "content": "each",
+                "source": "D(1,770,1048,827,1048,827,1071,770,1071)",
+                "span": {
+                  "offset": 709,
+                  "length": 4
+                }
+              },
+              {
+                "content": "1 400,00",
+                "source": "D(1,916,1046,1016,1046,1016,1072,916,1073)",
+                "span": {
+                  "offset": 723,
+                  "length": 8
+                }
+              },
+              {
+                "content": "4 200,00",
+                "source": "D(1,1083,1046,1186,1046,1186,1073,1083,1073)",
+                "span": {
+                  "offset": 741,
+                  "length": 8
+                }
+              },
+              {
+                "content": "10%",
+                "source": "D(1,1280,1045,1331,1046,1331,1072,1280,1070)",
+                "span": {
+                  "offset": 759,
+                  "length": 3
+                }
+              },
+              {
+                "content": "4 620,00",
+                "source": "D(1,1399,1047,1501,1046,1501,1072,1399,1073)",
+                "span": {
+                  "offset": 772,
+                  "length": 8
+                }
+              },
+              {
+                "content": "3.",
+                "source": "D(1,169,1161,191,1161,191,1186,169,1186)",
+                "span": {
+                  "offset": 801,
+                  "length": 2
+                }
+              },
+              {
+                "content": "Fast Dell Optiplex Desktop PC",
+                "source": "D(1,237,1161,574,1161,574,1188,237,1188)",
+                "span": {
+                  "offset": 813,
+                  "length": 29
+                }
+              },
+              {
+                "content": "Computer Dual Core 3.4Ghz",
+                "source": "D(1,239,1189,555,1188,555,1216,239,1216)",
+                "span": {
+                  "offset": 843,
+                  "length": 25
+                }
+              },
+              {
+                "content": "8GB 1TB Win 10 Pro WIFI",
+                "source": "D(1,238,1216,521,1216,521,1243,238,1243)",
+                "span": {
+                  "offset": 869,
+                  "length": 23
+                }
+              },
+              {
+                "content": "1,00",
+                "source": "D(1,674,1161,725,1161,725,1187,674,1187)",
+                "span": {
+                  "offset": 902,
+                  "length": 4
+                }
+              },
+              {
+                "content": "each",
+                "source": "D(1,769,1162,827,1162,827,1186,769,1186)",
+                "span": {
+                  "offset": 916,
+                  "length": 4
+                }
+              },
+              {
+                "content": "217,00",
+                "source": "D(1,935,1161,1015,1161,1015,1188,935,1188)",
+                "span": {
+                  "offset": 930,
+                  "length": 6
+                }
+              },
+              {
+                "content": "217,00",
+                "source": "D(1,1105,1161,1186,1161,1186,1187,1105,1187)",
+                "span": {
+                  "offset": 946,
+                  "length": 6
+                }
+              },
+              {
+                "content": "10%",
+                "source": "D(1,1279,1160,1331,1161,1331,1187,1279,1185)",
+                "span": {
+                  "offset": 962,
+                  "length": 3
+                }
+              },
+              {
+                "content": "238,70",
+                "source": "D(1,1419,1160,1502,1161,1501,1188,1419,1187)",
+                "span": {
+                  "offset": 975,
+                  "length": 6
+                }
+              },
+              {
+                "content": "4.",
+                "source": "D(1,169,1277,192,1277,192,1301,169,1301)",
+                "span": {
+                  "offset": 1002,
+                  "length": 2
+                }
+              },
+              {
+                "content": "Dell Optiplex 790 Computer i7",
+                "source": "D(1,237,1276,579,1276,579,1303,237,1303)",
+                "span": {
+                  "offset": 1014,
+                  "length": 29
+                }
+              },
+              {
+                "content": "@ 3.40 Ghz Quad Core 250GB",
+                "source": "D(1,239,1304,577,1303,577,1331,239,1332)",
+                "span": {
+                  "offset": 1044,
+                  "length": 26
+                }
+              },
+              {
+                "content": "4GB Working",
+                "source": "D(1,238,1332,387,1332,387,1361,238,1361)",
+                "span": {
+                  "offset": 1071,
+                  "length": 11
+                }
+              },
+              {
+                "content": "3,00",
+                "source": "D(1,672,1277,725,1277,725,1302,672,1302)",
+                "span": {
+                  "offset": 1092,
+                  "length": 4
+                }
+              },
+              {
+                "content": "each",
+                "source": "D(1,770,1277,827,1277,827,1301,770,1301)",
+                "span": {
+                  "offset": 1106,
+                  "length": 4
+                }
+              },
+              {
+                "content": "159,99",
+                "source": "D(1,936,1276,1016,1276,1016,1303,936,1303)",
+                "span": {
+                  "offset": 1120,
+                  "length": 6
+                }
+              },
+              {
+                "content": "479,97",
+                "source": "D(1,1106,1276,1186,1277,1186,1302,1106,1302)",
+                "span": {
+                  "offset": 1136,
+                  "length": 6
+                }
+              },
+              {
+                "content": "10%",
+                "source": "D(1,1281,1276,1331,1276,1331,1302,1281,1302)",
+                "span": {
+                  "offset": 1152,
+                  "length": 3
+                }
+              },
+              {
+                "content": "527,97",
+                "source": "D(1,1419,1277,1500,1277,1500,1302,1419,1302)",
+                "span": {
+                  "offset": 1165,
+                  "length": 6
+                }
+              },
+              {
+                "content": "5.",
+                "source": "D(1,169,1392,192,1392,192,1417,169,1417)",
+                "span": {
+                  "offset": 1192,
+                  "length": 2
+                }
+              },
+              {
+                "content": "Vintage Microsolutions Pentium",
+                "source": "D(1,237,1391,593,1391,593,1418,237,1418)",
+                "span": {
+                  "offset": 1204,
+                  "length": 30
+                }
+              },
+              {
+                "content": "133mhz Desktop Tower PC",
+                "source": "D(1,239,1419,542,1419,542,1445,239,1445)",
+                "span": {
+                  "offset": 1235,
+                  "length": 23
+                }
+              },
+              {
+                "content": "Windows 95 5.25 Floppy",
+                "source": "D(1,239,1446,514,1447,514,1475,238,1473)",
+                "span": {
+                  "offset": 1259,
+                  "length": 22
+                }
+              },
+              {
+                "content": "2,00",
+                "source": "D(1,672,1392,725,1392,725,1418,672,1417)",
+                "span": {
+                  "offset": 1291,
+                  "length": 4
+                }
+              },
+              {
+                "content": "each",
+                "source": "D(1,769,1393,826,1393,826,1416,769,1416)",
+                "span": {
+                  "offset": 1305,
+                  "length": 4
+                }
+              },
+              {
+                "content": "390,00",
+                "source": "D(1,934,1390,1015,1391,1015,1418,934,1418)",
+                "span": {
+                  "offset": 1319,
+                  "length": 6
+                }
+              },
+              {
+                "content": "780,00",
+                "source": "D(1,1106,1391,1186,1392,1186,1418,1105,1416)",
+                "span": {
+                  "offset": 1335,
+                  "length": 6
+                }
+              },
+              {
+                "content": "10%",
+                "source": "D(1,1279,1391,1333,1390,1333,1416,1279,1417)",
+                "span": {
+                  "offset": 1351,
+                  "length": 3
+                }
+              },
+              {
+                "content": "858,00",
+                "source": "D(1,1418,1391,1501,1391,1501,1418,1418,1418)",
+                "span": {
+                  "offset": 1364,
+                  "length": 6
+                }
+              },
+              {
+                "content": "SUMMARY",
+                "source": "D(1,131,1538,328,1539,328,1574,131,1573)",
+                "span": {
+                  "offset": 1395,
+                  "length": 7
+                }
+              },
+              {
+                "content": "VAT [%]",
+                "source": "D(1,640,1623,744,1623,744,1650,640,1650)",
+                "span": {
+                  "offset": 1422,
+                  "length": 7
+                }
+              },
+              {
+                "content": "Net worth",
+                "source": "D(1,927,1623,1055,1624,1055,1650,927,1649)",
+                "span": {
+                  "offset": 1439,
+                  "length": 9
+                }
+              },
+              {
+                "content": "VAT",
+                "source": "D(1,1186,1624,1241,1624,1241,1648,1186,1648)",
+                "span": {
+                  "offset": 1458,
+                  "length": 3
+                }
+              },
+              {
+                "content": "Gross worth",
+                "source": "D(1,1349,1624,1504,1623,1504,1649,1350,1650)",
+                "span": {
+                  "offset": 1471,
+                  "length": 11
+                }
+              },
+              {
+                "content": "10%",
+                "source": "D(1,667,1682,719,1682,718,1708,666,1708)",
+                "span": {
+                  "offset": 1503,
+                  "length": 3
+                }
+              },
+              {
+                "content": "6 236,77",
+                "source": "D(1,953,1683,1055,1683,1055,1709,953,1709)",
+                "span": {
+                  "offset": 1516,
+                  "length": 8
+                }
+              },
+              {
+                "content": "623,68",
+                "source": "D(1,1161,1683,1240,1683,1240,1709,1161,1709)",
+                "span": {
+                  "offset": 1534,
+                  "length": 6
+                }
+              },
+              {
+                "content": "6 860,45",
+                "source": "D(1,1402,1683,1504,1683,1504,1709,1402,1709)",
+                "span": {
+                  "offset": 1550,
+                  "length": 8
+                }
+              },
+              {
+                "content": "Total",
+                "source": "D(1,500,1742,569,1742,569,1767,500,1767)",
+                "span": {
+                  "offset": 1579,
+                  "length": 5
+                }
+              },
+              {
+                "content": "$ 6 236,77",
+                "source": "D(1,920,1742,1055,1742,1055,1769,920,1769)",
+                "span": {
+                  "offset": 1594,
+                  "length": 10
+                }
+              },
+              {
+                "content": "$ 623,68",
+                "source": "D(1,1128,1742,1241,1742,1240,1769,1128,1768)",
+                "span": {
+                  "offset": 1614,
+                  "length": 8
+                }
+              },
+              {
+                "content": "$ 6 860,45",
+                "source": "D(1,1369,1743,1505,1743,1505,1768,1369,1769)",
+                "span": {
+                  "offset": 1632,
+                  "length": 10
+                }
+              }
+            ]
+          }
+        ],
+        "paragraphs": [
+          {
+            "content": "Invoice no: 12847181",
+            "source": "D(1,130,72,538,72,538,107,131,108)",
+            "span": {
+              "offset": 0,
+              "length": 20
+            }
+          },
+          {
+            "content": "Date of issue:",
+            "source": "D(1,131,141,345,141,345,173,131,173)",
+            "span": {
+              "offset": 22,
+              "length": 14
+            }
+          },
+          {
+            "content": "03/03/2012",
+            "source": "D(1,800,140,979,140,979,174,800,175)",
+            "span": {
+              "offset": 38,
+              "length": 10
+            }
+          },
+          {
+            "content": "Seller: Fitzpatrick and Sons 00480 Cook Cove Spencerport, UT 12036",
+            "source": "D(1,131,443,466,442,466,610,132,611)",
+            "span": {
+              "offset": 50,
+              "length": 66
+            }
+          },
+          {
+            "content": "Tax Id: 998-99-5253",
+            "source": "D(1,138,650,424,648,424,679,139,680)",
+            "span": {
+              "offset": 118,
+              "length": 19
+            }
+          },
+          {
+            "content": "IBAN: GB92PBPQ73499358975916",
+            "source": "D(1,139,683,626,683,626,715,139,715)",
+            "span": {
+              "offset": 139,
+              "length": 28
+            }
+          },
+          {
+            "content": "Client: Duncan PLC Unit 8799 Box 0703 DPO AP 81970",
+            "source": "D(1,824,442,1112,442,1112,607,824,607)",
+            "span": {
+              "offset": 169,
+              "length": 50
+            }
+          },
+          {
+            "content": "Tax Id: 911-82-7132",
+            "source": "D(1,831,648,1118,648,1118,679,831,679)",
+            "span": {
+              "offset": 221,
+              "length": 19
+            }
+          },
+          {
+            "role": "sectionHeading",
+            "content": "ITEMS",
+            "source": "D(1,131,759,249,759,249,792,131,792)",
+            "span": {
+              "offset": 243,
+              "length": 7
+            }
+          },
+          {
+            "content": "No.",
+            "source": "D(1,158,848,202,846,203,869,158,870)",
+            "span": {
+              "offset": 270,
+              "length": 3
+            }
+          },
+          {
+            "content": "Description",
+            "source": "D(1,237,846,385,847,385,873,237,872)",
+            "span": {
+              "offset": 283,
+              "length": 11
+            }
+          },
+          {
+            "content": "Qty",
+            "source": "D(1,678,846,726,846,726,872,678,872)",
+            "span": {
+              "offset": 304,
+              "length": 3
+            }
+          },
+          {
+            "content": "UM",
+            "source": "D(1,776,847,821,846,821,870,777,871)",
+            "span": {
+              "offset": 317,
+              "length": 2
+            }
+          },
+          {
+            "content": "Net price",
+            "source": "D(1,898,844,1018,847,1018,874,898,871)",
+            "span": {
+              "offset": 329,
+              "length": 9
+            }
+          },
+          {
+            "content": "Net worth",
+            "source": "D(1,1057,842,1186,846,1186,873,1056,869)",
+            "span": {
+              "offset": 348,
+              "length": 9
+            }
+          },
+          {
+            "content": "VAT [%]",
+            "source": "D(1,1227,844,1332,845,1332,873,1227,872)",
+            "span": {
+              "offset": 367,
+              "length": 7
+            }
+          },
+          {
+            "content": "Gross worth",
+            "source": "D(1,1425,847,1502,848,1501,898,1424,897)",
+            "span": {
+              "offset": 384,
+              "length": 11
+            }
+          },
+          {
+            "content": "1.",
+            "source": "D(1,169,934,192,934,192,957,169,957)",
+            "span": {
+              "offset": 416,
+              "length": 2
+            }
+          },
+          {
+            "content": "HP Desktop Computer PC Core i5 16GB 2TB HD 256GB SSD 22\" LCD Windows 10",
+            "source": "D(1,238,933,560,932,561,1013,238,1013)",
+            "span": {
+              "offset": 428,
+              "length": 71
+            }
+          },
+          {
+            "content": "4,00",
+            "source": "D(1,672,934,725,934,725,958,672,958)",
+            "span": {
+              "offset": 509,
+              "length": 4
+            }
+          },
+          {
+            "content": "each",
+            "source": "D(1,769,934,827,934,827,957,769,957)",
+            "span": {
+              "offset": 523,
+              "length": 4
+            }
+          },
+          {
+            "content": "139,95",
+            "source": "D(1,936,932,1016,932,1016,958,936,958)",
+            "span": {
+              "offset": 537,
+              "length": 6
+            }
+          },
+          {
+            "content": "559,80",
+            "source": "D(1,1106,932,1186,932,1186,958,1106,958)",
+            "span": {
+              "offset": 553,
+              "length": 6
+            }
+          },
+          {
+            "content": "10%",
+            "source": "D(1,1279,932,1333,933,1332,959,1278,957)",
+            "span": {
+              "offset": 569,
+              "length": 3
+            }
+          },
+          {
+            "content": "615,78",
+            "source": "D(1,1420,933,1502,933,1501,958,1420,958)",
+            "span": {
+              "offset": 582,
+              "length": 6
+            }
+          },
+          {
+            "content": "2.",
+            "source": "D(1,169,1045,196,1049,191,1074,165,1069)",
+            "span": {
+              "offset": 609,
+              "length": 2
+            }
+          },
+          {
+            "content": "CUSTOM BUILT AMD RYZEN THREADRIPPER GAMING COMPUTER , 32 GB RAM,",
+            "source": "D(1,237,1045,549,1045,549,1129,237,1129)",
+            "span": {
+              "offset": 621,
+              "length": 64
+            }
+          },
+          {
+            "content": "3,00",
+            "source": "D(1,673,1047,725,1047,725,1072,673,1072)",
+            "span": {
+              "offset": 695,
+              "length": 4
+            }
+          },
+          {
+            "content": "each",
+            "source": "D(1,770,1048,827,1048,827,1071,770,1071)",
+            "span": {
+              "offset": 709,
+              "length": 4
+            }
+          },
+          {
+            "content": "1 400,00",
+            "source": "D(1,916,1045,1016,1046,1016,1073,915,1072)",
+            "span": {
+              "offset": 723,
+              "length": 8
+            }
+          },
+          {
+            "content": "4 200,00",
+            "source": "D(1,1083,1045,1187,1046,1186,1073,1083,1072)",
+            "span": {
+              "offset": 741,
+              "length": 8
+            }
+          },
+          {
+            "content": "10%",
+            "source": "D(1,1280,1044,1332,1046,1331,1072,1279,1070)",
+            "span": {
+              "offset": 759,
+              "length": 3
+            }
+          },
+          {
+            "content": "4 620,00",
+            "source": "D(1,1399,1045,1502,1046,1501,1074,1398,1072)",
+            "span": {
+              "offset": 772,
+              "length": 8
+            }
+          },
+          {
+            "content": "3.",
+            "source": "D(1,167,1163,191,1161,193,1184,169,1186)",
+            "span": {
+              "offset": 801,
+              "length": 2
+            }
+          },
+          {
+            "content": "Fast Dell Optiplex Desktop PC Computer Dual Core 3.4Ghz 8GB 1TB Win 10 Pro WIFI",
+            "source": "D(1,237,1161,574,1161,574,1243,237,1243)",
+            "span": {
+              "offset": 813,
+              "length": 79
+            }
+          },
+          {
+            "content": "1,00",
+            "source": "D(1,674,1161,725,1161,725,1187,673,1187)",
+            "span": {
+              "offset": 902,
+              "length": 4
+            }
+          },
+          {
+            "content": "each",
+            "source": "D(1,769,1162,827,1162,827,1185,769,1185)",
+            "span": {
+              "offset": 916,
+              "length": 4
+            }
+          },
+          {
+            "content": "217,00",
+            "source": "D(1,935,1161,1015,1161,1015,1188,935,1188)",
+            "span": {
+              "offset": 930,
+              "length": 6
+            }
+          },
+          {
+            "content": "217,00",
+            "source": "D(1,1105,1161,1186,1161,1186,1187,1105,1187)",
+            "span": {
+              "offset": 946,
+              "length": 6
+            }
+          },
+          {
+            "content": "10%",
+            "source": "D(1,1279,1159,1332,1161,1331,1187,1278,1185)",
+            "span": {
+              "offset": 962,
+              "length": 3
+            }
+          },
+          {
+            "content": "238,70",
+            "source": "D(1,1419,1161,1502,1162,1501,1188,1419,1187)",
+            "span": {
+              "offset": 975,
+              "length": 6
+            }
+          },
+          {
+            "content": "4.",
+            "source": "D(1,169,1275,195,1279,191,1305,165,1301)",
+            "span": {
+              "offset": 1002,
+              "length": 2
+            }
+          },
+          {
+            "content": "Dell Optiplex 790 Computer i7 @ 3.40 Ghz Quad Core 250GB 4GB Working",
+            "source": "D(1,237,1276,579,1276,579,1361,237,1361)",
+            "span": {
+              "offset": 1014,
+              "length": 68
+            }
+          },
+          {
+            "content": "3,00",
+            "source": "D(1,672,1277,725,1277,725,1302,672,1302)",
+            "span": {
+              "offset": 1092,
+              "length": 4
+            }
+          },
+          {
+            "content": "each",
+            "source": "D(1,770,1277,827,1278,827,1301,770,1301)",
+            "span": {
+              "offset": 1106,
+              "length": 4
+            }
+          },
+          {
+            "content": "159,99",
+            "source": "D(1,936,1275,1016,1276,1016,1303,936,1303)",
+            "span": {
+              "offset": 1120,
+              "length": 6
+            }
+          },
+          {
+            "content": "479,97",
+            "source": "D(1,1106,1277,1186,1277,1186,1302,1106,1302)",
+            "span": {
+              "offset": 1136,
+              "length": 6
+            }
+          },
+          {
+            "content": "10%",
+            "source": "D(1,1281,1276,1332,1277,1331,1303,1280,1302)",
+            "span": {
+              "offset": 1152,
+              "length": 3
+            }
+          },
+          {
+            "content": "527,97",
+            "source": "D(1,1419,1277,1500,1277,1500,1302,1419,1302)",
+            "span": {
+              "offset": 1165,
+              "length": 6
+            }
+          },
+          {
+            "content": "5.",
+            "source": "D(1,169,1391,193,1392,192,1418,168,1416)",
+            "span": {
+              "offset": 1192,
+              "length": 2
+            }
+          },
+          {
+            "content": "Vintage Microsolutions Pentium 133mhz Desktop Tower PC Windows 95 5.25 Floppy",
+            "source": "D(1,237,1391,593,1391,593,1475,237,1475)",
+            "span": {
+              "offset": 1204,
+              "length": 77
+            }
+          },
+          {
+            "content": "2,00",
+            "source": "D(1,672,1392,725,1392,725,1418,672,1417)",
+            "span": {
+              "offset": 1291,
+              "length": 4
+            }
+          },
+          {
+            "content": "each",
+            "source": "D(1,769,1393,826,1393,826,1416,769,1416)",
+            "span": {
+              "offset": 1305,
+              "length": 4
+            }
+          },
+          {
+            "content": "390,00",
+            "source": "D(1,934,1390,1016,1391,1015,1418,934,1417)",
+            "span": {
+              "offset": 1319,
+              "length": 6
+            }
+          },
+          {
+            "content": "780,00",
+            "source": "D(1,1106,1390,1186,1392,1186,1418,1105,1416)",
+            "span": {
+              "offset": 1335,
+              "length": 6
+            }
+          },
+          {
+            "content": "10%",
+            "source": "D(1,1279,1390,1333,1390,1333,1416,1279,1416)",
+            "span": {
+              "offset": 1351,
+              "length": 3
+            }
+          },
+          {
+            "content": "858,00",
+            "source": "D(1,1418,1391,1501,1391,1501,1418,1418,1418)",
+            "span": {
+              "offset": 1364,
+              "length": 6
+            }
+          },
+          {
+            "role": "sectionHeading",
+            "content": "SUMMARY",
+            "source": "D(1,131,1538,328,1539,328,1574,131,1573)",
+            "span": {
+              "offset": 1393,
+              "length": 9
+            }
+          },
+          {
+            "content": "VAT [%]",
+            "source": "D(1,640,1623,744,1623,744,1650,640,1650)",
+            "span": {
+              "offset": 1422,
+              "length": 7
+            }
+          },
+          {
+            "content": "Net worth",
+            "source": "D(1,927,1623,1055,1625,1055,1652,927,1649)",
+            "span": {
+              "offset": 1439,
+              "length": 9
+            }
+          },
+          {
+            "content": "VAT",
+            "source": "D(1,1186,1624,1241,1624,1241,1648,1186,1648)",
+            "span": {
+              "offset": 1458,
+              "length": 3
+            }
+          },
+          {
+            "content": "Gross worth",
+            "source": "D(1,1350,1623,1504,1623,1504,1650,1349,1649)",
+            "span": {
+              "offset": 1471,
+              "length": 11
+            }
+          },
+          {
+            "content": "10%",
+            "source": "D(1,667,1680,719,1682,718,1709,666,1707)",
+            "span": {
+              "offset": 1503,
+              "length": 3
+            }
+          },
+          {
+            "content": "6 236,77",
+            "source": "D(1,953,1683,1055,1683,1055,1709,953,1709)",
+            "span": {
+              "offset": 1516,
+              "length": 8
+            }
+          },
+          {
+            "content": "623,68",
+            "source": "D(1,1161,1683,1240,1683,1240,1709,1161,1709)",
+            "span": {
+              "offset": 1534,
+              "length": 6
+            }
+          },
+          {
+            "content": "6 860,45",
+            "source": "D(1,1402,1683,1504,1683,1504,1709,1402,1709)",
+            "span": {
+              "offset": 1550,
+              "length": 8
+            }
+          },
+          {
+            "content": "Total",
+            "source": "D(1,499,1742,569,1742,569,1767,500,1767)",
+            "span": {
+              "offset": 1579,
+              "length": 5
+            }
+          },
+          {
+            "content": "$ 6 236,77",
+            "source": "D(1,920,1742,1055,1741,1055,1769,920,1770)",
+            "span": {
+              "offset": 1594,
+              "length": 10
+            }
+          },
+          {
+            "content": "$ 623,68",
+            "source": "D(1,1128,1737,1242,1742,1240,1772,1127,1767)",
+            "span": {
+              "offset": 1614,
+              "length": 8
+            }
+          },
+          {
+            "content": "$ 6 860,45",
+            "source": "D(1,1369,1744,1505,1742,1505,1768,1369,1770)",
+            "span": {
+              "offset": 1632,
+              "length": 10
+            }
+          }
+        ],
+        "sections": [
+          {
+            "span": {
+              "offset": 0,
+              "length": 1662
+            },
+            "elements": [
+              "/sections/1",
+              "/sections/2",
+              "/sections/3"
+            ]
+          },
+          {
+            "span": {
+              "offset": 0,
+              "length": 240
+            },
+            "elements": [
+              "/paragraphs/0",
+              "/paragraphs/1",
+              "/paragraphs/2",
+              "/paragraphs/3",
+              "/paragraphs/4",
+              "/paragraphs/5",
+              "/paragraphs/6",
+              "/paragraphs/7"
+            ]
+          },
+          {
+            "span": {
+              "offset": 243,
+              "length": 1147
+            },
+            "elements": [
+              "/paragraphs/8",
+              "/tables/0"
+            ]
+          },
+          {
+            "span": {
+              "offset": 1393,
+              "length": 269
+            },
+            "elements": [
+              "/paragraphs/57",
+              "/tables/1"
+            ]
+          }
+        ],
+        "tables": [
+          {
+            "rowCount": 6,
+            "columnCount": 8,
+            "cells": [
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "No.",
+                "source": "D(1,132,827,231,827,231,916,132,916)",
+                "span": {
+                  "offset": 270,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/9"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Description",
+                "source": "D(1,231,827,622,827,622,916,231,916)",
+                "span": {
+                  "offset": 283,
+                  "length": 11
+                },
+                "elements": [
+                  "/paragraphs/10"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Qty",
+                "source": "D(1,622,827,751,827,751,916,622,916)",
+                "span": {
+                  "offset": 304,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/11"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "UM",
+                "source": "D(1,751,827,869,827,869,916,751,916)",
+                "span": {
+                  "offset": 317,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/12"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 4,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Net price",
+                "source": "D(1,869,827,1040,827,1041,916,869,916)",
+                "span": {
+                  "offset": 329,
+                  "length": 9
+                },
+                "elements": [
+                  "/paragraphs/13"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 5,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Net worth",
+                "source": "D(1,1040,827,1211,827,1212,916,1041,916)",
+                "span": {
+                  "offset": 348,
+                  "length": 9
+                },
+                "elements": [
+                  "/paragraphs/14"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 6,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "VAT [%]",
+                "source": "D(1,1211,827,1372,827,1373,916,1212,916)",
+                "span": {
+                  "offset": 367,
+                  "length": 7
+                },
+                "elements": [
+                  "/paragraphs/15"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 7,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Gross worth",
+                "source": "D(1,1372,827,1519,827,1519,916,1373,916)",
+                "span": {
+                  "offset": 384,
+                  "length": 11
+                },
+                "elements": [
+                  "/paragraphs/16"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "1.",
+                "source": "D(1,132,916,231,916,232,1030,132,1030)",
+                "span": {
+                  "offset": 416,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/17"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "HP Desktop Computer PC Core i5 16GB 2TB HD 256GB SSD 22\" LCD Windows 10",
+                "source": "D(1,231,916,622,916,622,1030,232,1030)",
+                "span": {
+                  "offset": 428,
+                  "length": 71
+                },
+                "elements": [
+                  "/paragraphs/18"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "4,00",
+                "source": "D(1,622,916,751,916,751,1030,622,1030)",
+                "span": {
+                  "offset": 509,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/19"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "each",
+                "source": "D(1,751,916,869,916,869,1030,751,1030)",
+                "span": {
+                  "offset": 523,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/20"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 4,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "139,95",
+                "source": "D(1,869,916,1041,916,1042,1030,869,1030)",
+                "span": {
+                  "offset": 537,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/21"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 5,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "559,80",
+                "source": "D(1,1041,916,1212,916,1213,1029,1042,1030)",
+                "span": {
+                  "offset": 553,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/22"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 6,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "10%",
+                "source": "D(1,1212,916,1373,916,1373,1029,1213,1029)",
+                "span": {
+                  "offset": 569,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/23"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 7,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "615,78",
+                "source": "D(1,1373,916,1519,916,1519,1029,1373,1029)",
+                "span": {
+                  "offset": 582,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/24"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "2.",
+                "source": "D(1,132,1030,232,1030,232,1144,132,1144)",
+                "span": {
+                  "offset": 609,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/25"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "CUSTOM BUILT AMD RYZEN THREADRIPPER GAMING COMPUTER , 32 GB RAM,",
+                "source": "D(1,232,1030,622,1030,622,1144,232,1144)",
+                "span": {
+                  "offset": 621,
+                  "length": 64
+                },
+                "elements": [
+                  "/paragraphs/26"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "3,00",
+                "source": "D(1,622,1030,751,1030,752,1144,622,1144)",
+                "span": {
+                  "offset": 695,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/27"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "each",
+                "source": "D(1,751,1030,869,1030,870,1144,752,1144)",
+                "span": {
+                  "offset": 709,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/28"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 4,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "1 400,00",
+                "source": "D(1,869,1030,1042,1030,1043,1144,870,1144)",
+                "span": {
+                  "offset": 723,
+                  "length": 8
+                },
+                "elements": [
+                  "/paragraphs/29"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 5,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "4 200,00",
+                "source": "D(1,1042,1030,1213,1029,1214,1144,1043,1144)",
+                "span": {
+                  "offset": 741,
+                  "length": 8
+                },
+                "elements": [
+                  "/paragraphs/30"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 6,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "10%",
+                "source": "D(1,1213,1029,1373,1029,1373,1144,1214,1144)",
+                "span": {
+                  "offset": 759,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/31"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 7,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "4 620,00",
+                "source": "D(1,1373,1029,1519,1029,1519,1144,1373,1144)",
+                "span": {
+                  "offset": 772,
+                  "length": 8
+                },
+                "elements": [
+                  "/paragraphs/32"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "3.",
+                "source": "D(1,132,1144,232,1144,232,1260,132,1260)",
+                "span": {
+                  "offset": 801,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/33"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Fast Dell Optiplex Desktop PC Computer Dual Core 3.4Ghz 8GB 1TB Win 10 Pro WIFI",
+                "source": "D(1,232,1144,622,1144,623,1260,232,1260)",
+                "span": {
+                  "offset": 813,
+                  "length": 79
+                },
+                "elements": [
+                  "/paragraphs/34"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "1,00",
+                "source": "D(1,622,1144,752,1144,752,1260,623,1260)",
+                "span": {
+                  "offset": 902,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/35"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "each",
+                "source": "D(1,752,1144,870,1144,870,1260,752,1260)",
+                "span": {
+                  "offset": 916,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/36"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 4,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "217,00",
+                "source": "D(1,870,1144,1043,1144,1044,1259,870,1260)",
+                "span": {
+                  "offset": 930,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/37"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 5,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "217,00",
+                "source": "D(1,1043,1144,1214,1144,1214,1259,1044,1259)",
+                "span": {
+                  "offset": 946,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/38"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 6,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "10%",
+                "source": "D(1,1214,1144,1373,1144,1373,1259,1214,1259)",
+                "span": {
+                  "offset": 962,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/39"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 7,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "238,70",
+                "source": "D(1,1373,1144,1519,1144,1519,1259,1373,1259)",
+                "span": {
+                  "offset": 975,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/40"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "4.",
+                "source": "D(1,132,1260,232,1260,232,1374,132,1374)",
+                "span": {
+                  "offset": 1002,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/41"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Dell Optiplex 790 Computer i7 @ 3.40 Ghz Quad Core 250GB 4GB Working",
+                "source": "D(1,232,1260,623,1260,623,1374,232,1374)",
+                "span": {
+                  "offset": 1014,
+                  "length": 68
+                },
+                "elements": [
+                  "/paragraphs/42"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "3,00",
+                "source": "D(1,623,1260,752,1260,752,1374,623,1374)",
+                "span": {
+                  "offset": 1092,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/43"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "each",
+                "source": "D(1,752,1260,870,1260,871,1374,752,1374)",
+                "span": {
+                  "offset": 1106,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/44"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 4,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "159,99",
+                "source": "D(1,870,1260,1044,1259,1045,1374,871,1374)",
+                "span": {
+                  "offset": 1120,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/45"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 5,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "479,97",
+                "source": "D(1,1044,1259,1214,1259,1215,1374,1045,1374)",
+                "span": {
+                  "offset": 1136,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/46"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 6,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "10%",
+                "source": "D(1,1214,1259,1373,1259,1374,1374,1215,1374)",
+                "span": {
+                  "offset": 1152,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/47"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 7,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "527,97",
+                "source": "D(1,1373,1259,1519,1259,1519,1374,1374,1374)",
+                "span": {
+                  "offset": 1165,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/48"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "5.",
+                "source": "D(1,132,1374,232,1374,232,1489,132,1489)",
+                "span": {
+                  "offset": 1192,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/49"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Vintage Microsolutions Pentium 133mhz Desktop Tower PC Windows 95 5.25 Floppy",
+                "source": "D(1,232,1374,623,1374,623,1489,232,1489)",
+                "span": {
+                  "offset": 1204,
+                  "length": 77
+                },
+                "elements": [
+                  "/paragraphs/50"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "2,00",
+                "source": "D(1,623,1374,752,1374,753,1489,623,1489)",
+                "span": {
+                  "offset": 1291,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/51"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "each",
+                "source": "D(1,752,1374,871,1374,871,1489,753,1489)",
+                "span": {
+                  "offset": 1305,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/52"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 4,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "390,00",
+                "source": "D(1,871,1374,1045,1374,1046,1489,871,1489)",
+                "span": {
+                  "offset": 1319,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/53"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 5,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "780,00",
+                "source": "D(1,1045,1374,1215,1374,1217,1489,1046,1489)",
+                "span": {
+                  "offset": 1335,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/54"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 6,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "10%",
+                "source": "D(1,1215,1374,1374,1374,1374,1489,1217,1489)",
+                "span": {
+                  "offset": 1351,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/55"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 7,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "858,00",
+                "source": "D(1,1374,1374,1519,1374,1519,1489,1374,1489)",
+                "span": {
+                  "offset": 1364,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/56"
+                ]
+              }
+            ],
+            "source": "D(1,131,826,1518,825,1518,1492,131,1492)",
+            "span": {
+              "offset": 253,
+              "length": 1137
+            }
+          },
+          {
+            "rowCount": 3,
+            "columnCount": 4,
+            "cells": [
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "VAT [%]",
+                "source": "D(1,133,1606,831,1606,831,1668,133,1668)",
+                "span": {
+                  "offset": 1422,
+                  "length": 7
+                },
+                "elements": [
+                  "/paragraphs/58"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Net worth",
+                "source": "D(1,831,1606,1097,1606,1097,1668,831,1668)",
+                "span": {
+                  "offset": 1439,
+                  "length": 9
+                },
+                "elements": [
+                  "/paragraphs/59"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "VAT",
+                "source": "D(1,1097,1606,1301,1606,1301,1668,1097,1668)",
+                "span": {
+                  "offset": 1458,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/60"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Gross worth",
+                "source": "D(1,1301,1606,1518,1606,1518,1668,1301,1668)",
+                "span": {
+                  "offset": 1471,
+                  "length": 11
+                },
+                "elements": [
+                  "/paragraphs/61"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "10%",
+                "source": "D(1,133,1668,831,1668,831,1725,133,1725)",
+                "span": {
+                  "offset": 1503,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/62"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "6 236,77",
+                "source": "D(1,831,1668,1097,1668,1097,1725,831,1725)",
+                "span": {
+                  "offset": 1516,
+                  "length": 8
+                },
+                "elements": [
+                  "/paragraphs/63"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "623,68",
+                "source": "D(1,1097,1668,1301,1668,1301,1725,1097,1725)",
+                "span": {
+                  "offset": 1534,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/64"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "6 860,45",
+                "source": "D(1,1301,1668,1518,1668,1518,1725,1301,1725)",
+                "span": {
+                  "offset": 1550,
+                  "length": 8
+                },
+                "elements": [
+                  "/paragraphs/65"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Total",
+                "source": "D(1,133,1725,831,1725,830,1785,133,1785)",
+                "span": {
+                  "offset": 1579,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/66"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "$ 6 236,77",
+                "source": "D(1,831,1725,1097,1725,1097,1784,830,1785)",
+                "span": {
+                  "offset": 1594,
+                  "length": 10
+                },
+                "elements": [
+                  "/paragraphs/67"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "$ 623,68",
+                "source": "D(1,1097,1725,1301,1725,1301,1784,1097,1784)",
+                "span": {
+                  "offset": 1614,
+                  "length": 8
+                },
+                "elements": [
+                  "/paragraphs/68"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "$ 6 860,45",
+                "source": "D(1,1301,1725,1518,1725,1518,1785,1301,1784)",
+                "span": {
+                  "offset": 1632,
+                  "length": 10
+                },
+                "elements": [
+                  "/paragraphs/69"
+                ]
+              }
+            ],
+            "source": "D(1,129,1606,1518,1607,1518,1787,129,1787)",
+            "span": {
+              "offset": 1405,
+              "length": 257
+            }
+          }
+        ],
         "analyzerId": "prebuilt-invoice",
         "mimeType": "image/jpeg"
       }
     ]
   },
   "usage": {
-    "documentPagesMinimal": 1,
+    "documentPagesStandard": 1,
     "contextualizationTokens": 1000,
     "tokens": {
-      "gpt-4.1-input": 10263,
-      "gpt-4.1-output": 323,
-      "text-embedding-3-large": 4
+      "gpt-4.1-input": 13989,
+      "gpt-4.1-output": 2536,
+      "text-embedding-3-large": 709
     }
   },
   "_extracted": {
-    "field_values": {},
-    "description": "Il s'agit d'une facture (Invoice no: 12847181) émise par Fitzpatrick and Sons (Spencerport, NY, USA) à destination de Duncan PLC (DPO AP 81970), datée du 03/03/2012. Le montant total TTC est de 6 860,45 $. Le document détaille la vente de plusieurs ordinateurs et composants informatiques, avec une TVA appliquée de 10 %."
+    "field_values": {
+      "AmountDue": {
+        "Amount": 6860.45,
+        "CurrencyCode": "USD"
+      },
+      "CountryRegion": "USA",
+      "CustomerAddress": "Unit 8799 Box 0703 DPO AP 81970",
+      "CustomerAddressRecipient": "Duncan PLC",
+      "CustomerName": "Duncan PLC",
+      "CustomerTaxId": "911-82-7132",
+      "InvoiceDate": "2012-03-03",
+      "InvoiceId": "12847181",
+      "LineItems": [
+        {
+          "Description": "HP Desktop Computer PC Core i5 16GB 2TB HD 256GB SSD 22\" LCD Windows 10",
+          "Quantity": 4,
+          "QuantityUnit": "each",
+          "TaxAmount": {
+            "CurrencyCode": "USD"
+          },
+          "TaxRate": 0.1,
+          "TotalAmount": {
+            "Amount": 615.78,
+            "CurrencyCode": "USD"
+          },
+          "UnitPrice": {
+            "Amount": 139.95,
+            "CurrencyCode": "USD"
+          }
+        },
+        {
+          "Description": "CUSTOM BUILT AMD RYZEN THREADRIPPER GAMING COMPUTER , 32 GB RAM,",
+          "Quantity": 3,
+          "QuantityUnit": "each",
+          "TaxAmount": {
+            "CurrencyCode": "USD"
+          },
+          "TaxRate": 0.1,
+          "TotalAmount": {
+            "Amount": 4620,
+            "CurrencyCode": "USD"
+          },
+          "UnitPrice": {
+            "Amount": 1400,
+            "CurrencyCode": "USD"
+          }
+        },
+        {
+          "Description": "Fast Dell Optiplex Desktop PC Computer Dual Core 3.4Ghz 8GB 1TB Win 10 Pro WIFI",
+          "Quantity": 1,
+          "QuantityUnit": "each",
+          "TaxAmount": {
+            "CurrencyCode": "USD"
+          },
+          "TaxRate": 0.1,
+          "TotalAmount": {
+            "Amount": 238.7,
+            "CurrencyCode": "USD"
+          },
+          "UnitPrice": {
+            "Amount": 217,
+            "CurrencyCode": "USD"
+          }
+        },
+        {
+          "Description": "Dell Optiplex 790 Computer i7 @ 3.40 Ghz Quad Core 250GB 4GB Working",
+          "Quantity": 3,
+          "QuantityUnit": "each",
+          "TaxAmount": {
+            "CurrencyCode": "USD"
+          },
+          "TaxRate": 0.1,
+          "TotalAmount": {
+            "Amount": 527.97,
+            "CurrencyCode": "USD"
+          },
+          "UnitPrice": {
+            "Amount": 159.99,
+            "CurrencyCode": "USD"
+          }
+        },
+        {
+          "Description": "Vintage Microsolutions Pentium 133mhz Desktop Tower PC Windows 95 5.25 Floppy",
+          "Quantity": 2,
+          "QuantityUnit": "each",
+          "TaxAmount": {
+            "CurrencyCode": "USD"
+          },
+          "TaxRate": 0.1,
+          "TotalAmount": {
+            "Amount": 858,
+            "CurrencyCode": "USD"
+          },
+          "UnitPrice": {
+            "Amount": 390,
+            "CurrencyCode": "USD"
+          }
+        }
+      ],
+      "SubtotalAmount": {
+        "Amount": 6236.77,
+        "CurrencyCode": "USD"
+      },
+      "TaxDetails": [
+        {
+          "Amount": {
+            "Amount": 623.68,
+            "CurrencyCode": "USD"
+          },
+          "Description": "VAT [%] 10%",
+          "NetAmount": {
+            "Amount": 6236.77,
+            "CurrencyCode": "USD"
+          },
+          "Rate": 0.1
+        }
+      ],
+      "TotalAmount": {
+        "Amount": 6860.45,
+        "CurrencyCode": "USD"
+      },
+      "TotalTaxAmount": {
+        "Amount": 623.68,
+        "CurrencyCode": "USD"
+      },
+      "VendorAddress": "00480 Cook Cove Spencerport, UT 12036",
+      "VendorAddressRecipient": "Fitzpatrick and Sons",
+      "VendorName": "Fitzpatrick and Sons",
+      "VendorTaxId": "998-99-5253"
+    },
+    "description": "[LLM error: 429 Client Error: Too Many Requests for url: https://aya-demo-ai.cognitiveservices.azure.com/openai/deployments/gpt-4.1/chat/completions?api-version=2024-12-01-preview]"
   }
 }

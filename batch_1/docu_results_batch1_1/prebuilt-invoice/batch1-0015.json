@@ -1,25 +1,35 @@
 {
-  "id": "1dbd1ed7-55d2-48c6-962a-76b985c358fa",
+  "id": "dffb1080-026b-422b-917e-6240e6cc80ec",
   "status": "Succeeded",
   "result": {
     "analyzerId": "prebuilt-invoice",
     "apiVersion": "2025-11-01",
-    "createdAt": "2026-02-10T13:37:34Z",
-    "stringEncoding": "utf16",
+    "createdAt": "2026-02-10T15:10:35Z",
+    "stringEncoding": "codePoint",
     "warnings": [],
     "contents": [
       {
         "path": "input1",
-        "markdown": "```text\n\n```\n",
+        "markdown": "Invoice no: 46506594\n\nDate of issue:\n\n03/12/2012\n\nSeller:\nPorter-Perkins\n88652 James Loaf\nEast Alyssamouth, KS 81684\n\nTax Id: 929-76-1260\n\nIBAN: GB49GJRS28729607733931\n\nClient:\nCastaneda LLC\n19558 Fry Causeway\nEast Chelseytown, MD 95490\n\nTax Id: 940-86-9734\n\n\n# ITEMS\n\n\n<table>\n<tr>\n<th>No.</th>\n<th>Description</th>\n<th>Qty</th>\n<th>UM</th>\n<th>Net price</th>\n<th>Net worth</th>\n<th>VAT [%]</th>\n<th>Gross worth</th>\n</tr>\n<tr>\n<td>1.</td>\n<td>Nintendo 3DS Handheld Console Purple</td>\n<td>5,00</td>\n<td>each</td>\n<td>98,99</td>\n<td>494,95</td>\n<td>10%</td>\n<td>544,45</td>\n</tr>\n<tr>\n<td>2.</td>\n<td>PocketGo Bittboy v2 White Retro Video Game Portable Console - 3.5 IPS display</td>\n<td>4,00</td>\n<td>each</td>\n<td>39,00</td>\n<td>156,00</td>\n<td>10%</td>\n<td>171,60</td>\n</tr>\n<tr>\n<td>3.</td>\n<td>Sony PlayStation 3 Slim 120GB Black Console</td>\n<td>4,00</td>\n<td>each</td>\n<td>99,99</td>\n<td>399,96</td>\n<td>10%</td>\n<td>439,96</td>\n</tr>\n<tr>\n<td>4.</td>\n<td>Microsoft Xbox 360 - White - Console, Power Supply, AV Cables *Tested, Working*</td>\n<td>1,00</td>\n<td>each</td>\n<td>39,95</td>\n<td>39,95</td>\n<td>10%</td>\n<td>43,95</td>\n</tr>\n<tr>\n<td>5.</td>\n<td>SONY Playstation2 Console SCPH-39000 \" Aqua Color \" / TESTED 11181</td>\n<td>1,00</td>\n<td>each</td>\n<td>45,00</td>\n<td>45,00</td>\n<td>10%</td>\n<td>49,50</td>\n</tr>\n<tr>\n<td>6.</td>\n<td>Nintendo 64 Console \"Perfect\" + Lot Games \"6 Games\"</td>\n<td>1,00</td>\n<td>each</td>\n<td>200,00</td>\n<td>200,00</td>\n<td>10%</td>\n<td>220,00</td>\n</tr>\n</table>\n\n\n# SUMMARY\n\n\n<table>\n<tr>\n<th>VAT [%]</th>\n<th>Net worth</th>\n<th>VAT</th>\n<th>Gross worth</th>\n</tr>\n<tr>\n<td>10%</td>\n<td>1 335,86</td>\n<td>133,59</td>\n<td>1 469,45</td>\n</tr>\n<tr>\n<td>Total</td>\n<td>$ 1 335,86</td>\n<td>$ 133,59</td>\n<td>$ 1 469,45</td>\n</tr>\n</table>\n",
         "fields": {
           "AmountDue": {
             "type": "object",
             "valueObject": {
               "Amount": {
-                "type": "number"
+                "type": "number",
+                "valueNumber": 1469.45,
+                "spans": [
+                  {
+                    "offset": 1749,
+                    "length": 10
+                  }
+                ],
+                "confidence": 0.802,
+                "source": "D(1,1369.0000,1775.0000,1504.0000,1775.0000,1504.0000,1800.0000,1369.0000,1800.0000)"
               },
               "CurrencyCode": {
-                "type": "string"
+                "type": "string",
+                "valueString": "USD"
               }
             }
           },
@@ -27,7 +37,8 @@
             "type": "object",
             "valueObject": {
               "Amount": {
-                "type": "number"
+                "type": "number",
+                "confidence": 0.959
               },
               "CurrencyCode": {
                 "type": "string"
@@ -35,87 +46,1025 @@
             }
           },
           "BillingAddress": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.715
           },
           "BillingAddressRecipient": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.762
           },
           "CountryRegion": {
-            "type": "string"
+            "type": "string",
+            "valueString": "USA"
           },
           "CustomerAddress": {
-            "type": "string"
+            "type": "string",
+            "valueString": "19558 Fry Causeway East Chelseytown, MD 95490",
+            "spans": [
+              {
+                "offset": 191,
+                "length": 18
+              },
+              {
+                "offset": 210,
+                "length": 26
+              }
+            ],
+            "confidence": 0.739,
+            "source": "D(1,834.0042,540.6322,1127.3678,544.0042,1126.9811,577.6435,833.6176,574.2715);D(1,833.0000,576.0000,1242.0000,576.0000,1242.0000,610.0000,833.0000,610.0000)"
           },
           "CustomerAddressRecipient": {
-            "type": "string"
+            "type": "string",
+            "valueString": "Castaneda LLC",
+            "spans": [
+              {
+                "offset": 177,
+                "length": 13
+              }
+            ],
+            "confidence": 0.757,
+            "source": "D(1,832.0350,503.4317,1043.2990,505.5029,1042.9601,540.0682,831.6961,537.9970)"
           },
           "CustomerId": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.815
           },
           "CustomerName": {
-            "type": "string"
+            "type": "string",
+            "valueString": "Castaneda LLC",
+            "spans": [
+              {
+                "offset": 177,
+                "length": 13
+              }
+            ],
+            "confidence": 0.747,
+            "source": "D(1,832.0350,503.4317,1043.2990,505.5029,1042.9601,540.0682,831.6961,537.9970)"
           },
           "CustomerTaxId": {
-            "type": "string"
+            "type": "string",
+            "valueString": "940-86-9734",
+            "spans": [
+              {
+                "offset": 246,
+                "length": 11
+              }
+            ],
+            "confidence": 0.902,
+            "source": "D(1,937.0000,648.0000,1118.0000,648.0000,1118.0000,679.0000,937.0000,679.0000)"
           },
           "DueDate": {
-            "type": "date"
+            "type": "date",
+            "confidence": 0.793
           },
           "InvoiceDate": {
-            "type": "date"
+            "type": "date",
+            "valueDate": "2012-03-12",
+            "spans": [
+              {
+                "offset": 38,
+                "length": 10
+              }
+            ],
+            "confidence": 0.97,
+            "source": "D(1,800.0000,140.0000,980.0000,140.0000,980.0000,174.0000,800.0000,174.0000)"
           },
           "InvoiceId": {
-            "type": "string"
+            "type": "string",
+            "valueString": "46506594",
+            "spans": [
+              {
+                "offset": 12,
+                "length": 8
+              }
+            ],
+            "confidence": 0.954,
+            "source": "D(1,349.0000,72.0000,538.0000,71.0000,538.0000,107.0000,349.0000,108.0000)"
           },
           "LineItems": {
-            "type": "array"
+            "type": "array",
+            "valueArray": [
+              {
+                "type": "object",
+                "valueObject": {
+                  "Date": {
+                    "type": "date",
+                    "confidence": 0.823
+                  },
+                  "Description": {
+                    "type": "string",
+                    "valueString": "Nintendo 3DS Handheld Console Purple",
+                    "spans": [
+                      {
+                        "offset": 445,
+                        "length": 29
+                      },
+                      {
+                        "offset": 475,
+                        "length": 6
+                      }
+                    ],
+                    "confidence": 0.518,
+                    "source": "D(1,237.0090,930.1832,604.1287,932.0006,603.9885,960.3168,236.8688,958.4994);D(1,238.0000,960.0000,312.0000,960.0000,312.0000,986.0000,238.0000,987.0000)"
+                  },
+                  "ProductCode": {
+                    "type": "string",
+                    "confidence": 0.902
+                  },
+                  "Quantity": {
+                    "type": "number",
+                    "valueNumber": 5,
+                    "spans": [
+                      {
+                        "offset": 491,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.903,
+                    "source": "D(1,672.0000,933.0000,726.0000,933.0000,726.0000,958.0000,672.0000,958.0000)"
+                  },
+                  "QuantityUnit": {
+                    "type": "string",
+                    "valueString": "each",
+                    "spans": [
+                      {
+                        "offset": 505,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.828,
+                    "source": "D(1,769.0000,934.0000,827.0000,934.0000,827.0000,957.0000,769.0000,958.0000)"
+                  },
+                  "TaxAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 49.5,
+                        "spans": [
+                          {
+                            "offset": 1309,
+                            "length": 5
+                          }
+                        ],
+                        "confidence": 0.512,
+                        "source": "D(1,1434.0000,1335.0000,1501.0000,1335.0000,1501.0000,1360.0000,1434.0000,1360.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "TaxRate": {
+                    "type": "number",
+                    "valueNumber": 0.1,
+                    "spans": [
+                      {
+                        "offset": 550,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.864,
+                    "source": "D(1,1280.0226,931.9171,1332.5206,933.0108,1331.9774,959.0829,1279.4794,957.9892)"
+                  },
+                  "TotalAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 544.45,
+                        "spans": [
+                          {
+                            "offset": 563,
+                            "length": 6
+                          }
+                        ],
+                        "confidence": 0.897,
+                        "source": "D(1,1421.0000,933.0000,1500.0000,933.0000,1500.0000,957.0000,1421.0000,957.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "UnitPrice": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 98.99,
+                        "spans": [
+                          {
+                            "offset": 519,
+                            "length": 5
+                          }
+                        ],
+                        "confidence": 0.903,
+                        "source": "D(1,950.0000,932.0000,1016.0000,932.0000,1016.0000,959.0000,950.0000,959.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "Date": {
+                    "type": "date",
+                    "confidence": 0.823
+                  },
+                  "Description": {
+                    "type": "string",
+                    "valueString": "PocketGo Bittboy v2 White Retro Video Game Portable Console - 3.5 IPS display",
+                    "spans": [
+                      {
+                        "offset": 602,
+                        "length": 25
+                      },
+                      {
+                        "offset": 628,
+                        "length": 25
+                      },
+                      {
+                        "offset": 654,
+                        "length": 25
+                      }
+                    ],
+                    "confidence": 0.663,
+                    "source": "D(1,237.0000,1018.0000,539.0000,1018.0000,539.0000,1046.0000,237.0000,1046.0000);D(1,238.0000,1046.0000,545.0000,1046.0000,545.0000,1073.0000,238.0000,1073.0000);D(1,239.0000,1073.0000,514.0000,1073.0000,514.0000,1102.0000,239.0000,1102.0000)"
+                  },
+                  "ProductCode": {
+                    "type": "string",
+                    "confidence": 0.902
+                  },
+                  "Quantity": {
+                    "type": "number",
+                    "valueNumber": 4,
+                    "spans": [
+                      {
+                        "offset": 689,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.903,
+                    "source": "D(1,672.0000,1019.0000,725.0000,1019.0000,725.0000,1044.0000,672.0000,1044.0000)"
+                  },
+                  "QuantityUnit": {
+                    "type": "string",
+                    "valueString": "each",
+                    "spans": [
+                      {
+                        "offset": 703,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.826,
+                    "source": "D(1,770.0000,1020.0000,827.0000,1020.0000,827.0000,1044.0000,770.0000,1044.0000)"
+                  },
+                  "TaxAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 171.6,
+                        "spans": [
+                          {
+                            "offset": 761,
+                            "length": 6
+                          }
+                        ],
+                        "confidence": 0.386,
+                        "source": "D(1,1421.0000,1019.0000,1500.0000,1019.0000,1500.0000,1044.0000,1421.0000,1044.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "TaxRate": {
+                    "type": "number",
+                    "valueNumber": 0.1,
+                    "spans": [
+                      {
+                        "offset": 748,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.87,
+                    "source": "D(1,1281.0000,1019.0000,1331.0000,1019.0000,1331.0000,1044.0000,1281.0000,1044.0000)"
+                  },
+                  "TotalAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 171.6,
+                        "spans": [
+                          {
+                            "offset": 761,
+                            "length": 6
+                          }
+                        ],
+                        "confidence": 0.938,
+                        "source": "D(1,1421.0000,1019.0000,1500.0000,1019.0000,1500.0000,1044.0000,1421.0000,1044.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "UnitPrice": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 39,
+                        "spans": [
+                          {
+                            "offset": 717,
+                            "length": 5
+                          }
+                        ],
+                        "confidence": 0.903,
+                        "source": "D(1,950.0000,1019.0000,1015.0000,1019.0000,1015.0000,1045.0000,950.0000,1045.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "Date": {
+                    "type": "date",
+                    "confidence": 0.823
+                  },
+                  "Description": {
+                    "type": "string",
+                    "valueString": "Microsoft Xbox 360 - White - Console, Power Supply, AV Cables *Tested, Working*",
+                    "spans": [
+                      {
+                        "offset": 964,
+                        "length": 28
+                      },
+                      {
+                        "offset": 993,
+                        "length": 25
+                      },
+                      {
+                        "offset": 1019,
+                        "length": 24
+                      }
+                    ],
+                    "confidence": 0.512,
+                    "source": "D(1,237.0000,1219.0000,565.0000,1219.0000,565.0000,1247.0000,237.0000,1247.0000);D(1,239.0000,1248.0000,539.0000,1248.0000,539.0000,1276.0000,239.0000,1276.0000);D(1,238.0000,1276.0000,527.0000,1276.0000,527.0000,1304.0000,238.0000,1304.0000)"
+                  },
+                  "ProductCode": {
+                    "type": "string",
+                    "confidence": 0.902
+                  },
+                  "Quantity": {
+                    "type": "number",
+                    "valueNumber": 1,
+                    "spans": [
+                      {
+                        "offset": 1053,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.903,
+                    "source": "D(1,673.0000,1221.0000,725.0000,1222.0000,725.0000,1247.0000,673.0000,1246.0000)"
+                  },
+                  "QuantityUnit": {
+                    "type": "string",
+                    "valueString": "each",
+                    "spans": [
+                      {
+                        "offset": 1067,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.825,
+                    "source": "D(1,769.0000,1222.0000,826.0000,1222.0000,826.0000,1246.0000,769.0000,1246.0000)"
+                  },
+                  "TaxAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 4,
+                        "spans": [
+                          {
+                            "offset": 689,
+                            "length": 4
+                          }
+                        ],
+                        "confidence": 0.464,
+                        "source": "D(1,672.0000,1019.0000,725.0000,1019.0000,725.0000,1044.0000,672.0000,1044.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "TaxRate": {
+                    "type": "number",
+                    "valueNumber": 0.1,
+                    "spans": [
+                      {
+                        "offset": 1111,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.883,
+                    "source": "D(1,1281.0145,1219.3640,1331.5792,1220.5132,1330.9881,1246.5225,1280.4233,1245.3733)"
+                  },
+                  "TotalAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 43.95,
+                        "spans": [
+                          {
+                            "offset": 1124,
+                            "length": 5
+                          }
+                        ],
+                        "confidence": 0.924,
+                        "source": "D(1,1434.0000,1220.0000,1501.0000,1221.0000,1501.0000,1249.0000,1434.0000,1247.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "UnitPrice": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 39.95,
+                        "spans": [
+                          {
+                            "offset": 1081,
+                            "length": 5
+                          }
+                        ],
+                        "confidence": 0.916,
+                        "source": "D(1,950.0000,1221.0000,1016.0000,1221.0000,1016.0000,1247.0000,950.0000,1247.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "Date": {
+                    "type": "date",
+                    "confidence": 0.823
+                  },
+                  "Description": {
+                    "type": "string",
+                    "valueString": "Sony PlayStation 3 Slim 120GB Black Console",
+                    "spans": [
+                      {
+                        "offset": 800,
+                        "length": 29
+                      },
+                      {
+                        "offset": 830,
+                        "length": 13
+                      }
+                    ],
+                    "confidence": 0.519,
+                    "source": "D(1,237.0000,1133.0000,586.0000,1133.0000,586.0000,1160.0000,237.0000,1160.0000);D(1,238.0271,1157.6969,397.2131,1159.0017,396.9770,1187.8031,237.7910,1186.4983)"
+                  },
+                  "ProductCode": {
+                    "type": "string",
+                    "confidence": 0.902
+                  },
+                  "Quantity": {
+                    "type": "number",
+                    "valueNumber": 4,
+                    "spans": [
+                      {
+                        "offset": 853,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.914,
+                    "source": "D(1,672.0000,1134.0000,725.0000,1134.0000,725.0000,1159.0000,672.0000,1159.0000)"
+                  },
+                  "QuantityUnit": {
+                    "type": "string",
+                    "valueString": "each",
+                    "spans": [
+                      {
+                        "offset": 867,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.823,
+                    "source": "D(1,769.0000,1135.0000,827.0000,1135.0000,827.0000,1159.0000,769.0000,1159.0000)"
+                  },
+                  "TaxAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 220,
+                        "spans": [
+                          {
+                            "offset": 1481,
+                            "length": 6
+                          }
+                        ],
+                        "confidence": 0.084,
+                        "source": "D(1,1419.0000,1450.0000,1501.0000,1450.0000,1501.0000,1477.0000,1419.0000,1477.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "TaxRate": {
+                    "type": "number",
+                    "valueNumber": 0.1,
+                    "spans": [
+                      {
+                        "offset": 912,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.87,
+                    "source": "D(1,1281.0000,1134.0000,1332.0000,1134.0000,1332.0000,1159.0000,1281.0000,1159.0000)"
+                  },
+                  "TotalAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 439.96,
+                        "spans": [
+                          {
+                            "offset": 925,
+                            "length": 6
+                          }
+                        ],
+                        "confidence": 0.903,
+                        "source": "D(1,1419.0000,1134.0000,1501.0000,1134.0000,1501.0000,1159.0000,1419.0000,1159.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "UnitPrice": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 99.99,
+                        "spans": [
+                          {
+                            "offset": 881,
+                            "length": 5
+                          }
+                        ],
+                        "confidence": 0.916,
+                        "source": "D(1,950.0000,1134.0000,1016.0000,1134.0000,1016.0000,1160.0000,950.0000,1160.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "Date": {
+                    "type": "date",
+                    "confidence": 0.823
+                  },
+                  "Description": {
+                    "type": "string",
+                    "valueString": "SONY Playstation2 Console SCPH-39000 \" Aqua Color \" / TESTED 11181",
+                    "spans": [
+                      {
+                        "offset": 1162,
+                        "length": 25
+                      },
+                      {
+                        "offset": 1188,
+                        "length": 27
+                      },
+                      {
+                        "offset": 1216,
+                        "length": 12
+                      }
+                    ],
+                    "confidence": 0.474,
+                    "source": "D(1,237.8462,1335.0008,542.9908,1333.3242,543.1456,1361.4992,238.0010,1363.1758);D(1,238.0000,1362.0000,558.0000,1362.0000,558.0000,1390.0000,238.0000,1390.0000);D(1,238.0000,1391.0000,404.0000,1391.0000,404.0000,1416.0000,238.0000,1416.0000)"
+                  },
+                  "ProductCode": {
+                    "type": "string",
+                    "confidence": 0.902
+                  },
+                  "Quantity": {
+                    "type": "number",
+                    "valueNumber": 1,
+                    "spans": [
+                      {
+                        "offset": 1238,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.939,
+                    "source": "D(1,674.0000,1336.0000,724.0000,1336.0000,724.0000,1361.0000,674.0000,1361.0000)"
+                  },
+                  "QuantityUnit": {
+                    "type": "string",
+                    "valueString": "each",
+                    "spans": [
+                      {
+                        "offset": 1252,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.83,
+                    "source": "D(1,769.0000,1336.0000,826.0000,1336.0000,826.0000,1361.0000,769.0000,1361.0000)"
+                  },
+                  "TaxAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 49.5,
+                        "spans": [
+                          {
+                            "offset": 1309,
+                            "length": 5
+                          }
+                        ],
+                        "confidence": 0.753,
+                        "source": "D(1,1434.0000,1335.0000,1501.0000,1335.0000,1501.0000,1360.0000,1434.0000,1360.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "TaxRate": {
+                    "type": "number",
+                    "valueNumber": 0.1,
+                    "spans": [
+                      {
+                        "offset": 1296,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.876,
+                    "source": "D(1,1279.0000,1335.0000,1331.0000,1335.0000,1331.0000,1360.0000,1279.0000,1360.0000)"
+                  },
+                  "TotalAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 49.5,
+                        "spans": [
+                          {
+                            "offset": 1309,
+                            "length": 5
+                          }
+                        ],
+                        "confidence": 0.959,
+                        "source": "D(1,1434.0000,1335.0000,1501.0000,1335.0000,1501.0000,1360.0000,1434.0000,1360.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "UnitPrice": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 45,
+                        "spans": [
+                          {
+                            "offset": 1266,
+                            "length": 5
+                          }
+                        ],
+                        "confidence": 0.936,
+                        "source": "D(1,950.0000,1335.0000,1016.0000,1336.0000,1016.0000,1362.0000,950.0000,1360.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "Date": {
+                    "type": "date",
+                    "confidence": 0.823
+                  },
+                  "Description": {
+                    "type": "string",
+                    "valueString": "Nintendo 64 Console \"Perfect\" + Lot Games \"6 Games\"",
+                    "spans": [
+                      {
+                        "offset": 1347,
+                        "length": 31
+                      },
+                      {
+                        "offset": 1379,
+                        "length": 19
+                      }
+                    ],
+                    "confidence": 0.513,
+                    "source": "D(1,237.0000,1448.0000,601.0000,1448.0000,601.0000,1477.0000,237.0000,1477.0000);D(1,238.0000,1478.0000,487.0000,1478.0000,487.0000,1504.0000,238.0000,1504.0000)"
+                  },
+                  "ProductCode": {
+                    "type": "string",
+                    "confidence": 0.902
+                  },
+                  "Quantity": {
+                    "type": "number",
+                    "valueNumber": 1,
+                    "spans": [
+                      {
+                        "offset": 1408,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.882,
+                    "source": "D(1,673.0000,1450.0000,725.0000,1450.0000,725.0000,1476.0000,673.0000,1476.0000)"
+                  },
+                  "QuantityUnit": {
+                    "type": "string",
+                    "valueString": "each",
+                    "spans": [
+                      {
+                        "offset": 1422,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.823,
+                    "source": "D(1,769.0000,1451.0000,827.0000,1452.0000,827.0000,1476.0000,769.0000,1475.0000)"
+                  },
+                  "TaxAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 220,
+                        "spans": [
+                          {
+                            "offset": 1481,
+                            "length": 6
+                          }
+                        ],
+                        "confidence": 0.801,
+                        "source": "D(1,1419.0000,1450.0000,1501.0000,1450.0000,1501.0000,1477.0000,1419.0000,1477.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "TaxRate": {
+                    "type": "number",
+                    "valueNumber": 0.1,
+                    "spans": [
+                      {
+                        "offset": 1468,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.872,
+                    "source": "D(1,1281.4102,1446.8728,1334.9873,1451.1590,1332.5898,1481.1272,1279.0127,1476.8410)"
+                  },
+                  "TotalAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 220,
+                        "spans": [
+                          {
+                            "offset": 1481,
+                            "length": 6
+                          }
+                        ],
+                        "confidence": 0.902,
+                        "source": "D(1,1419.0000,1450.0000,1501.0000,1450.0000,1501.0000,1477.0000,1419.0000,1477.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "UnitPrice": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 200,
+                        "spans": [
+                          {
+                            "offset": 1436,
+                            "length": 6
+                          }
+                        ],
+                        "confidence": 0.876,
+                        "source": "D(1,935.0000,1449.0000,1015.0000,1449.0000,1015.0000,1477.0000,935.0000,1477.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
           },
           "PaymentTerm": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.816
           },
           "PONumber": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.746
           },
           "RemittanceAddress": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.905
           },
           "RemittanceAddressRecipient": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.814
           },
           "ServiceAddress": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.782
           },
           "ServiceAddressRecipient": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.82
           },
           "ShippingAddress": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.775
           },
           "ShippingAddressRecipient": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.81
           },
           "SubtotalAmount": {
             "type": "object",
             "valueObject": {
               "Amount": {
-                "type": "number"
+                "type": "number",
+                "valueNumber": 1335.86
               },
               "CurrencyCode": {
-                "type": "string"
+                "type": "string",
+                "valueString": "USD"
               }
             }
           },
           "TaxDetails": {
-            "type": "array"
+            "type": "array",
+            "valueArray": [
+              {
+                "type": "object",
+                "valueObject": {
+                  "Amount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 133.59,
+                        "spans": [
+                          {
+                            "offset": 1651,
+                            "length": 6
+                          }
+                        ],
+                        "confidence": 0.913,
+                        "source": "D(1,1161.0000,1715.0000,1240.0000,1716.0000,1240.0000,1742.0000,1161.0000,1741.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "Description": {
+                    "type": "string",
+                    "valueString": "VAT [%]",
+                    "spans": [
+                      {
+                        "offset": 1539,
+                        "length": 7
+                      }
+                    ],
+                    "confidence": 0.05,
+                    "source": "D(1,638.0439,1651.9792,745.6453,1654.3184,744.9712,1685.3255,637.3699,1682.9863)"
+                  },
+                  "NetAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 1335.86,
+                        "spans": [
+                          {
+                            "offset": 1633,
+                            "length": 8
+                          }
+                        ],
+                        "confidence": 0.74,
+                        "source": "D(1,954.0168,1713.1066,1055.5061,1715.0095,1055.0000,1742.0000,953.5107,1740.0971)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "Rate": {
+                    "type": "number",
+                    "valueNumber": 0.1,
+                    "spans": [
+                      {
+                        "offset": 1620,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.873,
+                    "source": "D(1,667.0650,1713.1809,718.9274,1715.0331,717.9707,1741.8204,666.1083,1739.9682)"
+                  }
+                }
+              }
+            ]
           },
           "TotalAmount": {
             "type": "object",
             "valueObject": {
               "Amount": {
-                "type": "number"
+                "type": "number",
+                "valueNumber": 1469.45,
+                "spans": [
+                  {
+                    "offset": 1667,
+                    "length": 8
+                  }
+                ],
+                "confidence": 0.732,
+                "source": "D(1,1402.0355,1713.0783,1504.9601,1717.0369,1503.9453,1743.4210,1401.0207,1739.4623)"
               },
               "CurrencyCode": {
-                "type": "string"
+                "type": "string",
+                "valueString": "USD"
               }
             }
           },
@@ -123,7 +1072,8 @@
             "type": "object",
             "valueObject": {
               "Amount": {
-                "type": "number"
+                "type": "number",
+                "confidence": 0.934
               },
               "CurrencyCode": {
                 "type": "string"
@@ -134,45 +1084,4689 @@
             "type": "object",
             "valueObject": {
               "Amount": {
-                "type": "number"
+                "type": "number",
+                "valueNumber": 133.59
               },
               "CurrencyCode": {
-                "type": "string"
+                "type": "string",
+                "valueString": "USD"
               }
             }
           },
           "VendorAddress": {
-            "type": "string"
+            "type": "string",
+            "valueString": "88652 James Loaf East Alyssamouth, KS 81684",
+            "spans": [
+              {
+                "offset": 73,
+                "length": 16
+              },
+              {
+                "offset": 90,
+                "length": 26
+              }
+            ],
+            "confidence": 0.807,
+            "source": "D(1,140.0000,541.0000,394.0000,541.0000,394.0000,574.0000,140.0000,574.0000);D(1,141.0000,576.0000,542.0000,576.0000,542.0000,610.0000,141.0000,610.0000)"
           },
           "VendorAddressRecipient": {
-            "type": "string"
+            "type": "string",
+            "valueString": "Porter-Perkins",
+            "spans": [
+              {
+                "offset": 58,
+                "length": 14
+              }
+            ],
+            "confidence": 0.88,
+            "source": "D(1,140.0000,506.0000,338.0000,506.0000,338.0000,536.0000,140.0000,536.0000)"
           },
           "VendorName": {
-            "type": "string"
+            "type": "string",
+            "valueString": "Porter-Perkins",
+            "spans": [
+              {
+                "offset": 58,
+                "length": 14
+              }
+            ],
+            "confidence": 0.885,
+            "source": "D(1,140.0000,506.0000,338.0000,506.0000,338.0000,536.0000,140.0000,536.0000)"
           },
           "VendorTaxId": {
-            "type": "string"
+            "type": "string",
+            "valueString": "929-76-1260",
+            "spans": [
+              {
+                "offset": 126,
+                "length": 11
+              }
+            ],
+            "confidence": 0.925,
+            "source": "D(1,244.0000,649.0000,424.0000,648.0000,424.0000,679.0000,244.0000,679.0000)"
           }
         },
         "kind": "document",
         "startPageNumber": 1,
         "endPageNumber": 1,
+        "unit": "pixel",
+        "pages": [
+          {
+            "pageNumber": 1,
+            "angle": 0,
+            "width": 1654,
+            "height": 2339,
+            "spans": [
+              {
+                "offset": 0,
+                "length": 1780
+              }
+            ],
+            "words": [
+              {
+                "content": "Invoice",
+                "span": {
+                  "offset": 0,
+                  "length": 7
+                },
+                "confidence": 0.946,
+                "source": "D(1,130,72,264,72,264,108,131,108)"
+              },
+              {
+                "content": "no",
+                "span": {
+                  "offset": 8,
+                  "length": 2
+                },
+                "confidence": 0.998,
+                "source": "D(1,279,72,322,72,323,108,279,108)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 10,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,326,72,335,72,335,108,326,108)"
+              },
+              {
+                "content": "46506594",
+                "span": {
+                  "offset": 12,
+                  "length": 8
+                },
+                "confidence": 0.997,
+                "source": "D(1,349,72,538,71,538,107,349,108)"
+              },
+              {
+                "content": "Date",
+                "span": {
+                  "offset": 22,
+                  "length": 4
+                },
+                "confidence": 0.998,
+                "source": "D(1,131,141,205,141,205,173,131,173)"
+              },
+              {
+                "content": "of",
+                "span": {
+                  "offset": 27,
+                  "length": 2
+                },
+                "confidence": 0.997,
+                "source": "D(1,216,141,247,141,247,173,216,173)"
+              },
+              {
+                "content": "issue",
+                "span": {
+                  "offset": 30,
+                  "length": 5
+                },
+                "confidence": 0.996,
+                "source": "D(1,255,141,332,141,332,174,255,173)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 35,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,334,142,345,142,345,174,334,174)"
+              },
+              {
+                "content": "03/12/2012",
+                "span": {
+                  "offset": 38,
+                  "length": 10
+                },
+                "confidence": 0.993,
+                "source": "D(1,800,140,980,140,980,174,800,174)"
+              },
+              {
+                "content": "Seller",
+                "span": {
+                  "offset": 50,
+                  "length": 6
+                },
+                "confidence": 0.997,
+                "source": "D(1,131,443,241,443,241,476,131,476)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 56,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,242,443,255,443,255,476,242,476)"
+              },
+              {
+                "content": "Porter",
+                "span": {
+                  "offset": 58,
+                  "length": 6
+                },
+                "confidence": 0.998,
+                "source": "D(1,140,506,226,506,226,536,140,536)"
+              },
+              {
+                "content": "-",
+                "span": {
+                  "offset": 64,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,225,506,235,506,235,536,225,536)"
+              },
+              {
+                "content": "Perkins",
+                "span": {
+                  "offset": 65,
+                  "length": 7
+                },
+                "confidence": 0.998,
+                "source": "D(1,236,506,338,506,338,536,236,536)"
+              },
+              {
+                "content": "88652",
+                "span": {
+                  "offset": 73,
+                  "length": 5
+                },
+                "confidence": 0.991,
+                "source": "D(1,140,541,227,541,227,574,140,574)"
+              },
+              {
+                "content": "James",
+                "span": {
+                  "offset": 79,
+                  "length": 5
+                },
+                "confidence": 0.961,
+                "source": "D(1,234,541,321,541,321,574,234,574)"
+              },
+              {
+                "content": "Loaf",
+                "span": {
+                  "offset": 85,
+                  "length": 4
+                },
+                "confidence": 0.993,
+                "source": "D(1,332,541,394,541,394,574,332,574)"
+              },
+              {
+                "content": "East",
+                "span": {
+                  "offset": 90,
+                  "length": 4
+                },
+                "confidence": 0.998,
+                "source": "D(1,141,578,200,578,200,610,141,610)"
+              },
+              {
+                "content": "Alyssamouth",
+                "span": {
+                  "offset": 95,
+                  "length": 11
+                },
+                "confidence": 0.994,
+                "source": "D(1,208,578,386,578,386,610,208,610)"
+              },
+              {
+                "content": ",",
+                "span": {
+                  "offset": 106,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,388,578,395,578,395,610,388,610)"
+              },
+              {
+                "content": "KS",
+                "span": {
+                  "offset": 108,
+                  "length": 2
+                },
+                "confidence": 0.994,
+                "source": "D(1,407,577,441,577,441,610,407,610)"
+              },
+              {
+                "content": "81684",
+                "span": {
+                  "offset": 111,
+                  "length": 5
+                },
+                "confidence": 0.992,
+                "source": "D(1,452,577,542,576,542,609,452,610)"
+              },
+              {
+                "content": "Tax",
+                "span": {
+                  "offset": 118,
+                  "length": 3
+                },
+                "confidence": 0.981,
+                "source": "D(1,138,648,190,649,190,679,139,679)"
+              },
+              {
+                "content": "Id",
+                "span": {
+                  "offset": 122,
+                  "length": 2
+                },
+                "confidence": 0.829,
+                "source": "D(1,201,649,223,649,223,679,201,679)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 124,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,227,649,233,649,233,679,227,679)"
+              },
+              {
+                "content": "929-76-1260",
+                "span": {
+                  "offset": 126,
+                  "length": 11
+                },
+                "confidence": 0.984,
+                "source": "D(1,244,649,424,648,424,679,244,679)"
+              },
+              {
+                "content": "IBAN",
+                "span": {
+                  "offset": 139,
+                  "length": 4
+                },
+                "confidence": 0.996,
+                "source": "D(1,140,683,205,683,205,715,140,715)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 143,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,209,683,214,683,214,715,209,715)"
+              },
+              {
+                "content": "GB49GJRS28729607733931",
+                "span": {
+                  "offset": 145,
+                  "length": 22
+                },
+                "confidence": 0.991,
+                "source": "D(1,227,683,617,683,617,715,227,715)"
+              },
+              {
+                "content": "Client",
+                "span": {
+                  "offset": 169,
+                  "length": 6
+                },
+                "confidence": 0.996,
+                "source": "D(1,824,442,935,442,935,477,824,477)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 175,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,937,442,950,442,950,477,937,477)"
+              },
+              {
+                "content": "Castaneda",
+                "span": {
+                  "offset": 177,
+                  "length": 9
+                },
+                "confidence": 0.987,
+                "source": "D(1,832,507,980,505,980,536,832,538)"
+              },
+              {
+                "content": "LLC",
+                "span": {
+                  "offset": 187,
+                  "length": 3
+                },
+                "confidence": 0.994,
+                "source": "D(1,992,505,1043,506,1043,536,992,536)"
+              },
+              {
+                "content": "19558",
+                "span": {
+                  "offset": 191,
+                  "length": 5
+                },
+                "confidence": 0.992,
+                "source": "D(1,834,541,921,542,921,575,834,574)"
+              },
+              {
+                "content": "Fry",
+                "span": {
+                  "offset": 197,
+                  "length": 3
+                },
+                "confidence": 0.995,
+                "source": "D(1,932,542,975,543,975,575,932,575)"
+              },
+              {
+                "content": "Causeway",
+                "span": {
+                  "offset": 201,
+                  "length": 8
+                },
+                "confidence": 0.991,
+                "source": "D(1,984,543,1127,544,1127,576,984,576)"
+              },
+              {
+                "content": "East",
+                "span": {
+                  "offset": 210,
+                  "length": 4
+                },
+                "confidence": 0.998,
+                "source": "D(1,833,577,892,577,892,610,833,610)"
+              },
+              {
+                "content": "Chelseytown",
+                "span": {
+                  "offset": 215,
+                  "length": 11
+                },
+                "confidence": 0.995,
+                "source": "D(1,901,577,1076,577,1076,610,901,610)"
+              },
+              {
+                "content": ",",
+                "span": {
+                  "offset": 226,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1078,577,1085,577,1085,610,1078,610)"
+              },
+              {
+                "content": "MD",
+                "span": {
+                  "offset": 228,
+                  "length": 2
+                },
+                "confidence": 0.995,
+                "source": "D(1,1096,577,1139,577,1139,610,1096,610)"
+              },
+              {
+                "content": "95490",
+                "span": {
+                  "offset": 231,
+                  "length": 5
+                },
+                "confidence": 0.985,
+                "source": "D(1,1150,577,1242,576,1242,609,1150,610)"
+              },
+              {
+                "content": "Tax",
+                "span": {
+                  "offset": 238,
+                  "length": 3
+                },
+                "confidence": 0.984,
+                "source": "D(1,830,648,883,648,883,679,830,679)"
+              },
+              {
+                "content": "Id",
+                "span": {
+                  "offset": 242,
+                  "length": 2
+                },
+                "confidence": 0.745,
+                "source": "D(1,893,648,916,648,916,679,893,679)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 244,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,920,648,925,648,925,679,920,679)"
+              },
+              {
+                "content": "940-86-9734",
+                "span": {
+                  "offset": 246,
+                  "length": 11
+                },
+                "confidence": 0.993,
+                "source": "D(1,937,648,1118,648,1118,679,937,679)"
+              },
+              {
+                "content": "ITEMS",
+                "span": {
+                  "offset": 262,
+                  "length": 5
+                },
+                "confidence": 0.98,
+                "source": "D(1,131,759,248,759,248,792,131,792)"
+              },
+              {
+                "content": "No",
+                "span": {
+                  "offset": 287,
+                  "length": 2
+                },
+                "confidence": 0.957,
+                "source": "D(1,158,848,192,847,192,870,158,871)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 289,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,194,847,201,847,201,870,194,870)"
+              },
+              {
+                "content": "Description",
+                "span": {
+                  "offset": 300,
+                  "length": 11
+                },
+                "confidence": 0.997,
+                "source": "D(1,238,846,385,847,385,873,238,872)"
+              },
+              {
+                "content": "Qty",
+                "span": {
+                  "offset": 321,
+                  "length": 3
+                },
+                "confidence": 0.994,
+                "source": "D(1,678,845,726,848,726,874,678,871)"
+              },
+              {
+                "content": "UM",
+                "span": {
+                  "offset": 334,
+                  "length": 2
+                },
+                "confidence": 0.986,
+                "source": "D(1,776,846,821,846,821,870,776,870)"
+              },
+              {
+                "content": "Net",
+                "span": {
+                  "offset": 346,
+                  "length": 3
+                },
+                "confidence": 0.999,
+                "source": "D(1,899,844,945,846,945,872,899,871)"
+              },
+              {
+                "content": "price",
+                "span": {
+                  "offset": 350,
+                  "length": 5
+                },
+                "confidence": 0.998,
+                "source": "D(1,953,846,1018,845,1018,871,953,872)"
+              },
+              {
+                "content": "Net",
+                "span": {
+                  "offset": 365,
+                  "length": 3
+                },
+                "confidence": 0.998,
+                "source": "D(1,1056,846,1103,845,1103,871,1056,871)"
+              },
+              {
+                "content": "worth",
+                "span": {
+                  "offset": 369,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,1109,845,1186,846,1186,871,1109,871)"
+              },
+              {
+                "content": "VAT",
+                "span": {
+                  "offset": 384,
+                  "length": 3
+                },
+                "confidence": 0.992,
+                "source": "D(1,1227,844,1280,845,1280,872,1227,871)"
+              },
+              {
+                "content": "[",
+                "span": {
+                  "offset": 388,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1287,845,1297,845,1297,873,1287,873)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 389,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1296,845,1319,845,1319,872,1296,873)"
+              },
+              {
+                "content": "]",
+                "span": {
+                  "offset": 390,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,1319,845,1332,845,1332,872,1319,872)"
+              },
+              {
+                "content": "Gross",
+                "span": {
+                  "offset": 401,
+                  "length": 5
+                },
+                "confidence": 0.998,
+                "source": "D(1,1428,847,1501,848,1501,871,1428,870)"
+              },
+              {
+                "content": "worth",
+                "span": {
+                  "offset": 407,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,1425,875,1501,875,1501,897,1425,897)"
+              },
+              {
+                "content": "1",
+                "span": {
+                  "offset": 433,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,170,934,182,934,182,957,170,957)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 434,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,185,934,192,933,192,957,185,957)"
+              },
+              {
+                "content": "Nintendo",
+                "span": {
+                  "offset": 445,
+                  "length": 8
+                },
+                "confidence": 0.994,
+                "source": "D(1,237,932,338,932,338,959,237,958)"
+              },
+              {
+                "content": "3DS",
+                "span": {
+                  "offset": 454,
+                  "length": 3
+                },
+                "confidence": 0.983,
+                "source": "D(1,345,932,390,933,390,959,345,959)"
+              },
+              {
+                "content": "Handheld",
+                "span": {
+                  "offset": 458,
+                  "length": 8
+                },
+                "confidence": 0.995,
+                "source": "D(1,399,933,504,932,504,959,399,959)"
+              },
+              {
+                "content": "Console",
+                "span": {
+                  "offset": 467,
+                  "length": 7
+                },
+                "confidence": 0.997,
+                "source": "D(1,511,932,604,932,604,958,511,959)"
+              },
+              {
+                "content": "Purple",
+                "span": {
+                  "offset": 475,
+                  "length": 6
+                },
+                "confidence": 0.994,
+                "source": "D(1,238,960,312,960,312,986,238,987)"
+              },
+              {
+                "content": "5,00",
+                "span": {
+                  "offset": 491,
+                  "length": 4
+                },
+                "confidence": 0.992,
+                "source": "D(1,672,933,726,933,726,958,672,958)"
+              },
+              {
+                "content": "each",
+                "span": {
+                  "offset": 505,
+                  "length": 4
+                },
+                "confidence": 0.999,
+                "source": "D(1,769,934,827,934,827,957,769,958)"
+              },
+              {
+                "content": "98,99",
+                "span": {
+                  "offset": 519,
+                  "length": 5
+                },
+                "confidence": 0.982,
+                "source": "D(1,950,932,1016,932,1016,959,950,959)"
+              },
+              {
+                "content": "494,95",
+                "span": {
+                  "offset": 534,
+                  "length": 6
+                },
+                "confidence": 0.981,
+                "source": "D(1,1106,932,1184,932,1184,958,1106,958)"
+              },
+              {
+                "content": "10",
+                "span": {
+                  "offset": 550,
+                  "length": 2
+                },
+                "confidence": 0.999,
+                "source": "D(1,1280,933,1308,933,1308,957,1280,958)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 552,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1308,933,1332,933,1332,958,1308,957)"
+              },
+              {
+                "content": "544,45",
+                "span": {
+                  "offset": 563,
+                  "length": 6
+                },
+                "confidence": 0.982,
+                "source": "D(1,1421,933,1500,933,1500,957,1421,957)"
+              },
+              {
+                "content": "2",
+                "span": {
+                  "offset": 590,
+                  "length": 1
+                },
+                "confidence": 0.982,
+                "source": "D(1,169,1020,183,1020,183,1043,169,1043)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 591,
+                  "length": 1
+                },
+                "confidence": 0.997,
+                "source": "D(1,185,1020,192,1020,192,1043,185,1043)"
+              },
+              {
+                "content": "PocketGo",
+                "span": {
+                  "offset": 602,
+                  "length": 8
+                },
+                "confidence": 0.969,
+                "source": "D(1,237,1018,344,1018,344,1046,237,1046)"
+              },
+              {
+                "content": "Bittboy",
+                "span": {
+                  "offset": 611,
+                  "length": 7
+                },
+                "confidence": 0.975,
+                "source": "D(1,353,1018,430,1018,430,1046,353,1046)"
+              },
+              {
+                "content": "v2",
+                "span": {
+                  "offset": 619,
+                  "length": 2
+                },
+                "confidence": 0.906,
+                "source": "D(1,438,1018,464,1018,464,1046,438,1046)"
+              },
+              {
+                "content": "White",
+                "span": {
+                  "offset": 622,
+                  "length": 5
+                },
+                "confidence": 0.955,
+                "source": "D(1,471,1018,539,1018,539,1046,471,1046)"
+              },
+              {
+                "content": "Retro",
+                "span": {
+                  "offset": 628,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,238,1046,297,1047,298,1073,238,1073)"
+              },
+              {
+                "content": "Video",
+                "span": {
+                  "offset": 634,
+                  "length": 5
+                },
+                "confidence": 0.996,
+                "source": "D(1,305,1047,367,1047,368,1073,305,1073)"
+              },
+              {
+                "content": "Game",
+                "span": {
+                  "offset": 640,
+                  "length": 4
+                },
+                "confidence": 0.998,
+                "source": "D(1,376,1047,441,1047,441,1073,376,1073)"
+              },
+              {
+                "content": "Portable",
+                "span": {
+                  "offset": 645,
+                  "length": 8
+                },
+                "confidence": 0.996,
+                "source": "D(1,449,1047,545,1046,545,1072,449,1073)"
+              },
+              {
+                "content": "Console",
+                "span": {
+                  "offset": 654,
+                  "length": 7
+                },
+                "confidence": 0.993,
+                "source": "D(1,239,1073,327,1073,327,1102,239,1101)"
+              },
+              {
+                "content": "-",
+                "span": {
+                  "offset": 662,
+                  "length": 1
+                },
+                "confidence": 0.986,
+                "source": "D(1,334,1073,343,1073,343,1102,334,1102)"
+              },
+              {
+                "content": "3.5",
+                "span": {
+                  "offset": 664,
+                  "length": 3
+                },
+                "confidence": 0.978,
+                "source": "D(1,350,1073,383,1074,383,1102,350,1102)"
+              },
+              {
+                "content": "IPS",
+                "span": {
+                  "offset": 668,
+                  "length": 3
+                },
+                "confidence": 0.975,
+                "source": "D(1,392,1074,425,1074,425,1102,392,1102)"
+              },
+              {
+                "content": "display",
+                "span": {
+                  "offset": 672,
+                  "length": 7
+                },
+                "confidence": 0.994,
+                "source": "D(1,433,1074,514,1073,514,1101,433,1102)"
+              },
+              {
+                "content": "4,00",
+                "span": {
+                  "offset": 689,
+                  "length": 4
+                },
+                "confidence": 0.994,
+                "source": "D(1,672,1019,725,1019,725,1044,672,1044)"
+              },
+              {
+                "content": "each",
+                "span": {
+                  "offset": 703,
+                  "length": 4
+                },
+                "confidence": 0.999,
+                "source": "D(1,770,1020,827,1020,827,1044,770,1044)"
+              },
+              {
+                "content": "39,00",
+                "span": {
+                  "offset": 717,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,950,1019,1015,1019,1015,1045,950,1045)"
+              },
+              {
+                "content": "156,00",
+                "span": {
+                  "offset": 732,
+                  "length": 6
+                },
+                "confidence": 0.992,
+                "source": "D(1,1106,1019,1186,1019,1186,1045,1106,1045)"
+              },
+              {
+                "content": "10",
+                "span": {
+                  "offset": 748,
+                  "length": 2
+                },
+                "confidence": 0.999,
+                "source": "D(1,1281,1019,1308,1019,1308,1044,1281,1044)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 750,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1309,1019,1331,1019,1331,1044,1309,1044)"
+              },
+              {
+                "content": "171,60",
+                "span": {
+                  "offset": 761,
+                  "length": 6
+                },
+                "confidence": 0.986,
+                "source": "D(1,1421,1019,1500,1019,1500,1044,1421,1044)"
+              },
+              {
+                "content": "3",
+                "span": {
+                  "offset": 788,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,168,1135,183,1135,183,1158,168,1158)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 789,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,184,1135,192,1135,192,1158,184,1158)"
+              },
+              {
+                "content": "Sony",
+                "span": {
+                  "offset": 800,
+                  "length": 4
+                },
+                "confidence": 0.989,
+                "source": "D(1,237,1133,293,1133,293,1160,237,1160)"
+              },
+              {
+                "content": "PlayStation",
+                "span": {
+                  "offset": 805,
+                  "length": 11
+                },
+                "confidence": 0.78,
+                "source": "D(1,301,1133,426,1133,426,1160,301,1160)"
+              },
+              {
+                "content": "3",
+                "span": {
+                  "offset": 817,
+                  "length": 1
+                },
+                "confidence": 0.986,
+                "source": "D(1,434,1133,446,1133,446,1160,434,1160)"
+              },
+              {
+                "content": "Slim",
+                "span": {
+                  "offset": 819,
+                  "length": 4
+                },
+                "confidence": 0.945,
+                "source": "D(1,454,1133,502,1133,502,1160,454,1160)"
+              },
+              {
+                "content": "120GB",
+                "span": {
+                  "offset": 824,
+                  "length": 5
+                },
+                "confidence": 0.936,
+                "source": "D(1,511,1133,586,1133,586,1160,511,1160)"
+              },
+              {
+                "content": "Black",
+                "span": {
+                  "offset": 830,
+                  "length": 5
+                },
+                "confidence": 0.994,
+                "source": "D(1,238,1161,299,1161,299,1187,238,1186)"
+              },
+              {
+                "content": "Console",
+                "span": {
+                  "offset": 836,
+                  "length": 7
+                },
+                "confidence": 0.994,
+                "source": "D(1,305,1161,397,1159,397,1185,305,1187)"
+              },
+              {
+                "content": "4,00",
+                "span": {
+                  "offset": 853,
+                  "length": 4
+                },
+                "confidence": 0.995,
+                "source": "D(1,672,1134,725,1134,725,1159,672,1159)"
+              },
+              {
+                "content": "each",
+                "span": {
+                  "offset": 867,
+                  "length": 4
+                },
+                "confidence": 0.998,
+                "source": "D(1,769,1135,827,1135,827,1159,769,1159)"
+              },
+              {
+                "content": "99,99",
+                "span": {
+                  "offset": 881,
+                  "length": 5
+                },
+                "confidence": 0.985,
+                "source": "D(1,950,1134,1016,1134,1016,1160,950,1160)"
+              },
+              {
+                "content": "399,96",
+                "span": {
+                  "offset": 896,
+                  "length": 6
+                },
+                "confidence": 0.994,
+                "source": "D(1,1105,1134,1186,1134,1186,1160,1105,1160)"
+              },
+              {
+                "content": "10",
+                "span": {
+                  "offset": 912,
+                  "length": 2
+                },
+                "confidence": 0.999,
+                "source": "D(1,1281,1134,1308,1134,1308,1159,1281,1159)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 914,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1309,1134,1332,1134,1332,1159,1309,1159)"
+              },
+              {
+                "content": "439,96",
+                "span": {
+                  "offset": 925,
+                  "length": 6
+                },
+                "confidence": 0.99,
+                "source": "D(1,1419,1134,1501,1134,1501,1159,1419,1159)"
+              },
+              {
+                "content": "4",
+                "span": {
+                  "offset": 952,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,169,1221,183,1221,183,1244,169,1244)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 953,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,184,1221,192,1221,192,1244,184,1244)"
+              },
+              {
+                "content": "Microsoft",
+                "span": {
+                  "offset": 964,
+                  "length": 9
+                },
+                "confidence": 0.994,
+                "source": "D(1,237,1220,340,1219,340,1247,237,1247)"
+              },
+              {
+                "content": "Xbox",
+                "span": {
+                  "offset": 974,
+                  "length": 4
+                },
+                "confidence": 0.98,
+                "source": "D(1,345,1219,404,1219,404,1247,345,1247)"
+              },
+              {
+                "content": "360",
+                "span": {
+                  "offset": 979,
+                  "length": 3
+                },
+                "confidence": 0.991,
+                "source": "D(1,412,1219,453,1219,453,1246,412,1247)"
+              },
+              {
+                "content": "-",
+                "span": {
+                  "offset": 983,
+                  "length": 1
+                },
+                "confidence": 0.997,
+                "source": "D(1,461,1219,470,1219,470,1246,461,1246)"
+              },
+              {
+                "content": "White",
+                "span": {
+                  "offset": 985,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,482,1220,546,1220,546,1246,482,1246)"
+              },
+              {
+                "content": "-",
+                "span": {
+                  "offset": 991,
+                  "length": 1
+                },
+                "confidence": 0.997,
+                "source": "D(1,553,1220,565,1220,565,1246,553,1246)"
+              },
+              {
+                "content": "Console",
+                "span": {
+                  "offset": 993,
+                  "length": 7
+                },
+                "confidence": 0.998,
+                "source": "D(1,239,1248,326,1248,326,1276,239,1276)"
+              },
+              {
+                "content": ",",
+                "span": {
+                  "offset": 1000,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,327,1248,333,1248,333,1276,327,1276)"
+              },
+              {
+                "content": "Power",
+                "span": {
+                  "offset": 1002,
+                  "length": 5
+                },
+                "confidence": 0.998,
+                "source": "D(1,342,1248,410,1248,410,1276,342,1276)"
+              },
+              {
+                "content": "Supply",
+                "span": {
+                  "offset": 1008,
+                  "length": 6
+                },
+                "confidence": 0.994,
+                "source": "D(1,416,1248,493,1248,493,1276,416,1276)"
+              },
+              {
+                "content": ",",
+                "span": {
+                  "offset": 1014,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,493,1248,499,1248,499,1276,493,1276)"
+              },
+              {
+                "content": "AV",
+                "span": {
+                  "offset": 1016,
+                  "length": 2
+                },
+                "confidence": 0.992,
+                "source": "D(1,505,1248,539,1248,539,1276,505,1276)"
+              },
+              {
+                "content": "Cables",
+                "span": {
+                  "offset": 1019,
+                  "length": 6
+                },
+                "confidence": 0.994,
+                "source": "D(1,238,1276,312,1276,312,1304,238,1304)"
+              },
+              {
+                "content": "*",
+                "span": {
+                  "offset": 1026,
+                  "length": 1
+                },
+                "confidence": 0.988,
+                "source": "D(1,320,1276,330,1276,330,1304,320,1304)"
+              },
+              {
+                "content": "Tested",
+                "span": {
+                  "offset": 1027,
+                  "length": 6
+                },
+                "confidence": 0.996,
+                "source": "D(1,331,1276,406,1276,406,1304,331,1304)"
+              },
+              {
+                "content": ",",
+                "span": {
+                  "offset": 1033,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,408,1276,413,1276,413,1304,408,1304)"
+              },
+              {
+                "content": "Working",
+                "span": {
+                  "offset": 1035,
+                  "length": 7
+                },
+                "confidence": 0.995,
+                "source": "D(1,419,1276,512,1276,512,1304,419,1304)"
+              },
+              {
+                "content": "*",
+                "span": {
+                  "offset": 1042,
+                  "length": 1
+                },
+                "confidence": 0.996,
+                "source": "D(1,513,1276,527,1276,527,1304,513,1304)"
+              },
+              {
+                "content": "1,00",
+                "span": {
+                  "offset": 1053,
+                  "length": 4
+                },
+                "confidence": 0.994,
+                "source": "D(1,673,1221,725,1222,725,1247,673,1246)"
+              },
+              {
+                "content": "each",
+                "span": {
+                  "offset": 1067,
+                  "length": 4
+                },
+                "confidence": 0.998,
+                "source": "D(1,769,1222,826,1222,826,1246,769,1246)"
+              },
+              {
+                "content": "39,95",
+                "span": {
+                  "offset": 1081,
+                  "length": 5
+                },
+                "confidence": 0.989,
+                "source": "D(1,950,1221,1016,1221,1016,1247,950,1247)"
+              },
+              {
+                "content": "39,95",
+                "span": {
+                  "offset": 1096,
+                  "length": 5
+                },
+                "confidence": 0.987,
+                "source": "D(1,1119,1221,1185,1221,1185,1248,1119,1247)"
+              },
+              {
+                "content": "10",
+                "span": {
+                  "offset": 1111,
+                  "length": 2
+                },
+                "confidence": 0.999,
+                "source": "D(1,1281,1220,1308,1220,1308,1246,1281,1245)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 1113,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1309,1220,1331,1221,1331,1246,1309,1246)"
+              },
+              {
+                "content": "43,95",
+                "span": {
+                  "offset": 1124,
+                  "length": 5
+                },
+                "confidence": 0.993,
+                "source": "D(1,1434,1220,1501,1221,1501,1249,1434,1247)"
+              },
+              {
+                "content": "5",
+                "span": {
+                  "offset": 1150,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,169,1338,182,1336,182,1359,169,1360)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 1151,
+                  "length": 1
+                },
+                "confidence": 0.997,
+                "source": "D(1,185,1336,192,1337,192,1359,185,1359)"
+              },
+              {
+                "content": "SONY",
+                "span": {
+                  "offset": 1162,
+                  "length": 4
+                },
+                "confidence": 0.996,
+                "source": "D(1,238,1335,301,1335,301,1362,238,1363)"
+              },
+              {
+                "content": "Playstation2",
+                "span": {
+                  "offset": 1167,
+                  "length": 12
+                },
+                "confidence": 0.921,
+                "source": "D(1,309,1335,444,1335,444,1362,309,1362)"
+              },
+              {
+                "content": "Console",
+                "span": {
+                  "offset": 1180,
+                  "length": 7
+                },
+                "confidence": 0.985,
+                "source": "D(1,452,1335,543,1335,543,1361,452,1362)"
+              },
+              {
+                "content": "SCPH",
+                "span": {
+                  "offset": 1188,
+                  "length": 4
+                },
+                "confidence": 0.995,
+                "source": "D(1,238,1362,296,1363,296,1390,238,1390)"
+              },
+              {
+                "content": "-",
+                "span": {
+                  "offset": 1192,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,298,1363,306,1363,306,1390,298,1390)"
+              },
+              {
+                "content": "39000",
+                "span": {
+                  "offset": 1193,
+                  "length": 5
+                },
+                "confidence": 0.978,
+                "source": "D(1,306,1363,375,1363,375,1390,306,1390)"
+              },
+              {
+                "content": "\"",
+                "span": {
+                  "offset": 1199,
+                  "length": 1
+                },
+                "confidence": 0.963,
+                "source": "D(1,383,1363,392,1363,392,1390,383,1390)"
+              },
+              {
+                "content": "Aqua",
+                "span": {
+                  "offset": 1201,
+                  "length": 4
+                },
+                "confidence": 0.983,
+                "source": "D(1,399,1363,455,1363,455,1390,399,1390)"
+              },
+              {
+                "content": "Color",
+                "span": {
+                  "offset": 1206,
+                  "length": 5
+                },
+                "confidence": 0.984,
+                "source": "D(1,464,1363,524,1363,524,1390,464,1390)"
+              },
+              {
+                "content": "\"",
+                "span": {
+                  "offset": 1212,
+                  "length": 1
+                },
+                "confidence": 0.977,
+                "source": "D(1,530,1363,540,1363,540,1390,530,1390)"
+              },
+              {
+                "content": "/",
+                "span": {
+                  "offset": 1214,
+                  "length": 1
+                },
+                "confidence": 0.996,
+                "source": "D(1,544,1363,558,1362,558,1390,544,1390)"
+              },
+              {
+                "content": "TESTED",
+                "span": {
+                  "offset": 1216,
+                  "length": 6
+                },
+                "confidence": 0.988,
+                "source": "D(1,238,1391,323,1391,323,1416,238,1416)"
+              },
+              {
+                "content": "11181",
+                "span": {
+                  "offset": 1223,
+                  "length": 5
+                },
+                "confidence": 0.986,
+                "source": "D(1,333,1391,404,1391,404,1416,333,1416)"
+              },
+              {
+                "content": "1,00",
+                "span": {
+                  "offset": 1238,
+                  "length": 4
+                },
+                "confidence": 0.996,
+                "source": "D(1,674,1336,724,1336,724,1361,674,1361)"
+              },
+              {
+                "content": "each",
+                "span": {
+                  "offset": 1252,
+                  "length": 4
+                },
+                "confidence": 0.998,
+                "source": "D(1,769,1336,826,1336,826,1361,769,1361)"
+              },
+              {
+                "content": "45,00",
+                "span": {
+                  "offset": 1266,
+                  "length": 5
+                },
+                "confidence": 0.955,
+                "source": "D(1,950,1335,1016,1336,1016,1362,950,1360)"
+              },
+              {
+                "content": "45,00",
+                "span": {
+                  "offset": 1281,
+                  "length": 5
+                },
+                "confidence": 0.983,
+                "source": "D(1,1119,1335,1185,1336,1185,1362,1119,1361)"
+              },
+              {
+                "content": "10",
+                "span": {
+                  "offset": 1296,
+                  "length": 2
+                },
+                "confidence": 0.999,
+                "source": "D(1,1279,1335,1308,1335,1308,1360,1279,1360)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 1298,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1308,1335,1331,1335,1331,1360,1308,1360)"
+              },
+              {
+                "content": "49,50",
+                "span": {
+                  "offset": 1309,
+                  "length": 5
+                },
+                "confidence": 0.994,
+                "source": "D(1,1434,1335,1501,1335,1501,1360,1434,1360)"
+              },
+              {
+                "content": "6",
+                "span": {
+                  "offset": 1335,
+                  "length": 1
+                },
+                "confidence": 0.997,
+                "source": "D(1,169,1451,182,1451,182,1473,169,1474)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 1336,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,184,1451,191,1452,191,1475,184,1473)"
+              },
+              {
+                "content": "Nintendo",
+                "span": {
+                  "offset": 1347,
+                  "length": 8
+                },
+                "confidence": 0.988,
+                "source": "D(1,237,1449,339,1449,339,1476,237,1477)"
+              },
+              {
+                "content": "64",
+                "span": {
+                  "offset": 1356,
+                  "length": 2
+                },
+                "confidence": 0.96,
+                "source": "D(1,346,1449,374,1448,374,1476,346,1476)"
+              },
+              {
+                "content": "Console",
+                "span": {
+                  "offset": 1359,
+                  "length": 7
+                },
+                "confidence": 0.979,
+                "source": "D(1,381,1449,470,1449,470,1476,381,1476)"
+              },
+              {
+                "content": "\"",
+                "span": {
+                  "offset": 1367,
+                  "length": 1
+                },
+                "confidence": 0.948,
+                "source": "D(1,477,1449,486,1449,486,1476,477,1476)"
+              },
+              {
+                "content": "Perfect",
+                "span": {
+                  "offset": 1368,
+                  "length": 7
+                },
+                "confidence": 0.987,
+                "source": "D(1,488,1449,566,1449,566,1477,488,1476)"
+              },
+              {
+                "content": "\"",
+                "span": {
+                  "offset": 1375,
+                  "length": 1
+                },
+                "confidence": 0.938,
+                "source": "D(1,566,1449,575,1450,575,1477,566,1477)"
+              },
+              {
+                "content": "+",
+                "span": {
+                  "offset": 1377,
+                  "length": 1
+                },
+                "confidence": 0.995,
+                "source": "D(1,584,1450,601,1450,601,1477,584,1477)"
+              },
+              {
+                "content": "Lot",
+                "span": {
+                  "offset": 1379,
+                  "length": 3
+                },
+                "confidence": 0.994,
+                "source": "D(1,238,1478,274,1478,274,1503,238,1503)"
+              },
+              {
+                "content": "Games",
+                "span": {
+                  "offset": 1383,
+                  "length": 5
+                },
+                "confidence": 0.99,
+                "source": "D(1,281,1478,358,1478,358,1504,281,1503)"
+              },
+              {
+                "content": "\"",
+                "span": {
+                  "offset": 1389,
+                  "length": 1
+                },
+                "confidence": 0.973,
+                "source": "D(1,367,1478,375,1478,375,1504,367,1504)"
+              },
+              {
+                "content": "6",
+                "span": {
+                  "offset": 1390,
+                  "length": 1
+                },
+                "confidence": 0.982,
+                "source": "D(1,376,1478,389,1478,389,1504,376,1504)"
+              },
+              {
+                "content": "Games",
+                "span": {
+                  "offset": 1392,
+                  "length": 5
+                },
+                "confidence": 0.975,
+                "source": "D(1,398,1478,475,1478,475,1504,398,1504)"
+              },
+              {
+                "content": "\"",
+                "span": {
+                  "offset": 1397,
+                  "length": 1
+                },
+                "confidence": 0.952,
+                "source": "D(1,476,1478,487,1478,487,1504,476,1504)"
+              },
+              {
+                "content": "1,00",
+                "span": {
+                  "offset": 1408,
+                  "length": 4
+                },
+                "confidence": 0.994,
+                "source": "D(1,673,1450,725,1450,725,1476,673,1476)"
+              },
+              {
+                "content": "each",
+                "span": {
+                  "offset": 1422,
+                  "length": 4
+                },
+                "confidence": 0.999,
+                "source": "D(1,769,1451,827,1452,827,1476,769,1475)"
+              },
+              {
+                "content": "200,00",
+                "span": {
+                  "offset": 1436,
+                  "length": 6
+                },
+                "confidence": 0.995,
+                "source": "D(1,935,1449,1015,1449,1015,1477,935,1477)"
+              },
+              {
+                "content": "200,00",
+                "span": {
+                  "offset": 1452,
+                  "length": 6
+                },
+                "confidence": 0.996,
+                "source": "D(1,1104,1449,1186,1449,1186,1477,1104,1477)"
+              },
+              {
+                "content": "10",
+                "span": {
+                  "offset": 1468,
+                  "length": 2
+                },
+                "confidence": 0.999,
+                "source": "D(1,1281,1452,1308,1449,1308,1474,1281,1477)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 1470,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1308,1449,1333,1451,1333,1476,1308,1474)"
+              },
+              {
+                "content": "220,00",
+                "span": {
+                  "offset": 1481,
+                  "length": 6
+                },
+                "confidence": 0.995,
+                "source": "D(1,1419,1450,1501,1450,1501,1477,1419,1477)"
+              },
+              {
+                "content": "SUMMARY",
+                "span": {
+                  "offset": 1512,
+                  "length": 7
+                },
+                "confidence": 0.992,
+                "source": "D(1,131,1569,327,1569,327,1604,131,1603)"
+              },
+              {
+                "content": "VAT",
+                "span": {
+                  "offset": 1539,
+                  "length": 3
+                },
+                "confidence": 0.986,
+                "source": "D(1,638,1654,692,1654,692,1682,638,1683)"
+              },
+              {
+                "content": "[",
+                "span": {
+                  "offset": 1543,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,700,1654,709,1654,709,1682,700,1682)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 1544,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,708,1654,731,1654,731,1683,708,1682)"
+              },
+              {
+                "content": "]",
+                "span": {
+                  "offset": 1545,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,731,1654,745,1655,745,1684,731,1683)"
+              },
+              {
+                "content": "Net",
+                "span": {
+                  "offset": 1556,
+                  "length": 3
+                },
+                "confidence": 0.998,
+                "source": "D(1,927,1655,973,1655,973,1680,927,1680)"
+              },
+              {
+                "content": "worth",
+                "span": {
+                  "offset": 1560,
+                  "length": 5
+                },
+                "confidence": 0.996,
+                "source": "D(1,980,1655,1055,1655,1055,1680,980,1680)"
+              },
+              {
+                "content": "VAT",
+                "span": {
+                  "offset": 1575,
+                  "length": 3
+                },
+                "confidence": 0.952,
+                "source": "D(1,1188,1655,1242,1655,1242,1680,1188,1680)"
+              },
+              {
+                "content": "Gross",
+                "span": {
+                  "offset": 1588,
+                  "length": 5
+                },
+                "confidence": 0.998,
+                "source": "D(1,1349,1655,1421,1655,1421,1680,1349,1680)"
+              },
+              {
+                "content": "worth",
+                "span": {
+                  "offset": 1594,
+                  "length": 5
+                },
+                "confidence": 0.998,
+                "source": "D(1,1429,1655,1504,1655,1504,1680,1429,1680)"
+              },
+              {
+                "content": "10",
+                "span": {
+                  "offset": 1620,
+                  "length": 2
+                },
+                "confidence": 0.999,
+                "source": "D(1,667,1715,695,1716,695,1741,667,1740)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 1622,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,695,1716,718,1715,718,1741,695,1741)"
+              },
+              {
+                "content": "1",
+                "span": {
+                  "offset": 1633,
+                  "length": 1
+                },
+                "confidence": 0.978,
+                "source": "D(1,954,1714,966,1714,966,1740,954,1740)"
+              },
+              {
+                "content": "335,86",
+                "span": {
+                  "offset": 1635,
+                  "length": 6
+                },
+                "confidence": 0.926,
+                "source": "D(1,975,1714,1055,1715,1055,1742,975,1740)"
+              },
+              {
+                "content": "133,59",
+                "span": {
+                  "offset": 1651,
+                  "length": 6
+                },
+                "confidence": 0.995,
+                "source": "D(1,1161,1715,1240,1716,1240,1742,1161,1741)"
+              },
+              {
+                "content": "1",
+                "span": {
+                  "offset": 1667,
+                  "length": 1
+                },
+                "confidence": 0.977,
+                "source": "D(1,1402,1714,1415,1714,1415,1740,1402,1739)"
+              },
+              {
+                "content": "469,45",
+                "span": {
+                  "offset": 1669,
+                  "length": 6
+                },
+                "confidence": 0.91,
+                "source": "D(1,1423,1715,1504,1717,1504,1742,1423,1740)"
+              },
+              {
+                "content": "Total",
+                "span": {
+                  "offset": 1696,
+                  "length": 5
+                },
+                "confidence": 0.996,
+                "source": "D(1,499,1774,569,1774,569,1799,499,1799)"
+              },
+              {
+                "content": "$",
+                "span": {
+                  "offset": 1711,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,920,1775,934,1775,934,1801,920,1801)"
+              },
+              {
+                "content": "1",
+                "span": {
+                  "offset": 1713,
+                  "length": 1
+                },
+                "confidence": 0.944,
+                "source": "D(1,945,1775,958,1775,958,1801,945,1801)"
+              },
+              {
+                "content": "335,86",
+                "span": {
+                  "offset": 1715,
+                  "length": 6
+                },
+                "confidence": 0.837,
+                "source": "D(1,967,1775,1056,1775,1056,1800,967,1801)"
+              },
+              {
+                "content": "$",
+                "span": {
+                  "offset": 1731,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1127,1775,1142,1775,1142,1800,1127,1800)"
+              },
+              {
+                "content": "133,59",
+                "span": {
+                  "offset": 1733,
+                  "length": 6
+                },
+                "confidence": 0.984,
+                "source": "D(1,1152,1775,1240,1775,1240,1800,1152,1800)"
+              },
+              {
+                "content": "$",
+                "span": {
+                  "offset": 1749,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1369,1775,1384,1775,1384,1800,1369,1800)"
+              },
+              {
+                "content": "1",
+                "span": {
+                  "offset": 1751,
+                  "length": 1
+                },
+                "confidence": 0.907,
+                "source": "D(1,1393,1775,1408,1775,1408,1800,1393,1800)"
+              },
+              {
+                "content": "469,45",
+                "span": {
+                  "offset": 1753,
+                  "length": 6
+                },
+                "confidence": 0.749,
+                "source": "D(1,1416,1775,1504,1775,1504,1800,1416,1800)"
+              }
+            ],
+            "lines": [
+              {
+                "content": "Invoice no: 46506594",
+                "source": "D(1,130,72,538,71,538,107,131,108)",
+                "span": {
+                  "offset": 0,
+                  "length": 20
+                }
+              },
+              {
+                "content": "Date of issue:",
+                "source": "D(1,131,141,345,141,345,174,131,173)",
+                "span": {
+                  "offset": 22,
+                  "length": 14
+                }
+              },
+              {
+                "content": "03/12/2012",
+                "source": "D(1,800,140,980,140,980,174,800,174)",
+                "span": {
+                  "offset": 38,
+                  "length": 10
+                }
+              },
+              {
+                "content": "Seller:",
+                "source": "D(1,131,443,255,443,255,476,131,476)",
+                "span": {
+                  "offset": 50,
+                  "length": 7
+                }
+              },
+              {
+                "content": "Porter-Perkins",
+                "source": "D(1,140,506,338,506,338,536,140,536)",
+                "span": {
+                  "offset": 58,
+                  "length": 14
+                }
+              },
+              {
+                "content": "88652 James Loaf",
+                "source": "D(1,140,541,394,541,394,574,140,574)",
+                "span": {
+                  "offset": 73,
+                  "length": 16
+                }
+              },
+              {
+                "content": "East Alyssamouth, KS 81684",
+                "source": "D(1,140,578,542,576,542,610,141,611)",
+                "span": {
+                  "offset": 90,
+                  "length": 26
+                }
+              },
+              {
+                "content": "Tax Id: 929-76-1260",
+                "source": "D(1,138,648,424,648,424,679,138,679)",
+                "span": {
+                  "offset": 118,
+                  "length": 19
+                }
+              },
+              {
+                "content": "IBAN: GB49GJRS28729607733931",
+                "source": "D(1,140,683,617,683,617,715,140,716)",
+                "span": {
+                  "offset": 139,
+                  "length": 28
+                }
+              },
+              {
+                "content": "Client:",
+                "source": "D(1,824,442,950,442,950,477,824,477)",
+                "span": {
+                  "offset": 169,
+                  "length": 7
+                }
+              },
+              {
+                "content": "Castaneda LLC",
+                "source": "D(1,832,506,1043,505,1044,536,832,538)",
+                "span": {
+                  "offset": 177,
+                  "length": 13
+                }
+              },
+              {
+                "content": "19558 Fry Causeway",
+                "source": "D(1,834,541,1127,544,1127,576,834,574)",
+                "span": {
+                  "offset": 191,
+                  "length": 18
+                }
+              },
+              {
+                "content": "East Chelseytown, MD 95490",
+                "source": "D(1,833,577,1242,576,1242,610,833,611)",
+                "span": {
+                  "offset": 210,
+                  "length": 26
+                }
+              },
+              {
+                "content": "Tax Id: 940-86-9734",
+                "source": "D(1,830,648,1118,648,1118,679,830,679)",
+                "span": {
+                  "offset": 238,
+                  "length": 19
+                }
+              },
+              {
+                "content": "ITEMS",
+                "source": "D(1,131,759,248,759,248,792,131,792)",
+                "span": {
+                  "offset": 262,
+                  "length": 5
+                }
+              },
+              {
+                "content": "No.",
+                "source": "D(1,158,847,201,847,202,870,158,871)",
+                "span": {
+                  "offset": 287,
+                  "length": 3
+                }
+              },
+              {
+                "content": "Description",
+                "source": "D(1,238,845,385,846,385,873,238,872)",
+                "span": {
+                  "offset": 300,
+                  "length": 11
+                }
+              },
+              {
+                "content": "Qty",
+                "source": "D(1,678,845,727,848,726,874,678,872)",
+                "span": {
+                  "offset": 321,
+                  "length": 3
+                }
+              },
+              {
+                "content": "UM",
+                "source": "D(1,776,845,821,845,821,870,776,870)",
+                "span": {
+                  "offset": 334,
+                  "length": 2
+                }
+              },
+              {
+                "content": "Net price",
+                "source": "D(1,899,844,1018,845,1018,872,899,872)",
+                "span": {
+                  "offset": 346,
+                  "length": 9
+                }
+              },
+              {
+                "content": "Net worth",
+                "source": "D(1,1056,845,1186,845,1186,871,1056,871)",
+                "span": {
+                  "offset": 365,
+                  "length": 9
+                }
+              },
+              {
+                "content": "VAT [%]",
+                "source": "D(1,1227,844,1332,845,1332,873,1226,872)",
+                "span": {
+                  "offset": 384,
+                  "length": 7
+                }
+              },
+              {
+                "content": "Gross",
+                "source": "D(1,1428,846,1502,847,1501,871,1428,870)",
+                "span": {
+                  "offset": 401,
+                  "length": 5
+                }
+              },
+              {
+                "content": "worth",
+                "source": "D(1,1425,874,1501,874,1501,897,1425,897)",
+                "span": {
+                  "offset": 407,
+                  "length": 5
+                }
+              },
+              {
+                "content": "1.",
+                "source": "D(1,170,933,192,933,192,957,170,957)",
+                "span": {
+                  "offset": 433,
+                  "length": 2
+                }
+              },
+              {
+                "content": "Nintendo 3DS Handheld Console",
+                "source": "D(1,237,932,604,932,604,959,237,959)",
+                "span": {
+                  "offset": 445,
+                  "length": 29
+                }
+              },
+              {
+                "content": "Purple",
+                "source": "D(1,238,960,312,960,312,986,238,987)",
+                "span": {
+                  "offset": 475,
+                  "length": 6
+                }
+              },
+              {
+                "content": "5,00",
+                "source": "D(1,672,933,726,933,726,958,672,958)",
+                "span": {
+                  "offset": 491,
+                  "length": 4
+                }
+              },
+              {
+                "content": "each",
+                "source": "D(1,769,934,827,934,827,958,769,958)",
+                "span": {
+                  "offset": 505,
+                  "length": 4
+                }
+              },
+              {
+                "content": "98,99",
+                "source": "D(1,950,932,1016,932,1016,959,950,959)",
+                "span": {
+                  "offset": 519,
+                  "length": 5
+                }
+              },
+              {
+                "content": "494,95",
+                "source": "D(1,1106,932,1184,932,1184,958,1106,958)",
+                "span": {
+                  "offset": 534,
+                  "length": 6
+                }
+              },
+              {
+                "content": "10%",
+                "source": "D(1,1280,932,1332,932,1332,958,1280,958)",
+                "span": {
+                  "offset": 550,
+                  "length": 3
+                }
+              },
+              {
+                "content": "544,45",
+                "source": "D(1,1420,933,1500,933,1500,958,1421,958)",
+                "span": {
+                  "offset": 563,
+                  "length": 6
+                }
+              },
+              {
+                "content": "2.",
+                "source": "D(1,169,1020,192,1020,192,1043,169,1043)",
+                "span": {
+                  "offset": 590,
+                  "length": 2
+                }
+              },
+              {
+                "content": "PocketGo Bittboy v2 White",
+                "source": "D(1,237,1018,539,1018,539,1046,237,1046)",
+                "span": {
+                  "offset": 602,
+                  "length": 25
+                }
+              },
+              {
+                "content": "Retro Video Game Portable",
+                "source": "D(1,238,1046,545,1046,545,1073,238,1073)",
+                "span": {
+                  "offset": 628,
+                  "length": 25
+                }
+              },
+              {
+                "content": "Console - 3.5 IPS display",
+                "source": "D(1,239,1073,515,1073,514,1102,239,1101)",
+                "span": {
+                  "offset": 654,
+                  "length": 25
+                }
+              },
+              {
+                "content": "4,00",
+                "source": "D(1,672,1019,725,1019,725,1045,672,1045)",
+                "span": {
+                  "offset": 689,
+                  "length": 4
+                }
+              },
+              {
+                "content": "each",
+                "source": "D(1,770,1020,827,1020,827,1044,770,1044)",
+                "span": {
+                  "offset": 703,
+                  "length": 4
+                }
+              },
+              {
+                "content": "39,00",
+                "source": "D(1,950,1019,1015,1019,1015,1045,950,1045)",
+                "span": {
+                  "offset": 717,
+                  "length": 5
+                }
+              },
+              {
+                "content": "156,00",
+                "source": "D(1,1106,1019,1186,1019,1186,1045,1106,1045)",
+                "span": {
+                  "offset": 732,
+                  "length": 6
+                }
+              },
+              {
+                "content": "10%",
+                "source": "D(1,1281,1019,1331,1019,1331,1044,1281,1044)",
+                "span": {
+                  "offset": 748,
+                  "length": 3
+                }
+              },
+              {
+                "content": "171,60",
+                "source": "D(1,1421,1019,1500,1019,1500,1045,1421,1045)",
+                "span": {
+                  "offset": 761,
+                  "length": 6
+                }
+              },
+              {
+                "content": "3.",
+                "source": "D(1,168,1135,192,1135,192,1158,168,1158)",
+                "span": {
+                  "offset": 788,
+                  "length": 2
+                }
+              },
+              {
+                "content": "Sony PlayStation 3 Slim 120GB",
+                "source": "D(1,237,1133,586,1133,586,1160,237,1161)",
+                "span": {
+                  "offset": 800,
+                  "length": 29
+                }
+              },
+              {
+                "content": "Black Console",
+                "source": "D(1,238,1161,397,1159,397,1186,238,1187)",
+                "span": {
+                  "offset": 830,
+                  "length": 13
+                }
+              },
+              {
+                "content": "4,00",
+                "source": "D(1,672,1134,725,1134,725,1160,672,1159)",
+                "span": {
+                  "offset": 853,
+                  "length": 4
+                }
+              },
+              {
+                "content": "each",
+                "source": "D(1,769,1135,827,1135,827,1159,769,1159)",
+                "span": {
+                  "offset": 867,
+                  "length": 4
+                }
+              },
+              {
+                "content": "99,99",
+                "source": "D(1,950,1134,1016,1134,1016,1160,950,1160)",
+                "span": {
+                  "offset": 881,
+                  "length": 5
+                }
+              },
+              {
+                "content": "399,96",
+                "source": "D(1,1105,1134,1186,1133,1186,1160,1105,1160)",
+                "span": {
+                  "offset": 896,
+                  "length": 6
+                }
+              },
+              {
+                "content": "10%",
+                "source": "D(1,1281,1134,1332,1134,1332,1159,1281,1159)",
+                "span": {
+                  "offset": 912,
+                  "length": 3
+                }
+              },
+              {
+                "content": "439,96",
+                "source": "D(1,1419,1134,1501,1134,1501,1159,1419,1159)",
+                "span": {
+                  "offset": 925,
+                  "length": 6
+                }
+              },
+              {
+                "content": "4.",
+                "source": "D(1,169,1221,192,1221,192,1244,169,1244)",
+                "span": {
+                  "offset": 952,
+                  "length": 2
+                }
+              },
+              {
+                "content": "Microsoft Xbox 360 - White -",
+                "source": "D(1,237,1220,565,1219,565,1246,237,1247)",
+                "span": {
+                  "offset": 964,
+                  "length": 28
+                }
+              },
+              {
+                "content": "Console, Power Supply, AV",
+                "source": "D(1,239,1248,539,1248,539,1276,239,1276)",
+                "span": {
+                  "offset": 993,
+                  "length": 25
+                }
+              },
+              {
+                "content": "Cables *Tested, Working*",
+                "source": "D(1,238,1276,527,1276,527,1304,238,1304)",
+                "span": {
+                  "offset": 1019,
+                  "length": 24
+                }
+              },
+              {
+                "content": "1,00",
+                "source": "D(1,673,1221,725,1222,725,1248,673,1246)",
+                "span": {
+                  "offset": 1053,
+                  "length": 4
+                }
+              },
+              {
+                "content": "each",
+                "source": "D(1,769,1222,826,1222,826,1246,769,1246)",
+                "span": {
+                  "offset": 1067,
+                  "length": 4
+                }
+              },
+              {
+                "content": "39,95",
+                "source": "D(1,950,1221,1016,1221,1016,1247,950,1247)",
+                "span": {
+                  "offset": 1081,
+                  "length": 5
+                }
+              },
+              {
+                "content": "39,95",
+                "source": "D(1,1119,1220,1185,1221,1185,1248,1118,1247)",
+                "span": {
+                  "offset": 1096,
+                  "length": 5
+                }
+              },
+              {
+                "content": "10%",
+                "source": "D(1,1281,1220,1331,1221,1331,1246,1280,1245)",
+                "span": {
+                  "offset": 1111,
+                  "length": 3
+                }
+              },
+              {
+                "content": "43,95",
+                "source": "D(1,1434,1220,1501,1221,1501,1249,1433,1248)",
+                "span": {
+                  "offset": 1124,
+                  "length": 5
+                }
+              },
+              {
+                "content": "5.",
+                "source": "D(1,169,1336,192,1336,192,1360,169,1360)",
+                "span": {
+                  "offset": 1150,
+                  "length": 2
+                }
+              },
+              {
+                "content": "SONY Playstation2 Console",
+                "source": "D(1,238,1335,543,1335,543,1362,238,1363)",
+                "span": {
+                  "offset": 1162,
+                  "length": 25
+                }
+              },
+              {
+                "content": "SCPH-39000 \" Aqua Color \" /",
+                "source": "D(1,238,1362,558,1362,558,1390,238,1390)",
+                "span": {
+                  "offset": 1188,
+                  "length": 27
+                }
+              },
+              {
+                "content": "TESTED 11181",
+                "source": "D(1,238,1391,404,1391,404,1416,238,1416)",
+                "span": {
+                  "offset": 1216,
+                  "length": 12
+                }
+              },
+              {
+                "content": "1,00",
+                "source": "D(1,674,1336,724,1336,724,1361,674,1361)",
+                "span": {
+                  "offset": 1238,
+                  "length": 4
+                }
+              },
+              {
+                "content": "each",
+                "source": "D(1,769,1336,826,1336,826,1361,769,1361)",
+                "span": {
+                  "offset": 1252,
+                  "length": 4
+                }
+              },
+              {
+                "content": "45,00",
+                "source": "D(1,950,1335,1016,1336,1016,1362,949,1360)",
+                "span": {
+                  "offset": 1266,
+                  "length": 5
+                }
+              },
+              {
+                "content": "45,00",
+                "source": "D(1,1119,1335,1185,1335,1185,1362,1118,1361)",
+                "span": {
+                  "offset": 1281,
+                  "length": 5
+                }
+              },
+              {
+                "content": "10%",
+                "source": "D(1,1279,1335,1331,1335,1331,1360,1279,1360)",
+                "span": {
+                  "offset": 1296,
+                  "length": 3
+                }
+              },
+              {
+                "content": "49,50",
+                "source": "D(1,1434,1335,1501,1335,1501,1360,1434,1360)",
+                "span": {
+                  "offset": 1309,
+                  "length": 5
+                }
+              },
+              {
+                "content": "6.",
+                "source": "D(1,169,1450,191,1450,191,1475,169,1475)",
+                "span": {
+                  "offset": 1335,
+                  "length": 2
+                }
+              },
+              {
+                "content": "Nintendo 64 Console \"Perfect\" +",
+                "source": "D(1,237,1448,601,1449,601,1477,237,1477)",
+                "span": {
+                  "offset": 1347,
+                  "length": 31
+                }
+              },
+              {
+                "content": "Lot Games \"6 Games\"",
+                "source": "D(1,238,1478,487,1478,487,1504,238,1504)",
+                "span": {
+                  "offset": 1379,
+                  "length": 19
+                }
+              },
+              {
+                "content": "1,00",
+                "source": "D(1,673,1450,725,1450,725,1476,673,1476)",
+                "span": {
+                  "offset": 1408,
+                  "length": 4
+                }
+              },
+              {
+                "content": "each",
+                "source": "D(1,769,1450,827,1451,827,1476,769,1475)",
+                "span": {
+                  "offset": 1422,
+                  "length": 4
+                }
+              },
+              {
+                "content": "200,00",
+                "source": "D(1,935,1449,1015,1449,1015,1477,935,1477)",
+                "span": {
+                  "offset": 1436,
+                  "length": 6
+                }
+              },
+              {
+                "content": "200,00",
+                "source": "D(1,1104,1449,1186,1449,1186,1477,1104,1477)",
+                "span": {
+                  "offset": 1452,
+                  "length": 6
+                }
+              },
+              {
+                "content": "10%",
+                "source": "D(1,1281,1449,1333,1449,1333,1476,1281,1477)",
+                "span": {
+                  "offset": 1468,
+                  "length": 3
+                }
+              },
+              {
+                "content": "220,00",
+                "source": "D(1,1419,1450,1501,1450,1501,1477,1419,1477)",
+                "span": {
+                  "offset": 1481,
+                  "length": 6
+                }
+              },
+              {
+                "content": "SUMMARY",
+                "source": "D(1,131,1569,327,1569,327,1604,131,1604)",
+                "span": {
+                  "offset": 1512,
+                  "length": 7
+                }
+              },
+              {
+                "content": "VAT [%]",
+                "source": "D(1,638,1653,745,1654,745,1684,638,1683)",
+                "span": {
+                  "offset": 1539,
+                  "length": 7
+                }
+              },
+              {
+                "content": "Net worth",
+                "source": "D(1,927,1655,1055,1655,1055,1680,927,1680)",
+                "span": {
+                  "offset": 1556,
+                  "length": 9
+                }
+              },
+              {
+                "content": "VAT",
+                "source": "D(1,1188,1654,1242,1654,1242,1680,1188,1680)",
+                "span": {
+                  "offset": 1575,
+                  "length": 3
+                }
+              },
+              {
+                "content": "Gross worth",
+                "source": "D(1,1349,1655,1504,1655,1504,1680,1349,1680)",
+                "span": {
+                  "offset": 1588,
+                  "length": 11
+                }
+              },
+              {
+                "content": "10%",
+                "source": "D(1,667,1715,719,1715,718,1741,667,1741)",
+                "span": {
+                  "offset": 1620,
+                  "length": 3
+                }
+              },
+              {
+                "content": "1 335,86",
+                "source": "D(1,954,1714,1055,1715,1055,1742,953,1740)",
+                "span": {
+                  "offset": 1633,
+                  "length": 8
+                }
+              },
+              {
+                "content": "133,59",
+                "source": "D(1,1161,1715,1241,1716,1240,1742,1161,1741)",
+                "span": {
+                  "offset": 1651,
+                  "length": 6
+                }
+              },
+              {
+                "content": "1 469,45",
+                "source": "D(1,1402,1714,1504,1717,1504,1742,1402,1739)",
+                "span": {
+                  "offset": 1667,
+                  "length": 8
+                }
+              },
+              {
+                "content": "Total",
+                "source": "D(1,499,1774,569,1774,569,1799,499,1799)",
+                "span": {
+                  "offset": 1696,
+                  "length": 5
+                }
+              },
+              {
+                "content": "$ 1 335,86",
+                "source": "D(1,920,1775,1056,1774,1056,1801,920,1801)",
+                "span": {
+                  "offset": 1711,
+                  "length": 10
+                }
+              },
+              {
+                "content": "$ 133,59",
+                "source": "D(1,1127,1775,1240,1775,1240,1800,1127,1800)",
+                "span": {
+                  "offset": 1731,
+                  "length": 8
+                }
+              },
+              {
+                "content": "$ 1 469,45",
+                "source": "D(1,1369,1775,1504,1775,1504,1800,1369,1800)",
+                "span": {
+                  "offset": 1749,
+                  "length": 10
+                }
+              }
+            ]
+          }
+        ],
+        "paragraphs": [
+          {
+            "content": "Invoice no: 46506594",
+            "source": "D(1,130,72,538,71,538,107,131,108)",
+            "span": {
+              "offset": 0,
+              "length": 20
+            }
+          },
+          {
+            "content": "Date of issue:",
+            "source": "D(1,131,141,345,141,345,174,131,173)",
+            "span": {
+              "offset": 22,
+              "length": 14
+            }
+          },
+          {
+            "content": "03/12/2012",
+            "source": "D(1,800,140,980,140,980,174,800,174)",
+            "span": {
+              "offset": 38,
+              "length": 10
+            }
+          },
+          {
+            "content": "Seller: Porter-Perkins 88652 James Loaf East Alyssamouth, KS 81684",
+            "source": "D(1,131,443,541,442,542,610,132,611)",
+            "span": {
+              "offset": 50,
+              "length": 66
+            }
+          },
+          {
+            "content": "Tax Id: 929-76-1260",
+            "source": "D(1,138,648,424,648,424,679,138,679)",
+            "span": {
+              "offset": 118,
+              "length": 19
+            }
+          },
+          {
+            "content": "IBAN: GB49GJRS28729607733931",
+            "source": "D(1,140,683,617,683,617,715,140,716)",
+            "span": {
+              "offset": 139,
+              "length": 28
+            }
+          },
+          {
+            "content": "Client: Castaneda LLC 19558 Fry Causeway East Chelseytown, MD 95490",
+            "source": "D(1,824,442,1242,441,1242,610,825,611)",
+            "span": {
+              "offset": 169,
+              "length": 67
+            }
+          },
+          {
+            "content": "Tax Id: 940-86-9734",
+            "source": "D(1,830,648,1118,648,1118,679,830,679)",
+            "span": {
+              "offset": 238,
+              "length": 19
+            }
+          },
+          {
+            "role": "sectionHeading",
+            "content": "ITEMS",
+            "source": "D(1,131,759,248,759,248,792,131,792)",
+            "span": {
+              "offset": 260,
+              "length": 7
+            }
+          },
+          {
+            "content": "No.",
+            "source": "D(1,158,846,202,847,201,872,157,871)",
+            "span": {
+              "offset": 287,
+              "length": 3
+            }
+          },
+          {
+            "content": "Description",
+            "source": "D(1,238,846,385,847,385,873,238,872)",
+            "span": {
+              "offset": 300,
+              "length": 11
+            }
+          },
+          {
+            "content": "Qty",
+            "source": "D(1,678,845,728,848,726,874,677,871)",
+            "span": {
+              "offset": 321,
+              "length": 3
+            }
+          },
+          {
+            "content": "UM",
+            "source": "D(1,776,846,821,846,821,870,776,870)",
+            "span": {
+              "offset": 334,
+              "length": 2
+            }
+          },
+          {
+            "content": "Net price",
+            "source": "D(1,899,842,1018,845,1018,874,898,871)",
+            "span": {
+              "offset": 346,
+              "length": 9
+            }
+          },
+          {
+            "content": "Net worth",
+            "source": "D(1,1056,845,1186,846,1186,872,1056,871)",
+            "span": {
+              "offset": 365,
+              "length": 9
+            }
+          },
+          {
+            "content": "VAT [%]",
+            "source": "D(1,1227,844,1332,845,1332,873,1226,872)",
+            "span": {
+              "offset": 384,
+              "length": 7
+            }
+          },
+          {
+            "content": "Gross worth",
+            "source": "D(1,1425,847,1502,848,1501,898,1424,897)",
+            "span": {
+              "offset": 401,
+              "length": 11
+            }
+          },
+          {
+            "content": "1.",
+            "source": "D(1,170,933,192,933,192,957,170,957)",
+            "span": {
+              "offset": 433,
+              "length": 2
+            }
+          },
+          {
+            "content": "Nintendo 3DS Handheld Console Purple",
+            "source": "D(1,237,932,604,931,604,986,237,987)",
+            "span": {
+              "offset": 445,
+              "length": 36
+            }
+          },
+          {
+            "content": "5,00",
+            "source": "D(1,672,933,726,933,726,958,672,958)",
+            "span": {
+              "offset": 491,
+              "length": 4
+            }
+          },
+          {
+            "content": "each",
+            "source": "D(1,769,934,827,933,827,958,769,958)",
+            "span": {
+              "offset": 505,
+              "length": 4
+            }
+          },
+          {
+            "content": "98,99",
+            "source": "D(1,950,932,1016,932,1016,959,950,959)",
+            "span": {
+              "offset": 519,
+              "length": 5
+            }
+          },
+          {
+            "content": "494,95",
+            "source": "D(1,1106,932,1184,932,1184,958,1106,958)",
+            "span": {
+              "offset": 534,
+              "length": 6
+            }
+          },
+          {
+            "content": "10%",
+            "source": "D(1,1280,931,1333,934,1332,960,1279,958)",
+            "span": {
+              "offset": 550,
+              "length": 3
+            }
+          },
+          {
+            "content": "544,45",
+            "source": "D(1,1421,933,1500,933,1500,957,1421,958)",
+            "span": {
+              "offset": 563,
+              "length": 6
+            }
+          },
+          {
+            "content": "2.",
+            "source": "D(1,169,1020,192,1020,192,1043,169,1043)",
+            "span": {
+              "offset": 590,
+              "length": 2
+            }
+          },
+          {
+            "content": "PocketGo Bittboy v2 White Retro Video Game Portable Console - 3.5 IPS display",
+            "source": "D(1,237,1018,545,1018,545,1102,237,1101)",
+            "span": {
+              "offset": 602,
+              "length": 77
+            }
+          },
+          {
+            "content": "4,00",
+            "source": "D(1,672,1019,725,1019,725,1044,672,1044)",
+            "span": {
+              "offset": 689,
+              "length": 4
+            }
+          },
+          {
+            "content": "each",
+            "source": "D(1,770,1020,827,1020,827,1044,770,1044)",
+            "span": {
+              "offset": 703,
+              "length": 4
+            }
+          },
+          {
+            "content": "39,00",
+            "source": "D(1,950,1019,1015,1019,1015,1045,950,1045)",
+            "span": {
+              "offset": 717,
+              "length": 5
+            }
+          },
+          {
+            "content": "156,00",
+            "source": "D(1,1106,1019,1186,1019,1186,1045,1106,1045)",
+            "span": {
+              "offset": 732,
+              "length": 6
+            }
+          },
+          {
+            "content": "10%",
+            "source": "D(1,1281,1019,1331,1019,1331,1044,1281,1044)",
+            "span": {
+              "offset": 748,
+              "length": 3
+            }
+          },
+          {
+            "content": "171,60",
+            "source": "D(1,1421,1019,1500,1019,1500,1044,1421,1044)",
+            "span": {
+              "offset": 761,
+              "length": 6
+            }
+          },
+          {
+            "content": "3.",
+            "source": "D(1,168,1135,192,1135,192,1158,168,1158)",
+            "span": {
+              "offset": 788,
+              "length": 2
+            }
+          },
+          {
+            "content": "Sony PlayStation 3 Slim 120GB Black Console",
+            "source": "D(1,237,1133,586,1133,586,1186,237,1187)",
+            "span": {
+              "offset": 800,
+              "length": 43
+            }
+          },
+          {
+            "content": "4,00",
+            "source": "D(1,672,1134,725,1134,725,1159,672,1159)",
+            "span": {
+              "offset": 853,
+              "length": 4
+            }
+          },
+          {
+            "content": "each",
+            "source": "D(1,769,1135,827,1135,827,1159,769,1159)",
+            "span": {
+              "offset": 867,
+              "length": 4
+            }
+          },
+          {
+            "content": "99,99",
+            "source": "D(1,950,1133,1016,1134,1016,1160,950,1160)",
+            "span": {
+              "offset": 881,
+              "length": 5
+            }
+          },
+          {
+            "content": "399,96",
+            "source": "D(1,1105,1134,1186,1134,1186,1160,1105,1160)",
+            "span": {
+              "offset": 896,
+              "length": 6
+            }
+          },
+          {
+            "content": "10%",
+            "source": "D(1,1281,1134,1332,1134,1332,1160,1281,1159)",
+            "span": {
+              "offset": 912,
+              "length": 3
+            }
+          },
+          {
+            "content": "439,96",
+            "source": "D(1,1419,1134,1501,1134,1501,1159,1419,1159)",
+            "span": {
+              "offset": 925,
+              "length": 6
+            }
+          },
+          {
+            "content": "4.",
+            "source": "D(1,169,1221,192,1221,192,1244,169,1244)",
+            "span": {
+              "offset": 952,
+              "length": 2
+            }
+          },
+          {
+            "content": "Microsoft Xbox 360 - White - Console, Power Supply, AV Cables *Tested, Working*",
+            "source": "D(1,237,1219,565,1219,565,1304,237,1304)",
+            "span": {
+              "offset": 964,
+              "length": 79
+            }
+          },
+          {
+            "content": "1,00",
+            "source": "D(1,673,1221,726,1222,725,1247,672,1246)",
+            "span": {
+              "offset": 1053,
+              "length": 4
+            }
+          },
+          {
+            "content": "each",
+            "source": "D(1,769,1222,826,1222,826,1246,769,1246)",
+            "span": {
+              "offset": 1067,
+              "length": 4
+            }
+          },
+          {
+            "content": "39,95",
+            "source": "D(1,950,1220,1016,1221,1016,1247,950,1247)",
+            "span": {
+              "offset": 1081,
+              "length": 5
+            }
+          },
+          {
+            "content": "39,95",
+            "source": "D(1,1119,1221,1185,1221,1185,1248,1118,1247)",
+            "span": {
+              "offset": 1096,
+              "length": 5
+            }
+          },
+          {
+            "content": "10%",
+            "source": "D(1,1281,1219,1332,1221,1331,1247,1280,1245)",
+            "span": {
+              "offset": 1111,
+              "length": 3
+            }
+          },
+          {
+            "content": "43,95",
+            "source": "D(1,1434,1220,1501,1221,1501,1249,1433,1248)",
+            "span": {
+              "offset": 1124,
+              "length": 5
+            }
+          },
+          {
+            "content": "5.",
+            "source": "D(1,169,1335,193,1337,192,1362,168,1360)",
+            "span": {
+              "offset": 1150,
+              "length": 2
+            }
+          },
+          {
+            "content": "SONY Playstation2 Console SCPH-39000 \" Aqua Color \" / TESTED 11181",
+            "source": "D(1,238,1335,558,1335,558,1416,238,1416)",
+            "span": {
+              "offset": 1162,
+              "length": 66
+            }
+          },
+          {
+            "content": "1,00",
+            "source": "D(1,674,1336,724,1336,724,1361,674,1361)",
+            "span": {
+              "offset": 1238,
+              "length": 4
+            }
+          },
+          {
+            "content": "each",
+            "source": "D(1,769,1336,826,1336,826,1361,769,1361)",
+            "span": {
+              "offset": 1252,
+              "length": 4
+            }
+          },
+          {
+            "content": "45,00",
+            "source": "D(1,950,1335,1017,1336,1016,1362,949,1360)",
+            "span": {
+              "offset": 1266,
+              "length": 5
+            }
+          },
+          {
+            "content": "45,00",
+            "source": "D(1,1119,1335,1185,1335,1185,1362,1118,1361)",
+            "span": {
+              "offset": 1281,
+              "length": 5
+            }
+          },
+          {
+            "content": "10%",
+            "source": "D(1,1279,1335,1331,1335,1331,1360,1279,1360)",
+            "span": {
+              "offset": 1296,
+              "length": 3
+            }
+          },
+          {
+            "content": "49,50",
+            "source": "D(1,1434,1335,1501,1335,1501,1360,1434,1360)",
+            "span": {
+              "offset": 1309,
+              "length": 5
+            }
+          },
+          {
+            "content": "6.",
+            "source": "D(1,169,1448,195,1453,191,1478,165,1473)",
+            "span": {
+              "offset": 1335,
+              "length": 2
+            }
+          },
+          {
+            "content": "Nintendo 64 Console \"Perfect\" + Lot Games \"6 Games\"",
+            "source": "D(1,237,1448,601,1449,601,1504,237,1504)",
+            "span": {
+              "offset": 1347,
+              "length": 51
+            }
+          },
+          {
+            "content": "1,00",
+            "source": "D(1,673,1450,725,1450,725,1476,673,1476)",
+            "span": {
+              "offset": 1408,
+              "length": 4
+            }
+          },
+          {
+            "content": "each",
+            "source": "D(1,769,1451,827,1451,827,1476,769,1475)",
+            "span": {
+              "offset": 1422,
+              "length": 4
+            }
+          },
+          {
+            "content": "200,00",
+            "source": "D(1,935,1449,1015,1449,1015,1477,935,1477)",
+            "span": {
+              "offset": 1436,
+              "length": 6
+            }
+          },
+          {
+            "content": "200,00",
+            "source": "D(1,1104,1449,1186,1449,1186,1477,1104,1477)",
+            "span": {
+              "offset": 1452,
+              "length": 6
+            }
+          },
+          {
+            "content": "10%",
+            "source": "D(1,1281,1447,1335,1451,1332,1481,1279,1477)",
+            "span": {
+              "offset": 1468,
+              "length": 3
+            }
+          },
+          {
+            "content": "220,00",
+            "source": "D(1,1419,1450,1501,1450,1501,1477,1419,1477)",
+            "span": {
+              "offset": 1481,
+              "length": 6
+            }
+          },
+          {
+            "role": "sectionHeading",
+            "content": "SUMMARY",
+            "source": "D(1,131,1569,327,1569,327,1604,131,1604)",
+            "span": {
+              "offset": 1510,
+              "length": 9
+            }
+          },
+          {
+            "content": "VAT [%]",
+            "source": "D(1,638,1651,746,1655,745,1686,638,1683)",
+            "span": {
+              "offset": 1539,
+              "length": 7
+            }
+          },
+          {
+            "content": "Net worth",
+            "source": "D(1,927,1655,1055,1655,1055,1680,927,1680)",
+            "span": {
+              "offset": 1556,
+              "length": 9
+            }
+          },
+          {
+            "content": "VAT",
+            "source": "D(1,1188,1655,1242,1655,1242,1680,1188,1680)",
+            "span": {
+              "offset": 1575,
+              "length": 3
+            }
+          },
+          {
+            "content": "Gross worth",
+            "source": "D(1,1349,1654,1504,1655,1504,1680,1349,1680)",
+            "span": {
+              "offset": 1588,
+              "length": 11
+            }
+          },
+          {
+            "content": "10%",
+            "source": "D(1,667,1714,719,1715,718,1742,666,1740)",
+            "span": {
+              "offset": 1620,
+              "length": 3
+            }
+          },
+          {
+            "content": "1 335,86",
+            "source": "D(1,954,1712,1056,1715,1055,1743,953,1740)",
+            "span": {
+              "offset": 1633,
+              "length": 8
+            }
+          },
+          {
+            "content": "133,59",
+            "source": "D(1,1161,1715,1241,1716,1240,1742,1161,1741)",
+            "span": {
+              "offset": 1651,
+              "length": 6
+            }
+          },
+          {
+            "content": "1 469,45",
+            "source": "D(1,1402,1712,1505,1717,1504,1743,1401,1739)",
+            "span": {
+              "offset": 1667,
+              "length": 8
+            }
+          },
+          {
+            "content": "Total",
+            "source": "D(1,499,1774,569,1774,569,1799,499,1799)",
+            "span": {
+              "offset": 1696,
+              "length": 5
+            }
+          },
+          {
+            "content": "$ 1 335,86",
+            "source": "D(1,920,1775,1056,1774,1057,1800,920,1801)",
+            "span": {
+              "offset": 1711,
+              "length": 10
+            }
+          },
+          {
+            "content": "$ 133,59",
+            "source": "D(1,1127,1775,1240,1775,1240,1800,1127,1800)",
+            "span": {
+              "offset": 1731,
+              "length": 8
+            }
+          },
+          {
+            "content": "$ 1 469,45",
+            "source": "D(1,1369,1775,1504,1775,1504,1800,1369,1800)",
+            "span": {
+              "offset": 1749,
+              "length": 10
+            }
+          }
+        ],
+        "sections": [
+          {
+            "span": {
+              "offset": 0,
+              "length": 1779
+            },
+            "elements": [
+              "/sections/1",
+              "/sections/2",
+              "/sections/3"
+            ]
+          },
+          {
+            "span": {
+              "offset": 0,
+              "length": 257
+            },
+            "elements": [
+              "/paragraphs/0",
+              "/paragraphs/1",
+              "/paragraphs/2",
+              "/paragraphs/3",
+              "/paragraphs/4",
+              "/paragraphs/5",
+              "/paragraphs/6",
+              "/paragraphs/7"
+            ]
+          },
+          {
+            "span": {
+              "offset": 260,
+              "length": 1247
+            },
+            "elements": [
+              "/paragraphs/8",
+              "/tables/0"
+            ]
+          },
+          {
+            "span": {
+              "offset": 1510,
+              "length": 269
+            },
+            "elements": [
+              "/paragraphs/65",
+              "/tables/1"
+            ]
+          }
+        ],
+        "tables": [
+          {
+            "rowCount": 7,
+            "columnCount": 8,
+            "cells": [
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "No.",
+                "source": "D(1,134,827,227,827,226,916,134,916)",
+                "span": {
+                  "offset": 287,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/9"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Description",
+                "source": "D(1,227,827,640,827,639,916,226,916)",
+                "span": {
+                  "offset": 300,
+                  "length": 11
+                },
+                "elements": [
+                  "/paragraphs/10"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Qty",
+                "source": "D(1,640,827,751,827,751,916,639,916)",
+                "span": {
+                  "offset": 321,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/11"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "UM",
+                "source": "D(1,751,827,870,827,869,916,751,916)",
+                "span": {
+                  "offset": 334,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/12"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 4,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Net price",
+                "source": "D(1,870,827,1044,827,1044,916,869,916)",
+                "span": {
+                  "offset": 346,
+                  "length": 9
+                },
+                "elements": [
+                  "/paragraphs/13"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 5,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Net worth",
+                "source": "D(1,1044,827,1213,827,1213,915,1044,916)",
+                "span": {
+                  "offset": 365,
+                  "length": 9
+                },
+                "elements": [
+                  "/paragraphs/14"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 6,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "VAT [%]",
+                "source": "D(1,1213,827,1378,826,1378,915,1213,915)",
+                "span": {
+                  "offset": 384,
+                  "length": 7
+                },
+                "elements": [
+                  "/paragraphs/15"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 7,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Gross worth",
+                "source": "D(1,1378,826,1517,827,1517,916,1378,915)",
+                "span": {
+                  "offset": 401,
+                  "length": 11
+                },
+                "elements": [
+                  "/paragraphs/16"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "1.",
+                "source": "D(1,134,916,226,916,227,1002,133,1003)",
+                "span": {
+                  "offset": 433,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/17"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Nintendo 3DS Handheld Console Purple",
+                "source": "D(1,226,916,639,916,639,1002,227,1002)",
+                "span": {
+                  "offset": 445,
+                  "length": 36
+                },
+                "elements": [
+                  "/paragraphs/18"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "5,00",
+                "source": "D(1,639,916,751,916,751,1002,639,1002)",
+                "span": {
+                  "offset": 491,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/19"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "each",
+                "source": "D(1,751,916,869,916,870,1002,751,1002)",
+                "span": {
+                  "offset": 505,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/20"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 4,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "98,99",
+                "source": "D(1,869,916,1044,916,1044,1002,870,1002)",
+                "span": {
+                  "offset": 519,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/21"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 5,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "494,95",
+                "source": "D(1,1044,916,1213,915,1214,1002,1044,1002)",
+                "span": {
+                  "offset": 534,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/22"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 6,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "10%",
+                "source": "D(1,1213,915,1378,915,1378,1002,1214,1002)",
+                "span": {
+                  "offset": 550,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/23"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 7,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "544,45",
+                "source": "D(1,1378,915,1517,916,1517,1002,1378,1002)",
+                "span": {
+                  "offset": 563,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/24"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "2.",
+                "source": "D(1,133,1003,227,1002,227,1117,133,1117)",
+                "span": {
+                  "offset": 590,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/25"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "PocketGo Bittboy v2 White Retro Video Game Portable Console - 3.5 IPS display",
+                "source": "D(1,227,1002,639,1002,639,1117,227,1117)",
+                "span": {
+                  "offset": 602,
+                  "length": 77
+                },
+                "elements": [
+                  "/paragraphs/26"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "4,00",
+                "source": "D(1,639,1002,751,1002,751,1117,639,1117)",
+                "span": {
+                  "offset": 689,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/27"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "each",
+                "source": "D(1,751,1002,870,1002,870,1117,751,1117)",
+                "span": {
+                  "offset": 703,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/28"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 4,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "39,00",
+                "source": "D(1,870,1002,1044,1002,1044,1117,870,1117)",
+                "span": {
+                  "offset": 717,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/29"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 5,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "156,00",
+                "source": "D(1,1044,1002,1214,1002,1214,1117,1044,1117)",
+                "span": {
+                  "offset": 732,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/30"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 6,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "10%",
+                "source": "D(1,1214,1002,1378,1002,1378,1117,1214,1117)",
+                "span": {
+                  "offset": 748,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/31"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 7,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "171,60",
+                "source": "D(1,1378,1002,1517,1002,1517,1117,1378,1117)",
+                "span": {
+                  "offset": 761,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/32"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "3.",
+                "source": "D(1,133,1117,227,1117,227,1205,133,1205)",
+                "span": {
+                  "offset": 788,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/33"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Sony PlayStation 3 Slim 120GB Black Console",
+                "source": "D(1,227,1117,639,1117,639,1205,227,1205)",
+                "span": {
+                  "offset": 800,
+                  "length": 43
+                },
+                "elements": [
+                  "/paragraphs/34"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "4,00",
+                "source": "D(1,639,1117,751,1117,751,1205,639,1205)",
+                "span": {
+                  "offset": 853,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/35"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "each",
+                "source": "D(1,751,1117,870,1117,870,1205,751,1205)",
+                "span": {
+                  "offset": 867,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/36"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 4,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "99,99",
+                "source": "D(1,870,1117,1044,1117,1045,1205,870,1205)",
+                "span": {
+                  "offset": 881,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/37"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 5,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "399,96",
+                "source": "D(1,1044,1117,1214,1117,1215,1204,1045,1205)",
+                "span": {
+                  "offset": 896,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/38"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 6,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "10%",
+                "source": "D(1,1214,1117,1378,1117,1379,1204,1215,1204)",
+                "span": {
+                  "offset": 912,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/39"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 7,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "439,96",
+                "source": "D(1,1378,1117,1517,1117,1517,1204,1379,1204)",
+                "span": {
+                  "offset": 925,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/40"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "4.",
+                "source": "D(1,133,1205,227,1205,227,1318,133,1318)",
+                "span": {
+                  "offset": 952,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/41"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Microsoft Xbox 360 - White - Console, Power Supply, AV Cables *Tested, Working*",
+                "source": "D(1,227,1205,639,1205,639,1318,227,1318)",
+                "span": {
+                  "offset": 964,
+                  "length": 79
+                },
+                "elements": [
+                  "/paragraphs/42"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "1,00",
+                "source": "D(1,639,1205,751,1205,752,1318,639,1318)",
+                "span": {
+                  "offset": 1053,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/43"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "each",
+                "source": "D(1,751,1205,870,1205,870,1318,752,1318)",
+                "span": {
+                  "offset": 1067,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/44"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 4,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "39,95",
+                "source": "D(1,870,1205,1045,1205,1045,1318,870,1318)",
+                "span": {
+                  "offset": 1081,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/45"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 5,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "39,95",
+                "source": "D(1,1045,1205,1215,1204,1215,1318,1045,1318)",
+                "span": {
+                  "offset": 1096,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/46"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 6,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "10%",
+                "source": "D(1,1215,1204,1379,1204,1379,1318,1215,1318)",
+                "span": {
+                  "offset": 1111,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/47"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 7,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "43,95",
+                "source": "D(1,1379,1204,1517,1204,1517,1318,1379,1318)",
+                "span": {
+                  "offset": 1124,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/48"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "5.",
+                "source": "D(1,133,1318,227,1318,227,1433,133,1433)",
+                "span": {
+                  "offset": 1150,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/49"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "SONY Playstation2 Console SCPH-39000 \" Aqua Color \" / TESTED 11181",
+                "source": "D(1,227,1318,639,1318,640,1433,227,1433)",
+                "span": {
+                  "offset": 1162,
+                  "length": 66
+                },
+                "elements": [
+                  "/paragraphs/50"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "1,00",
+                "source": "D(1,639,1318,752,1318,753,1433,640,1433)",
+                "span": {
+                  "offset": 1238,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/51"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "each",
+                "source": "D(1,752,1318,870,1318,871,1433,753,1433)",
+                "span": {
+                  "offset": 1252,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/52"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 4,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "45,00",
+                "source": "D(1,870,1318,1045,1318,1046,1433,871,1433)",
+                "span": {
+                  "offset": 1266,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/53"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 5,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "45,00",
+                "source": "D(1,1045,1318,1215,1318,1216,1433,1046,1433)",
+                "span": {
+                  "offset": 1281,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/54"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 6,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "10%",
+                "source": "D(1,1215,1318,1379,1318,1380,1433,1216,1433)",
+                "span": {
+                  "offset": 1296,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/55"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 7,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "49,50",
+                "source": "D(1,1379,1318,1517,1318,1517,1433,1380,1433)",
+                "span": {
+                  "offset": 1309,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/56"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 6,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "6.",
+                "source": "D(1,133,1433,227,1433,227,1521,133,1521)",
+                "span": {
+                  "offset": 1335,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/57"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 6,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Nintendo 64 Console \"Perfect\" + Lot Games \"6 Games\"",
+                "source": "D(1,227,1433,640,1433,640,1520,227,1521)",
+                "span": {
+                  "offset": 1347,
+                  "length": 51
+                },
+                "elements": [
+                  "/paragraphs/58"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 6,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "1,00",
+                "source": "D(1,640,1433,753,1433,753,1520,640,1520)",
+                "span": {
+                  "offset": 1408,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/59"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 6,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "each",
+                "source": "D(1,753,1433,871,1433,871,1520,753,1520)",
+                "span": {
+                  "offset": 1422,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/60"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 6,
+                "columnIndex": 4,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "200,00",
+                "source": "D(1,871,1433,1046,1433,1046,1520,871,1520)",
+                "span": {
+                  "offset": 1436,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/61"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 6,
+                "columnIndex": 5,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "200,00",
+                "source": "D(1,1046,1433,1216,1433,1217,1520,1046,1520)",
+                "span": {
+                  "offset": 1452,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/62"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 6,
+                "columnIndex": 6,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "10%",
+                "source": "D(1,1216,1433,1380,1433,1379,1520,1217,1520)",
+                "span": {
+                  "offset": 1468,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/63"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 6,
+                "columnIndex": 7,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "220,00",
+                "source": "D(1,1380,1433,1517,1433,1517,1520,1379,1520)",
+                "span": {
+                  "offset": 1481,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/64"
+                ]
+              }
+            ],
+            "source": "D(1,131,826,1517,825,1517,1520,131,1521)",
+            "span": {
+              "offset": 270,
+              "length": 1237
+            }
+          },
+          {
+            "rowCount": 3,
+            "columnCount": 4,
+            "cells": [
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "VAT [%]",
+                "source": "D(1,134,1637,831,1637,831,1698,134,1698)",
+                "span": {
+                  "offset": 1539,
+                  "length": 7
+                },
+                "elements": [
+                  "/paragraphs/66"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Net worth",
+                "source": "D(1,831,1637,1097,1637,1097,1698,831,1698)",
+                "span": {
+                  "offset": 1556,
+                  "length": 9
+                },
+                "elements": [
+                  "/paragraphs/67"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "VAT",
+                "source": "D(1,1097,1637,1301,1637,1301,1698,1097,1698)",
+                "span": {
+                  "offset": 1575,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/68"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Gross worth",
+                "source": "D(1,1301,1637,1517,1638,1517,1698,1301,1698)",
+                "span": {
+                  "offset": 1588,
+                  "length": 11
+                },
+                "elements": [
+                  "/paragraphs/69"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "10%",
+                "source": "D(1,134,1698,831,1698,831,1756,134,1756)",
+                "span": {
+                  "offset": 1620,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/70"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "1 335,86",
+                "source": "D(1,831,1698,1097,1698,1097,1756,831,1756)",
+                "span": {
+                  "offset": 1633,
+                  "length": 8
+                },
+                "elements": [
+                  "/paragraphs/71"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "133,59",
+                "source": "D(1,1097,1698,1301,1698,1301,1756,1097,1756)",
+                "span": {
+                  "offset": 1651,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/72"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "1 469,45",
+                "source": "D(1,1301,1698,1517,1698,1517,1756,1301,1756)",
+                "span": {
+                  "offset": 1667,
+                  "length": 8
+                },
+                "elements": [
+                  "/paragraphs/73"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Total",
+                "source": "D(1,134,1756,831,1756,830,1816,134,1816)",
+                "span": {
+                  "offset": 1696,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/74"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "$ 1 335,86",
+                "source": "D(1,831,1756,1097,1756,1097,1816,830,1816)",
+                "span": {
+                  "offset": 1711,
+                  "length": 10
+                },
+                "elements": [
+                  "/paragraphs/75"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "$ 133,59",
+                "source": "D(1,1097,1756,1301,1756,1301,1816,1097,1816)",
+                "span": {
+                  "offset": 1731,
+                  "length": 8
+                },
+                "elements": [
+                  "/paragraphs/76"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "$ 1 469,45",
+                "source": "D(1,1301,1756,1517,1756,1517,1816,1301,1816)",
+                "span": {
+                  "offset": 1749,
+                  "length": 10
+                },
+                "elements": [
+                  "/paragraphs/77"
+                ]
+              }
+            ],
+            "source": "D(1,128,1639,1519,1639,1518,1818,128,1818)",
+            "span": {
+              "offset": 1522,
+              "length": 257
+            }
+          }
+        ],
         "analyzerId": "prebuilt-invoice",
         "mimeType": "image/jpeg"
       }
     ]
   },
   "usage": {
-    "documentPagesMinimal": 1,
+    "documentPagesStandard": 1,
     "contextualizationTokens": 1000,
     "tokens": {
-      "gpt-4.1-input": 10263,
-      "gpt-4.1-output": 323,
-      "text-embedding-3-large": 4
+      "gpt-4.1-input": 14221,
+      "gpt-4.1-output": 2793,
+      "text-embedding-3-large": 741
     }
   },
   "_extracted": {
-    "field_values": {},
-    "description": "Il s'agit d'une facture (invoice no: 46506594) émise le 03/12/2012 par Porter-Perkins (East Alyssamouth, KS) à Castaneda LLC (East Chelseytown, MD). Le montant total TTC est de 1 469,45 $, pour la vente de plusieurs consoles de jeux vidéo. Les éléments clés incluent une TVA de 10 % et des références précises pour chaque article vendu."
+    "field_values": {
+      "AmountDue": {
+        "Amount": 1469.45,
+        "CurrencyCode": "USD"
+      },
+      "CountryRegion": "USA",
+      "CustomerAddress": "19558 Fry Causeway East Chelseytown, MD 95490",
+      "CustomerAddressRecipient": "Castaneda LLC",
+      "CustomerName": "Castaneda LLC",
+      "CustomerTaxId": "940-86-9734",
+      "InvoiceDate": "2012-03-12",
+      "InvoiceId": "46506594",
+      "LineItems": [
+        {
+          "Description": "Nintendo 3DS Handheld Console Purple",
+          "Quantity": 5,
+          "QuantityUnit": "each",
+          "TaxAmount": {
+            "Amount": 49.5,
+            "CurrencyCode": "USD"
+          },
+          "TaxRate": 0.1,
+          "TotalAmount": {
+            "Amount": 544.45,
+            "CurrencyCode": "USD"
+          },
+          "UnitPrice": {
+            "Amount": 98.99,
+            "CurrencyCode": "USD"
+          }
+        },
+        {
+          "Description": "PocketGo Bittboy v2 White Retro Video Game Portable Console - 3.5 IPS display",
+          "Quantity": 4,
+          "QuantityUnit": "each",
+          "TaxAmount": {
+            "Amount": 171.6,
+            "CurrencyCode": "USD"
+          },
+          "TaxRate": 0.1,
+          "TotalAmount": {
+            "Amount": 171.6,
+            "CurrencyCode": "USD"
+          },
+          "UnitPrice": {
+            "Amount": 39,
+            "CurrencyCode": "USD"
+          }
+        },
+        {
+          "Description": "Microsoft Xbox 360 - White - Console, Power Supply, AV Cables *Tested, Working*",
+          "Quantity": 1,
+          "QuantityUnit": "each",
+          "TaxAmount": {
+            "Amount": 4,
+            "CurrencyCode": "USD"
+          },
+          "TaxRate": 0.1,
+          "TotalAmount": {
+            "Amount": 43.95,
+            "CurrencyCode": "USD"
+          },
+          "UnitPrice": {
+            "Amount": 39.95,
+            "CurrencyCode": "USD"
+          }
+        },
+        {
+          "Description": "Sony PlayStation 3 Slim 120GB Black Console",
+          "Quantity": 4,
+          "QuantityUnit": "each",
+          "TaxAmount": {
+            "Amount": 220,
+            "CurrencyCode": "USD"
+          },
+          "TaxRate": 0.1,
+          "TotalAmount": {
+            "Amount": 439.96,
+            "CurrencyCode": "USD"
+          },
+          "UnitPrice": {
+            "Amount": 99.99,
+            "CurrencyCode": "USD"
+          }
+        },
+        {
+          "Description": "SONY Playstation2 Console SCPH-39000 \" Aqua Color \" / TESTED 11181",
+          "Quantity": 1,
+          "QuantityUnit": "each",
+          "TaxAmount": {
+            "Amount": 49.5,
+            "CurrencyCode": "USD"
+          },
+          "TaxRate": 0.1,
+          "TotalAmount": {
+            "Amount": 49.5,
+            "CurrencyCode": "USD"
+          },
+          "UnitPrice": {
+            "Amount": 45,
+            "CurrencyCode": "USD"
+          }
+        },
+        {
+          "Description": "Nintendo 64 Console \"Perfect\" + Lot Games \"6 Games\"",
+          "Quantity": 1,
+          "QuantityUnit": "each",
+          "TaxAmount": {
+            "Amount": 220,
+            "CurrencyCode": "USD"
+          },
+          "TaxRate": 0.1,
+          "TotalAmount": {
+            "Amount": 220,
+            "CurrencyCode": "USD"
+          },
+          "UnitPrice": {
+            "Amount": 200,
+            "CurrencyCode": "USD"
+          }
+        }
+      ],
+      "SubtotalAmount": {
+        "Amount": 1335.86,
+        "CurrencyCode": "USD"
+      },
+      "TaxDetails": [
+        {
+          "Amount": {
+            "Amount": 133.59,
+            "CurrencyCode": "USD"
+          },
+          "Description": "VAT [%]",
+          "NetAmount": {
+            "Amount": 1335.86,
+            "CurrencyCode": "USD"
+          },
+          "Rate": 0.1
+        }
+      ],
+      "TotalAmount": {
+        "Amount": 1469.45,
+        "CurrencyCode": "USD"
+      },
+      "TotalTaxAmount": {
+        "Amount": 133.59,
+        "CurrencyCode": "USD"
+      },
+      "VendorAddress": "88652 James Loaf East Alyssamouth, KS 81684",
+      "VendorAddressRecipient": "Porter-Perkins",
+      "VendorName": "Porter-Perkins",
+      "VendorTaxId": "929-76-1260"
+    },
+    "description": "Ce document est une facture (Invoice no: 46506594) émise le 03/12/2012 par Porter-Perkins (East Alyssamouth, KS) à destination de Castaneda LLC (East Chelseytown, MD). Elle concerne la vente de plusieurs consoles de jeux vidéo pour un montant total de 1 469,45 $ (TVA incluse). Les éléments clés incluent la liste détaillée des produits, le taux de TVA de 10 %, et les informations fiscales des deux parties."
   }
 }

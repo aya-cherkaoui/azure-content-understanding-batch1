@@ -1,25 +1,35 @@
 {
-  "id": "a7c4f61b-fb2d-4201-b462-b447e040a6b6",
+  "id": "71d11f98-ad39-423b-aa71-e924f440aa63",
   "status": "Succeeded",
   "result": {
     "analyzerId": "prebuilt-invoice",
     "apiVersion": "2025-11-01",
-    "createdAt": "2026-02-10T13:37:37Z",
-    "stringEncoding": "utf16",
+    "createdAt": "2026-02-10T15:10:38Z",
+    "stringEncoding": "codePoint",
     "warnings": [],
     "contents": [
       {
         "path": "input1",
-        "markdown": "```text\n\n```\n",
+        "markdown": "Invoice no: 98858130\n\nDate of issue:\n\n01/28/2021\n\nSeller:\nDominguez, Jackson and Steele\n98309 Stephanie Stream\nMichaelbury, RI 57219\n\nTax Id: 969-72-5121\n\nIBAN: GB21OJGQ49248059733020\n\nClient:\nRodriguez, Hall and Tanner\nPSC 6611, Box 2668\nAPO AP 07491\n\nTax Id: 941-88-5692\n\n\n# ITEMS\n\n\n<table>\n<tr>\n<th>No.</th>\n<th>Description</th>\n<th>Qty</th>\n<th>UM</th>\n<th>Net price</th>\n<th>Net worth</th>\n<th>VAT [%]</th>\n<th>Gross worth</th>\n</tr>\n<tr>\n<td>1.</td>\n<td>Wine Glasses Set Of 4</td>\n<td>2,00</td>\n<td>each</td>\n<td>6,00</td>\n<td>12,00</td>\n<td>10%</td>\n<td>13,20</td>\n</tr>\n<tr>\n<td>2.</td>\n<td>Uncork New York rolling vineryards Wine glass set of 2</td>\n<td>5,00</td>\n<td>each</td>\n<td>5,99</td>\n<td>29,95</td>\n<td>10%</td>\n<td>32,95</td>\n</tr>\n<tr>\n<td>3.</td>\n<td>Anthropologie Gold Elegant Swan Decorative Metal Bottle Stopper Wine Saver</td>\n<td>1,00</td>\n<td>each</td>\n<td>19,98</td>\n<td>19,98</td>\n<td>10%</td>\n<td>21,98</td>\n</tr>\n<tr>\n<td>4.</td>\n<td>Moonshine Still 8Gal/30L Water Alcohol Distiller Home Brew Wine Making Kit 3 Pot</td>\n<td>3,00</td>\n<td>each</td>\n<td>89,99</td>\n<td>269,97</td>\n<td>10%</td>\n<td>296,97</td>\n</tr>\n<tr>\n<td>5.</td>\n<td>4 Tupperware Wine Stemless Cups Set Acrylic Plastic Shatter Proof Beverages New</td>\n<td>2,00</td>\n<td>each</td>\n<td>34,99</td>\n<td>69,98</td>\n<td>10%</td>\n<td>76,98</td>\n</tr>\n</table>\n\n\n# SUMMARY\n\n\n<table>\n<tr>\n<th>VAT [%]</th>\n<th>Net worth</th>\n<th>VAT</th>\n<th>Gross worth</th>\n</tr>\n<tr>\n<td>10%</td>\n<td>401,88</td>\n<td>40,19</td>\n<td>442,07</td>\n</tr>\n<tr>\n<td>Total</td>\n<td>$ 401,88</td>\n<td>$ 40,19</td>\n<td>$ 442,07</td>\n</tr>\n</table>\n",
         "fields": {
           "AmountDue": {
             "type": "object",
             "valueObject": {
               "Amount": {
-                "type": "number"
+                "type": "number",
+                "valueNumber": 442.07,
+                "spans": [
+                  {
+                    "offset": 1584,
+                    "length": 8
+                  }
+                ],
+                "confidence": 0.82,
+                "source": "D(1,1392.1254,1656.2375,1505.8990,1660.0300,1504.9245,1689.2642,1391.1509,1685.4717)"
               },
               "CurrencyCode": {
-                "type": "string"
+                "type": "string",
+                "valueString": "USD"
               }
             }
           },
@@ -27,7 +37,8 @@
             "type": "object",
             "valueObject": {
               "Amount": {
-                "type": "number"
+                "type": "number",
+                "confidence": 0.959
               },
               "CurrencyCode": {
                 "type": "string"
@@ -35,87 +46,897 @@
             }
           },
           "BillingAddress": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.715
           },
           "BillingAddressRecipient": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.762
           },
           "CountryRegion": {
-            "type": "string"
+            "type": "string",
+            "valueString": "USA"
           },
           "CustomerAddress": {
-            "type": "string"
+            "type": "string",
+            "valueString": "PSC 6611, Box 2668 APO AP 07491",
+            "spans": [
+              {
+                "offset": 220,
+                "length": 18
+              },
+              {
+                "offset": 239,
+                "length": 12
+              }
+            ],
+            "confidence": 0.759,
+            "source": "D(1,833.0000,541.0000,1118.0000,541.0000,1118.0000,573.0000,833.0000,573.0000);D(1,831.0000,577.0000,1033.0000,577.0000,1033.0000,608.0000,831.0000,608.0000)"
           },
           "CustomerAddressRecipient": {
-            "type": "string"
+            "type": "string",
+            "valueString": "Rodriguez, Hall and Tanner",
+            "spans": [
+              {
+                "offset": 193,
+                "length": 26
+              }
+            ],
+            "confidence": 0.781,
+            "source": "D(1,833.0000,505.0000,1215.0000,505.0000,1215.0000,540.0000,833.0000,540.0000)"
           },
           "CustomerId": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.815
           },
           "CustomerName": {
-            "type": "string"
+            "type": "string",
+            "valueString": "Rodriguez, Hall and Tanner",
+            "spans": [
+              {
+                "offset": 193,
+                "length": 26
+              }
+            ],
+            "confidence": 0.872,
+            "source": "D(1,833.0000,505.0000,1215.0000,505.0000,1215.0000,540.0000,833.0000,540.0000)"
           },
           "CustomerTaxId": {
-            "type": "string"
+            "type": "string",
+            "valueString": "941-88-5692",
+            "spans": [
+              {
+                "offset": 261,
+                "length": 11
+              }
+            ],
+            "confidence": 0.915,
+            "source": "D(1,937.0000,648.0000,1118.0000,648.0000,1118.0000,679.0000,937.0000,679.0000)"
           },
           "DueDate": {
-            "type": "date"
+            "type": "date",
+            "confidence": 0.793
           },
           "InvoiceDate": {
-            "type": "date"
+            "type": "date",
+            "valueDate": "2021-01-28",
+            "spans": [
+              {
+                "offset": 38,
+                "length": 10
+              }
+            ],
+            "confidence": 0.97,
+            "source": "D(1,800.0000,140.0000,979.0000,140.0000,979.0000,175.0000,800.0000,175.0000)"
           },
           "InvoiceId": {
-            "type": "string"
+            "type": "string",
+            "valueString": "98858130",
+            "spans": [
+              {
+                "offset": 12,
+                "length": 8
+              }
+            ],
+            "confidence": 0.903,
+            "source": "D(1,349.0000,71.0000,538.0000,71.0000,538.0000,107.0000,349.0000,108.0000)"
           },
           "LineItems": {
-            "type": "array"
+            "type": "array",
+            "valueArray": [
+              {
+                "type": "object",
+                "valueObject": {
+                  "Date": {
+                    "type": "date",
+                    "confidence": 0.823
+                  },
+                  "Description": {
+                    "type": "string",
+                    "valueString": "Wine Glasses Set Of 4",
+                    "spans": [
+                      {
+                        "offset": 460,
+                        "length": 21
+                      }
+                    ],
+                    "confidence": 0.687,
+                    "source": "D(1,237.0000,931.0000,487.0000,931.0000,487.0000,959.0000,237.0000,959.0000)"
+                  },
+                  "ProductCode": {
+                    "type": "string",
+                    "confidence": 0.902
+                  },
+                  "Quantity": {
+                    "type": "number",
+                    "valueNumber": 2,
+                    "spans": [
+                      {
+                        "offset": 491,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.903,
+                    "source": "D(1,672.0000,933.0000,725.0000,933.0000,725.0000,958.0000,672.0000,958.0000)"
+                  },
+                  "QuantityUnit": {
+                    "type": "string",
+                    "valueString": "each",
+                    "spans": [
+                      {
+                        "offset": 505,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.828,
+                    "source": "D(1,769.0000,934.0000,827.0000,934.0000,827.0000,958.0000,769.0000,958.0000)"
+                  },
+                  "TaxAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 12,
+                        "spans": [
+                          {
+                            "offset": 533,
+                            "length": 5
+                          }
+                        ],
+                        "confidence": 0.183,
+                        "source": "D(1,1119.0000,933.0000,1185.0000,933.0000,1185.0000,960.0000,1119.0000,960.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "TaxRate": {
+                    "type": "number",
+                    "valueNumber": 0.1,
+                    "spans": [
+                      {
+                        "offset": 548,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.876,
+                    "source": "D(1,1280.0226,931.9171,1332.5414,933.0113,1331.9983,959.0833,1279.4794,957.9892)"
+                  },
+                  "TotalAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 13.2,
+                        "spans": [
+                          {
+                            "offset": 561,
+                            "length": 5
+                          }
+                        ],
+                        "confidence": 0.53,
+                        "source": "D(1,1435.0000,933.0000,1501.0000,933.0000,1501.0000,958.0000,1435.0000,958.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "UnitPrice": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 6,
+                        "spans": [
+                          {
+                            "offset": 519,
+                            "length": 4
+                          }
+                        ],
+                        "confidence": 0.902,
+                        "source": "D(1,964.0000,932.0000,1016.0000,932.0000,1016.0000,959.0000,964.0000,959.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "Date": {
+                    "type": "date",
+                    "confidence": 0.823
+                  },
+                  "Description": {
+                    "type": "string",
+                    "valueString": "Anthropologie Gold Elegant Swan Decorative Metal Bottle Stopper Wine Saver",
+                    "spans": [
+                      {
+                        "offset": 771,
+                        "length": 26
+                      },
+                      {
+                        "offset": 798,
+                        "length": 28
+                      },
+                      {
+                        "offset": 827,
+                        "length": 18
+                      }
+                    ],
+                    "confidence": 0.519,
+                    "source": "D(1,237.0000,1078.0000,548.0000,1078.0000,548.0000,1106.0000,237.0000,1106.0000);D(1,238.0000,1106.0000,572.0000,1106.0000,572.0000,1132.0000,238.0000,1132.0000);D(1,238.0000,1133.0000,463.0000,1133.0000,463.0000,1161.0000,238.0000,1161.0000)"
+                  },
+                  "ProductCode": {
+                    "type": "string",
+                    "confidence": 0.902
+                  },
+                  "Quantity": {
+                    "type": "number",
+                    "valueNumber": 1,
+                    "spans": [
+                      {
+                        "offset": 855,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.914,
+                    "source": "D(1,674.0000,1079.0000,725.0000,1079.0000,725.0000,1104.0000,674.0000,1104.0000)"
+                  },
+                  "QuantityUnit": {
+                    "type": "string",
+                    "valueString": "each",
+                    "spans": [
+                      {
+                        "offset": 869,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.823,
+                    "source": "D(1,769.0000,1080.0000,827.0000,1080.0000,827.0000,1104.0000,769.0000,1105.0000)"
+                  },
+                  "TaxAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 2,
+                        "spans": [
+                          {
+                            "offset": 491,
+                            "length": 4
+                          }
+                        ],
+                        "confidence": 0.826,
+                        "source": "D(1,672.0000,933.0000,725.0000,933.0000,725.0000,958.0000,672.0000,958.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "TaxRate": {
+                    "type": "number",
+                    "valueNumber": 0.1,
+                    "spans": [
+                      {
+                        "offset": 913,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.837,
+                    "source": "D(1,1279.0000,1077.0000,1331.0000,1077.0000,1331.0000,1102.0000,1279.0000,1102.0000)"
+                  },
+                  "TotalAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 21.98,
+                        "spans": [
+                          {
+                            "offset": 926,
+                            "length": 5
+                          }
+                        ],
+                        "confidence": 0.939,
+                        "source": "D(1,1434.0000,1078.0000,1501.0000,1079.0000,1501.0000,1104.0000,1434.0000,1104.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "UnitPrice": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 19.98,
+                        "spans": [
+                          {
+                            "offset": 883,
+                            "length": 5
+                          }
+                        ],
+                        "confidence": 0.914,
+                        "source": "D(1,951.0000,1077.0000,1016.0000,1077.0000,1016.0000,1102.0000,951.0000,1103.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "Date": {
+                    "type": "date",
+                    "confidence": 0.823
+                  },
+                  "Description": {
+                    "type": "string",
+                    "valueString": "Moonshine Still 8Gal/30L Water Alcohol Distiller Home Brew Wine Making Kit 3 Pot",
+                    "spans": [
+                      {
+                        "offset": 964,
+                        "length": 30
+                      },
+                      {
+                        "offset": 995,
+                        "length": 27
+                      },
+                      {
+                        "offset": 1023,
+                        "length": 21
+                      }
+                    ],
+                    "confidence": 0.466,
+                    "source": "D(1,237.0000,1191.0000,591.0000,1191.0000,591.0000,1220.0000,237.0000,1220.0000);D(1,237.0035,1218.5547,550.2109,1221.0016,549.9887,1249.4452,236.7813,1246.9983);D(1,237.0000,1248.0000,486.0000,1248.0000,486.0000,1276.0000,237.0000,1276.0000)"
+                  },
+                  "ProductCode": {
+                    "type": "string",
+                    "confidence": 0.902
+                  },
+                  "Quantity": {
+                    "type": "number",
+                    "valueNumber": 3,
+                    "spans": [
+                      {
+                        "offset": 1054,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.903,
+                    "source": "D(1,672.0000,1192.0000,725.0000,1192.0000,725.0000,1220.0000,672.0000,1220.0000)"
+                  },
+                  "QuantityUnit": {
+                    "type": "string",
+                    "valueString": "each",
+                    "spans": [
+                      {
+                        "offset": 1068,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.832,
+                    "source": "D(1,769.0000,1193.0000,827.0000,1193.0000,827.0000,1217.0000,769.0000,1217.0000)"
+                  },
+                  "TaxAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 12,
+                        "spans": [
+                          {
+                            "offset": 533,
+                            "length": 5
+                          }
+                        ],
+                        "confidence": 0.183,
+                        "source": "D(1,1119.0000,933.0000,1185.0000,933.0000,1185.0000,960.0000,1119.0000,960.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "TaxRate": {
+                    "type": "number",
+                    "valueNumber": 0.1,
+                    "spans": [
+                      {
+                        "offset": 1113,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.883,
+                    "source": "D(1,1281.1031,1191.7320,1332.1340,1194.0515,1330.8969,1221.2680,1279.8660,1218.9485)"
+                  },
+                  "TotalAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 296.97,
+                        "spans": [
+                          {
+                            "offset": 1126,
+                            "length": 6
+                          }
+                        ],
+                        "confidence": 0.873,
+                        "source": "D(1,1418.0000,1193.0000,1500.0000,1192.0000,1500.0000,1220.0000,1418.0000,1219.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "UnitPrice": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 89.99,
+                        "spans": [
+                          {
+                            "offset": 1082,
+                            "length": 5
+                          }
+                        ],
+                        "confidence": 0.916,
+                        "source": "D(1,950.0000,1192.0000,1016.0000,1192.0000,1016.0000,1220.0000,950.0000,1220.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "Date": {
+                    "type": "date",
+                    "confidence": 0.823
+                  },
+                  "Description": {
+                    "type": "string",
+                    "valueString": "Uncork New York rolling vineryards Wine glass set of 2",
+                    "spans": [
+                      {
+                        "offset": 599,
+                        "length": 23
+                      },
+                      {
+                        "offset": 623,
+                        "length": 30
+                      }
+                    ],
+                    "confidence": 0.519,
+                    "source": "D(1,237.0189,988.1877,507.2916,991.0030,506.9854,1020.4061,236.7126,1017.5908);D(1,237.0000,1018.0000,577.0000,1018.0000,577.0000,1049.0000,237.0000,1049.0000)"
+                  },
+                  "ProductCode": {
+                    "type": "string",
+                    "confidence": 0.902
+                  },
+                  "Quantity": {
+                    "type": "number",
+                    "valueNumber": 5,
+                    "spans": [
+                      {
+                        "offset": 663,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.902,
+                    "source": "D(1,672.0000,992.0000,725.0000,990.0000,725.0000,1016.0000,672.0000,1018.0000)"
+                  },
+                  "QuantityUnit": {
+                    "type": "string",
+                    "valueString": "each",
+                    "spans": [
+                      {
+                        "offset": 677,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.832,
+                    "source": "D(1,770.0000,992.0000,826.0000,993.0000,826.0000,1017.0000,770.0000,1017.0000)"
+                  },
+                  "TaxAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 3,
+                        "spans": [
+                          {
+                            "offset": 1054,
+                            "length": 4
+                          }
+                        ],
+                        "confidence": 0.183,
+                        "source": "D(1,672.0000,1192.0000,725.0000,1192.0000,725.0000,1220.0000,672.0000,1220.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "TaxRate": {
+                    "type": "number",
+                    "valueNumber": 0.1,
+                    "spans": [
+                      {
+                        "offset": 720,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.87,
+                    "source": "D(1,1281.0171,989.0744,1331.4628,990.0086,1330.9829,1015.9256,1280.5372,1014.9914)"
+                  },
+                  "TotalAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 32.95,
+                        "spans": [
+                          {
+                            "offset": 733,
+                            "length": 5
+                          }
+                        ],
+                        "confidence": 0.939,
+                        "source": "D(1,1434.0000,992.0000,1501.0000,991.0000,1501.0000,1018.0000,1434.0000,1018.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "UnitPrice": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 5.99,
+                        "spans": [
+                          {
+                            "offset": 691,
+                            "length": 4
+                          }
+                        ],
+                        "confidence": 0.903,
+                        "source": "D(1,964.0000,992.0000,1016.0000,992.0000,1016.0000,1018.0000,964.0000,1018.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "Date": {
+                    "type": "date",
+                    "confidence": 0.823
+                  },
+                  "Description": {
+                    "type": "string",
+                    "valueString": "4 Tupperware Wine Stemless Cups Set Acrylic Plastic Shatter Proof Beverages New",
+                    "spans": [
+                      {
+                        "offset": 1165,
+                        "length": 26
+                      },
+                      {
+                        "offset": 1192,
+                        "length": 32
+                      },
+                      {
+                        "offset": 1225,
+                        "length": 19
+                      }
+                    ],
+                    "confidence": 0.589,
+                    "source": "D(1,238.0000,1308.0000,567.0000,1308.0000,567.0000,1335.0000,238.0000,1335.0000);D(1,238.0000,1335.0000,590.0000,1335.0000,590.0000,1363.0000,238.0000,1363.0000);D(1,237.0035,1363.1795,480.1187,1364.2185,479.9989,1392.2521,236.8837,1391.2132)"
+                  },
+                  "ProductCode": {
+                    "type": "string",
+                    "confidence": 0.902
+                  },
+                  "Quantity": {
+                    "type": "number",
+                    "valueNumber": 2,
+                    "spans": [
+                      {
+                        "offset": 1254,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.912,
+                    "source": "D(1,672.0000,1309.0000,724.0000,1309.0000,724.0000,1334.0000,672.0000,1334.0000)"
+                  },
+                  "QuantityUnit": {
+                    "type": "string",
+                    "valueString": "each",
+                    "spans": [
+                      {
+                        "offset": 1268,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.833,
+                    "source": "D(1,769.0000,1309.0000,827.0000,1309.0000,827.0000,1333.0000,769.0000,1333.0000)"
+                  },
+                  "TaxAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 2,
+                        "spans": [
+                          {
+                            "offset": 1254,
+                            "length": 4
+                          }
+                        ],
+                        "confidence": 0.22,
+                        "source": "D(1,672.0000,1309.0000,724.0000,1309.0000,724.0000,1334.0000,672.0000,1334.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "TaxRate": {
+                    "type": "number",
+                    "valueNumber": 0.1,
+                    "spans": [
+                      {
+                        "offset": 1312,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.89,
+                    "source": "D(1,1279.0273,1307.2078,1331.8610,1309.0297,1330.9727,1334.7922,1278.1390,1332.9703)"
+                  },
+                  "TotalAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 76.98,
+                        "spans": [
+                          {
+                            "offset": 1325,
+                            "length": 5
+                          }
+                        ],
+                        "confidence": 0.956,
+                        "source": "D(1,1434.0000,1309.0000,1501.0000,1309.0000,1501.0000,1334.0000,1434.0000,1334.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "UnitPrice": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 34.99,
+                        "spans": [
+                          {
+                            "offset": 1282,
+                            "length": 5
+                          }
+                        ],
+                        "confidence": 0.939,
+                        "source": "D(1,950.0000,1309.0000,1016.0000,1309.0000,1016.0000,1334.0000,950.0000,1334.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
           },
           "PaymentTerm": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.816
           },
           "PONumber": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.746
           },
           "RemittanceAddress": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.905
           },
           "RemittanceAddressRecipient": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.814
           },
           "ServiceAddress": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.782
           },
           "ServiceAddressRecipient": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.82
           },
           "ShippingAddress": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.775
           },
           "ShippingAddressRecipient": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.81
           },
           "SubtotalAmount": {
             "type": "object",
             "valueObject": {
               "Amount": {
-                "type": "number"
+                "type": "number",
+                "valueNumber": 401.88
               },
               "CurrencyCode": {
-                "type": "string"
+                "type": "string",
+                "valueString": "USD"
               }
             }
           },
           "TaxDetails": {
-            "type": "array"
+            "type": "array",
+            "valueArray": [
+              {
+                "type": "object",
+                "valueObject": {
+                  "Amount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 40.19,
+                        "spans": [
+                          {
+                            "offset": 1492,
+                            "length": 5
+                          }
+                        ],
+                        "confidence": 0.871,
+                        "source": "D(1,1174.0000,1600.0000,1240.0000,1601.0000,1240.0000,1627.0000,1174.0000,1625.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "Description": {
+                    "type": "string",
+                    "valueString": "VAT [%] 10%",
+                    "spans": [
+                      {
+                        "offset": 1382,
+                        "length": 7
+                      },
+                      {
+                        "offset": 1463,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.147,
+                    "source": "D(1,639.0000,1539.0000,744.2688,1539.9747,743.9910,1569.9721,638.7222,1568.9974);D(1,666.0000,1600.0000,719.0000,1600.0000,719.0000,1625.0000,666.0000,1625.0000)"
+                  },
+                  "NetAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 401.88,
+                        "spans": [
+                          {
+                            "offset": 1476,
+                            "length": 6
+                          }
+                        ],
+                        "confidence": 0.817,
+                        "source": "D(1,975.0000,1600.0000,1056.0000,1601.0000,1056.0000,1627.0000,975.0000,1625.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "Rate": {
+                    "type": "number",
+                    "valueNumber": 0.1,
+                    "spans": [
+                      {
+                        "offset": 1463,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.833,
+                    "source": "D(1,666.0000,1600.0000,719.0000,1600.0000,719.0000,1625.0000,666.0000,1625.0000)"
+                  }
+                }
+              }
+            ]
           },
           "TotalAmount": {
             "type": "object",
             "valueObject": {
               "Amount": {
-                "type": "number"
+                "type": "number",
+                "valueNumber": 442.07,
+                "spans": [
+                  {
+                    "offset": 1507,
+                    "length": 6
+                  }
+                ],
+                "confidence": 0.72,
+                "source": "D(1,1423.0000,1601.0000,1504.0000,1602.0000,1504.0000,1627.0000,1423.0000,1626.0000)"
               },
               "CurrencyCode": {
-                "type": "string"
+                "type": "string",
+                "valueString": "USD"
               }
             }
           },
@@ -123,7 +944,8 @@
             "type": "object",
             "valueObject": {
               "Amount": {
-                "type": "number"
+                "type": "number",
+                "confidence": 0.934
               },
               "CurrencyCode": {
                 "type": "string"
@@ -134,45 +956,4165 @@
             "type": "object",
             "valueObject": {
               "Amount": {
-                "type": "number"
+                "type": "number",
+                "valueNumber": 40.19
               },
               "CurrencyCode": {
-                "type": "string"
+                "type": "string",
+                "valueString": "USD"
               }
             }
           },
           "VendorAddress": {
-            "type": "string"
+            "type": "string",
+            "valueString": "98309 Stephanie Stream Michaelbury, RI 57219",
+            "spans": [
+              {
+                "offset": 88,
+                "length": 22
+              },
+              {
+                "offset": 111,
+                "length": 21
+              }
+            ],
+            "confidence": 0.729,
+            "source": "D(1,140.0000,541.0000,490.0000,541.0000,490.0000,575.0000,140.0000,575.0000);D(1,140.0000,577.0000,454.0000,577.0000,454.0000,610.0000,140.0000,610.0000)"
           },
           "VendorAddressRecipient": {
-            "type": "string"
+            "type": "string",
+            "valueString": "Dominguez, Jackson and Steele",
+            "spans": [
+              {
+                "offset": 58,
+                "length": 29
+              }
+            ],
+            "confidence": 0.816,
+            "source": "D(1,140.0000,505.0000,581.0000,505.0000,581.0000,540.0000,140.0000,540.0000)"
           },
           "VendorName": {
-            "type": "string"
+            "type": "string",
+            "valueString": "Dominguez, Jackson and Steele",
+            "spans": [
+              {
+                "offset": 58,
+                "length": 29
+              }
+            ],
+            "confidence": 0.759,
+            "source": "D(1,140.0000,505.0000,581.0000,505.0000,581.0000,540.0000,140.0000,540.0000)"
           },
           "VendorTaxId": {
-            "type": "string"
+            "type": "string",
+            "valueString": "969-72-5121",
+            "spans": [
+              {
+                "offset": 142,
+                "length": 11
+              }
+            ],
+            "confidence": 0.915,
+            "source": "D(1,242.0000,649.0000,424.0000,647.0000,424.0000,679.0000,242.0000,680.0000)"
           }
         },
         "kind": "document",
         "startPageNumber": 1,
         "endPageNumber": 1,
+        "unit": "pixel",
+        "pages": [
+          {
+            "pageNumber": 1,
+            "angle": 0,
+            "width": 1654,
+            "height": 2339,
+            "spans": [
+              {
+                "offset": 0,
+                "length": 1613
+              }
+            ],
+            "words": [
+              {
+                "content": "Invoice",
+                "span": {
+                  "offset": 0,
+                  "length": 7
+                },
+                "confidence": 0.961,
+                "source": "D(1,131,72,264,72,264,108,131,108)"
+              },
+              {
+                "content": "no",
+                "span": {
+                  "offset": 8,
+                  "length": 2
+                },
+                "confidence": 0.997,
+                "source": "D(1,279,72,322,71,322,108,279,108)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 10,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,325,71,334,71,334,108,325,108)"
+              },
+              {
+                "content": "98858130",
+                "span": {
+                  "offset": 12,
+                  "length": 8
+                },
+                "confidence": 0.997,
+                "source": "D(1,349,71,538,71,538,107,349,108)"
+              },
+              {
+                "content": "Date",
+                "span": {
+                  "offset": 22,
+                  "length": 4
+                },
+                "confidence": 0.998,
+                "source": "D(1,131,141,205,141,205,173,131,173)"
+              },
+              {
+                "content": "of",
+                "span": {
+                  "offset": 27,
+                  "length": 2
+                },
+                "confidence": 0.997,
+                "source": "D(1,216,141,247,141,247,173,216,173)"
+              },
+              {
+                "content": "issue",
+                "span": {
+                  "offset": 30,
+                  "length": 5
+                },
+                "confidence": 0.996,
+                "source": "D(1,254,141,332,141,332,174,255,173)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 35,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,334,141,345,142,345,174,334,174)"
+              },
+              {
+                "content": "01/28/2021",
+                "span": {
+                  "offset": 38,
+                  "length": 10
+                },
+                "confidence": 0.993,
+                "source": "D(1,800,140,979,140,979,175,800,175)"
+              },
+              {
+                "content": "Seller",
+                "span": {
+                  "offset": 50,
+                  "length": 6
+                },
+                "confidence": 0.997,
+                "source": "D(1,131,443,241,443,241,477,131,476)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 56,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,242,443,255,443,255,477,242,477)"
+              },
+              {
+                "content": "Dominguez",
+                "span": {
+                  "offset": 58,
+                  "length": 9
+                },
+                "confidence": 0.996,
+                "source": "D(1,140,506,297,506,297,540,140,539)"
+              },
+              {
+                "content": ",",
+                "span": {
+                  "offset": 67,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,298,506,304,506,304,540,298,540)"
+              },
+              {
+                "content": "Jackson",
+                "span": {
+                  "offset": 69,
+                  "length": 7
+                },
+                "confidence": 0.993,
+                "source": "D(1,312,506,420,505,420,539,312,540)"
+              },
+              {
+                "content": "and",
+                "span": {
+                  "offset": 77,
+                  "length": 3
+                },
+                "confidence": 0.998,
+                "source": "D(1,431,505,481,505,481,539,431,539)"
+              },
+              {
+                "content": "Steele",
+                "span": {
+                  "offset": 81,
+                  "length": 6
+                },
+                "confidence": 0.995,
+                "source": "D(1,491,505,581,505,581,537,491,538)"
+              },
+              {
+                "content": "98309",
+                "span": {
+                  "offset": 88,
+                  "length": 5
+                },
+                "confidence": 0.994,
+                "source": "D(1,140,541,225,541,225,574,140,574)"
+              },
+              {
+                "content": "Stephanie",
+                "span": {
+                  "offset": 94,
+                  "length": 9
+                },
+                "confidence": 0.993,
+                "source": "D(1,236,541,376,541,376,574,236,574)"
+              },
+              {
+                "content": "Stream",
+                "span": {
+                  "offset": 104,
+                  "length": 6
+                },
+                "confidence": 0.996,
+                "source": "D(1,385,541,490,542,490,575,385,574)"
+              },
+              {
+                "content": "Michaelbury",
+                "span": {
+                  "offset": 111,
+                  "length": 11
+                },
+                "confidence": 0.984,
+                "source": "D(1,140,577,309,577,309,610,140,610)"
+              },
+              {
+                "content": ",",
+                "span": {
+                  "offset": 122,
+                  "length": 1
+                },
+                "confidence": 0.997,
+                "source": "D(1,310,577,317,577,317,610,310,610)"
+              },
+              {
+                "content": "RI",
+                "span": {
+                  "offset": 124,
+                  "length": 2
+                },
+                "confidence": 0.94,
+                "source": "D(1,328,577,353,577,353,610,328,610)"
+              },
+              {
+                "content": "57219",
+                "span": {
+                  "offset": 127,
+                  "length": 5
+                },
+                "confidence": 0.987,
+                "source": "D(1,364,577,454,577,454,610,364,610)"
+              },
+              {
+                "content": "Tax",
+                "span": {
+                  "offset": 134,
+                  "length": 3
+                },
+                "confidence": 0.977,
+                "source": "D(1,138,649,189,649,189,680,139,680)"
+              },
+              {
+                "content": "Id",
+                "span": {
+                  "offset": 138,
+                  "length": 2
+                },
+                "confidence": 0.78,
+                "source": "D(1,199,649,221,649,221,680,199,680)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 140,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,225,649,231,649,231,680,225,680)"
+              },
+              {
+                "content": "969-72-5121",
+                "span": {
+                  "offset": 142,
+                  "length": 11
+                },
+                "confidence": 0.983,
+                "source": "D(1,242,649,424,647,424,679,242,680)"
+              },
+              {
+                "content": "IBAN",
+                "span": {
+                  "offset": 155,
+                  "length": 4
+                },
+                "confidence": 0.994,
+                "source": "D(1,139,683,205,683,205,715,140,715)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 159,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,209,683,215,683,215,715,209,715)"
+              },
+              {
+                "content": "GB21OJGQ49248059733020",
+                "span": {
+                  "offset": 161,
+                  "length": 22
+                },
+                "confidence": 0.989,
+                "source": "D(1,227,683,625,682,625,715,227,715)"
+              },
+              {
+                "content": "Client",
+                "span": {
+                  "offset": 185,
+                  "length": 6
+                },
+                "confidence": 0.995,
+                "source": "D(1,824,442,935,442,935,477,824,477)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 191,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,937,442,950,442,950,477,937,477)"
+              },
+              {
+                "content": "Rodriguez",
+                "span": {
+                  "offset": 193,
+                  "length": 9
+                },
+                "confidence": 0.996,
+                "source": "D(1,833,506,972,505,972,538,833,540)"
+              },
+              {
+                "content": ",",
+                "span": {
+                  "offset": 202,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,973,505,979,505,979,538,973,538)"
+              },
+              {
+                "content": "Hall",
+                "span": {
+                  "offset": 204,
+                  "length": 4
+                },
+                "confidence": 0.997,
+                "source": "D(1,992,505,1043,505,1043,538,992,538)"
+              },
+              {
+                "content": "and",
+                "span": {
+                  "offset": 209,
+                  "length": 3
+                },
+                "confidence": 0.998,
+                "source": "D(1,1053,505,1103,505,1103,538,1053,538)"
+              },
+              {
+                "content": "Tanner",
+                "span": {
+                  "offset": 213,
+                  "length": 6
+                },
+                "confidence": 0.998,
+                "source": "D(1,1114,505,1215,507,1215,539,1114,538)"
+              },
+              {
+                "content": "PSC",
+                "span": {
+                  "offset": 220,
+                  "length": 3
+                },
+                "confidence": 0.995,
+                "source": "D(1,833,541,885,541,885,573,833,573)"
+              },
+              {
+                "content": "6611",
+                "span": {
+                  "offset": 224,
+                  "length": 4
+                },
+                "confidence": 0.993,
+                "source": "D(1,896,541,963,541,963,573,896,573)"
+              },
+              {
+                "content": ",",
+                "span": {
+                  "offset": 228,
+                  "length": 1
+                },
+                "confidence": 0.997,
+                "source": "D(1,966,541,972,541,972,573,966,573)"
+              },
+              {
+                "content": "Box",
+                "span": {
+                  "offset": 230,
+                  "length": 3
+                },
+                "confidence": 0.943,
+                "source": "D(1,985,541,1035,541,1035,573,985,573)"
+              },
+              {
+                "content": "2668",
+                "span": {
+                  "offset": 234,
+                  "length": 4
+                },
+                "confidence": 0.991,
+                "source": "D(1,1045,541,1118,541,1118,573,1045,573)"
+              },
+              {
+                "content": "APO",
+                "span": {
+                  "offset": 239,
+                  "length": 3
+                },
+                "confidence": 0.947,
+                "source": "D(1,831,577,889,577,889,608,831,608)"
+              },
+              {
+                "content": "AP",
+                "span": {
+                  "offset": 243,
+                  "length": 2
+                },
+                "confidence": 0.951,
+                "source": "D(1,898,577,935,577,935,608,898,608)"
+              },
+              {
+                "content": "07491",
+                "span": {
+                  "offset": 246,
+                  "length": 5
+                },
+                "confidence": 0.985,
+                "source": "D(1,945,577,1033,578,1033,608,945,608)"
+              },
+              {
+                "content": "Tax",
+                "span": {
+                  "offset": 253,
+                  "length": 3
+                },
+                "confidence": 0.986,
+                "source": "D(1,830,648,883,648,883,679,830,679)"
+              },
+              {
+                "content": "Id",
+                "span": {
+                  "offset": 257,
+                  "length": 2
+                },
+                "confidence": 0.838,
+                "source": "D(1,893,648,916,648,916,679,893,679)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 259,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,920,648,926,648,926,679,920,679)"
+              },
+              {
+                "content": "941-88-5692",
+                "span": {
+                  "offset": 261,
+                  "length": 11
+                },
+                "confidence": 0.991,
+                "source": "D(1,937,648,1118,648,1118,679,937,679)"
+              },
+              {
+                "content": "ITEMS",
+                "span": {
+                  "offset": 277,
+                  "length": 5
+                },
+                "confidence": 0.976,
+                "source": "D(1,131,759,248,759,248,792,131,793)"
+              },
+              {
+                "content": "No",
+                "span": {
+                  "offset": 302,
+                  "length": 2
+                },
+                "confidence": 0.936,
+                "source": "D(1,158,848,193,847,193,870,158,870)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 304,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,193,847,202,846,202,870,193,870)"
+              },
+              {
+                "content": "Description",
+                "span": {
+                  "offset": 315,
+                  "length": 11
+                },
+                "confidence": 0.996,
+                "source": "D(1,238,845,385,847,385,873,238,871)"
+              },
+              {
+                "content": "Qty",
+                "span": {
+                  "offset": 336,
+                  "length": 3
+                },
+                "confidence": 0.992,
+                "source": "D(1,677,846,726,846,726,873,677,873)"
+              },
+              {
+                "content": "UM",
+                "span": {
+                  "offset": 349,
+                  "length": 2
+                },
+                "confidence": 0.986,
+                "source": "D(1,776,846,821,846,821,870,776,870)"
+              },
+              {
+                "content": "Net",
+                "span": {
+                  "offset": 361,
+                  "length": 3
+                },
+                "confidence": 0.998,
+                "source": "D(1,898,844,944,845,944,872,898,871)"
+              },
+              {
+                "content": "price",
+                "span": {
+                  "offset": 365,
+                  "length": 5
+                },
+                "confidence": 0.998,
+                "source": "D(1,952,845,1018,845,1018,872,952,872)"
+              },
+              {
+                "content": "Net",
+                "span": {
+                  "offset": 380,
+                  "length": 3
+                },
+                "confidence": 0.998,
+                "source": "D(1,1057,845,1103,845,1103,871,1057,870)"
+              },
+              {
+                "content": "worth",
+                "span": {
+                  "offset": 384,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,1110,845,1186,845,1186,871,1110,871)"
+              },
+              {
+                "content": "VAT",
+                "span": {
+                  "offset": 399,
+                  "length": 3
+                },
+                "confidence": 0.992,
+                "source": "D(1,1227,844,1280,845,1280,872,1227,871)"
+              },
+              {
+                "content": "[",
+                "span": {
+                  "offset": 403,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1287,845,1297,845,1297,873,1287,873)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 404,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1296,845,1319,845,1319,872,1296,873)"
+              },
+              {
+                "content": "]",
+                "span": {
+                  "offset": 405,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,1319,845,1332,845,1332,872,1319,872)"
+              },
+              {
+                "content": "Gross",
+                "span": {
+                  "offset": 416,
+                  "length": 5
+                },
+                "confidence": 0.998,
+                "source": "D(1,1428,848,1501,849,1501,871,1428,870)"
+              },
+              {
+                "content": "worth",
+                "span": {
+                  "offset": 422,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,1425,875,1501,875,1501,897,1425,897)"
+              },
+              {
+                "content": "1",
+                "span": {
+                  "offset": 448,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,169,934,182,934,182,957,169,957)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 449,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,185,934,192,933,192,957,185,957)"
+              },
+              {
+                "content": "Wine",
+                "span": {
+                  "offset": 460,
+                  "length": 4
+                },
+                "confidence": 0.992,
+                "source": "D(1,237,932,293,932,293,959,237,959)"
+              },
+              {
+                "content": "Glasses",
+                "span": {
+                  "offset": 465,
+                  "length": 7
+                },
+                "confidence": 0.992,
+                "source": "D(1,302,932,386,932,386,959,302,959)"
+              },
+              {
+                "content": "Set",
+                "span": {
+                  "offset": 473,
+                  "length": 3
+                },
+                "confidence": 0.994,
+                "source": "D(1,394,932,432,932,432,959,394,959)"
+              },
+              {
+                "content": "Of",
+                "span": {
+                  "offset": 477,
+                  "length": 2
+                },
+                "confidence": 0.969,
+                "source": "D(1,439,932,466,932,466,958,439,958)"
+              },
+              {
+                "content": "4",
+                "span": {
+                  "offset": 480,
+                  "length": 1
+                },
+                "confidence": 0.991,
+                "source": "D(1,470,932,487,931,487,958,470,958)"
+              },
+              {
+                "content": "2,00",
+                "span": {
+                  "offset": 491,
+                  "length": 4
+                },
+                "confidence": 0.996,
+                "source": "D(1,672,933,725,933,725,958,672,958)"
+              },
+              {
+                "content": "each",
+                "span": {
+                  "offset": 505,
+                  "length": 4
+                },
+                "confidence": 0.999,
+                "source": "D(1,769,934,827,934,827,958,769,958)"
+              },
+              {
+                "content": "6,00",
+                "span": {
+                  "offset": 519,
+                  "length": 4
+                },
+                "confidence": 0.99,
+                "source": "D(1,964,932,1016,932,1016,959,964,959)"
+              },
+              {
+                "content": "12,00",
+                "span": {
+                  "offset": 533,
+                  "length": 5
+                },
+                "confidence": 0.996,
+                "source": "D(1,1119,933,1185,933,1185,960,1119,960)"
+              },
+              {
+                "content": "10",
+                "span": {
+                  "offset": 548,
+                  "length": 2
+                },
+                "confidence": 0.999,
+                "source": "D(1,1280,933,1308,933,1308,958,1280,958)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 550,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1308,933,1332,933,1332,959,1308,958)"
+              },
+              {
+                "content": "13,20",
+                "span": {
+                  "offset": 561,
+                  "length": 5
+                },
+                "confidence": 0.996,
+                "source": "D(1,1435,933,1501,933,1501,958,1435,958)"
+              },
+              {
+                "content": "2",
+                "span": {
+                  "offset": 587,
+                  "length": 1
+                },
+                "confidence": 0.991,
+                "source": "D(1,169,992,183,991,183,1014,169,1015)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 588,
+                  "length": 1
+                },
+                "confidence": 0.997,
+                "source": "D(1,185,991,191,991,191,1014,185,1014)"
+              },
+              {
+                "content": "Uncork",
+                "span": {
+                  "offset": 599,
+                  "length": 6
+                },
+                "confidence": 0.995,
+                "source": "D(1,237,990,318,991,318,1018,237,1017)"
+              },
+              {
+                "content": "New",
+                "span": {
+                  "offset": 606,
+                  "length": 3
+                },
+                "confidence": 0.998,
+                "source": "D(1,324,991,372,991,372,1019,324,1018)"
+              },
+              {
+                "content": "York",
+                "span": {
+                  "offset": 610,
+                  "length": 4
+                },
+                "confidence": 0.993,
+                "source": "D(1,378,991,431,991,431,1019,378,1019)"
+              },
+              {
+                "content": "rolling",
+                "span": {
+                  "offset": 615,
+                  "length": 7
+                },
+                "confidence": 0.991,
+                "source": "D(1,438,991,507,991,507,1019,438,1019)"
+              },
+              {
+                "content": "vineryards",
+                "span": {
+                  "offset": 623,
+                  "length": 10
+                },
+                "confidence": 0.986,
+                "source": "D(1,237,1020,356,1018,356,1047,237,1049)"
+              },
+              {
+                "content": "Wine",
+                "span": {
+                  "offset": 634,
+                  "length": 4
+                },
+                "confidence": 0.997,
+                "source": "D(1,363,1018,419,1018,419,1047,363,1047)"
+              },
+              {
+                "content": "glass",
+                "span": {
+                  "offset": 639,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,426,1018,483,1018,483,1047,426,1047)"
+              },
+              {
+                "content": "set",
+                "span": {
+                  "offset": 645,
+                  "length": 3
+                },
+                "confidence": 0.998,
+                "source": "D(1,490,1018,525,1018,525,1047,490,1047)"
+              },
+              {
+                "content": "of",
+                "span": {
+                  "offset": 649,
+                  "length": 2
+                },
+                "confidence": 0.983,
+                "source": "D(1,531,1018,555,1018,555,1047,531,1047)"
+              },
+              {
+                "content": "2",
+                "span": {
+                  "offset": 652,
+                  "length": 1
+                },
+                "confidence": 0.963,
+                "source": "D(1,560,1018,577,1018,577,1047,560,1047)"
+              },
+              {
+                "content": "5,00",
+                "span": {
+                  "offset": 663,
+                  "length": 4
+                },
+                "confidence": 0.995,
+                "source": "D(1,672,992,725,990,725,1016,672,1018)"
+              },
+              {
+                "content": "each",
+                "span": {
+                  "offset": 677,
+                  "length": 4
+                },
+                "confidence": 0.999,
+                "source": "D(1,770,992,826,993,826,1017,770,1017)"
+              },
+              {
+                "content": "5,99",
+                "span": {
+                  "offset": 691,
+                  "length": 4
+                },
+                "confidence": 0.99,
+                "source": "D(1,964,992,1016,992,1016,1018,964,1018)"
+              },
+              {
+                "content": "29,95",
+                "span": {
+                  "offset": 705,
+                  "length": 5
+                },
+                "confidence": 0.989,
+                "source": "D(1,1119,989,1185,992,1185,1018,1119,1016)"
+              },
+              {
+                "content": "10",
+                "span": {
+                  "offset": 720,
+                  "length": 2
+                },
+                "confidence": 0.999,
+                "source": "D(1,1281,990,1308,991,1308,1015,1281,1015)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 722,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1309,991,1331,990,1331,1015,1309,1015)"
+              },
+              {
+                "content": "32,95",
+                "span": {
+                  "offset": 733,
+                  "length": 5
+                },
+                "confidence": 0.992,
+                "source": "D(1,1434,992,1501,991,1501,1018,1434,1018)"
+              },
+              {
+                "content": "3",
+                "span": {
+                  "offset": 759,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,169,1078,183,1078,183,1102,169,1102)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 760,
+                  "length": 1
+                },
+                "confidence": 0.997,
+                "source": "D(1,185,1078,192,1078,192,1102,185,1102)"
+              },
+              {
+                "content": "Anthropologie",
+                "span": {
+                  "offset": 771,
+                  "length": 13
+                },
+                "confidence": 0.996,
+                "source": "D(1,237,1078,395,1078,395,1106,237,1106)"
+              },
+              {
+                "content": "Gold",
+                "span": {
+                  "offset": 785,
+                  "length": 4
+                },
+                "confidence": 0.998,
+                "source": "D(1,403,1078,452,1078,452,1106,403,1106)"
+              },
+              {
+                "content": "Elegant",
+                "span": {
+                  "offset": 790,
+                  "length": 7
+                },
+                "confidence": 0.995,
+                "source": "D(1,462,1078,548,1078,548,1106,462,1106)"
+              },
+              {
+                "content": "Swan",
+                "span": {
+                  "offset": 798,
+                  "length": 4
+                },
+                "confidence": 0.994,
+                "source": "D(1,238,1106,297,1106,298,1132,238,1132)"
+              },
+              {
+                "content": "Decorative",
+                "span": {
+                  "offset": 803,
+                  "length": 10
+                },
+                "confidence": 0.994,
+                "source": "D(1,306,1106,426,1106,427,1132,307,1132)"
+              },
+              {
+                "content": "Metal",
+                "span": {
+                  "offset": 814,
+                  "length": 5
+                },
+                "confidence": 0.995,
+                "source": "D(1,435,1106,494,1106,494,1132,435,1132)"
+              },
+              {
+                "content": "Bottle",
+                "span": {
+                  "offset": 820,
+                  "length": 6
+                },
+                "confidence": 0.993,
+                "source": "D(1,503,1106,572,1106,572,1132,504,1132)"
+              },
+              {
+                "content": "Stopper",
+                "span": {
+                  "offset": 827,
+                  "length": 7
+                },
+                "confidence": 0.996,
+                "source": "D(1,238,1133,327,1134,327,1161,238,1161)"
+              },
+              {
+                "content": "Wine",
+                "span": {
+                  "offset": 835,
+                  "length": 4
+                },
+                "confidence": 0.994,
+                "source": "D(1,332,1134,389,1134,389,1161,332,1161)"
+              },
+              {
+                "content": "Saver",
+                "span": {
+                  "offset": 840,
+                  "length": 5
+                },
+                "confidence": 0.995,
+                "source": "D(1,396,1134,463,1134,463,1160,396,1161)"
+              },
+              {
+                "content": "1,00",
+                "span": {
+                  "offset": 855,
+                  "length": 4
+                },
+                "confidence": 0.995,
+                "source": "D(1,674,1079,725,1079,725,1104,674,1104)"
+              },
+              {
+                "content": "each",
+                "span": {
+                  "offset": 869,
+                  "length": 4
+                },
+                "confidence": 0.998,
+                "source": "D(1,769,1080,827,1080,827,1104,769,1105)"
+              },
+              {
+                "content": "19,98",
+                "span": {
+                  "offset": 883,
+                  "length": 5
+                },
+                "confidence": 0.993,
+                "source": "D(1,951,1077,1016,1077,1016,1102,951,1103)"
+              },
+              {
+                "content": "19,98",
+                "span": {
+                  "offset": 898,
+                  "length": 5
+                },
+                "confidence": 0.994,
+                "source": "D(1,1119,1076,1185,1078,1185,1105,1119,1102)"
+              },
+              {
+                "content": "10",
+                "span": {
+                  "offset": 913,
+                  "length": 2
+                },
+                "confidence": 0.999,
+                "source": "D(1,1279,1077,1308,1077,1308,1102,1279,1102)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 915,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1308,1077,1331,1077,1331,1102,1308,1102)"
+              },
+              {
+                "content": "21,98",
+                "span": {
+                  "offset": 926,
+                  "length": 5
+                },
+                "confidence": 0.992,
+                "source": "D(1,1434,1078,1501,1079,1501,1104,1434,1104)"
+              },
+              {
+                "content": "4",
+                "span": {
+                  "offset": 952,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,169,1195,183,1194,183,1216,169,1218)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 953,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,185,1194,191,1194,191,1217,185,1216)"
+              },
+              {
+                "content": "Moonshine",
+                "span": {
+                  "offset": 964,
+                  "length": 9
+                },
+                "confidence": 0.993,
+                "source": "D(1,237,1192,357,1192,357,1220,237,1220)"
+              },
+              {
+                "content": "Still",
+                "span": {
+                  "offset": 974,
+                  "length": 5
+                },
+                "confidence": 0.989,
+                "source": "D(1,366,1192,405,1192,405,1220,366,1220)"
+              },
+              {
+                "content": "8Gal",
+                "span": {
+                  "offset": 980,
+                  "length": 4
+                },
+                "confidence": 0.915,
+                "source": "D(1,414,1192,465,1192,465,1219,414,1220)"
+              },
+              {
+                "content": "/",
+                "span": {
+                  "offset": 984,
+                  "length": 1
+                },
+                "confidence": 0.995,
+                "source": "D(1,465,1192,474,1192,474,1219,465,1219)"
+              },
+              {
+                "content": "30L",
+                "span": {
+                  "offset": 985,
+                  "length": 3
+                },
+                "confidence": 0.976,
+                "source": "D(1,473,1192,514,1192,514,1219,473,1219)"
+              },
+              {
+                "content": "Water",
+                "span": {
+                  "offset": 989,
+                  "length": 5
+                },
+                "confidence": 0.983,
+                "source": "D(1,520,1192,591,1191,591,1218,520,1219)"
+              },
+              {
+                "content": "Alcohol",
+                "span": {
+                  "offset": 995,
+                  "length": 7
+                },
+                "confidence": 0.989,
+                "source": "D(1,237,1219,319,1220,319,1247,237,1247)"
+              },
+              {
+                "content": "Distiller",
+                "span": {
+                  "offset": 1003,
+                  "length": 9
+                },
+                "confidence": 0.994,
+                "source": "D(1,328,1220,412,1221,412,1246,328,1246)"
+              },
+              {
+                "content": "Home",
+                "span": {
+                  "offset": 1013,
+                  "length": 4
+                },
+                "confidence": 0.997,
+                "source": "D(1,420,1221,484,1221,484,1247,420,1246)"
+              },
+              {
+                "content": "Brew",
+                "span": {
+                  "offset": 1018,
+                  "length": 4
+                },
+                "confidence": 0.995,
+                "source": "D(1,492,1221,550,1221,550,1248,492,1247)"
+              },
+              {
+                "content": "Wine",
+                "span": {
+                  "offset": 1023,
+                  "length": 4
+                },
+                "confidence": 0.987,
+                "source": "D(1,237,1248,293,1248,293,1276,237,1276)"
+              },
+              {
+                "content": "Making",
+                "span": {
+                  "offset": 1028,
+                  "length": 6
+                },
+                "confidence": 0.974,
+                "source": "D(1,301,1248,379,1248,379,1276,301,1276)"
+              },
+              {
+                "content": "Kit",
+                "span": {
+                  "offset": 1035,
+                  "length": 3
+                },
+                "confidence": 0.937,
+                "source": "D(1,389,1248,418,1248,418,1276,389,1276)"
+              },
+              {
+                "content": "3",
+                "span": {
+                  "offset": 1039,
+                  "length": 1
+                },
+                "confidence": 0.951,
+                "source": "D(1,425,1248,437,1248,437,1276,425,1276)"
+              },
+              {
+                "content": "Pot",
+                "span": {
+                  "offset": 1041,
+                  "length": 3
+                },
+                "confidence": 0.971,
+                "source": "D(1,447,1248,486,1248,486,1276,447,1276)"
+              },
+              {
+                "content": "3,00",
+                "span": {
+                  "offset": 1054,
+                  "length": 4
+                },
+                "confidence": 0.998,
+                "source": "D(1,672,1192,725,1192,725,1220,672,1220)"
+              },
+              {
+                "content": "each",
+                "span": {
+                  "offset": 1068,
+                  "length": 4
+                },
+                "confidence": 0.999,
+                "source": "D(1,769,1193,827,1193,827,1217,769,1217)"
+              },
+              {
+                "content": "89,99",
+                "span": {
+                  "offset": 1082,
+                  "length": 5
+                },
+                "confidence": 0.977,
+                "source": "D(1,950,1192,1016,1192,1016,1220,950,1220)"
+              },
+              {
+                "content": "269,97",
+                "span": {
+                  "offset": 1097,
+                  "length": 6
+                },
+                "confidence": 0.991,
+                "source": "D(1,1105,1192,1186,1193,1186,1220,1105,1220)"
+              },
+              {
+                "content": "10",
+                "span": {
+                  "offset": 1113,
+                  "length": 2
+                },
+                "confidence": 0.999,
+                "source": "D(1,1281,1194,1308,1193,1308,1218,1281,1219)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 1115,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1309,1193,1331,1194,1331,1219,1309,1218)"
+              },
+              {
+                "content": "296,97",
+                "span": {
+                  "offset": 1126,
+                  "length": 6
+                },
+                "confidence": 0.991,
+                "source": "D(1,1418,1193,1500,1192,1500,1220,1418,1219)"
+              },
+              {
+                "content": "5",
+                "span": {
+                  "offset": 1153,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,169,1310,182,1310,182,1333,169,1333)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 1154,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,184,1310,192,1310,192,1333,184,1333)"
+              },
+              {
+                "content": "4",
+                "span": {
+                  "offset": 1165,
+                  "length": 1
+                },
+                "confidence": 0.995,
+                "source": "D(1,238,1308,251,1308,251,1335,238,1335)"
+              },
+              {
+                "content": "Tupperware",
+                "span": {
+                  "offset": 1167,
+                  "length": 10
+                },
+                "confidence": 0.991,
+                "source": "D(1,258,1308,391,1308,391,1335,258,1335)"
+              },
+              {
+                "content": "Wine",
+                "span": {
+                  "offset": 1178,
+                  "length": 4
+                },
+                "confidence": 0.998,
+                "source": "D(1,398,1308,454,1308,454,1335,398,1335)"
+              },
+              {
+                "content": "Stemless",
+                "span": {
+                  "offset": 1183,
+                  "length": 8
+                },
+                "confidence": 0.996,
+                "source": "D(1,462,1308,567,1309,567,1335,462,1335)"
+              },
+              {
+                "content": "Cups",
+                "span": {
+                  "offset": 1192,
+                  "length": 4
+                },
+                "confidence": 0.994,
+                "source": "D(1,238,1335,293,1335,293,1363,238,1363)"
+              },
+              {
+                "content": "Set",
+                "span": {
+                  "offset": 1197,
+                  "length": 3
+                },
+                "confidence": 0.998,
+                "source": "D(1,301,1335,338,1335,338,1363,301,1363)"
+              },
+              {
+                "content": "Acrylic",
+                "span": {
+                  "offset": 1201,
+                  "length": 7
+                },
+                "confidence": 0.995,
+                "source": "D(1,344,1335,419,1335,419,1363,344,1363)"
+              },
+              {
+                "content": "Plastic",
+                "span": {
+                  "offset": 1209,
+                  "length": 7
+                },
+                "confidence": 0.995,
+                "source": "D(1,427,1335,498,1335,498,1363,427,1363)"
+              },
+              {
+                "content": "Shatter",
+                "span": {
+                  "offset": 1217,
+                  "length": 7
+                },
+                "confidence": 0.998,
+                "source": "D(1,505,1335,590,1335,590,1363,505,1363)"
+              },
+              {
+                "content": "Proof",
+                "span": {
+                  "offset": 1225,
+                  "length": 5
+                },
+                "confidence": 0.993,
+                "source": "D(1,237,1364,297,1364,297,1391,237,1391)"
+              },
+              {
+                "content": "Beverages",
+                "span": {
+                  "offset": 1231,
+                  "length": 9
+                },
+                "confidence": 0.993,
+                "source": "D(1,304,1364,421,1364,421,1392,304,1391)"
+              },
+              {
+                "content": "New",
+                "span": {
+                  "offset": 1241,
+                  "length": 3
+                },
+                "confidence": 0.997,
+                "source": "D(1,429,1364,480,1365,480,1392,429,1392)"
+              },
+              {
+                "content": "2,00",
+                "span": {
+                  "offset": 1254,
+                  "length": 4
+                },
+                "confidence": 0.996,
+                "source": "D(1,672,1309,724,1309,724,1334,672,1334)"
+              },
+              {
+                "content": "each",
+                "span": {
+                  "offset": 1268,
+                  "length": 4
+                },
+                "confidence": 0.999,
+                "source": "D(1,769,1309,827,1309,827,1333,769,1333)"
+              },
+              {
+                "content": "34,99",
+                "span": {
+                  "offset": 1282,
+                  "length": 5
+                },
+                "confidence": 0.987,
+                "source": "D(1,950,1309,1016,1309,1016,1334,950,1334)"
+              },
+              {
+                "content": "69,98",
+                "span": {
+                  "offset": 1297,
+                  "length": 5
+                },
+                "confidence": 0.989,
+                "source": "D(1,1119,1309,1186,1309,1186,1334,1119,1334)"
+              },
+              {
+                "content": "10",
+                "span": {
+                  "offset": 1312,
+                  "length": 2
+                },
+                "confidence": 0.999,
+                "source": "D(1,1279,1308,1308,1309,1308,1334,1279,1333)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 1314,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1308,1309,1331,1309,1331,1334,1308,1334)"
+              },
+              {
+                "content": "76,98",
+                "span": {
+                  "offset": 1325,
+                  "length": 5
+                },
+                "confidence": 0.994,
+                "source": "D(1,1434,1309,1501,1309,1501,1334,1434,1334)"
+              },
+              {
+                "content": "SUMMARY",
+                "span": {
+                  "offset": 1355,
+                  "length": 7
+                },
+                "confidence": 0.992,
+                "source": "D(1,131,1454,328,1453,328,1488,131,1488)"
+              },
+              {
+                "content": "VAT",
+                "span": {
+                  "offset": 1382,
+                  "length": 3
+                },
+                "confidence": 0.996,
+                "source": "D(1,639,1539,693,1540,693,1569,639,1569)"
+              },
+              {
+                "content": "[",
+                "span": {
+                  "offset": 1386,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,700,1540,709,1540,709,1569,700,1569)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 1387,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,709,1540,732,1540,732,1569,709,1569)"
+              },
+              {
+                "content": "]",
+                "span": {
+                  "offset": 1388,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,731,1540,744,1541,744,1569,731,1569)"
+              },
+              {
+                "content": "Net",
+                "span": {
+                  "offset": 1399,
+                  "length": 3
+                },
+                "confidence": 0.997,
+                "source": "D(1,927,1541,973,1541,973,1566,927,1566)"
+              },
+              {
+                "content": "worth",
+                "span": {
+                  "offset": 1403,
+                  "length": 5
+                },
+                "confidence": 0.995,
+                "source": "D(1,979,1541,1056,1541,1056,1566,979,1566)"
+              },
+              {
+                "content": "VAT",
+                "span": {
+                  "offset": 1418,
+                  "length": 3
+                },
+                "confidence": 0.945,
+                "source": "D(1,1187,1541,1241,1541,1241,1566,1187,1566)"
+              },
+              {
+                "content": "Gross",
+                "span": {
+                  "offset": 1431,
+                  "length": 5
+                },
+                "confidence": 0.999,
+                "source": "D(1,1350,1542,1422,1542,1422,1567,1350,1567)"
+              },
+              {
+                "content": "worth",
+                "span": {
+                  "offset": 1437,
+                  "length": 5
+                },
+                "confidence": 0.998,
+                "source": "D(1,1429,1542,1504,1543,1504,1568,1429,1567)"
+              },
+              {
+                "content": "10",
+                "span": {
+                  "offset": 1463,
+                  "length": 2
+                },
+                "confidence": 0.999,
+                "source": "D(1,666,1600,695,1600,695,1625,666,1625)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 1465,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,695,1600,719,1600,719,1625,695,1625)"
+              },
+              {
+                "content": "401,88",
+                "span": {
+                  "offset": 1476,
+                  "length": 6
+                },
+                "confidence": 0.988,
+                "source": "D(1,975,1600,1056,1601,1056,1627,975,1625)"
+              },
+              {
+                "content": "40,19",
+                "span": {
+                  "offset": 1492,
+                  "length": 5
+                },
+                "confidence": 0.987,
+                "source": "D(1,1174,1600,1240,1601,1240,1627,1174,1625)"
+              },
+              {
+                "content": "442,07",
+                "span": {
+                  "offset": 1507,
+                  "length": 6
+                },
+                "confidence": 0.993,
+                "source": "D(1,1423,1601,1504,1602,1504,1627,1423,1626)"
+              },
+              {
+                "content": "Total",
+                "span": {
+                  "offset": 1534,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,500,1660,569,1660,569,1685,500,1685)"
+              },
+              {
+                "content": "$",
+                "span": {
+                  "offset": 1549,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,943,1660,958,1659,958,1686,943,1686)"
+              },
+              {
+                "content": "401,88",
+                "span": {
+                  "offset": 1551,
+                  "length": 6
+                },
+                "confidence": 0.979,
+                "source": "D(1,966,1659,1056,1660,1056,1687,966,1686)"
+              },
+              {
+                "content": "$",
+                "span": {
+                  "offset": 1567,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1144,1660,1158,1660,1158,1687,1144,1687)"
+              },
+              {
+                "content": "40,19",
+                "span": {
+                  "offset": 1569,
+                  "length": 5
+                },
+                "confidence": 0.981,
+                "source": "D(1,1167,1660,1240,1660,1240,1687,1167,1686)"
+              },
+              {
+                "content": "$",
+                "span": {
+                  "offset": 1584,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1392,1660,1407,1660,1407,1686,1392,1685)"
+              },
+              {
+                "content": "442,07",
+                "span": {
+                  "offset": 1586,
+                  "length": 6
+                },
+                "confidence": 0.979,
+                "source": "D(1,1414,1660,1505,1660,1505,1687,1414,1686)"
+              }
+            ],
+            "lines": [
+              {
+                "content": "Invoice no: 98858130",
+                "source": "D(1,131,72,538,71,538,107,131,108)",
+                "span": {
+                  "offset": 0,
+                  "length": 20
+                }
+              },
+              {
+                "content": "Date of issue:",
+                "source": "D(1,131,141,345,141,345,174,131,173)",
+                "span": {
+                  "offset": 22,
+                  "length": 14
+                }
+              },
+              {
+                "content": "01/28/2021",
+                "source": "D(1,800,140,979,140,979,175,800,175)",
+                "span": {
+                  "offset": 38,
+                  "length": 10
+                }
+              },
+              {
+                "content": "Seller:",
+                "source": "D(1,131,443,255,443,255,477,131,476)",
+                "span": {
+                  "offset": 50,
+                  "length": 7
+                }
+              },
+              {
+                "content": "Dominguez, Jackson and Steele",
+                "source": "D(1,140,506,581,505,582,539,140,540)",
+                "span": {
+                  "offset": 58,
+                  "length": 29
+                }
+              },
+              {
+                "content": "98309 Stephanie Stream",
+                "source": "D(1,140,541,490,542,490,575,140,574)",
+                "span": {
+                  "offset": 88,
+                  "length": 22
+                }
+              },
+              {
+                "content": "Michaelbury, RI 57219",
+                "source": "D(1,140,577,454,577,454,610,140,610)",
+                "span": {
+                  "offset": 111,
+                  "length": 21
+                }
+              },
+              {
+                "content": "Tax Id: 969-72-5121",
+                "source": "D(1,138,649,424,647,424,679,139,681)",
+                "span": {
+                  "offset": 134,
+                  "length": 19
+                }
+              },
+              {
+                "content": "IBAN: GB21OJGQ49248059733020",
+                "source": "D(1,139,683,625,682,625,716,139,716)",
+                "span": {
+                  "offset": 155,
+                  "length": 28
+                }
+              },
+              {
+                "content": "Client:",
+                "source": "D(1,824,442,950,442,950,477,824,477)",
+                "span": {
+                  "offset": 185,
+                  "length": 7
+                }
+              },
+              {
+                "content": "Rodriguez, Hall and Tanner",
+                "source": "D(1,833,505,1215,504,1216,539,833,540)",
+                "span": {
+                  "offset": 193,
+                  "length": 26
+                }
+              },
+              {
+                "content": "PSC 6611, Box 2668",
+                "source": "D(1,833,541,1118,541,1118,573,833,573)",
+                "span": {
+                  "offset": 220,
+                  "length": 18
+                }
+              },
+              {
+                "content": "APO AP 07491",
+                "source": "D(1,831,577,1033,577,1033,608,831,608)",
+                "span": {
+                  "offset": 239,
+                  "length": 12
+                }
+              },
+              {
+                "content": "Tax Id: 941-88-5692",
+                "source": "D(1,830,648,1118,648,1118,679,830,679)",
+                "span": {
+                  "offset": 253,
+                  "length": 19
+                }
+              },
+              {
+                "content": "ITEMS",
+                "source": "D(1,131,759,248,759,248,792,131,793)",
+                "span": {
+                  "offset": 277,
+                  "length": 5
+                }
+              },
+              {
+                "content": "No.",
+                "source": "D(1,157,847,202,846,202,870,158,871)",
+                "span": {
+                  "offset": 302,
+                  "length": 3
+                }
+              },
+              {
+                "content": "Description",
+                "source": "D(1,238,845,385,847,385,873,237,871)",
+                "span": {
+                  "offset": 315,
+                  "length": 11
+                }
+              },
+              {
+                "content": "Qty",
+                "source": "D(1,677,846,726,846,726,873,677,873)",
+                "span": {
+                  "offset": 336,
+                  "length": 3
+                }
+              },
+              {
+                "content": "UM",
+                "source": "D(1,776,845,821,845,821,870,776,870)",
+                "span": {
+                  "offset": 349,
+                  "length": 2
+                }
+              },
+              {
+                "content": "Net price",
+                "source": "D(1,898,844,1018,845,1018,873,898,872)",
+                "span": {
+                  "offset": 361,
+                  "length": 9
+                }
+              },
+              {
+                "content": "Net worth",
+                "source": "D(1,1057,845,1186,845,1186,871,1057,871)",
+                "span": {
+                  "offset": 380,
+                  "length": 9
+                }
+              },
+              {
+                "content": "VAT [%]",
+                "source": "D(1,1227,844,1332,845,1332,873,1226,872)",
+                "span": {
+                  "offset": 399,
+                  "length": 7
+                }
+              },
+              {
+                "content": "Gross",
+                "source": "D(1,1428,846,1502,847,1501,871,1428,870)",
+                "span": {
+                  "offset": 416,
+                  "length": 5
+                }
+              },
+              {
+                "content": "worth",
+                "source": "D(1,1425,874,1501,874,1501,897,1425,897)",
+                "span": {
+                  "offset": 422,
+                  "length": 5
+                }
+              },
+              {
+                "content": "1.",
+                "source": "D(1,169,933,192,933,192,957,169,957)",
+                "span": {
+                  "offset": 448,
+                  "length": 2
+                }
+              },
+              {
+                "content": "Wine Glasses Set Of 4",
+                "source": "D(1,237,932,487,931,487,959,237,959)",
+                "span": {
+                  "offset": 460,
+                  "length": 21
+                }
+              },
+              {
+                "content": "2,00",
+                "source": "D(1,672,933,725,933,725,959,672,959)",
+                "span": {
+                  "offset": 491,
+                  "length": 4
+                }
+              },
+              {
+                "content": "each",
+                "source": "D(1,769,934,827,934,827,958,769,958)",
+                "span": {
+                  "offset": 505,
+                  "length": 4
+                }
+              },
+              {
+                "content": "6,00",
+                "source": "D(1,964,932,1016,932,1016,959,964,959)",
+                "span": {
+                  "offset": 519,
+                  "length": 4
+                }
+              },
+              {
+                "content": "12,00",
+                "source": "D(1,1119,933,1185,932,1185,960,1119,960)",
+                "span": {
+                  "offset": 533,
+                  "length": 5
+                }
+              },
+              {
+                "content": "10%",
+                "source": "D(1,1280,932,1332,933,1332,959,1280,958)",
+                "span": {
+                  "offset": 548,
+                  "length": 3
+                }
+              },
+              {
+                "content": "13,20",
+                "source": "D(1,1435,933,1501,933,1501,958,1435,958)",
+                "span": {
+                  "offset": 561,
+                  "length": 5
+                }
+              },
+              {
+                "content": "2.",
+                "source": "D(1,169,991,191,991,191,1015,169,1015)",
+                "span": {
+                  "offset": 587,
+                  "length": 2
+                }
+              },
+              {
+                "content": "Uncork New York rolling",
+                "source": "D(1,237,990,507,991,507,1019,237,1018)",
+                "span": {
+                  "offset": 599,
+                  "length": 23
+                }
+              },
+              {
+                "content": "vineryards Wine glass set of 2",
+                "source": "D(1,237,1019,577,1017,577,1047,237,1049)",
+                "span": {
+                  "offset": 623,
+                  "length": 30
+                }
+              },
+              {
+                "content": "5,00",
+                "source": "D(1,671,992,725,990,725,1016,672,1018)",
+                "span": {
+                  "offset": 663,
+                  "length": 4
+                }
+              },
+              {
+                "content": "each",
+                "source": "D(1,770,992,826,992,826,1017,770,1017)",
+                "span": {
+                  "offset": 677,
+                  "length": 4
+                }
+              },
+              {
+                "content": "5,99",
+                "source": "D(1,964,992,1016,992,1016,1018,964,1018)",
+                "span": {
+                  "offset": 691,
+                  "length": 4
+                }
+              },
+              {
+                "content": "29,95",
+                "source": "D(1,1119,989,1185,992,1185,1018,1118,1016)",
+                "span": {
+                  "offset": 705,
+                  "length": 5
+                }
+              },
+              {
+                "content": "10%",
+                "source": "D(1,1281,990,1331,990,1331,1015,1281,1015)",
+                "span": {
+                  "offset": 720,
+                  "length": 3
+                }
+              },
+              {
+                "content": "32,95",
+                "source": "D(1,1434,991,1501,991,1501,1018,1434,1018)",
+                "span": {
+                  "offset": 733,
+                  "length": 5
+                }
+              },
+              {
+                "content": "3.",
+                "source": "D(1,169,1078,192,1078,192,1102,169,1102)",
+                "span": {
+                  "offset": 759,
+                  "length": 2
+                }
+              },
+              {
+                "content": "Anthropologie Gold Elegant",
+                "source": "D(1,237,1078,548,1078,548,1106,237,1106)",
+                "span": {
+                  "offset": 771,
+                  "length": 26
+                }
+              },
+              {
+                "content": "Swan Decorative Metal Bottle",
+                "source": "D(1,238,1106,572,1106,572,1132,238,1132)",
+                "span": {
+                  "offset": 798,
+                  "length": 28
+                }
+              },
+              {
+                "content": "Stopper Wine Saver",
+                "source": "D(1,238,1133,463,1134,463,1161,238,1161)",
+                "span": {
+                  "offset": 827,
+                  "length": 18
+                }
+              },
+              {
+                "content": "1,00",
+                "source": "D(1,674,1079,725,1079,725,1104,674,1104)",
+                "span": {
+                  "offset": 855,
+                  "length": 4
+                }
+              },
+              {
+                "content": "each",
+                "source": "D(1,769,1080,827,1079,827,1104,769,1105)",
+                "span": {
+                  "offset": 869,
+                  "length": 4
+                }
+              },
+              {
+                "content": "19,98",
+                "source": "D(1,951,1077,1016,1077,1016,1103,951,1103)",
+                "span": {
+                  "offset": 883,
+                  "length": 5
+                }
+              },
+              {
+                "content": "19,98",
+                "source": "D(1,1119,1076,1185,1079,1185,1105,1119,1103)",
+                "span": {
+                  "offset": 898,
+                  "length": 5
+                }
+              },
+              {
+                "content": "10%",
+                "source": "D(1,1279,1077,1331,1077,1331,1102,1279,1102)",
+                "span": {
+                  "offset": 913,
+                  "length": 3
+                }
+              },
+              {
+                "content": "21,98",
+                "source": "D(1,1434,1078,1501,1079,1501,1105,1433,1104)",
+                "span": {
+                  "offset": 926,
+                  "length": 5
+                }
+              },
+              {
+                "content": "4.",
+                "source": "D(1,169,1193,191,1193,191,1218,169,1218)",
+                "span": {
+                  "offset": 952,
+                  "length": 2
+                }
+              },
+              {
+                "content": "Moonshine Still 8Gal/30L Water",
+                "source": "D(1,237,1192,591,1191,591,1219,237,1220)",
+                "span": {
+                  "offset": 964,
+                  "length": 30
+                }
+              },
+              {
+                "content": "Alcohol Distiller Home Brew",
+                "source": "D(1,237,1219,550,1220,550,1248,237,1247)",
+                "span": {
+                  "offset": 995,
+                  "length": 27
+                }
+              },
+              {
+                "content": "Wine Making Kit 3 Pot",
+                "source": "D(1,237,1248,486,1248,486,1276,237,1276)",
+                "span": {
+                  "offset": 1023,
+                  "length": 21
+                }
+              },
+              {
+                "content": "3,00",
+                "source": "D(1,672,1192,725,1192,725,1220,672,1220)",
+                "span": {
+                  "offset": 1054,
+                  "length": 4
+                }
+              },
+              {
+                "content": "each",
+                "source": "D(1,769,1193,827,1193,827,1217,769,1217)",
+                "span": {
+                  "offset": 1068,
+                  "length": 4
+                }
+              },
+              {
+                "content": "89,99",
+                "source": "D(1,950,1192,1016,1192,1016,1220,950,1220)",
+                "span": {
+                  "offset": 1082,
+                  "length": 5
+                }
+              },
+              {
+                "content": "269,97",
+                "source": "D(1,1105,1192,1186,1192,1186,1220,1105,1220)",
+                "span": {
+                  "offset": 1097,
+                  "length": 6
+                }
+              },
+              {
+                "content": "10%",
+                "source": "D(1,1281,1193,1331,1193,1331,1219,1281,1219)",
+                "span": {
+                  "offset": 1113,
+                  "length": 3
+                }
+              },
+              {
+                "content": "296,97",
+                "source": "D(1,1418,1192,1500,1192,1500,1220,1418,1220)",
+                "span": {
+                  "offset": 1126,
+                  "length": 6
+                }
+              },
+              {
+                "content": "5.",
+                "source": "D(1,169,1310,192,1310,192,1333,169,1333)",
+                "span": {
+                  "offset": 1153,
+                  "length": 2
+                }
+              },
+              {
+                "content": "4 Tupperware Wine Stemless",
+                "source": "D(1,238,1308,567,1308,567,1335,238,1335)",
+                "span": {
+                  "offset": 1165,
+                  "length": 26
+                }
+              },
+              {
+                "content": "Cups Set Acrylic Plastic Shatter",
+                "source": "D(1,238,1335,590,1335,590,1363,238,1363)",
+                "span": {
+                  "offset": 1192,
+                  "length": 32
+                }
+              },
+              {
+                "content": "Proof Beverages New",
+                "source": "D(1,237,1363,480,1364,480,1392,237,1391)",
+                "span": {
+                  "offset": 1225,
+                  "length": 19
+                }
+              },
+              {
+                "content": "2,00",
+                "source": "D(1,672,1309,724,1309,724,1334,672,1334)",
+                "span": {
+                  "offset": 1254,
+                  "length": 4
+                }
+              },
+              {
+                "content": "each",
+                "source": "D(1,769,1309,827,1309,827,1333,769,1333)",
+                "span": {
+                  "offset": 1268,
+                  "length": 4
+                }
+              },
+              {
+                "content": "34,99",
+                "source": "D(1,950,1309,1016,1309,1016,1334,950,1334)",
+                "span": {
+                  "offset": 1282,
+                  "length": 5
+                }
+              },
+              {
+                "content": "69,98",
+                "source": "D(1,1119,1309,1186,1309,1186,1334,1119,1334)",
+                "span": {
+                  "offset": 1297,
+                  "length": 5
+                }
+              },
+              {
+                "content": "10%",
+                "source": "D(1,1279,1308,1331,1309,1331,1334,1279,1333)",
+                "span": {
+                  "offset": 1312,
+                  "length": 3
+                }
+              },
+              {
+                "content": "76,98",
+                "source": "D(1,1434,1309,1501,1309,1501,1334,1434,1334)",
+                "span": {
+                  "offset": 1325,
+                  "length": 5
+                }
+              },
+              {
+                "content": "SUMMARY",
+                "source": "D(1,131,1454,328,1453,328,1489,131,1489)",
+                "span": {
+                  "offset": 1355,
+                  "length": 7
+                }
+              },
+              {
+                "content": "VAT [%]",
+                "source": "D(1,639,1539,744,1539,744,1569,639,1569)",
+                "span": {
+                  "offset": 1382,
+                  "length": 7
+                }
+              },
+              {
+                "content": "Net worth",
+                "source": "D(1,927,1541,1056,1541,1056,1566,927,1566)",
+                "span": {
+                  "offset": 1399,
+                  "length": 9
+                }
+              },
+              {
+                "content": "VAT",
+                "source": "D(1,1187,1541,1241,1541,1241,1566,1187,1566)",
+                "span": {
+                  "offset": 1418,
+                  "length": 3
+                }
+              },
+              {
+                "content": "Gross worth",
+                "source": "D(1,1350,1541,1504,1542,1504,1568,1349,1567)",
+                "span": {
+                  "offset": 1431,
+                  "length": 11
+                }
+              },
+              {
+                "content": "10%",
+                "source": "D(1,666,1600,719,1600,719,1625,666,1625)",
+                "span": {
+                  "offset": 1463,
+                  "length": 3
+                }
+              },
+              {
+                "content": "401,88",
+                "source": "D(1,975,1600,1056,1601,1056,1627,974,1625)",
+                "span": {
+                  "offset": 1476,
+                  "length": 6
+                }
+              },
+              {
+                "content": "40,19",
+                "source": "D(1,1174,1600,1240,1601,1240,1627,1174,1625)",
+                "span": {
+                  "offset": 1492,
+                  "length": 5
+                }
+              },
+              {
+                "content": "442,07",
+                "source": "D(1,1423,1600,1504,1601,1504,1627,1423,1626)",
+                "span": {
+                  "offset": 1507,
+                  "length": 6
+                }
+              },
+              {
+                "content": "Total",
+                "source": "D(1,500,1659,569,1659,569,1685,500,1685)",
+                "span": {
+                  "offset": 1534,
+                  "length": 5
+                }
+              },
+              {
+                "content": "$ 401,88",
+                "source": "D(1,943,1659,1057,1659,1056,1687,943,1686)",
+                "span": {
+                  "offset": 1549,
+                  "length": 8
+                }
+              },
+              {
+                "content": "$ 40,19",
+                "source": "D(1,1144,1659,1241,1659,1240,1687,1144,1687)",
+                "span": {
+                  "offset": 1567,
+                  "length": 7
+                }
+              },
+              {
+                "content": "$ 442,07",
+                "source": "D(1,1392,1659,1505,1660,1505,1687,1391,1687)",
+                "span": {
+                  "offset": 1584,
+                  "length": 8
+                }
+              }
+            ]
+          }
+        ],
+        "paragraphs": [
+          {
+            "content": "Invoice no: 98858130",
+            "source": "D(1,131,72,538,71,538,107,131,108)",
+            "span": {
+              "offset": 0,
+              "length": 20
+            }
+          },
+          {
+            "content": "Date of issue:",
+            "source": "D(1,131,141,345,141,345,174,131,173)",
+            "span": {
+              "offset": 22,
+              "length": 14
+            }
+          },
+          {
+            "content": "01/28/2021",
+            "source": "D(1,800,140,979,140,979,175,800,175)",
+            "span": {
+              "offset": 38,
+              "length": 10
+            }
+          },
+          {
+            "content": "Seller: Dominguez, Jackson and Steele 98309 Stephanie Stream Michaelbury, RI 57219",
+            "source": "D(1,131,443,582,443,582,610,131,610)",
+            "span": {
+              "offset": 50,
+              "length": 82
+            }
+          },
+          {
+            "content": "Tax Id: 969-72-5121",
+            "source": "D(1,138,649,424,647,424,679,139,681)",
+            "span": {
+              "offset": 134,
+              "length": 19
+            }
+          },
+          {
+            "content": "IBAN: GB21OJGQ49248059733020",
+            "source": "D(1,139,683,625,682,625,716,139,716)",
+            "span": {
+              "offset": 155,
+              "length": 28
+            }
+          },
+          {
+            "content": "Client: Rodriguez, Hall and Tanner PSC 6611, Box 2668 APO AP 07491",
+            "source": "D(1,824,442,1216,442,1215,608,824,608)",
+            "span": {
+              "offset": 185,
+              "length": 66
+            }
+          },
+          {
+            "content": "Tax Id: 941-88-5692",
+            "source": "D(1,830,648,1118,648,1118,679,830,679)",
+            "span": {
+              "offset": 253,
+              "length": 19
+            }
+          },
+          {
+            "role": "sectionHeading",
+            "content": "ITEMS",
+            "source": "D(1,131,759,248,759,248,792,131,793)",
+            "span": {
+              "offset": 275,
+              "length": 7
+            }
+          },
+          {
+            "content": "No.",
+            "source": "D(1,157,847,202,846,202,870,158,870)",
+            "span": {
+              "offset": 302,
+              "length": 3
+            }
+          },
+          {
+            "content": "Description",
+            "source": "D(1,238,845,385,847,385,873,237,871)",
+            "span": {
+              "offset": 315,
+              "length": 11
+            }
+          },
+          {
+            "content": "Qty",
+            "source": "D(1,677,846,726,846,726,873,677,873)",
+            "span": {
+              "offset": 336,
+              "length": 3
+            }
+          },
+          {
+            "content": "UM",
+            "source": "D(1,776,846,821,846,821,870,776,870)",
+            "span": {
+              "offset": 349,
+              "length": 2
+            }
+          },
+          {
+            "content": "Net price",
+            "source": "D(1,898,843,1018,845,1018,874,898,871)",
+            "span": {
+              "offset": 361,
+              "length": 9
+            }
+          },
+          {
+            "content": "Net worth",
+            "source": "D(1,1057,844,1186,845,1186,872,1057,870)",
+            "span": {
+              "offset": 380,
+              "length": 9
+            }
+          },
+          {
+            "content": "VAT [%]",
+            "source": "D(1,1227,844,1332,845,1332,873,1226,872)",
+            "span": {
+              "offset": 399,
+              "length": 7
+            }
+          },
+          {
+            "content": "Gross worth",
+            "source": "D(1,1425,848,1502,849,1501,898,1424,897)",
+            "span": {
+              "offset": 416,
+              "length": 11
+            }
+          },
+          {
+            "content": "1.",
+            "source": "D(1,169,933,192,933,192,957,169,957)",
+            "span": {
+              "offset": 448,
+              "length": 2
+            }
+          },
+          {
+            "content": "Wine Glasses Set Of 4",
+            "source": "D(1,237,932,487,930,487,958,237,960)",
+            "span": {
+              "offset": 460,
+              "length": 21
+            }
+          },
+          {
+            "content": "2,00",
+            "source": "D(1,672,933,725,933,725,958,672,958)",
+            "span": {
+              "offset": 491,
+              "length": 4
+            }
+          },
+          {
+            "content": "each",
+            "source": "D(1,769,934,827,934,827,958,769,958)",
+            "span": {
+              "offset": 505,
+              "length": 4
+            }
+          },
+          {
+            "content": "6,00",
+            "source": "D(1,964,932,1016,932,1016,959,964,959)",
+            "span": {
+              "offset": 519,
+              "length": 4
+            }
+          },
+          {
+            "content": "12,00",
+            "source": "D(1,1119,933,1185,933,1185,960,1119,960)",
+            "span": {
+              "offset": 533,
+              "length": 5
+            }
+          },
+          {
+            "content": "10%",
+            "source": "D(1,1280,932,1333,933,1332,959,1279,958)",
+            "span": {
+              "offset": 548,
+              "length": 3
+            }
+          },
+          {
+            "content": "13,20",
+            "source": "D(1,1435,933,1501,933,1501,958,1435,958)",
+            "span": {
+              "offset": 561,
+              "length": 5
+            }
+          },
+          {
+            "content": "2.",
+            "source": "D(1,169,991,191,991,191,1015,168,1015)",
+            "span": {
+              "offset": 587,
+              "length": 2
+            }
+          },
+          {
+            "content": "Uncork New York rolling vineryards Wine glass set of 2",
+            "source": "D(1,237,990,577,991,577,1050,237,1049)",
+            "span": {
+              "offset": 599,
+              "length": 54
+            }
+          },
+          {
+            "content": "5,00",
+            "source": "D(1,671,992,725,990,726,1016,672,1018)",
+            "span": {
+              "offset": 663,
+              "length": 4
+            }
+          },
+          {
+            "content": "each",
+            "source": "D(1,770,992,826,993,826,1017,770,1017)",
+            "span": {
+              "offset": 677,
+              "length": 4
+            }
+          },
+          {
+            "content": "5,99",
+            "source": "D(1,964,992,1016,992,1016,1018,964,1018)",
+            "span": {
+              "offset": 691,
+              "length": 4
+            }
+          },
+          {
+            "content": "29,95",
+            "source": "D(1,1119,989,1186,992,1185,1018,1118,1016)",
+            "span": {
+              "offset": 705,
+              "length": 5
+            }
+          },
+          {
+            "content": "10%",
+            "source": "D(1,1281,990,1331,990,1331,1016,1281,1015)",
+            "span": {
+              "offset": 720,
+              "length": 3
+            }
+          },
+          {
+            "content": "32,95",
+            "source": "D(1,1434,991,1501,991,1501,1018,1434,1018)",
+            "span": {
+              "offset": 733,
+              "length": 5
+            }
+          },
+          {
+            "content": "3.",
+            "source": "D(1,169,1078,192,1078,192,1102,169,1102)",
+            "span": {
+              "offset": 759,
+              "length": 2
+            }
+          },
+          {
+            "content": "Anthropologie Gold Elegant Swan Decorative Metal Bottle Stopper Wine Saver",
+            "source": "D(1,237,1078,572,1078,572,1161,237,1161)",
+            "span": {
+              "offset": 771,
+              "length": 74
+            }
+          },
+          {
+            "content": "1,00",
+            "source": "D(1,674,1079,725,1079,725,1104,674,1104)",
+            "span": {
+              "offset": 855,
+              "length": 4
+            }
+          },
+          {
+            "content": "each",
+            "source": "D(1,769,1080,827,1080,827,1104,769,1105)",
+            "span": {
+              "offset": 869,
+              "length": 4
+            }
+          },
+          {
+            "content": "19,98",
+            "source": "D(1,951,1077,1016,1077,1016,1103,951,1103)",
+            "span": {
+              "offset": 883,
+              "length": 5
+            }
+          },
+          {
+            "content": "19,98",
+            "source": "D(1,1119,1076,1186,1079,1185,1105,1118,1102)",
+            "span": {
+              "offset": 898,
+              "length": 5
+            }
+          },
+          {
+            "content": "10%",
+            "source": "D(1,1279,1077,1331,1077,1331,1102,1279,1102)",
+            "span": {
+              "offset": 913,
+              "length": 3
+            }
+          },
+          {
+            "content": "21,98",
+            "source": "D(1,1434,1078,1501,1079,1501,1104,1433,1104)",
+            "span": {
+              "offset": 926,
+              "length": 5
+            }
+          },
+          {
+            "content": "4.",
+            "source": "D(1,169,1192,194,1195,191,1221,166,1217)",
+            "span": {
+              "offset": 952,
+              "length": 2
+            }
+          },
+          {
+            "content": "Moonshine Still 8Gal/30L Water Alcohol Distiller Home Brew Wine Making Kit 3 Pot",
+            "source": "D(1,237,1191,591,1191,591,1276,237,1276)",
+            "span": {
+              "offset": 964,
+              "length": 80
+            }
+          },
+          {
+            "content": "3,00",
+            "source": "D(1,672,1192,725,1192,725,1220,672,1220)",
+            "span": {
+              "offset": 1054,
+              "length": 4
+            }
+          },
+          {
+            "content": "each",
+            "source": "D(1,769,1193,827,1193,827,1217,769,1217)",
+            "span": {
+              "offset": 1068,
+              "length": 4
+            }
+          },
+          {
+            "content": "89,99",
+            "source": "D(1,950,1192,1016,1192,1016,1220,950,1220)",
+            "span": {
+              "offset": 1082,
+              "length": 5
+            }
+          },
+          {
+            "content": "269,97",
+            "source": "D(1,1105,1192,1186,1193,1186,1220,1105,1220)",
+            "span": {
+              "offset": 1097,
+              "length": 6
+            }
+          },
+          {
+            "content": "10%",
+            "source": "D(1,1281,1192,1332,1194,1331,1220,1280,1219)",
+            "span": {
+              "offset": 1113,
+              "length": 3
+            }
+          },
+          {
+            "content": "296,97",
+            "source": "D(1,1418,1192,1500,1192,1500,1220,1418,1220)",
+            "span": {
+              "offset": 1126,
+              "length": 6
+            }
+          },
+          {
+            "content": "5.",
+            "source": "D(1,169,1310,192,1310,192,1333,169,1333)",
+            "span": {
+              "offset": 1153,
+              "length": 2
+            }
+          },
+          {
+            "content": "4 Tupperware Wine Stemless Cups Set Acrylic Plastic Shatter Proof Beverages New",
+            "source": "D(1,237,1308,590,1308,590,1392,237,1392)",
+            "span": {
+              "offset": 1165,
+              "length": 79
+            }
+          },
+          {
+            "content": "2,00",
+            "source": "D(1,672,1309,724,1309,724,1334,672,1334)",
+            "span": {
+              "offset": 1254,
+              "length": 4
+            }
+          },
+          {
+            "content": "each",
+            "source": "D(1,769,1309,827,1309,827,1333,769,1333)",
+            "span": {
+              "offset": 1268,
+              "length": 4
+            }
+          },
+          {
+            "content": "34,99",
+            "source": "D(1,950,1309,1016,1309,1016,1334,950,1334)",
+            "span": {
+              "offset": 1282,
+              "length": 5
+            }
+          },
+          {
+            "content": "69,98",
+            "source": "D(1,1119,1309,1186,1309,1186,1334,1119,1334)",
+            "span": {
+              "offset": 1297,
+              "length": 5
+            }
+          },
+          {
+            "content": "10%",
+            "source": "D(1,1279,1307,1332,1309,1331,1335,1278,1333)",
+            "span": {
+              "offset": 1312,
+              "length": 3
+            }
+          },
+          {
+            "content": "76,98",
+            "source": "D(1,1434,1309,1501,1309,1501,1334,1434,1334)",
+            "span": {
+              "offset": 1325,
+              "length": 5
+            }
+          },
+          {
+            "role": "sectionHeading",
+            "content": "SUMMARY",
+            "source": "D(1,131,1454,328,1453,328,1489,131,1489)",
+            "span": {
+              "offset": 1353,
+              "length": 9
+            }
+          },
+          {
+            "content": "VAT [%]",
+            "source": "D(1,639,1539,744,1540,744,1570,639,1569)",
+            "span": {
+              "offset": 1382,
+              "length": 7
+            }
+          },
+          {
+            "content": "Net worth",
+            "source": "D(1,927,1541,1056,1541,1056,1566,927,1566)",
+            "span": {
+              "offset": 1399,
+              "length": 9
+            }
+          },
+          {
+            "content": "VAT",
+            "source": "D(1,1187,1541,1241,1541,1241,1566,1187,1566)",
+            "span": {
+              "offset": 1418,
+              "length": 3
+            }
+          },
+          {
+            "content": "Gross worth",
+            "source": "D(1,1350,1541,1504,1543,1504,1569,1349,1567)",
+            "span": {
+              "offset": 1431,
+              "length": 11
+            }
+          },
+          {
+            "content": "10%",
+            "source": "D(1,666,1600,719,1600,719,1625,666,1625)",
+            "span": {
+              "offset": 1463,
+              "length": 3
+            }
+          },
+          {
+            "content": "401,88",
+            "source": "D(1,975,1600,1056,1601,1056,1627,974,1625)",
+            "span": {
+              "offset": 1476,
+              "length": 6
+            }
+          },
+          {
+            "content": "40,19",
+            "source": "D(1,1174,1600,1240,1601,1240,1627,1174,1625)",
+            "span": {
+              "offset": 1492,
+              "length": 5
+            }
+          },
+          {
+            "content": "442,07",
+            "source": "D(1,1423,1601,1504,1602,1504,1627,1423,1627)",
+            "span": {
+              "offset": 1507,
+              "length": 6
+            }
+          },
+          {
+            "content": "Total",
+            "source": "D(1,500,1660,569,1660,569,1685,500,1685)",
+            "span": {
+              "offset": 1534,
+              "length": 5
+            }
+          },
+          {
+            "content": "$ 401,88",
+            "source": "D(1,943,1659,1056,1660,1056,1687,943,1686)",
+            "span": {
+              "offset": 1549,
+              "length": 8
+            }
+          },
+          {
+            "content": "$ 40,19",
+            "source": "D(1,1144,1659,1241,1660,1240,1687,1144,1687)",
+            "span": {
+              "offset": 1567,
+              "length": 7
+            }
+          },
+          {
+            "content": "$ 442,07",
+            "source": "D(1,1392,1659,1505,1660,1505,1687,1391,1686)",
+            "span": {
+              "offset": 1584,
+              "length": 8
+            }
+          }
+        ],
+        "sections": [
+          {
+            "span": {
+              "offset": 0,
+              "length": 1612
+            },
+            "elements": [
+              "/sections/1",
+              "/sections/2",
+              "/sections/3"
+            ]
+          },
+          {
+            "span": {
+              "offset": 0,
+              "length": 272
+            },
+            "elements": [
+              "/paragraphs/0",
+              "/paragraphs/1",
+              "/paragraphs/2",
+              "/paragraphs/3",
+              "/paragraphs/4",
+              "/paragraphs/5",
+              "/paragraphs/6",
+              "/paragraphs/7"
+            ]
+          },
+          {
+            "span": {
+              "offset": 275,
+              "length": 1075
+            },
+            "elements": [
+              "/paragraphs/8",
+              "/tables/0"
+            ]
+          },
+          {
+            "span": {
+              "offset": 1353,
+              "length": 259
+            },
+            "elements": [
+              "/paragraphs/57",
+              "/tables/1"
+            ]
+          }
+        ],
+        "tables": [
+          {
+            "rowCount": 6,
+            "columnCount": 8,
+            "cells": [
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "No.",
+                "source": "D(1,133,828,228,827,227,916,133,916)",
+                "span": {
+                  "offset": 302,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/9"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Description",
+                "source": "D(1,228,827,637,827,636,916,227,916)",
+                "span": {
+                  "offset": 315,
+                  "length": 11
+                },
+                "elements": [
+                  "/paragraphs/10"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Qty",
+                "source": "D(1,637,827,752,827,752,915,636,916)",
+                "span": {
+                  "offset": 336,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/11"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "UM",
+                "source": "D(1,752,827,871,827,871,915,752,915)",
+                "span": {
+                  "offset": 349,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/12"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 4,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Net price",
+                "source": "D(1,871,827,1041,827,1041,915,871,915)",
+                "span": {
+                  "offset": 361,
+                  "length": 9
+                },
+                "elements": [
+                  "/paragraphs/13"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 5,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Net worth",
+                "source": "D(1,1041,827,1214,827,1214,915,1041,915)",
+                "span": {
+                  "offset": 380,
+                  "length": 9
+                },
+                "elements": [
+                  "/paragraphs/14"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 6,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "VAT [%]",
+                "source": "D(1,1214,827,1381,827,1381,915,1214,915)",
+                "span": {
+                  "offset": 399,
+                  "length": 7
+                },
+                "elements": [
+                  "/paragraphs/15"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 7,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Gross worth",
+                "source": "D(1,1381,827,1518,828,1518,915,1381,915)",
+                "span": {
+                  "offset": 416,
+                  "length": 11
+                },
+                "elements": [
+                  "/paragraphs/16"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "1.",
+                "source": "D(1,133,916,227,916,227,975,133,975)",
+                "span": {
+                  "offset": 448,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/17"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Wine Glasses Set Of 4",
+                "source": "D(1,227,916,636,916,636,975,227,975)",
+                "span": {
+                  "offset": 460,
+                  "length": 21
+                },
+                "elements": [
+                  "/paragraphs/18"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "2,00",
+                "source": "D(1,636,916,752,915,752,974,636,975)",
+                "span": {
+                  "offset": 491,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/19"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "each",
+                "source": "D(1,752,915,871,915,871,974,752,974)",
+                "span": {
+                  "offset": 505,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/20"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 4,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "6,00",
+                "source": "D(1,871,915,1041,915,1042,974,871,974)",
+                "span": {
+                  "offset": 519,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/21"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 5,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "12,00",
+                "source": "D(1,1041,915,1214,915,1214,974,1042,974)",
+                "span": {
+                  "offset": 533,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/22"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 6,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "10%",
+                "source": "D(1,1214,915,1381,915,1381,974,1214,974)",
+                "span": {
+                  "offset": 548,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/23"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 7,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "13,20",
+                "source": "D(1,1381,915,1518,915,1518,974,1381,974)",
+                "span": {
+                  "offset": 561,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/24"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "2.",
+                "source": "D(1,133,975,227,975,227,1061,133,1061)",
+                "span": {
+                  "offset": 587,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/25"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Uncork New York rolling vineryards Wine glass set of 2",
+                "source": "D(1,227,975,636,975,636,1061,227,1061)",
+                "span": {
+                  "offset": 599,
+                  "length": 54
+                },
+                "elements": [
+                  "/paragraphs/26"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "5,00",
+                "source": "D(1,636,975,752,974,751,1061,636,1061)",
+                "span": {
+                  "offset": 663,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/27"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "each",
+                "source": "D(1,752,974,871,974,871,1061,751,1061)",
+                "span": {
+                  "offset": 677,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/28"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 4,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "5,99",
+                "source": "D(1,871,974,1042,974,1042,1061,871,1061)",
+                "span": {
+                  "offset": 691,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/29"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 5,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "29,95",
+                "source": "D(1,1042,974,1214,974,1215,1061,1042,1061)",
+                "span": {
+                  "offset": 705,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/30"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 6,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "10%",
+                "source": "D(1,1214,974,1381,974,1382,1060,1215,1061)",
+                "span": {
+                  "offset": 720,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/31"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 7,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "32,95",
+                "source": "D(1,1381,974,1518,974,1518,1061,1382,1060)",
+                "span": {
+                  "offset": 733,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/32"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "3.",
+                "source": "D(1,133,1061,227,1061,227,1177,133,1177)",
+                "span": {
+                  "offset": 759,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/33"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Anthropologie Gold Elegant Swan Decorative Metal Bottle Stopper Wine Saver",
+                "source": "D(1,227,1061,636,1061,636,1177,227,1177)",
+                "span": {
+                  "offset": 771,
+                  "length": 74
+                },
+                "elements": [
+                  "/paragraphs/34"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "1,00",
+                "source": "D(1,636,1061,751,1061,752,1177,636,1177)",
+                "span": {
+                  "offset": 855,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/35"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "each",
+                "source": "D(1,751,1061,871,1061,871,1177,752,1177)",
+                "span": {
+                  "offset": 869,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/36"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 4,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "19,98",
+                "source": "D(1,871,1061,1042,1061,1042,1177,871,1177)",
+                "span": {
+                  "offset": 883,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/37"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 5,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "19,98",
+                "source": "D(1,1042,1061,1215,1061,1215,1176,1042,1177)",
+                "span": {
+                  "offset": 898,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/38"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 6,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "10%",
+                "source": "D(1,1215,1061,1382,1060,1382,1176,1215,1176)",
+                "span": {
+                  "offset": 913,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/39"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 7,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "21,98",
+                "source": "D(1,1382,1060,1518,1061,1518,1177,1382,1176)",
+                "span": {
+                  "offset": 926,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/40"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "4.",
+                "source": "D(1,133,1177,227,1177,227,1291,133,1291)",
+                "span": {
+                  "offset": 952,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/41"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Moonshine Still 8Gal/30L Water Alcohol Distiller Home Brew Wine Making Kit 3 Pot",
+                "source": "D(1,227,1177,636,1177,637,1291,227,1291)",
+                "span": {
+                  "offset": 964,
+                  "length": 80
+                },
+                "elements": [
+                  "/paragraphs/42"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "3,00",
+                "source": "D(1,636,1177,752,1177,752,1291,637,1291)",
+                "span": {
+                  "offset": 1054,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/43"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "each",
+                "source": "D(1,752,1177,871,1177,872,1291,752,1291)",
+                "span": {
+                  "offset": 1068,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/44"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 4,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "89,99",
+                "source": "D(1,871,1177,1042,1177,1043,1291,872,1291)",
+                "span": {
+                  "offset": 1082,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/45"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 5,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "269,97",
+                "source": "D(1,1042,1177,1215,1176,1216,1291,1043,1291)",
+                "span": {
+                  "offset": 1097,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/46"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 6,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "10%",
+                "source": "D(1,1215,1176,1382,1176,1383,1291,1216,1291)",
+                "span": {
+                  "offset": 1113,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/47"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 7,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "296,97",
+                "source": "D(1,1382,1176,1518,1177,1518,1291,1383,1291)",
+                "span": {
+                  "offset": 1126,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/48"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "5.",
+                "source": "D(1,133,1291,227,1291,228,1406,133,1406)",
+                "span": {
+                  "offset": 1153,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/49"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "4 Tupperware Wine Stemless Cups Set Acrylic Plastic Shatter Proof Beverages New",
+                "source": "D(1,227,1291,637,1291,636,1405,228,1406)",
+                "span": {
+                  "offset": 1165,
+                  "length": 79
+                },
+                "elements": [
+                  "/paragraphs/50"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "2,00",
+                "source": "D(1,637,1291,752,1291,753,1405,636,1405)",
+                "span": {
+                  "offset": 1254,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/51"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "each",
+                "source": "D(1,752,1291,872,1291,872,1405,753,1405)",
+                "span": {
+                  "offset": 1268,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/52"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 4,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "34,99",
+                "source": "D(1,872,1291,1043,1291,1043,1405,872,1405)",
+                "span": {
+                  "offset": 1282,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/53"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 5,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "69,98",
+                "source": "D(1,1043,1291,1216,1291,1217,1405,1043,1405)",
+                "span": {
+                  "offset": 1297,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/54"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 6,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "10%",
+                "source": "D(1,1216,1291,1383,1291,1383,1405,1217,1405)",
+                "span": {
+                  "offset": 1312,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/55"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 7,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "76,98",
+                "source": "D(1,1383,1291,1518,1291,1518,1405,1383,1405)",
+                "span": {
+                  "offset": 1325,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/56"
+                ]
+              }
+            ],
+            "source": "D(1,131,826,1518,825,1518,1407,131,1408)",
+            "span": {
+              "offset": 285,
+              "length": 1065
+            }
+          },
+          {
+            "rowCount": 3,
+            "columnCount": 4,
+            "cells": [
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "VAT [%]",
+                "source": "D(1,133,1523,835,1523,834,1583,133,1584)",
+                "span": {
+                  "offset": 1382,
+                  "length": 7
+                },
+                "elements": [
+                  "/paragraphs/58"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Net worth",
+                "source": "D(1,835,1523,1107,1523,1107,1583,834,1583)",
+                "span": {
+                  "offset": 1399,
+                  "length": 9
+                },
+                "elements": [
+                  "/paragraphs/59"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "VAT",
+                "source": "D(1,1107,1523,1302,1523,1301,1583,1107,1583)",
+                "span": {
+                  "offset": 1418,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/60"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Gross worth",
+                "source": "D(1,1302,1523,1518,1523,1518,1583,1301,1583)",
+                "span": {
+                  "offset": 1431,
+                  "length": 11
+                },
+                "elements": [
+                  "/paragraphs/61"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "10%",
+                "source": "D(1,133,1584,834,1583,834,1642,133,1642)",
+                "span": {
+                  "offset": 1463,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/62"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "401,88",
+                "source": "D(1,834,1583,1107,1583,1107,1642,834,1642)",
+                "span": {
+                  "offset": 1476,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/63"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "40,19",
+                "source": "D(1,1107,1583,1301,1583,1302,1642,1107,1642)",
+                "span": {
+                  "offset": 1492,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/64"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "442,07",
+                "source": "D(1,1301,1583,1518,1583,1518,1642,1302,1642)",
+                "span": {
+                  "offset": 1507,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/65"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Total",
+                "source": "D(1,133,1642,834,1642,835,1701,133,1701)",
+                "span": {
+                  "offset": 1534,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/66"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "$ 401,88",
+                "source": "D(1,834,1642,1107,1642,1107,1700,835,1701)",
+                "span": {
+                  "offset": 1549,
+                  "length": 8
+                },
+                "elements": [
+                  "/paragraphs/67"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "$ 40,19",
+                "source": "D(1,1107,1642,1302,1642,1302,1700,1107,1700)",
+                "span": {
+                  "offset": 1567,
+                  "length": 7
+                },
+                "elements": [
+                  "/paragraphs/68"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "$ 442,07",
+                "source": "D(1,1302,1642,1518,1642,1518,1701,1302,1700)",
+                "span": {
+                  "offset": 1584,
+                  "length": 8
+                },
+                "elements": [
+                  "/paragraphs/69"
+                ]
+              }
+            ],
+            "source": "D(1,128,1522,1517,1522,1516,1703,128,1702)",
+            "span": {
+              "offset": 1365,
+              "length": 247
+            }
+          }
+        ],
         "analyzerId": "prebuilt-invoice",
         "mimeType": "image/jpeg"
       }
     ]
   },
   "usage": {
-    "documentPagesMinimal": 1,
+    "documentPagesStandard": 1,
     "contextualizationTokens": 1000,
     "tokens": {
-      "gpt-4.1-input": 10263,
-      "gpt-4.1-output": 323,
-      "text-embedding-3-large": 4
+      "gpt-4.1-input": 13828,
+      "gpt-4.1-output": 2434,
+      "text-embedding-3-large": 659
     }
   },
   "_extracted": {
-    "field_values": {},
-    "description": "Ce document est une facture (Invoice no: 98858130) émise le 28/01/2021 par la société Dominguez, Jackson and Steele à Michaelbury, RI, à destination de Rodriguez, Hall and Tanner (APO AP 07491). Le montant total TTC de la facture est de 442,07 $ pour divers articles liés au vin, avec une TVA de 10 %. Les informations clés incluent les coordonnées fiscales des deux parties et le détail des articles facturés."
+    "field_values": {
+      "AmountDue": {
+        "Amount": 442.07,
+        "CurrencyCode": "USD"
+      },
+      "CountryRegion": "USA",
+      "CustomerAddress": "PSC 6611, Box 2668 APO AP 07491",
+      "CustomerAddressRecipient": "Rodriguez, Hall and Tanner",
+      "CustomerName": "Rodriguez, Hall and Tanner",
+      "CustomerTaxId": "941-88-5692",
+      "InvoiceDate": "2021-01-28",
+      "InvoiceId": "98858130",
+      "LineItems": [
+        {
+          "Description": "Wine Glasses Set Of 4",
+          "Quantity": 2,
+          "QuantityUnit": "each",
+          "TaxAmount": {
+            "Amount": 12,
+            "CurrencyCode": "USD"
+          },
+          "TaxRate": 0.1,
+          "TotalAmount": {
+            "Amount": 13.2,
+            "CurrencyCode": "USD"
+          },
+          "UnitPrice": {
+            "Amount": 6,
+            "CurrencyCode": "USD"
+          }
+        },
+        {
+          "Description": "Anthropologie Gold Elegant Swan Decorative Metal Bottle Stopper Wine Saver",
+          "Quantity": 1,
+          "QuantityUnit": "each",
+          "TaxAmount": {
+            "Amount": 2,
+            "CurrencyCode": "USD"
+          },
+          "TaxRate": 0.1,
+          "TotalAmount": {
+            "Amount": 21.98,
+            "CurrencyCode": "USD"
+          },
+          "UnitPrice": {
+            "Amount": 19.98,
+            "CurrencyCode": "USD"
+          }
+        },
+        {
+          "Description": "Moonshine Still 8Gal/30L Water Alcohol Distiller Home Brew Wine Making Kit 3 Pot",
+          "Quantity": 3,
+          "QuantityUnit": "each",
+          "TaxAmount": {
+            "Amount": 12,
+            "CurrencyCode": "USD"
+          },
+          "TaxRate": 0.1,
+          "TotalAmount": {
+            "Amount": 296.97,
+            "CurrencyCode": "USD"
+          },
+          "UnitPrice": {
+            "Amount": 89.99,
+            "CurrencyCode": "USD"
+          }
+        },
+        {
+          "Description": "Uncork New York rolling vineryards Wine glass set of 2",
+          "Quantity": 5,
+          "QuantityUnit": "each",
+          "TaxAmount": {
+            "Amount": 3,
+            "CurrencyCode": "USD"
+          },
+          "TaxRate": 0.1,
+          "TotalAmount": {
+            "Amount": 32.95,
+            "CurrencyCode": "USD"
+          },
+          "UnitPrice": {
+            "Amount": 5.99,
+            "CurrencyCode": "USD"
+          }
+        },
+        {
+          "Description": "4 Tupperware Wine Stemless Cups Set Acrylic Plastic Shatter Proof Beverages New",
+          "Quantity": 2,
+          "QuantityUnit": "each",
+          "TaxAmount": {
+            "Amount": 2,
+            "CurrencyCode": "USD"
+          },
+          "TaxRate": 0.1,
+          "TotalAmount": {
+            "Amount": 76.98,
+            "CurrencyCode": "USD"
+          },
+          "UnitPrice": {
+            "Amount": 34.99,
+            "CurrencyCode": "USD"
+          }
+        }
+      ],
+      "SubtotalAmount": {
+        "Amount": 401.88,
+        "CurrencyCode": "USD"
+      },
+      "TaxDetails": [
+        {
+          "Amount": {
+            "Amount": 40.19,
+            "CurrencyCode": "USD"
+          },
+          "Description": "VAT [%] 10%",
+          "NetAmount": {
+            "Amount": 401.88,
+            "CurrencyCode": "USD"
+          },
+          "Rate": 0.1
+        }
+      ],
+      "TotalAmount": {
+        "Amount": 442.07,
+        "CurrencyCode": "USD"
+      },
+      "TotalTaxAmount": {
+        "Amount": 40.19,
+        "CurrencyCode": "USD"
+      },
+      "VendorAddress": "98309 Stephanie Stream Michaelbury, RI 57219",
+      "VendorAddressRecipient": "Dominguez, Jackson and Steele",
+      "VendorName": "Dominguez, Jackson and Steele",
+      "VendorTaxId": "969-72-5121"
+    },
+    "description": "Ce document est une facture (invoice) n°98858130, émise le 28/01/2021 par la société Dominguez, Jackson and Steele à l'attention de Rodriguez, Hall and Tanner. Le montant total TTC est de 442,07 $, incluant une TVA de 10 %. Les articles facturés concernent principalement des accessoires pour le vin et la fabrication de boissons."
   }
 }

@@ -1,25 +1,35 @@
 {
-  "id": "b1dcbb81-643b-4a41-9659-553ae422507b",
+  "id": "261f5f5e-8b1b-4580-9eec-14e0e1981911",
   "status": "Succeeded",
   "result": {
     "analyzerId": "prebuilt-invoice",
     "apiVersion": "2025-11-01",
-    "createdAt": "2026-02-10T13:37:40Z",
-    "stringEncoding": "utf16",
+    "createdAt": "2026-02-10T15:10:40Z",
+    "stringEncoding": "codePoint",
     "warnings": [],
     "contents": [
       {
         "path": "input1",
-        "markdown": "```text\n\n```\n",
+        "markdown": "Invoice no: 56908352\n\nDate of issue:\n\n01/11/2015\n\nSeller:\nLozano, Wang and Smith\n8162 Dunn Radial\nLauraland, ID 83827\n\nTax Id: 914-76-8473\n\nIBAN: GB68RRBM34982962207975\n\nClient:\nEvans, Curtis and Salinas\n13078 Mora Garden\nMorseberg, WV 48959\n\nTax Id: 904-76-9217\n\n\n# ITEMS\n\n\n<table>\n<tr>\n<th>No.</th>\n<th>Description</th>\n<th>Qty</th>\n<th>UM</th>\n<th>Net price</th>\n<th>Net worth</th>\n<th>VAT [%]</th>\n<th>Gross worth</th>\n</tr>\n<tr>\n<td>1.</td>\n<td>Rage By Bob Woodward - Donald Trump NEW HARDCOVER Sept 2020</td>\n<td>5,00</td>\n<td>each</td>\n<td>22,93</td>\n<td>114,65</td>\n<td>10%</td>\n<td>126,12</td>\n</tr>\n<tr>\n<td>2.</td>\n<td>Spectacular Ireland Coffee Table Book - very large</td>\n<td>4,00</td>\n<td>each</td>\n<td>10,00</td>\n<td>40,00</td>\n<td>10%</td>\n<td>44,00</td>\n</tr>\n<tr>\n<td>3.</td>\n<td>The Complete Life's Little Instruction Book by Brown, H. Jackson, Jr.</td>\n<td>4,00</td>\n<td>each</td>\n<td>4,09</td>\n<td>16,36</td>\n<td>10%</td>\n<td>18,00</td>\n</tr>\n</table>\n\n\n# SUMMARY\n\n\n<table>\n<tr>\n<th>VAT [%]</th>\n<th>Net worth</th>\n<th>VAT</th>\n<th>Gross worth</th>\n</tr>\n<tr>\n<td>10%</td>\n<td>171,01</td>\n<td>17,10</td>\n<td>188,11</td>\n</tr>\n<tr>\n<td>Total</td>\n<td>$ 171,01</td>\n<td>$ 17,10</td>\n<td>$ 188,11</td>\n</tr>\n</table>\n",
         "fields": {
           "AmountDue": {
             "type": "object",
             "valueObject": {
               "Amount": {
-                "type": "number"
+                "type": "number",
+                "valueNumber": 188.11,
+                "spans": [
+                  {
+                    "offset": 1207,
+                    "length": 8
+                  }
+                ],
+                "confidence": 0.755,
+                "source": "D(1,1392.0000,1486.0000,1505.0000,1486.0000,1505.0000,1511.0000,1392.0000,1511.0000)"
               },
               "CurrencyCode": {
-                "type": "string"
+                "type": "string",
+                "valueString": "USD"
               }
             }
           },
@@ -27,7 +37,8 @@
             "type": "object",
             "valueObject": {
               "Amount": {
-                "type": "number"
+                "type": "number",
+                "confidence": 0.959
               },
               "CurrencyCode": {
                 "type": "string"
@@ -35,87 +46,617 @@
             }
           },
           "BillingAddress": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.715
           },
           "BillingAddressRecipient": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.762
           },
           "CountryRegion": {
-            "type": "string"
+            "type": "string",
+            "valueString": "USA"
           },
           "CustomerAddress": {
-            "type": "string"
+            "type": "string",
+            "valueString": "13078 Mora Garden Morseberg, WV 48959",
+            "spans": [
+              {
+                "offset": 204,
+                "length": 17
+              },
+              {
+                "offset": 222,
+                "length": 19
+              }
+            ],
+            "confidence": 0.827,
+            "source": "D(1,834.0000,542.0000,1113.0000,542.0000,1113.0000,572.0000,834.0000,572.0000);D(1,833.0000,578.0000,1144.0000,578.0000,1144.0000,611.0000,833.0000,611.0000)"
           },
           "CustomerAddressRecipient": {
-            "type": "string"
+            "type": "string",
+            "valueString": "Evans, Curtis and Salinas",
+            "spans": [
+              {
+                "offset": 178,
+                "length": 25
+              }
+            ],
+            "confidence": 0.752,
+            "source": "D(1,833.0000,505.0000,1186.0000,505.0000,1186.0000,537.0000,833.0000,537.0000)"
           },
           "CustomerId": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.815
           },
           "CustomerName": {
-            "type": "string"
+            "type": "string",
+            "valueString": "Evans, Curtis and Salinas",
+            "spans": [
+              {
+                "offset": 178,
+                "length": 25
+              }
+            ],
+            "confidence": 0.823,
+            "source": "D(1,833.0000,505.0000,1186.0000,505.0000,1186.0000,537.0000,833.0000,537.0000)"
           },
           "CustomerTaxId": {
-            "type": "string"
+            "type": "string",
+            "valueString": "904-76-9217",
+            "spans": [
+              {
+                "offset": 251,
+                "length": 11
+              }
+            ],
+            "confidence": 0.815,
+            "source": "D(1,937.0000,648.0000,1116.0000,648.0000,1116.0000,679.0000,937.0000,679.0000)"
           },
           "DueDate": {
-            "type": "date"
+            "type": "date",
+            "confidence": 0.793
           },
           "InvoiceDate": {
-            "type": "date"
+            "type": "date",
+            "valueDate": "2015-01-11",
+            "spans": [
+              {
+                "offset": 38,
+                "length": 10
+              }
+            ],
+            "confidence": 0.97,
+            "source": "D(1,800.0000,140.0000,979.0000,140.0000,979.0000,173.0000,800.0000,174.0000)"
           },
           "InvoiceId": {
-            "type": "string"
+            "type": "string",
+            "valueString": "56908352",
+            "spans": [
+              {
+                "offset": 12,
+                "length": 8
+              }
+            ],
+            "confidence": 0.952,
+            "source": "D(1,350.0000,72.0000,538.0000,71.0000,538.0000,107.0000,350.0000,107.0000)"
           },
           "LineItems": {
-            "type": "array"
+            "type": "array",
+            "valueArray": [
+              {
+                "type": "object",
+                "valueObject": {
+                  "Date": {
+                    "type": "date",
+                    "confidence": 0.823
+                  },
+                  "Description": {
+                    "type": "string",
+                    "valueString": "Rage By Bob Woodward - Donald Trump NEW HARDCOVER Sept 2020",
+                    "spans": [
+                      {
+                        "offset": 450,
+                        "length": 22
+                      },
+                      {
+                        "offset": 473,
+                        "length": 16
+                      },
+                      {
+                        "offset": 490,
+                        "length": 19
+                      }
+                    ],
+                    "confidence": 0.737,
+                    "source": "D(1,238.0000,932.0000,524.0000,932.0000,524.0000,959.0000,238.0000,959.0000);D(1,238.0000,960.0000,459.0000,960.0000,459.0000,986.0000,238.0000,986.0000);D(1,238.0000,986.0000,504.0000,986.0000,504.0000,1014.0000,238.0000,1014.0000)"
+                  },
+                  "ProductCode": {
+                    "type": "string",
+                    "confidence": 0.902
+                  },
+                  "Quantity": {
+                    "type": "number",
+                    "valueNumber": 5,
+                    "spans": [
+                      {
+                        "offset": 519,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.903,
+                    "source": "D(1,672.0000,933.0000,725.0000,933.0000,725.0000,958.0000,672.0000,958.0000)"
+                  },
+                  "QuantityUnit": {
+                    "type": "string",
+                    "valueString": "each",
+                    "spans": [
+                      {
+                        "offset": 533,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.828,
+                    "source": "D(1,769.0000,934.0000,827.0000,934.0000,827.0000,957.0000,769.0000,957.0000)"
+                  },
+                  "TaxAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "confidence": 0.309
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "TaxRate": {
+                    "type": "number",
+                    "valueNumber": 0.1,
+                    "spans": [
+                      {
+                        "offset": 578,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.847,
+                    "source": "D(1,1280.0000,930.0000,1333.3469,932.8579,1331.9580,958.7835,1278.6111,955.9256)"
+                  },
+                  "TotalAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 126.12,
+                        "spans": [
+                          {
+                            "offset": 591,
+                            "length": 6
+                          }
+                        ],
+                        "confidence": 0.924,
+                        "source": "D(1,1421.0000,933.0000,1500.0000,933.0000,1500.0000,958.0000,1421.0000,957.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "UnitPrice": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 22.93,
+                        "spans": [
+                          {
+                            "offset": 547,
+                            "length": 5
+                          }
+                        ],
+                        "confidence": 0.903,
+                        "source": "D(1,950.0000,932.0000,1016.0000,932.0000,1016.0000,959.0000,950.0000,959.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "Date": {
+                    "type": "date",
+                    "confidence": 0.823
+                  },
+                  "Description": {
+                    "type": "string",
+                    "valueString": "Spectacular Ireland Coffee Table Book - very large",
+                    "spans": [
+                      {
+                        "offset": 630,
+                        "length": 26
+                      },
+                      {
+                        "offset": 657,
+                        "length": 23
+                      }
+                    ],
+                    "confidence": 0.642,
+                    "source": "D(1,236.8133,1046.0012,536.9867,1044.0001,537.1767,1072.4988,237.0033,1074.5000);D(1,237.0000,1074.0000,508.0000,1074.0000,508.0000,1101.0000,237.0000,1101.0000)"
+                  },
+                  "ProductCode": {
+                    "type": "string",
+                    "confidence": 0.902
+                  },
+                  "Quantity": {
+                    "type": "number",
+                    "valueNumber": 4,
+                    "spans": [
+                      {
+                        "offset": 690,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.907,
+                    "source": "D(1,672.0000,1047.0000,725.0000,1047.0000,725.0000,1072.0000,672.0000,1072.0000)"
+                  },
+                  "QuantityUnit": {
+                    "type": "string",
+                    "valueString": "each",
+                    "spans": [
+                      {
+                        "offset": 704,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.832,
+                    "source": "D(1,770.0000,1048.0000,826.0000,1048.0000,826.0000,1071.0000,770.0000,1071.0000)"
+                  },
+                  "TaxAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "confidence": 0.759
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "TaxRate": {
+                    "type": "number",
+                    "valueNumber": 0.1,
+                    "spans": [
+                      {
+                        "offset": 748,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.896,
+                    "source": "D(1,1280.5173,1045.9349,1331.0000,1045.0000,1331.4827,1071.0651,1281.0000,1072.0000)"
+                  },
+                  "TotalAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 44,
+                        "spans": [
+                          {
+                            "offset": 761,
+                            "length": 5
+                          }
+                        ],
+                        "confidence": 0.953,
+                        "source": "D(1,1434.0000,1047.0000,1501.0000,1047.0000,1501.0000,1072.0000,1434.0000,1072.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "UnitPrice": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 10,
+                        "spans": [
+                          {
+                            "offset": 718,
+                            "length": 5
+                          }
+                        ],
+                        "confidence": 0.903,
+                        "source": "D(1,951.0000,1046.0000,1015.0000,1047.0000,1015.0000,1072.0000,951.0000,1072.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "Date": {
+                    "type": "date",
+                    "confidence": 0.823
+                  },
+                  "Description": {
+                    "type": "string",
+                    "valueString": "The Complete Life's Little Instruction Book by Brown, H. Jackson, Jr.",
+                    "spans": [
+                      {
+                        "offset": 799,
+                        "length": 26
+                      },
+                      {
+                        "offset": 826,
+                        "length": 29
+                      },
+                      {
+                        "offset": 856,
+                        "length": 12
+                      }
+                    ],
+                    "confidence": 0.517,
+                    "source": "D(1,237.0000,1133.0000,525.0000,1133.0000,525.0000,1160.0000,237.0000,1160.0000);D(1,237.0000,1160.0000,572.0000,1160.0000,572.0000,1189.0000,237.0000,1189.0000);D(1,235.0000,1190.0000,361.0000,1190.0000,361.0000,1217.0000,235.0000,1217.0000)"
+                  },
+                  "ProductCode": {
+                    "type": "string",
+                    "confidence": 0.902
+                  },
+                  "Quantity": {
+                    "type": "number",
+                    "valueNumber": 4,
+                    "spans": [
+                      {
+                        "offset": 878,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.903,
+                    "source": "D(1,672.0000,1133.0000,725.0000,1134.0000,725.0000,1159.0000,672.0000,1159.0000)"
+                  },
+                  "QuantityUnit": {
+                    "type": "string",
+                    "valueString": "each",
+                    "spans": [
+                      {
+                        "offset": 892,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.828,
+                    "source": "D(1,769.0000,1135.0000,827.0000,1135.0000,827.0000,1158.0000,769.0000,1158.0000)"
+                  },
+                  "TaxAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "confidence": 0.582
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "TaxRate": {
+                    "type": "number",
+                    "valueNumber": 0.1,
+                    "spans": [
+                      {
+                        "offset": 935,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.87,
+                    "source": "D(1,1281.0000,1134.0000,1332.0000,1134.0000,1332.0000,1159.0000,1281.0000,1159.0000)"
+                  },
+                  "TotalAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 18,
+                        "spans": [
+                          {
+                            "offset": 948,
+                            "length": 5
+                          }
+                        ],
+                        "confidence": 0.938,
+                        "source": "D(1,1434.0000,1134.0000,1501.0000,1134.0000,1501.0000,1159.0000,1434.0000,1159.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "UnitPrice": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 4.09,
+                        "spans": [
+                          {
+                            "offset": 906,
+                            "length": 4
+                          }
+                        ],
+                        "confidence": 0.937,
+                        "source": "D(1,963.0000,1134.0000,1016.0000,1134.0000,1016.0000,1159.0000,963.0000,1159.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
           },
           "PaymentTerm": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.816
           },
           "PONumber": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.746
           },
           "RemittanceAddress": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.905
           },
           "RemittanceAddressRecipient": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.814
           },
           "ServiceAddress": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.782
           },
           "ServiceAddressRecipient": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.82
           },
           "ShippingAddress": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.775
           },
           "ShippingAddressRecipient": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.81
           },
           "SubtotalAmount": {
             "type": "object",
             "valueObject": {
               "Amount": {
-                "type": "number"
+                "type": "number",
+                "valueNumber": 171.01
               },
               "CurrencyCode": {
-                "type": "string"
+                "type": "string",
+                "valueString": "USD"
               }
             }
           },
           "TaxDetails": {
-            "type": "array"
+            "type": "array",
+            "valueArray": [
+              {
+                "type": "object",
+                "valueObject": {
+                  "Amount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 17.1,
+                        "spans": [
+                          {
+                            "offset": 1115,
+                            "length": 5
+                          }
+                        ],
+                        "confidence": 0.873,
+                        "source": "D(1,1175.0000,1426.0000,1240.0000,1426.0000,1240.0000,1452.0000,1175.0000,1452.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "Description": {
+                    "type": "string",
+                    "valueString": "VAT [%] 10%",
+                    "spans": [
+                      {
+                        "offset": 1005,
+                        "length": 7
+                      },
+                      {
+                        "offset": 1086,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.077,
+                    "source": "D(1,640.0000,1366.0000,744.0000,1366.0000,744.0000,1394.0000,640.0000,1394.0000);D(1,666.0000,1425.0000,719.0000,1425.0000,719.0000,1450.0000,666.0000,1450.0000)"
+                  },
+                  "NetAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 171.01,
+                        "spans": [
+                          {
+                            "offset": 1099,
+                            "length": 6
+                          }
+                        ],
+                        "confidence": 0.873,
+                        "source": "D(1,976.0000,1426.0000,1056.0000,1427.0000,1056.0000,1452.0000,976.0000,1452.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "Rate": {
+                    "type": "number",
+                    "valueNumber": 0.1,
+                    "spans": [
+                      {
+                        "offset": 1086,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.825,
+                    "source": "D(1,666.0000,1425.0000,719.0000,1425.0000,719.0000,1450.0000,666.0000,1450.0000)"
+                  }
+                }
+              }
+            ]
           },
           "TotalAmount": {
             "type": "object",
             "valueObject": {
               "Amount": {
-                "type": "number"
+                "type": "number",
+                "valueNumber": 188.11,
+                "spans": [
+                  {
+                    "offset": 1130,
+                    "length": 6
+                  }
+                ],
+                "confidence": 0.586,
+                "source": "D(1,1424.0000,1426.0000,1504.0000,1427.0000,1504.0000,1452.0000,1424.0000,1452.0000)"
               },
               "CurrencyCode": {
-                "type": "string"
+                "type": "string",
+                "valueString": "USD"
               }
             }
           },
@@ -123,7 +664,8 @@
             "type": "object",
             "valueObject": {
               "Amount": {
-                "type": "number"
+                "type": "number",
+                "confidence": 0.934
               },
               "CurrencyCode": {
                 "type": "string"
@@ -134,45 +676,3265 @@
             "type": "object",
             "valueObject": {
               "Amount": {
-                "type": "number"
+                "type": "number",
+                "valueNumber": 17.1
               },
               "CurrencyCode": {
-                "type": "string"
+                "type": "string",
+                "valueString": "USD"
               }
             }
           },
           "VendorAddress": {
-            "type": "string"
+            "type": "string",
+            "valueString": "8162 Dunn Radial Lauraland, ID 83827",
+            "spans": [
+              {
+                "offset": 81,
+                "length": 16
+              },
+              {
+                "offset": 98,
+                "length": 19
+              }
+            ],
+            "confidence": 0.804,
+            "source": "D(1,140.0000,542.0000,392.0000,542.0000,392.0000,572.0000,140.0000,572.0000);D(1,139.8825,577.0482,425.0000,576.0000,425.1200,608.6282,140.0025,609.6765)"
           },
           "VendorAddressRecipient": {
-            "type": "string"
+            "type": "string",
+            "valueString": "Lozano, Wang and Smith",
+            "spans": [
+              {
+                "offset": 58,
+                "length": 22
+              }
+            ],
+            "confidence": 0.757,
+            "source": "D(1,140.0000,506.0000,490.0000,506.0000,490.0000,540.0000,140.0000,540.0000)"
           },
           "VendorName": {
-            "type": "string"
+            "type": "string",
+            "valueString": "Lozano, Wang and Smith",
+            "spans": [
+              {
+                "offset": 58,
+                "length": 22
+              }
+            ],
+            "confidence": 0.74,
+            "source": "D(1,140.0000,506.0000,490.0000,506.0000,490.0000,540.0000,140.0000,540.0000)"
           },
           "VendorTaxId": {
-            "type": "string"
+            "type": "string",
+            "valueString": "914-76-8473",
+            "spans": [
+              {
+                "offset": 127,
+                "length": 11
+              }
+            ],
+            "confidence": 0.938,
+            "source": "D(1,244.0000,649.0000,424.0000,647.0000,424.0000,678.0000,244.0000,679.0000)"
           }
         },
         "kind": "document",
         "startPageNumber": 1,
         "endPageNumber": 1,
+        "unit": "pixel",
+        "pages": [
+          {
+            "pageNumber": 1,
+            "angle": 0,
+            "width": 1654,
+            "height": 2339,
+            "spans": [
+              {
+                "offset": 0,
+                "length": 1236
+              }
+            ],
+            "words": [
+              {
+                "content": "Invoice",
+                "span": {
+                  "offset": 0,
+                  "length": 7
+                },
+                "confidence": 0.961,
+                "source": "D(1,131,72,264,72,265,108,131,108)"
+              },
+              {
+                "content": "no",
+                "span": {
+                  "offset": 8,
+                  "length": 2
+                },
+                "confidence": 0.997,
+                "source": "D(1,280,72,323,72,323,107,280,108)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 10,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,327,72,335,72,336,107,327,107)"
+              },
+              {
+                "content": "56908352",
+                "span": {
+                  "offset": 12,
+                  "length": 8
+                },
+                "confidence": 0.996,
+                "source": "D(1,350,72,538,71,538,107,350,107)"
+              },
+              {
+                "content": "Date",
+                "span": {
+                  "offset": 22,
+                  "length": 4
+                },
+                "confidence": 0.998,
+                "source": "D(1,131,141,205,141,205,173,131,173)"
+              },
+              {
+                "content": "of",
+                "span": {
+                  "offset": 27,
+                  "length": 2
+                },
+                "confidence": 0.997,
+                "source": "D(1,216,141,247,141,247,173,216,173)"
+              },
+              {
+                "content": "issue",
+                "span": {
+                  "offset": 30,
+                  "length": 5
+                },
+                "confidence": 0.996,
+                "source": "D(1,255,141,332,142,332,174,255,173)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 35,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,334,142,345,142,345,174,334,174)"
+              },
+              {
+                "content": "01/11/2015",
+                "span": {
+                  "offset": 38,
+                  "length": 10
+                },
+                "confidence": 0.993,
+                "source": "D(1,800,140,979,140,979,173,800,174)"
+              },
+              {
+                "content": "Seller",
+                "span": {
+                  "offset": 50,
+                  "length": 6
+                },
+                "confidence": 0.997,
+                "source": "D(1,131,443,241,443,241,476,131,476)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 56,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,242,443,255,443,255,476,242,476)"
+              },
+              {
+                "content": "Lozano",
+                "span": {
+                  "offset": 58,
+                  "length": 6
+                },
+                "confidence": 0.992,
+                "source": "D(1,140,507,238,506,238,539,140,540)"
+              },
+              {
+                "content": ",",
+                "span": {
+                  "offset": 64,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,240,506,247,506,247,539,240,539)"
+              },
+              {
+                "content": "Wang",
+                "span": {
+                  "offset": 66,
+                  "length": 4
+                },
+                "confidence": 0.995,
+                "source": "D(1,256,506,334,506,334,539,256,539)"
+              },
+              {
+                "content": "and",
+                "span": {
+                  "offset": 71,
+                  "length": 3
+                },
+                "confidence": 0.997,
+                "source": "D(1,345,506,395,506,395,539,346,539)"
+              },
+              {
+                "content": "Smith",
+                "span": {
+                  "offset": 75,
+                  "length": 5
+                },
+                "confidence": 0.993,
+                "source": "D(1,406,506,490,506,490,539,406,539)"
+              },
+              {
+                "content": "8162",
+                "span": {
+                  "offset": 81,
+                  "length": 4
+                },
+                "confidence": 0.988,
+                "source": "D(1,140,542,209,542,210,572,140,572)"
+              },
+              {
+                "content": "Dunn",
+                "span": {
+                  "offset": 86,
+                  "length": 4
+                },
+                "confidence": 0.993,
+                "source": "D(1,221,542,292,542,292,572,221,572)"
+              },
+              {
+                "content": "Radial",
+                "span": {
+                  "offset": 91,
+                  "length": 6
+                },
+                "confidence": 0.996,
+                "source": "D(1,304,542,392,542,392,572,304,572)"
+              },
+              {
+                "content": "Lauraland",
+                "span": {
+                  "offset": 98,
+                  "length": 9
+                },
+                "confidence": 0.995,
+                "source": "D(1,140,579,276,578,276,609,140,609)"
+              },
+              {
+                "content": ",",
+                "span": {
+                  "offset": 107,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,279,578,285,578,285,609,279,609)"
+              },
+              {
+                "content": "ID",
+                "span": {
+                  "offset": 109,
+                  "length": 2
+                },
+                "confidence": 0.939,
+                "source": "D(1,297,578,324,577,324,609,297,609)"
+              },
+              {
+                "content": "83827",
+                "span": {
+                  "offset": 112,
+                  "length": 5
+                },
+                "confidence": 0.993,
+                "source": "D(1,335,577,425,576,425,607,335,608)"
+              },
+              {
+                "content": "Tax",
+                "span": {
+                  "offset": 119,
+                  "length": 3
+                },
+                "confidence": 0.982,
+                "source": "D(1,138,648,189,648,190,679,139,678)"
+              },
+              {
+                "content": "Id",
+                "span": {
+                  "offset": 123,
+                  "length": 2
+                },
+                "confidence": 0.772,
+                "source": "D(1,201,648,223,649,223,679,201,679)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 125,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,227,649,232,649,232,679,227,679)"
+              },
+              {
+                "content": "914-76-8473",
+                "span": {
+                  "offset": 127,
+                  "length": 11
+                },
+                "confidence": 0.99,
+                "source": "D(1,244,649,424,647,424,678,244,679)"
+              },
+              {
+                "content": "IBAN",
+                "span": {
+                  "offset": 140,
+                  "length": 4
+                },
+                "confidence": 0.994,
+                "source": "D(1,139,683,204,683,204,714,140,713)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 144,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,208,683,213,683,214,714,208,714)"
+              },
+              {
+                "content": "GB68RRBM34982962207975",
+                "span": {
+                  "offset": 146,
+                  "length": 22
+                },
+                "confidence": 0.985,
+                "source": "D(1,226,683,633,683,633,714,226,714)"
+              },
+              {
+                "content": "Client",
+                "span": {
+                  "offset": 170,
+                  "length": 6
+                },
+                "confidence": 0.996,
+                "source": "D(1,824,442,935,442,935,476,824,477)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 176,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,937,442,949,441,949,476,937,476)"
+              },
+              {
+                "content": "Evans",
+                "span": {
+                  "offset": 178,
+                  "length": 5
+                },
+                "confidence": 0.994,
+                "source": "D(1,833,506,914,505,914,537,833,537)"
+              },
+              {
+                "content": ",",
+                "span": {
+                  "offset": 183,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,916,505,922,505,922,537,916,537)"
+              },
+              {
+                "content": "Curtis",
+                "span": {
+                  "offset": 185,
+                  "length": 6
+                },
+                "confidence": 0.995,
+                "source": "D(1,933,505,1015,505,1015,537,933,537)"
+              },
+              {
+                "content": "and",
+                "span": {
+                  "offset": 192,
+                  "length": 3
+                },
+                "confidence": 0.999,
+                "source": "D(1,1025,505,1075,505,1075,537,1025,537)"
+              },
+              {
+                "content": "Salinas",
+                "span": {
+                  "offset": 196,
+                  "length": 7
+                },
+                "confidence": 0.996,
+                "source": "D(1,1086,505,1186,506,1186,537,1086,537)"
+              },
+              {
+                "content": "13078",
+                "span": {
+                  "offset": 204,
+                  "length": 5
+                },
+                "confidence": 0.977,
+                "source": "D(1,834,542,920,542,920,572,834,572)"
+              },
+              {
+                "content": "Mora",
+                "span": {
+                  "offset": 210,
+                  "length": 4
+                },
+                "confidence": 0.992,
+                "source": "D(1,931,542,998,542,998,572,931,572)"
+              },
+              {
+                "content": "Garden",
+                "span": {
+                  "offset": 215,
+                  "length": 6
+                },
+                "confidence": 0.991,
+                "source": "D(1,1009,542,1113,542,1113,572,1009,572)"
+              },
+              {
+                "content": "Morseberg",
+                "span": {
+                  "offset": 222,
+                  "length": 9
+                },
+                "confidence": 0.994,
+                "source": "D(1,833,578,979,578,979,610,833,611)"
+              },
+              {
+                "content": ",",
+                "span": {
+                  "offset": 231,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,981,578,988,578,988,610,981,610)"
+              },
+              {
+                "content": "WV",
+                "span": {
+                  "offset": 233,
+                  "length": 2
+                },
+                "confidence": 0.991,
+                "source": "D(1,997,578,1046,578,1046,610,997,610)"
+              },
+              {
+                "content": "48959",
+                "span": {
+                  "offset": 236,
+                  "length": 5
+                },
+                "confidence": 0.985,
+                "source": "D(1,1053,578,1144,578,1144,611,1053,610)"
+              },
+              {
+                "content": "Tax",
+                "span": {
+                  "offset": 243,
+                  "length": 3
+                },
+                "confidence": 0.985,
+                "source": "D(1,831,648,882,648,882,679,831,679)"
+              },
+              {
+                "content": "Id",
+                "span": {
+                  "offset": 247,
+                  "length": 2
+                },
+                "confidence": 0.59,
+                "source": "D(1,893,648,916,648,916,679,893,679)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 249,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,920,648,925,648,925,679,920,679)"
+              },
+              {
+                "content": "904-76-9217",
+                "span": {
+                  "offset": 251,
+                  "length": 11
+                },
+                "confidence": 0.988,
+                "source": "D(1,937,648,1116,648,1116,679,937,679)"
+              },
+              {
+                "content": "ITEMS",
+                "span": {
+                  "offset": 267,
+                  "length": 5
+                },
+                "confidence": 0.981,
+                "source": "D(1,131,759,248,759,248,792,132,792)"
+              },
+              {
+                "content": "No",
+                "span": {
+                  "offset": 292,
+                  "length": 2
+                },
+                "confidence": 0.954,
+                "source": "D(1,158,848,193,847,193,870,158,870)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 294,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,194,847,202,846,202,870,194,870)"
+              },
+              {
+                "content": "Description",
+                "span": {
+                  "offset": 305,
+                  "length": 11
+                },
+                "confidence": 0.997,
+                "source": "D(1,238,845,385,847,385,873,238,871)"
+              },
+              {
+                "content": "Qty",
+                "span": {
+                  "offset": 326,
+                  "length": 3
+                },
+                "confidence": 0.994,
+                "source": "D(1,678,846,726,848,726,875,678,872)"
+              },
+              {
+                "content": "UM",
+                "span": {
+                  "offset": 339,
+                  "length": 2
+                },
+                "confidence": 0.986,
+                "source": "D(1,776,846,821,846,821,870,776,870)"
+              },
+              {
+                "content": "Net",
+                "span": {
+                  "offset": 351,
+                  "length": 3
+                },
+                "confidence": 0.998,
+                "source": "D(1,898,844,944,846,944,872,898,871)"
+              },
+              {
+                "content": "price",
+                "span": {
+                  "offset": 355,
+                  "length": 5
+                },
+                "confidence": 0.998,
+                "source": "D(1,952,846,1018,845,1018,871,952,872)"
+              },
+              {
+                "content": "Net",
+                "span": {
+                  "offset": 370,
+                  "length": 3
+                },
+                "confidence": 0.998,
+                "source": "D(1,1057,845,1103,845,1103,871,1057,870)"
+              },
+              {
+                "content": "worth",
+                "span": {
+                  "offset": 374,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,1110,845,1186,845,1186,871,1110,871)"
+              },
+              {
+                "content": "VAT",
+                "span": {
+                  "offset": 389,
+                  "length": 3
+                },
+                "confidence": 0.992,
+                "source": "D(1,1227,844,1280,845,1280,872,1227,871)"
+              },
+              {
+                "content": "[",
+                "span": {
+                  "offset": 393,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1287,845,1297,845,1297,873,1287,873)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 394,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1296,845,1319,845,1319,872,1296,873)"
+              },
+              {
+                "content": "]",
+                "span": {
+                  "offset": 395,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,1319,845,1332,845,1332,872,1319,872)"
+              },
+              {
+                "content": "Gross",
+                "span": {
+                  "offset": 406,
+                  "length": 5
+                },
+                "confidence": 0.998,
+                "source": "D(1,1428,848,1501,848,1501,871,1428,870)"
+              },
+              {
+                "content": "worth",
+                "span": {
+                  "offset": 412,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,1425,874,1501,874,1501,897,1425,897)"
+              },
+              {
+                "content": "1",
+                "span": {
+                  "offset": 438,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,169,934,182,934,182,957,169,957)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 439,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,185,934,192,934,192,957,185,957)"
+              },
+              {
+                "content": "Rage",
+                "span": {
+                  "offset": 450,
+                  "length": 4
+                },
+                "confidence": 0.997,
+                "source": "D(1,238,932,293,932,293,959,238,959)"
+              },
+              {
+                "content": "By",
+                "span": {
+                  "offset": 455,
+                  "length": 2
+                },
+                "confidence": 0.996,
+                "source": "D(1,303,932,330,932,330,959,303,959)"
+              },
+              {
+                "content": "Bob",
+                "span": {
+                  "offset": 458,
+                  "length": 3
+                },
+                "confidence": 0.997,
+                "source": "D(1,339,932,381,932,381,959,339,959)"
+              },
+              {
+                "content": "Woodward",
+                "span": {
+                  "offset": 462,
+                  "length": 8
+                },
+                "confidence": 0.994,
+                "source": "D(1,388,932,506,932,506,959,388,959)"
+              },
+              {
+                "content": "-",
+                "span": {
+                  "offset": 471,
+                  "length": 1
+                },
+                "confidence": 0.995,
+                "source": "D(1,513,932,524,932,524,958,513,958)"
+              },
+              {
+                "content": "Donald",
+                "span": {
+                  "offset": 473,
+                  "length": 6
+                },
+                "confidence": 0.996,
+                "source": "D(1,238,960,316,960,316,986,239,986)"
+              },
+              {
+                "content": "Trump",
+                "span": {
+                  "offset": 480,
+                  "length": 5
+                },
+                "confidence": 0.995,
+                "source": "D(1,324,960,397,960,397,986,324,986)"
+              },
+              {
+                "content": "NEW",
+                "span": {
+                  "offset": 486,
+                  "length": 3
+                },
+                "confidence": 0.997,
+                "source": "D(1,406,960,459,960,459,985,406,985)"
+              },
+              {
+                "content": "HARDCOVER",
+                "span": {
+                  "offset": 490,
+                  "length": 9
+                },
+                "confidence": 0.984,
+                "source": "D(1,238,987,380,987,380,1014,238,1014)"
+              },
+              {
+                "content": "Sept",
+                "span": {
+                  "offset": 500,
+                  "length": 4
+                },
+                "confidence": 0.987,
+                "source": "D(1,387,987,440,987,440,1014,387,1014)"
+              },
+              {
+                "content": "2020",
+                "span": {
+                  "offset": 505,
+                  "length": 4
+                },
+                "confidence": 0.987,
+                "source": "D(1,446,987,504,986,504,1014,446,1014)"
+              },
+              {
+                "content": "5,00",
+                "span": {
+                  "offset": 519,
+                  "length": 4
+                },
+                "confidence": 0.995,
+                "source": "D(1,672,933,725,933,725,958,672,958)"
+              },
+              {
+                "content": "each",
+                "span": {
+                  "offset": 533,
+                  "length": 4
+                },
+                "confidence": 0.999,
+                "source": "D(1,769,934,827,934,827,957,769,957)"
+              },
+              {
+                "content": "22,93",
+                "span": {
+                  "offset": 547,
+                  "length": 5
+                },
+                "confidence": 0.993,
+                "source": "D(1,950,932,1016,932,1016,959,950,959)"
+              },
+              {
+                "content": "114,65",
+                "span": {
+                  "offset": 562,
+                  "length": 6
+                },
+                "confidence": 0.991,
+                "source": "D(1,1106,933,1185,933,1185,958,1106,958)"
+              },
+              {
+                "content": "10",
+                "span": {
+                  "offset": 578,
+                  "length": 2
+                },
+                "confidence": 0.999,
+                "source": "D(1,1280,930,1308,932,1308,957,1280,956)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 580,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1308,932,1332,933,1332,958,1308,957)"
+              },
+              {
+                "content": "126,12",
+                "span": {
+                  "offset": 591,
+                  "length": 6
+                },
+                "confidence": 0.98,
+                "source": "D(1,1421,933,1500,933,1500,958,1421,957)"
+              },
+              {
+                "content": "2",
+                "span": {
+                  "offset": 618,
+                  "length": 1
+                },
+                "confidence": 0.976,
+                "source": "D(1,169,1048,183,1048,183,1071,169,1071)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 619,
+                  "length": 1
+                },
+                "confidence": 0.996,
+                "source": "D(1,184,1048,191,1048,191,1071,184,1071)"
+              },
+              {
+                "content": "Spectacular",
+                "span": {
+                  "offset": 630,
+                  "length": 11
+                },
+                "confidence": 0.995,
+                "source": "D(1,237,1046,371,1047,371,1073,237,1074)"
+              },
+              {
+                "content": "Ireland",
+                "span": {
+                  "offset": 642,
+                  "length": 7
+                },
+                "confidence": 0.94,
+                "source": "D(1,379,1047,454,1046,454,1073,379,1073)"
+              },
+              {
+                "content": "Coffee",
+                "span": {
+                  "offset": 650,
+                  "length": 6
+                },
+                "confidence": 0.997,
+                "source": "D(1,462,1046,537,1046,537,1072,462,1073)"
+              },
+              {
+                "content": "Table",
+                "span": {
+                  "offset": 657,
+                  "length": 5
+                },
+                "confidence": 0.995,
+                "source": "D(1,237,1074,299,1074,299,1101,237,1101)"
+              },
+              {
+                "content": "Book",
+                "span": {
+                  "offset": 663,
+                  "length": 4
+                },
+                "confidence": 0.996,
+                "source": "D(1,308,1074,363,1074,363,1101,308,1101)"
+              },
+              {
+                "content": "-",
+                "span": {
+                  "offset": 668,
+                  "length": 1
+                },
+                "confidence": 0.996,
+                "source": "D(1,369,1074,377,1074,377,1101,369,1101)"
+              },
+              {
+                "content": "very",
+                "span": {
+                  "offset": 670,
+                  "length": 4
+                },
+                "confidence": 0.993,
+                "source": "D(1,392,1074,442,1074,442,1101,392,1101)"
+              },
+              {
+                "content": "large",
+                "span": {
+                  "offset": 675,
+                  "length": 5
+                },
+                "confidence": 0.99,
+                "source": "D(1,449,1074,508,1074,508,1101,449,1101)"
+              },
+              {
+                "content": "4,00",
+                "span": {
+                  "offset": 690,
+                  "length": 4
+                },
+                "confidence": 0.988,
+                "source": "D(1,672,1047,725,1047,725,1072,672,1072)"
+              },
+              {
+                "content": "each",
+                "span": {
+                  "offset": 704,
+                  "length": 4
+                },
+                "confidence": 0.999,
+                "source": "D(1,770,1048,826,1048,826,1071,770,1071)"
+              },
+              {
+                "content": "10,00",
+                "span": {
+                  "offset": 718,
+                  "length": 5
+                },
+                "confidence": 0.986,
+                "source": "D(1,951,1046,1015,1047,1015,1072,951,1072)"
+              },
+              {
+                "content": "40,00",
+                "span": {
+                  "offset": 733,
+                  "length": 5
+                },
+                "confidence": 0.982,
+                "source": "D(1,1119,1047,1185,1047,1185,1072,1119,1072)"
+              },
+              {
+                "content": "10",
+                "span": {
+                  "offset": 748,
+                  "length": 2
+                },
+                "confidence": 0.999,
+                "source": "D(1,1281,1046,1308,1046,1308,1071,1281,1072)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 750,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1309,1046,1331,1045,1331,1071,1309,1071)"
+              },
+              {
+                "content": "44,00",
+                "span": {
+                  "offset": 761,
+                  "length": 5
+                },
+                "confidence": 0.994,
+                "source": "D(1,1434,1047,1501,1047,1501,1072,1434,1072)"
+              },
+              {
+                "content": "3",
+                "span": {
+                  "offset": 787,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,169,1135,183,1135,183,1158,169,1158)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 788,
+                  "length": 1
+                },
+                "confidence": 0.997,
+                "source": "D(1,184,1135,192,1135,192,1158,184,1158)"
+              },
+              {
+                "content": "The",
+                "span": {
+                  "offset": 799,
+                  "length": 3
+                },
+                "confidence": 0.998,
+                "source": "D(1,237,1133,279,1134,279,1160,237,1160)"
+              },
+              {
+                "content": "Complete",
+                "span": {
+                  "offset": 803,
+                  "length": 8
+                },
+                "confidence": 0.993,
+                "source": "D(1,287,1134,394,1134,394,1160,287,1160)"
+              },
+              {
+                "content": "Life's",
+                "span": {
+                  "offset": 812,
+                  "length": 6
+                },
+                "confidence": 0.98,
+                "source": "D(1,402,1134,459,1133,459,1159,402,1160)"
+              },
+              {
+                "content": "Little",
+                "span": {
+                  "offset": 819,
+                  "length": 6
+                },
+                "confidence": 0.985,
+                "source": "D(1,467,1133,525,1133,525,1159,467,1159)"
+              },
+              {
+                "content": "Instruction",
+                "span": {
+                  "offset": 826,
+                  "length": 11
+                },
+                "confidence": 0.985,
+                "source": "D(1,237,1161,356,1160,357,1188,237,1188)"
+              },
+              {
+                "content": "Book",
+                "span": {
+                  "offset": 838,
+                  "length": 4
+                },
+                "confidence": 0.995,
+                "source": "D(1,365,1160,421,1161,421,1188,365,1188)"
+              },
+              {
+                "content": "by",
+                "span": {
+                  "offset": 843,
+                  "length": 2
+                },
+                "confidence": 0.995,
+                "source": "D(1,428,1161,454,1161,454,1188,428,1188)"
+              },
+              {
+                "content": "Brown",
+                "span": {
+                  "offset": 846,
+                  "length": 5
+                },
+                "confidence": 0.995,
+                "source": "D(1,462,1161,530,1161,530,1189,462,1188)"
+              },
+              {
+                "content": ",",
+                "span": {
+                  "offset": 851,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,532,1161,538,1161,538,1189,532,1189)"
+              },
+              {
+                "content": "H",
+                "span": {
+                  "offset": 853,
+                  "length": 1
+                },
+                "confidence": 0.995,
+                "source": "D(1,547,1162,561,1162,561,1189,547,1189)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 854,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,564,1162,572,1162,572,1189,564,1189)"
+              },
+              {
+                "content": "Jackson",
+                "span": {
+                  "offset": 856,
+                  "length": 7
+                },
+                "confidence": 0.982,
+                "source": "D(1,235,1190,322,1190,322,1217,235,1217)"
+              },
+              {
+                "content": ",",
+                "span": {
+                  "offset": 863,
+                  "length": 1
+                },
+                "confidence": 0.997,
+                "source": "D(1,323,1190,329,1190,329,1217,323,1217)"
+              },
+              {
+                "content": "Jr",
+                "span": {
+                  "offset": 865,
+                  "length": 2
+                },
+                "confidence": 0.964,
+                "source": "D(1,334,1190,354,1190,354,1217,334,1217)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 867,
+                  "length": 1
+                },
+                "confidence": 0.992,
+                "source": "D(1,354,1190,361,1190,361,1217,354,1217)"
+              },
+              {
+                "content": "4,00",
+                "span": {
+                  "offset": 878,
+                  "length": 4
+                },
+                "confidence": 0.994,
+                "source": "D(1,672,1133,725,1134,725,1159,672,1159)"
+              },
+              {
+                "content": "each",
+                "span": {
+                  "offset": 892,
+                  "length": 4
+                },
+                "confidence": 0.998,
+                "source": "D(1,769,1135,827,1135,827,1158,769,1158)"
+              },
+              {
+                "content": "4,09",
+                "span": {
+                  "offset": 906,
+                  "length": 4
+                },
+                "confidence": 0.99,
+                "source": "D(1,963,1134,1016,1134,1016,1159,963,1159)"
+              },
+              {
+                "content": "16,36",
+                "span": {
+                  "offset": 920,
+                  "length": 5
+                },
+                "confidence": 0.984,
+                "source": "D(1,1120,1134,1186,1134,1186,1159,1120,1159)"
+              },
+              {
+                "content": "10",
+                "span": {
+                  "offset": 935,
+                  "length": 2
+                },
+                "confidence": 0.999,
+                "source": "D(1,1281,1134,1308,1134,1308,1159,1281,1159)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 937,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1309,1134,1332,1134,1332,1159,1309,1159)"
+              },
+              {
+                "content": "18,00",
+                "span": {
+                  "offset": 948,
+                  "length": 5
+                },
+                "confidence": 0.994,
+                "source": "D(1,1434,1134,1501,1134,1501,1159,1434,1159)"
+              },
+              {
+                "content": "SUMMARY",
+                "span": {
+                  "offset": 978,
+                  "length": 7
+                },
+                "confidence": 0.994,
+                "source": "D(1,132,1282,328,1282,328,1316,132,1316)"
+              },
+              {
+                "content": "VAT",
+                "span": {
+                  "offset": 1005,
+                  "length": 3
+                },
+                "confidence": 0.994,
+                "source": "D(1,640,1366,692,1366,692,1393,640,1393)"
+              },
+              {
+                "content": "[",
+                "span": {
+                  "offset": 1009,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,700,1366,708,1366,708,1394,700,1394)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 1010,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,708,1366,731,1366,731,1394,708,1394)"
+              },
+              {
+                "content": "]",
+                "span": {
+                  "offset": 1011,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,731,1366,744,1366,744,1394,731,1394)"
+              },
+              {
+                "content": "Net",
+                "span": {
+                  "offset": 1022,
+                  "length": 3
+                },
+                "confidence": 0.998,
+                "source": "D(1,927,1366,973,1366,973,1391,927,1391)"
+              },
+              {
+                "content": "worth",
+                "span": {
+                  "offset": 1026,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,980,1366,1056,1366,1056,1391,980,1391)"
+              },
+              {
+                "content": "VAT",
+                "span": {
+                  "offset": 1041,
+                  "length": 3
+                },
+                "confidence": 0.959,
+                "source": "D(1,1188,1366,1241,1366,1241,1391,1188,1391)"
+              },
+              {
+                "content": "Gross",
+                "span": {
+                  "offset": 1054,
+                  "length": 5
+                },
+                "confidence": 0.999,
+                "source": "D(1,1350,1367,1421,1367,1421,1392,1350,1392)"
+              },
+              {
+                "content": "worth",
+                "span": {
+                  "offset": 1060,
+                  "length": 5
+                },
+                "confidence": 0.999,
+                "source": "D(1,1429,1367,1504,1366,1504,1391,1429,1392)"
+              },
+              {
+                "content": "10",
+                "span": {
+                  "offset": 1086,
+                  "length": 2
+                },
+                "confidence": 0.998,
+                "source": "D(1,666,1425,695,1425,695,1450,666,1450)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 1088,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,695,1425,719,1425,719,1450,695,1450)"
+              },
+              {
+                "content": "171,01",
+                "span": {
+                  "offset": 1099,
+                  "length": 6
+                },
+                "confidence": 0.996,
+                "source": "D(1,976,1426,1056,1427,1056,1452,976,1452)"
+              },
+              {
+                "content": "17,10",
+                "span": {
+                  "offset": 1115,
+                  "length": 5
+                },
+                "confidence": 0.993,
+                "source": "D(1,1175,1426,1240,1426,1240,1452,1175,1452)"
+              },
+              {
+                "content": "188,11",
+                "span": {
+                  "offset": 1130,
+                  "length": 6
+                },
+                "confidence": 0.987,
+                "source": "D(1,1424,1426,1504,1427,1504,1452,1424,1452)"
+              },
+              {
+                "content": "Total",
+                "span": {
+                  "offset": 1157,
+                  "length": 5
+                },
+                "confidence": 0.998,
+                "source": "D(1,500,1485,568,1486,568,1511,500,1510)"
+              },
+              {
+                "content": "$",
+                "span": {
+                  "offset": 1172,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,943,1486,958,1486,958,1511,943,1511)"
+              },
+              {
+                "content": "171,01",
+                "span": {
+                  "offset": 1174,
+                  "length": 6
+                },
+                "confidence": 0.974,
+                "source": "D(1,969,1486,1056,1486,1056,1511,969,1511)"
+              },
+              {
+                "content": "$",
+                "span": {
+                  "offset": 1190,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1144,1486,1158,1486,1158,1511,1144,1511)"
+              },
+              {
+                "content": "17,10",
+                "span": {
+                  "offset": 1192,
+                  "length": 5
+                },
+                "confidence": 0.983,
+                "source": "D(1,1169,1486,1240,1486,1240,1511,1169,1511)"
+              },
+              {
+                "content": "$",
+                "span": {
+                  "offset": 1207,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1392,1486,1407,1486,1407,1511,1392,1511)"
+              },
+              {
+                "content": "188,11",
+                "span": {
+                  "offset": 1209,
+                  "length": 6
+                },
+                "confidence": 0.919,
+                "source": "D(1,1418,1486,1505,1486,1505,1511,1418,1511)"
+              }
+            ],
+            "lines": [
+              {
+                "content": "Invoice no: 56908352",
+                "source": "D(1,131,72,538,71,538,107,131,108)",
+                "span": {
+                  "offset": 0,
+                  "length": 20
+                }
+              },
+              {
+                "content": "Date of issue:",
+                "source": "D(1,131,141,345,141,345,174,131,173)",
+                "span": {
+                  "offset": 22,
+                  "length": 14
+                }
+              },
+              {
+                "content": "01/11/2015",
+                "source": "D(1,800,140,979,140,979,174,800,174)",
+                "span": {
+                  "offset": 38,
+                  "length": 10
+                }
+              },
+              {
+                "content": "Seller:",
+                "source": "D(1,131,443,255,443,255,476,131,476)",
+                "span": {
+                  "offset": 50,
+                  "length": 7
+                }
+              },
+              {
+                "content": "Lozano, Wang and Smith",
+                "source": "D(1,140,506,490,505,490,539,140,540)",
+                "span": {
+                  "offset": 58,
+                  "length": 22
+                }
+              },
+              {
+                "content": "8162 Dunn Radial",
+                "source": "D(1,140,542,392,542,392,572,140,572)",
+                "span": {
+                  "offset": 81,
+                  "length": 16
+                }
+              },
+              {
+                "content": "Lauraland, ID 83827",
+                "source": "D(1,140,579,425,576,425,608,140,610)",
+                "span": {
+                  "offset": 98,
+                  "length": 19
+                }
+              },
+              {
+                "content": "Tax Id: 914-76-8473",
+                "source": "D(1,138,648,424,647,424,679,138,679)",
+                "span": {
+                  "offset": 119,
+                  "length": 19
+                }
+              },
+              {
+                "content": "IBAN: GB68RRBM34982962207975",
+                "source": "D(1,139,682,633,683,633,714,139,713)",
+                "span": {
+                  "offset": 140,
+                  "length": 28
+                }
+              },
+              {
+                "content": "Client:",
+                "source": "D(1,824,442,949,441,949,477,824,477)",
+                "span": {
+                  "offset": 170,
+                  "length": 7
+                }
+              },
+              {
+                "content": "Evans, Curtis and Salinas",
+                "source": "D(1,833,505,1186,505,1186,537,833,537)",
+                "span": {
+                  "offset": 178,
+                  "length": 25
+                }
+              },
+              {
+                "content": "13078 Mora Garden",
+                "source": "D(1,834,542,1113,542,1113,572,834,572)",
+                "span": {
+                  "offset": 204,
+                  "length": 17
+                }
+              },
+              {
+                "content": "Morseberg, WV 48959",
+                "source": "D(1,833,578,1144,577,1144,611,833,611)",
+                "span": {
+                  "offset": 222,
+                  "length": 19
+                }
+              },
+              {
+                "content": "Tax Id: 904-76-9217",
+                "source": "D(1,831,648,1116,648,1116,679,831,679)",
+                "span": {
+                  "offset": 243,
+                  "length": 19
+                }
+              },
+              {
+                "content": "ITEMS",
+                "source": "D(1,131,759,248,759,248,792,131,793)",
+                "span": {
+                  "offset": 267,
+                  "length": 5
+                }
+              },
+              {
+                "content": "No.",
+                "source": "D(1,158,847,202,846,202,870,158,871)",
+                "span": {
+                  "offset": 292,
+                  "length": 3
+                }
+              },
+              {
+                "content": "Description",
+                "source": "D(1,238,845,385,847,385,873,237,871)",
+                "span": {
+                  "offset": 305,
+                  "length": 11
+                }
+              },
+              {
+                "content": "Qty",
+                "source": "D(1,678,845,727,848,726,875,678,872)",
+                "span": {
+                  "offset": 326,
+                  "length": 3
+                }
+              },
+              {
+                "content": "UM",
+                "source": "D(1,776,845,821,845,821,870,776,870)",
+                "span": {
+                  "offset": 339,
+                  "length": 2
+                }
+              },
+              {
+                "content": "Net price",
+                "source": "D(1,898,844,1018,845,1018,873,898,872)",
+                "span": {
+                  "offset": 351,
+                  "length": 9
+                }
+              },
+              {
+                "content": "Net worth",
+                "source": "D(1,1057,845,1186,845,1186,871,1057,871)",
+                "span": {
+                  "offset": 370,
+                  "length": 9
+                }
+              },
+              {
+                "content": "VAT [%]",
+                "source": "D(1,1227,844,1332,845,1332,873,1226,872)",
+                "span": {
+                  "offset": 389,
+                  "length": 7
+                }
+              },
+              {
+                "content": "Gross",
+                "source": "D(1,1428,847,1502,848,1501,871,1428,870)",
+                "span": {
+                  "offset": 406,
+                  "length": 5
+                }
+              },
+              {
+                "content": "worth",
+                "source": "D(1,1425,874,1501,874,1501,897,1425,897)",
+                "span": {
+                  "offset": 412,
+                  "length": 5
+                }
+              },
+              {
+                "content": "1.",
+                "source": "D(1,169,934,192,934,192,957,169,957)",
+                "span": {
+                  "offset": 438,
+                  "length": 2
+                }
+              },
+              {
+                "content": "Rage By Bob Woodward -",
+                "source": "D(1,238,932,524,932,524,959,238,959)",
+                "span": {
+                  "offset": 450,
+                  "length": 22
+                }
+              },
+              {
+                "content": "Donald Trump NEW",
+                "source": "D(1,238,960,459,960,459,985,238,986)",
+                "span": {
+                  "offset": 473,
+                  "length": 16
+                }
+              },
+              {
+                "content": "HARDCOVER Sept 2020",
+                "source": "D(1,238,986,504,986,504,1014,238,1015)",
+                "span": {
+                  "offset": 490,
+                  "length": 19
+                }
+              },
+              {
+                "content": "5,00",
+                "source": "D(1,672,933,725,933,725,958,672,958)",
+                "span": {
+                  "offset": 519,
+                  "length": 4
+                }
+              },
+              {
+                "content": "each",
+                "source": "D(1,769,934,827,934,827,957,769,957)",
+                "span": {
+                  "offset": 533,
+                  "length": 4
+                }
+              },
+              {
+                "content": "22,93",
+                "source": "D(1,950,932,1016,932,1016,959,950,959)",
+                "span": {
+                  "offset": 547,
+                  "length": 5
+                }
+              },
+              {
+                "content": "114,65",
+                "source": "D(1,1106,933,1185,933,1185,958,1106,958)",
+                "span": {
+                  "offset": 562,
+                  "length": 6
+                }
+              },
+              {
+                "content": "10%",
+                "source": "D(1,1280,930,1332,933,1332,958,1280,956)",
+                "span": {
+                  "offset": 578,
+                  "length": 3
+                }
+              },
+              {
+                "content": "126,12",
+                "source": "D(1,1421,933,1500,933,1500,958,1420,958)",
+                "span": {
+                  "offset": 591,
+                  "length": 6
+                }
+              },
+              {
+                "content": "2.",
+                "source": "D(1,169,1048,191,1048,191,1071,169,1071)",
+                "span": {
+                  "offset": 618,
+                  "length": 2
+                }
+              },
+              {
+                "content": "Spectacular Ireland Coffee",
+                "source": "D(1,237,1046,537,1046,537,1073,237,1074)",
+                "span": {
+                  "offset": 630,
+                  "length": 26
+                }
+              },
+              {
+                "content": "Table Book - very large",
+                "source": "D(1,237,1074,508,1074,508,1101,237,1101)",
+                "span": {
+                  "offset": 657,
+                  "length": 23
+                }
+              },
+              {
+                "content": "4,00",
+                "source": "D(1,672,1047,725,1047,725,1072,672,1072)",
+                "span": {
+                  "offset": 690,
+                  "length": 4
+                }
+              },
+              {
+                "content": "each",
+                "source": "D(1,770,1048,826,1048,826,1071,770,1071)",
+                "span": {
+                  "offset": 704,
+                  "length": 4
+                }
+              },
+              {
+                "content": "10,00",
+                "source": "D(1,951,1046,1015,1047,1015,1072,951,1072)",
+                "span": {
+                  "offset": 718,
+                  "length": 5
+                }
+              },
+              {
+                "content": "40,00",
+                "source": "D(1,1119,1047,1185,1047,1185,1072,1119,1072)",
+                "span": {
+                  "offset": 733,
+                  "length": 5
+                }
+              },
+              {
+                "content": "10%",
+                "source": "D(1,1281,1046,1331,1045,1331,1071,1281,1072)",
+                "span": {
+                  "offset": 748,
+                  "length": 3
+                }
+              },
+              {
+                "content": "44,00",
+                "source": "D(1,1434,1047,1501,1047,1501,1072,1434,1072)",
+                "span": {
+                  "offset": 761,
+                  "length": 5
+                }
+              },
+              {
+                "content": "3.",
+                "source": "D(1,169,1135,192,1135,192,1158,169,1158)",
+                "span": {
+                  "offset": 787,
+                  "length": 2
+                }
+              },
+              {
+                "content": "The Complete Life's Little",
+                "source": "D(1,237,1133,525,1133,525,1160,237,1160)",
+                "span": {
+                  "offset": 799,
+                  "length": 26
+                }
+              },
+              {
+                "content": "Instruction Book by Brown, H.",
+                "source": "D(1,237,1160,572,1161,572,1189,237,1188)",
+                "span": {
+                  "offset": 826,
+                  "length": 29
+                }
+              },
+              {
+                "content": "Jackson, Jr.",
+                "source": "D(1,235,1190,361,1190,361,1217,235,1217)",
+                "span": {
+                  "offset": 856,
+                  "length": 12
+                }
+              },
+              {
+                "content": "4,00",
+                "source": "D(1,672,1133,726,1134,725,1160,672,1159)",
+                "span": {
+                  "offset": 878,
+                  "length": 4
+                }
+              },
+              {
+                "content": "each",
+                "source": "D(1,769,1135,827,1135,827,1159,769,1158)",
+                "span": {
+                  "offset": 892,
+                  "length": 4
+                }
+              },
+              {
+                "content": "4,09",
+                "source": "D(1,963,1134,1016,1134,1016,1160,963,1159)",
+                "span": {
+                  "offset": 906,
+                  "length": 4
+                }
+              },
+              {
+                "content": "16,36",
+                "source": "D(1,1120,1134,1186,1134,1186,1160,1120,1159)",
+                "span": {
+                  "offset": 920,
+                  "length": 5
+                }
+              },
+              {
+                "content": "10%",
+                "source": "D(1,1281,1134,1332,1134,1332,1159,1281,1159)",
+                "span": {
+                  "offset": 935,
+                  "length": 3
+                }
+              },
+              {
+                "content": "18,00",
+                "source": "D(1,1434,1134,1501,1134,1501,1160,1434,1159)",
+                "span": {
+                  "offset": 948,
+                  "length": 5
+                }
+              },
+              {
+                "content": "SUMMARY",
+                "source": "D(1,132,1280,328,1280,328,1316,132,1316)",
+                "span": {
+                  "offset": 978,
+                  "length": 7
+                }
+              },
+              {
+                "content": "VAT [%]",
+                "source": "D(1,640,1366,744,1366,744,1394,640,1394)",
+                "span": {
+                  "offset": 1005,
+                  "length": 7
+                }
+              },
+              {
+                "content": "Net worth",
+                "source": "D(1,927,1366,1056,1366,1056,1391,927,1391)",
+                "span": {
+                  "offset": 1022,
+                  "length": 9
+                }
+              },
+              {
+                "content": "VAT",
+                "source": "D(1,1188,1366,1241,1366,1241,1391,1188,1391)",
+                "span": {
+                  "offset": 1041,
+                  "length": 3
+                }
+              },
+              {
+                "content": "Gross worth",
+                "source": "D(1,1349,1367,1504,1366,1504,1392,1350,1393)",
+                "span": {
+                  "offset": 1054,
+                  "length": 11
+                }
+              },
+              {
+                "content": "10%",
+                "source": "D(1,666,1425,719,1425,719,1450,666,1451)",
+                "span": {
+                  "offset": 1086,
+                  "length": 3
+                }
+              },
+              {
+                "content": "171,01",
+                "source": "D(1,976,1426,1056,1426,1056,1452,976,1452)",
+                "span": {
+                  "offset": 1099,
+                  "length": 6
+                }
+              },
+              {
+                "content": "17,10",
+                "source": "D(1,1175,1426,1240,1426,1240,1452,1175,1452)",
+                "span": {
+                  "offset": 1115,
+                  "length": 5
+                }
+              },
+              {
+                "content": "188,11",
+                "source": "D(1,1424,1426,1504,1426,1504,1452,1424,1452)",
+                "span": {
+                  "offset": 1130,
+                  "length": 6
+                }
+              },
+              {
+                "content": "Total",
+                "source": "D(1,500,1484,568,1485,568,1511,500,1510)",
+                "span": {
+                  "offset": 1157,
+                  "length": 5
+                }
+              },
+              {
+                "content": "$ 171,01",
+                "source": "D(1,943,1486,1056,1486,1056,1511,943,1511)",
+                "span": {
+                  "offset": 1172,
+                  "length": 8
+                }
+              },
+              {
+                "content": "$ 17,10",
+                "source": "D(1,1144,1486,1241,1486,1240,1511,1144,1511)",
+                "span": {
+                  "offset": 1190,
+                  "length": 7
+                }
+              },
+              {
+                "content": "$ 188,11",
+                "source": "D(1,1392,1486,1505,1486,1505,1511,1392,1511)",
+                "span": {
+                  "offset": 1207,
+                  "length": 8
+                }
+              }
+            ]
+          }
+        ],
+        "paragraphs": [
+          {
+            "content": "Invoice no: 56908352",
+            "source": "D(1,131,72,538,71,538,107,131,108)",
+            "span": {
+              "offset": 0,
+              "length": 20
+            }
+          },
+          {
+            "content": "Date of issue:",
+            "source": "D(1,131,141,345,141,345,174,131,173)",
+            "span": {
+              "offset": 22,
+              "length": 14
+            }
+          },
+          {
+            "content": "01/11/2015",
+            "source": "D(1,800,140,979,140,979,174,800,174)",
+            "span": {
+              "offset": 38,
+              "length": 10
+            }
+          },
+          {
+            "content": "Seller: Lozano, Wang and Smith 8162 Dunn Radial Lauraland, ID 83827",
+            "source": "D(1,131,443,489,440,491,607,132,610)",
+            "span": {
+              "offset": 50,
+              "length": 67
+            }
+          },
+          {
+            "content": "Tax Id: 914-76-8473",
+            "source": "D(1,138,648,424,647,424,679,138,679)",
+            "span": {
+              "offset": 119,
+              "length": 19
+            }
+          },
+          {
+            "content": "IBAN: GB68RRBM34982962207975",
+            "source": "D(1,139,682,633,683,633,714,139,713)",
+            "span": {
+              "offset": 140,
+              "length": 28
+            }
+          },
+          {
+            "content": "Client: Evans, Curtis and Salinas 13078 Mora Garden Morseberg, WV 48959",
+            "source": "D(1,824,441,1186,441,1187,610,824,611)",
+            "span": {
+              "offset": 170,
+              "length": 71
+            }
+          },
+          {
+            "content": "Tax Id: 904-76-9217",
+            "source": "D(1,831,648,1116,648,1116,679,831,679)",
+            "span": {
+              "offset": 243,
+              "length": 19
+            }
+          },
+          {
+            "role": "sectionHeading",
+            "content": "ITEMS",
+            "source": "D(1,131,759,248,759,248,792,131,793)",
+            "span": {
+              "offset": 265,
+              "length": 7
+            }
+          },
+          {
+            "content": "No.",
+            "source": "D(1,158,847,202,846,202,870,158,870)",
+            "span": {
+              "offset": 292,
+              "length": 3
+            }
+          },
+          {
+            "content": "Description",
+            "source": "D(1,238,845,385,847,385,873,237,871)",
+            "span": {
+              "offset": 305,
+              "length": 11
+            }
+          },
+          {
+            "content": "Qty",
+            "source": "D(1,678,846,728,848,726,875,677,872)",
+            "span": {
+              "offset": 326,
+              "length": 3
+            }
+          },
+          {
+            "content": "UM",
+            "source": "D(1,776,846,821,846,821,870,776,870)",
+            "span": {
+              "offset": 339,
+              "length": 2
+            }
+          },
+          {
+            "content": "Net price",
+            "source": "D(1,898,842,1018,845,1018,874,897,871)",
+            "span": {
+              "offset": 351,
+              "length": 9
+            }
+          },
+          {
+            "content": "Net worth",
+            "source": "D(1,1057,844,1187,845,1186,872,1057,871)",
+            "span": {
+              "offset": 370,
+              "length": 9
+            }
+          },
+          {
+            "content": "VAT [%]",
+            "source": "D(1,1227,844,1332,845,1332,873,1226,872)",
+            "span": {
+              "offset": 389,
+              "length": 7
+            }
+          },
+          {
+            "content": "Gross worth",
+            "source": "D(1,1425,847,1502,848,1501,898,1424,897)",
+            "span": {
+              "offset": 406,
+              "length": 11
+            }
+          },
+          {
+            "content": "1.",
+            "source": "D(1,169,933,192,934,191,957,169,957)",
+            "span": {
+              "offset": 438,
+              "length": 2
+            }
+          },
+          {
+            "content": "Rage By Bob Woodward - Donald Trump NEW HARDCOVER Sept 2020",
+            "source": "D(1,238,932,524,932,524,1014,238,1015)",
+            "span": {
+              "offset": 450,
+              "length": 59
+            }
+          },
+          {
+            "content": "5,00",
+            "source": "D(1,672,933,725,933,725,958,672,958)",
+            "span": {
+              "offset": 519,
+              "length": 4
+            }
+          },
+          {
+            "content": "each",
+            "source": "D(1,769,934,827,933,827,957,769,957)",
+            "span": {
+              "offset": 533,
+              "length": 4
+            }
+          },
+          {
+            "content": "22,93",
+            "source": "D(1,950,932,1016,932,1016,959,950,959)",
+            "span": {
+              "offset": 547,
+              "length": 5
+            }
+          },
+          {
+            "content": "114,65",
+            "source": "D(1,1106,933,1185,933,1185,958,1106,958)",
+            "span": {
+              "offset": 562,
+              "length": 6
+            }
+          },
+          {
+            "content": "10%",
+            "source": "D(1,1280,930,1333,933,1332,959,1279,956)",
+            "span": {
+              "offset": 578,
+              "length": 3
+            }
+          },
+          {
+            "content": "126,12",
+            "source": "D(1,1421,932,1500,933,1500,958,1420,958)",
+            "span": {
+              "offset": 591,
+              "length": 6
+            }
+          },
+          {
+            "content": "2.",
+            "source": "D(1,169,1046,194,1049,191,1074,166,1071)",
+            "span": {
+              "offset": 618,
+              "length": 2
+            }
+          },
+          {
+            "content": "Spectacular Ireland Coffee Table Book - very large",
+            "source": "D(1,237,1046,537,1046,537,1101,237,1101)",
+            "span": {
+              "offset": 630,
+              "length": 50
+            }
+          },
+          {
+            "content": "4,00",
+            "source": "D(1,672,1047,725,1047,725,1072,672,1072)",
+            "span": {
+              "offset": 690,
+              "length": 4
+            }
+          },
+          {
+            "content": "each",
+            "source": "D(1,770,1048,826,1048,826,1071,770,1071)",
+            "span": {
+              "offset": 704,
+              "length": 4
+            }
+          },
+          {
+            "content": "10,00",
+            "source": "D(1,951,1046,1015,1047,1015,1072,951,1072)",
+            "span": {
+              "offset": 718,
+              "length": 5
+            }
+          },
+          {
+            "content": "40,00",
+            "source": "D(1,1119,1047,1185,1047,1185,1072,1119,1072)",
+            "span": {
+              "offset": 733,
+              "length": 5
+            }
+          },
+          {
+            "content": "10%",
+            "source": "D(1,1281,1046,1331,1045,1331,1071,1281,1072)",
+            "span": {
+              "offset": 748,
+              "length": 3
+            }
+          },
+          {
+            "content": "44,00",
+            "source": "D(1,1434,1047,1501,1047,1501,1072,1434,1072)",
+            "span": {
+              "offset": 761,
+              "length": 5
+            }
+          },
+          {
+            "content": "3.",
+            "source": "D(1,169,1135,192,1135,192,1158,169,1158)",
+            "span": {
+              "offset": 787,
+              "length": 2
+            }
+          },
+          {
+            "content": "The Complete Life's Little Instruction Book by Brown, H. Jackson, Jr.",
+            "source": "D(1,235,1133,572,1133,572,1217,235,1217)",
+            "span": {
+              "offset": 799,
+              "length": 69
+            }
+          },
+          {
+            "content": "4,00",
+            "source": "D(1,672,1133,726,1134,725,1159,672,1159)",
+            "span": {
+              "offset": 878,
+              "length": 4
+            }
+          },
+          {
+            "content": "each",
+            "source": "D(1,769,1135,827,1135,827,1158,769,1158)",
+            "span": {
+              "offset": 892,
+              "length": 4
+            }
+          },
+          {
+            "content": "4,09",
+            "source": "D(1,963,1134,1016,1134,1016,1159,963,1159)",
+            "span": {
+              "offset": 906,
+              "length": 4
+            }
+          },
+          {
+            "content": "16,36",
+            "source": "D(1,1120,1134,1186,1134,1186,1159,1120,1159)",
+            "span": {
+              "offset": 920,
+              "length": 5
+            }
+          },
+          {
+            "content": "10%",
+            "source": "D(1,1281,1134,1332,1134,1332,1159,1281,1159)",
+            "span": {
+              "offset": 935,
+              "length": 3
+            }
+          },
+          {
+            "content": "18,00",
+            "source": "D(1,1434,1134,1501,1134,1501,1159,1434,1159)",
+            "span": {
+              "offset": 948,
+              "length": 5
+            }
+          },
+          {
+            "role": "sectionHeading",
+            "content": "SUMMARY",
+            "source": "D(1,132,1280,328,1280,328,1316,132,1316)",
+            "span": {
+              "offset": 976,
+              "length": 9
+            }
+          },
+          {
+            "content": "VAT [%]",
+            "source": "D(1,640,1366,744,1366,744,1394,640,1393)",
+            "span": {
+              "offset": 1005,
+              "length": 7
+            }
+          },
+          {
+            "content": "Net worth",
+            "source": "D(1,927,1366,1056,1366,1056,1391,927,1391)",
+            "span": {
+              "offset": 1022,
+              "length": 9
+            }
+          },
+          {
+            "content": "VAT",
+            "source": "D(1,1188,1366,1241,1366,1241,1391,1188,1391)",
+            "span": {
+              "offset": 1041,
+              "length": 3
+            }
+          },
+          {
+            "content": "Gross worth",
+            "source": "D(1,1350,1366,1504,1366,1504,1392,1349,1392)",
+            "span": {
+              "offset": 1054,
+              "length": 11
+            }
+          },
+          {
+            "content": "10%",
+            "source": "D(1,666,1425,719,1425,719,1451,666,1450)",
+            "span": {
+              "offset": 1086,
+              "length": 3
+            }
+          },
+          {
+            "content": "171,01",
+            "source": "D(1,976,1426,1056,1426,1056,1452,976,1452)",
+            "span": {
+              "offset": 1099,
+              "length": 6
+            }
+          },
+          {
+            "content": "17,10",
+            "source": "D(1,1175,1426,1240,1426,1240,1452,1175,1452)",
+            "span": {
+              "offset": 1115,
+              "length": 5
+            }
+          },
+          {
+            "content": "188,11",
+            "source": "D(1,1424,1426,1504,1427,1504,1452,1424,1452)",
+            "span": {
+              "offset": 1130,
+              "length": 6
+            }
+          },
+          {
+            "content": "Total",
+            "source": "D(1,500,1485,568,1486,568,1511,500,1510)",
+            "span": {
+              "offset": 1157,
+              "length": 5
+            }
+          },
+          {
+            "content": "$ 171,01",
+            "source": "D(1,943,1486,1056,1486,1056,1511,943,1511)",
+            "span": {
+              "offset": 1172,
+              "length": 8
+            }
+          },
+          {
+            "content": "$ 17,10",
+            "source": "D(1,1144,1486,1241,1486,1240,1511,1144,1511)",
+            "span": {
+              "offset": 1190,
+              "length": 7
+            }
+          },
+          {
+            "content": "$ 188,11",
+            "source": "D(1,1392,1486,1505,1486,1505,1511,1392,1511)",
+            "span": {
+              "offset": 1207,
+              "length": 8
+            }
+          }
+        ],
+        "sections": [
+          {
+            "span": {
+              "offset": 0,
+              "length": 1235
+            },
+            "elements": [
+              "/sections/1",
+              "/sections/2",
+              "/sections/3"
+            ]
+          },
+          {
+            "span": {
+              "offset": 0,
+              "length": 262
+            },
+            "elements": [
+              "/paragraphs/0",
+              "/paragraphs/1",
+              "/paragraphs/2",
+              "/paragraphs/3",
+              "/paragraphs/4",
+              "/paragraphs/5",
+              "/paragraphs/6",
+              "/paragraphs/7"
+            ]
+          },
+          {
+            "span": {
+              "offset": 265,
+              "length": 708
+            },
+            "elements": [
+              "/paragraphs/8",
+              "/tables/0"
+            ]
+          },
+          {
+            "span": {
+              "offset": 976,
+              "length": 259
+            },
+            "elements": [
+              "/paragraphs/41",
+              "/tables/1"
+            ]
+          }
+        ],
+        "tables": [
+          {
+            "rowCount": 4,
+            "columnCount": 8,
+            "cells": [
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "No.",
+                "source": "D(1,133,826,230,826,229,916,133,916)",
+                "span": {
+                  "offset": 292,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/9"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Description",
+                "source": "D(1,230,826,627,826,626,916,229,916)",
+                "span": {
+                  "offset": 305,
+                  "length": 11
+                },
+                "elements": [
+                  "/paragraphs/10"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Qty",
+                "source": "D(1,627,826,753,826,752,916,626,916)",
+                "span": {
+                  "offset": 326,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/11"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "UM",
+                "source": "D(1,753,826,870,826,870,916,752,916)",
+                "span": {
+                  "offset": 339,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/12"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 4,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Net price",
+                "source": "D(1,870,826,1043,826,1043,916,870,916)",
+                "span": {
+                  "offset": 351,
+                  "length": 9
+                },
+                "elements": [
+                  "/paragraphs/13"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 5,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Net worth",
+                "source": "D(1,1043,826,1212,825,1212,916,1043,916)",
+                "span": {
+                  "offset": 370,
+                  "length": 9
+                },
+                "elements": [
+                  "/paragraphs/14"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 6,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "VAT [%]",
+                "source": "D(1,1212,825,1379,825,1379,916,1212,916)",
+                "span": {
+                  "offset": 389,
+                  "length": 7
+                },
+                "elements": [
+                  "/paragraphs/15"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 7,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Gross worth",
+                "source": "D(1,1379,825,1518,826,1518,916,1379,916)",
+                "span": {
+                  "offset": 406,
+                  "length": 11
+                },
+                "elements": [
+                  "/paragraphs/16"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "1.",
+                "source": "D(1,133,916,229,916,229,1030,132,1030)",
+                "span": {
+                  "offset": 438,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/17"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Rage By Bob Woodward - Donald Trump NEW HARDCOVER Sept 2020",
+                "source": "D(1,229,916,626,916,626,1030,229,1030)",
+                "span": {
+                  "offset": 450,
+                  "length": 59
+                },
+                "elements": [
+                  "/paragraphs/18"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "5,00",
+                "source": "D(1,626,916,752,916,752,1030,626,1030)",
+                "span": {
+                  "offset": 519,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/19"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "each",
+                "source": "D(1,752,916,870,916,870,1030,752,1030)",
+                "span": {
+                  "offset": 533,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/20"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 4,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "22,93",
+                "source": "D(1,870,916,1043,916,1043,1030,870,1030)",
+                "span": {
+                  "offset": 547,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/21"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 5,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "114,65",
+                "source": "D(1,1043,916,1212,916,1213,1029,1043,1030)",
+                "span": {
+                  "offset": 562,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/22"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 6,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "10%",
+                "source": "D(1,1212,916,1379,916,1379,1029,1213,1029)",
+                "span": {
+                  "offset": 578,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/23"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 7,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "126,12",
+                "source": "D(1,1379,916,1518,916,1518,1029,1379,1029)",
+                "span": {
+                  "offset": 591,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/24"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "2.",
+                "source": "D(1,132,1030,229,1030,229,1116,132,1116)",
+                "span": {
+                  "offset": 618,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/25"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Spectacular Ireland Coffee Table Book - very large",
+                "source": "D(1,229,1030,626,1030,626,1116,229,1116)",
+                "span": {
+                  "offset": 630,
+                  "length": 50
+                },
+                "elements": [
+                  "/paragraphs/26"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "4,00",
+                "source": "D(1,626,1030,752,1030,753,1116,626,1116)",
+                "span": {
+                  "offset": 690,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/27"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "each",
+                "source": "D(1,752,1030,870,1030,870,1116,753,1116)",
+                "span": {
+                  "offset": 704,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/28"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 4,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "10,00",
+                "source": "D(1,870,1030,1043,1030,1044,1116,870,1116)",
+                "span": {
+                  "offset": 718,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/29"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 5,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "40,00",
+                "source": "D(1,1043,1030,1213,1029,1214,1116,1044,1116)",
+                "span": {
+                  "offset": 733,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/30"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 6,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "10%",
+                "source": "D(1,1213,1029,1379,1029,1380,1116,1214,1116)",
+                "span": {
+                  "offset": 748,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/31"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 7,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "44,00",
+                "source": "D(1,1379,1029,1518,1029,1518,1116,1380,1116)",
+                "span": {
+                  "offset": 761,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/32"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "3.",
+                "source": "D(1,132,1116,229,1116,230,1232,132,1232)",
+                "span": {
+                  "offset": 787,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/33"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "The Complete Life's Little Instruction Book by Brown, H. Jackson, Jr.",
+                "source": "D(1,229,1116,626,1116,627,1231,230,1232)",
+                "span": {
+                  "offset": 799,
+                  "length": 69
+                },
+                "elements": [
+                  "/paragraphs/34"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "4,00",
+                "source": "D(1,626,1116,753,1116,753,1231,627,1231)",
+                "span": {
+                  "offset": 878,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/35"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "each",
+                "source": "D(1,753,1116,870,1116,871,1231,753,1231)",
+                "span": {
+                  "offset": 892,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/36"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 4,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "4,09",
+                "source": "D(1,870,1116,1044,1116,1045,1231,871,1231)",
+                "span": {
+                  "offset": 906,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/37"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 5,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "16,36",
+                "source": "D(1,1044,1116,1214,1116,1215,1231,1045,1231)",
+                "span": {
+                  "offset": 920,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/38"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 6,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "10%",
+                "source": "D(1,1214,1116,1380,1116,1381,1231,1215,1231)",
+                "span": {
+                  "offset": 935,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/39"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 7,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "18,00",
+                "source": "D(1,1380,1116,1518,1116,1518,1231,1381,1231)",
+                "span": {
+                  "offset": 948,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/40"
+                ]
+              }
+            ],
+            "source": "D(1,131,826,1518,825,1518,1235,131,1233)",
+            "span": {
+              "offset": 275,
+              "length": 698
+            }
+          },
+          {
+            "rowCount": 3,
+            "columnCount": 4,
+            "cells": [
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "VAT [%]",
+                "source": "D(1,133,1349,832,1349,832,1409,133,1410)",
+                "span": {
+                  "offset": 1005,
+                  "length": 7
+                },
+                "elements": [
+                  "/paragraphs/42"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Net worth",
+                "source": "D(1,832,1349,1107,1349,1107,1409,832,1409)",
+                "span": {
+                  "offset": 1022,
+                  "length": 9
+                },
+                "elements": [
+                  "/paragraphs/43"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "VAT",
+                "source": "D(1,1107,1349,1303,1349,1303,1409,1107,1409)",
+                "span": {
+                  "offset": 1041,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/44"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Gross worth",
+                "source": "D(1,1303,1349,1519,1349,1519,1409,1303,1409)",
+                "span": {
+                  "offset": 1054,
+                  "length": 11
+                },
+                "elements": [
+                  "/paragraphs/45"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "10%",
+                "source": "D(1,133,1410,832,1409,832,1469,133,1469)",
+                "span": {
+                  "offset": 1086,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/46"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "171,01",
+                "source": "D(1,832,1409,1107,1409,1107,1469,832,1469)",
+                "span": {
+                  "offset": 1099,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/47"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "17,10",
+                "source": "D(1,1107,1409,1303,1409,1303,1469,1107,1469)",
+                "span": {
+                  "offset": 1115,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/48"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "188,11",
+                "source": "D(1,1303,1409,1519,1409,1519,1469,1303,1469)",
+                "span": {
+                  "offset": 1130,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/49"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Total",
+                "source": "D(1,133,1469,832,1469,832,1527,133,1527)",
+                "span": {
+                  "offset": 1157,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/50"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "$ 171,01",
+                "source": "D(1,832,1469,1107,1469,1107,1527,832,1527)",
+                "span": {
+                  "offset": 1172,
+                  "length": 8
+                },
+                "elements": [
+                  "/paragraphs/51"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "$ 17,10",
+                "source": "D(1,1107,1469,1303,1469,1303,1526,1107,1527)",
+                "span": {
+                  "offset": 1190,
+                  "length": 7
+                },
+                "elements": [
+                  "/paragraphs/52"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "$ 188,11",
+                "source": "D(1,1303,1469,1519,1469,1519,1526,1303,1526)",
+                "span": {
+                  "offset": 1207,
+                  "length": 8
+                },
+                "elements": [
+                  "/paragraphs/53"
+                ]
+              }
+            ],
+            "source": "D(1,130,1349,1518,1348,1517,1529,130,1529)",
+            "span": {
+              "offset": 988,
+              "length": 247
+            }
+          }
+        ],
         "analyzerId": "prebuilt-invoice",
         "mimeType": "image/jpeg"
       }
     ]
   },
   "usage": {
-    "documentPagesMinimal": 1,
+    "documentPagesStandard": 1,
     "contextualizationTokens": 1000,
     "tokens": {
-      "gpt-4.1-input": 10263,
-      "gpt-4.1-output": 323,
-      "text-embedding-3-large": 4
+      "gpt-4.1-input": 13111,
+      "gpt-4.1-output": 1741,
+      "text-embedding-3-large": 499
     }
   },
   "_extracted": {
-    "field_values": {},
-    "description": "Il s'agit d'une facture (invoice) émise par la société \"Lozano, Wang and Smith\" à \"Evans, Curtis and Salinas\" en date du 01/11/2015. Le montant total TTC est de 188,11 $ pour l'achat de livres, avec une TVA de 10 %. Les informations clés incluent le numéro de facture 56908352 et le détail des articles achetés."
+    "field_values": {
+      "AmountDue": {
+        "Amount": 188.11,
+        "CurrencyCode": "USD"
+      },
+      "CountryRegion": "USA",
+      "CustomerAddress": "13078 Mora Garden Morseberg, WV 48959",
+      "CustomerAddressRecipient": "Evans, Curtis and Salinas",
+      "CustomerName": "Evans, Curtis and Salinas",
+      "CustomerTaxId": "904-76-9217",
+      "InvoiceDate": "2015-01-11",
+      "InvoiceId": "56908352",
+      "LineItems": [
+        {
+          "Description": "Rage By Bob Woodward - Donald Trump NEW HARDCOVER Sept 2020",
+          "Quantity": 5,
+          "QuantityUnit": "each",
+          "TaxAmount": {
+            "CurrencyCode": "USD"
+          },
+          "TaxRate": 0.1,
+          "TotalAmount": {
+            "Amount": 126.12,
+            "CurrencyCode": "USD"
+          },
+          "UnitPrice": {
+            "Amount": 22.93,
+            "CurrencyCode": "USD"
+          }
+        },
+        {
+          "Description": "Spectacular Ireland Coffee Table Book - very large",
+          "Quantity": 4,
+          "QuantityUnit": "each",
+          "TaxAmount": {
+            "CurrencyCode": "USD"
+          },
+          "TaxRate": 0.1,
+          "TotalAmount": {
+            "Amount": 44,
+            "CurrencyCode": "USD"
+          },
+          "UnitPrice": {
+            "Amount": 10,
+            "CurrencyCode": "USD"
+          }
+        },
+        {
+          "Description": "The Complete Life's Little Instruction Book by Brown, H. Jackson, Jr.",
+          "Quantity": 4,
+          "QuantityUnit": "each",
+          "TaxAmount": {
+            "CurrencyCode": "USD"
+          },
+          "TaxRate": 0.1,
+          "TotalAmount": {
+            "Amount": 18,
+            "CurrencyCode": "USD"
+          },
+          "UnitPrice": {
+            "Amount": 4.09,
+            "CurrencyCode": "USD"
+          }
+        }
+      ],
+      "SubtotalAmount": {
+        "Amount": 171.01,
+        "CurrencyCode": "USD"
+      },
+      "TaxDetails": [
+        {
+          "Amount": {
+            "Amount": 17.1,
+            "CurrencyCode": "USD"
+          },
+          "Description": "VAT [%] 10%",
+          "NetAmount": {
+            "Amount": 171.01,
+            "CurrencyCode": "USD"
+          },
+          "Rate": 0.1
+        }
+      ],
+      "TotalAmount": {
+        "Amount": 188.11,
+        "CurrencyCode": "USD"
+      },
+      "TotalTaxAmount": {
+        "Amount": 17.1,
+        "CurrencyCode": "USD"
+      },
+      "VendorAddress": "8162 Dunn Radial Lauraland, ID 83827",
+      "VendorAddressRecipient": "Lozano, Wang and Smith",
+      "VendorName": "Lozano, Wang and Smith",
+      "VendorTaxId": "914-76-8473"
+    },
+    "description": "Ce document est une facture (Invoice no: 56908352) émise le 01/11/2015 par la société Lozano, Wang and Smith (Lauraland, ID) à l'attention de Evans, Curtis and Salinas (Morseberg, WV). Le montant total TTC est de 188,11 $ pour l'achat de livres, avec une TVA de 10 %. Les éléments clés incluent la liste détaillée des ouvrages facturés et les coordonnées fiscales des deux parties."
   }
 }

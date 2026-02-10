@@ -1,25 +1,35 @@
 {
-  "id": "9d6a985e-72f2-4185-8dd1-0941f8e1e64e",
+  "id": "f264de97-5b49-4a74-bf7d-f8e88624f878",
   "status": "Succeeded",
   "result": {
     "analyzerId": "prebuilt-invoice",
     "apiVersion": "2025-11-01",
-    "createdAt": "2026-02-10T13:37:28Z",
-    "stringEncoding": "utf16",
+    "createdAt": "2026-02-10T15:10:31Z",
+    "stringEncoding": "codePoint",
     "warnings": [],
     "contents": [
       {
         "path": "input1",
-        "markdown": "```text\n\n```\n",
+        "markdown": "Invoice no: 68688408\n\nDate of issue:\n\n03/20/2016\n\nSeller:\nTorres and Sons\n4052 Brown Roads\nHaysstad, NJ 06418\n\nTax Id: 953-84-2239\n\nIBAN: GB84XSNO58142814072766\n\nClient:\nDennis, Levy and Bowen\n523 Leslie Manors\nLake Colleenville, CT 12053\n\nTax Id: 904-82-9186\n\n\n# ITEMS\n\n\n<table>\n<tr>\n<th>No.</th>\n<th>Description</th>\n<th>Qty</th>\n<th>UM</th>\n<th>Net price</th>\n<th>Net worth</th>\n<th>VAT [%]</th>\n<th>Gross worth</th>\n</tr>\n<tr>\n<td>1.</td>\n<td>Nike 747998-401 Team Hustle D7 Kids Blue Mid Top Basketball Shoes Size 4Y US</td>\n<td>3,00</td>\n<td>each</td>\n<td>10,99</td>\n<td>32,97</td>\n<td>10%</td>\n<td>36,27</td>\n</tr>\n<tr>\n<td>2.</td>\n<td>Jordan Nike Kid Air 1 Retro High Black Gray Elephant Size 7Y 838850-013</td>\n<td>1,00</td>\n<td>each</td>\n<td>50,00</td>\n<td>50,00</td>\n<td>10%</td>\n<td>55,00</td>\n</tr>\n</table>\n\n\n# SUMMARY\n\n\n<table>\n<tr>\n<th>VAT [%]</th>\n<th>Net worth</th>\n<th>VAT</th>\n<th>Gross worth</th>\n</tr>\n<tr>\n<td>10%</td>\n<td>82,97</td>\n<td>8,30</td>\n<td>91,27</td>\n</tr>\n<tr>\n<td>Total</td>\n<td>$ 82,97</td>\n<td>$ 8,30</td>\n<td>$ 91,27</td>\n</tr>\n</table>\n",
         "fields": {
           "AmountDue": {
             "type": "object",
             "valueObject": {
               "Amount": {
-                "type": "number"
+                "type": "number",
+                "valueNumber": 91.27,
+                "spans": [
+                  {
+                    "offset": 1048,
+                    "length": 7
+                  }
+                ],
+                "confidence": 0.774,
+                "source": "D(1,1408.0000,1399.0000,1504.0000,1399.0000,1504.0000,1424.0000,1408.0000,1424.0000)"
               },
               "CurrencyCode": {
-                "type": "string"
+                "type": "string",
+                "valueString": "USD"
               }
             }
           },
@@ -27,7 +37,8 @@
             "type": "object",
             "valueObject": {
               "Amount": {
-                "type": "number"
+                "type": "number",
+                "confidence": 0.959
               },
               "CurrencyCode": {
                 "type": "string"
@@ -35,87 +46,509 @@
             }
           },
           "BillingAddress": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.715
           },
           "BillingAddressRecipient": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.762
           },
           "CountryRegion": {
-            "type": "string"
+            "type": "string",
+            "valueString": "USA"
           },
           "CustomerAddress": {
-            "type": "string"
+            "type": "string",
+            "valueString": "523 Leslie Manors Lake Colleenville, CT 12053",
+            "spans": [
+              {
+                "offset": 193,
+                "length": 17
+              },
+              {
+                "offset": 211,
+                "length": 27
+              }
+            ],
+            "confidence": 0.825,
+            "source": "D(1,833.0000,542.0000,1087.0000,542.0000,1087.0000,572.0000,833.0000,572.0000);D(1,832.8982,577.2053,1221.0000,576.0000,1221.1026,609.0245,833.0007,610.2298)"
           },
           "CustomerAddressRecipient": {
-            "type": "string"
+            "type": "string",
+            "valueString": "Dennis, Levy and Bowen",
+            "spans": [
+              {
+                "offset": 170,
+                "length": 22
+              }
+            ],
+            "confidence": 0.73,
+            "source": "D(1,833.0000,506.0000,1178.0000,506.0000,1178.0000,539.0000,833.0000,539.0000)"
           },
           "CustomerId": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.815
           },
           "CustomerName": {
-            "type": "string"
+            "type": "string",
+            "valueString": "Dennis, Levy and Bowen",
+            "spans": [
+              {
+                "offset": 170,
+                "length": 22
+              }
+            ],
+            "confidence": 0.74,
+            "source": "D(1,833.0000,506.0000,1178.0000,506.0000,1178.0000,539.0000,833.0000,539.0000)"
           },
           "CustomerTaxId": {
-            "type": "string"
+            "type": "string",
+            "valueString": "904-82-9186",
+            "spans": [
+              {
+                "offset": 248,
+                "length": 11
+              }
+            ],
+            "confidence": 0.821,
+            "source": "D(1,937.0000,649.0000,1118.0000,648.0000,1118.0000,679.0000,937.0000,680.0000)"
           },
           "DueDate": {
-            "type": "date"
+            "type": "date",
+            "confidence": 0.793
           },
           "InvoiceDate": {
-            "type": "date"
+            "type": "date",
+            "valueDate": "2016-03-20",
+            "spans": [
+              {
+                "offset": 38,
+                "length": 10
+              }
+            ],
+            "confidence": 0.97,
+            "source": "D(1,800.0000,140.0000,980.0000,140.0000,980.0000,174.0000,800.0000,175.0000)"
           },
           "InvoiceId": {
-            "type": "string"
+            "type": "string",
+            "valueString": "68688408",
+            "spans": [
+              {
+                "offset": 12,
+                "length": 8
+              }
+            ],
+            "confidence": 0.952,
+            "source": "D(1,351.0000,72.0000,538.0000,72.0000,538.0000,107.0000,351.0000,108.0000)"
           },
           "LineItems": {
-            "type": "array"
+            "type": "array",
+            "valueArray": [
+              {
+                "type": "object",
+                "valueObject": {
+                  "Date": {
+                    "type": "date",
+                    "confidence": 0.823
+                  },
+                  "Description": {
+                    "type": "string",
+                    "valueString": "Nike 747998-401 Team Hustle D7 Kids Blue Mid Top Basketball Shoes Size 4Y US",
+                    "spans": [
+                      {
+                        "offset": 447,
+                        "length": 27
+                      },
+                      {
+                        "offset": 475,
+                        "length": 31
+                      },
+                      {
+                        "offset": 507,
+                        "length": 16
+                      }
+                    ],
+                    "confidence": 0.59,
+                    "source": "D(1,238.0000,933.0000,581.0000,933.0000,581.0000,958.0000,238.0000,958.0000);D(1,238.0000,959.0000,601.0000,959.0000,601.0000,987.0000,238.0000,987.0000);D(1,238.0000,987.0000,434.0000,987.0000,434.0000,1013.0000,238.0000,1013.0000)"
+                  },
+                  "ProductCode": {
+                    "type": "string",
+                    "valueString": "747998-401",
+                    "spans": [
+                      {
+                        "offset": 452,
+                        "length": 10
+                      }
+                    ],
+                    "confidence": 0.704,
+                    "source": "D(1,295.0000,933.0000,429.0000,933.0000,429.0000,958.0000,295.0000,958.0000)"
+                  },
+                  "Quantity": {
+                    "type": "number",
+                    "valueNumber": 3,
+                    "spans": [
+                      {
+                        "offset": 533,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.903,
+                    "source": "D(1,672.0000,933.0000,725.0000,933.0000,725.0000,958.0000,672.0000,958.0000)"
+                  },
+                  "QuantityUnit": {
+                    "type": "string",
+                    "valueString": "each",
+                    "spans": [
+                      {
+                        "offset": 547,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.828,
+                    "source": "D(1,769.0000,934.0000,827.0000,933.0000,827.0000,957.0000,769.0000,957.0000)"
+                  },
+                  "TaxAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "confidence": 0.261
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "TaxRate": {
+                    "type": "number",
+                    "valueNumber": 0.1,
+                    "spans": [
+                      {
+                        "offset": 591,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.74,
+                    "source": "D(1,1279.0230,931.8963,1332.5206,933.0108,1331.9770,959.1037,1278.4794,957.9892)"
+                  },
+                  "TotalAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 36.27,
+                        "spans": [
+                          {
+                            "offset": 604,
+                            "length": 5
+                          }
+                        ],
+                        "confidence": 0.523,
+                        "source": "D(1,1434.0000,933.0000,1501.0000,933.0000,1501.0000,958.0000,1434.0000,957.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "UnitPrice": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 10.99,
+                        "spans": [
+                          {
+                            "offset": 561,
+                            "length": 5
+                          }
+                        ],
+                        "confidence": 0.903,
+                        "source": "D(1,951.0000,932.0000,1015.0000,932.0000,1015.0000,959.0000,951.0000,959.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "Date": {
+                    "type": "date",
+                    "confidence": 0.823
+                  },
+                  "Description": {
+                    "type": "string",
+                    "valueString": "Jordan Nike Kid Air 1 Retro High Black Gray Elephant Size 7Y 838850-013",
+                    "spans": [
+                      {
+                        "offset": 642,
+                        "length": 32
+                      },
+                      {
+                        "offset": 675,
+                        "length": 27
+                      },
+                      {
+                        "offset": 703,
+                        "length": 10
+                      }
+                    ],
+                    "confidence": 0.577,
+                    "source": "D(1,235.0000,1046.0000,595.0000,1046.0000,595.0000,1074.0000,235.0000,1074.0000);D(1,238.0000,1073.0000,556.0000,1073.0000,556.0000,1101.0000,238.0000,1101.0000);D(1,239.0000,1102.0000,377.0000,1102.0000,377.0000,1127.0000,239.0000,1127.0000)"
+                  },
+                  "ProductCode": {
+                    "type": "string",
+                    "valueString": "838850-013",
+                    "spans": [
+                      {
+                        "offset": 703,
+                        "length": 10
+                      }
+                    ],
+                    "confidence": 0.732,
+                    "source": "D(1,239.0000,1102.0000,377.0000,1102.0000,377.0000,1127.0000,239.0000,1127.0000)"
+                  },
+                  "Quantity": {
+                    "type": "number",
+                    "valueNumber": 1,
+                    "spans": [
+                      {
+                        "offset": 723,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.907,
+                    "source": "D(1,673.0000,1047.0000,725.0000,1047.0000,725.0000,1072.0000,673.0000,1072.0000)"
+                  },
+                  "QuantityUnit": {
+                    "type": "string",
+                    "valueString": "each",
+                    "spans": [
+                      {
+                        "offset": 737,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.832,
+                    "source": "D(1,770.0000,1048.0000,827.0000,1048.0000,827.0000,1071.0000,770.0000,1071.0000)"
+                  },
+                  "TaxAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "confidence": 0.751
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "TaxRate": {
+                    "type": "number",
+                    "valueNumber": 0.1,
+                    "spans": [
+                      {
+                        "offset": 781,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.896,
+                    "source": "D(1,1281.0258,1045.8642,1331.5906,1047.0134,1330.9969,1073.1363,1280.4321,1071.9871)"
+                  },
+                  "TotalAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 55,
+                        "spans": [
+                          {
+                            "offset": 794,
+                            "length": 5
+                          }
+                        ],
+                        "confidence": 0.906,
+                        "source": "D(1,1434.0000,1047.0000,1500.0000,1046.0000,1500.0000,1072.0000,1434.0000,1072.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "UnitPrice": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 50,
+                        "spans": [
+                          {
+                            "offset": 751,
+                            "length": 5
+                          }
+                        ],
+                        "confidence": 0.903,
+                        "source": "D(1,950.0000,1047.0000,1018.0000,1047.0000,1018.0000,1073.0000,950.0000,1073.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
           },
           "PaymentTerm": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.816
           },
           "PONumber": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.746
           },
           "RemittanceAddress": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.905
           },
           "RemittanceAddressRecipient": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.814
           },
           "ServiceAddress": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.782
           },
           "ServiceAddressRecipient": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.82
           },
           "ShippingAddress": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.775
           },
           "ShippingAddressRecipient": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.81
           },
           "SubtotalAmount": {
             "type": "object",
             "valueObject": {
               "Amount": {
-                "type": "number"
+                "type": "number",
+                "valueNumber": 82.97
               },
               "CurrencyCode": {
-                "type": "string"
+                "type": "string",
+                "valueString": "USD"
               }
             }
           },
           "TaxDetails": {
-            "type": "array"
+            "type": "array",
+            "valueArray": [
+              {
+                "type": "object",
+                "valueObject": {
+                  "Amount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 8.3,
+                        "spans": [
+                          {
+                            "offset": 960,
+                            "length": 4
+                          }
+                        ],
+                        "confidence": 0.872,
+                        "source": "D(1,1189.0000,1338.0000,1242.0000,1340.0000,1242.0000,1367.0000,1189.0000,1366.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "Description": {
+                    "type": "string",
+                    "valueString": "10%",
+                    "spans": [
+                      {
+                        "offset": 932,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.005,
+                    "source": "D(1,667.0000,1338.0000,719.0000,1338.0000,719.0000,1364.0000,667.0000,1364.0000)"
+                  },
+                  "NetAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 82.97,
+                        "spans": [
+                          {
+                            "offset": 945,
+                            "length": 5
+                          }
+                        ],
+                        "confidence": 0.907,
+                        "source": "D(1,989.0000,1340.0000,1055.0000,1339.0000,1055.0000,1366.0000,989.0000,1366.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "Rate": {
+                    "type": "number",
+                    "valueNumber": 0.1,
+                    "spans": [
+                      {
+                        "offset": 932,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.872,
+                    "source": "D(1,667.0000,1338.0000,719.0000,1338.0000,719.0000,1364.0000,667.0000,1364.0000)"
+                  }
+                }
+              }
+            ]
           },
           "TotalAmount": {
             "type": "object",
             "valueObject": {
               "Amount": {
-                "type": "number"
+                "type": "number",
+                "valueNumber": 91.27,
+                "spans": [
+                  {
+                    "offset": 974,
+                    "length": 5
+                  }
+                ],
+                "confidence": 0.709,
+                "source": "D(1,1438.0000,1340.0000,1505.0000,1340.0000,1505.0000,1365.0000,1438.0000,1365.0000)"
               },
               "CurrencyCode": {
-                "type": "string"
+                "type": "string",
+                "valueString": "USD"
               }
             }
           },
@@ -123,7 +556,8 @@
             "type": "object",
             "valueObject": {
               "Amount": {
-                "type": "number"
+                "type": "number",
+                "confidence": 0.934
               },
               "CurrencyCode": {
                 "type": "string"
@@ -134,45 +568,2833 @@
             "type": "object",
             "valueObject": {
               "Amount": {
-                "type": "number"
+                "type": "number",
+                "valueNumber": 8.3
               },
               "CurrencyCode": {
-                "type": "string"
+                "type": "string",
+                "valueString": "USD"
               }
             }
           },
           "VendorAddress": {
-            "type": "string"
+            "type": "string",
+            "valueString": "4052 Brown Roads Haysstad, NJ 06418",
+            "spans": [
+              {
+                "offset": 74,
+                "length": 16
+              },
+              {
+                "offset": 91,
+                "length": 18
+              }
+            ],
+            "confidence": 0.819,
+            "source": "D(1,139.0000,542.0000,405.0000,542.0000,405.0000,573.0000,139.0000,573.0000);D(1,140.0000,577.0000,415.0000,577.0000,415.0000,611.0000,140.0000,611.0000)"
           },
           "VendorAddressRecipient": {
-            "type": "string"
+            "type": "string",
+            "valueString": "Torres and Sons",
+            "spans": [
+              {
+                "offset": 58,
+                "length": 15
+              }
+            ],
+            "confidence": 0.78,
+            "source": "D(1,139.0000,506.0000,368.0000,506.0000,368.0000,537.0000,139.0000,537.0000)"
           },
           "VendorName": {
-            "type": "string"
+            "type": "string",
+            "valueString": "Torres and Sons",
+            "spans": [
+              {
+                "offset": 58,
+                "length": 15
+              }
+            ],
+            "confidence": 0.738,
+            "source": "D(1,139.0000,506.0000,368.0000,506.0000,368.0000,537.0000,139.0000,537.0000)"
           },
           "VendorTaxId": {
-            "type": "string"
+            "type": "string",
+            "valueString": "953-84-2239",
+            "spans": [
+              {
+                "offset": 119,
+                "length": 11
+              }
+            ],
+            "confidence": 0.881,
+            "source": "D(1,244.0000,649.0000,425.0000,648.0000,425.0000,679.0000,244.0000,680.0000)"
           }
         },
         "kind": "document",
         "startPageNumber": 1,
         "endPageNumber": 1,
+        "unit": "pixel",
+        "pages": [
+          {
+            "pageNumber": 1,
+            "angle": 0,
+            "width": 1654,
+            "height": 2339,
+            "spans": [
+              {
+                "offset": 0,
+                "length": 1076
+              }
+            ],
+            "words": [
+              {
+                "content": "Invoice",
+                "span": {
+                  "offset": 0,
+                  "length": 7
+                },
+                "confidence": 0.936,
+                "source": "D(1,130,73,264,72,264,108,131,108)"
+              },
+              {
+                "content": "no",
+                "span": {
+                  "offset": 8,
+                  "length": 2
+                },
+                "confidence": 0.997,
+                "source": "D(1,279,72,323,72,323,108,279,108)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 10,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,326,72,335,72,335,108,327,108)"
+              },
+              {
+                "content": "68688408",
+                "span": {
+                  "offset": 12,
+                  "length": 8
+                },
+                "confidence": 0.997,
+                "source": "D(1,351,72,538,72,538,107,351,108)"
+              },
+              {
+                "content": "Date",
+                "span": {
+                  "offset": 22,
+                  "length": 4
+                },
+                "confidence": 0.998,
+                "source": "D(1,131,141,205,141,205,173,131,173)"
+              },
+              {
+                "content": "of",
+                "span": {
+                  "offset": 27,
+                  "length": 2
+                },
+                "confidence": 0.997,
+                "source": "D(1,216,141,247,141,247,173,216,173)"
+              },
+              {
+                "content": "issue",
+                "span": {
+                  "offset": 30,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,254,141,332,142,332,174,254,173)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 35,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,334,142,346,142,346,174,334,174)"
+              },
+              {
+                "content": "03/20/2016",
+                "span": {
+                  "offset": 38,
+                  "length": 10
+                },
+                "confidence": 0.993,
+                "source": "D(1,800,140,980,140,980,174,800,175)"
+              },
+              {
+                "content": "Seller",
+                "span": {
+                  "offset": 50,
+                  "length": 6
+                },
+                "confidence": 0.997,
+                "source": "D(1,131,443,241,443,241,476,131,476)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 56,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,242,443,256,443,256,476,242,476)"
+              },
+              {
+                "content": "Torres",
+                "span": {
+                  "offset": 58,
+                  "length": 6
+                },
+                "confidence": 0.997,
+                "source": "D(1,139,506,228,506,228,536,139,537)"
+              },
+              {
+                "content": "and",
+                "span": {
+                  "offset": 65,
+                  "length": 3
+                },
+                "confidence": 0.999,
+                "source": "D(1,237,506,288,506,288,536,237,536)"
+              },
+              {
+                "content": "Sons",
+                "span": {
+                  "offset": 69,
+                  "length": 4
+                },
+                "confidence": 0.997,
+                "source": "D(1,298,506,368,506,368,537,298,536)"
+              },
+              {
+                "content": "4052",
+                "span": {
+                  "offset": 74,
+                  "length": 4
+                },
+                "confidence": 0.997,
+                "source": "D(1,139,542,209,542,209,572,140,573)"
+              },
+              {
+                "content": "Brown",
+                "span": {
+                  "offset": 79,
+                  "length": 5
+                },
+                "confidence": 0.998,
+                "source": "D(1,221,542,306,542,306,572,222,572)"
+              },
+              {
+                "content": "Roads",
+                "span": {
+                  "offset": 85,
+                  "length": 5
+                },
+                "confidence": 0.998,
+                "source": "D(1,318,542,405,542,405,572,318,572)"
+              },
+              {
+                "content": "Haysstad",
+                "span": {
+                  "offset": 91,
+                  "length": 8
+                },
+                "confidence": 0.992,
+                "source": "D(1,140,578,266,577,266,610,140,611)"
+              },
+              {
+                "content": ",",
+                "span": {
+                  "offset": 99,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,269,577,276,577,276,610,269,610)"
+              },
+              {
+                "content": "NJ",
+                "span": {
+                  "offset": 101,
+                  "length": 2
+                },
+                "confidence": 0.901,
+                "source": "D(1,288,577,315,577,315,610,288,610)"
+              },
+              {
+                "content": "06418",
+                "span": {
+                  "offset": 104,
+                  "length": 5
+                },
+                "confidence": 0.973,
+                "source": "D(1,326,577,415,578,415,611,326,610)"
+              },
+              {
+                "content": "Tax",
+                "span": {
+                  "offset": 111,
+                  "length": 3
+                },
+                "confidence": 0.981,
+                "source": "D(1,138,648,190,648,190,679,139,679)"
+              },
+              {
+                "content": "Id",
+                "span": {
+                  "offset": 115,
+                  "length": 2
+                },
+                "confidence": 0.826,
+                "source": "D(1,201,649,223,649,223,679,201,679)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 117,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,227,649,233,649,233,680,227,679)"
+              },
+              {
+                "content": "953-84-2239",
+                "span": {
+                  "offset": 119,
+                  "length": 11
+                },
+                "confidence": 0.99,
+                "source": "D(1,244,649,425,648,425,679,244,680)"
+              },
+              {
+                "content": "IBAN",
+                "span": {
+                  "offset": 132,
+                  "length": 4
+                },
+                "confidence": 0.989,
+                "source": "D(1,139,683,204,683,204,714,139,714)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 136,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,208,683,213,683,213,714,208,714)"
+              },
+              {
+                "content": "GB84XSNO58142814072766",
+                "span": {
+                  "offset": 138,
+                  "length": 22
+                },
+                "confidence": 0.988,
+                "source": "D(1,226,683,630,683,630,714,226,714)"
+              },
+              {
+                "content": "Client",
+                "span": {
+                  "offset": 162,
+                  "length": 6
+                },
+                "confidence": 0.995,
+                "source": "D(1,824,442,935,442,935,477,824,477)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 168,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,937,443,950,443,950,477,937,477)"
+              },
+              {
+                "content": "Dennis",
+                "span": {
+                  "offset": 170,
+                  "length": 6
+                },
+                "confidence": 0.996,
+                "source": "D(1,833,506,928,506,928,539,833,539)"
+              },
+              {
+                "content": ",",
+                "span": {
+                  "offset": 176,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,930,506,936,506,936,539,930,539)"
+              },
+              {
+                "content": "Levy",
+                "span": {
+                  "offset": 178,
+                  "length": 4
+                },
+                "confidence": 0.993,
+                "source": "D(1,948,506,1012,506,1012,539,948,539)"
+              },
+              {
+                "content": "and",
+                "span": {
+                  "offset": 183,
+                  "length": 3
+                },
+                "confidence": 0.997,
+                "source": "D(1,1022,506,1072,506,1072,539,1022,539)"
+              },
+              {
+                "content": "Bowen",
+                "span": {
+                  "offset": 187,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,1083,506,1178,507,1178,539,1083,539)"
+              },
+              {
+                "content": "523",
+                "span": {
+                  "offset": 193,
+                  "length": 3
+                },
+                "confidence": 0.993,
+                "source": "D(1,833,542,885,542,885,572,833,572)"
+              },
+              {
+                "content": "Leslie",
+                "span": {
+                  "offset": 197,
+                  "length": 6
+                },
+                "confidence": 0.992,
+                "source": "D(1,896,542,973,542,973,572,896,572)"
+              },
+              {
+                "content": "Manors",
+                "span": {
+                  "offset": 204,
+                  "length": 6
+                },
+                "confidence": 0.996,
+                "source": "D(1,984,542,1087,542,1087,572,984,572)"
+              },
+              {
+                "content": "Lake",
+                "span": {
+                  "offset": 211,
+                  "length": 4
+                },
+                "confidence": 0.996,
+                "source": "D(1,833,579,897,578,897,610,833,610)"
+              },
+              {
+                "content": "Colleenville",
+                "span": {
+                  "offset": 216,
+                  "length": 12
+                },
+                "confidence": 0.985,
+                "source": "D(1,907,578,1068,578,1068,609,907,610)"
+              },
+              {
+                "content": ",",
+                "span": {
+                  "offset": 228,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,1068,578,1074,578,1074,609,1068,609)"
+              },
+              {
+                "content": "CT",
+                "span": {
+                  "offset": 230,
+                  "length": 2
+                },
+                "confidence": 0.986,
+                "source": "D(1,1085,577,1123,577,1123,609,1085,609)"
+              },
+              {
+                "content": "12053",
+                "span": {
+                  "offset": 233,
+                  "length": 5
+                },
+                "confidence": 0.975,
+                "source": "D(1,1132,577,1221,576,1221,608,1132,609)"
+              },
+              {
+                "content": "Tax",
+                "span": {
+                  "offset": 240,
+                  "length": 3
+                },
+                "confidence": 0.984,
+                "source": "D(1,830,649,883,649,883,680,830,680)"
+              },
+              {
+                "content": "Id",
+                "span": {
+                  "offset": 244,
+                  "length": 2
+                },
+                "confidence": 0.842,
+                "source": "D(1,894,649,916,649,916,680,894,680)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 246,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,920,649,926,649,926,680,920,680)"
+              },
+              {
+                "content": "904-82-9186",
+                "span": {
+                  "offset": 248,
+                  "length": 11
+                },
+                "confidence": 0.991,
+                "source": "D(1,937,649,1118,648,1118,679,937,680)"
+              },
+              {
+                "content": "ITEMS",
+                "span": {
+                  "offset": 264,
+                  "length": 5
+                },
+                "confidence": 0.977,
+                "source": "D(1,131,760,249,759,249,792,131,792)"
+              },
+              {
+                "content": "No",
+                "span": {
+                  "offset": 289,
+                  "length": 2
+                },
+                "confidence": 0.912,
+                "source": "D(1,158,848,192,847,192,869,158,870)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 291,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,193,847,202,846,202,869,193,869)"
+              },
+              {
+                "content": "Description",
+                "span": {
+                  "offset": 302,
+                  "length": 11
+                },
+                "confidence": 0.997,
+                "source": "D(1,237,846,385,847,385,873,237,872)"
+              },
+              {
+                "content": "Qty",
+                "span": {
+                  "offset": 323,
+                  "length": 3
+                },
+                "confidence": 0.993,
+                "source": "D(1,678,845,726,848,726,874,678,871)"
+              },
+              {
+                "content": "UM",
+                "span": {
+                  "offset": 336,
+                  "length": 2
+                },
+                "confidence": 0.982,
+                "source": "D(1,777,847,821,846,821,870,777,871)"
+              },
+              {
+                "content": "Net",
+                "span": {
+                  "offset": 348,
+                  "length": 3
+                },
+                "confidence": 0.998,
+                "source": "D(1,898,844,944,845,944,872,898,871)"
+              },
+              {
+                "content": "price",
+                "span": {
+                  "offset": 352,
+                  "length": 5
+                },
+                "confidence": 0.998,
+                "source": "D(1,952,846,1018,845,1018,872,952,872)"
+              },
+              {
+                "content": "Net",
+                "span": {
+                  "offset": 367,
+                  "length": 3
+                },
+                "confidence": 0.998,
+                "source": "D(1,1057,846,1103,846,1103,871,1057,871)"
+              },
+              {
+                "content": "worth",
+                "span": {
+                  "offset": 371,
+                  "length": 5
+                },
+                "confidence": 0.998,
+                "source": "D(1,1110,846,1186,846,1186,871,1110,871)"
+              },
+              {
+                "content": "VAT",
+                "span": {
+                  "offset": 386,
+                  "length": 3
+                },
+                "confidence": 0.993,
+                "source": "D(1,1227,845,1280,845,1280,873,1227,872)"
+              },
+              {
+                "content": "[",
+                "span": {
+                  "offset": 390,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1287,845,1297,845,1297,873,1287,873)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 391,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1296,845,1319,845,1319,872,1296,873)"
+              },
+              {
+                "content": "]",
+                "span": {
+                  "offset": 392,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,1319,845,1332,845,1332,872,1319,872)"
+              },
+              {
+                "content": "Gross",
+                "span": {
+                  "offset": 403,
+                  "length": 5
+                },
+                "confidence": 0.998,
+                "source": "D(1,1428,848,1501,848,1501,871,1428,870)"
+              },
+              {
+                "content": "worth",
+                "span": {
+                  "offset": 409,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,1425,875,1501,875,1501,897,1425,897)"
+              },
+              {
+                "content": "1",
+                "span": {
+                  "offset": 435,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,169,934,182,934,182,957,169,957)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 436,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,184,934,192,934,192,957,184,957)"
+              },
+              {
+                "content": "Nike",
+                "span": {
+                  "offset": 447,
+                  "length": 4
+                },
+                "confidence": 0.976,
+                "source": "D(1,238,933,287,933,287,958,238,958)"
+              },
+              {
+                "content": "747998-401",
+                "span": {
+                  "offset": 452,
+                  "length": 10
+                },
+                "confidence": 0.861,
+                "source": "D(1,295,933,429,933,429,958,295,958)"
+              },
+              {
+                "content": "Team",
+                "span": {
+                  "offset": 463,
+                  "length": 4
+                },
+                "confidence": 0.969,
+                "source": "D(1,438,933,499,933,499,958,438,958)"
+              },
+              {
+                "content": "Hustle",
+                "span": {
+                  "offset": 468,
+                  "length": 6
+                },
+                "confidence": 0.968,
+                "source": "D(1,508,933,581,933,581,958,508,958)"
+              },
+              {
+                "content": "D7",
+                "span": {
+                  "offset": 475,
+                  "length": 2
+                },
+                "confidence": 0.94,
+                "source": "D(1,238,959,268,959,268,986,239,985)"
+              },
+              {
+                "content": "Kids",
+                "span": {
+                  "offset": 478,
+                  "length": 4
+                },
+                "confidence": 0.926,
+                "source": "D(1,277,959,322,959,322,986,277,986)"
+              },
+              {
+                "content": "Blue",
+                "span": {
+                  "offset": 483,
+                  "length": 4
+                },
+                "confidence": 0.994,
+                "source": "D(1,331,959,378,959,379,986,331,986)"
+              },
+              {
+                "content": "Mid",
+                "span": {
+                  "offset": 488,
+                  "length": 3
+                },
+                "confidence": 0.993,
+                "source": "D(1,387,959,425,959,425,987,388,986)"
+              },
+              {
+                "content": "Top",
+                "span": {
+                  "offset": 492,
+                  "length": 3
+                },
+                "confidence": 0.993,
+                "source": "D(1,433,959,474,959,475,987,433,987)"
+              },
+              {
+                "content": "Basketball",
+                "span": {
+                  "offset": 496,
+                  "length": 10
+                },
+                "confidence": 0.991,
+                "source": "D(1,484,959,601,959,601,986,484,987)"
+              },
+              {
+                "content": "Shoes",
+                "span": {
+                  "offset": 507,
+                  "length": 5
+                },
+                "confidence": 0.993,
+                "source": "D(1,238,987,305,987,305,1013,238,1013)"
+              },
+              {
+                "content": "Size",
+                "span": {
+                  "offset": 513,
+                  "length": 4
+                },
+                "confidence": 0.988,
+                "source": "D(1,313,987,358,987,358,1013,313,1013)"
+              },
+              {
+                "content": "4Y",
+                "span": {
+                  "offset": 518,
+                  "length": 2
+                },
+                "confidence": 0.934,
+                "source": "D(1,365,987,394,987,394,1013,365,1013)"
+              },
+              {
+                "content": "US",
+                "span": {
+                  "offset": 521,
+                  "length": 2
+                },
+                "confidence": 0.976,
+                "source": "D(1,401,987,434,987,434,1013,401,1013)"
+              },
+              {
+                "content": "3,00",
+                "span": {
+                  "offset": 533,
+                  "length": 4
+                },
+                "confidence": 0.996,
+                "source": "D(1,672,933,725,933,725,958,672,958)"
+              },
+              {
+                "content": "each",
+                "span": {
+                  "offset": 547,
+                  "length": 4
+                },
+                "confidence": 0.999,
+                "source": "D(1,769,934,827,933,827,957,769,957)"
+              },
+              {
+                "content": "10,99",
+                "span": {
+                  "offset": 561,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,951,932,1015,932,1015,959,951,959)"
+              },
+              {
+                "content": "32,97",
+                "span": {
+                  "offset": 576,
+                  "length": 5
+                },
+                "confidence": 0.995,
+                "source": "D(1,1119,932,1185,932,1185,958,1119,958)"
+              },
+              {
+                "content": "10",
+                "span": {
+                  "offset": 591,
+                  "length": 2
+                },
+                "confidence": 0.999,
+                "source": "D(1,1279,933,1308,933,1308,957,1279,958)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 593,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1308,933,1332,933,1332,958,1308,957)"
+              },
+              {
+                "content": "36,27",
+                "span": {
+                  "offset": 604,
+                  "length": 5
+                },
+                "confidence": 0.989,
+                "source": "D(1,1434,933,1501,933,1501,958,1434,957)"
+              },
+              {
+                "content": "2",
+                "span": {
+                  "offset": 630,
+                  "length": 1
+                },
+                "confidence": 0.974,
+                "source": "D(1,168,1048,183,1048,183,1070,168,1071)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 631,
+                  "length": 1
+                },
+                "confidence": 0.996,
+                "source": "D(1,184,1048,192,1048,192,1071,184,1071)"
+              },
+              {
+                "content": "Jordan",
+                "span": {
+                  "offset": 642,
+                  "length": 6
+                },
+                "confidence": 0.993,
+                "source": "D(1,235,1046,308,1046,308,1074,235,1074)"
+              },
+              {
+                "content": "Nike",
+                "span": {
+                  "offset": 649,
+                  "length": 4
+                },
+                "confidence": 0.996,
+                "source": "D(1,318,1046,365,1046,365,1074,318,1074)"
+              },
+              {
+                "content": "Kid",
+                "span": {
+                  "offset": 654,
+                  "length": 3
+                },
+                "confidence": 0.988,
+                "source": "D(1,374,1046,407,1046,407,1074,374,1074)"
+              },
+              {
+                "content": "Air",
+                "span": {
+                  "offset": 658,
+                  "length": 3
+                },
+                "confidence": 0.985,
+                "source": "D(1,414,1046,447,1046,447,1074,414,1074)"
+              },
+              {
+                "content": "1",
+                "span": {
+                  "offset": 662,
+                  "length": 1
+                },
+                "confidence": 0.97,
+                "source": "D(1,454,1046,465,1046,465,1074,454,1074)"
+              },
+              {
+                "content": "Retro",
+                "span": {
+                  "offset": 664,
+                  "length": 5
+                },
+                "confidence": 0.981,
+                "source": "D(1,476,1046,535,1046,535,1074,476,1074)"
+              },
+              {
+                "content": "High",
+                "span": {
+                  "offset": 670,
+                  "length": 4
+                },
+                "confidence": 0.996,
+                "source": "D(1,543,1046,595,1046,595,1074,543,1074)"
+              },
+              {
+                "content": "Black",
+                "span": {
+                  "offset": 675,
+                  "length": 5
+                },
+                "confidence": 0.99,
+                "source": "D(1,238,1074,299,1074,299,1101,238,1101)"
+              },
+              {
+                "content": "Gray",
+                "span": {
+                  "offset": 681,
+                  "length": 4
+                },
+                "confidence": 0.994,
+                "source": "D(1,307,1074,359,1074,359,1101,307,1101)"
+              },
+              {
+                "content": "Elephant",
+                "span": {
+                  "offset": 686,
+                  "length": 8
+                },
+                "confidence": 0.974,
+                "source": "D(1,367,1074,465,1073,465,1101,367,1101)"
+              },
+              {
+                "content": "Size",
+                "span": {
+                  "offset": 695,
+                  "length": 4
+                },
+                "confidence": 0.952,
+                "source": "D(1,473,1073,517,1073,517,1101,473,1101)"
+              },
+              {
+                "content": "7Y",
+                "span": {
+                  "offset": 700,
+                  "length": 2
+                },
+                "confidence": 0.877,
+                "source": "D(1,525,1073,556,1073,556,1101,525,1101)"
+              },
+              {
+                "content": "838850-013",
+                "span": {
+                  "offset": 703,
+                  "length": 10
+                },
+                "confidence": 0.968,
+                "source": "D(1,239,1102,377,1102,377,1127,239,1127)"
+              },
+              {
+                "content": "1,00",
+                "span": {
+                  "offset": 723,
+                  "length": 4
+                },
+                "confidence": 0.991,
+                "source": "D(1,673,1047,725,1047,725,1072,673,1072)"
+              },
+              {
+                "content": "each",
+                "span": {
+                  "offset": 737,
+                  "length": 4
+                },
+                "confidence": 0.999,
+                "source": "D(1,770,1048,827,1048,827,1071,770,1071)"
+              },
+              {
+                "content": "50,00",
+                "span": {
+                  "offset": 751,
+                  "length": 5
+                },
+                "confidence": 0.98,
+                "source": "D(1,950,1047,1018,1047,1018,1073,950,1073)"
+              },
+              {
+                "content": "50,00",
+                "span": {
+                  "offset": 766,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,1119,1047,1186,1046,1186,1073,1119,1073)"
+              },
+              {
+                "content": "10",
+                "span": {
+                  "offset": 781,
+                  "length": 2
+                },
+                "confidence": 0.999,
+                "source": "D(1,1281,1047,1308,1047,1308,1072,1281,1072)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 783,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1309,1047,1331,1047,1331,1073,1309,1072)"
+              },
+              {
+                "content": "55,00",
+                "span": {
+                  "offset": 794,
+                  "length": 5
+                },
+                "confidence": 0.996,
+                "source": "D(1,1434,1047,1500,1046,1500,1072,1434,1072)"
+              },
+              {
+                "content": "SUMMARY",
+                "span": {
+                  "offset": 824,
+                  "length": 7
+                },
+                "confidence": 0.994,
+                "source": "D(1,132,1193,328,1195,328,1229,132,1228)"
+              },
+              {
+                "content": "VAT",
+                "span": {
+                  "offset": 851,
+                  "length": 3
+                },
+                "confidence": 0.985,
+                "source": "D(1,640,1278,693,1278,693,1307,640,1306)"
+              },
+              {
+                "content": "[",
+                "span": {
+                  "offset": 855,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,700,1278,709,1278,709,1306,700,1307)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 856,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,708,1278,731,1277,731,1306,708,1306)"
+              },
+              {
+                "content": "]",
+                "span": {
+                  "offset": 857,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,731,1277,745,1277,745,1305,731,1306)"
+              },
+              {
+                "content": "Net",
+                "span": {
+                  "offset": 868,
+                  "length": 3
+                },
+                "confidence": 0.999,
+                "source": "D(1,927,1279,973,1279,973,1304,927,1304)"
+              },
+              {
+                "content": "worth",
+                "span": {
+                  "offset": 872,
+                  "length": 5
+                },
+                "confidence": 0.998,
+                "source": "D(1,980,1279,1056,1279,1056,1304,980,1304)"
+              },
+              {
+                "content": "VAT",
+                "span": {
+                  "offset": 887,
+                  "length": 3
+                },
+                "confidence": 0.956,
+                "source": "D(1,1188,1279,1241,1279,1241,1304,1188,1304)"
+              },
+              {
+                "content": "Gross",
+                "span": {
+                  "offset": 900,
+                  "length": 5
+                },
+                "confidence": 0.998,
+                "source": "D(1,1350,1279,1422,1279,1422,1304,1350,1304)"
+              },
+              {
+                "content": "worth",
+                "span": {
+                  "offset": 906,
+                  "length": 5
+                },
+                "confidence": 0.998,
+                "source": "D(1,1429,1279,1505,1278,1505,1303,1429,1304)"
+              },
+              {
+                "content": "10",
+                "span": {
+                  "offset": 932,
+                  "length": 2
+                },
+                "confidence": 0.999,
+                "source": "D(1,667,1339,695,1339,695,1364,667,1364)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 934,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,695,1339,719,1338,719,1363,695,1364)"
+              },
+              {
+                "content": "82,97",
+                "span": {
+                  "offset": 945,
+                  "length": 5
+                },
+                "confidence": 0.993,
+                "source": "D(1,989,1340,1055,1339,1055,1366,989,1366)"
+              },
+              {
+                "content": "8,30",
+                "span": {
+                  "offset": 960,
+                  "length": 4
+                },
+                "confidence": 0.991,
+                "source": "D(1,1189,1338,1242,1340,1242,1367,1189,1366)"
+              },
+              {
+                "content": "91,27",
+                "span": {
+                  "offset": 974,
+                  "length": 5
+                },
+                "confidence": 0.982,
+                "source": "D(1,1438,1340,1505,1340,1505,1365,1438,1365)"
+              },
+              {
+                "content": "Total",
+                "span": {
+                  "offset": 1000,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,500,1399,569,1399,569,1424,500,1424)"
+              },
+              {
+                "content": "$",
+                "span": {
+                  "offset": 1015,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,959,1398,973,1398,973,1425,959,1425)"
+              },
+              {
+                "content": "82,97",
+                "span": {
+                  "offset": 1017,
+                  "length": 5
+                },
+                "confidence": 0.982,
+                "source": "D(1,983,1398,1055,1398,1055,1425,983,1425)"
+              },
+              {
+                "content": "$",
+                "span": {
+                  "offset": 1032,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1160,1399,1173,1399,1173,1424,1160,1424)"
+              },
+              {
+                "content": "8,30",
+                "span": {
+                  "offset": 1034,
+                  "length": 4
+                },
+                "confidence": 0.988,
+                "source": "D(1,1183,1399,1241,1399,1241,1424,1183,1424)"
+              },
+              {
+                "content": "$",
+                "span": {
+                  "offset": 1048,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1408,1399,1422,1399,1422,1424,1408,1424)"
+              },
+              {
+                "content": "91,27",
+                "span": {
+                  "offset": 1050,
+                  "length": 5
+                },
+                "confidence": 0.984,
+                "source": "D(1,1431,1399,1504,1399,1504,1424,1431,1424)"
+              }
+            ],
+            "lines": [
+              {
+                "content": "Invoice no: 68688408",
+                "source": "D(1,130,72,538,71,538,107,131,108)",
+                "span": {
+                  "offset": 0,
+                  "length": 20
+                }
+              },
+              {
+                "content": "Date of issue:",
+                "source": "D(1,131,141,346,141,346,174,131,173)",
+                "span": {
+                  "offset": 22,
+                  "length": 14
+                }
+              },
+              {
+                "content": "03/20/2016",
+                "source": "D(1,800,140,980,140,980,175,800,175)",
+                "span": {
+                  "offset": 38,
+                  "length": 10
+                }
+              },
+              {
+                "content": "Seller:",
+                "source": "D(1,131,443,256,443,256,476,131,476)",
+                "span": {
+                  "offset": 50,
+                  "length": 7
+                }
+              },
+              {
+                "content": "Torres and Sons",
+                "source": "D(1,138,506,368,505,368,537,139,537)",
+                "span": {
+                  "offset": 58,
+                  "length": 15
+                }
+              },
+              {
+                "content": "4052 Brown Roads",
+                "source": "D(1,139,542,405,542,405,573,139,573)",
+                "span": {
+                  "offset": 74,
+                  "length": 16
+                }
+              },
+              {
+                "content": "Haysstad, NJ 06418",
+                "source": "D(1,140,577,415,577,415,611,140,611)",
+                "span": {
+                  "offset": 91,
+                  "length": 18
+                }
+              },
+              {
+                "content": "Tax Id: 953-84-2239",
+                "source": "D(1,138,648,425,648,425,680,138,679)",
+                "span": {
+                  "offset": 111,
+                  "length": 19
+                }
+              },
+              {
+                "content": "IBAN: GB84XSNO58142814072766",
+                "source": "D(1,139,683,630,683,630,714,139,714)",
+                "span": {
+                  "offset": 132,
+                  "length": 28
+                }
+              },
+              {
+                "content": "Client:",
+                "source": "D(1,824,442,950,442,950,477,824,477)",
+                "span": {
+                  "offset": 162,
+                  "length": 7
+                }
+              },
+              {
+                "content": "Dennis, Levy and Bowen",
+                "source": "D(1,833,506,1178,506,1178,539,833,539)",
+                "span": {
+                  "offset": 170,
+                  "length": 22
+                }
+              },
+              {
+                "content": "523 Leslie Manors",
+                "source": "D(1,833,542,1087,542,1087,572,833,572)",
+                "span": {
+                  "offset": 193,
+                  "length": 17
+                }
+              },
+              {
+                "content": "Lake Colleenville, CT 12053",
+                "source": "D(1,832,578,1221,576,1221,608,833,610)",
+                "span": {
+                  "offset": 211,
+                  "length": 27
+                }
+              },
+              {
+                "content": "Tax Id: 904-82-9186",
+                "source": "D(1,830,649,1118,648,1118,679,830,680)",
+                "span": {
+                  "offset": 240,
+                  "length": 19
+                }
+              },
+              {
+                "content": "ITEMS",
+                "source": "D(1,131,759,249,759,249,792,131,792)",
+                "span": {
+                  "offset": 264,
+                  "length": 5
+                }
+              },
+              {
+                "content": "No.",
+                "source": "D(1,157,848,202,846,203,869,158,870)",
+                "span": {
+                  "offset": 289,
+                  "length": 3
+                }
+              },
+              {
+                "content": "Description",
+                "source": "D(1,237,845,385,846,385,873,237,872)",
+                "span": {
+                  "offset": 302,
+                  "length": 11
+                }
+              },
+              {
+                "content": "Qty",
+                "source": "D(1,678,845,726,848,726,875,678,872)",
+                "span": {
+                  "offset": 323,
+                  "length": 3
+                }
+              },
+              {
+                "content": "UM",
+                "source": "D(1,776,846,821,845,821,870,777,871)",
+                "span": {
+                  "offset": 336,
+                  "length": 2
+                }
+              },
+              {
+                "content": "Net price",
+                "source": "D(1,898,844,1019,845,1018,873,898,872)",
+                "span": {
+                  "offset": 348,
+                  "length": 9
+                }
+              },
+              {
+                "content": "Net worth",
+                "source": "D(1,1057,846,1186,846,1186,871,1057,871)",
+                "span": {
+                  "offset": 367,
+                  "length": 9
+                }
+              },
+              {
+                "content": "VAT [%]",
+                "source": "D(1,1227,845,1332,845,1332,872,1227,873)",
+                "span": {
+                  "offset": 386,
+                  "length": 7
+                }
+              },
+              {
+                "content": "Gross",
+                "source": "D(1,1428,847,1502,848,1501,871,1428,870)",
+                "span": {
+                  "offset": 403,
+                  "length": 5
+                }
+              },
+              {
+                "content": "worth",
+                "source": "D(1,1425,874,1502,874,1501,897,1425,897)",
+                "span": {
+                  "offset": 409,
+                  "length": 5
+                }
+              },
+              {
+                "content": "1.",
+                "source": "D(1,169,934,192,934,192,957,169,957)",
+                "span": {
+                  "offset": 435,
+                  "length": 2
+                }
+              },
+              {
+                "content": "Nike 747998-401 Team Hustle",
+                "source": "D(1,238,933,581,933,581,958,238,958)",
+                "span": {
+                  "offset": 447,
+                  "length": 27
+                }
+              },
+              {
+                "content": "D7 Kids Blue Mid Top Basketball",
+                "source": "D(1,238,959,601,959,601,987,238,987)",
+                "span": {
+                  "offset": 475,
+                  "length": 31
+                }
+              },
+              {
+                "content": "Shoes Size 4Y US",
+                "source": "D(1,238,987,434,987,434,1013,238,1013)",
+                "span": {
+                  "offset": 507,
+                  "length": 16
+                }
+              },
+              {
+                "content": "3,00",
+                "source": "D(1,672,933,725,933,725,958,672,958)",
+                "span": {
+                  "offset": 533,
+                  "length": 4
+                }
+              },
+              {
+                "content": "each",
+                "source": "D(1,769,934,827,933,827,957,769,957)",
+                "span": {
+                  "offset": 547,
+                  "length": 4
+                }
+              },
+              {
+                "content": "10,99",
+                "source": "D(1,951,932,1015,932,1015,959,951,959)",
+                "span": {
+                  "offset": 561,
+                  "length": 5
+                }
+              },
+              {
+                "content": "32,97",
+                "source": "D(1,1119,932,1185,932,1185,958,1118,958)",
+                "span": {
+                  "offset": 576,
+                  "length": 5
+                }
+              },
+              {
+                "content": "10%",
+                "source": "D(1,1279,933,1332,933,1332,958,1279,958)",
+                "span": {
+                  "offset": 591,
+                  "length": 3
+                }
+              },
+              {
+                "content": "36,27",
+                "source": "D(1,1434,933,1501,933,1501,958,1434,958)",
+                "span": {
+                  "offset": 604,
+                  "length": 5
+                }
+              },
+              {
+                "content": "2.",
+                "source": "D(1,168,1048,192,1048,192,1071,168,1071)",
+                "span": {
+                  "offset": 630,
+                  "length": 2
+                }
+              },
+              {
+                "content": "Jordan Nike Kid Air 1 Retro High",
+                "source": "D(1,235,1046,595,1046,595,1074,235,1074)",
+                "span": {
+                  "offset": 642,
+                  "length": 32
+                }
+              },
+              {
+                "content": "Black Gray Elephant Size 7Y",
+                "source": "D(1,238,1074,556,1073,556,1101,238,1101)",
+                "span": {
+                  "offset": 675,
+                  "length": 27
+                }
+              },
+              {
+                "content": "838850-013",
+                "source": "D(1,239,1102,377,1102,377,1128,239,1128)",
+                "span": {
+                  "offset": 703,
+                  "length": 10
+                }
+              },
+              {
+                "content": "1,00",
+                "source": "D(1,673,1047,725,1047,725,1072,673,1072)",
+                "span": {
+                  "offset": 723,
+                  "length": 4
+                }
+              },
+              {
+                "content": "each",
+                "source": "D(1,770,1048,827,1048,827,1071,770,1071)",
+                "span": {
+                  "offset": 737,
+                  "length": 4
+                }
+              },
+              {
+                "content": "50,00",
+                "source": "D(1,950,1047,1018,1047,1018,1073,950,1073)",
+                "span": {
+                  "offset": 751,
+                  "length": 5
+                }
+              },
+              {
+                "content": "50,00",
+                "source": "D(1,1119,1046,1186,1046,1186,1073,1119,1073)",
+                "span": {
+                  "offset": 766,
+                  "length": 5
+                }
+              },
+              {
+                "content": "10%",
+                "source": "D(1,1281,1047,1331,1047,1331,1073,1281,1072)",
+                "span": {
+                  "offset": 781,
+                  "length": 3
+                }
+              },
+              {
+                "content": "55,00",
+                "source": "D(1,1434,1047,1500,1046,1500,1072,1434,1073)",
+                "span": {
+                  "offset": 794,
+                  "length": 5
+                }
+              },
+              {
+                "content": "SUMMARY",
+                "source": "D(1,132,1193,328,1195,328,1229,132,1228)",
+                "span": {
+                  "offset": 824,
+                  "length": 7
+                }
+              },
+              {
+                "content": "VAT [%]",
+                "source": "D(1,639,1278,745,1277,745,1306,640,1307)",
+                "span": {
+                  "offset": 851,
+                  "length": 7
+                }
+              },
+              {
+                "content": "Net worth",
+                "source": "D(1,927,1279,1056,1279,1056,1304,927,1304)",
+                "span": {
+                  "offset": 868,
+                  "length": 9
+                }
+              },
+              {
+                "content": "VAT",
+                "source": "D(1,1188,1279,1241,1279,1241,1304,1188,1304)",
+                "span": {
+                  "offset": 887,
+                  "length": 3
+                }
+              },
+              {
+                "content": "Gross worth",
+                "source": "D(1,1349,1279,1505,1278,1506,1304,1350,1305)",
+                "span": {
+                  "offset": 900,
+                  "length": 11
+                }
+              },
+              {
+                "content": "10%",
+                "source": "D(1,666,1339,719,1338,719,1363,667,1365)",
+                "span": {
+                  "offset": 932,
+                  "length": 3
+                }
+              },
+              {
+                "content": "82,97",
+                "source": "D(1,989,1338,1055,1339,1055,1366,988,1366)",
+                "span": {
+                  "offset": 945,
+                  "length": 5
+                }
+              },
+              {
+                "content": "8,30",
+                "source": "D(1,1189,1338,1243,1340,1242,1367,1188,1366)",
+                "span": {
+                  "offset": 960,
+                  "length": 4
+                }
+              },
+              {
+                "content": "91,27",
+                "source": "D(1,1438,1339,1505,1340,1505,1365,1437,1365)",
+                "span": {
+                  "offset": 974,
+                  "length": 5
+                }
+              },
+              {
+                "content": "Total",
+                "source": "D(1,500,1399,569,1399,569,1424,500,1424)",
+                "span": {
+                  "offset": 1000,
+                  "length": 5
+                }
+              },
+              {
+                "content": "$ 82,97",
+                "source": "D(1,959,1398,1055,1398,1055,1425,959,1425)",
+                "span": {
+                  "offset": 1015,
+                  "length": 7
+                }
+              },
+              {
+                "content": "$ 8,30",
+                "source": "D(1,1160,1399,1241,1399,1241,1424,1160,1424)",
+                "span": {
+                  "offset": 1032,
+                  "length": 6
+                }
+              },
+              {
+                "content": "$ 91,27",
+                "source": "D(1,1408,1399,1504,1399,1504,1424,1408,1424)",
+                "span": {
+                  "offset": 1048,
+                  "length": 7
+                }
+              }
+            ]
+          }
+        ],
+        "paragraphs": [
+          {
+            "content": "Invoice no: 68688408",
+            "source": "D(1,130,72,538,71,538,107,131,108)",
+            "span": {
+              "offset": 0,
+              "length": 20
+            }
+          },
+          {
+            "content": "Date of issue:",
+            "source": "D(1,131,141,346,141,346,174,131,173)",
+            "span": {
+              "offset": 22,
+              "length": 14
+            }
+          },
+          {
+            "content": "03/20/2016",
+            "source": "D(1,800,140,980,140,980,175,800,175)",
+            "span": {
+              "offset": 38,
+              "length": 10
+            }
+          },
+          {
+            "content": "Seller: Torres and Sons 4052 Brown Roads Haysstad, NJ 06418",
+            "source": "D(1,131,443,415,443,415,611,131,611)",
+            "span": {
+              "offset": 50,
+              "length": 59
+            }
+          },
+          {
+            "content": "Tax Id: 953-84-2239",
+            "source": "D(1,138,648,425,648,425,680,138,679)",
+            "span": {
+              "offset": 111,
+              "length": 19
+            }
+          },
+          {
+            "content": "IBAN: GB84XSNO58142814072766",
+            "source": "D(1,139,683,630,683,630,714,139,714)",
+            "span": {
+              "offset": 132,
+              "length": 28
+            }
+          },
+          {
+            "content": "Client: Dennis, Levy and Bowen 523 Leslie Manors Lake Colleenville, CT 12053",
+            "source": "D(1,824,442,1221,440,1221,608,824,610)",
+            "span": {
+              "offset": 162,
+              "length": 76
+            }
+          },
+          {
+            "content": "Tax Id: 904-82-9186",
+            "source": "D(1,830,649,1118,648,1118,679,830,680)",
+            "span": {
+              "offset": 240,
+              "length": 19
+            }
+          },
+          {
+            "role": "sectionHeading",
+            "content": "ITEMS",
+            "source": "D(1,131,759,249,759,249,792,131,792)",
+            "span": {
+              "offset": 262,
+              "length": 7
+            }
+          },
+          {
+            "content": "No.",
+            "source": "D(1,157,847,202,846,203,869,158,870)",
+            "span": {
+              "offset": 289,
+              "length": 3
+            }
+          },
+          {
+            "content": "Description",
+            "source": "D(1,237,846,385,847,385,873,237,872)",
+            "span": {
+              "offset": 302,
+              "length": 11
+            }
+          },
+          {
+            "content": "Qty",
+            "source": "D(1,678,845,727,848,726,874,677,871)",
+            "span": {
+              "offset": 323,
+              "length": 3
+            }
+          },
+          {
+            "content": "UM",
+            "source": "D(1,776,847,821,846,821,870,777,871)",
+            "span": {
+              "offset": 336,
+              "length": 2
+            }
+          },
+          {
+            "content": "Net price",
+            "source": "D(1,898,842,1019,845,1018,874,897,871)",
+            "span": {
+              "offset": 348,
+              "length": 9
+            }
+          },
+          {
+            "content": "Net worth",
+            "source": "D(1,1057,845,1186,846,1186,872,1057,871)",
+            "span": {
+              "offset": 367,
+              "length": 9
+            }
+          },
+          {
+            "content": "VAT [%]",
+            "source": "D(1,1227,845,1332,845,1332,872,1227,873)",
+            "span": {
+              "offset": 386,
+              "length": 7
+            }
+          },
+          {
+            "content": "Gross worth",
+            "source": "D(1,1426,848,1502,848,1501,898,1425,897)",
+            "span": {
+              "offset": 403,
+              "length": 11
+            }
+          },
+          {
+            "content": "1.",
+            "source": "D(1,169,934,192,934,192,957,169,957)",
+            "span": {
+              "offset": 435,
+              "length": 2
+            }
+          },
+          {
+            "content": "Nike 747998-401 Team Hustle D7 Kids Blue Mid Top Basketball Shoes Size 4Y US",
+            "source": "D(1,238,932,601,933,601,1014,238,1013)",
+            "span": {
+              "offset": 447,
+              "length": 76
+            }
+          },
+          {
+            "content": "3,00",
+            "source": "D(1,672,933,725,933,725,958,672,958)",
+            "span": {
+              "offset": 533,
+              "length": 4
+            }
+          },
+          {
+            "content": "each",
+            "source": "D(1,769,934,827,933,827,957,769,957)",
+            "span": {
+              "offset": 547,
+              "length": 4
+            }
+          },
+          {
+            "content": "10,99",
+            "source": "D(1,951,932,1015,932,1015,959,951,959)",
+            "span": {
+              "offset": 561,
+              "length": 5
+            }
+          },
+          {
+            "content": "32,97",
+            "source": "D(1,1119,932,1185,932,1185,958,1118,958)",
+            "span": {
+              "offset": 576,
+              "length": 5
+            }
+          },
+          {
+            "content": "10%",
+            "source": "D(1,1279,932,1332,933,1332,959,1279,958)",
+            "span": {
+              "offset": 591,
+              "length": 3
+            }
+          },
+          {
+            "content": "36,27",
+            "source": "D(1,1434,933,1501,933,1501,958,1434,958)",
+            "span": {
+              "offset": 604,
+              "length": 5
+            }
+          },
+          {
+            "content": "2.",
+            "source": "D(1,169,1046,194,1049,191,1074,166,1071)",
+            "span": {
+              "offset": 630,
+              "length": 2
+            }
+          },
+          {
+            "content": "Jordan Nike Kid Air 1 Retro High Black Gray Elephant Size 7Y 838850-013",
+            "source": "D(1,235,1046,595,1046,595,1127,235,1127)",
+            "span": {
+              "offset": 642,
+              "length": 71
+            }
+          },
+          {
+            "content": "1,00",
+            "source": "D(1,673,1047,725,1047,725,1072,673,1072)",
+            "span": {
+              "offset": 723,
+              "length": 4
+            }
+          },
+          {
+            "content": "each",
+            "source": "D(1,770,1048,827,1048,827,1071,770,1071)",
+            "span": {
+              "offset": 737,
+              "length": 4
+            }
+          },
+          {
+            "content": "50,00",
+            "source": "D(1,950,1047,1018,1047,1018,1073,950,1073)",
+            "span": {
+              "offset": 751,
+              "length": 5
+            }
+          },
+          {
+            "content": "50,00",
+            "source": "D(1,1119,1047,1186,1046,1186,1073,1119,1073)",
+            "span": {
+              "offset": 766,
+              "length": 5
+            }
+          },
+          {
+            "content": "10%",
+            "source": "D(1,1281,1046,1332,1047,1331,1073,1280,1072)",
+            "span": {
+              "offset": 781,
+              "length": 3
+            }
+          },
+          {
+            "content": "55,00",
+            "source": "D(1,1434,1046,1500,1046,1500,1072,1434,1072)",
+            "span": {
+              "offset": 794,
+              "length": 5
+            }
+          },
+          {
+            "role": "sectionHeading",
+            "content": "SUMMARY",
+            "source": "D(1,132,1193,328,1195,328,1229,132,1228)",
+            "span": {
+              "offset": 822,
+              "length": 9
+            }
+          },
+          {
+            "content": "VAT [%]",
+            "source": "D(1,639,1278,745,1277,745,1306,640,1307)",
+            "span": {
+              "offset": 851,
+              "length": 7
+            }
+          },
+          {
+            "content": "Net worth",
+            "source": "D(1,927,1279,1056,1279,1056,1304,927,1304)",
+            "span": {
+              "offset": 868,
+              "length": 9
+            }
+          },
+          {
+            "content": "VAT",
+            "source": "D(1,1188,1279,1241,1279,1241,1304,1188,1304)",
+            "span": {
+              "offset": 887,
+              "length": 3
+            }
+          },
+          {
+            "content": "Gross worth",
+            "source": "D(1,1350,1278,1505,1278,1505,1305,1349,1304)",
+            "span": {
+              "offset": 900,
+              "length": 11
+            }
+          },
+          {
+            "content": "10%",
+            "source": "D(1,666,1338,719,1338,719,1364,667,1364)",
+            "span": {
+              "offset": 932,
+              "length": 3
+            }
+          },
+          {
+            "content": "82,97",
+            "source": "D(1,988,1339,1055,1339,1055,1366,989,1367)",
+            "span": {
+              "offset": 945,
+              "length": 5
+            }
+          },
+          {
+            "content": "8,30",
+            "source": "D(1,1189,1338,1243,1340,1242,1367,1188,1366)",
+            "span": {
+              "offset": 960,
+              "length": 4
+            }
+          },
+          {
+            "content": "91,27",
+            "source": "D(1,1438,1340,1505,1340,1505,1365,1437,1365)",
+            "span": {
+              "offset": 974,
+              "length": 5
+            }
+          },
+          {
+            "content": "Total",
+            "source": "D(1,500,1399,569,1399,569,1424,500,1424)",
+            "span": {
+              "offset": 1000,
+              "length": 5
+            }
+          },
+          {
+            "content": "$ 82,97",
+            "source": "D(1,959,1398,1055,1398,1055,1425,959,1425)",
+            "span": {
+              "offset": 1015,
+              "length": 7
+            }
+          },
+          {
+            "content": "$ 8,30",
+            "source": "D(1,1160,1398,1242,1399,1241,1425,1160,1424)",
+            "span": {
+              "offset": 1032,
+              "length": 6
+            }
+          },
+          {
+            "content": "$ 91,27",
+            "source": "D(1,1408,1399,1504,1399,1504,1424,1408,1424)",
+            "span": {
+              "offset": 1048,
+              "length": 7
+            }
+          }
+        ],
+        "sections": [
+          {
+            "span": {
+              "offset": 0,
+              "length": 1075
+            },
+            "elements": [
+              "/sections/1",
+              "/sections/2",
+              "/sections/3"
+            ]
+          },
+          {
+            "span": {
+              "offset": 0,
+              "length": 259
+            },
+            "elements": [
+              "/paragraphs/0",
+              "/paragraphs/1",
+              "/paragraphs/2",
+              "/paragraphs/3",
+              "/paragraphs/4",
+              "/paragraphs/5",
+              "/paragraphs/6",
+              "/paragraphs/7"
+            ]
+          },
+          {
+            "span": {
+              "offset": 262,
+              "length": 557
+            },
+            "elements": [
+              "/paragraphs/8",
+              "/tables/0"
+            ]
+          },
+          {
+            "span": {
+              "offset": 822,
+              "length": 253
+            },
+            "elements": [
+              "/paragraphs/33",
+              "/tables/1"
+            ]
+          }
+        ],
+        "tables": [
+          {
+            "rowCount": 3,
+            "columnCount": 8,
+            "cells": [
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "No.",
+                "source": "D(1,132,828,233,828,232,916,132,916)",
+                "span": {
+                  "offset": 289,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/9"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Description",
+                "source": "D(1,233,828,640,828,640,916,232,916)",
+                "span": {
+                  "offset": 302,
+                  "length": 11
+                },
+                "elements": [
+                  "/paragraphs/10"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Qty",
+                "source": "D(1,640,828,753,827,753,915,640,916)",
+                "span": {
+                  "offset": 323,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/11"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "UM",
+                "source": "D(1,753,827,867,828,867,915,753,915)",
+                "span": {
+                  "offset": 336,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/12"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 4,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Net price",
+                "source": "D(1,867,828,1042,827,1042,915,867,915)",
+                "span": {
+                  "offset": 348,
+                  "length": 9
+                },
+                "elements": [
+                  "/paragraphs/13"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 5,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Net worth",
+                "source": "D(1,1042,827,1214,827,1214,915,1042,915)",
+                "span": {
+                  "offset": 367,
+                  "length": 9
+                },
+                "elements": [
+                  "/paragraphs/14"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 6,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "VAT [%]",
+                "source": "D(1,1214,827,1381,827,1381,915,1214,915)",
+                "span": {
+                  "offset": 386,
+                  "length": 7
+                },
+                "elements": [
+                  "/paragraphs/15"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 7,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Gross worth",
+                "source": "D(1,1381,827,1519,828,1519,915,1381,915)",
+                "span": {
+                  "offset": 403,
+                  "length": 11
+                },
+                "elements": [
+                  "/paragraphs/16"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "1.",
+                "source": "D(1,132,916,232,916,232,1029,132,1029)",
+                "span": {
+                  "offset": 435,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/17"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Nike 747998-401 Team Hustle D7 Kids Blue Mid Top Basketball Shoes Size 4Y US",
+                "source": "D(1,232,916,640,916,640,1029,232,1029)",
+                "span": {
+                  "offset": 447,
+                  "length": 76
+                },
+                "elements": [
+                  "/paragraphs/18"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "3,00",
+                "source": "D(1,640,916,753,915,753,1029,640,1029)",
+                "span": {
+                  "offset": 533,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/19"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "each",
+                "source": "D(1,753,915,867,915,867,1029,753,1029)",
+                "span": {
+                  "offset": 547,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/20"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 4,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "10,99",
+                "source": "D(1,867,915,1042,915,1043,1029,867,1029)",
+                "span": {
+                  "offset": 561,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/21"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 5,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "32,97",
+                "source": "D(1,1042,915,1214,915,1215,1029,1043,1029)",
+                "span": {
+                  "offset": 576,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/22"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 6,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "10%",
+                "source": "D(1,1214,915,1381,915,1381,1028,1215,1029)",
+                "span": {
+                  "offset": 591,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/23"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 7,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "36,27",
+                "source": "D(1,1381,915,1519,915,1519,1029,1381,1028)",
+                "span": {
+                  "offset": 604,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/24"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "2.",
+                "source": "D(1,132,1029,232,1029,233,1144,132,1144)",
+                "span": {
+                  "offset": 630,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/25"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Jordan Nike Kid Air 1 Retro High Black Gray Elephant Size 7Y 838850-013",
+                "source": "D(1,232,1029,640,1029,640,1144,233,1144)",
+                "span": {
+                  "offset": 642,
+                  "length": 71
+                },
+                "elements": [
+                  "/paragraphs/26"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "1,00",
+                "source": "D(1,640,1029,753,1029,754,1144,640,1144)",
+                "span": {
+                  "offset": 723,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/27"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "each",
+                "source": "D(1,753,1029,867,1029,868,1144,754,1144)",
+                "span": {
+                  "offset": 737,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/28"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 4,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "50,00",
+                "source": "D(1,867,1029,1043,1029,1043,1144,868,1144)",
+                "span": {
+                  "offset": 751,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/29"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 5,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "50,00",
+                "source": "D(1,1043,1029,1215,1029,1215,1144,1043,1144)",
+                "span": {
+                  "offset": 766,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/30"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 6,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "10%",
+                "source": "D(1,1215,1029,1381,1028,1382,1144,1215,1144)",
+                "span": {
+                  "offset": 781,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/31"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 7,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "55,00",
+                "source": "D(1,1381,1028,1519,1029,1519,1144,1382,1144)",
+                "span": {
+                  "offset": 794,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/32"
+                ]
+              }
+            ],
+            "source": "D(1,131,827,1518,826,1518,1144,131,1146)",
+            "span": {
+              "offset": 272,
+              "length": 547
+            }
+          },
+          {
+            "rowCount": 3,
+            "columnCount": 4,
+            "cells": [
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "VAT [%]",
+                "source": "D(1,134,1262,837,1262,837,1322,133,1322)",
+                "span": {
+                  "offset": 851,
+                  "length": 7
+                },
+                "elements": [
+                  "/paragraphs/34"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Net worth",
+                "source": "D(1,837,1262,1114,1262,1114,1322,837,1322)",
+                "span": {
+                  "offset": 868,
+                  "length": 9
+                },
+                "elements": [
+                  "/paragraphs/35"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "VAT",
+                "source": "D(1,1114,1262,1303,1262,1302,1322,1114,1322)",
+                "span": {
+                  "offset": 887,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/36"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Gross worth",
+                "source": "D(1,1303,1262,1518,1262,1518,1322,1302,1322)",
+                "span": {
+                  "offset": 900,
+                  "length": 11
+                },
+                "elements": [
+                  "/paragraphs/37"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "10%",
+                "source": "D(1,133,1322,837,1322,837,1380,133,1381)",
+                "span": {
+                  "offset": 932,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/38"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "82,97",
+                "source": "D(1,837,1322,1114,1322,1114,1380,837,1380)",
+                "span": {
+                  "offset": 945,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/39"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "8,30",
+                "source": "D(1,1114,1322,1302,1322,1303,1380,1114,1380)",
+                "span": {
+                  "offset": 960,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/40"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "91,27",
+                "source": "D(1,1302,1322,1518,1322,1518,1380,1303,1380)",
+                "span": {
+                  "offset": 974,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/41"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Total",
+                "source": "D(1,133,1381,837,1380,837,1440,133,1440)",
+                "span": {
+                  "offset": 1000,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/42"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "$ 82,97",
+                "source": "D(1,837,1380,1114,1380,1114,1440,837,1440)",
+                "span": {
+                  "offset": 1015,
+                  "length": 7
+                },
+                "elements": [
+                  "/paragraphs/43"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "$ 8,30",
+                "source": "D(1,1114,1380,1303,1380,1303,1439,1114,1440)",
+                "span": {
+                  "offset": 1032,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/44"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "$ 91,27",
+                "source": "D(1,1303,1380,1518,1380,1518,1439,1303,1439)",
+                "span": {
+                  "offset": 1048,
+                  "length": 7
+                },
+                "elements": [
+                  "/paragraphs/45"
+                ]
+              }
+            ],
+            "source": "D(1,130,1262,1517,1261,1517,1442,130,1441)",
+            "span": {
+              "offset": 834,
+              "length": 241
+            }
+          }
+        ],
         "analyzerId": "prebuilt-invoice",
         "mimeType": "image/jpeg"
       }
     ]
   },
   "usage": {
-    "documentPagesMinimal": 1,
+    "documentPagesStandard": 1,
     "contextualizationTokens": 1000,
     "tokens": {
-      "gpt-4.1-input": 10263,
-      "gpt-4.1-output": 323,
-      "text-embedding-3-large": 4
+      "gpt-4.1-input": 12822,
+      "gpt-4.1-output": 1495,
+      "text-embedding-3-large": 439
     }
   },
   "_extracted": {
-    "field_values": {},
-    "description": "Ce document est une facture (invoice) émise par la société Torres and Sons à l'attention de Dennis, Levy and Bowen, datée du 20/03/2016. Le montant total TTC s'élève à 91,27 $ pour l'achat de chaussures de sport, avec un taux de TVA de 10 %. Les informations clés incluent le numéro de facture 68688408, les adresses et identifiants fiscaux des deux parties."
+    "field_values": {
+      "AmountDue": {
+        "Amount": 91.27,
+        "CurrencyCode": "USD"
+      },
+      "CountryRegion": "USA",
+      "CustomerAddress": "523 Leslie Manors Lake Colleenville, CT 12053",
+      "CustomerAddressRecipient": "Dennis, Levy and Bowen",
+      "CustomerName": "Dennis, Levy and Bowen",
+      "CustomerTaxId": "904-82-9186",
+      "InvoiceDate": "2016-03-20",
+      "InvoiceId": "68688408",
+      "LineItems": [
+        {
+          "Description": "Nike 747998-401 Team Hustle D7 Kids Blue Mid Top Basketball Shoes Size 4Y US",
+          "ProductCode": "747998-401",
+          "Quantity": 3,
+          "QuantityUnit": "each",
+          "TaxAmount": {
+            "CurrencyCode": "USD"
+          },
+          "TaxRate": 0.1,
+          "TotalAmount": {
+            "Amount": 36.27,
+            "CurrencyCode": "USD"
+          },
+          "UnitPrice": {
+            "Amount": 10.99,
+            "CurrencyCode": "USD"
+          }
+        },
+        {
+          "Description": "Jordan Nike Kid Air 1 Retro High Black Gray Elephant Size 7Y 838850-013",
+          "ProductCode": "838850-013",
+          "Quantity": 1,
+          "QuantityUnit": "each",
+          "TaxAmount": {
+            "CurrencyCode": "USD"
+          },
+          "TaxRate": 0.1,
+          "TotalAmount": {
+            "Amount": 55,
+            "CurrencyCode": "USD"
+          },
+          "UnitPrice": {
+            "Amount": 50,
+            "CurrencyCode": "USD"
+          }
+        }
+      ],
+      "SubtotalAmount": {
+        "Amount": 82.97,
+        "CurrencyCode": "USD"
+      },
+      "TaxDetails": [
+        {
+          "Amount": {
+            "Amount": 8.3,
+            "CurrencyCode": "USD"
+          },
+          "Description": "10%",
+          "NetAmount": {
+            "Amount": 82.97,
+            "CurrencyCode": "USD"
+          },
+          "Rate": 0.1
+        }
+      ],
+      "TotalAmount": {
+        "Amount": 91.27,
+        "CurrencyCode": "USD"
+      },
+      "TotalTaxAmount": {
+        "Amount": 8.3,
+        "CurrencyCode": "USD"
+      },
+      "VendorAddress": "4052 Brown Roads Haysstad, NJ 06418",
+      "VendorAddressRecipient": "Torres and Sons",
+      "VendorName": "Torres and Sons",
+      "VendorTaxId": "953-84-2239"
+    },
+    "description": "[LLM error: 429 Client Error: Too Many Requests for url: https://aya-demo-ai.cognitiveservices.azure.com/openai/deployments/gpt-4.1/chat/completions?api-version=2024-12-01-preview]"
   }
 }

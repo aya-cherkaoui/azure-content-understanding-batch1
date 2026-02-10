@@ -1,25 +1,35 @@
 {
-  "id": "9de8caee-b83b-4c53-9c3e-e56f57d4382d",
+  "id": "0b6aba5b-1225-4e55-b60a-9d0a7c46b8b6",
   "status": "Succeeded",
   "result": {
     "analyzerId": "prebuilt-invoice",
     "apiVersion": "2025-11-01",
-    "createdAt": "2026-02-10T13:37:42Z",
-    "stringEncoding": "utf16",
+    "createdAt": "2026-02-10T15:10:41Z",
+    "stringEncoding": "codePoint",
     "warnings": [],
     "contents": [
       {
         "path": "input1",
-        "markdown": "```text\n\n```\n",
+        "markdown": "Invoice no: 15001300\n\nDate of issue:\n\n02/18/2014\n\nSeller:\nKerr, Ryan and Gomez\n8069 Nicholas Greens\nLake Vincentbury, RI 06574\n\nTax Id: 929-82-4759\n\nIBAN: GB32MKCO74382010852522\n\nClient:\nMason Ltd\n8053 Friedman Burg\nPatrickfort, FL 71567\n\nTax Id: 991-91-7229\n\n\n# ITEMS\n\n\n<table>\n<tr>\n<th>No.</th>\n<th>Description</th>\n<th>Qty</th>\n<th>UM</th>\n<th>Net price</th>\n<th>Net worth</th>\n<th>VAT [%]</th>\n<th>Gross worth</th>\n</tr>\n<tr>\n<td>1.</td>\n<td>100Pcs Wall Stickers Home Decor Glow In The Dark Star sticker Decal Kids room</td>\n<td>1,00</td>\n<td>each</td>\n<td>1,70</td>\n<td>1,70</td>\n<td>10%</td>\n<td>1,87</td>\n</tr>\n<tr>\n<td>2.</td>\n<td>PUMA Boys Kids Athletic Shoes Flats Plimsouls Gray Black Denim size 12C</td>\n<td>3,00</td>\n<td>each</td>\n<td>19,00</td>\n<td>57,00</td>\n<td>10%</td>\n<td>62,70</td>\n</tr>\n<tr>\n<td>3.</td>\n<td>Joma Youth Boys Gol 205 Piso Multitaco Soccer Cleats 2.5 White Blue Yellow NEW</td>\n<td>5,00</td>\n<td>each</td>\n<td>19,99</td>\n<td>99,95</td>\n<td>10%</td>\n<td>109,94</td>\n</tr>\n<tr>\n<td>4.</td>\n<td>Fila Boys Skele-Toes Bay RNR 3 Black Running Shoes 11 Medium (D) Little Kid 9953</td>\n<td>3,00</td>\n<td>each</td>\n<td>10,25</td>\n<td>30,75</td>\n<td>10%</td>\n<td>33,83</td>\n</tr>\n<tr>\n<td>5.</td>\n<td>Kid Connection Kids Winter Waterproof Boots Size 5 Cozy &amp; Warm Slipn On Booties</td>\n<td>5,00</td>\n<td>each</td>\n<td>21,59</td>\n<td>107,95</td>\n<td>10%</td>\n<td>118,75</td>\n</tr>\n</table>\n\n\n# SUMMARY\n\n\n<table>\n<tr>\n<th>VAT [%]</th>\n<th>Net worth</th>\n<th>VAT</th>\n<th>Gross worth</th>\n</tr>\n<tr>\n<td>10%</td>\n<td>297,35</td>\n<td>29,73</td>\n<td>327,08</td>\n</tr>\n<tr>\n<td>Total</td>\n<td>$ 297,35</td>\n<td>$ 29,73</td>\n<td>$ 327,08</td>\n</tr>\n</table>\n",
         "fields": {
           "AmountDue": {
             "type": "object",
             "valueObject": {
               "Amount": {
-                "type": "number"
+                "type": "number",
+                "valueNumber": 327.08,
+                "spans": [
+                  {
+                    "offset": 1651,
+                    "length": 8
+                  }
+                ],
+                "confidence": 0.813,
+                "source": "D(1,1391.5707,1743.2405,1504.9892,1741.3502,1505.4249,1767.4929,1392.0064,1769.3832)"
               },
               "CurrencyCode": {
-                "type": "string"
+                "type": "string",
+                "valueString": "USD"
               }
             }
           },
@@ -27,7 +37,8 @@
             "type": "object",
             "valueObject": {
               "Amount": {
-                "type": "number"
+                "type": "number",
+                "confidence": 0.959
               },
               "CurrencyCode": {
                 "type": "string"
@@ -35,87 +46,857 @@
             }
           },
           "BillingAddress": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.715
           },
           "BillingAddressRecipient": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.762
           },
           "CountryRegion": {
-            "type": "string"
+            "type": "string",
+            "valueString": "USA"
           },
           "CustomerAddress": {
-            "type": "string"
+            "type": "string",
+            "valueString": "8053 Friedman Burg Patrickfort, FL 71567",
+            "spans": [
+              {
+                "offset": 197,
+                "length": 18
+              },
+              {
+                "offset": 216,
+                "length": 21
+              }
+            ],
+            "confidence": 0.733,
+            "source": "D(1,833.0013,540.6797,1120.1297,541.8013,1119.9995,575.1211,832.8711,573.9995);D(1,833.0053,576.0739,1125.1833,577.7340,1125.0000,610.0000,832.8219,608.3399)"
           },
           "CustomerAddressRecipient": {
-            "type": "string"
+            "type": "string",
+            "valueString": "Mason Ltd",
+            "spans": [
+              {
+                "offset": 187,
+                "length": 9
+              }
+            ],
+            "confidence": 0.83,
+            "source": "D(1,833.0000,506.0000,979.0000,506.0000,979.0000,536.0000,833.0000,536.0000)"
           },
           "CustomerId": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.815
           },
           "CustomerName": {
-            "type": "string"
+            "type": "string",
+            "valueString": "Mason Ltd",
+            "spans": [
+              {
+                "offset": 187,
+                "length": 9
+              }
+            ],
+            "confidence": 0.872,
+            "source": "D(1,833.0000,506.0000,979.0000,506.0000,979.0000,536.0000,833.0000,536.0000)"
           },
           "CustomerTaxId": {
-            "type": "string"
+            "type": "string",
+            "valueString": "991-91-7229",
+            "spans": [
+              {
+                "offset": 247,
+                "length": 11
+              }
+            ],
+            "confidence": 0.872,
+            "source": "D(1,937.0000,648.0000,1118.0000,648.0000,1118.0000,679.0000,937.0000,679.0000)"
           },
           "DueDate": {
-            "type": "date"
+            "type": "date",
+            "confidence": 0.793
           },
           "InvoiceDate": {
-            "type": "date"
+            "type": "date",
+            "valueDate": "2014-02-18",
+            "spans": [
+              {
+                "offset": 38,
+                "length": 10
+              }
+            ],
+            "confidence": 0.97,
+            "source": "D(1,800.0000,140.0000,981.0000,141.0000,981.0000,174.0000,800.0000,174.0000)"
           },
           "InvoiceId": {
-            "type": "string"
+            "type": "string",
+            "valueString": "15001300",
+            "spans": [
+              {
+                "offset": 12,
+                "length": 8
+              }
+            ],
+            "confidence": 0.952,
+            "source": "D(1,352.0000,72.0000,538.0000,71.0000,538.0000,107.0000,352.0000,108.0000)"
           },
           "LineItems": {
-            "type": "array"
+            "type": "array",
+            "valueArray": [
+              {
+                "type": "object",
+                "valueObject": {
+                  "Date": {
+                    "type": "date",
+                    "confidence": 0.823
+                  },
+                  "Description": {
+                    "type": "string",
+                    "valueString": "100Pcs Wall Stickers Home Decor Glow In The Dark Star sticker Decal Kids room",
+                    "spans": [
+                      {
+                        "offset": 446,
+                        "length": 25
+                      },
+                      {
+                        "offset": 472,
+                        "length": 27
+                      },
+                      {
+                        "offset": 500,
+                        "length": 23
+                      }
+                    ],
+                    "confidence": 0.625,
+                    "source": "D(1,238.0000,931.0000,544.1435,932.7395,543.9926,959.2954,237.8491,957.5560);D(1,238.0000,959.0000,558.0000,959.0000,558.0000,985.0000,238.0000,985.0000);D(1,238.0000,987.0000,504.0000,987.0000,504.0000,1014.0000,238.0000,1014.0000)"
+                  },
+                  "ProductCode": {
+                    "type": "string",
+                    "confidence": 0.902
+                  },
+                  "Quantity": {
+                    "type": "number",
+                    "valueNumber": 1,
+                    "spans": [
+                      {
+                        "offset": 533,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.903,
+                    "source": "D(1,672.0000,933.0000,725.0000,933.0000,725.0000,958.0000,672.0000,958.0000)"
+                  },
+                  "QuantityUnit": {
+                    "type": "string",
+                    "valueString": "each",
+                    "spans": [
+                      {
+                        "offset": 547,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.869,
+                    "source": "D(1,769.0000,934.0000,827.0000,933.0000,827.0000,957.0000,769.0000,958.0000)"
+                  },
+                  "TaxAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "confidence": 0.511
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "TaxRate": {
+                    "type": "number",
+                    "valueNumber": 0.1,
+                    "spans": [
+                      {
+                        "offset": 589,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.903,
+                    "source": "D(1,1279.0297,930.1390,1333.8610,932.0297,1332.9703,957.8610,1278.1390,955.9703)"
+                  },
+                  "TotalAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 1.87,
+                        "spans": [
+                          {
+                            "offset": 602,
+                            "length": 4
+                          }
+                        ],
+                        "confidence": 0.883,
+                        "source": "D(1,1449.0000,933.0000,1500.0000,933.0000,1500.0000,958.0000,1449.0000,958.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "UnitPrice": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 1.7,
+                        "spans": [
+                          {
+                            "offset": 561,
+                            "length": 4
+                          }
+                        ],
+                        "confidence": 0.914,
+                        "source": "D(1,965.0000,933.0000,1016.0000,933.0000,1016.0000,958.0000,965.0000,958.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "Date": {
+                    "type": "date",
+                    "confidence": 0.823
+                  },
+                  "Description": {
+                    "type": "string",
+                    "valueString": "PUMA Boys Kids Athletic Shoes Flats Plimsouls Gray Black Denim size 12C",
+                    "spans": [
+                      {
+                        "offset": 639,
+                        "length": 29
+                      },
+                      {
+                        "offset": 669,
+                        "length": 26
+                      },
+                      {
+                        "offset": 696,
+                        "length": 14
+                      }
+                    ],
+                    "confidence": 0.599,
+                    "source": "D(1,238.0000,1046.0000,585.0000,1046.0000,585.0000,1073.0000,238.0000,1073.0000);D(1,238.0000,1074.0000,534.0000,1074.0000,534.0000,1101.0000,238.0000,1101.0000);D(1,238.0000,1102.0000,416.0000,1102.0000,416.0000,1128.0000,238.0000,1128.0000)"
+                  },
+                  "ProductCode": {
+                    "type": "string",
+                    "confidence": 0.902
+                  },
+                  "Quantity": {
+                    "type": "number",
+                    "valueNumber": 3,
+                    "spans": [
+                      {
+                        "offset": 720,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.903,
+                    "source": "D(1,672.0000,1047.0000,725.0000,1047.0000,725.0000,1072.0000,672.0000,1072.0000)"
+                  },
+                  "QuantityUnit": {
+                    "type": "string",
+                    "valueString": "each",
+                    "spans": [
+                      {
+                        "offset": 734,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.826,
+                    "source": "D(1,770.0000,1048.0000,826.0000,1048.0000,826.0000,1072.0000,770.0000,1072.0000)"
+                  },
+                  "TaxAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "confidence": 0.511
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "TaxRate": {
+                    "type": "number",
+                    "valueNumber": 0.1,
+                    "spans": [
+                      {
+                        "offset": 778,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.896,
+                    "source": "D(1,1280.5173,1045.9349,1331.0000,1045.0000,1331.4827,1071.0651,1281.0000,1072.0000)"
+                  },
+                  "TotalAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 62.7,
+                        "spans": [
+                          {
+                            "offset": 791,
+                            "length": 5
+                          }
+                        ],
+                        "confidence": 0.91,
+                        "source": "D(1,1434.0000,1047.0000,1501.0000,1047.0000,1501.0000,1072.0000,1434.0000,1072.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "UnitPrice": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 19,
+                        "spans": [
+                          {
+                            "offset": 748,
+                            "length": 5
+                          }
+                        ],
+                        "confidence": 0.903,
+                        "source": "D(1,951.0000,1046.0000,1015.0000,1047.0000,1015.0000,1073.0000,951.0000,1073.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "Date": {
+                    "type": "date",
+                    "confidence": 0.823
+                  },
+                  "Description": {
+                    "type": "string",
+                    "valueString": "Joma Youth Boys Gol 205 Piso Multitaco Soccer Cleats 2.5 White Blue Yellow NEW",
+                    "spans": [
+                      {
+                        "offset": 829,
+                        "length": 28
+                      },
+                      {
+                        "offset": 858,
+                        "length": 27
+                      },
+                      {
+                        "offset": 886,
+                        "length": 21
+                      }
+                    ],
+                    "confidence": 0.516,
+                    "source": "D(1,235.0000,1160.0000,573.0000,1160.0000,573.0000,1189.0000,235.0000,1189.0000);D(1,237.0000,1189.0000,544.0000,1189.0000,544.0000,1215.0000,237.0000,1215.0000);D(1,237.0000,1216.0000,500.0000,1216.0000,500.0000,1243.0000,237.0000,1243.0000)"
+                  },
+                  "ProductCode": {
+                    "type": "string",
+                    "confidence": 0.902
+                  },
+                  "Quantity": {
+                    "type": "number",
+                    "valueNumber": 5,
+                    "spans": [
+                      {
+                        "offset": 917,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.903,
+                    "source": "D(1,672.0000,1161.0000,725.0000,1161.0000,725.0000,1187.0000,672.0000,1186.0000)"
+                  },
+                  "QuantityUnit": {
+                    "type": "string",
+                    "valueString": "each",
+                    "spans": [
+                      {
+                        "offset": 931,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.832,
+                    "source": "D(1,769.0000,1162.0000,827.0000,1162.0000,827.0000,1185.0000,769.0000,1185.0000)"
+                  },
+                  "TaxAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "confidence": 0.457
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "TaxRate": {
+                    "type": "number",
+                    "valueNumber": 0.1,
+                    "spans": [
+                      {
+                        "offset": 975,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.883,
+                    "source": "D(1,1279.0273,1159.2078,1331.8610,1161.0297,1330.9727,1186.7922,1278.1390,1184.9703)"
+                  },
+                  "TotalAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 109.94,
+                        "spans": [
+                          {
+                            "offset": 988,
+                            "length": 6
+                          }
+                        ],
+                        "confidence": 0.927,
+                        "source": "D(1,1421.0000,1161.0000,1501.0000,1161.0000,1501.0000,1188.0000,1421.0000,1187.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "UnitPrice": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 19.99,
+                        "spans": [
+                          {
+                            "offset": 945,
+                            "length": 5
+                          }
+                        ],
+                        "confidence": 0.916,
+                        "source": "D(1,951.0000,1161.0000,1015.0000,1161.0000,1015.0000,1187.0000,951.0000,1187.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "Date": {
+                    "type": "date",
+                    "confidence": 0.823
+                  },
+                  "Description": {
+                    "type": "string",
+                    "valueString": "Fila Boys Skele-Toes Bay RNR 3 Black Running Shoes 11 Medium (D) Little Kid 9953",
+                    "spans": [
+                      {
+                        "offset": 1027,
+                        "length": 30
+                      },
+                      {
+                        "offset": 1058,
+                        "length": 22
+                      },
+                      {
+                        "offset": 1081,
+                        "length": 26
+                      }
+                    ],
+                    "confidence": 0.519,
+                    "source": "D(1,237.0000,1276.0000,593.0000,1276.0000,593.0000,1303.0000,237.0000,1303.0000);D(1,238.0000,1304.0000,509.0000,1304.0000,509.0000,1332.0000,238.0000,1332.0000);D(1,237.0000,1332.0000,539.0000,1332.0000,539.0000,1359.0000,237.0000,1359.0000)"
+                  },
+                  "ProductCode": {
+                    "type": "string",
+                    "confidence": 0.902
+                  },
+                  "Quantity": {
+                    "type": "number",
+                    "valueNumber": 3,
+                    "spans": [
+                      {
+                        "offset": 1117,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.914,
+                    "source": "D(1,672.0000,1277.0000,725.0000,1277.0000,725.0000,1302.0000,672.0000,1302.0000)"
+                  },
+                  "QuantityUnit": {
+                    "type": "string",
+                    "valueString": "each",
+                    "spans": [
+                      {
+                        "offset": 1131,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.832,
+                    "source": "D(1,770.0000,1276.0000,827.0000,1277.0000,827.0000,1301.0000,770.0000,1301.0000)"
+                  },
+                  "TaxAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "confidence": 0.607
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "TaxRate": {
+                    "type": "number",
+                    "valueNumber": 0.1,
+                    "spans": [
+                      {
+                        "offset": 1175,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.883,
+                    "source": "D(1,1281.1031,1274.7320,1332.1340,1277.0515,1330.8969,1304.2680,1279.8660,1301.9485)"
+                  },
+                  "TotalAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 33.83,
+                        "spans": [
+                          {
+                            "offset": 1188,
+                            "length": 5
+                          }
+                        ],
+                        "confidence": 0.956,
+                        "source": "D(1,1434.0000,1277.0000,1501.0000,1277.0000,1501.0000,1302.0000,1434.0000,1302.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "UnitPrice": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 10.25,
+                        "spans": [
+                          {
+                            "offset": 1145,
+                            "length": 5
+                          }
+                        ],
+                        "confidence": 0.96,
+                        "source": "D(1,950.0000,1277.0000,1016.0000,1275.0000,1016.0000,1302.0000,950.0000,1302.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "type": "object",
+                "valueObject": {
+                  "Date": {
+                    "type": "date",
+                    "confidence": 0.823
+                  },
+                  "Description": {
+                    "type": "string",
+                    "valueString": "Kid Connection Kids Winter Waterproof Boots Size 5 Cozy &amp; Warm Slipn On Booties",
+                    "spans": [
+                      {
+                        "offset": 1226,
+                        "length": 26
+                      },
+                      {
+                        "offset": 1253,
+                        "length": 34
+                      },
+                      {
+                        "offset": 1288,
+                        "length": 21
+                      }
+                    ],
+                    "confidence": 0.52,
+                    "source": "D(1,237.0000,1390.0000,543.0000,1390.0000,543.0000,1418.0000,237.0000,1418.0000);D(1,238.0000,1418.0000,596.0000,1418.0000,596.0000,1447.0000,238.0000,1447.0000);D(1,238.0155,1444.3586,498.2659,1446.8138,497.9957,1475.4528,237.7453,1472.9976)"
+                  },
+                  "ProductCode": {
+                    "type": "string",
+                    "confidence": 0.902
+                  },
+                  "Quantity": {
+                    "type": "number",
+                    "valueNumber": 5,
+                    "spans": [
+                      {
+                        "offset": 1319,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.902,
+                    "source": "D(1,672.0000,1392.0000,724.0000,1392.0000,724.0000,1418.0000,672.0000,1417.0000)"
+                  },
+                  "QuantityUnit": {
+                    "type": "string",
+                    "valueString": "each",
+                    "spans": [
+                      {
+                        "offset": 1333,
+                        "length": 4
+                      }
+                    ],
+                    "confidence": 0.83,
+                    "source": "D(1,770.0000,1393.0000,826.0000,1393.0000,826.0000,1416.0000,770.0000,1416.0000)"
+                  },
+                  "TaxAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "confidence": 0.632
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "TaxRate": {
+                    "type": "number",
+                    "valueNumber": 0.1,
+                    "spans": [
+                      {
+                        "offset": 1378,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.881,
+                    "source": "D(1,1281.0000,1390.0000,1331.0000,1390.0000,1331.0000,1416.0000,1281.0000,1416.0000)"
+                  },
+                  "TotalAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 118.75,
+                        "spans": [
+                          {
+                            "offset": 1391,
+                            "length": 6
+                          }
+                        ],
+                        "confidence": 0.908,
+                        "source": "D(1,1421.0000,1391.0000,1500.0000,1392.0000,1500.0000,1417.0000,1421.0000,1416.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "UnitPrice": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 21.59,
+                        "spans": [
+                          {
+                            "offset": 1347,
+                            "length": 5
+                          }
+                        ],
+                        "confidence": 0.903,
+                        "source": "D(1,950.0000,1391.0000,1016.0000,1392.0000,1016.0000,1418.0000,950.0000,1416.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
           },
           "PaymentTerm": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.816
           },
           "PONumber": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.746
           },
           "RemittanceAddress": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.905
           },
           "RemittanceAddressRecipient": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.814
           },
           "ServiceAddress": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.782
           },
           "ServiceAddressRecipient": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.82
           },
           "ShippingAddress": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.775
           },
           "ShippingAddressRecipient": {
-            "type": "string"
+            "type": "string",
+            "confidence": 0.81
           },
           "SubtotalAmount": {
             "type": "object",
             "valueObject": {
               "Amount": {
-                "type": "number"
+                "type": "number",
+                "valueNumber": 297.35
               },
               "CurrencyCode": {
-                "type": "string"
+                "type": "string",
+                "valueString": "USD"
               }
             }
           },
           "TaxDetails": {
-            "type": "array"
+            "type": "array",
+            "valueArray": [
+              {
+                "type": "object",
+                "valueObject": {
+                  "Amount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 29.73,
+                        "spans": [
+                          {
+                            "offset": 1559,
+                            "length": 5
+                          }
+                        ],
+                        "confidence": 0.88,
+                        "source": "D(1,1174.0000,1683.0000,1240.0000,1683.0000,1240.0000,1709.0000,1174.0000,1709.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "Description": {
+                    "type": "string",
+                    "confidence": 0.183
+                  },
+                  "NetAmount": {
+                    "type": "object",
+                    "valueObject": {
+                      "Amount": {
+                        "type": "number",
+                        "valueNumber": 297.35,
+                        "spans": [
+                          {
+                            "offset": 1543,
+                            "length": 6
+                          }
+                        ],
+                        "confidence": 0.918,
+                        "source": "D(1,975.0000,1683.0000,1056.0000,1683.0000,1056.0000,1709.0000,975.0000,1709.0000)"
+                      },
+                      "CurrencyCode": {
+                        "type": "string",
+                        "valueString": "USD"
+                      }
+                    }
+                  },
+                  "Rate": {
+                    "type": "number",
+                    "valueNumber": 0.1,
+                    "spans": [
+                      {
+                        "offset": 1530,
+                        "length": 3
+                      }
+                    ],
+                    "confidence": 0.873,
+                    "source": "D(1,667.0094,1681.7830,719.0849,1684.0472,717.9906,1709.2170,665.9151,1706.9528)"
+                  }
+                }
+              }
+            ]
           },
           "TotalAmount": {
             "type": "object",
             "valueObject": {
               "Amount": {
-                "type": "number"
+                "type": "number",
+                "valueNumber": 327.08,
+                "spans": [
+                  {
+                    "offset": 1651,
+                    "length": 8
+                  }
+                ],
+                "confidence": 0.461,
+                "source": "D(1,1391.5707,1743.2405,1504.9892,1741.3502,1505.4249,1767.4929,1392.0064,1769.3832)"
               },
               "CurrencyCode": {
-                "type": "string"
+                "type": "string",
+                "valueString": "USD"
               }
             }
           },
@@ -123,7 +904,8 @@
             "type": "object",
             "valueObject": {
               "Amount": {
-                "type": "number"
+                "type": "number",
+                "confidence": 0.934
               },
               "CurrencyCode": {
                 "type": "string"
@@ -134,45 +916,4345 @@
             "type": "object",
             "valueObject": {
               "Amount": {
-                "type": "number"
+                "type": "number",
+                "valueNumber": 29.73
               },
               "CurrencyCode": {
-                "type": "string"
+                "type": "string",
+                "valueString": "USD"
               }
             }
           },
           "VendorAddress": {
-            "type": "string"
+            "type": "string",
+            "valueString": "8069 Nicholas Greens Lake Vincentbury, RI 06574",
+            "spans": [
+              {
+                "offset": 79,
+                "length": 20
+              },
+              {
+                "offset": 100,
+                "length": 26
+              }
+            ],
+            "confidence": 0.738,
+            "source": "D(1,140.0000,542.0000,448.0000,542.0000,448.0000,573.0000,140.0000,573.0000);D(1,140.0000,577.0000,528.0000,577.0000,528.0000,611.0000,140.0000,611.0000)"
           },
           "VendorAddressRecipient": {
-            "type": "string"
+            "type": "string",
+            "valueString": "Kerr, Ryan and Gomez",
+            "spans": [
+              {
+                "offset": 58,
+                "length": 20
+              }
+            ],
+            "confidence": 0.83,
+            "source": "D(1,140.0000,507.0000,457.0000,507.0000,457.0000,539.0000,140.0000,539.0000)"
           },
           "VendorName": {
-            "type": "string"
+            "type": "string",
+            "valueString": "Kerr, Ryan and Gomez",
+            "spans": [
+              {
+                "offset": 58,
+                "length": 20
+              }
+            ],
+            "confidence": 0.799,
+            "source": "D(1,140.0000,507.0000,457.0000,507.0000,457.0000,539.0000,140.0000,539.0000)"
           },
           "VendorTaxId": {
-            "type": "string"
+            "type": "string",
+            "valueString": "929-82-4759",
+            "spans": [
+              {
+                "offset": 136,
+                "length": 11
+              }
+            ],
+            "confidence": 0.931,
+            "source": "D(1,243.0000,649.0000,424.0000,648.0000,424.0000,678.0000,243.0000,679.0000)"
           }
         },
         "kind": "document",
         "startPageNumber": 1,
         "endPageNumber": 1,
+        "unit": "pixel",
+        "pages": [
+          {
+            "pageNumber": 1,
+            "angle": 0,
+            "width": 1654,
+            "height": 2339,
+            "spans": [
+              {
+                "offset": 0,
+                "length": 1680
+              }
+            ],
+            "words": [
+              {
+                "content": "Invoice",
+                "span": {
+                  "offset": 0,
+                  "length": 7
+                },
+                "confidence": 0.919,
+                "source": "D(1,131,73,264,72,264,108,131,108)"
+              },
+              {
+                "content": "no",
+                "span": {
+                  "offset": 8,
+                  "length": 2
+                },
+                "confidence": 0.997,
+                "source": "D(1,280,72,323,72,323,108,280,108)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 10,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,327,72,335,72,335,108,327,108)"
+              },
+              {
+                "content": "15001300",
+                "span": {
+                  "offset": 12,
+                  "length": 8
+                },
+                "confidence": 0.996,
+                "source": "D(1,352,72,538,71,538,107,352,108)"
+              },
+              {
+                "content": "Date",
+                "span": {
+                  "offset": 22,
+                  "length": 4
+                },
+                "confidence": 0.998,
+                "source": "D(1,131,141,205,141,205,173,131,173)"
+              },
+              {
+                "content": "of",
+                "span": {
+                  "offset": 27,
+                  "length": 2
+                },
+                "confidence": 0.997,
+                "source": "D(1,216,141,247,141,247,173,216,173)"
+              },
+              {
+                "content": "issue",
+                "span": {
+                  "offset": 30,
+                  "length": 5
+                },
+                "confidence": 0.996,
+                "source": "D(1,255,141,332,142,332,173,255,173)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 35,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,334,142,345,142,345,174,334,174)"
+              },
+              {
+                "content": "02/18/2014",
+                "span": {
+                  "offset": 38,
+                  "length": 10
+                },
+                "confidence": 0.992,
+                "source": "D(1,800,140,981,141,981,174,800,174)"
+              },
+              {
+                "content": "Seller",
+                "span": {
+                  "offset": 50,
+                  "length": 6
+                },
+                "confidence": 0.997,
+                "source": "D(1,131,443,241,444,241,477,131,476)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 56,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,243,444,255,444,255,477,243,477)"
+              },
+              {
+                "content": "Kerr",
+                "span": {
+                  "offset": 58,
+                  "length": 4
+                },
+                "confidence": 0.994,
+                "source": "D(1,140,507,198,507,198,539,140,539)"
+              },
+              {
+                "content": ",",
+                "span": {
+                  "offset": 62,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,199,507,205,507,205,539,199,539)"
+              },
+              {
+                "content": "Ryan",
+                "span": {
+                  "offset": 64,
+                  "length": 4
+                },
+                "confidence": 0.997,
+                "source": "D(1,218,507,284,507,284,539,218,539)"
+              },
+              {
+                "content": "and",
+                "span": {
+                  "offset": 69,
+                  "length": 3
+                },
+                "confidence": 0.998,
+                "source": "D(1,295,507,346,507,346,539,295,539)"
+              },
+              {
+                "content": "Gomez",
+                "span": {
+                  "offset": 73,
+                  "length": 5
+                },
+                "confidence": 0.996,
+                "source": "D(1,357,507,457,507,457,538,357,539)"
+              },
+              {
+                "content": "8069",
+                "span": {
+                  "offset": 79,
+                  "length": 4
+                },
+                "confidence": 0.996,
+                "source": "D(1,140,542,209,542,209,573,140,573)"
+              },
+              {
+                "content": "Nicholas",
+                "span": {
+                  "offset": 84,
+                  "length": 8
+                },
+                "confidence": 0.995,
+                "source": "D(1,221,542,337,542,337,573,221,573)"
+              },
+              {
+                "content": "Greens",
+                "span": {
+                  "offset": 93,
+                  "length": 6
+                },
+                "confidence": 0.996,
+                "source": "D(1,346,542,448,543,448,573,346,573)"
+              },
+              {
+                "content": "Lake",
+                "span": {
+                  "offset": 100,
+                  "length": 4
+                },
+                "confidence": 0.997,
+                "source": "D(1,140,578,204,578,204,610,140,610)"
+              },
+              {
+                "content": "Vincentbury",
+                "span": {
+                  "offset": 105,
+                  "length": 11
+                },
+                "confidence": 0.99,
+                "source": "D(1,213,578,383,577,383,611,213,610)"
+              },
+              {
+                "content": ",",
+                "span": {
+                  "offset": 116,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,383,577,390,577,390,611,383,611)"
+              },
+              {
+                "content": "RI",
+                "span": {
+                  "offset": 118,
+                  "length": 2
+                },
+                "confidence": 0.956,
+                "source": "D(1,401,577,427,577,427,611,401,611)"
+              },
+              {
+                "content": "06574",
+                "span": {
+                  "offset": 121,
+                  "length": 5
+                },
+                "confidence": 0.983,
+                "source": "D(1,438,577,528,577,528,611,438,611)"
+              },
+              {
+                "content": "Tax",
+                "span": {
+                  "offset": 128,
+                  "length": 3
+                },
+                "confidence": 0.978,
+                "source": "D(1,138,648,190,649,190,679,139,678)"
+              },
+              {
+                "content": "Id",
+                "span": {
+                  "offset": 132,
+                  "length": 2
+                },
+                "confidence": 0.85,
+                "source": "D(1,201,649,223,649,223,679,201,679)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 134,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,227,649,232,649,232,679,227,679)"
+              },
+              {
+                "content": "929-82-4759",
+                "span": {
+                  "offset": 136,
+                  "length": 11
+                },
+                "confidence": 0.99,
+                "source": "D(1,243,649,424,648,424,678,243,679)"
+              },
+              {
+                "content": "IBAN",
+                "span": {
+                  "offset": 149,
+                  "length": 4
+                },
+                "confidence": 0.993,
+                "source": "D(1,140,683,204,683,204,714,140,713)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 153,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,208,683,213,683,213,714,208,714)"
+              },
+              {
+                "content": "GB32MKCO74382010852522",
+                "span": {
+                  "offset": 155,
+                  "length": 22
+                },
+                "confidence": 0.992,
+                "source": "D(1,226,683,635,683,635,714,226,714)"
+              },
+              {
+                "content": "Client",
+                "span": {
+                  "offset": 179,
+                  "length": 6
+                },
+                "confidence": 0.994,
+                "source": "D(1,824,442,935,442,935,477,824,477)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 185,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,937,443,949,443,949,477,937,477)"
+              },
+              {
+                "content": "Mason",
+                "span": {
+                  "offset": 187,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,833,506,922,506,922,535,833,536)"
+              },
+              {
+                "content": "Ltd",
+                "span": {
+                  "offset": 193,
+                  "length": 3
+                },
+                "confidence": 0.996,
+                "source": "D(1,933,506,979,506,979,535,933,535)"
+              },
+              {
+                "content": "8053",
+                "span": {
+                  "offset": 197,
+                  "length": 4
+                },
+                "confidence": 0.991,
+                "source": "D(1,833,541,903,541,903,574,833,574)"
+              },
+              {
+                "content": "Friedman",
+                "span": {
+                  "offset": 202,
+                  "length": 8
+                },
+                "confidence": 0.991,
+                "source": "D(1,915,541,1043,542,1043,574,915,574)"
+              },
+              {
+                "content": "Burg",
+                "span": {
+                  "offset": 211,
+                  "length": 4
+                },
+                "confidence": 0.996,
+                "source": "D(1,1055,542,1120,542,1120,575,1055,574)"
+              },
+              {
+                "content": "Patrickfort",
+                "span": {
+                  "offset": 216,
+                  "length": 11
+                },
+                "confidence": 0.99,
+                "source": "D(1,833,577,977,577,977,609,833,608)"
+              },
+              {
+                "content": ",",
+                "span": {
+                  "offset": 227,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,978,577,984,577,984,609,978,609)"
+              },
+              {
+                "content": "FL",
+                "span": {
+                  "offset": 229,
+                  "length": 2
+                },
+                "confidence": 0.99,
+                "source": "D(1,996,577,1028,578,1028,609,996,609)"
+              },
+              {
+                "content": "71567",
+                "span": {
+                  "offset": 232,
+                  "length": 5
+                },
+                "confidence": 0.988,
+                "source": "D(1,1037,578,1125,578,1125,610,1037,609)"
+              },
+              {
+                "content": "Tax",
+                "span": {
+                  "offset": 239,
+                  "length": 3
+                },
+                "confidence": 0.985,
+                "source": "D(1,831,648,882,648,882,679,831,679)"
+              },
+              {
+                "content": "Id",
+                "span": {
+                  "offset": 243,
+                  "length": 2
+                },
+                "confidence": 0.877,
+                "source": "D(1,893,648,916,648,916,679,893,679)"
+              },
+              {
+                "content": ":",
+                "span": {
+                  "offset": 245,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,920,648,925,648,925,679,920,679)"
+              },
+              {
+                "content": "991-91-7229",
+                "span": {
+                  "offset": 247,
+                  "length": 11
+                },
+                "confidence": 0.982,
+                "source": "D(1,937,648,1118,648,1118,679,937,679)"
+              },
+              {
+                "content": "ITEMS",
+                "span": {
+                  "offset": 263,
+                  "length": 5
+                },
+                "confidence": 0.981,
+                "source": "D(1,131,759,249,759,249,792,132,792)"
+              },
+              {
+                "content": "No",
+                "span": {
+                  "offset": 288,
+                  "length": 2
+                },
+                "confidence": 0.935,
+                "source": "D(1,158,848,193,847,193,870,158,870)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 290,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,193,847,202,847,202,870,193,870)"
+              },
+              {
+                "content": "Description",
+                "span": {
+                  "offset": 301,
+                  "length": 11
+                },
+                "confidence": 0.997,
+                "source": "D(1,237,846,385,847,385,873,237,872)"
+              },
+              {
+                "content": "Qty",
+                "span": {
+                  "offset": 322,
+                  "length": 3
+                },
+                "confidence": 0.994,
+                "source": "D(1,678,846,726,846,726,872,678,872)"
+              },
+              {
+                "content": "UM",
+                "span": {
+                  "offset": 335,
+                  "length": 2
+                },
+                "confidence": 0.982,
+                "source": "D(1,777,847,821,846,821,870,777,871)"
+              },
+              {
+                "content": "Net",
+                "span": {
+                  "offset": 347,
+                  "length": 3
+                },
+                "confidence": 0.998,
+                "source": "D(1,898,844,944,846,944,872,898,871)"
+              },
+              {
+                "content": "price",
+                "span": {
+                  "offset": 351,
+                  "length": 5
+                },
+                "confidence": 0.998,
+                "source": "D(1,952,846,1018,845,1018,871,952,872)"
+              },
+              {
+                "content": "Net",
+                "span": {
+                  "offset": 366,
+                  "length": 3
+                },
+                "confidence": 0.998,
+                "source": "D(1,1057,845,1103,846,1103,871,1057,870)"
+              },
+              {
+                "content": "worth",
+                "span": {
+                  "offset": 370,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,1110,846,1186,846,1186,871,1110,871)"
+              },
+              {
+                "content": "VAT",
+                "span": {
+                  "offset": 385,
+                  "length": 3
+                },
+                "confidence": 0.993,
+                "source": "D(1,1226,842,1280,845,1280,872,1226,870)"
+              },
+              {
+                "content": "[",
+                "span": {
+                  "offset": 389,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1287,845,1296,845,1296,873,1287,873)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 390,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1296,845,1319,845,1319,872,1296,873)"
+              },
+              {
+                "content": "]",
+                "span": {
+                  "offset": 391,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,1319,845,1331,845,1331,872,1319,872)"
+              },
+              {
+                "content": "Gross",
+                "span": {
+                  "offset": 402,
+                  "length": 5
+                },
+                "confidence": 0.998,
+                "source": "D(1,1428,848,1501,848,1501,871,1428,870)"
+              },
+              {
+                "content": "worth",
+                "span": {
+                  "offset": 408,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,1425,875,1501,875,1501,897,1425,897)"
+              },
+              {
+                "content": "1",
+                "span": {
+                  "offset": 434,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,169,934,182,934,182,957,169,957)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 435,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,185,934,192,934,192,957,185,957)"
+              },
+              {
+                "content": "100Pcs",
+                "span": {
+                  "offset": 446,
+                  "length": 6
+                },
+                "confidence": 0.943,
+                "source": "D(1,238,931,316,932,316,958,238,957)"
+              },
+              {
+                "content": "Wall",
+                "span": {
+                  "offset": 453,
+                  "length": 4
+                },
+                "confidence": 0.992,
+                "source": "D(1,323,932,371,932,371,958,323,958)"
+              },
+              {
+                "content": "Stickers",
+                "span": {
+                  "offset": 458,
+                  "length": 8
+                },
+                "confidence": 0.99,
+                "source": "D(1,379,932,467,933,467,958,379,958)"
+              },
+              {
+                "content": "Home",
+                "span": {
+                  "offset": 467,
+                  "length": 4
+                },
+                "confidence": 0.995,
+                "source": "D(1,476,933,544,933,544,958,476,958)"
+              },
+              {
+                "content": "Decor",
+                "span": {
+                  "offset": 472,
+                  "length": 5
+                },
+                "confidence": 0.994,
+                "source": "D(1,238,960,305,959,305,985,239,985)"
+              },
+              {
+                "content": "Glow",
+                "span": {
+                  "offset": 478,
+                  "length": 4
+                },
+                "confidence": 0.991,
+                "source": "D(1,312,959,367,959,367,985,312,985)"
+              },
+              {
+                "content": "In",
+                "span": {
+                  "offset": 483,
+                  "length": 2
+                },
+                "confidence": 0.878,
+                "source": "D(1,375,959,393,959,393,985,375,985)"
+              },
+              {
+                "content": "The",
+                "span": {
+                  "offset": 486,
+                  "length": 3
+                },
+                "confidence": 0.994,
+                "source": "D(1,401,959,443,959,443,984,401,985)"
+              },
+              {
+                "content": "Dark",
+                "span": {
+                  "offset": 490,
+                  "length": 4
+                },
+                "confidence": 0.995,
+                "source": "D(1,452,959,503,959,503,984,452,984)"
+              },
+              {
+                "content": "Star",
+                "span": {
+                  "offset": 495,
+                  "length": 4
+                },
+                "confidence": 0.995,
+                "source": "D(1,510,959,558,959,558,984,510,984)"
+              },
+              {
+                "content": "sticker",
+                "span": {
+                  "offset": 500,
+                  "length": 7
+                },
+                "confidence": 0.995,
+                "source": "D(1,238,988,314,987,314,1014,238,1014)"
+              },
+              {
+                "content": "Decal",
+                "span": {
+                  "offset": 508,
+                  "length": 5
+                },
+                "confidence": 0.995,
+                "source": "D(1,321,987,382,987,382,1014,321,1014)"
+              },
+              {
+                "content": "Kids",
+                "span": {
+                  "offset": 514,
+                  "length": 4
+                },
+                "confidence": 0.993,
+                "source": "D(1,391,987,437,987,437,1014,391,1014)"
+              },
+              {
+                "content": "room",
+                "span": {
+                  "offset": 519,
+                  "length": 4
+                },
+                "confidence": 0.997,
+                "source": "D(1,445,987,504,988,504,1014,445,1014)"
+              },
+              {
+                "content": "1,00",
+                "span": {
+                  "offset": 533,
+                  "length": 4
+                },
+                "confidence": 0.994,
+                "source": "D(1,672,933,725,933,725,958,672,958)"
+              },
+              {
+                "content": "each",
+                "span": {
+                  "offset": 547,
+                  "length": 4
+                },
+                "confidence": 0.999,
+                "source": "D(1,769,934,827,933,827,957,769,958)"
+              },
+              {
+                "content": "1,70",
+                "span": {
+                  "offset": 561,
+                  "length": 4
+                },
+                "confidence": 0.985,
+                "source": "D(1,965,933,1016,933,1016,958,965,958)"
+              },
+              {
+                "content": "1,70",
+                "span": {
+                  "offset": 575,
+                  "length": 4
+                },
+                "confidence": 0.991,
+                "source": "D(1,1134,932,1186,932,1186,959,1134,959)"
+              },
+              {
+                "content": "10",
+                "span": {
+                  "offset": 589,
+                  "length": 2
+                },
+                "confidence": 0.999,
+                "source": "D(1,1279,931,1308,932,1308,957,1279,956)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 591,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1308,932,1333,932,1333,957,1308,957)"
+              },
+              {
+                "content": "1,87",
+                "span": {
+                  "offset": 602,
+                  "length": 4
+                },
+                "confidence": 0.995,
+                "source": "D(1,1449,933,1500,933,1500,958,1449,958)"
+              },
+              {
+                "content": "2",
+                "span": {
+                  "offset": 627,
+                  "length": 1
+                },
+                "confidence": 0.982,
+                "source": "D(1,169,1047,183,1047,183,1070,169,1069)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 628,
+                  "length": 1
+                },
+                "confidence": 0.996,
+                "source": "D(1,185,1048,191,1049,191,1071,185,1070)"
+              },
+              {
+                "content": "PUMA",
+                "span": {
+                  "offset": 639,
+                  "length": 4
+                },
+                "confidence": 0.998,
+                "source": "D(1,238,1046,303,1046,303,1073,238,1073)"
+              },
+              {
+                "content": "Boys",
+                "span": {
+                  "offset": 644,
+                  "length": 4
+                },
+                "confidence": 0.997,
+                "source": "D(1,311,1046,363,1046,363,1073,311,1073)"
+              },
+              {
+                "content": "Kids",
+                "span": {
+                  "offset": 649,
+                  "length": 4
+                },
+                "confidence": 0.997,
+                "source": "D(1,372,1046,417,1046,417,1073,372,1073)"
+              },
+              {
+                "content": "Athletic",
+                "span": {
+                  "offset": 654,
+                  "length": 8
+                },
+                "confidence": 0.996,
+                "source": "D(1,423,1046,509,1046,509,1073,423,1073)"
+              },
+              {
+                "content": "Shoes",
+                "span": {
+                  "offset": 663,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,516,1046,585,1046,585,1073,516,1073)"
+              },
+              {
+                "content": "Flats",
+                "span": {
+                  "offset": 669,
+                  "length": 5
+                },
+                "confidence": 0.996,
+                "source": "D(1,238,1074,291,1074,291,1100,238,1100)"
+              },
+              {
+                "content": "Plimsouls",
+                "span": {
+                  "offset": 675,
+                  "length": 9
+                },
+                "confidence": 0.995,
+                "source": "D(1,300,1074,403,1074,403,1101,300,1100)"
+              },
+              {
+                "content": "Gray",
+                "span": {
+                  "offset": 685,
+                  "length": 4
+                },
+                "confidence": 0.997,
+                "source": "D(1,411,1074,464,1074,464,1101,411,1101)"
+              },
+              {
+                "content": "Black",
+                "span": {
+                  "offset": 690,
+                  "length": 5
+                },
+                "confidence": 0.995,
+                "source": "D(1,471,1074,534,1074,534,1101,471,1101)"
+              },
+              {
+                "content": "Denim",
+                "span": {
+                  "offset": 696,
+                  "length": 5
+                },
+                "confidence": 0.992,
+                "source": "D(1,238,1102,309,1102,309,1128,238,1127)"
+              },
+              {
+                "content": "size",
+                "span": {
+                  "offset": 702,
+                  "length": 4
+                },
+                "confidence": 0.99,
+                "source": "D(1,318,1102,361,1102,361,1128,318,1128)"
+              },
+              {
+                "content": "12C",
+                "span": {
+                  "offset": 707,
+                  "length": 3
+                },
+                "confidence": 0.96,
+                "source": "D(1,370,1102,416,1102,416,1127,370,1128)"
+              },
+              {
+                "content": "3,00",
+                "span": {
+                  "offset": 720,
+                  "length": 4
+                },
+                "confidence": 0.996,
+                "source": "D(1,672,1047,725,1047,725,1072,672,1072)"
+              },
+              {
+                "content": "each",
+                "span": {
+                  "offset": 734,
+                  "length": 4
+                },
+                "confidence": 0.999,
+                "source": "D(1,770,1048,826,1048,826,1072,770,1072)"
+              },
+              {
+                "content": "19,00",
+                "span": {
+                  "offset": 748,
+                  "length": 5
+                },
+                "confidence": 0.992,
+                "source": "D(1,951,1046,1015,1047,1015,1073,951,1073)"
+              },
+              {
+                "content": "57,00",
+                "span": {
+                  "offset": 763,
+                  "length": 5
+                },
+                "confidence": 0.973,
+                "source": "D(1,1119,1047,1185,1047,1185,1073,1119,1073)"
+              },
+              {
+                "content": "10",
+                "span": {
+                  "offset": 778,
+                  "length": 2
+                },
+                "confidence": 0.999,
+                "source": "D(1,1281,1046,1308,1046,1308,1071,1281,1072)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 780,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1309,1046,1331,1045,1331,1070,1309,1071)"
+              },
+              {
+                "content": "62,70",
+                "span": {
+                  "offset": 791,
+                  "length": 5
+                },
+                "confidence": 0.987,
+                "source": "D(1,1434,1047,1501,1047,1501,1072,1434,1072)"
+              },
+              {
+                "content": "3",
+                "span": {
+                  "offset": 817,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,169,1163,183,1161,183,1184,169,1186)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 818,
+                  "length": 1
+                },
+                "confidence": 0.997,
+                "source": "D(1,185,1161,192,1161,192,1184,185,1184)"
+              },
+              {
+                "content": "Joma",
+                "span": {
+                  "offset": 829,
+                  "length": 4
+                },
+                "confidence": 0.99,
+                "source": "D(1,235,1162,291,1161,291,1188,235,1189)"
+              },
+              {
+                "content": "Youth",
+                "span": {
+                  "offset": 834,
+                  "length": 5
+                },
+                "confidence": 0.993,
+                "source": "D(1,298,1161,363,1161,363,1188,298,1188)"
+              },
+              {
+                "content": "Boys",
+                "span": {
+                  "offset": 840,
+                  "length": 4
+                },
+                "confidence": 0.996,
+                "source": "D(1,372,1160,424,1160,424,1188,372,1188)"
+              },
+              {
+                "content": "Gol",
+                "span": {
+                  "offset": 845,
+                  "length": 3
+                },
+                "confidence": 0.986,
+                "source": "D(1,432,1160,467,1160,467,1188,432,1188)"
+              },
+              {
+                "content": "205",
+                "span": {
+                  "offset": 849,
+                  "length": 3
+                },
+                "confidence": 0.988,
+                "source": "D(1,476,1160,517,1160,517,1188,476,1188)"
+              },
+              {
+                "content": "Piso",
+                "span": {
+                  "offset": 853,
+                  "length": 4
+                },
+                "confidence": 0.981,
+                "source": "D(1,527,1160,573,1161,573,1188,527,1188)"
+              },
+              {
+                "content": "Multitaco",
+                "span": {
+                  "offset": 858,
+                  "length": 9
+                },
+                "confidence": 0.996,
+                "source": "D(1,237,1190,341,1190,341,1215,238,1215)"
+              },
+              {
+                "content": "Soccer",
+                "span": {
+                  "offset": 868,
+                  "length": 6
+                },
+                "confidence": 0.998,
+                "source": "D(1,348,1190,424,1190,424,1215,349,1215)"
+              },
+              {
+                "content": "Cleats",
+                "span": {
+                  "offset": 875,
+                  "length": 6
+                },
+                "confidence": 0.992,
+                "source": "D(1,430,1190,500,1189,500,1215,430,1215)"
+              },
+              {
+                "content": "2.5",
+                "span": {
+                  "offset": 882,
+                  "length": 3
+                },
+                "confidence": 0.985,
+                "source": "D(1,507,1189,544,1189,544,1215,507,1215)"
+              },
+              {
+                "content": "White",
+                "span": {
+                  "offset": 886,
+                  "length": 5
+                },
+                "confidence": 0.993,
+                "source": "D(1,237,1216,301,1216,302,1243,238,1242)"
+              },
+              {
+                "content": "Blue",
+                "span": {
+                  "offset": 892,
+                  "length": 4
+                },
+                "confidence": 0.992,
+                "source": "D(1,311,1217,359,1217,359,1243,312,1243)"
+              },
+              {
+                "content": "Yellow",
+                "span": {
+                  "offset": 897,
+                  "length": 6
+                },
+                "confidence": 0.988,
+                "source": "D(1,366,1217,438,1216,438,1243,366,1243)"
+              },
+              {
+                "content": "NEW",
+                "span": {
+                  "offset": 904,
+                  "length": 3
+                },
+                "confidence": 0.997,
+                "source": "D(1,446,1216,500,1216,500,1243,446,1243)"
+              },
+              {
+                "content": "5,00",
+                "span": {
+                  "offset": 917,
+                  "length": 4
+                },
+                "confidence": 0.997,
+                "source": "D(1,672,1161,725,1161,725,1187,672,1186)"
+              },
+              {
+                "content": "each",
+                "span": {
+                  "offset": 931,
+                  "length": 4
+                },
+                "confidence": 0.999,
+                "source": "D(1,769,1162,827,1162,827,1185,769,1185)"
+              },
+              {
+                "content": "19,99",
+                "span": {
+                  "offset": 945,
+                  "length": 5
+                },
+                "confidence": 0.988,
+                "source": "D(1,951,1161,1015,1161,1015,1187,951,1187)"
+              },
+              {
+                "content": "99,95",
+                "span": {
+                  "offset": 960,
+                  "length": 5
+                },
+                "confidence": 0.995,
+                "source": "D(1,1119,1162,1185,1162,1185,1187,1119,1187)"
+              },
+              {
+                "content": "10",
+                "span": {
+                  "offset": 975,
+                  "length": 2
+                },
+                "confidence": 0.999,
+                "source": "D(1,1279,1160,1308,1161,1308,1186,1279,1185)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 977,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1308,1161,1331,1161,1331,1186,1308,1186)"
+              },
+              {
+                "content": "109,94",
+                "span": {
+                  "offset": 988,
+                  "length": 6
+                },
+                "confidence": 0.99,
+                "source": "D(1,1421,1161,1501,1161,1501,1188,1421,1187)"
+              },
+              {
+                "content": "4",
+                "span": {
+                  "offset": 1015,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,169,1278,183,1277,183,1300,169,1301)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 1016,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,184,1277,192,1278,192,1301,184,1300)"
+              },
+              {
+                "content": "Fila",
+                "span": {
+                  "offset": 1027,
+                  "length": 4
+                },
+                "confidence": 0.997,
+                "source": "D(1,237,1276,276,1276,276,1303,237,1303)"
+              },
+              {
+                "content": "Boys",
+                "span": {
+                  "offset": 1032,
+                  "length": 4
+                },
+                "confidence": 0.998,
+                "source": "D(1,286,1276,337,1276,337,1303,286,1303)"
+              },
+              {
+                "content": "Skele",
+                "span": {
+                  "offset": 1037,
+                  "length": 5
+                },
+                "confidence": 0.996,
+                "source": "D(1,344,1276,405,1276,405,1303,344,1303)"
+              },
+              {
+                "content": "-",
+                "span": {
+                  "offset": 1042,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,406,1276,414,1276,414,1303,406,1303)"
+              },
+              {
+                "content": "Toes",
+                "span": {
+                  "offset": 1043,
+                  "length": 4
+                },
+                "confidence": 0.997,
+                "source": "D(1,414,1276,466,1276,466,1303,414,1303)"
+              },
+              {
+                "content": "Bay",
+                "span": {
+                  "offset": 1048,
+                  "length": 3
+                },
+                "confidence": 0.996,
+                "source": "D(1,474,1276,515,1276,515,1303,474,1303)"
+              },
+              {
+                "content": "RNR",
+                "span": {
+                  "offset": 1052,
+                  "length": 3
+                },
+                "confidence": 0.965,
+                "source": "D(1,523,1276,569,1276,569,1303,523,1303)"
+              },
+              {
+                "content": "3",
+                "span": {
+                  "offset": 1056,
+                  "length": 1
+                },
+                "confidence": 0.987,
+                "source": "D(1,576,1276,593,1276,593,1303,576,1303)"
+              },
+              {
+                "content": "Black",
+                "span": {
+                  "offset": 1058,
+                  "length": 5
+                },
+                "confidence": 0.994,
+                "source": "D(1,238,1304,299,1304,299,1332,238,1332)"
+              },
+              {
+                "content": "Running",
+                "span": {
+                  "offset": 1064,
+                  "length": 7
+                },
+                "confidence": 0.994,
+                "source": "D(1,306,1304,397,1304,397,1332,306,1332)"
+              },
+              {
+                "content": "Shoes",
+                "span": {
+                  "offset": 1072,
+                  "length": 5
+                },
+                "confidence": 0.992,
+                "source": "D(1,405,1304,472,1304,472,1332,405,1332)"
+              },
+              {
+                "content": "11",
+                "span": {
+                  "offset": 1078,
+                  "length": 2
+                },
+                "confidence": 0.991,
+                "source": "D(1,480,1304,509,1304,509,1332,480,1332)"
+              },
+              {
+                "content": "Medium",
+                "span": {
+                  "offset": 1081,
+                  "length": 6
+                },
+                "confidence": 0.995,
+                "source": "D(1,237,1332,325,1332,326,1359,238,1359)"
+              },
+              {
+                "content": "(",
+                "span": {
+                  "offset": 1088,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,335,1332,342,1332,343,1359,335,1359)"
+              },
+              {
+                "content": "D",
+                "span": {
+                  "offset": 1089,
+                  "length": 1
+                },
+                "confidence": 0.997,
+                "source": "D(1,344,1332,359,1332,359,1359,344,1359)"
+              },
+              {
+                "content": ")",
+                "span": {
+                  "offset": 1090,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,360,1332,368,1332,368,1359,360,1359)"
+              },
+              {
+                "content": "Little",
+                "span": {
+                  "offset": 1092,
+                  "length": 6
+                },
+                "confidence": 0.994,
+                "source": "D(1,377,1332,431,1332,431,1359,377,1359)"
+              },
+              {
+                "content": "Kid",
+                "span": {
+                  "offset": 1099,
+                  "length": 3
+                },
+                "confidence": 0.984,
+                "source": "D(1,440,1332,473,1332,473,1359,440,1359)"
+              },
+              {
+                "content": "9953",
+                "span": {
+                  "offset": 1103,
+                  "length": 4
+                },
+                "confidence": 0.995,
+                "source": "D(1,481,1332,539,1332,539,1359,482,1359)"
+              },
+              {
+                "content": "3,00",
+                "span": {
+                  "offset": 1117,
+                  "length": 4
+                },
+                "confidence": 0.996,
+                "source": "D(1,672,1277,725,1277,725,1302,672,1302)"
+              },
+              {
+                "content": "each",
+                "span": {
+                  "offset": 1131,
+                  "length": 4
+                },
+                "confidence": 0.999,
+                "source": "D(1,770,1276,827,1277,827,1301,770,1301)"
+              },
+              {
+                "content": "10,25",
+                "span": {
+                  "offset": 1145,
+                  "length": 5
+                },
+                "confidence": 0.923,
+                "source": "D(1,950,1277,1016,1275,1016,1302,950,1302)"
+              },
+              {
+                "content": "30,75",
+                "span": {
+                  "offset": 1160,
+                  "length": 5
+                },
+                "confidence": 0.971,
+                "source": "D(1,1119,1277,1185,1277,1185,1302,1119,1302)"
+              },
+              {
+                "content": "10",
+                "span": {
+                  "offset": 1175,
+                  "length": 2
+                },
+                "confidence": 0.999,
+                "source": "D(1,1281,1277,1308,1276,1308,1301,1281,1302)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 1177,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1309,1276,1331,1277,1331,1302,1309,1301)"
+              },
+              {
+                "content": "33,83",
+                "span": {
+                  "offset": 1188,
+                  "length": 5
+                },
+                "confidence": 0.995,
+                "source": "D(1,1434,1277,1501,1277,1501,1302,1434,1302)"
+              },
+              {
+                "content": "5",
+                "span": {
+                  "offset": 1214,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,169,1394,182,1392,182,1415,169,1416)"
+              },
+              {
+                "content": ".",
+                "span": {
+                  "offset": 1215,
+                  "length": 1
+                },
+                "confidence": 0.997,
+                "source": "D(1,185,1392,192,1392,192,1415,185,1415)"
+              },
+              {
+                "content": "Kid",
+                "span": {
+                  "offset": 1226,
+                  "length": 3
+                },
+                "confidence": 0.983,
+                "source": "D(1,237,1390,271,1390,271,1417,237,1417)"
+              },
+              {
+                "content": "Connection",
+                "span": {
+                  "offset": 1230,
+                  "length": 10
+                },
+                "confidence": 0.99,
+                "source": "D(1,281,1390,405,1391,405,1418,281,1417)"
+              },
+              {
+                "content": "Kids",
+                "span": {
+                  "offset": 1241,
+                  "length": 4
+                },
+                "confidence": 0.981,
+                "source": "D(1,415,1391,460,1391,460,1417,415,1418)"
+              },
+              {
+                "content": "Winter",
+                "span": {
+                  "offset": 1246,
+                  "length": 6
+                },
+                "confidence": 0.992,
+                "source": "D(1,467,1391,543,1390,543,1416,467,1417)"
+              },
+              {
+                "content": "Waterproof",
+                "span": {
+                  "offset": 1253,
+                  "length": 10
+                },
+                "confidence": 0.988,
+                "source": "D(1,238,1420,365,1419,365,1447,238,1447)"
+              },
+              {
+                "content": "Boots",
+                "span": {
+                  "offset": 1264,
+                  "length": 5
+                },
+                "confidence": 0.99,
+                "source": "D(1,372,1419,434,1419,434,1447,372,1447)"
+              },
+              {
+                "content": "Size",
+                "span": {
+                  "offset": 1270,
+                  "length": 4
+                },
+                "confidence": 0.958,
+                "source": "D(1,441,1419,486,1419,486,1446,441,1447)"
+              },
+              {
+                "content": "5",
+                "span": {
+                  "offset": 1275,
+                  "length": 1
+                },
+                "confidence": 0.938,
+                "source": "D(1,494,1419,506,1419,506,1446,494,1446)"
+              },
+              {
+                "content": "Cozy",
+                "span": {
+                  "offset": 1277,
+                  "length": 4
+                },
+                "confidence": 0.908,
+                "source": "D(1,514,1419,569,1418,569,1446,514,1446)"
+              },
+              {
+                "content": "&",
+                "span": {
+                  "offset": 1282,
+                  "length": 5
+                },
+                "confidence": 0.998,
+                "source": "D(1,575,1418,596,1418,596,1446,575,1446)"
+              },
+              {
+                "content": "Warm",
+                "span": {
+                  "offset": 1288,
+                  "length": 4
+                },
+                "confidence": 0.996,
+                "source": "D(1,238,1446,302,1446,302,1473,238,1473)"
+              },
+              {
+                "content": "Slipn",
+                "span": {
+                  "offset": 1293,
+                  "length": 5
+                },
+                "confidence": 0.99,
+                "source": "D(1,311,1446,364,1446,364,1474,311,1473)"
+              },
+              {
+                "content": "On",
+                "span": {
+                  "offset": 1299,
+                  "length": 2
+                },
+                "confidence": 0.995,
+                "source": "D(1,372,1446,403,1446,403,1474,372,1474)"
+              },
+              {
+                "content": "Booties",
+                "span": {
+                  "offset": 1302,
+                  "length": 7
+                },
+                "confidence": 0.997,
+                "source": "D(1,412,1446,498,1447,498,1475,412,1474)"
+              },
+              {
+                "content": "5,00",
+                "span": {
+                  "offset": 1319,
+                  "length": 4
+                },
+                "confidence": 0.996,
+                "source": "D(1,672,1392,724,1392,724,1418,672,1417)"
+              },
+              {
+                "content": "each",
+                "span": {
+                  "offset": 1333,
+                  "length": 4
+                },
+                "confidence": 0.998,
+                "source": "D(1,770,1393,826,1393,826,1416,770,1416)"
+              },
+              {
+                "content": "21,59",
+                "span": {
+                  "offset": 1347,
+                  "length": 5
+                },
+                "confidence": 0.992,
+                "source": "D(1,950,1391,1016,1392,1016,1418,950,1416)"
+              },
+              {
+                "content": "107,95",
+                "span": {
+                  "offset": 1362,
+                  "length": 6
+                },
+                "confidence": 0.992,
+                "source": "D(1,1106,1391,1185,1391,1185,1417,1106,1418)"
+              },
+              {
+                "content": "10",
+                "span": {
+                  "offset": 1378,
+                  "length": 2
+                },
+                "confidence": 0.999,
+                "source": "D(1,1281,1391,1308,1391,1308,1416,1281,1416)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 1380,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1309,1391,1331,1390,1331,1415,1309,1416)"
+              },
+              {
+                "content": "118,75",
+                "span": {
+                  "offset": 1391,
+                  "length": 6
+                },
+                "confidence": 0.959,
+                "source": "D(1,1421,1391,1500,1392,1500,1417,1421,1416)"
+              },
+              {
+                "content": "SUMMARY",
+                "span": {
+                  "offset": 1422,
+                  "length": 7
+                },
+                "confidence": 0.994,
+                "source": "D(1,131,1538,328,1539,328,1574,131,1573)"
+              },
+              {
+                "content": "VAT",
+                "span": {
+                  "offset": 1449,
+                  "length": 3
+                },
+                "confidence": 0.994,
+                "source": "D(1,639,1623,692,1623,692,1651,639,1651)"
+              },
+              {
+                "content": "[",
+                "span": {
+                  "offset": 1453,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,699,1623,709,1623,709,1651,699,1651)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 1454,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,708,1623,731,1623,731,1651,708,1651)"
+              },
+              {
+                "content": "]",
+                "span": {
+                  "offset": 1455,
+                  "length": 1
+                },
+                "confidence": 0.998,
+                "source": "D(1,731,1623,744,1623,744,1651,731,1651)"
+              },
+              {
+                "content": "Net",
+                "span": {
+                  "offset": 1466,
+                  "length": 3
+                },
+                "confidence": 0.997,
+                "source": "D(1,927,1624,972,1624,972,1649,927,1649)"
+              },
+              {
+                "content": "worth",
+                "span": {
+                  "offset": 1470,
+                  "length": 5
+                },
+                "confidence": 0.996,
+                "source": "D(1,979,1624,1055,1623,1055,1648,979,1649)"
+              },
+              {
+                "content": "VAT",
+                "span": {
+                  "offset": 1485,
+                  "length": 3
+                },
+                "confidence": 0.944,
+                "source": "D(1,1188,1623,1241,1623,1241,1648,1188,1648)"
+              },
+              {
+                "content": "Gross",
+                "span": {
+                  "offset": 1498,
+                  "length": 5
+                },
+                "confidence": 0.998,
+                "source": "D(1,1350,1625,1421,1624,1421,1650,1350,1651)"
+              },
+              {
+                "content": "worth",
+                "span": {
+                  "offset": 1504,
+                  "length": 5
+                },
+                "confidence": 0.998,
+                "source": "D(1,1429,1624,1504,1624,1504,1649,1429,1650)"
+              },
+              {
+                "content": "10",
+                "span": {
+                  "offset": 1530,
+                  "length": 2
+                },
+                "confidence": 0.999,
+                "source": "D(1,667,1682,695,1683,695,1708,667,1707)"
+              },
+              {
+                "content": "%",
+                "span": {
+                  "offset": 1532,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,695,1683,718,1684,718,1709,695,1708)"
+              },
+              {
+                "content": "297,35",
+                "span": {
+                  "offset": 1543,
+                  "length": 6
+                },
+                "confidence": 0.992,
+                "source": "D(1,975,1683,1056,1683,1056,1709,975,1709)"
+              },
+              {
+                "content": "29,73",
+                "span": {
+                  "offset": 1559,
+                  "length": 5
+                },
+                "confidence": 0.983,
+                "source": "D(1,1174,1683,1240,1683,1240,1709,1174,1709)"
+              },
+              {
+                "content": "327,08",
+                "span": {
+                  "offset": 1574,
+                  "length": 6
+                },
+                "confidence": 0.994,
+                "source": "D(1,1424,1683,1504,1683,1504,1709,1424,1709)"
+              },
+              {
+                "content": "Total",
+                "span": {
+                  "offset": 1601,
+                  "length": 5
+                },
+                "confidence": 0.997,
+                "source": "D(1,500,1742,569,1742,569,1767,500,1767)"
+              },
+              {
+                "content": "$",
+                "span": {
+                  "offset": 1616,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,943,1741,957,1742,957,1769,943,1769)"
+              },
+              {
+                "content": "297,35",
+                "span": {
+                  "offset": 1618,
+                  "length": 6
+                },
+                "confidence": 0.973,
+                "source": "D(1,967,1742,1056,1743,1056,1770,967,1770)"
+              },
+              {
+                "content": "$",
+                "span": {
+                  "offset": 1634,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1144,1743,1158,1743,1158,1769,1144,1769)"
+              },
+              {
+                "content": "29,73",
+                "span": {
+                  "offset": 1636,
+                  "length": 5
+                },
+                "confidence": 0.977,
+                "source": "D(1,1167,1743,1240,1744,1240,1769,1167,1769)"
+              },
+              {
+                "content": "$",
+                "span": {
+                  "offset": 1651,
+                  "length": 1
+                },
+                "confidence": 0.999,
+                "source": "D(1,1392,1744,1406,1743,1406,1769,1392,1769)"
+              },
+              {
+                "content": "327,08",
+                "span": {
+                  "offset": 1653,
+                  "length": 6
+                },
+                "confidence": 0.975,
+                "source": "D(1,1415,1743,1505,1742,1505,1767,1415,1769)"
+              }
+            ],
+            "lines": [
+              {
+                "content": "Invoice no: 15001300",
+                "source": "D(1,131,72,538,71,538,107,131,108)",
+                "span": {
+                  "offset": 0,
+                  "length": 20
+                }
+              },
+              {
+                "content": "Date of issue:",
+                "source": "D(1,131,141,345,141,345,174,131,173)",
+                "span": {
+                  "offset": 22,
+                  "length": 14
+                }
+              },
+              {
+                "content": "02/18/2014",
+                "source": "D(1,800,140,981,140,981,174,800,174)",
+                "span": {
+                  "offset": 38,
+                  "length": 10
+                }
+              },
+              {
+                "content": "Seller:",
+                "source": "D(1,131,443,256,443,255,477,131,476)",
+                "span": {
+                  "offset": 50,
+                  "length": 7
+                }
+              },
+              {
+                "content": "Kerr, Ryan and Gomez",
+                "source": "D(1,140,507,457,507,457,539,140,539)",
+                "span": {
+                  "offset": 58,
+                  "length": 20
+                }
+              },
+              {
+                "content": "8069 Nicholas Greens",
+                "source": "D(1,140,542,448,542,448,573,140,573)",
+                "span": {
+                  "offset": 79,
+                  "length": 20
+                }
+              },
+              {
+                "content": "Lake Vincentbury, RI 06574",
+                "source": "D(1,140,577,528,577,528,611,140,611)",
+                "span": {
+                  "offset": 100,
+                  "length": 26
+                }
+              },
+              {
+                "content": "Tax Id: 929-82-4759",
+                "source": "D(1,138,648,424,648,424,679,138,679)",
+                "span": {
+                  "offset": 128,
+                  "length": 19
+                }
+              },
+              {
+                "content": "IBAN: GB32MKCO74382010852522",
+                "source": "D(1,140,683,635,683,635,715,140,715)",
+                "span": {
+                  "offset": 149,
+                  "length": 28
+                }
+              },
+              {
+                "content": "Client:",
+                "source": "D(1,824,442,949,442,949,477,824,477)",
+                "span": {
+                  "offset": 179,
+                  "length": 7
+                }
+              },
+              {
+                "content": "Mason Ltd",
+                "source": "D(1,833,506,979,506,979,535,833,536)",
+                "span": {
+                  "offset": 187,
+                  "length": 9
+                }
+              },
+              {
+                "content": "8053 Friedman Burg",
+                "source": "D(1,833,541,1120,542,1120,575,832,574)",
+                "span": {
+                  "offset": 197,
+                  "length": 18
+                }
+              },
+              {
+                "content": "Patrickfort, FL 71567",
+                "source": "D(1,833,576,1125,578,1125,610,832,608)",
+                "span": {
+                  "offset": 216,
+                  "length": 21
+                }
+              },
+              {
+                "content": "Tax Id: 991-91-7229",
+                "source": "D(1,831,648,1118,648,1118,679,831,679)",
+                "span": {
+                  "offset": 239,
+                  "length": 19
+                }
+              },
+              {
+                "content": "ITEMS",
+                "source": "D(1,131,759,249,759,249,792,131,792)",
+                "span": {
+                  "offset": 263,
+                  "length": 5
+                }
+              },
+              {
+                "content": "No.",
+                "source": "D(1,158,847,202,847,202,870,158,870)",
+                "span": {
+                  "offset": 288,
+                  "length": 3
+                }
+              },
+              {
+                "content": "Description",
+                "source": "D(1,237,845,385,846,385,873,237,872)",
+                "span": {
+                  "offset": 301,
+                  "length": 11
+                }
+              },
+              {
+                "content": "Qty",
+                "source": "D(1,678,846,726,846,726,872,678,872)",
+                "span": {
+                  "offset": 322,
+                  "length": 3
+                }
+              },
+              {
+                "content": "UM",
+                "source": "D(1,776,846,821,845,821,870,777,871)",
+                "span": {
+                  "offset": 335,
+                  "length": 2
+                }
+              },
+              {
+                "content": "Net price",
+                "source": "D(1,898,844,1018,845,1018,872,898,872)",
+                "span": {
+                  "offset": 347,
+                  "length": 9
+                }
+              },
+              {
+                "content": "Net worth",
+                "source": "D(1,1057,845,1186,846,1186,871,1057,871)",
+                "span": {
+                  "offset": 366,
+                  "length": 9
+                }
+              },
+              {
+                "content": "VAT [%]",
+                "source": "D(1,1226,842,1331,845,1331,873,1225,871)",
+                "span": {
+                  "offset": 385,
+                  "length": 7
+                }
+              },
+              {
+                "content": "Gross",
+                "source": "D(1,1428,847,1502,848,1501,871,1428,870)",
+                "span": {
+                  "offset": 402,
+                  "length": 5
+                }
+              },
+              {
+                "content": "worth",
+                "source": "D(1,1425,874,1501,874,1501,897,1425,897)",
+                "span": {
+                  "offset": 408,
+                  "length": 5
+                }
+              },
+              {
+                "content": "1.",
+                "source": "D(1,169,934,192,934,192,957,169,957)",
+                "span": {
+                  "offset": 434,
+                  "length": 2
+                }
+              },
+              {
+                "content": "100Pcs Wall Stickers Home",
+                "source": "D(1,238,931,544,933,544,959,238,957)",
+                "span": {
+                  "offset": 446,
+                  "length": 25
+                }
+              },
+              {
+                "content": "Decor Glow In The Dark Star",
+                "source": "D(1,238,960,558,958,559,984,239,985)",
+                "span": {
+                  "offset": 472,
+                  "length": 27
+                }
+              },
+              {
+                "content": "sticker Decal Kids room",
+                "source": "D(1,238,988,504,987,504,1014,238,1014)",
+                "span": {
+                  "offset": 500,
+                  "length": 23
+                }
+              },
+              {
+                "content": "1,00",
+                "source": "D(1,672,933,725,933,725,959,672,959)",
+                "span": {
+                  "offset": 533,
+                  "length": 4
+                }
+              },
+              {
+                "content": "each",
+                "source": "D(1,769,934,827,933,827,958,769,958)",
+                "span": {
+                  "offset": 547,
+                  "length": 4
+                }
+              },
+              {
+                "content": "1,70",
+                "source": "D(1,965,933,1016,933,1016,958,965,958)",
+                "span": {
+                  "offset": 561,
+                  "length": 4
+                }
+              },
+              {
+                "content": "1,70",
+                "source": "D(1,1134,932,1186,932,1186,959,1134,959)",
+                "span": {
+                  "offset": 575,
+                  "length": 4
+                }
+              },
+              {
+                "content": "10%",
+                "source": "D(1,1279,931,1333,932,1333,957,1279,956)",
+                "span": {
+                  "offset": 589,
+                  "length": 3
+                }
+              },
+              {
+                "content": "1,87",
+                "source": "D(1,1449,933,1500,933,1500,958,1449,958)",
+                "span": {
+                  "offset": 602,
+                  "length": 4
+                }
+              },
+              {
+                "content": "2.",
+                "source": "D(1,169,1047,191,1047,191,1071,169,1071)",
+                "span": {
+                  "offset": 627,
+                  "length": 2
+                }
+              },
+              {
+                "content": "PUMA Boys Kids Athletic Shoes",
+                "source": "D(1,238,1046,585,1046,585,1073,238,1073)",
+                "span": {
+                  "offset": 639,
+                  "length": 29
+                }
+              },
+              {
+                "content": "Flats Plimsouls Gray Black",
+                "source": "D(1,238,1074,534,1074,534,1101,238,1101)",
+                "span": {
+                  "offset": 669,
+                  "length": 26
+                }
+              },
+              {
+                "content": "Denim size 12C",
+                "source": "D(1,238,1102,416,1102,416,1128,238,1128)",
+                "span": {
+                  "offset": 696,
+                  "length": 14
+                }
+              },
+              {
+                "content": "3,00",
+                "source": "D(1,672,1047,725,1047,725,1072,672,1072)",
+                "span": {
+                  "offset": 720,
+                  "length": 4
+                }
+              },
+              {
+                "content": "each",
+                "source": "D(1,770,1048,826,1048,826,1072,770,1072)",
+                "span": {
+                  "offset": 734,
+                  "length": 4
+                }
+              },
+              {
+                "content": "19,00",
+                "source": "D(1,951,1046,1015,1047,1015,1073,951,1073)",
+                "span": {
+                  "offset": 748,
+                  "length": 5
+                }
+              },
+              {
+                "content": "57,00",
+                "source": "D(1,1119,1047,1185,1047,1185,1073,1119,1073)",
+                "span": {
+                  "offset": 763,
+                  "length": 5
+                }
+              },
+              {
+                "content": "10%",
+                "source": "D(1,1281,1046,1331,1045,1331,1071,1281,1072)",
+                "span": {
+                  "offset": 778,
+                  "length": 3
+                }
+              },
+              {
+                "content": "62,70",
+                "source": "D(1,1434,1047,1501,1047,1501,1072,1434,1073)",
+                "span": {
+                  "offset": 791,
+                  "length": 5
+                }
+              },
+              {
+                "content": "3.",
+                "source": "D(1,169,1161,192,1161,192,1186,169,1186)",
+                "span": {
+                  "offset": 817,
+                  "length": 2
+                }
+              },
+              {
+                "content": "Joma Youth Boys Gol 205 Piso",
+                "source": "D(1,235,1161,573,1160,573,1188,235,1189)",
+                "span": {
+                  "offset": 829,
+                  "length": 28
+                }
+              },
+              {
+                "content": "Multitaco Soccer Cleats 2.5",
+                "source": "D(1,237,1189,544,1189,544,1215,237,1215)",
+                "span": {
+                  "offset": 858,
+                  "length": 27
+                }
+              },
+              {
+                "content": "White Blue Yellow NEW",
+                "source": "D(1,237,1216,500,1216,500,1243,237,1243)",
+                "span": {
+                  "offset": 886,
+                  "length": 21
+                }
+              },
+              {
+                "content": "5,00",
+                "source": "D(1,672,1161,725,1161,725,1187,672,1187)",
+                "span": {
+                  "offset": 917,
+                  "length": 4
+                }
+              },
+              {
+                "content": "each",
+                "source": "D(1,769,1162,827,1162,827,1185,769,1185)",
+                "span": {
+                  "offset": 931,
+                  "length": 4
+                }
+              },
+              {
+                "content": "19,99",
+                "source": "D(1,951,1161,1015,1161,1015,1187,951,1187)",
+                "span": {
+                  "offset": 945,
+                  "length": 5
+                }
+              },
+              {
+                "content": "99,95",
+                "source": "D(1,1119,1162,1185,1162,1185,1187,1119,1187)",
+                "span": {
+                  "offset": 960,
+                  "length": 5
+                }
+              },
+              {
+                "content": "10%",
+                "source": "D(1,1279,1160,1331,1161,1331,1186,1279,1185)",
+                "span": {
+                  "offset": 975,
+                  "length": 3
+                }
+              },
+              {
+                "content": "109,94",
+                "source": "D(1,1421,1161,1501,1161,1501,1188,1421,1188)",
+                "span": {
+                  "offset": 988,
+                  "length": 6
+                }
+              },
+              {
+                "content": "4.",
+                "source": "D(1,169,1277,192,1277,192,1301,169,1301)",
+                "span": {
+                  "offset": 1015,
+                  "length": 2
+                }
+              },
+              {
+                "content": "Fila Boys Skele-Toes Bay RNR 3",
+                "source": "D(1,237,1276,593,1276,593,1303,237,1303)",
+                "span": {
+                  "offset": 1027,
+                  "length": 30
+                }
+              },
+              {
+                "content": "Black Running Shoes 11",
+                "source": "D(1,238,1304,509,1304,509,1332,238,1332)",
+                "span": {
+                  "offset": 1058,
+                  "length": 22
+                }
+              },
+              {
+                "content": "Medium (D) Little Kid 9953",
+                "source": "D(1,237,1332,539,1332,539,1359,237,1359)",
+                "span": {
+                  "offset": 1081,
+                  "length": 26
+                }
+              },
+              {
+                "content": "3,00",
+                "source": "D(1,672,1277,725,1277,725,1302,672,1302)",
+                "span": {
+                  "offset": 1117,
+                  "length": 4
+                }
+              },
+              {
+                "content": "each",
+                "source": "D(1,770,1276,827,1276,827,1301,770,1301)",
+                "span": {
+                  "offset": 1131,
+                  "length": 4
+                }
+              },
+              {
+                "content": "10,25",
+                "source": "D(1,950,1275,1016,1275,1016,1302,950,1302)",
+                "span": {
+                  "offset": 1145,
+                  "length": 5
+                }
+              },
+              {
+                "content": "30,75",
+                "source": "D(1,1119,1277,1185,1277,1185,1302,1119,1302)",
+                "span": {
+                  "offset": 1160,
+                  "length": 5
+                }
+              },
+              {
+                "content": "10%",
+                "source": "D(1,1281,1276,1331,1277,1331,1302,1281,1302)",
+                "span": {
+                  "offset": 1175,
+                  "length": 3
+                }
+              },
+              {
+                "content": "33,83",
+                "source": "D(1,1434,1277,1501,1277,1501,1302,1434,1302)",
+                "span": {
+                  "offset": 1188,
+                  "length": 5
+                }
+              },
+              {
+                "content": "5.",
+                "source": "D(1,169,1392,192,1392,192,1416,169,1416)",
+                "span": {
+                  "offset": 1214,
+                  "length": 2
+                }
+              },
+              {
+                "content": "Kid Connection Kids Winter",
+                "source": "D(1,237,1390,543,1390,543,1418,237,1418)",
+                "span": {
+                  "offset": 1226,
+                  "length": 26
+                }
+              },
+              {
+                "content": "Waterproof Boots Size 5 Cozy &",
+                "source": "D(1,238,1420,596,1418,597,1446,238,1447)",
+                "span": {
+                  "offset": 1253,
+                  "length": 34
+                }
+              },
+              {
+                "content": "Warm Slipn On Booties",
+                "source": "D(1,238,1445,498,1447,498,1475,238,1473)",
+                "span": {
+                  "offset": 1288,
+                  "length": 21
+                }
+              },
+              {
+                "content": "5,00",
+                "source": "D(1,672,1392,725,1392,724,1418,672,1417)",
+                "span": {
+                  "offset": 1319,
+                  "length": 4
+                }
+              },
+              {
+                "content": "each",
+                "source": "D(1,770,1393,826,1393,826,1416,770,1416)",
+                "span": {
+                  "offset": 1333,
+                  "length": 4
+                }
+              },
+              {
+                "content": "21,59",
+                "source": "D(1,950,1391,1016,1392,1016,1418,949,1416)",
+                "span": {
+                  "offset": 1347,
+                  "length": 5
+                }
+              },
+              {
+                "content": "107,95",
+                "source": "D(1,1106,1391,1185,1391,1185,1418,1106,1418)",
+                "span": {
+                  "offset": 1362,
+                  "length": 6
+                }
+              },
+              {
+                "content": "10%",
+                "source": "D(1,1281,1391,1331,1390,1331,1416,1281,1417)",
+                "span": {
+                  "offset": 1378,
+                  "length": 3
+                }
+              },
+              {
+                "content": "118,75",
+                "source": "D(1,1421,1391,1500,1392,1500,1417,1420,1416)",
+                "span": {
+                  "offset": 1391,
+                  "length": 6
+                }
+              },
+              {
+                "content": "SUMMARY",
+                "source": "D(1,131,1538,328,1539,328,1574,131,1573)",
+                "span": {
+                  "offset": 1422,
+                  "length": 7
+                }
+              },
+              {
+                "content": "VAT [%]",
+                "source": "D(1,639,1623,744,1623,744,1651,639,1651)",
+                "span": {
+                  "offset": 1449,
+                  "length": 7
+                }
+              },
+              {
+                "content": "Net worth",
+                "source": "D(1,927,1624,1055,1623,1055,1648,927,1650)",
+                "span": {
+                  "offset": 1466,
+                  "length": 9
+                }
+              },
+              {
+                "content": "VAT",
+                "source": "D(1,1188,1623,1241,1623,1241,1649,1188,1648)",
+                "span": {
+                  "offset": 1485,
+                  "length": 3
+                }
+              },
+              {
+                "content": "Gross worth",
+                "source": "D(1,1349,1625,1504,1624,1504,1649,1350,1651)",
+                "span": {
+                  "offset": 1498,
+                  "length": 11
+                }
+              },
+              {
+                "content": "10%",
+                "source": "D(1,667,1682,719,1684,718,1709,666,1707)",
+                "span": {
+                  "offset": 1530,
+                  "length": 3
+                }
+              },
+              {
+                "content": "297,35",
+                "source": "D(1,975,1683,1056,1683,1056,1709,975,1709)",
+                "span": {
+                  "offset": 1543,
+                  "length": 6
+                }
+              },
+              {
+                "content": "29,73",
+                "source": "D(1,1174,1683,1240,1683,1240,1709,1174,1709)",
+                "span": {
+                  "offset": 1559,
+                  "length": 5
+                }
+              },
+              {
+                "content": "327,08",
+                "source": "D(1,1424,1683,1504,1683,1504,1709,1424,1709)",
+                "span": {
+                  "offset": 1574,
+                  "length": 6
+                }
+              },
+              {
+                "content": "Total",
+                "source": "D(1,500,1742,569,1742,569,1767,500,1767)",
+                "span": {
+                  "offset": 1601,
+                  "length": 5
+                }
+              },
+              {
+                "content": "$ 297,35",
+                "source": "D(1,943,1741,1057,1743,1056,1771,943,1769)",
+                "span": {
+                  "offset": 1616,
+                  "length": 8
+                }
+              },
+              {
+                "content": "$ 29,73",
+                "source": "D(1,1144,1743,1240,1743,1240,1769,1144,1769)",
+                "span": {
+                  "offset": 1634,
+                  "length": 7
+                }
+              },
+              {
+                "content": "$ 327,08",
+                "source": "D(1,1391,1744,1505,1742,1505,1768,1392,1770)",
+                "span": {
+                  "offset": 1651,
+                  "length": 8
+                }
+              }
+            ]
+          }
+        ],
+        "paragraphs": [
+          {
+            "content": "Invoice no: 15001300",
+            "source": "D(1,131,72,538,71,538,107,131,108)",
+            "span": {
+              "offset": 0,
+              "length": 20
+            }
+          },
+          {
+            "content": "Date of issue:",
+            "source": "D(1,131,141,345,141,345,174,131,173)",
+            "span": {
+              "offset": 22,
+              "length": 14
+            }
+          },
+          {
+            "content": "02/18/2014",
+            "source": "D(1,800,140,981,140,981,174,800,174)",
+            "span": {
+              "offset": 38,
+              "length": 10
+            }
+          },
+          {
+            "content": "Seller: Kerr, Ryan and Gomez 8069 Nicholas Greens Lake Vincentbury, RI 06574",
+            "source": "D(1,131,443,528,443,528,611,131,611)",
+            "span": {
+              "offset": 50,
+              "length": 76
+            }
+          },
+          {
+            "content": "Tax Id: 929-82-4759",
+            "source": "D(1,138,648,424,648,424,679,138,679)",
+            "span": {
+              "offset": 128,
+              "length": 19
+            }
+          },
+          {
+            "content": "IBAN: GB32MKCO74382010852522",
+            "source": "D(1,140,683,635,683,635,715,140,715)",
+            "span": {
+              "offset": 149,
+              "length": 28
+            }
+          },
+          {
+            "content": "Client: Mason Ltd 8053 Friedman Burg Patrickfort, FL 71567",
+            "source": "D(1,824,441,1126,443,1125,610,823,608)",
+            "span": {
+              "offset": 179,
+              "length": 58
+            }
+          },
+          {
+            "content": "Tax Id: 991-91-7229",
+            "source": "D(1,831,648,1118,648,1118,679,831,679)",
+            "span": {
+              "offset": 239,
+              "length": 19
+            }
+          },
+          {
+            "role": "sectionHeading",
+            "content": "ITEMS",
+            "source": "D(1,131,759,249,759,249,792,131,792)",
+            "span": {
+              "offset": 261,
+              "length": 7
+            }
+          },
+          {
+            "content": "No.",
+            "source": "D(1,158,847,202,847,202,871,158,870)",
+            "span": {
+              "offset": 288,
+              "length": 3
+            }
+          },
+          {
+            "content": "Description",
+            "source": "D(1,237,846,385,847,385,873,237,872)",
+            "span": {
+              "offset": 301,
+              "length": 11
+            }
+          },
+          {
+            "content": "Qty",
+            "source": "D(1,678,846,726,846,726,872,678,872)",
+            "span": {
+              "offset": 322,
+              "length": 3
+            }
+          },
+          {
+            "content": "UM",
+            "source": "D(1,776,847,821,846,821,870,777,871)",
+            "span": {
+              "offset": 335,
+              "length": 2
+            }
+          },
+          {
+            "content": "Net price",
+            "source": "D(1,898,842,1018,845,1018,874,897,871)",
+            "span": {
+              "offset": 347,
+              "length": 9
+            }
+          },
+          {
+            "content": "Net worth",
+            "source": "D(1,1057,844,1186,846,1186,872,1057,870)",
+            "span": {
+              "offset": 366,
+              "length": 9
+            }
+          },
+          {
+            "content": "VAT [%]",
+            "source": "D(1,1226,842,1331,845,1331,873,1225,871)",
+            "span": {
+              "offset": 385,
+              "length": 7
+            }
+          },
+          {
+            "content": "Gross worth",
+            "source": "D(1,1425,847,1502,848,1501,898,1424,897)",
+            "span": {
+              "offset": 402,
+              "length": 11
+            }
+          },
+          {
+            "content": "1.",
+            "source": "D(1,169,934,192,934,191,957,169,957)",
+            "span": {
+              "offset": 434,
+              "length": 2
+            }
+          },
+          {
+            "content": "100Pcs Wall Stickers Home Decor Glow In The Dark Star sticker Decal Kids room",
+            "source": "D(1,238,931,558,930,559,1014,238,1014)",
+            "span": {
+              "offset": 446,
+              "length": 77
+            }
+          },
+          {
+            "content": "1,00",
+            "source": "D(1,672,933,725,933,725,958,672,958)",
+            "span": {
+              "offset": 533,
+              "length": 4
+            }
+          },
+          {
+            "content": "each",
+            "source": "D(1,769,934,827,933,827,957,769,958)",
+            "span": {
+              "offset": 547,
+              "length": 4
+            }
+          },
+          {
+            "content": "1,70",
+            "source": "D(1,965,933,1016,933,1016,958,965,958)",
+            "span": {
+              "offset": 561,
+              "length": 4
+            }
+          },
+          {
+            "content": "1,70",
+            "source": "D(1,1134,932,1186,932,1186,959,1134,959)",
+            "span": {
+              "offset": 575,
+              "length": 4
+            }
+          },
+          {
+            "content": "10%",
+            "source": "D(1,1279,930,1333,932,1333,957,1279,956)",
+            "span": {
+              "offset": 589,
+              "length": 3
+            }
+          },
+          {
+            "content": "1,87",
+            "source": "D(1,1449,933,1500,933,1500,958,1449,958)",
+            "span": {
+              "offset": 602,
+              "length": 4
+            }
+          },
+          {
+            "content": "2.",
+            "source": "D(1,169,1045,195,1049,191,1073,165,1068)",
+            "span": {
+              "offset": 627,
+              "length": 2
+            }
+          },
+          {
+            "content": "PUMA Boys Kids Athletic Shoes Flats Plimsouls Gray Black Denim size 12C",
+            "source": "D(1,238,1045,585,1046,585,1128,238,1128)",
+            "span": {
+              "offset": 639,
+              "length": 71
+            }
+          },
+          {
+            "content": "3,00",
+            "source": "D(1,672,1047,725,1047,725,1072,672,1072)",
+            "span": {
+              "offset": 720,
+              "length": 4
+            }
+          },
+          {
+            "content": "each",
+            "source": "D(1,770,1048,826,1048,826,1072,770,1072)",
+            "span": {
+              "offset": 734,
+              "length": 4
+            }
+          },
+          {
+            "content": "19,00",
+            "source": "D(1,951,1046,1015,1047,1015,1073,951,1073)",
+            "span": {
+              "offset": 748,
+              "length": 5
+            }
+          },
+          {
+            "content": "57,00",
+            "source": "D(1,1119,1047,1185,1047,1185,1073,1118,1073)",
+            "span": {
+              "offset": 763,
+              "length": 5
+            }
+          },
+          {
+            "content": "10%",
+            "source": "D(1,1280,1046,1331,1045,1331,1071,1281,1072)",
+            "span": {
+              "offset": 778,
+              "length": 3
+            }
+          },
+          {
+            "content": "62,70",
+            "source": "D(1,1434,1047,1501,1047,1501,1072,1434,1072)",
+            "span": {
+              "offset": 791,
+              "length": 5
+            }
+          },
+          {
+            "content": "3.",
+            "source": "D(1,167,1163,192,1161,193,1184,169,1186)",
+            "span": {
+              "offset": 817,
+              "length": 2
+            }
+          },
+          {
+            "content": "Joma Youth Boys Gol 205 Piso Multitaco Soccer Cleats 2.5 White Blue Yellow NEW",
+            "source": "D(1,235,1161,573,1160,574,1243,235,1243)",
+            "span": {
+              "offset": 829,
+              "length": 78
+            }
+          },
+          {
+            "content": "5,00",
+            "source": "D(1,672,1161,725,1161,725,1187,672,1186)",
+            "span": {
+              "offset": 917,
+              "length": 4
+            }
+          },
+          {
+            "content": "each",
+            "source": "D(1,769,1162,827,1162,827,1185,769,1185)",
+            "span": {
+              "offset": 931,
+              "length": 4
+            }
+          },
+          {
+            "content": "19,99",
+            "source": "D(1,950,1161,1015,1161,1015,1187,951,1187)",
+            "span": {
+              "offset": 945,
+              "length": 5
+            }
+          },
+          {
+            "content": "99,95",
+            "source": "D(1,1119,1162,1185,1162,1185,1187,1119,1187)",
+            "span": {
+              "offset": 960,
+              "length": 5
+            }
+          },
+          {
+            "content": "10%",
+            "source": "D(1,1279,1160,1332,1161,1331,1187,1278,1185)",
+            "span": {
+              "offset": 975,
+              "length": 3
+            }
+          },
+          {
+            "content": "109,94",
+            "source": "D(1,1421,1161,1501,1161,1501,1188,1421,1188)",
+            "span": {
+              "offset": 988,
+              "length": 6
+            }
+          },
+          {
+            "content": "4.",
+            "source": "D(1,169,1275,194,1278,191,1304,166,1301)",
+            "span": {
+              "offset": 1015,
+              "length": 2
+            }
+          },
+          {
+            "content": "Fila Boys Skele-Toes Bay RNR 3 Black Running Shoes 11 Medium (D) Little Kid 9953",
+            "source": "D(1,237,1276,593,1276,593,1359,237,1359)",
+            "span": {
+              "offset": 1027,
+              "length": 80
+            }
+          },
+          {
+            "content": "3,00",
+            "source": "D(1,672,1277,725,1277,725,1302,672,1302)",
+            "span": {
+              "offset": 1117,
+              "length": 4
+            }
+          },
+          {
+            "content": "each",
+            "source": "D(1,770,1276,827,1277,827,1301,770,1301)",
+            "span": {
+              "offset": 1131,
+              "length": 4
+            }
+          },
+          {
+            "content": "10,25",
+            "source": "D(1,950,1276,1016,1275,1016,1302,950,1303)",
+            "span": {
+              "offset": 1145,
+              "length": 5
+            }
+          },
+          {
+            "content": "30,75",
+            "source": "D(1,1119,1277,1185,1277,1185,1302,1119,1302)",
+            "span": {
+              "offset": 1160,
+              "length": 5
+            }
+          },
+          {
+            "content": "10%",
+            "source": "D(1,1281,1275,1332,1277,1331,1304,1280,1302)",
+            "span": {
+              "offset": 1175,
+              "length": 3
+            }
+          },
+          {
+            "content": "33,83",
+            "source": "D(1,1434,1277,1501,1277,1501,1302,1434,1302)",
+            "span": {
+              "offset": 1188,
+              "length": 5
+            }
+          },
+          {
+            "content": "5.",
+            "source": "D(1,169,1392,192,1392,192,1417,168,1416)",
+            "span": {
+              "offset": 1214,
+              "length": 2
+            }
+          },
+          {
+            "content": "Kid Connection Kids Winter Waterproof Boots Size 5 Cozy & Warm Slipn On Booties",
+            "source": "D(1,237,1390,596,1389,596,1475,237,1475)",
+            "span": {
+              "offset": 1226,
+              "length": 83
+            }
+          },
+          {
+            "content": "5,00",
+            "source": "D(1,672,1392,725,1392,724,1418,672,1417)",
+            "span": {
+              "offset": 1319,
+              "length": 4
+            }
+          },
+          {
+            "content": "each",
+            "source": "D(1,770,1393,826,1393,826,1416,770,1416)",
+            "span": {
+              "offset": 1333,
+              "length": 4
+            }
+          },
+          {
+            "content": "21,59",
+            "source": "D(1,950,1390,1017,1392,1016,1418,949,1416)",
+            "span": {
+              "offset": 1347,
+              "length": 5
+            }
+          },
+          {
+            "content": "107,95",
+            "source": "D(1,1106,1391,1185,1391,1185,1418,1106,1418)",
+            "span": {
+              "offset": 1362,
+              "length": 6
+            }
+          },
+          {
+            "content": "10%",
+            "source": "D(1,1281,1390,1331,1390,1331,1416,1281,1416)",
+            "span": {
+              "offset": 1378,
+              "length": 3
+            }
+          },
+          {
+            "content": "118,75",
+            "source": "D(1,1421,1391,1500,1392,1500,1417,1420,1416)",
+            "span": {
+              "offset": 1391,
+              "length": 6
+            }
+          },
+          {
+            "role": "sectionHeading",
+            "content": "SUMMARY",
+            "source": "D(1,131,1538,328,1539,328,1574,131,1573)",
+            "span": {
+              "offset": 1420,
+              "length": 9
+            }
+          },
+          {
+            "content": "VAT [%]",
+            "source": "D(1,639,1623,744,1623,744,1651,639,1651)",
+            "span": {
+              "offset": 1449,
+              "length": 7
+            }
+          },
+          {
+            "content": "Net worth",
+            "source": "D(1,927,1623,1055,1623,1055,1649,927,1649)",
+            "span": {
+              "offset": 1466,
+              "length": 9
+            }
+          },
+          {
+            "content": "VAT",
+            "source": "D(1,1188,1623,1241,1623,1241,1648,1188,1648)",
+            "span": {
+              "offset": 1485,
+              "length": 3
+            }
+          },
+          {
+            "content": "Gross worth",
+            "source": "D(1,1349,1625,1504,1624,1504,1650,1350,1651)",
+            "span": {
+              "offset": 1498,
+              "length": 11
+            }
+          },
+          {
+            "content": "10%",
+            "source": "D(1,667,1681,719,1684,718,1709,666,1707)",
+            "span": {
+              "offset": 1530,
+              "length": 3
+            }
+          },
+          {
+            "content": "297,35",
+            "source": "D(1,975,1683,1056,1683,1056,1709,975,1709)",
+            "span": {
+              "offset": 1543,
+              "length": 6
+            }
+          },
+          {
+            "content": "29,73",
+            "source": "D(1,1174,1683,1240,1683,1240,1709,1174,1709)",
+            "span": {
+              "offset": 1559,
+              "length": 5
+            }
+          },
+          {
+            "content": "327,08",
+            "source": "D(1,1424,1683,1504,1683,1504,1709,1424,1709)",
+            "span": {
+              "offset": 1574,
+              "length": 6
+            }
+          },
+          {
+            "content": "Total",
+            "source": "D(1,500,1742,569,1742,569,1767,500,1767)",
+            "span": {
+              "offset": 1601,
+              "length": 5
+            }
+          },
+          {
+            "content": "$ 297,35",
+            "source": "D(1,943,1740,1057,1743,1056,1772,943,1769)",
+            "span": {
+              "offset": 1616,
+              "length": 8
+            }
+          },
+          {
+            "content": "$ 29,73",
+            "source": "D(1,1144,1743,1241,1744,1240,1770,1144,1769)",
+            "span": {
+              "offset": 1634,
+              "length": 7
+            }
+          },
+          {
+            "content": "$ 327,08",
+            "source": "D(1,1392,1742,1505,1742,1505,1769,1392,1769)",
+            "span": {
+              "offset": 1651,
+              "length": 8
+            }
+          }
+        ],
+        "sections": [
+          {
+            "span": {
+              "offset": 0,
+              "length": 1679
+            },
+            "elements": [
+              "/sections/1",
+              "/sections/2",
+              "/sections/3"
+            ]
+          },
+          {
+            "span": {
+              "offset": 0,
+              "length": 258
+            },
+            "elements": [
+              "/paragraphs/0",
+              "/paragraphs/1",
+              "/paragraphs/2",
+              "/paragraphs/3",
+              "/paragraphs/4",
+              "/paragraphs/5",
+              "/paragraphs/6",
+              "/paragraphs/7"
+            ]
+          },
+          {
+            "span": {
+              "offset": 261,
+              "length": 1156
+            },
+            "elements": [
+              "/paragraphs/8",
+              "/tables/0"
+            ]
+          },
+          {
+            "span": {
+              "offset": 1420,
+              "length": 259
+            },
+            "elements": [
+              "/paragraphs/57",
+              "/tables/1"
+            ]
+          }
+        ],
+        "tables": [
+          {
+            "rowCount": 6,
+            "columnCount": 8,
+            "cells": [
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "No.",
+                "source": "D(1,132,827,231,827,230,916,132,916)",
+                "span": {
+                  "offset": 288,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/9"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Description",
+                "source": "D(1,231,827,630,827,629,916,230,916)",
+                "span": {
+                  "offset": 301,
+                  "length": 11
+                },
+                "elements": [
+                  "/paragraphs/10"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Qty",
+                "source": "D(1,630,827,753,827,752,915,629,916)",
+                "span": {
+                  "offset": 322,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/11"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "UM",
+                "source": "D(1,753,827,867,827,868,915,752,915)",
+                "span": {
+                  "offset": 335,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/12"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 4,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Net price",
+                "source": "D(1,867,827,1042,827,1043,915,868,915)",
+                "span": {
+                  "offset": 347,
+                  "length": 9
+                },
+                "elements": [
+                  "/paragraphs/13"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 5,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Net worth",
+                "source": "D(1,1042,827,1212,827,1212,915,1043,915)",
+                "span": {
+                  "offset": 366,
+                  "length": 9
+                },
+                "elements": [
+                  "/paragraphs/14"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 6,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "VAT [%]",
+                "source": "D(1,1212,827,1378,827,1378,915,1212,915)",
+                "span": {
+                  "offset": 385,
+                  "length": 7
+                },
+                "elements": [
+                  "/paragraphs/15"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 7,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Gross worth",
+                "source": "D(1,1378,827,1519,827,1519,915,1378,915)",
+                "span": {
+                  "offset": 402,
+                  "length": 11
+                },
+                "elements": [
+                  "/paragraphs/16"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "1.",
+                "source": "D(1,132,916,230,916,231,1030,132,1030)",
+                "span": {
+                  "offset": 434,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/17"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "100Pcs Wall Stickers Home Decor Glow In The Dark Star sticker Decal Kids room",
+                "source": "D(1,230,916,629,916,630,1030,231,1030)",
+                "span": {
+                  "offset": 446,
+                  "length": 77
+                },
+                "elements": [
+                  "/paragraphs/18"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "1,00",
+                "source": "D(1,629,916,752,915,753,1030,630,1030)",
+                "span": {
+                  "offset": 533,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/19"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "each",
+                "source": "D(1,752,915,868,915,868,1030,753,1030)",
+                "span": {
+                  "offset": 547,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/20"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 4,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "1,70",
+                "source": "D(1,868,915,1043,915,1043,1030,868,1030)",
+                "span": {
+                  "offset": 561,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/21"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 5,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "1,70",
+                "source": "D(1,1043,915,1212,915,1213,1029,1043,1030)",
+                "span": {
+                  "offset": 575,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/22"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 6,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "10%",
+                "source": "D(1,1212,915,1378,915,1378,1029,1213,1029)",
+                "span": {
+                  "offset": 589,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/23"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 7,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "1,87",
+                "source": "D(1,1378,915,1519,915,1519,1029,1378,1029)",
+                "span": {
+                  "offset": 602,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/24"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "2.",
+                "source": "D(1,132,1030,231,1030,231,1144,132,1144)",
+                "span": {
+                  "offset": 627,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/25"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "PUMA Boys Kids Athletic Shoes Flats Plimsouls Gray Black Denim size 12C",
+                "source": "D(1,231,1030,630,1030,630,1144,231,1144)",
+                "span": {
+                  "offset": 639,
+                  "length": 71
+                },
+                "elements": [
+                  "/paragraphs/26"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "3,00",
+                "source": "D(1,630,1030,753,1030,753,1144,630,1144)",
+                "span": {
+                  "offset": 720,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/27"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "each",
+                "source": "D(1,753,1030,868,1030,868,1144,753,1144)",
+                "span": {
+                  "offset": 734,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/28"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 4,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "19,00",
+                "source": "D(1,868,1030,1043,1030,1044,1144,868,1144)",
+                "span": {
+                  "offset": 748,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/29"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 5,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "57,00",
+                "source": "D(1,1043,1030,1213,1029,1214,1144,1044,1144)",
+                "span": {
+                  "offset": 763,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/30"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 6,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "10%",
+                "source": "D(1,1213,1029,1378,1029,1379,1144,1214,1144)",
+                "span": {
+                  "offset": 778,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/31"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 7,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "62,70",
+                "source": "D(1,1378,1029,1519,1029,1519,1144,1379,1144)",
+                "span": {
+                  "offset": 791,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/32"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "3.",
+                "source": "D(1,132,1144,231,1144,231,1260,132,1260)",
+                "span": {
+                  "offset": 817,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/33"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Joma Youth Boys Gol 205 Piso Multitaco Soccer Cleats 2.5 White Blue Yellow NEW",
+                "source": "D(1,231,1144,630,1144,630,1260,231,1260)",
+                "span": {
+                  "offset": 829,
+                  "length": 78
+                },
+                "elements": [
+                  "/paragraphs/34"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "5,00",
+                "source": "D(1,630,1144,753,1144,753,1260,630,1260)",
+                "span": {
+                  "offset": 917,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/35"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "each",
+                "source": "D(1,753,1144,868,1144,869,1259,753,1260)",
+                "span": {
+                  "offset": 931,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/36"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 4,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "19,99",
+                "source": "D(1,868,1144,1044,1144,1044,1259,869,1259)",
+                "span": {
+                  "offset": 945,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/37"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 5,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "99,95",
+                "source": "D(1,1044,1144,1214,1144,1214,1259,1044,1259)",
+                "span": {
+                  "offset": 960,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/38"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 6,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "10%",
+                "source": "D(1,1214,1144,1379,1144,1379,1259,1214,1259)",
+                "span": {
+                  "offset": 975,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/39"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 3,
+                "columnIndex": 7,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "109,94",
+                "source": "D(1,1379,1144,1519,1144,1519,1260,1379,1259)",
+                "span": {
+                  "offset": 988,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/40"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "4.",
+                "source": "D(1,132,1260,231,1260,231,1374,132,1374)",
+                "span": {
+                  "offset": 1015,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/41"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Fila Boys Skele-Toes Bay RNR 3 Black Running Shoes 11 Medium (D) Little Kid 9953",
+                "source": "D(1,231,1260,630,1260,630,1374,231,1374)",
+                "span": {
+                  "offset": 1027,
+                  "length": 80
+                },
+                "elements": [
+                  "/paragraphs/42"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "3,00",
+                "source": "D(1,630,1260,753,1260,754,1374,630,1374)",
+                "span": {
+                  "offset": 1117,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/43"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "each",
+                "source": "D(1,753,1260,869,1259,869,1374,754,1374)",
+                "span": {
+                  "offset": 1131,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/44"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 4,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "10,25",
+                "source": "D(1,869,1259,1044,1259,1045,1374,869,1374)",
+                "span": {
+                  "offset": 1145,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/45"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 5,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "30,75",
+                "source": "D(1,1044,1259,1214,1259,1215,1374,1045,1374)",
+                "span": {
+                  "offset": 1160,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/46"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 6,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "10%",
+                "source": "D(1,1214,1259,1379,1259,1380,1374,1215,1374)",
+                "span": {
+                  "offset": 1175,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/47"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 4,
+                "columnIndex": 7,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "33,83",
+                "source": "D(1,1379,1259,1519,1260,1519,1374,1380,1374)",
+                "span": {
+                  "offset": 1188,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/48"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "5.",
+                "source": "D(1,132,1374,231,1374,230,1489,132,1489)",
+                "span": {
+                  "offset": 1214,
+                  "length": 2
+                },
+                "elements": [
+                  "/paragraphs/49"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Kid Connection Kids Winter Waterproof Boots Size 5 Cozy & Warm Slipn On Booties",
+                "source": "D(1,231,1374,630,1374,630,1489,230,1489)",
+                "span": {
+                  "offset": 1226,
+                  "length": 83
+                },
+                "elements": [
+                  "/paragraphs/50"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "5,00",
+                "source": "D(1,630,1374,754,1374,754,1489,630,1489)",
+                "span": {
+                  "offset": 1319,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/51"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "each",
+                "source": "D(1,754,1374,869,1374,869,1489,754,1489)",
+                "span": {
+                  "offset": 1333,
+                  "length": 4
+                },
+                "elements": [
+                  "/paragraphs/52"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 4,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "21,59",
+                "source": "D(1,869,1374,1045,1374,1045,1489,869,1489)",
+                "span": {
+                  "offset": 1347,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/53"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 5,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "107,95",
+                "source": "D(1,1045,1374,1215,1374,1216,1489,1045,1489)",
+                "span": {
+                  "offset": 1362,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/54"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 6,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "10%",
+                "source": "D(1,1215,1374,1380,1374,1380,1489,1216,1489)",
+                "span": {
+                  "offset": 1378,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/55"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 5,
+                "columnIndex": 7,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "118,75",
+                "source": "D(1,1380,1374,1519,1374,1519,1489,1380,1489)",
+                "span": {
+                  "offset": 1391,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/56"
+                ]
+              }
+            ],
+            "source": "D(1,130,826,1518,824,1518,1492,131,1492)",
+            "span": {
+              "offset": 271,
+              "length": 1146
+            }
+          },
+          {
+            "rowCount": 3,
+            "columnCount": 4,
+            "cells": [
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "VAT [%]",
+                "source": "D(1,133,1607,834,1607,834,1667,133,1667)",
+                "span": {
+                  "offset": 1449,
+                  "length": 7
+                },
+                "elements": [
+                  "/paragraphs/58"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Net worth",
+                "source": "D(1,834,1607,1106,1607,1106,1667,834,1667)",
+                "span": {
+                  "offset": 1466,
+                  "length": 9
+                },
+                "elements": [
+                  "/paragraphs/59"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "VAT",
+                "source": "D(1,1106,1607,1302,1607,1302,1667,1106,1667)",
+                "span": {
+                  "offset": 1485,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/60"
+                ]
+              },
+              {
+                "kind": "columnHeader",
+                "rowIndex": 0,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Gross worth",
+                "source": "D(1,1302,1607,1518,1607,1518,1667,1302,1667)",
+                "span": {
+                  "offset": 1498,
+                  "length": 11
+                },
+                "elements": [
+                  "/paragraphs/61"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "10%",
+                "source": "D(1,133,1667,834,1667,833,1725,133,1726)",
+                "span": {
+                  "offset": 1530,
+                  "length": 3
+                },
+                "elements": [
+                  "/paragraphs/62"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "297,35",
+                "source": "D(1,834,1667,1106,1667,1106,1725,833,1725)",
+                "span": {
+                  "offset": 1543,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/63"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "29,73",
+                "source": "D(1,1106,1667,1302,1667,1302,1725,1106,1725)",
+                "span": {
+                  "offset": 1559,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/64"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 1,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "327,08",
+                "source": "D(1,1302,1667,1518,1667,1518,1725,1302,1725)",
+                "span": {
+                  "offset": 1574,
+                  "length": 6
+                },
+                "elements": [
+                  "/paragraphs/65"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 0,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "Total",
+                "source": "D(1,133,1726,833,1725,834,1785,133,1785)",
+                "span": {
+                  "offset": 1601,
+                  "length": 5
+                },
+                "elements": [
+                  "/paragraphs/66"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 1,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "$ 297,35",
+                "source": "D(1,833,1725,1106,1725,1106,1784,834,1785)",
+                "span": {
+                  "offset": 1616,
+                  "length": 8
+                },
+                "elements": [
+                  "/paragraphs/67"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 2,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "$ 29,73",
+                "source": "D(1,1106,1725,1302,1725,1302,1784,1106,1784)",
+                "span": {
+                  "offset": 1634,
+                  "length": 7
+                },
+                "elements": [
+                  "/paragraphs/68"
+                ]
+              },
+              {
+                "kind": "content",
+                "rowIndex": 2,
+                "columnIndex": 3,
+                "rowSpan": 1,
+                "columnSpan": 1,
+                "content": "$ 327,08",
+                "source": "D(1,1302,1725,1518,1725,1518,1784,1302,1784)",
+                "span": {
+                  "offset": 1651,
+                  "length": 8
+                },
+                "elements": [
+                  "/paragraphs/69"
+                ]
+              }
+            ],
+            "source": "D(1,129,1606,1518,1607,1518,1787,129,1787)",
+            "span": {
+              "offset": 1432,
+              "length": 247
+            }
+          }
+        ],
         "analyzerId": "prebuilt-invoice",
         "mimeType": "image/jpeg"
       }
     ]
   },
   "usage": {
-    "documentPagesMinimal": 1,
+    "documentPagesStandard": 1,
     "contextualizationTokens": 1000,
     "tokens": {
-      "gpt-4.1-input": 10263,
-      "gpt-4.1-output": 323,
-      "text-embedding-3-large": 4
+      "gpt-4.1-input": 13895,
+      "gpt-4.1-output": 2439,
+      "text-embedding-3-large": 679
     }
   },
   "_extracted": {
-    "field_values": {},
-    "description": "Ce document est une facture (invoice) émise par Kerr, Ryan and Gomez à Mason Ltd, datée du 18/02/2014. Le montant total TTC est de 327,08 $, pour divers articles (chaussures et autocollants muraux), avec une TVA de 10 %. Les informations clés incluent les coordonnées des deux parties, le numéro de facture 15001300, et le détail des articles facturés."
+    "field_values": {
+      "AmountDue": {
+        "Amount": 327.08,
+        "CurrencyCode": "USD"
+      },
+      "CountryRegion": "USA",
+      "CustomerAddress": "8053 Friedman Burg Patrickfort, FL 71567",
+      "CustomerAddressRecipient": "Mason Ltd",
+      "CustomerName": "Mason Ltd",
+      "CustomerTaxId": "991-91-7229",
+      "InvoiceDate": "2014-02-18",
+      "InvoiceId": "15001300",
+      "LineItems": [
+        {
+          "Description": "100Pcs Wall Stickers Home Decor Glow In The Dark Star sticker Decal Kids room",
+          "Quantity": 1,
+          "QuantityUnit": "each",
+          "TaxAmount": {
+            "CurrencyCode": "USD"
+          },
+          "TaxRate": 0.1,
+          "TotalAmount": {
+            "Amount": 1.87,
+            "CurrencyCode": "USD"
+          },
+          "UnitPrice": {
+            "Amount": 1.7,
+            "CurrencyCode": "USD"
+          }
+        },
+        {
+          "Description": "PUMA Boys Kids Athletic Shoes Flats Plimsouls Gray Black Denim size 12C",
+          "Quantity": 3,
+          "QuantityUnit": "each",
+          "TaxAmount": {
+            "CurrencyCode": "USD"
+          },
+          "TaxRate": 0.1,
+          "TotalAmount": {
+            "Amount": 62.7,
+            "CurrencyCode": "USD"
+          },
+          "UnitPrice": {
+            "Amount": 19,
+            "CurrencyCode": "USD"
+          }
+        },
+        {
+          "Description": "Joma Youth Boys Gol 205 Piso Multitaco Soccer Cleats 2.5 White Blue Yellow NEW",
+          "Quantity": 5,
+          "QuantityUnit": "each",
+          "TaxAmount": {
+            "CurrencyCode": "USD"
+          },
+          "TaxRate": 0.1,
+          "TotalAmount": {
+            "Amount": 109.94,
+            "CurrencyCode": "USD"
+          },
+          "UnitPrice": {
+            "Amount": 19.99,
+            "CurrencyCode": "USD"
+          }
+        },
+        {
+          "Description": "Fila Boys Skele-Toes Bay RNR 3 Black Running Shoes 11 Medium (D) Little Kid 9953",
+          "Quantity": 3,
+          "QuantityUnit": "each",
+          "TaxAmount": {
+            "CurrencyCode": "USD"
+          },
+          "TaxRate": 0.1,
+          "TotalAmount": {
+            "Amount": 33.83,
+            "CurrencyCode": "USD"
+          },
+          "UnitPrice": {
+            "Amount": 10.25,
+            "CurrencyCode": "USD"
+          }
+        },
+        {
+          "Description": "Kid Connection Kids Winter Waterproof Boots Size 5 Cozy &amp; Warm Slipn On Booties",
+          "Quantity": 5,
+          "QuantityUnit": "each",
+          "TaxAmount": {
+            "CurrencyCode": "USD"
+          },
+          "TaxRate": 0.1,
+          "TotalAmount": {
+            "Amount": 118.75,
+            "CurrencyCode": "USD"
+          },
+          "UnitPrice": {
+            "Amount": 21.59,
+            "CurrencyCode": "USD"
+          }
+        }
+      ],
+      "SubtotalAmount": {
+        "Amount": 297.35,
+        "CurrencyCode": "USD"
+      },
+      "TaxDetails": [
+        {
+          "Amount": {
+            "Amount": 29.73,
+            "CurrencyCode": "USD"
+          },
+          "NetAmount": {
+            "Amount": 297.35,
+            "CurrencyCode": "USD"
+          },
+          "Rate": 0.1
+        }
+      ],
+      "TotalAmount": {
+        "Amount": 327.08,
+        "CurrencyCode": "USD"
+      },
+      "TotalTaxAmount": {
+        "Amount": 29.73,
+        "CurrencyCode": "USD"
+      },
+      "VendorAddress": "8069 Nicholas Greens Lake Vincentbury, RI 06574",
+      "VendorAddressRecipient": "Kerr, Ryan and Gomez",
+      "VendorName": "Kerr, Ryan and Gomez",
+      "VendorTaxId": "929-82-4759"
+    },
+    "description": "Ce document est une facture (Invoice no: 15001300) émise le 18/02/2014 par Kerr, Ryan and Gomez (Lake Vincentbury, RI, USA) à destination de Mason Ltd (Patrickfort, FL, USA). Le montant total TTC est de 327,08 $ pour divers articles, principalement des chaussures et des autocollants muraux, avec une TVA de 10%. Les informations clés incluent les coordonnées fiscales des deux parties et la liste détaillée des produits facturés."
   }
 }
