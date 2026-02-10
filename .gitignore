@@ -3,3 +3,8 @@ __pycache__/
 .ipynb_checkpoints/
 .env
 *.env
+
+batch_1/batch1_1/
+batch_1/batch1_2/
+batch_1/batch1_3/
+batch_1/*.csv
