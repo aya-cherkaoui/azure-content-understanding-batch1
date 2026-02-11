@@ -1,0 +1,68 @@
+{
+  "file": "batch1-0005.jpg",
+  "ocr_method": "Mistral",
+  "error": null,
+  "ocr_chars": 1588,
+  "ocr_text_preview": "Invoice no: 89969473\n\nDate of issue: 10/29/2016\n\n**Seller:**\n\nJohnson-Martin\n3836 Moore Ports\nNorth Michael, MO 01844\nTax Id: 972-82-0713\nIBAN: GB71GBDG68039919194335\n\n**Client:**\n\nDeleon, Davila and Allen\n355 King Lake Suite 071\nSouth Haleyshire, KY 55765\nTax Id: 944-77-3882\n\n**ITEMS**\n\n<table><tr>",
+  "extraction": {
+    "invoice_number": "89969473",
+    "invoice_date": "10/29/2016",
+    "due_date": "",
+    "seller_name": "Johnson-Martin",
+    "seller_address": "3836 Moore Ports, North Michael, MO 01844",
+    "seller_tax_id": "972-82-0713",
+    "buyer_name": "Deleon, Davila and Allen",
+    "buyer_address": "355 King Lake Suite 071, South Haleyshire, KY 55765",
+    "buyer_tax_id": "944-77-3882",
+    "iban": "GB71GBDG68039919194335",
+    "line_items": [
+      {
+        "description": "Wild West Wine",
+        "quantity": 2,
+        "unit_price": 27.0,
+        "net_worth": 54.0,
+        "vat_rate": "10%",
+        "gross_worth": 59.4
+      },
+      {
+        "description": "Press Wine 15L Fruit Cider Apple Crusher Juice Grape Stainless Maker Grapes New",
+        "quantity": 2,
+        "unit_price": 279.0,
+        "net_worth": 558.0,
+        "vat_rate": "10%",
+        "gross_worth": 613.8
+      },
+      {
+        "description": "Wine Rack Holder Iron Art Hanging Racks Glass Cup Stemware Shelf Mounted 2 Color",
+        "quantity": 3,
+        "unit_price": 18.75,
+        "net_worth": 56.25,
+        "vat_rate": "10%",
+        "gross_worth": 61.87
+      },
+      {
+        "description": "Rust Proof Three Rows Tool Wine Glass Holder Simple Iron Wire Home Hanging Rack",
+        "quantity": 2,
+        "unit_price": 11.56,
+        "net_worth": 23.12,
+        "vat_rate": "10%",
+        "gross_worth": 25.43
+      },
+      {
+        "description": "VTG 1970s MCM Brown Steel Tube Wall or Desk Mounted 12-Wine Rack Bottle Holder",
+        "quantity": 1,
+        "unit_price": 34.0,
+        "net_worth": 34.0,
+        "vat_rate": "10%",
+        "gross_worth": 37.4
+      }
+    ],
+    "subtotal": 725.37,
+    "total_tax": 72.54,
+    "total_amount": 797.91,
+    "currency": "USD"
+  },
+  "fields_with_value": 14,
+  "total_fields": 15,
+  "time_seconds": 26.0
+}

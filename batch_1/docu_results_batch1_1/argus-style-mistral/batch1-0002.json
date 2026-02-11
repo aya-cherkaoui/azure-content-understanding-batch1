@@ -1,0 +1,68 @@
+{
+  "file": "batch1-0002.jpg",
+  "ocr_method": "Mistral",
+  "error": null,
+  "ocr_chars": 1661,
+  "ocr_text_preview": "Invoice no: 12847181\n\nDate of issue: 03/03/2012\n\n**Seller:**\n\nFitzpatrick and Sons\n00480 Cook Cove\nSpencerport, UT 12036\n\nTax Id: 998-99-5253\nIBAN: GB92PBPQ73499358975916\n\n**Client:**\n\nDuncan PLC\nUnit 8799 Box 0703\nDPO AP 81970\n\nTax Id: 911-82-7132\n\n**ITEMS**\n\n<table><tr><th>No.</th><th>Description<",
+  "extraction": {
+    "invoice_number": "12847181",
+    "invoice_date": "03/03/2012",
+    "due_date": "",
+    "seller_name": "Fitzpatrick and Sons",
+    "seller_address": "00480 Cook Cove, Spencerport, UT 12036",
+    "seller_tax_id": "998-99-5253",
+    "buyer_name": "Duncan PLC",
+    "buyer_address": "Unit 8799 Box 0703, DPO AP 81970",
+    "buyer_tax_id": "911-82-7132",
+    "iban": "GB92PBPQ73499358975916",
+    "line_items": [
+      {
+        "description": "HP Desktop Computer PC Core i5 16GB 2TB HD 256GB SSD 22\" LCD Windows 10",
+        "quantity": 4,
+        "unit_price": 139.95,
+        "net_worth": 559.8,
+        "vat_rate": "10%",
+        "gross_worth": 615.78
+      },
+      {
+        "description": "CUSTOM BUILT AMD RYZEN THREADRIPPER GAMING COMPUTER, 32 GB RAM",
+        "quantity": 3,
+        "unit_price": 1400.0,
+        "net_worth": 4200.0,
+        "vat_rate": "10%",
+        "gross_worth": 4620.0
+      },
+      {
+        "description": "Fast Dell Optiplex Desktop PC Computer Dual Core 3.4Ghz 8GB 1TB Win 10 Pro WIFI",
+        "quantity": 1,
+        "unit_price": 217.0,
+        "net_worth": 217.0,
+        "vat_rate": "10%",
+        "gross_worth": 238.7
+      },
+      {
+        "description": "Dell Optiplex 790 Computer i7 @ 3.40 Ghz Quad Core 250GB 4GB Working",
+        "quantity": 3,
+        "unit_price": 159.99,
+        "net_worth": 479.97,
+        "vat_rate": "10%",
+        "gross_worth": 527.97
+      },
+      {
+        "description": "Vintage Microsolutions Pentium 133mhz Desktop Tower PC Windows 95 5.25 Floppy",
+        "quantity": 2,
+        "unit_price": 390.0,
+        "net_worth": 780.0,
+        "vat_rate": "10%",
+        "gross_worth": 858.0
+      }
+    ],
+    "subtotal": 6236.77,
+    "total_tax": 623.68,
+    "total_amount": 6860.45,
+    "currency": "USD"
+  },
+  "fields_with_value": 14,
+  "total_fields": 15,
+  "time_seconds": 24.18
+}

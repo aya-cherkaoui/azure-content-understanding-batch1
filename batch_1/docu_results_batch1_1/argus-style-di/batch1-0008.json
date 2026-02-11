@@ -1,0 +1,60 @@
+{
+  "file": "batch1-0008.jpg",
+  "ocr_method": "DocIntel",
+  "error": null,
+  "ocr_chars": 911,
+  "ocr_text_preview": "Invoice no: 74589240\nDate of issue:\n12/08/2013\nSeller:\nHall-Boyd\n8719 Reed Street Apt. 120\nEast Michelleborough, KY 93895\nTax Id: 977-76-9492\nIBAN: GB51FSWB55572342266497\nClient:\nHaas and Sons\n65628 Brittany Dale\nWalterschester, LA 26239\nTax Id: 981-73-4585\nITEMS\nNo.\nDescription\nQty\nUM\nNet price\nNet",
+  "extraction": {
+    "invoice_number": "74589240",
+    "invoice_date": "12/08/2013",
+    "due_date": "",
+    "seller_name": "Hall-Boyd",
+    "seller_address": "8719 Reed Street Apt. 120, East Michelleborough, KY 93895",
+    "seller_tax_id": "977-76-9492",
+    "buyer_name": "Haas and Sons",
+    "buyer_address": "65628 Brittany Dale, Walterschester, LA 26239",
+    "buyer_tax_id": "981-73-4585",
+    "iban": "GB51FSWB55572342266497",
+    "line_items": [
+      {
+        "description": "3D Printed Mat Vortex Illusion Living room Rug Carpet Floors Doors Round Mat",
+        "quantity": 3,
+        "unit_price": 11.63,
+        "net_worth": 34.89,
+        "vat_rate": "10%",
+        "gross_worth": 38.38
+      },
+      {
+        "description": "New Golden Brown Oriental Rug 4X6 Oushak Chobi Floral Hand-Knotted Foyer Carpet",
+        "quantity": 5,
+        "unit_price": 232.65,
+        "net_worth": 1163.25,
+        "vat_rate": "10%",
+        "gross_worth": 1279.58
+      },
+      {
+        "description": "YILONG 5.5'x8' Handknotted Silk Area Rugs Home Decor Classic Blue Carpet 0790",
+        "quantity": 1,
+        "unit_price": 10560.0,
+        "net_worth": 10560.0,
+        "vat_rate": "10%",
+        "gross_worth": 11616.0
+      },
+      {
+        "description": "Pretty Woman Small Large Long Floor Carpet Area Rugs Various Size Soft Rug",
+        "quantity": 1,
+        "unit_price": 36.3,
+        "net_worth": 36.3,
+        "vat_rate": "10%",
+        "gross_worth": 39.93
+      }
+    ],
+    "subtotal": 11794.44,
+    "total_tax": 1179.44,
+    "total_amount": 12973.88,
+    "currency": "USD"
+  },
+  "fields_with_value": 14,
+  "total_fields": 15,
+  "time_seconds": 24.44
+}

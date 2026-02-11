@@ -1,0 +1,44 @@
+{
+  "file": "batch1-0009.jpg",
+  "ocr_method": "DocIntel",
+  "error": null,
+  "ocr_chars": 586,
+  "ocr_text_preview": "Invoice no: 81978187\nDate of issue:\nSeller:\nPadilla-Miller\n53017 Lopez Locks\nAlecborough, OH 49620\nTax Id: 957-92-5322\nIBAN: GB91VPMR74805066714957\nITEMS\n01/17/2013\nClient:\nJohnson Ltd\n86731 Ryan Throughway Suite 743\nWest Jason, CT 15849\nTax Id: 922-87-4664\nNo.\nDescription\nQty\nUM\nNet price\nNet worth",
+  "extraction": {
+    "invoice_number": "81978187",
+    "invoice_date": "01/17/2013",
+    "due_date": "",
+    "seller_name": "Padilla-Miller",
+    "seller_address": "53017 Lopez Locks, Alecborough, OH 49620",
+    "seller_tax_id": "957-92-5322",
+    "buyer_name": "Johnson Ltd",
+    "buyer_address": "86731 Ryan Throughway Suite 743, West Jason, CT 15849",
+    "buyer_tax_id": "922-87-4664",
+    "iban": "GB91VPMR74805066714957",
+    "line_items": [
+      {
+        "description": "Wine Bottle Holder",
+        "quantity": 5.0,
+        "unit_price": 10.75,
+        "net_worth": 53.75,
+        "vat_rate": "10%",
+        "gross_worth": 59.13
+      },
+      {
+        "description": "Cuisinart Stainless Steel Electric Wine Opener - CWO-25 - Brand New in the Box",
+        "quantity": 3.0,
+        "unit_price": 19.9,
+        "net_worth": 59.7,
+        "vat_rate": "10%",
+        "gross_worth": 65.67
+      }
+    ],
+    "subtotal": 113.45,
+    "total_tax": 11.34,
+    "total_amount": 124.79,
+    "currency": "USD"
+  },
+  "fields_with_value": 14,
+  "total_fields": 15,
+  "time_seconds": 19.3
+}
