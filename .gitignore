@@ -1,8 +1,9 @@
-__pycache__/
+﻿__pycache__/
 *.pyc
 .ipynb_checkpoints/
 .env
 *.env
+.venv/
 
 batch_1/batch1_1/
 batch_1/batch1_2/
