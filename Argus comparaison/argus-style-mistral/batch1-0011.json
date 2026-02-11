@@ -1,0 +1,44 @@
+{
+  "file": "batch1-0011.jpg",
+  "ocr_method": "Mistral",
+  "error": null,
+  "ocr_chars": 1033,
+  "ocr_text_preview": "Invoice no: 68688408\n\nDate of issue: 03/20/2016\n\n**Seller:**\n\nTorres and Sons\n4052 Brown Roads\nHaysstad, NJ 06418\n\nTax Id: 953-84-2239\nIBAN: GB84XSNO58142814072766\n\n**Client:**\n\nDennis, Levy and Bowen\n523 Leslie Manors\nLake Colleenville, CT 12053\n\nTax Id: 904-82-9186\n\n**ITEMS**\n\n<table><tr><th>No.</",
+  "extraction": {
+    "invoice_number": "68688408",
+    "invoice_date": "03/20/2016",
+    "due_date": "",
+    "seller_name": "Torres and Sons",
+    "seller_address": "4052 Brown Roads, Haysstad, NJ 06418",
+    "seller_tax_id": "953-84-2239",
+    "buyer_name": "Dennis, Levy and Bowen",
+    "buyer_address": "523 Leslie Manors, Lake Colleenville, CT 12053",
+    "buyer_tax_id": "904-82-9186",
+    "iban": "GB84XSNO58142814072766",
+    "line_items": [
+      {
+        "description": "Nike 747998-401 Team Hustle D7 Kids Blue Mid Top Basketball Shoes Size 4Y US",
+        "quantity": 3,
+        "unit_price": 10.99,
+        "net_worth": 32.97,
+        "vat_rate": "10%",
+        "gross_worth": 36.27
+      },
+      {
+        "description": "Jordan Nike Kid Air 1 Retro High Black Gray Elephant Size 7Y 838850-013",
+        "quantity": 1,
+        "unit_price": 50.0,
+        "net_worth": 50.0,
+        "vat_rate": "10%",
+        "gross_worth": 55.0
+      }
+    ],
+    "subtotal": 82.97,
+    "total_tax": 8.3,
+    "total_amount": 91.27,
+    "currency": "USD"
+  },
+  "fields_with_value": 14,
+  "total_fields": 15,
+  "time_seconds": 19.34
+}

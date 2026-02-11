@@ -1,0 +1,84 @@
+{
+  "file": "batch1-0007.jpg",
+  "ocr_method": "DocIntel",
+  "error": null,
+  "ocr_chars": 1204,
+  "ocr_text_preview": "Invoice no: 11580833\nDate of issue:\n11/24/2019\nSeller:\nWood, Simpson and Summers\n7000 Graves Ville\nJuliastad, OH 02764\nTax Id: 968-86-1662\nIBAN: GB61VHVS67246807986062\nClient:\nTapia LLC\n53393 Peters Overpass\nBoothside, WY 76847\nTax Id: 979-96-3992\nITEMS\nNo.\nDescription\nQty\nUM\nNet price\nNet worth\nVAT",
+  "extraction": {
+    "invoice_number": "11580833",
+    "invoice_date": "11/24/2019",
+    "due_date": "",
+    "seller_name": "Wood, Simpson and Summers",
+    "seller_address": "7000 Graves Ville, Juliastad, OH 02764",
+    "seller_tax_id": "968-86-1662",
+    "buyer_name": "Tapia LLC",
+    "buyer_address": "53393 Peters Overpass, Boothside, WY 76847",
+    "buyer_tax_id": "979-96-3992",
+    "iban": "GB61VHVS67246807986062",
+    "line_items": [
+      {
+        "description": "Dell Optiplex SFF Desktop Computer Windows 10 4GB 160GB",
+        "quantity": 1,
+        "unit_price": 89.99,
+        "net_worth": 89.99,
+        "vat_rate": "10%",
+        "gross_worth": 98.99
+      },
+      {
+        "description": "Dell Desktop Computer Intel Core 2 Duo 8GB 1TB HD Windows 10 PC 22\" LCD Wifi",
+        "quantity": 3,
+        "unit_price": 69.95,
+        "net_worth": 209.85,
+        "vat_rate": "10%",
+        "gross_worth": 230.84
+      },
+      {
+        "description": "HP 6200 Pro Core i7 3.4GHz Quad Core 16GB 500GB Computer",
+        "quantity": 5,
+        "unit_price": 256.68,
+        "net_worth": 1283.4,
+        "vat_rate": "10%",
+        "gross_worth": 1411.74
+      },
+      {
+        "description": "Vintage Microsolutions Pentium 133mhz Desktop Tower PC Windows 95 5.25 Floppy",
+        "quantity": 3,
+        "unit_price": 390.0,
+        "net_worth": 1170.0,
+        "vat_rate": "10%",
+        "gross_worth": 1287.0
+      },
+      {
+        "description": "Dell OptiPlex 7060 SFF Computer, 8th Gen Core i5, 8GB DDR4, New 240GB SSD, DVD",
+        "quantity": 4,
+        "unit_price": 202.5,
+        "net_worth": 810.0,
+        "vat_rate": "10%",
+        "gross_worth": 891.0
+      },
+      {
+        "description": "Custom Gaming PC Computer FX-6300 3.5GHz 8GB RAM 128GB SSD 1 TB HDD RX 580 4GB",
+        "quantity": 1,
+        "unit_price": 449.99,
+        "net_worth": 449.99,
+        "vat_rate": "10%",
+        "gross_worth": 494.99
+      },
+      {
+        "description": "Custom Build HP Desktop Computer 16GB | 2TB | SSD | Windows 10 Windows 7 PC WiFi",
+        "quantity": 2,
+        "unit_price": 329.0,
+        "net_worth": 658.0,
+        "vat_rate": "10%",
+        "gross_worth": 723.8
+      }
+    ],
+    "subtotal": 4671.23,
+    "total_tax": 467.12,
+    "total_amount": 5138.35,
+    "currency": "USD"
+  },
+  "fields_with_value": 14,
+  "total_fields": 15,
+  "time_seconds": 28.69
+}

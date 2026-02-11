@@ -1,0 +1,52 @@
+{
+  "file": "batch1-0019.jpg",
+  "ocr_method": "Mistral",
+  "error": null,
+  "ocr_chars": 1210,
+  "ocr_text_preview": "Invoice no: 56908352\n\nDate of issue: 01/11/2015\n\n**Seller:**\n\nLozano, Wang and Smith\n8162 Dunn Radial\nLauraland, ID 83827\n\nTax Id: 914-76-8473\nIBAN: GB68RRBM34982962207975\n\n**Client:**\n\nEvans, Curtis and Salinas\n13078 Mora Garden\nMorseberg, WV 48959\n\nTax Id: 904-76-9217\n\n**ITEMS**\n\n<table><tr><th>No",
+  "extraction": {
+    "invoice_number": "56908352",
+    "invoice_date": "01/11/2015",
+    "due_date": "",
+    "seller_name": "Lozano, Wang and Smith",
+    "seller_address": "8162 Dunn Radial, Lauraland, ID 83827",
+    "seller_tax_id": "914-76-8473",
+    "buyer_name": "Evans, Curtis and Salinas",
+    "buyer_address": "13078 Mora Garden, Morseberg, WV 48959",
+    "buyer_tax_id": "904-76-9217",
+    "iban": "GB68RRBM34982962207975",
+    "line_items": [
+      {
+        "description": "Rage By Bob Woodward - Donald Trump NEW HARDCOVER Sept 2020",
+        "quantity": 5,
+        "unit_price": 22.93,
+        "net_worth": 114.65,
+        "vat_rate": "10%",
+        "gross_worth": 126.12
+      },
+      {
+        "description": "Spectacular Ireland Coffee Table Book - very large",
+        "quantity": 4,
+        "unit_price": 10.0,
+        "net_worth": 40.0,
+        "vat_rate": "10%",
+        "gross_worth": 44.0
+      },
+      {
+        "description": "The Complete Life's Little Instruction Book by Brown, H. Jackson, Jr.",
+        "quantity": 4,
+        "unit_price": 4.09,
+        "net_worth": 16.36,
+        "vat_rate": "10%",
+        "gross_worth": 18.0
+      }
+    ],
+    "subtotal": 171.01,
+    "total_tax": 17.1,
+    "total_amount": 188.11,
+    "currency": "USD"
+  },
+  "fields_with_value": 14,
+  "total_fields": 15,
+  "time_seconds": 21.47
+}

@@ -1,0 +1,68 @@
+{
+  "file": "batch1-0006.jpg",
+  "ocr_method": "DocIntel",
+  "error": null,
+  "ocr_chars": 810,
+  "ocr_text_preview": "Invoice no: 72128555\nDate of issue:\n12/25/2013\nSeller:\nObrien Group\n6217 Boyd Ville Apt. 758\nRobbinsberg, AZ 54997\nTax Id: 905-82-5399\nIBAN: GB71QMAA96406297569205\nClient:\nDuncan-Davis\nPSC 2324, Box 6632\nAPO AP 93827\nTax Id: 917-86-7656\nITEMS\nNo.\nDescription\nQty\nUM\nNet price\nNet worth\nVAT [%]\nGross ",
+  "extraction": {
+    "invoice_number": "72128555",
+    "invoice_date": "12/25/2013",
+    "due_date": "",
+    "seller_name": "Obrien Group",
+    "seller_address": "6217 Boyd Ville Apt. 758, Robbinsberg, AZ 54997",
+    "seller_tax_id": "905-82-5399",
+    "buyer_name": "Duncan-Davis",
+    "buyer_address": "PSC 2324, Box 6632, APO AP 93827",
+    "buyer_tax_id": "917-86-7656",
+    "iban": "GB71QMAA96406297569205",
+    "line_items": [
+      {
+        "description": "Fatawa Islamiyah (Islamic Verdicts) (8 Volume Set)",
+        "quantity": 2.0,
+        "unit_price": 99.9,
+        "net_worth": 199.8,
+        "vat_rate": "10%",
+        "gross_worth": 219.78
+      },
+      {
+        "description": "Sasinowski M-Legacy Of Ra BOOK NEW",
+        "quantity": 1.0,
+        "unit_price": 19.4,
+        "net_worth": 19.4,
+        "vat_rate": "10%",
+        "gross_worth": 21.34
+      },
+      {
+        "description": "Time Life Books: The Old West Series ~ Complete 26 Volumes + Master Index mn853",
+        "quantity": 3.0,
+        "unit_price": 139.95,
+        "net_worth": 419.85,
+        "vat_rate": "10%",
+        "gross_worth": 461.83
+      },
+      {
+        "description": "Tumbling by Caela Carter",
+        "quantity": 3.0,
+        "unit_price": 4.49,
+        "net_worth": 13.47,
+        "vat_rate": "10%",
+        "gross_worth": 14.82
+      },
+      {
+        "description": "How to Win Friends & Influence People",
+        "quantity": 2.0,
+        "unit_price": 6.62,
+        "net_worth": 13.24,
+        "vat_rate": "10%",
+        "gross_worth": 14.56
+      }
+    ],
+    "subtotal": 665.76,
+    "total_tax": 66.58,
+    "total_amount": 732.34,
+    "currency": "USD"
+  },
+  "fields_with_value": 14,
+  "total_fields": 15,
+  "time_seconds": 28.82
+}

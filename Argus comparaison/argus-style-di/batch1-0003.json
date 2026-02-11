@@ -1,0 +1,52 @@
+{
+  "file": "batch1-0003.jpg",
+  "ocr_method": "DocIntel",
+  "error": null,
+  "ocr_chars": 812,
+  "ocr_text_preview": "Invoice no: 19471831\nDate of issue:\n04/09/2014\nSeller:\nPalmer Ltd\n9790 Bauer Hills Apt. 146\nSouth Patriciaton, SD 32497\nTax Id: 924-71-1106\nIBAN: GB05YUTG50853913677557\nClient:\nRios, Oneill and Rowe\n3571 Tina Trafficway\nBuckleyland, LA 97688\nTax Id: 922-72-5979\nITEMS\nNo.\nDescription\nQty\nUM\nNet price",
+  "extraction": {
+    "invoice_number": "19471831",
+    "invoice_date": "04/09/2014",
+    "due_date": "",
+    "seller_name": "Palmer Ltd",
+    "seller_address": "9790 Bauer Hills Apt. 146, South Patriciaton, SD 32497",
+    "seller_tax_id": "924-71-1106",
+    "buyer_name": "Rios, Oneill and Rowe",
+    "buyer_address": "3571 Tina Trafficway, Buckleyland, LA 97688",
+    "buyer_tax_id": "922-72-5979",
+    "iban": "GB05YUTG50853913677557",
+    "line_items": [
+      {
+        "description": "15\"x15\" White Decorative Coffee Table Top Lapis Lazuli Marquetery Patio Décor",
+        "quantity": 3,
+        "unit_price": 645.77,
+        "net_worth": 1937.31,
+        "vat_rate": "10%",
+        "gross_worth": 2131.04
+      },
+      {
+        "description": "4'x2' Marble Dining Table Top Pietra Dura Birds Inlay Art Furniture Decors B444",
+        "quantity": 5,
+        "unit_price": 1840.1,
+        "net_worth": 9200.5,
+        "vat_rate": "10%",
+        "gross_worth": 10120.55
+      },
+      {
+        "description": "60 Inches Marble Dinning Table Top Hand Inlaid Garden Table with Gemstones",
+        "quantity": 5,
+        "unit_price": 5908.0,
+        "net_worth": 29540.0,
+        "vat_rate": "10%",
+        "gross_worth": 32494.0
+      }
+    ],
+    "subtotal": 40677.81,
+    "total_tax": 4067.78,
+    "total_amount": 44745.59,
+    "currency": "USD"
+  },
+  "fields_with_value": 14,
+  "total_fields": 15,
+  "time_seconds": 18.41
+}

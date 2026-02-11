@@ -1,0 +1,60 @@
+{
+  "file": "batch1-0012.jpg",
+  "ocr_method": "Mistral",
+  "error": null,
+  "ocr_chars": 1339,
+  "ocr_text_preview": "Invoice no: 13407985\n\nDate of issue: 11/22/2013\n\n**Seller:**\n\nNicholson, Miller and Webster\nUSS Lee\nFPO AE 74393\n\n**Tax Id:** 962-88-9077\n**IBAN:** GB23TMKM50357047352524\n\n**Client:**\n\nMccormick and Sons\n22688 Ortiz Plaza\nMeganfort, WA 91964\n\n**Tax Id:** 997-95-5690\n\n**ITEMS**\n\n<table><tr><th>No.</t",
+  "extraction": {
+    "invoice_number": "13407985",
+    "invoice_date": "11/22/2013",
+    "due_date": "",
+    "seller_name": "Nicholson, Miller and Webster",
+    "seller_address": "USS Lee, FPO AE 74393",
+    "seller_tax_id": "962-88-9077",
+    "buyer_name": "Mccormick and Sons",
+    "buyer_address": "22688 Ortiz Plaza, Meganfort, WA 91964",
+    "buyer_tax_id": "997-95-5690",
+    "iban": "GB23TMKM50357047352524",
+    "line_items": [
+      {
+        "description": "Adult Kids Pokemon Pikachu Kigurumi Pajama Cosplay Christmas Costume Sleepwear",
+        "quantity": 5,
+        "unit_price": 9.95,
+        "net_worth": 49.75,
+        "vat_rate": "10%",
+        "gross_worth": 54.73
+      },
+      {
+        "description": "Vintage 90s Sostanza Plus Size Dress 22W Floral Cottagecore",
+        "quantity": 3,
+        "unit_price": 49.96,
+        "net_worth": 149.88,
+        "vat_rate": "10%",
+        "gross_worth": 164.87
+      },
+      {
+        "description": "balmain dress 36",
+        "quantity": 3,
+        "unit_price": 1550.0,
+        "net_worth": 4650.0,
+        "vat_rate": "10%",
+        "gross_worth": 5115.0
+      },
+      {
+        "description": "Lilly Pulitzer 8 Sunkissed with Glow Janice Shift Dress",
+        "quantity": 2,
+        "unit_price": 56.89,
+        "net_worth": 113.78,
+        "vat_rate": "10%",
+        "gross_worth": 125.16
+      }
+    ],
+    "subtotal": 4963.41,
+    "total_tax": 496.34,
+    "total_amount": 5459.75,
+    "currency": "USD"
+  },
+  "fields_with_value": 14,
+  "total_fields": 15,
+  "time_seconds": 23.07
+}
