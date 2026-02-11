@@ -28,7 +28,7 @@ docu_results_batch1_1/
 | | Méthode 1 — Content Understanding | Méthode 2 — ARGUS + DocIntel | Méthode 3 — ARGUS + Mistral |
 |---|---|---|---|
 | **OCR** | `prebuilt-invoice` (API intégrée) | `prebuilt-layout` (Document Intelligence) | `mistral-document-ai-2505` (Mistral Doc AI) |
-| **Extraction** | Modèle pré-entraîné (31 champs fixes) | GPT-5-chat (schéma personnalisable, 15 champs) | GPT-5-chat (schéma personnalisable, 15 champs) |
+| **Extraction** | Modèle pré-entraîné (31 champs fixes) | GPT-5-chat (schéma personnalisable, 15 champs) | Mistral doc ai (schéma personnalisable, 15 champs) |
 | **Approche** | Extraction directe en 1 appel | Pipeline OCR → LLM (2 étapes) | Pipeline OCR → LLM (2 étapes) |
 | **Philosophie** | Schéma fixe Microsoft | Flexible, inspiré [ARGUS](https://github.com/Azure-Samples/ARGUS) | Flexible, inspiré [ARGUS](https://github.com/Azure-Samples/ARGUS) |
 
